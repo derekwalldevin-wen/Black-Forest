@@ -1,0 +1,11 @@
+{
+  "id": "22-card-selected",
+  "file": "22-card-selected-v3",
+  "refs": [
+    "images/22-card-selected-v2.png"
+  ],
+  "prompt": "Correct ONLY hand count: current image has six cards because 劈砍 duplicated at far left and selected center. REMOVE far-left small duplicate 劈砍 card. Keep exactly FIVE cards total: one enlarged selected center 劈砍 and four smaller cards 格挡,凝神,血契,疾刺 each exactly once, balanced on left/right. Preserve all card costs and rules, card-internal 再点或上滑打出 footer, no HP or cost overlap, background HUD andbottomunchanged. No sixth card or duplicate slash.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-c7f30709-33de-49b9-9f27-fe98c499e653.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/22-card-selected-v3.png",
+  "mode": "built-in image_gen"
+}

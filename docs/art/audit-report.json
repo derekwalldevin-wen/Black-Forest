@@ -1,0 +1,598 @@
+{
+  "passed": true,
+  "counts": {
+    "cards": 36,
+    "enemies": 9,
+    "backs": 2
+  },
+  "runtimeBytes": 16410701,
+  "files": [
+    {
+      "file": "art-gothic-blood.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 403627,
+      "sha256": "e4811f5f13ef4b0c5c2de0d113f2743556852b265a8afebbaada938c35ee9826",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-cloud.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 388466,
+      "sha256": "651044704d3cab1e8ad0e5a634c58b9ce9faba70f9c378eb4a4fc0e5243cf74a",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-dagger.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 395226,
+      "sha256": "16235c3e0cde287deae74feda03c766be3b5b62cfd07e2697086b6c1f9a92dc6",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-eye.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 392619,
+      "sha256": "ed8eec7f816561a6431de62eb6160fe48c1f8851c32b16101c317fb64c15ff50",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-fang.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 376860,
+      "sha256": "ca91536e75c77ee1c8f2f5f617d5652671048e5d72eeeef053568e31c0f8f205",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-gem.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 404581,
+      "sha256": "aa511300240ae9f0c6ba5734794cdcb2eb87e1775b44d03709fd208e759ac706",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-lens.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 360607,
+      "sha256": "20fcfbcbf82d3a5a19a706faf8f1f004d5d6cd8e4ad977f41cb1dabc93f3dc6e",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-lotus.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 387155,
+      "sha256": "5332ea577b767607e01a4d7ed26da82fcda77af9ad20aa89e303d97c4fb59912",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-moon.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 391410,
+      "sha256": "2ac0117741601af0d3d7c985709d5c6b14aaf98bb5816fbe7583421667e12b27",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-ring.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 408682,
+      "sha256": "89b34032ac45fda77cd0201e394b393ef4cefd9f801e012b932df2cf9484251f",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-shield.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 383256,
+      "sha256": "919fd8e60caab24b81723575b46319fd5f6716839fd16889d4abede99e879220",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-spark.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 395604,
+      "sha256": "2e1773fde39df5dec0cb1cbfc0ac9958596ae4562ecebba52434f3ddf5ae07d9",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-sword.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 405289,
+      "sha256": "ad85690d326ea613fd7aef2b157b5be2bd27f029d525e98eabbda76e76f3d340",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-talisman.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 402276,
+      "sha256": "7eebce9218830263968ba13f26f1a0be2ab676c417f5567fc3c9ea2a5924cc36",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-thorns.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 382650,
+      "sha256": "1b83cc76002a2162e8cec4ecbd08a3fb5c0b614ca7ddf57b46724a8810d2ac4e",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-thunder.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 387041,
+      "sha256": "d53d0e16b8ad696aa37b4952840b2036ab592af1e6186f72528699f0dce9893d",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-venom.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 395588,
+      "sha256": "09a1a1b5a6a9046c60ff47e5fd5c6b026290ce28df5f9a95853c74d73d51d12c",
+      "opaque": true
+    },
+    {
+      "file": "art-gothic-vial.png",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 386304,
+      "sha256": "7b7ed4225e6b9a29f9874b198b6d5f7e0652a6658b3e9e5a2ab9470db7bb432e",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-blood.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 399177,
+      "sha256": "c553ffeff5b8e5be4a186061c6146fd567899c21fd712e982abb8d22cbc81bd8",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-cloud.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 397965,
+      "sha256": "07899117318181ee6ec39f69cac59e76b307a0fffa5e64614c3c66e3a05b92a3",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-dagger.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 386966,
+      "sha256": "34e261c0b144e16f0f00d5e1aa95553ae3da2b771a0cb36d41595f1c827534de",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-eye.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 382536,
+      "sha256": "172430b3dccec66c407342f821fc063ef24ff01f417a4cfc8ad804414e910307",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-fang.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 405524,
+      "sha256": "de1f1086189c91ac4673f3738865cb45d09c3328b7bda2f23966faa85e264683",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-gem.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 376758,
+      "sha256": "fc1a3638b881b7fe6c9565434276ac4076618e00be54e23a1e833337ae19772a",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-lens.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 392199,
+      "sha256": "07e2e74448083d66ad340a19e601c9da6fe904d93c218d43f769323f9cdb3140",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-lotus.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 386298,
+      "sha256": "de0f3a21184d5a26f89214b6bbbf80692fcfa84d4746cf7bfc5f0eb7e82c5bc0",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-moon.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 390198,
+      "sha256": "0c4ec323799cda128fd07e248143eeb66c549a77c88397bfbf8c83e663ea5af0",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-ring.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 400245,
+      "sha256": "a8a64299a812a6843f11eca907c9434276976185e89c21c9e7466fe05bd38130",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-shield.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 395949,
+      "sha256": "2677de7776559f1f94398da7dd3c7267ebd8ae67c071726389313a9df8e87a2a",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-spark.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 382757,
+      "sha256": "c497f60534b209e604d5739bca893ddd0634352163d8501bb5ec2d2942e57591",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-sword.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 399457,
+      "sha256": "cabe5f83dc76025338741096adc631814122aeee516738b73844cd64bb734764",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-talisman.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 375536,
+      "sha256": "d9c2a5ea7e4c6548c4513559503d8a4645fec4cd93d4db3ab6259b6a6c019c6c",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-thorns.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 404212,
+      "sha256": "b76f54c4832caebfc8b5a73b081337058e769575f2e4f30ae4163def23f2bc4f",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-thunder.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 380716,
+      "sha256": "7607e5a218a019545287d7b52e9b772a2485aef70d54899fae7e371b7edfc887",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-venom.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 384875,
+      "sha256": "76807c626d2372007ff7153749c793d356dc84e72d4bd2e4cd5549fa91966df4",
+      "opaque": true
+    },
+    {
+      "file": "art-shanhai-vial.jpg",
+      "kind": "card",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 397633,
+      "sha256": "f8f9f13b154234c688d794a2f8e14a2a46a49226f082a06102c42a049beb9b2c",
+      "opaque": true
+    },
+    {
+      "file": "card-back-gothic.png",
+      "kind": "card-back",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 340404,
+      "sha256": "e236cd66a0d4dc13d1eae795d69c2f735693f6c2d6e1e76f07b3563125cc0986",
+      "opaque": true,
+      "mirrorSymmetric": true
+    },
+    {
+      "file": "card-back-shanhai.png",
+      "kind": "card-back",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 370143,
+      "sha256": "0be5bcd379b77ce7d07af0eef3b037bf075b7b987c9d4c94210a25f4a267cb2c",
+      "opaque": true,
+      "mirrorSymmetric": true
+    },
+    {
+      "file": "enemy-alpha-wolf.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 129999,
+      "sha256": "c0fae6f37d497e1e6fc48ebe0ffb9f98a3c991373891a8dc91cfff9e1a797440",
+      "alphaBounds": {
+        "left": 169,
+        "top": 246,
+        "right": 629,
+        "bottom": 853
+      },
+      "subjectRatio": 0.5527272727272727,
+      "margins": [
+        0.21125,
+        0.2125,
+        0.22363636363636363,
+        0.22363636363636363
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-baize.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 175916,
+      "sha256": "fb9a13c34a2144e7c5288f3eb5f600bf4cdd571493477b6e19c2012acfbe3710",
+      "alphaBounds": {
+        "left": 165,
+        "top": 205,
+        "right": 633,
+        "bottom": 894
+      },
+      "subjectRatio": 0.6272727272727273,
+      "margins": [
+        0.20625,
+        0.2075,
+        0.18636363636363637,
+        0.18636363636363637
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-bog-witch.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 149711,
+      "sha256": "e4b442c6becc0e91361b76898daa7203d00a4c92adf548707554e3860fd8f359",
+      "alphaBounds": {
+        "left": 179,
+        "top": 204,
+        "right": 620,
+        "bottom": 895
+      },
+      "subjectRatio": 0.6290909090909091,
+      "margins": [
+        0.22375,
+        0.22375,
+        0.18545454545454546,
+        0.18545454545454546
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-dijiang.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 157025,
+      "sha256": "5b319bc4313af9e2996a66cd7f4785a680f73173a60e878e51131b2efddbdbbf",
+      "alphaBounds": {
+        "left": 164,
+        "top": 215,
+        "right": 635,
+        "bottom": 883
+      },
+      "subjectRatio": 0.6081818181818182,
+      "margins": [
+        0.205,
+        0.205,
+        0.19545454545454546,
+        0.19636363636363635
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-forest-lord.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 148243,
+      "sha256": "fa377cb940a84fcc91ec7016dbf464ab04d4c6685365c06f92a14ac9a33f918c",
+      "alphaBounds": {
+        "left": 173,
+        "top": 199,
+        "right": 626,
+        "bottom": 899
+      },
+      "subjectRatio": 0.6372727272727273,
+      "margins": [
+        0.21625,
+        0.21625,
+        0.1809090909090909,
+        0.18181818181818182
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-huodou.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 133109,
+      "sha256": "42c9e929241002d19ffc8a9e3f35a606e3d2156ce595215ba3abc4619f4dcddd",
+      "alphaBounds": {
+        "left": 171,
+        "top": 209,
+        "right": 627,
+        "bottom": 890
+      },
+      "subjectRatio": 0.62,
+      "margins": [
+        0.21375,
+        0.215,
+        0.19,
+        0.19
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-qiongqi.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 172785,
+      "sha256": "7f5742e12272d9c4230f0e370d76b863a51ea1504d7441dd1930af8fc7e017d5",
+      "alphaBounds": {
+        "left": 164,
+        "top": 209,
+        "right": 634,
+        "bottom": 890
+      },
+      "subjectRatio": 0.62,
+      "margins": [
+        0.205,
+        0.20625,
+        0.19,
+        0.19
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-taotie.png",
+      "kind": "enemy",
+      "width": 800,
+      "height": 1100,
+      "bytes": 190416,
+      "sha256": "b8a2f09176d428faed49b36415015c743a96713b86ca63dd4bdf237fc796d2aa",
+      "alphaBounds": {
+        "left": 172,
+        "top": 255,
+        "right": 626,
+        "bottom": 845
+      },
+      "subjectRatio": 0.5372727272727272,
+      "margins": [
+        0.215,
+        0.21625,
+        0.2318181818181818,
+        0.2309090909090909
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "enemy-xiangliu.png",
+      "kind": "enemy",
+      "width": 1279,
+      "height": 1100,
+      "bytes": 356708,
+      "sha256": "b4391a24a5e617e1902f82a4c79a853a524c52e83c34e5d134fd1320d7d7c176",
+      "alphaBounds": {
+        "left": 120,
+        "top": 198,
+        "right": 1158,
+        "bottom": 901
+      },
+      "subjectRatio": 0.64,
+      "margins": [
+        0.09382329945269742,
+        0.09382329945269742,
+        0.18,
+        0.18
+      ],
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

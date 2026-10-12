@@ -1,0 +1,8 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-c8a89912-41d8-43e4-a03a-0812763fd538.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/15-remove-card-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected existing card removal page. Soft forest campfire scene with compact 第一章, HP48/70, 68金币 header. Title 选择一张牌丢弃, short note 相同卡牌合并显示，丢弃其中一张. EXACTLY five populated thumbnail cards in four-column grid: first row 劈砍 count×5 cost1, 格挡 ×4 cost1, 凝神 ×1 cost1, 血契 ×1 cost0; second row only 疾刺 ×1 cost1 EXACTLY centered horizontally beneath middle two columns. All remaining space blank, no empty cards. Each thumbnail name, correct cost and owned-count badge readable, no invented rule text. Footer disabled 上一页, centered1/1, disabled 下一页. Note 点击卡牌即可丢弃. No extra confirm, cancel, upgrade or sale.",
+  "id": "15-remove-card",
+  "file": "15-remove-card-v2",
+  "refs": []
+}

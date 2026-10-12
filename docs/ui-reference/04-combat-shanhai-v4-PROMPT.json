@@ -1,0 +1,12 @@
+{
+  "id": "04-combat-shanhai",
+  "file": "04-combat-shanhai-v4",
+  "refs": [
+    "images/04-combat-shanhai-v2.png",
+    "GLYPH-GUIDE.png"
+  ],
+  "prompt": "Firstimageiscompleteportrait edit target, second is glyphguide only. Preserve Dijiang6feet4wingsnoface, background, same-baseline HP andshields, fivecards, allnumbers. Correct resources: 行动力2/3 uses BLUE CIRCLE icon; 灵韵2/3 uses GOLD FLAME icon. Card costs firstthree 符纸1,封门1,玄玑0 use GOLD FLAME-shaped badges; lasttwo 劈砍1,格挡1 use BLUE ROUND badges. Change thirdcard name toexact玄玑 by copying outlines from TOP LARGE heading of guide, secondcharacter王plus几. No swapped resourceicons, no added humanoid, no newHUD, no otherchanges.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-e0acda8b-d085-4c12-bf17-e38d674a7b6b.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/04-combat-shanhai-v4.png",
+  "mode": "built-in image_gen"
+}

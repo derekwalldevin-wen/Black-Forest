@@ -1,0 +1,8 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-71579b74-15aa-4753-8deb-66ae9a923210.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/09-reward-shanhai-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW complete 山海 reward page, Chinese watercolor misty bronze altar and cinnabar edge motifs. Header 山海篇, 68金币. Title 战利品, subtitle 选择一张牌加入牌组, +22金币 badge. Three complete legible cards in triangular layout: 符纸 gold spirit flame cost1 and exact text 造成7点伤害; 封门 spirit flame cost1 text 获得8点格挡; 玄玑 spirit flame cost0 text 获得1点灵韵，抽1张牌. Card type 符箓. Each cost is separate legible icon and number near upper-left; do not replace cost with type-only label. Footer 跳过 and disabled 继续. No enemy, no combat hand, no gear.",
+  "id": "09-reward-shanhai",
+  "file": "09-reward-shanhai-v2",
+  "refs": []
+}

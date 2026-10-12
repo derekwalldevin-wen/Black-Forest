@@ -1,0 +1,7 @@
+{
+  "id": "09-reward-shanhai",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-1d5f909a-2b5d-4a9b-9058-e87fd285d161.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/09-reward-shanhai-v3.png",
+  "prompt": "Use-case ui-mockup. One complete portrait 9:16 game screen reference, no device bezel. 黑森林 watercolor dark fantasy card roguelike, indigo #12101a, restrained antique gold #b08d3f borders, ivory #e8dcc0, parchment card rule areas. Clean practical composition, crisp standard printed simplified Chinese. No invented controls, flavor quotation boxes, logos, signatures, pseudo-text or watermark. Exact text, numeric rules and state below are mandatory. Chinese mythology bronze altar reward screen. Header 山海篇 coin68. Title 战利品, subtitle 选择一张牌加入牌组, +22金币. Three triangular full cards upper 符纸 goldflamecost1 造成7点伤害; lowerleft 封门 goldflamecost1 获得8点格挡; lowerright 玄玑 goldflamecost0 获得1点灵韵，抽1张牌. IMPORTANT exact title 玄玑, second character 玑 made of 王 radical plus 几, NOT 玄兀. Use plain standard printed font to ensure correct glyph. Footer 跳过 active, 继续 disabled. No combat HUD or extra slogans.",
+  "mode": "built-in image_gen"
+}

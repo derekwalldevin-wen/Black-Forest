@@ -1,0 +1,26 @@
+{
+  "mode": "builtin-imagegen",
+  "references": [
+    "assets/ui/hero-traveler-source-v1.png"
+  ],
+  "prompts": [
+    {
+      "key": "ashes",
+      "prompt": "Use case: illustration-story. Asset type: finished game narrative illustration, opaque 3:2 landscape 1536x1024. Input image is identity reference only; create a new complete scene and keep the same young adult human woman with short chestnut hair and pale streak, indigo cloak/red lining, bronze cloud pendant, practical brown outfit and brass lantern. Scene: Eastern ancient toxic marsh and abandoned ritual hearth. Young human traveler kneels at center using a red thread to join blank jade tablets and a worn notebook beside a brass lantern. Blue-green pools and ashen charred name plaques, a small warm fire repelled at a respectful distance. Quiet act of rescuing ordinary memories, no gore. Style: textured hand-painted dark fairytale watercolor and Eastern ink, carved bronze, colors #12101a, #b08d3f, jade teal, cinnabar, parchment; painterly cinematic lighting. Composition: center 65% safe subject area, 12% vertical safe padding, clear when reduced to mobile UI. Artwork only; no UI, no frames, no writing, no letters/numbers, no Chinese glyphs, no watermark. No skull protagonist."
+    },
+    {
+      "key": "gate",
+      "prompt": "Use case: illustration-story. Asset type: finished game narrative illustration, opaque 3:2 landscape 1536x1024. Input image is identity reference only; create a new complete scene and keep the same young adult human woman with short chestnut hair and pale streak, indigo cloak/red lining, bronze cloud pendant, practical brown outfit and brass lantern. Scene: The final threshold of an ancient bronze realm, huge circular bronze gate surrounded by suspended empty name tablets, dark jade-black void with four elegant bronze arch ribs, steps and bell motifs. Central small human traveler in indigo cloak holds a glowing brass lantern, red threads join the hanging tablets into a constellation. No monsters or faces in gate, solemn hopeful painterly ink watercolor. Style: textured hand-painted dark fairytale watercolor and Eastern ink, carved bronze, colors #12101a, #b08d3f, jade teal, cinnabar, parchment; painterly cinematic lighting. Composition: center 65% safe subject area, 12% vertical safe padding, clear when reduced to mobile UI. Artwork only; no UI, no frames, no writing, no letters/numbers, no Chinese glyphs, no watermark. No skull protagonist."
+    },
+    {
+      "key": "ending-home",
+      "prompt": "Use case: illustration-story. Asset type: finished game narrative illustration, opaque 3:2 landscape 1536x1024. Input image is identity reference only; create a new complete scene and keep the same young adult human woman with short chestnut hair and pale streak, indigo cloak/red lining, bronze cloud pendant, practical brown outfit and brass lantern. Scene: Ending image: dawn returning to a once abandoned forest village. Same young human woman has set her glowing brass lantern on a low stone in the center; she gently releases scarlet threads which become trails of golden light reaching cottage windows. Several distant ordinary villagers opening windows, a white cat on one windowsill, repaired roof, gentle mist. She smiles softly, bittersweet memory, mother represented only by a faint warm breeze of light, NOT a physically present ghost or second woman. Healing without miraculous resurrection. Style: textured hand-painted dark fairytale watercolor and Eastern ink, carved bronze, colors #12101a, #b08d3f, jade teal, cinnabar, parchment; painterly cinematic lighting. Composition: center 65% safe subject area, 12% vertical safe padding, clear when reduced to mobile UI. Artwork only; no UI, no frames, no writing, no letters/numbers, no Chinese glyphs, no watermark. No skull protagonist."
+    },
+    {
+      "key": "ending-watch",
+      "prompt": "Use case: illustration-story. Asset type: finished game narrative illustration, opaque 3:2 landscape 1536x1024. Input image is identity reference only; create a new complete scene and keep the same young adult human woman with short chestnut hair and pale streak, indigo cloak/red lining, bronze cloud pendant, practical brown outfit and brass lantern. Scene: Ending image: same young human traveler walks away from the viewer along an open road linking an ancient bronze terrace to a forest village, holding her brass lantern, indigo cloak and red lining, short chestnut hair with pale streak. Warm points of light in distant cottage windows, blank jade tablets and a worn notebook secured to her belt by red thread. A calm dawn sky, free choice to keep traveling, quiet independence and hope. No captivity, no ghost woman, no text. Style: textured hand-painted dark fairytale watercolor and Eastern ink, carved bronze, colors #12101a, #b08d3f, jade teal, cinnabar, parchment; painterly cinematic lighting. Composition: center 65% safe subject area, 12% vertical safe padding, clear when reduced to mobile UI. Artwork only; no UI, no frames, no writing, no letters/numbers, no Chinese glyphs, no watermark. No skull protagonist."
+    }
+  ],
+  "originalTaskStillRunning": false,
+  "status": "Original cell 269 terminated after user explicitly requested fresh ending generation; six successful images and exact prompts preserved."
+}

@@ -1,0 +1,296 @@
+{
+  "analysisDate": "2026-10-05",
+  "scope": "Directional sensitivity in the current imperfect greedy simulator; not shipping values or player win rates.",
+  "gamesPerArm": 300,
+  "seeds": "((i * 2654435761) >>> 0) || 1, i=0..299; shared sequential stream, not aligned exogenous streams",
+  "sourceHashes": {
+    "tools/simulate.js": "0ab2ccb586624c7b31cd846e47a3aecb7900f3fedaf549a437df4859902144e7",
+    "tools/ab-test.js": "a7629e4dec4702de6adb95e623ad4056c5a7277d3a49d5cee65ff9dbeed46016",
+    "src/core/cards.js": "8c5151a3c258fdde67b0b31603c191267416f85b0159e8cba1477543365f7b00",
+    "src/core/combat.js": "a7995e6fe8c7a3b1a351b513ea87e3fce6bf4ed1228c99b1926df3ce4ed77d26",
+    "src/core/run.js": "6d8a5f04aeee36178061d42f2ad552149894b3d48326f8529e1e206a68b62321",
+    "src/core/events.js": "40e7729df0a841934dac820d5c5a3cddf7d04d245cb1350227c3e41e8551e84e"
+  },
+  "diagnosticRun": {
+    "seed": 1,
+    "starter": "talisman",
+    "deathIndex": 17,
+    "simulatedDeckSize": 25,
+    "runDeckSize": 8,
+    "simulatedRelicCount": 6,
+    "runRelicCount": 5,
+    "ascended": false,
+    "contracts": [
+      "huodou"
+    ],
+    "gold": 0,
+    "chapter": 5,
+    "step": 2
+  },
+  "maxHpFixture": {
+    "current": {
+      "win": true,
+      "hp": 35,
+      "turns": 2
+    },
+    "oneLineDiagnosticCorrection": {
+      "win": true,
+      "hp": 51,
+      "turns": 2
+    }
+  },
+  "candidates": [
+    {
+      "variant": "current",
+      "starter": "classic",
+      "clear": 10,
+      "through9": 160,
+      "clearPct": 3.33,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.4
+    },
+    {
+      "variant": "current",
+      "starter": "blood",
+      "clear": 17,
+      "through9": 183,
+      "clearPct": 5.67,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.38
+    },
+    {
+      "variant": "current",
+      "starter": "guard",
+      "clear": 19,
+      "through9": 194,
+      "clearPct": 6.33,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.36
+    },
+    {
+      "variant": "current",
+      "starter": "talisman",
+      "clear": 80,
+      "through9": 293,
+      "clearPct": 26.67,
+      "through9Pct": 97.67,
+      "meanCompletedIndexMetric": 16.45
+    },
+    {
+      "variant": "fu6_seal6",
+      "starter": "classic",
+      "clear": 10,
+      "through9": 160,
+      "clearPct": 3.33,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.37
+    },
+    {
+      "variant": "fu6_seal6",
+      "starter": "blood",
+      "clear": 15,
+      "through9": 183,
+      "clearPct": 5,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.32
+    },
+    {
+      "variant": "fu6_seal6",
+      "starter": "guard",
+      "clear": 17,
+      "through9": 194,
+      "clearPct": 5.67,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.34
+    },
+    {
+      "variant": "fu6_seal6",
+      "starter": "talisman",
+      "clear": 65,
+      "through9": 280,
+      "clearPct": 21.67,
+      "through9Pct": 93.33,
+      "meanCompletedIndexMetric": 15.89
+    },
+    {
+      "variant": "fuCost2_sealCost2",
+      "starter": "classic",
+      "clear": 8,
+      "through9": 160,
+      "clearPct": 2.67,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.32
+    },
+    {
+      "variant": "fuCost2_sealCost2",
+      "starter": "blood",
+      "clear": 14,
+      "through9": 183,
+      "clearPct": 4.67,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.34
+    },
+    {
+      "variant": "fuCost2_sealCost2",
+      "starter": "guard",
+      "clear": 20,
+      "through9": 194,
+      "clearPct": 6.67,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.36
+    },
+    {
+      "variant": "fuCost2_sealCost2",
+      "starter": "talisman",
+      "clear": 65,
+      "through9": 294,
+      "clearPct": 21.67,
+      "through9Pct": 98,
+      "meanCompletedIndexMetric": 16.38
+    },
+    {
+      "variant": "positiveSpiritCostFloor1",
+      "starter": "classic",
+      "clear": 11,
+      "through9": 160,
+      "clearPct": 3.67,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.4
+    },
+    {
+      "variant": "positiveSpiritCostFloor1",
+      "starter": "blood",
+      "clear": 14,
+      "through9": 183,
+      "clearPct": 4.67,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.35
+    },
+    {
+      "variant": "positiveSpiritCostFloor1",
+      "starter": "guard",
+      "clear": 16,
+      "through9": 194,
+      "clearPct": 5.33,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.35
+    },
+    {
+      "variant": "positiveSpiritCostFloor1",
+      "starter": "talisman",
+      "clear": 52,
+      "through9": 270,
+      "clearPct": 17.33,
+      "through9Pct": 90,
+      "meanCompletedIndexMetric": 15.28
+    },
+    {
+      "variant": "xuanEnergy1Skill",
+      "starter": "classic",
+      "clear": 8,
+      "through9": 160,
+      "clearPct": 2.67,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.35
+    },
+    {
+      "variant": "xuanEnergy1Skill",
+      "starter": "blood",
+      "clear": 15,
+      "through9": 183,
+      "clearPct": 5,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.3
+    },
+    {
+      "variant": "xuanEnergy1Skill",
+      "starter": "guard",
+      "clear": 11,
+      "through9": 194,
+      "clearPct": 3.67,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.24
+    },
+    {
+      "variant": "xuanEnergy1Skill",
+      "starter": "talisman",
+      "clear": 37,
+      "through9": 268,
+      "clearPct": 12.33,
+      "through9Pct": 89.33,
+      "meanCompletedIndexMetric": 15.09
+    },
+    {
+      "variant": "xuanEnergy1Skill_fu6_seal6",
+      "starter": "classic",
+      "clear": 8,
+      "through9": 160,
+      "clearPct": 2.67,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.33
+    },
+    {
+      "variant": "xuanEnergy1Skill_fu6_seal6",
+      "starter": "blood",
+      "clear": 14,
+      "through9": 183,
+      "clearPct": 4.67,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.27
+    },
+    {
+      "variant": "xuanEnergy1Skill_fu6_seal6",
+      "starter": "guard",
+      "clear": 11,
+      "through9": 194,
+      "clearPct": 3.67,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.21
+    },
+    {
+      "variant": "xuanEnergy1Skill_fu6_seal6",
+      "starter": "talisman",
+      "clear": 29,
+      "through9": 239,
+      "clearPct": 9.67,
+      "through9Pct": 79.67,
+      "meanCompletedIndexMetric": 13.86
+    },
+    {
+      "variant": "candidate_xuanEnergy1Skill_fu6_seal6_floor1",
+      "starter": "classic",
+      "clear": 7,
+      "through9": 160,
+      "clearPct": 2.33,
+      "through9Pct": 53.33,
+      "meanCompletedIndexMetric": 11.32
+    },
+    {
+      "variant": "candidate_xuanEnergy1Skill_fu6_seal6_floor1",
+      "starter": "blood",
+      "clear": 15,
+      "through9": 183,
+      "clearPct": 5,
+      "through9Pct": 61,
+      "meanCompletedIndexMetric": 11.28
+    },
+    {
+      "variant": "candidate_xuanEnergy1Skill_fu6_seal6_floor1",
+      "starter": "guard",
+      "clear": 10,
+      "through9": 194,
+      "clearPct": 3.33,
+      "through9Pct": 64.67,
+      "meanCompletedIndexMetric": 12.2
+    },
+    {
+      "variant": "candidate_xuanEnergy1Skill_fu6_seal6_floor1",
+      "starter": "talisman",
+      "clear": 14,
+      "through9": 227,
+      "clearPct": 4.67,
+      "through9Pct": 75.67,
+      "meanCompletedIndexMetric": 13.12
+    }
+  ]
+}

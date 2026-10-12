@@ -1,0 +1,7 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-872b4a45-9a6f-4cd0-9f79-dde2f4358d80.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/01-title-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected first-entry title design. Atmospheric moonlit watercolor black forest path, hanging warm lantern, fine gold border restraint. Large 黑森林 title upper middle and small DARK FOREST subtitle. Lower quarter EXACTLY TWO wide buttons: 开始征途 primary gold, 怎么玩 secondary muted blue. No save summary because no save exists, no continue button, no gear, encyclopedia or icons. No combat HUD. Comfortable lower thumb zone. Preserve open space around title.",
+  "id": "01-title",
+  "file": "01-title-v2"
+}

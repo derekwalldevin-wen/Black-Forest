@@ -1,0 +1,11 @@
+{
+  "id": "26-feedback-hurt",
+  "file": "26-feedback-hurt-v2",
+  "refs": [
+    "images/26-feedback-hurt.png"
+  ],
+  "prompt": "Edit only the five-card hand to make all5 cards visibly disabled during enemy turn: desaturate and subdue artwork and borders but retain legible exact labels, numeric costs1/1/1/0/1 and existing full rules. Preserve red impact -6, player42/70 shield0, enemy54/81 shield8 intent6, disabled敌方行动button and every other pixel. No blue or green impact.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-0301659c-c153-4c58-8e8f-a706771438ad.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/26-feedback-hurt-v2.png",
+  "mode": "built-in image_gen"
+}

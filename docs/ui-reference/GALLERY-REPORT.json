@@ -1,0 +1,194 @@
+{
+  "total": 46,
+  "available": 46,
+  "loadedImages": [
+    {
+      "id": "01-title",
+      "loaded": true
+    },
+    {
+      "id": "02-starter",
+      "loaded": true
+    },
+    {
+      "id": "03-combat-gothic",
+      "loaded": true
+    },
+    {
+      "id": "04-combat-shanhai",
+      "loaded": true
+    },
+    {
+      "id": "05-title-save",
+      "loaded": true
+    },
+    {
+      "id": "06-help",
+      "loaded": true
+    },
+    {
+      "id": "07-confirm",
+      "loaded": true
+    },
+    {
+      "id": "08-reward-gothic",
+      "loaded": true
+    },
+    {
+      "id": "09-reward-shanhai",
+      "loaded": true
+    },
+    {
+      "id": "10-relic-choice",
+      "loaded": true
+    },
+    {
+      "id": "11-reward-ready",
+      "loaded": true
+    },
+    {
+      "id": "12-event-gothic",
+      "loaded": true
+    },
+    {
+      "id": "13-event-shanhai",
+      "loaded": true
+    },
+    {
+      "id": "14-event-result",
+      "loaded": true
+    },
+    {
+      "id": "15-remove-card",
+      "loaded": true
+    },
+    {
+      "id": "16-event-disabled",
+      "loaded": true
+    },
+    {
+      "id": "17-contract-ember",
+      "loaded": true
+    },
+    {
+      "id": "18-contract-ash",
+      "loaded": true
+    },
+    {
+      "id": "19-forge",
+      "loaded": true
+    },
+    {
+      "id": "20-ascend",
+      "loaded": true
+    },
+    {
+      "id": "21-relic-tip",
+      "loaded": true
+    },
+    {
+      "id": "22-card-selected",
+      "loaded": true
+    },
+    {
+      "id": "23-card-denied",
+      "loaded": true
+    },
+    {
+      "id": "24-enemy-turn",
+      "loaded": true
+    },
+    {
+      "id": "25-feedback-block",
+      "loaded": true
+    },
+    {
+      "id": "26-feedback-hurt",
+      "loaded": true
+    },
+    {
+      "id": "27-feedback-heal",
+      "loaded": true
+    },
+    {
+      "id": "28-battle-banner",
+      "loaded": true
+    },
+    {
+      "id": "29-game-over",
+      "loaded": true
+    },
+    {
+      "id": "30-ending",
+      "loaded": true
+    },
+    {
+      "id": "31-loading",
+      "loaded": true
+    },
+    {
+      "id": "32-deck-browser",
+      "loaded": true
+    },
+    {
+      "id": "33-pause-settings",
+      "loaded": true
+    },
+    {
+      "id": "34-route",
+      "loaded": true
+    },
+    {
+      "id": "event-campfire",
+      "loaded": true
+    },
+    {
+      "id": "event-bone_pile",
+      "loaded": true
+    },
+    {
+      "id": "event-lost_lantern",
+      "loaded": true
+    },
+    {
+      "id": "event-black_market",
+      "loaded": true
+    },
+    {
+      "id": "event-ancient_stele",
+      "loaded": true
+    },
+    {
+      "id": "event-thorn_well",
+      "loaded": true
+    },
+    {
+      "id": "event-wolf_gaze",
+      "loaded": true
+    },
+    {
+      "id": "event-moss_shrine",
+      "loaded": true
+    },
+    {
+      "id": "event-nine_heads",
+      "loaded": true
+    },
+    {
+      "id": "event-bronze_step",
+      "loaded": true
+    },
+    {
+      "id": "event-blind_dance",
+      "loaded": true
+    },
+    {
+      "id": "event-baize_omen",
+      "loaded": true
+    }
+  ],
+  "dialogClosed": true,
+  "noHorizontalOverflow": true,
+  "errors": [],
+  "missing": []
+}

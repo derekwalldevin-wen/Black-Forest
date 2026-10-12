@@ -1,0 +1,113 @@
+{
+  "results": [
+    "16 enemy atlases / 64 state registrations",
+    "attack anticipation followed by exactly two damage settlements",
+    "guard cast and absorbed damage",
+    "FX objects reclaimed",
+    "blue full block; blue/red partial block; red damage; green actual healing; no false healing flash",
+    "death stops animation",
+    "next battle state resets",
+    "static fallback",
+    "reduced motion"
+  ],
+  "coverage": [
+    {
+      "art": "enemy-wolf",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-mushroom",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-witch",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-boar",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-alpha-wolf",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-bog-witch",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-forest-lord",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-nine-tail",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-lu-shu",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-qiongqi",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-xiangliu",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-fei",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-huodou",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-taotie",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-baize",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    },
+    {
+      "art": "enemy-dijiang",
+      "frames": 6,
+      "ground": 790,
+      "origin": 0.9230769230769231
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

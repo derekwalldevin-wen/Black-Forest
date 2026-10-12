@@ -1,0 +1,111 @@
+{
+  "tool": "tools/phase6b-lab.js",
+  "batch": "confirm",
+  "gamesPerArm": 1000,
+  "seedFormula": "((i + seedBase*7919) * 2654435761) >>> 0 || 1",
+  "seedBase": 1,
+  "strategies": {
+    "contract": "不发放（suppressContractNodes）",
+    "forge": "模拟器默认策略，各臂一致",
+    "ascension": "模拟器默认策略，各臂一致",
+    "reward": "模拟器默认策略，各臂一致"
+  },
+  "sourceHashes": {
+    "tools/simulate.js": "c74f56fe054a1861763808360fb3b5857f2cc2eb71bde8070b6f7931dd38d6c9",
+    "src/core/cards.js": "8c5151a3c258fdde67b0b31603c191267416f85b0159e8cba1477543365f7b00",
+    "src/core/combat.js": "a7995e6fe8c7a3b1a351b513ea87e3fce6bf4ed1228c99b1926df3ce4ed77d26",
+    "src/core/run.js": "6d8a5f04aeee36178061d42f2ad552149894b3d48326f8529e1e206a68b62321",
+    "src/core/events.js": "27d23cc9c6b28a993a62b89fadb38e2488671bd6dbb7ebc5ace2681783edff7d"
+  },
+  "combos": [
+    {
+      "key": "values+floor+energy",
+      "levers": {
+        "values": true,
+        "floor": true,
+        "energy": true
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.225,
+          "clearCI": [
+            0.20019895513650388,
+            0.25190576203153553
+          ],
+          "survive9": 0.653,
+          "survive9CI": [
+            0.6229619706499256,
+            0.6818670412529471
+          ],
+          "meanReached": 13.772,
+          "capped": 6
+        },
+        "blood": {
+          "clear": 0.257,
+          "clearCI": [
+            0.23088201740015224,
+            0.28497778722469713
+          ],
+          "survive9": 0.774,
+          "survive9CI": [
+            0.7470576210167089,
+            0.7988453153322265
+          ],
+          "meanReached": 15.07,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.224,
+          "clearCI": [
+            0.19924343665543648,
+            0.2508689340295776
+          ],
+          "survive9": 0.688,
+          "survive9CI": [
+            0.6586108248948567,
+            0.7159503139139017
+          ],
+          "meanReached": 14.239,
+          "capped": 4
+        },
+        "talisman": {
+          "clear": 0.277,
+          "clearCI": [
+            0.2501564903422309,
+            0.30555024394312474
+          ],
+          "survive9": 0.727,
+          "survive9CI": [
+            0.6985586005578709,
+            0.7537040510888747
+          ],
+          "meanReached": 14.576,
+          "capped": 4
+        }
+      },
+      "gate": {
+        "survive9pp": 8.600000000000009,
+        "clearpp": 5.300000000000002,
+        "reached": 0.8309999999999995
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.277,
+        "worstP": 0.224,
+        "wins": 134,
+        "losses": 81,
+        "ties": 785,
+        "p": 0.0003671605266486033,
+        "distinguishable": true
+      }
+    }
+  ],
+  "passingCombos": []
+}

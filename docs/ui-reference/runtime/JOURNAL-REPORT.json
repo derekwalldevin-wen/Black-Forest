@@ -1,0 +1,313 @@
+{
+  "checks": [
+    "actual deck/filter pointers",
+    "empty filter",
+    "clock frozen",
+    "resume and Escape",
+    "settings persisted",
+    "route rendered",
+    "all selected card rules within bounds",
+    "multiple deck pages and card detail",
+    "populated power and talisman filters",
+    "320 width actual touch and no horizontal overflow"
+  ],
+  "cardBounds": [
+    {
+      "id": "strike",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "defend",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "quick_jab",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "dagger_fan",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "heavy_blow",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "iron_wall",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "riposte",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "blood_pact",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "focus",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "poison_dart",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "shield_bash",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "wolf_fang",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "drain_life",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "sap_flesh",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "dark_pact",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "thorns_armor",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "chain_spark",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "moonlight",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "moon_edge",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "blood_moon",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "soul_drain",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "eternal_night",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "hunters_mark",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "thorn_ring",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "fu_paper",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "cinnabar",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "seal_gate",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "xuan_ji",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "thunder_word",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "nine_head",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "miasma",
+      "height": 48,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "spirit_gather",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "edict",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "taiji",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "famine",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "qingqiu_seal",
+      "height": 154,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    },
+    {
+      "id": "bronze_vessel",
+      "height": 101,
+      "available": 192,
+      "font": 40,
+      "top": 1140,
+      "bottom": 1680
+    }
+  ],
+  "errors": []
+}

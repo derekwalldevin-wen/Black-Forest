@@ -1,0 +1,28 @@
+{
+  "mode": "user-authorized native font correction",
+  "id": "09-reward-shanhai",
+  "input": "docs/ui-reference/images/09-reward-shanhai-v4.png",
+  "output": "docs/ui-reference/images/09-reward-shanhai-v5.png",
+  "text": "玄玑",
+  "size": 34,
+  "weight": "bold",
+  "box": {
+    "left": 625,
+    "top": 830,
+    "width": 120,
+    "height": 42
+  },
+  "erase": {
+    "left": 25,
+    "top": 0,
+    "width": 76,
+    "height": 40
+  },
+  "font": "SimSun",
+  "codepoints": [
+    "U+7384",
+    "U+7391"
+  ],
+  "outsideChanges": 0,
+  "insideChanges": 2601
+}

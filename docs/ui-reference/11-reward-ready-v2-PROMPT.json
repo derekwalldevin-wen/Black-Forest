@@ -1,0 +1,7 @@
+{
+  "id": "11-reward-ready",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-cb74963a-343f-4c17-8af0-c82c008c0638.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/11-reward-ready-v2.png",
+  "prompt": "Use-case ui-mockup. One complete portrait 9:16 game screen reference, no device bezel. 黑森林 watercolor dark fantasy card roguelike, indigo #12101a, restrained antique gold #b08d3f borders, ivory #e8dcc0, parchment card rule areas. Clean practical composition, crisp standard printed simplified Chinese. No invented controls, flavor quotation boxes, logos, signatures, pseudo-text or watermark. Exact text, numeric rules and state below are mandatory. Finished gothic reward screen. Header 第一章 coin68. Title 战利品已领取. Two compact completion rows: 卡牌已加入牌组 with 重击 illustration; 遗物已获得 with iron ring icon titled 铁誓指环. Both checked. Below text 继续征途. Single large enabled gold 继续 button. No competing cards, skip, enemy, health HUD or 下一场战斗 promise.",
+  "mode": "built-in image_gen"
+}

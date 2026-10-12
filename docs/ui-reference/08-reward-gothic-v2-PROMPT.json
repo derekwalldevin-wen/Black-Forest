@@ -1,0 +1,8 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-6c7175ae-1ee8-475b-9718-7c5e2f3feb72.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/08-reward-gothic-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected gothic reward page, quiet watercolor forest treasure clearing. Header 第一章, 68金币. Title 战利品, subtitle 选择一张牌加入牌组, small +22金币 badge. Three complete legible cards in triangular layout (one centered upper, two below side-by-side): 劈砍 cost1 text 造成6点伤害; 格挡 cost1 text 获得5点格挡; 凝神 cost1 text 抽2张牌. Parchment art faces with slash, shield, moon meditation illustrations. Footer 跳过 and disabled 继续. No enemy, no player health HUD, no gear, no other cards, no invented additional rules.",
+  "id": "08-reward-gothic",
+  "file": "08-reward-gothic-v2",
+  "refs": []
+}

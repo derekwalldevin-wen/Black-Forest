@@ -1,0 +1,11 @@
+{
+  "id": "28-battle-banner",
+  "file": "28-battle-banner-v2",
+  "refs": [
+    "images/28-battle-banner.png"
+  ],
+  "prompt": "This source incorrectly has two stacked mini screens. Recompose ONLY the lower VICTORY screen as ONE complete 9:16 portrait screen filling whole image. Discard the upper ordinary combat panel completely. Keep gothic watercolor forest, victorygoldmotes enemygone, 胜利 banner, enemy emptyHP0/81, no intent, player48/70 shield6, relic icons/header, five disabled cards with original correct labels costs and descriptions, bottomdisabled结束回合 andenergy2/3. Entire single screen, no duplicate header, no comparison strip or split panels. HUD proportions similar to a normal full portrait phone game.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-aae648b2-ed37-4a5c-be5f-41cf384ac7b5.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/28-battle-banner-v2.png",
+  "mode": "built-in image_gen"
+}

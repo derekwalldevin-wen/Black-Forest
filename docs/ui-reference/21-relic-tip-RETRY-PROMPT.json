@@ -1,0 +1,6 @@
+{
+  "id": "21-relic-tip",
+  "mode": "built-in image_gen",
+  "diagnostic": "Fresh call without referenced images, after confirmed termination of old executions",
+  "prompt": "Create one complete 9:16 portrait mobile UI design reference for Chinese dark fantasy card roguelike 黑森林. Gothic watercolor forest, skeletal antler forest lord standing in upper half, antique gold thin frames, deep indigo panels, ivory Chinese text, parchment playing cards. Top header 第三章 · 永夜王座, 回合4, coin120. Relic strip contains lantern, feather, ring, rose, key icons. A small local tooltip DIRECTLY BELOW RING in upper relic strip shows title 铁誓指环 and exact description 每场战斗开始时，获得6点格挡。 Tooltip does not cover enemy intent12 at upper right. Enemy name 黑暗森林之主, HP54/81, blue shield8 beside HP. Lower player skull avatar, HP48/70, blue shield6 on same baseline to right. Five cards remain visible: 劈砍1 造成6点伤害; 格挡1 获得5点格挡; 凝神1 抽2张牌; 血契0 失去3点生命，抽2张牌; 疾刺1 造成4点伤害，抽1张牌. Bottom action points 行动力2/3, button 结束回合, draw pile12 discard5. Tooltip is small local overlay, no full-screen dimming, no close or confirm button. All text clear correct simplified Chinese. No phone bezel or watermark."
+}

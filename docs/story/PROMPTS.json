@@ -1,0 +1,103 @@
+{
+  "mode": "builtin-imagegen",
+  "prompts": [
+    {
+      "key": "forest",
+      "prompt": "Use case: illustration-story. Asset type: finished in-game narrative illustration, opaque 3:2 landscape, 1536x1024. Input image is character identity reference only: keep this same young adult human woman's short chestnut hair with pale streak, indigo cloak with red lining, bronze cloud pendant and brass lantern. Generate a new complete scene. Scene: An abandoned village edge in a misty Gothic forest. Central young human woman holds a blank folded letter beside a brass lantern; blank wooden name plaques on empty doorways, one scarlet thread leading toward the trees. Intimate and ominous, warm lantern contrasts cool indigo mist. Style: richly textured hand-painted dark fairytale watercolor and ink, restrained carved bronze detail, cinematic painterly lighting; palette #12101a, #b08d3f, aged parchment, scarlet. Composition: main clues and traveler inside central 65%, safe margins top/bottom 12%, readable silhouette at 320px mobile width. Artwork only, no UI, no frame, no letters, no numbers, no Chinese writing, no legible marks, no watermark. Not a sprite sheet."
+    },
+    {
+      "key": "marsh",
+      "prompt": "Use case: illustration-story. Asset type: finished in-game narrative illustration, opaque 3:2 landscape, 1536x1024. Input image is character identity reference only: keep this same young adult human woman's short chestnut hair with pale streak, indigo cloak with red lining, bronze cloud pendant and brass lantern. Generate a new complete scene. Scene: A black-water swamp with a ruined witch's cottage, a loom weaving red threads and blank cloth ribbons between dead trees. Central young human traveler raises her lantern over the water, discovering a silver needle caught on a ribbon. Secrets rather than gore. Gothic watercolor moss and moonlight. Style: richly textured hand-painted dark fairytale watercolor and ink, restrained carved bronze detail, cinematic painterly lighting; palette #12101a, #b08d3f, aged parchment, scarlet. Composition: main clues and traveler inside central 65%, safe margins top/bottom 12%, readable silhouette at 320px mobile width. Artwork only, no UI, no frame, no letters, no numbers, no Chinese writing, no legible marks, no watermark. Not a sprite sheet."
+    },
+    {
+      "key": "roots",
+      "prompt": "Use case: illustration-story. Asset type: finished in-game narrative illustration, opaque 3:2 landscape, 1536x1024. Input image is character identity reference only: keep this same young adult human woman's short chestnut hair with pale streak, indigo cloak with red lining, bronze cloud pendant and brass lantern. Generate a new complete scene. Scene: A monumental living tree throne cracked open, thick roots framing a stairway descending into ancient oxidized bronze ruins. Central small human traveler with lantern at the threshold; stag-antler silhouette fused with the tree in deep background, fallen unmarked bronze name plaques. Gothic forest transitions into bronze/cinnabar history. Style: richly textured hand-painted dark fairytale watercolor and ink, restrained carved bronze detail, cinematic painterly lighting; palette #12101a, #b08d3f, aged parchment, scarlet. Composition: main clues and traveler inside central 65%, safe margins top/bottom 12%, readable silhouette at 320px mobile width. Artwork only, no UI, no frame, no letters, no numbers, no Chinese writing, no legible marks, no watermark. Not a sprite sheet."
+    },
+    {
+      "key": "qingqiu",
+      "prompt": "Use case: illustration-story. Asset type: finished in-game narrative illustration, opaque 3:2 landscape, 1536x1024. Input image is character identity reference only: keep this same young adult human woman's short chestnut hair with pale streak, indigo cloak with red lining, bronze cloud pendant and brass lantern. Generate a new complete scene. Scene: Ancient Eastern bronze terraces of Qingqiu rising beneath pale peach blossoms, half-buried unmarked jade name tablets and bronze bells. Central human traveler in the same indigo cloak and warm lantern, thin red thread across the terraces. One small white fox silhouette far away. Ink watercolor, jade mist, cinnabar and antique gold. Style: richly textured hand-painted dark fairytale watercolor and ink, restrained carved bronze detail, cinematic painterly lighting; palette #12101a, #b08d3f, aged parchment, scarlet. Composition: main clues and traveler inside central 65%, safe margins top/bottom 12%, readable silhouette at 320px mobile width. Artwork only, no UI, no frame, no letters, no numbers, no Chinese writing, no legible marks, no watermark. Not a sprite sheet."
+    },
+    {
+      "key": "ashes",
+      "prompt": "Use case: illustration-story. Asset type: finished game narrative illustration, opaque 3:2 landscape 1536x1024. Input image is identity reference only; create a new complete scene and keep the same young adult human woman with short chestnut hair and pale streak, indigo cloak/red lining, bronze cloud pendant, practical brown outfit and brass lantern. Scene: Eastern ancient toxic marsh and abandoned ritual hearth. Young human traveler kneels at center using a red thread to join blank jade tablets and a worn notebook beside a brass lantern. Blue-green pools and ashen charred name plaques, a small warm fire repelled at a respectful distance. Quiet act of rescuing ordinary memories, no gore. Style: textured hand-painted dark fairytale watercolor and Eastern ink, carved bronze, colors #12101a, #b08d3f, jade teal, cinnabar, parchment; painterly cinematic lighting. Composition: center 65% safe subject area, 12% vertical safe padding, clear when reduced to mobile UI. Artwork only; no UI, no frames, no writing, no letters/numbers, no Chinese glyphs, no watermark. No skull protagonist."
+    },
+    {
+      "key": "gate",
+      "prompt": "Use case: illustration-story. Asset type: finished game narrative illustration, opaque 3:2 landscape 1536x1024. Input image is identity reference only; create a new complete scene and keep the same young adult human woman with short chestnut hair and pale streak, indigo cloak/red lining, bronze cloud pendant, practical brown outfit and brass lantern. Scene: The final threshold of an ancient bronze realm, huge circular bronze gate surrounded by suspended empty name tablets, dark jade-black void with four elegant bronze arch ribs, steps and bell motifs. Central small human traveler in indigo cloak holds a glowing brass lantern, red threads join the hanging tablets into a constellation. No monsters or faces in gate, solemn hopeful painterly ink watercolor. Style: textured hand-painted dark fairytale watercolor and Eastern ink, carved bronze, colors #12101a, #b08d3f, jade teal, cinnabar, parchment; painterly cinematic lighting. Composition: center 65% safe subject area, 12% vertical safe padding, clear when reduced to mobile UI. Artwork only; no UI, no frames, no writing, no letters/numbers, no Chinese glyphs, no watermark. No skull protagonist."
+    },
+    {
+      "key": "ending-home",
+      "prompt": "Transform the provided game illustration into the other ending of the SAME story. Preserve the exact same young adult human woman, face, short chestnut hair and pale streak, indigo cloak with dark red lining, bronze pendant, practical brown outfit; preserve the richly textured dark fairytale watercolor/ink painting style. Change the pose and entire setting: hopeful quiet dawn at the entrance to a small forest village. The woman is crouching beside a low stone, setting her ornate brass lantern down with one hand; her other hand gently releases thin red threads. Threads become subtle trails of golden light toward several warm cottage windows. A small white cat sits at a nearby doorway. Old timber houses, one repaired roof, soft village mist and gentle amber sunrise. Her face is relieved and tender. The story is that remembered lives are returning to their homes and she is free to rest. There are no other major characters. No bridge or giant bronze city in this ending. Landscape 3:2 1536x1024, opaque complete painting; main subject in central 65%, safe margins top and bottom 12%. Artwork only, no text, labels, letters, numbers, UI, borders, watermark, skulls, or supernatural human apparitions."
+    },
+    {
+      "key": "ending-watch",
+      "prompt": "Use case: finished illustration for a narrative card game ending. Reference image 1 defines the exact human heroine: short chestnut hair with a pale streak, indigo cloak with dark red lining, bronze cloud pendant, practical brown clothes, brass lantern. Reference image 2 defines the existing hand-painted dark fairytale watercolor/ink style and village architecture. Create a new scene featuring the SAME woman, not a copy of the reference layout. Opaque landscape image, 3:2, 1536x1024. Rich handmade textures, restrained antique bronze, cool indigo #12101a and warm ochre gold #b08d3f, scarlet thread. Important subjects in central 65%, top and bottom 12% safe margins; clear at small mobile size. Artwork only: no frame, UI, letters, numbers, readable glyphs, logos, watermarks, or panels. No skull heroine, no physical resurrection, no ghost mother. Scene: hopeful bittersweet dawn on an OPEN ROAD between the two realms. The same heroine walks forward freely across a weathered stone bridge, carrying her brass lantern. A small worn notebook and unmarked jade tablets are secured at her belt with red thread. Behind her, ancient oxidized bronze terraces and peach branches recede into jade mist; ahead, a modest forest village with several welcoming lit windows. Thin red thread and tiny warm lights suggest paths to individual homes. Her cloak catches a gentle breeze, her face calm and determined. Sunrise opens the road; the bronze gateway behind her is open, never imprisoning her. She is delivering memories door to door by choice, can return home and rest. A different composition from the home ending: standing walking traveler, long traversable road, connection between realms. One coherent cinematic landscape."
+    }
+  ],
+  "sources": [
+    {
+      "key": "forest",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-1498a8aa-54df-469e-a1b0-0cdec8dadf3c.png"
+    },
+    {
+      "key": "marsh",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-5c990264-7c0e-406e-b764-675733a315b6.png"
+    },
+    {
+      "key": "roots",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-8365e9f0-f9a1-475e-9769-ed4183901740.png"
+    },
+    {
+      "key": "qingqiu",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-c5d45884-59f1-477f-8614-44b2ac68bd47.png"
+    },
+    {
+      "key": "ashes",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-bec5af1a-3d01-4f75-a89d-bb5a1090fe62.png"
+    },
+    {
+      "key": "gate",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-138f1869-d1c4-44cf-a9d2-10df09308788.png"
+    },
+    {
+      "key": "ending-home",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-a5b45751-17d0-4503-ac8c-a42f19cbc3d3.png"
+    },
+    {
+      "key": "ending-watch",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-5d8717b6-bf15-45e4-8c54-83a7602e0d4b.png"
+    }
+  ],
+  "referencesByKey": {
+    "forest": [
+      "assets/ui/hero-traveler-source-v1.png"
+    ],
+    "marsh": [
+      "assets/ui/hero-traveler-source-v1.png"
+    ],
+    "roots": [
+      "assets/ui/hero-traveler-source-v1.png"
+    ],
+    "qingqiu": [
+      "assets/ui/hero-traveler-source-v1.png"
+    ],
+    "ashes": [
+      "assets/ui/hero-traveler-source-v1.png"
+    ],
+    "gate": [
+      "assets/ui/hero-traveler-source-v1.png"
+    ],
+    "ending-home": [
+      "docs/story/source/ending-watch-v1.png"
+    ],
+    "ending-watch": [
+      "assets/ui/hero-traveler-source-v1.png",
+      "assets/story/forest-v1.webp"
+    ]
+  },
+  "promptHistory": "ORIGINAL-PENDING-PROMPTS.json",
+  "homePromptHistory": [
+    "ENDING-PROMPTS.json",
+    "HOME-CONSISTENCY-PROMPT.json"
+  ]
+}

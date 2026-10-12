@@ -1,0 +1,30 @@
+{
+  "checks": [
+    "first-entry title uses actual full-body traveler asset",
+    "390/320 widths: human avatar, 44px menu touch area, label/number spacing, both resource modes, depleted resources and resonance; real menu/deck/route taps and pause clock",
+    "14 relics + 2 contracts collapse without overlapping menu; all 16 accessible through real four-page inventory, complete rules, no inventory mutations"
+  ],
+  "screens": [
+    "title-traveler.png",
+    "combat-390-gothic.png",
+    "menu-390-gothic.png",
+    "depleted-390-gothic.png",
+    "combat-390-shanhai.png",
+    "menu-390-shanhai.png",
+    "depleted-390-shanhai.png",
+    "combat-320-gothic.png",
+    "menu-320-gothic.png",
+    "depleted-320-gothic.png",
+    "combat-320-shanhai.png",
+    "menu-320-shanhai.png",
+    "depleted-320-shanhai.png",
+    "many-relics.png",
+    "inventory-1.png",
+    "inventory-2.png",
+    "inventory-3.png",
+    "inventory-4.png",
+    "title-save.png"
+  ],
+  "errors": [],
+  "warnings": []
+}

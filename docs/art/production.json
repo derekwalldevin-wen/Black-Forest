@@ -1,0 +1,501 @@
+{
+  "approved": true,
+  "realms": [
+    "gothic",
+    "shanhai"
+  ],
+  "keys": [
+    "sword",
+    "shield",
+    "dagger",
+    "blood",
+    "moon",
+    "venom",
+    "fang",
+    "thorns",
+    "spark",
+    "talisman",
+    "thunder",
+    "ring",
+    "cloud",
+    "lens",
+    "eye",
+    "gem",
+    "vial",
+    "lotus"
+  ],
+  "enemies": [
+    "dijiang",
+    "forest-lord",
+    "alpha-wolf",
+    "bog-witch",
+    "qiongqi",
+    "huodou",
+    "xiangliu",
+    "taotie",
+    "baize"
+  ],
+  "cardBacks": [
+    "gothic",
+    "shanhai"
+  ],
+  "records": [
+    {
+      "filename": "art-gothic-dagger.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-c3a3c0a9-ffb3-43bf-b877-19a55f275001.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: Three daggers fanned into a triangular strike pattern, one leading blade and two trailing blades, old-gold small crossguards, bone-white cold highlights; only rear two have subtle painted motion trails. All three daggers fully visible, a single compact centered cluster.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "dagger"
+    },
+    {
+      "filename": "art-gothic-venom.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-598563d5-a40e-44ab-aeaa-4febf41d1949.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One dark iron barbed poison dart pointing diagonally downward right, muted sickly olive-green ichor on its tip, one falling green droplet above a curled dark leaf with a small burnt hole. Compact centered object group, very restrained green glow.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "venom"
+    },
+    {
+      "filename": "art-gothic-fang.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-324b511c-8433-4b44-8d0c-27928bab2d2d.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: A wolf-like snout baring exactly two long curved bone-white upper fangs, wet black nose, tiny saliva strands catching cold moonlight. Close-up snout only, eyes and rest of body omitted. Bold menacing centered jaw silhouette, entire nose and fang tips inside safe area.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "fang"
+    },
+    {
+      "filename": "art-gothic-thorns.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-4e0f2294-b754-4f4f-a066-8d7c246f9718.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: A single coil of black thorny brambles curled into a protective spiral, a few dried dark-red berries between the thorns, varied sharp thorns break the outline. One centered compact spiral, old ink-black twigs with subtle violet moonlight.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "thorns"
+    },
+    {
+      "filename": "art-gothic-spark.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-f711a62c-cc24-4964-8efb-fe190db290fe.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: A single jagged chain of restrained pale blue-white electric arcs on a diagonal from upper left to lower right, arcs shaped as linked energy rather than metal chain links, subtle small sparks at both ends. Compact central lightning shape, dark background dominates, no neon.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "spark"
+    },
+    {
+      "filename": "art-gothic-talisman.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-8da24d4a-7c4c-4e7e-9323-9c36d89f4d1a.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One folded aged bone-yellow paper talisman hanging vertically, lower end curling, crisp folded ridges, frayed edges, a tiny vermilion fabric tie. The paper must be completely blank: no marks, symbols, calligraphy or writing of any kind. Centered compact shape, faint warm old-gold light.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "talisman"
+    },
+    {
+      "filename": "art-gothic-thunder.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-024d79f6-15a4-4730-a623-8232ed3d8663.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One angular branching thunderbolt made of tarnished old-gold bronze relief, one main zigzag splitting into two smaller sharp forks, faint pale electric rim light. Pure geometric lightning shape, no writing or rune symbols. Centered compact diagonal composition.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "thunder"
+    },
+    {
+      "filename": "art-gothic-ring.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-14a93114-d58f-47ab-bc8e-1596c3c7c6ed.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: A single pale jade ring standing upright, slightly angled to show its thickness, cold moonlit translucence, fine old-gold inner bevel; delicate faint orbit lines loop around it like an armillary sphere. One centered compact ring.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "ring"
+    },
+    {
+      "filename": "art-gothic-cloud.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-7281755f-b2b3-49aa-965e-274aaba12f20.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: A low rolling bank of muted sickly olive-green vapour creeping over darkness, partly dissolved soft edges, a few dim indistinct shapes within the fog. One compact central vapour bank, atmospheric yet readable silhouette, very restrained luminescence.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "cloud"
+    },
+    {
+      "filename": "art-gothic-lens.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-b330942c-488b-446b-b70a-f85c848a6149.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One faceted clear crystal lens gathering pale gray-violet light into a tiny bright central focus, thin painted rays bending through its transparent facets. One centered compact tilted crystal disk, faint old-gold housing edge, restrained light.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "lens"
+    },
+    {
+      "filename": "art-gothic-eye.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-951aa141-8b82-49b1-a8a3-2bdf117cd974.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One large supernatural eye floating in black-violet space, no face or skin surrounding it. Slender vertical slit pupil, muted old-gold iris, pale cracked-ice radial pattern confined around iris, bone-white sclera in deep shadows. Single centered compact almond-shaped eye.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "eye"
+    },
+    {
+      "filename": "art-gothic-gem.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-2f9eff8d-f21a-4eb2-9bf7-18328fc7b65d.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One faceted old-gold stone suspended in darkness, split by a clear dark seam down the middle; left half faint warm amber glow and right half cold bone-white rim light. Centered compact roughly oval gemstone, readable facets, dark surrounding space.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "gem"
+    },
+    {
+      "filename": "art-gothic-vial.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-61239a26-bc89-4082-b6dc-02cc1bae01f1.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One small ornate antique bronze wine vessel, a rounded belly and narrow pouring lip, two taotie mask handles, heavy dark patina, dark wine inside; a single dark-red droplet runs down its side. Centered compact vessel, old-gold highlights, no text on its surface.",
+      "reference": "Z:\\00-游戏\\portrait-card-game\\docs\\art\\source\\art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "vial"
+    },
+    {
+      "filename": "art-gothic-lotus.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-42a3113e-ca66-40d1-be02-a90dc2c6b438.png",
+      "prompt": "Use case: stylized-concept. Asset: ONE finished opaque card-window illustration for Dark Forest, gothic realm, exact 1536x1024 landscape 3:2. Input image 1 is STYLE REFERENCE ONLY: match the approved delicate watercolor paper grain, strong dark ink contours, violet-indigo mist, old-gold details and restrained bone-white highlights. Do not retain its sword. Hand-painted dark fairy tale; one bold centered subject group, readable at 103px. Entire important silhouette contained in central 70% width and height, at least 15% empty dark background at every edge; survives central COVER cropping to 1.21:1 and 1.85:1. Full bleed opaque background of low-key indigo mist and only faint distant bare thorn branches at outer edges. Strict muted palette #12101a #1e1928 #e8dcc0 #c8a86a #8c2f39 #4a3f5e, deep shadows and no broad highlights. No text, letters, Chinese characters, numbers, calligraphy, pseudo-writing, signature, watermark, borders, frames, card UI, hands or people. No photo, 3D, CGI, anime, chibi, neon, oversaturation, clutter or impasto. Subject: One pale bone-white lotus bloom opening on dark water, elegant layered petals edged with cool moonlight, exactly nine small faint fox-fire wisps curling in a loose arc around it. Compact centered bloom and subdued dim wisps, dark indigo ripples, no animals.",
+      "reference": "Z:\\00-游戏\\portrait-card-game\\docs\\art\\source\\art-gothic-sword.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "lotus"
+    },
+    {
+      "filename": "art-gothic-venom.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-946849b2-84a0-4740-a806-c2b10cb7dfa6.png",
+      "prompt": "Precisely edit this finished illustration: shrink the complete poison dart, its falling droplet and its leaf together to 82% of their current size, centered in the image. Preserve the exact designs, diagonal orientation, colors, ink, watercolor grain, light and background. Entire group must fit inside x=340..1196 and y=165..850. Fill freed space naturally with the same dark violet mist. No new objects, no text, frame, UI. Preserve 1536x1024 exact 3:2 and opaque background. Purpose is safe centered card-window cropping; highest feather tip must have at least 165px dark background above it.",
+      "reference": "Z:\\00-游戏\\portrait-card-game\\docs\\art\\source\\art-gothic-venom.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "venom",
+      "revision": 1
+    },
+    {
+      "filename": "art-gothic-thunder.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-780c8cce-26a8-46f9-96d3-342787716193.png",
+      "prompt": "Precisely edit this completed lightning illustration. Shrink the entire bronze lightning object and its faint halo to 82% of current size, centered at image center. Keep exactly its fork shapes, object design, diagonal angle, watercolor ink style, colors and background. Complete silhouette must be inside x=350..1186 y=165..850. Fill freed space with matching dark violet mist. Keep opaque landscape 1536x1024. No new objects, no text or frames. Highest tip needs 165px clear space above it.",
+      "reference": "art-gothic-thunder.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "thunder",
+      "revision": 1
+    },
+    {
+      "filename": "art-gothic-lotus.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-ec2d2c98-3d60-45b3-89b1-ca2e84387788.png",
+      "prompt": "Precisely edit this lotus illustration: there are currently EIGHT visible fox-fire wisps. Add exactly ONE matching small faint fox-fire wisp in the lower-right gap of the arc, near x=990 y=650 above the water ripples. Result must have exactly NINE distinct, countable fox-fire wisps. Preserve all eight existing wisps, the lotus flower, ripples, background, palette, lighting, scale and watercolor ink style. No other changes. Opaque 1536x1024 landscape 3:2, no text, numbers or border.",
+      "reference": "art-gothic-lotus.png",
+      "kind": "card",
+      "realm": "gothic",
+      "key": "lotus",
+      "revision": 1
+    },
+    {
+      "filename": "art-shanhai-sword.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-5993cf66-6a77-4c76-b628-8929c0b7af8e.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same diagonal short sword and its crescent trail, with identical pose and silhouette; replace sword metal with ritual bronze, old-gold taotie-mask guard details and subtle cloud-thunder inlay.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "sword"
+    },
+    {
+      "filename": "art-shanhai-shield.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-3917b6b5-1134-4c04-9dad-f5d6925371c2.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same ROUND battered shield, angle, crack and central boss; bronze ritual shield with aged ochre metal, subdued patina and raised cloud-thunder engravings; never convert to square. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-shield.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "shield"
+    },
+    {
+      "filename": "art-shanhai-dagger.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-0b5a99b7-deb1-46e8-8ca8-155cf1d5d547.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep EXACTLY three daggers in their same fan formation and positions, replace metal and hilt details with archaic bronze and cinnabar wrappings. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-dagger.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "dagger"
+    },
+    {
+      "filename": "art-shanhai-blood.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-60430675-da80-465e-8907-5ad7bfd36c2a.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the exact dark red teardrop and blood crescent at identical size and positions, with cinnabar-red lacquer sheen on ink-black silk surroundings. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-blood.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "blood"
+    },
+    {
+      "filename": "art-shanhai-moon.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-d433f663-ade8-43f7-808b-8ad4bd39021d.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same moon disk, drifting clouds, halo and dead leaves at identical positions; render with silk-white and ochre ink-wash, cinnabar-toned leaves, no frame or stamp. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-moon.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "moon"
+    },
+    {
+      "filename": "art-shanhai-venom.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-862ba737-757f-491c-9c30-b491afd3eadd.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep dart, single poison droplet and curled leaf at identical positions; archaic bronze barb and cinnabar binding, muted patina-green poison. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-venom.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "venom"
+    },
+    {
+      "filename": "art-shanhai-fang.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-863d5711-0612-4316-9c96-44769b9fdfbb.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the exact two large upper fangs and nose/jaw silhouette, no eyes or extra head. Ancient beast with lacquer-black muzzle, silk-white fangs and faint bronze-scar cloud patterns. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-fang.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "fang"
+    },
+    {
+      "filename": "art-shanhai-thorns.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-58accc03-2606-4373-9ce5-eee86bb2e52a.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep identical single bramble spiral and berry placement; lacquer-black woody coil with muted ochre-bronze edge glints, cinnabar berries. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-thorns.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "thorns"
+    },
+    {
+      "filename": "art-shanhai-spark.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-2ef2aa8b-ff2c-4e35-bc31-ef0c4c0dc795.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same diagonal linked electricity chain silhouette; silk-white and pale ochre arcs with tiny subdued cinnabar sparks, no new metal chain. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-spark.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "spark"
+    },
+    {
+      "filename": "art-shanhai-talisman.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-93f4b711-850e-45f6-9761-03f2d39278df.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same folded blank paper silhouette, curl and tie; aged silk-white ritual paper, cinnabar tie and bronze loop details. Paper completely blank, NO strokes, symbols or pseudo-writing. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-talisman.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "talisman"
+    },
+    {
+      "filename": "art-shanhai-thunder.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-814efe2f-ebfd-408e-9ed3-b0aca4ef8192.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same branching angular lightning-object silhouette and exact fork count, aged bronze relief with subtle cloud-thunder surface patterns and restrained pale ochre edge glow. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-thunder.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "thunder"
+    },
+    {
+      "filename": "art-shanhai-ring.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-e0ee2b2c-681e-4169-b30d-5906a27aa8b6.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same upright jade ring and orbit lines, jade pale silk-white with small bronze ritual cloud-scroll details, tiny cinnabar inlays. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-ring.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "ring"
+    },
+    {
+      "filename": "art-shanhai-cloud.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-ff91ed38-e4a7-4263-88e7-07472da02193.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same central vapour-bank shape and dark hinted shapes, desaturated patina-green fog rendered in heavy ink and delicate silk washes; all glow restrained. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-cloud.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "cloud"
+    },
+    {
+      "filename": "art-shanhai-lens.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-38e488de-2715-445b-8d92-49f5f9475221.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the same crystal lens angle, faceted disk, central focus and ray geometry; old bronze ritual mounting with archaic cloud-scroll relief, faint silk-white light. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-lens.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "lens"
+    },
+    {
+      "filename": "art-shanhai-eye.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-68aa687e-d030-4de9-ab9c-a27570423d3b.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the exact single almond eye, slit pupil and surrounding object's silhouette; silk-white sclera, muted ochre iris, lacquer-black pupil, aged bronze cloud-thunder metal details. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-eye.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "eye"
+    },
+    {
+      "filename": "art-shanhai-gem.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-d0b28e7a-fc87-4801-b9a3-c47a2985884c.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep identical split faceted oval stone and central dark seam; ochre bronze-gold warmth on left, silk-white cold facets right, unlettered cinnabar inlays. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-gem.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "gem"
+    },
+    {
+      "filename": "art-shanhai-vial.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-a9f4ad0c-8996-41d3-9655-2065805064e2.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep the exact vessel form, pouring lip, two mask handles and single dark wine drop; authentic weathered ritual bronze with subdued patina and taotie/cloud-thunder relief. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-vial.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "vial"
+    },
+    {
+      "filename": "art-shanhai-lotus.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-36436d3e-df6a-44e5-ba02-c1abd43628fa.png",
+      "prompt": "Use case: style-transfer. Asset: ONE opaque Dark Forest shanhai card-window illustration, exact 1536x1024 landscape 3:2. Input image 1 is the corresponding approved gothic illustration and EDIT TARGET. Preserve its subject identity, object count, exact composition, orientation, proportions, position, scale and crop-safe silhouette. Change only material, ornament language, palette and background into ancient Chinese bronze ritual art: heavy precise dark ink contours, Dunhuang mural linework, muted ochre bronze, subdued cinnabar, silk-white highlights, aged silk texture, deep ink-black shadows. STRICT palette #0d0e0d #1d1a15 #e2d9c0 #b08d3f #8a2b28 #5c4a30 with very small muted patina accents. Replace gothic thorns and castle silhouettes with dark ink-wash mist, faint distant ancient mountain shapes and subtle unlettered bronze cloud-thunder texture at outer edges. No frame, no seal stamp, no square window, no writing. Core subject remains wholly in central safe area, with >=12% margins. Low-key and desaturated, readable at 103px, full-bleed opaque background. No text, letters, numbers, characters, runes, calligraphy, signature, watermark, card borders, UI, additional characters, photography, 3D, anime, chibi, neon, clutter or thick impasto. Specific transformation: Keep identical lotus bloom, all nine fox-fire wisps and dark-water ripple composition; silk-white petals with restrained cinnabar and ochre edges, dim pale ochre fox-fire. Do not replace with mirror. Input image 2 is ONLY the established shanhai palette/background STYLE reference; do not copy its sword.",
+      "reference": "art-gothic-lotus.png",
+      "kind": "card",
+      "realm": "shanhai",
+      "key": "lotus"
+    },
+    {
+      "filename": "enemy-dijiang.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-5a8ce89c-6dcd-47ee-ade8-a55eddec6bd4.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. Dijiang, the ultimate boss. A sealed sack-shaped plump cinnabar crimson mass with subtly wrinkled skin and antique bronze seams, absolutely FACELESS: no eyes, no mouth, no nose, no ears and no implied facial pattern. Exactly SIX separate short clawed legs attached under the body, three clearly separated legs on left and three on right, all six feet clearly visible and countable. Exactly FOUR broad individual feathered wings: two left and two right, upper and lower pairs at separate attachment points, with transparent negative space between all four wings. Slight diagonal joyous dancing pose floating in midair, beautiful and terrible. Restrained ember tips on wings only, no swirling flame concealing legs or wings. Ochre bronze, ink charcoal and cinnabar color palette. Anatomical counting is the central design requirement.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "dijiang"
+    },
+    {
+      "filename": "enemy-forest-lord.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-f41bab0b-85cf-418f-853a-51469d1fe176.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. The ancient dark forest sovereign BOSS, a towering gaunt humanoid made from ancient cracked bark, barely a face with hollow black eyes burning faint restrained red, a regal crown of broken antlers and dead branches, two very long gnarled arms, moss and pale lichen on shoulder and chest, two clearly visible root-cluster feet. Whole creature isolated, cold moonlight rim drawn onto its edge, no moon disc or scenery. Dark indigo charcoal, muted moss, aged ochre gold and restrained burgundy. More solemn ancient ruler than generic tree monster.",
+      "reference": "art-gothic-sword.png",
+      "kind": "enemy",
+      "realm": "gothic",
+      "key": "forest-lord"
+    },
+    {
+      "filename": "enemy-dijiang.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-c8d50257-0e38-4daf-ae42-264a361c5271.png",
+      "prompt": "Edit this existing transparent Dijiang cutout, preserve its beautiful faceless cinnabar sack, four separated wings, exact ink/watercolor rendering and gold bronze material. Fix anatomy ONLY: current bottom legs are FIVE. Replace the bottom leg row with EXACTLY SIX short separated legs and claws, all fully exposed, arranged in a gentle symmetrical fan of three left and three right, each leg individually countable. Keep same subject size and true transparent RGBA background. No extra limbs, facial features, text, scenery, ground or opaque background. Remove any dangling bronze trinket that could be mistaken for another leg.",
+      "reference": "enemy-dijiang.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "dijiang",
+      "revision": 1
+    },
+    {
+      "filename": "enemy-alpha-wolf.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-0ea4ba9c-1b51-403c-85f1-ea47232851c7.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. A huge scarred alpha wolf with frosty pale mane, muscular but emaciated menacing body, low broadside stalking pose facing three-quarter toward viewer, two small pale eyes, four anatomically correct legs with separated paws, lifted ragged tail. Indigo charcoal fur with ochre highlights and restrained scarlet scars. Frost only as fur highlights, no snow ground or forest backdrop.",
+      "reference": "art-gothic-sword.png",
+      "kind": "enemy",
+      "realm": "gothic",
+      "key": "alpha-wolf"
+    },
+    {
+      "filename": "enemy-bog-witch.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-b5d83a1a-c066-4181-b325-3dadd934cdbb.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. A bog witch as a bent root-legged elderly crone, hanging moss and pondweed hair, a wiry crooked arm holding a small bundle of drowned lantern-flies with faint amber glow, one milky blind eye, weathered face, ragged layered skirt dissolving into a few graceful black ink ribbons ending above two visible tangled root feet. Indigo charcoal, muted olive, ochre amber accents. No water pool or opaque fog background.",
+      "reference": "art-gothic-sword.png",
+      "kind": "enemy",
+      "realm": "gothic",
+      "key": "bog-witch"
+    },
+    {
+      "filename": "enemy-qiongqi.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-59467825-c62b-4368-8041-d3e4aa09f5a1.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. Qiongqi, a powerful winged tiger with heavy lion-like build, clear dark tiger stripes across ochre fur, exactly FOUR legs and exactly ONE large PAIR of wings, one wing raised, both wings visible, matted scarred fur, splayed long tail, bronze-scar body markings. Threatening three-quarter broadside pose. Aged bronze, warm ochre, charcoal ink, controlled cinnabar accents, hand painted Shan Hai Jing fantasy.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "qiongqi"
+    },
+    {
+      "filename": "enemy-huodou.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-ebd9dce1-4ad0-4afc-b485-d26b6ff0ef2a.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. Huodou in this game's deliberate fantasy design: a lean dark goat-unicorn, exactly ONE long curved central horn, exactly FOUR lean separated legs, stern long goat muzzle, black fur with bronze glints, persistent warm cinnabar flames along mane and tail and a small fire exhalation curling from mouth. Full body in tense side-three-quarter stance. Fire must be part of cutout with transparent surroundings, no fire ground or smoke backdrop.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "huodou"
+    },
+    {
+      "filename": "enemy-xiangliu.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-4e093fae-2841-4f63-a750-f84747628587.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. Xiangliu in the game's serpent interpretation. LANDSCAPE 1536x1024 canvas to fit a very wide readable arc. Exactly NINE clearly distinct serpent heads, each with its own long separate curved neck, arranged as nine evenly spaced head tips across a wide rising fan, all nine necks join ONE dark jade-green lacquered coiled serpent body. All nine mouths and necks must be visibly countable, no overlapping heads, no detached heads, no extra tiny heads. Reptilian heads only, no human features, small luminous green venom droplets from mouths. Black ink scale outlines, muted jade green, aged bronze scale edges, restrained cinnabar eyes. Full coiled body and entire nine-head fan within generous margins.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "xiangliu"
+    },
+    {
+      "filename": "enemy-xiangliu.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-18047387-a262-478b-9718-f684774e8dc8.png",
+      "prompt": "Edit this transparent Xiangliu illustration. The current creature has EIGHT serpent heads; the design MUST have exactly NINE. Preserve the original one coiled body, jade and bronze scale texture, ink outlines and existing heads. Add ONE additional fully visible serpent head on its own long neck in the open gap just right of the tallest central head, above the lower right-side heads. Final arrangement should be one central highest head, FOUR distinct heads on its left, FOUR on its right. Nine heads total, every mouth and neck tip clearly separate, all necks connected to the same body. No duplicate detached heads, no extra beyond nine, no human faces. Same landscape1536x1024, genuine transparent alpha, no background or ground.",
+      "reference": "enemy-xiangliu.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "xiangliu",
+      "revision": 1
+    },
+    {
+      "filename": "enemy-taotie.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-68aa0a8d-8616-4317-b258-e6614caae806.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. Taotie in game's bronze-mask fantasy interpretation: an enormous bloated beast HEAD with no torso, vast open mouth splitting face, heavy symmetric archaic bronze taotie mask patterns pressed into organic hide, two short stubby clawed forelimbs under head, hungry narrowed eyes and sparse drool. Full isolated head-creature, fierce grotesque but not graphic gore. Aged bronze ochre, cinnabar accents and charcoal ink.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "taotie"
+    },
+    {
+      "filename": "enemy-baize.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-1553e718-c8f5-46c4-a2dd-9c3747e2b63d.png",
+      "prompt": "Generate a single game enemy sprite, a finished transparent PNG cutout on true RGBA alpha, not a painted background and not a checkerboard. Vertical 1024x1536 canvas. Whole creature is centered, complete silhouette fully visible, occupies approximately 64 percent of canvas height, generous clear transparent margins on every side. Hand painted dark storybook illustration: fine expressive dark ink contours and detailed restrained watercolor washes, tactile organic material, selective antique gold highlights, strong readable silhouette at 390px game display. Use referenced card solely for art style and palette, do not include its weapon, scene, rectangular frame, paper or any background. No text, letters, symbols resembling text, card frame, UI, ground, cast floor shadow, scenery, smoke hiding anatomy, cropped appendages, photographic rendering or 3D. Baize in game's fantasy interpretation: dignified full-body lion-like beast with one elegant additional central horn above brow, a scholarly almost-human yet clearly bestial face, calm intelligent eyes, flowing pale ivory mane, a small scroll-like ridge of curled fur along neck with NO letters or actual written scroll. Four complete paws, long elegant tail, composed wise guardian standing three-quarter side pose. Ivory watercolor, aged bronze ornamental accents, muted jade green and charcoal ink contours. Restrained and knowing, no background.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "baize"
+    },
+    {
+      "filename": "enemy-xiangliu.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-73fb96cb-2fee-426c-8057-ae3afb82a2af.png",
+      "prompt": "Rebuild the head/neck fan of image1 to EXACTLY NINE heads using image2's NINE head positions. Image2 is a count and position guide ONLY, do not copy its circles, numbers, lines or background. Draw ONE natural serpent head at EACH of the nine numbered positions, and ONE curved scaled neck for EACH head, connecting all nine into the existing single coiled body. Three clusters each of three heads; all nine separated by clear negative space. Preserve beautiful jade bronze ink watercolor reptilian rendering from image1, the same single coiled body, glowing venom droplets. No human faces, no tenth head. Critical nine, not eight. Final full creature cutout has true transparent alpha, landscape1536x1024, no background, no text or diagram elements.",
+      "reference": "enemy-xiangliu.png, nine-head-layout-guide.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "xiangliu",
+      "revision": 2
+    },
+    {
+      "filename": "card-back-gothic.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-4e69ea59-ff54-4ca2-9197-3d87c4b09d6b.png",
+      "prompt": "Create a finished game card back 1024x1536 portrait opaque image, perfectly mirror symmetrical horizontally, design across entire surface with no outer rectangular border. Use reference only as palette and ink watercolor material guide; do NOT include sword or landscape scene. Rich but quiet intricate aged ochre gold filigree, fine thorn vine arabesques, deep indigo #12101a and burgundy dark velvet pattern, broad subdued central circular ornamental medallion with abstract interlacing shapes only, no specific central pictogram, no eyes, animals, weapons, letters, words or numbers. Flat straight front facing view, absolutely exact left/right mirrored bilateral symmetry, restrained antique finish with readable large shapes at tiny thumbnail size.",
+      "reference": "art-gothic-sword.png",
+      "kind": "card-back",
+      "realm": "gothic",
+      "key": "gothic"
+    },
+    {
+      "filename": "card-back-shanhai.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-14d81fd1-1e4a-4d9a-a1ef-43ea69a7cef5.png",
+      "prompt": "Create a finished game card back 1024x1536 portrait opaque image, perfectly mirror symmetrical horizontally, design across entire surface with no outer rectangular border. Use reference only as palette and ink watercolor material guide; do NOT include sword or landscape scene. Rich but quiet intricate aged bronze #b08d3f archaic cloud scroll and cinnabar #b94738 ornamental motifs over charcoal lacquer and old silk pattern, broad subdued central circular ornamental medallion with abstract interlacing shapes only, no specific central pictogram, no eyes, animals, weapons, letters, words or numbers. Flat straight front facing view, absolutely exact left/right mirrored bilateral symmetry, restrained antique finish with readable large shapes at tiny thumbnail size.",
+      "reference": "art-shanhai-sword.png",
+      "kind": "card-back",
+      "realm": "shanhai",
+      "key": "shanhai"
+    },
+    {
+      "filename": "enemy-xiangliu.png",
+      "generatedPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-f876ee5b-4ab1-4924-ba75-6f682e26b55d.png",
+      "prompt": "Create a brand NEW single Xiangliu enemy cutout on true transparent RGBA, landscape1536x1024. Image1 is a STRICT anatomy layout: NINE green circles = NINE serpent heads. Every one of positions1,2,3,4,5,6,7,8,9 must become a distinct head. Do not draw the numbers or circles. Draw nine same-sized snarling reptilian heads in a clear upper fan; three distinct heads in the LEFT cluster, three distinct heads in the MIDDLE cluster, three distinct heads in the RIGHT cluster. Each head has its own separated dark jade scaled neck, all nine necks attach to ONE coiled body below. Avoid a dominant central head causing another to disappear. Count exactly nine open serpent mouths. Space heads apart generously and give all nine comparable emphasis. Ink outline and restrained watercolor, green jade with antique bronze scale edges, cinnabar eyes, venom droplets. Image2 is PALETTE AND MATERIAL style only, do not copy its sword or background. Whole creature silhouette visible with empty transparent space surrounding, no backdrop or floor, no words, diagrams, extra animals, human faces, extra heads. The single most important success criterion is NINE heads (not eight).",
+      "reference": "nine-head-layout-guide.png, art-shanhai-sword.png",
+      "kind": "enemy",
+      "realm": "shanhai",
+      "key": "xiangliu",
+      "revision": 3
+    }
+  ]
+}

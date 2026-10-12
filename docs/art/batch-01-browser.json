@@ -1,0 +1,24 @@
+{
+  "loaded": [
+    {
+      "id": "gothic/sword",
+      "loaded": true
+    },
+    {
+      "id": "gothic/shield",
+      "loaded": true
+    },
+    {
+      "id": "gothic/moon",
+      "loaded": true
+    },
+    {
+      "id": "gothic/blood",
+      "loaded": true
+    }
+  ],
+  "cropCases": 40,
+  "cropPassed": true,
+  "artOffPassed": true,
+  "browserErrors": []
+}

@@ -1,0 +1,5617 @@
+{
+  "flows": [
+    "battle 1 before/after/choice/reward/advance",
+    "event moon_spring",
+    "battle 2 before/after/choice/reward/advance",
+    "event ember_bones",
+    "battle 3 before/after/choice/reward/advance",
+    "battle 4 before/after/choice/reward/advance",
+    "event lost_lantern",
+    "battle 5 before/after/choice/reward/advance",
+    "event ash_mound",
+    "battle 6 before/after/choice/reward/advance",
+    "battle 7 before/after/choice/reward/advance",
+    "event thorn_well",
+    "battle 8 before/after/choice/reward/advance",
+    "event forge",
+    "battle 9 before/after/choice/reward/advance",
+    "realm ascension event",
+    "battle 10 before/after/choice/reward/advance",
+    "event qingqiu",
+    "battle 11 before/after/choice/reward/advance",
+    "event ash_mound",
+    "battle 12 before/after/choice/reward/advance",
+    "battle 13 before/after/choice/reward/advance",
+    "event blind_dance",
+    "battle 14 before/after/choice/reward/advance",
+    "event baize_omen",
+    "battle 15 before/after/choice/reward/advance",
+    "battle 16 before/after/choice/reward/advance",
+    "event nine_heads",
+    "battle 17 before/after/choice/reward/advance",
+    "event bronze_step",
+    "battle 18 before/after/choice/reward/advance",
+    "both explicit endings reach reward results",
+    "paid aftermath/reward reload; stable card offers; claimed card cannot be claimed twice",
+    "stable relic offers; reload after card/relic purchase resumes correct stage with no duplicate items",
+    "read-only hand journal, hidden future chapters, return to paused bag then intact combat"
+  ],
+  "layouts": [
+    {
+      "step": 0,
+      "kind": "before",
+      "index": 0,
+      "text": "信上只剩一句：“别把灯交给林子。”落\n款被擦得干干净净。村里连母亲的名字也\n没人记得。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "before",
+      "index": 1,
+      "text": "一头灰狼叼走封信的红线，却没有逃远。\n它在林间回头，像在等我跟上。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "after",
+      "index": 0,
+      "text": "狼松口后，红线上沾着一片蓝色衣料。针\n脚和母亲补过的斗篷一模一样。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "after",
+      "index": 1,
+      "text": "它守的不是猎物，是一条路。我把红线缠\n在灯柄上，向林子更深处走。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "kind": "before",
+      "index": 0,
+      "text": "“回来吃饭。”孢子里传来母亲的声音。\n菌伞下面，却吊着整村人的空白木牌。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "kind": "before",
+      "index": 1,
+      "text": "声音喊到我的乳名时忽然断了。这里能学\n会语气，却说不出名字。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "kind": "after",
+      "index": 0,
+      "text": "菌伞散开，一枚木牌显出半道旧刻痕。不\n是村人离开了，是有人正在把他们从记忆\n里抹去。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "kind": "after",
+      "index": 1,
+      "text": "灯焰向那道刻痕倾斜。它似乎还能认出被\n忘掉的东西。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "before",
+      "index": 0,
+      "text": "狼王胸前挂着与我相同的青铜护符。它踩\n住林间窄道，低声吐出两个字：“灯\n守。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "before",
+      "index": 1,
+      "text": "母亲说这只是避雨时捡来的旧物。可狼群\n认得它，也认得我手中的灯。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "after",
+      "index": 0,
+      "text": "“她往沼里去了。林子记住一个人，就能\n让村子多亮一夜。”狼王退开，露出一张\n缝着红线的路图。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "after",
+      "index": 1,
+      "text": "路图背面记着失名村人的生活：补屋顶的\n人，爱唱歌的人，养白猫的人。我能带走\n什么，才不会再忘？",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1588,
+            "width": 924,
+            "height": 152
+          },
+          "label": "记下他们的生活\n名字之外，也留下普通人的一天。",
+          "textBounds": {
+            "type": 5,
+            "x": 270,
+            "y": 1619,
+            "width": 540,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1754,
+            "width": 924,
+            "height": 152
+          },
+          "label": "系紧母亲的红线\n先守住一路寻来的亲人线索。",
+          "textBounds": {
+            "type": 5,
+            "x": 306,
+            "y": 1785,
+            "width": 468,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "after",
+      "index": 0,
+      "text": "“她往沼里去了。林子记住一个人，就能\n让村子多亮一夜。”狼王退开，露出一张\n缝着红线的路图。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "after",
+      "index": 1,
+      "text": "路图背面记着失名村人的生活：补屋顶的\n人，爱唱歌的人，养白猫的人。我能带走\n什么，才不会再忘？",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "after",
+      "index": 2,
+      "text": "你系好红线，把路图完整留在狼王门前。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 53
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "kind": "before",
+      "index": 0,
+      "text": "“名字是通行的钱。”她摇着一架没有布\n的织机，“你母亲付了自己的。你拿什么\n来换？”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "kind": "before",
+      "index": 1,
+      "text": "我认出她指上的银针。那是母亲在每次远\n行前都会带走的一根。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "kind": "after",
+      "index": 0,
+      "text": "织机停了。“我只替森林收债。名字不在\n我这里，在水底的旧井里。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "kind": "after",
+      "index": 1,
+      "text": "我没有再向她索要一个空答案。银针穿过\n灯柄上的红线，指向沼泽中央。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "kind": "before",
+      "index": 0,
+      "text": "井口长满黑苔，野猪背上却嵌着整块石井\n栏。它每次冲撞，水里都会响起陌生人的\n哭声。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "kind": "before",
+      "index": 1,
+      "text": "我看见井底压着一本油布包住的笔记。得\n先让这口井重新露出来。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "kind": "after",
+      "index": 0,
+      "text": "笔记不是账本，是母亲留下的记录：“名\n字被拿走后，树根会安静。可我听见根下\n面有人敲门。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "kind": "after",
+      "index": 1,
+      "text": "最后一页画着一段青铜台阶。森林不是尽\n头，它在盖住另一个世界。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "kind": "before",
+      "index": 0,
+      "text": "水中浮出母亲的脸。“把灯吹灭，我们就\n能回家。”她伸手，指间却没有握针留下\n的茧。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "kind": "before",
+      "index": 1,
+      "text": "母亲从不在黑暗里叫人闭眼。我举起灯，\n照见倒影下缠成一团的名字。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "kind": "after",
+      "index": 0,
+      "text": "倒影裂开，真正的声音从井底传来：“我\n在灯里留了一点自己。别为这点声音，忘\n了活着的人。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "kind": "after",
+      "index": 1,
+      "text": "笔记上的青铜台阶亮了起来。我终于知道\n该去哪里，也知道不能相信什么。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "kind": "before",
+      "index": 0,
+      "text": "第二头灰狼站在王座前的岔路。它嘴里的\n蓝色衣料干净如新，和林缘那片不同。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "kind": "before",
+      "index": 1,
+      "text": "灯照出两条路：一条通往温暖的假家，一\n条留下母亲真实的、带血的足迹。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "kind": "after",
+      "index": 0,
+      "text": "狼退去，假家的灯一盏盏熄灭。真实足迹\n的尽头，没有门，只有一棵被青铜钉穿的\n巨树。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "kind": "after",
+      "index": 1,
+      "text": "我把两片衣料缝到一起。她曾从这里走\n过，也曾想过回来。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 748,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "kind": "before",
+      "index": 0,
+      "text": "另一位守门者披着树根结成的甲：“没有\n那盏灯，根下面的东西早就出来了。你要\n救她，还是拆掉村子的屋顶？”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "kind": "before",
+      "index": 1,
+      "text": "我来找的不是一具替别人挡雨的身体。若\n旧约只能靠一个人受苦，它就该有另一个\n答案。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "kind": "after",
+      "index": 0,
+      "text": "它甲上的根松开了。“她也这样问过。”\n树皮下，一圈旧名字围着通往王座的路。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "kind": "after",
+      "index": 1,
+      "text": "这不是第一次有人想改写旧约。我把灯举\n高，让那些名字照见彼此。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "before",
+      "index": 0,
+      "text": "“我没有吃掉她。”巨树的声音很慢，\n“她把名字押在灯里，替两边守住裂口。\n可封印饿得越来越快。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "before",
+      "index": 1,
+      "text": "它的枝干每动一下，村人的木牌就少一道\n刻痕。我不能让它继续用遗忘换平静。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "after",
+      "index": 0,
+      "text": "根系松开，青铜台阶从泥土中露出。“她\n叫青禾。下去以后，别只问怎么带她回\n来。问问那些从未被带回来的人。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "after",
+      "index": 1,
+      "text": "“我还听得见你。灯能照路，也能把人留\n在原地。别替我把答案选完。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1588,
+            "width": 924,
+            "height": 152
+          },
+          "label": "不让任何人永远守灯\n寻找让旧约结束的办法。",
+          "textBounds": {
+            "type": 5,
+            "x": 342,
+            "y": 1619,
+            "width": 396,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1754,
+            "width": 924,
+            "height": 152
+          },
+          "label": "先护住仍活着的人\n找到出口之前，守住两边的灯火。",
+          "textBounds": {
+            "type": 5,
+            "x": 270,
+            "y": 1785,
+            "width": 540,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "after",
+      "index": 0,
+      "text": "根系松开，青铜台阶从泥土中露出。“她\n叫青禾。下去以后，别只问怎么带她回\n来。问问那些从未被带回来的人。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "after",
+      "index": 1,
+      "text": "“我还听得见你。灯能照路，也能把人留\n在原地。别替我把答案选完。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "after",
+      "index": 2,
+      "text": "你答应青禾：归途不能以村人的黑夜为代\n价。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "before",
+      "index": 0,
+      "text": "九道尾影映出九个家：有的母亲仍在织\n衣，有的从来没有离开。每一个都叫我过\n去。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "before",
+      "index": 1,
+      "text": "只有一道影子说：“你的斗篷又破了。”\n她没有许诺一切恢复原样。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "after",
+      "index": 0,
+      "text": "“你认得的不只是名字。”幻影收起，\n“被封住的人，散在青丘、毒泽和末门。\n先把他们的生活拼起来。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "after",
+      "index": 1,
+      "text": "一片玉简浮起，刻着一件小事：青禾怕\n冷，却总把披肩留给别人。声音第一次有\n了温度。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "kind": "before",
+      "index": 0,
+      "text": "白首的鹿蜀绕着石阶奔跑。它的歌声里，\n每个人都只有一段旋律，拼在一起才有\n路。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "kind": "before",
+      "index": 1,
+      "text": "我从母亲的红线开始，接上木匠和船夫的\n歌。最初只属于一人的路，如今也得容下\n别人。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "kind": "after",
+      "index": 0,
+      "text": "歌声平息，我记住了木匠、船夫和织衣人\n的旋律。青禾的那一段在最后，没有比别\n人更响。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "kind": "after",
+      "index": 1,
+      "text": "红线从玉简穿到笔记里，拼出毒泽的位\n置。回家的路开始有了许多人的重量。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 748,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 11,
+      "kind": "before",
+      "index": 0,
+      "text": "“承认他们不值得，你母亲就自由。”穷\n奇抛来一块完整玉简，上面写着通往末门\n的捷径。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 11,
+      "kind": "before",
+      "index": 1,
+      "text": "它许诺得太容易。若我必须先忘掉别人，\n才能救回一个人，那只是换了一张债单。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 11,
+      "kind": "after",
+      "index": 0,
+      "text": "捷径碎成空壳。穷奇靠把人分开，让他们\n一个个走进旧约。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 11,
+      "kind": "after",
+      "index": 1,
+      "text": "“记得谁给你补过衣，也记得谁与你争过\n路。回忆不必全是好事，才算一个人的一\n生。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "before",
+      "index": 0,
+      "text": "九个头轮流念出同一句话，却在不同的字\n上停住。毒水把玉简上的刻痕一点点泡\n散。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "before",
+      "index": 1,
+      "text": "这里吞掉的不是人声，是每句话里最难替\n代的那一部分。我得让九句残话接在一\n起。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "after",
+      "index": 0,
+      "text": "毒水退下，九份残简拼成一句：“没有人\n答应永远留下。”青禾的名字也在其中。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "after",
+      "index": 1,
+      "text": "守门是当年的选择，不是不可撤回的命\n运。那条旧约从来没有写过出口。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 748,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 13,
+      "kind": "before",
+      "index": 0,
+      "text": "蜚走过的地方，草与记忆一起枯萎。我忽\n然想不起白猫主人的脸，只记得一扇空\n窗。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 13,
+      "kind": "before",
+      "index": 1,
+      "text": "我沿红线念出木匠的歌。另一份玉简替我\n补上：“她总在窗边晾鱼。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 13,
+      "kind": "after",
+      "index": 0,
+      "text": "瘴气散开。一个名字独自放着会消失，名\n字之间有了关系，就不再那么容易被擦\n掉。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 13,
+      "kind": "after",
+      "index": 1,
+      "text": "我把笔记摊开，写下他们为彼此做过的小\n事。要带回去的，已经不只是名册。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 14,
+      "kind": "before",
+      "index": 0,
+      "text": "祸斗吞下灰中的余火，又把它吐成更高的\n火墙。旧祭坛上堆着历代灯守烧空的名\n牌。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 14,
+      "kind": "before",
+      "index": 1,
+      "text": "若我再往里面丢一个名字，火只会更饿。\n我用红线把每段生活连起来，护住灯芯。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 14,
+      "kind": "after",
+      "index": 0,
+      "text": "祸斗退开。提灯没有变得更亮，却第一次\n不再吞掉手边的刻痕。火能照见名字，也\n能由记忆养着。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 14,
+      "kind": "after",
+      "index": 1,
+      "text": "“我当年没走到这里。你找到了一种我没\n能找到的办法。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "kind": "before",
+      "index": 0,
+      "text": "末门前，饕餮吞下整排空名牌。腹中仍响\n着饥饿的回声，仿佛所有过去都还不够。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "kind": "before",
+      "index": 1,
+      "text": "我说过要护住活着的人。可继续往这张嘴\n里送人，只会把更多人的早晨吃掉。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "kind": "after",
+      "index": 0,
+      "text": "名牌从它腹中落下。上面没有英雄的称\n号，只有买菜、争吵、晚归、等人的普通\n一天。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "kind": "after",
+      "index": 1,
+      "text": "那些人没有义务成为一盏永不熄灭的灯。\n我把最后几片生活收进笔记。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "before",
+      "index": 0,
+      "text": "“你要带回母亲，还是带回一个你希望她\n成为的人？”白泽守在门边，没有先扑上\n来。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "before",
+      "index": 1,
+      "text": "我记得她的温柔，也记得她会害怕、会生\n气、会把针落在床边。她不该只剩一座\n碑。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "after",
+      "index": 0,
+      "text": "试炼结束，白泽交来最后一页：“我的孩\n子，若你找到我，先问我愿不愿意继续留\n下。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "after",
+      "index": 1,
+      "text": "“我想歇一会儿。也想让他们有自己的早\n晨。至于我，请记住我活过的样子。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1588,
+            "width": 924,
+            "height": 152
+          },
+          "label": "记住她生活过的样子\n留下那些不完美、却真实的小事。",
+          "textBounds": {
+            "type": 5,
+            "x": 270,
+            "y": 1619,
+            "width": 540,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1754,
+            "width": 924,
+            "height": 152
+          },
+          "label": "也记住她守过的夜\n把她的选择告诉后来的人。",
+          "textBounds": {
+            "type": 5,
+            "x": 324,
+            "y": 1785,
+            "width": 432,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "after",
+      "index": 0,
+      "text": "试炼结束，白泽交来最后一页：“我的孩\n子，若你找到我，先问我愿不愿意继续留\n下。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "after",
+      "index": 1,
+      "text": "“我想歇一会儿。也想让他们有自己的早\n晨。至于我，请记住我活过的样子。”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "after",
+      "index": 2,
+      "text": "你在笔记边写下：青禾，怕冷，常忘记自\n己的针。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "before",
+      "index": 0,
+      "text": "六足四翼的帝江在无声处旋转。它没有面\n目；每一步都让末门上的一个名字黯下\n去。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "before",
+      "index": 1,
+      "text": "青禾在灯里轻声说：“它不是在恨我们，\n只会照旧跳下去。”我举起连满记忆的红\n线，让旧舞有了可以停下的地方。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 0,
+      "text": "舞停了。门后没有另一场祭典，只有一盏\n盏等着被喊回家的灯。青禾的声音从我的\n灯中轻轻松开。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 1,
+      "text": "“这一次，我不留下了。”青禾等着我的\n回答。那些被找回的生活，也等着自己的\n路。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1588,
+            "width": 924,
+            "height": 152
+          },
+          "label": "让众灯随名字归乡\n解开红线，让每段生活回到它的主人。",
+          "textBounds": {
+            "type": 5,
+            "x": 234,
+            "y": 1619,
+            "width": 612,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 78,
+            "y": 1754,
+            "width": 924,
+            "height": 152
+          },
+          "label": "带着灯，逐户送还\n保留两境之间的路，继续走到每一扇门前。",
+          "textBounds": {
+            "type": 5,
+            "x": 198,
+            "y": 1785,
+            "width": 684,
+            "height": 90
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "直达选择",
+          "textBounds": {
+            "type": 5,
+            "x": 841,
+            "y": 227.5,
+            "width": 144,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 0,
+      "text": "舞停了。门后没有另一场祭典，只有一盏\n盏等着被喊回家的灯。青禾的声音从我的\n灯中轻轻松开。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 1,
+      "text": "“这一次，我不留下了。”青禾等着我的\n回答。那些被找回的生活，也等着自己的\n路。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 2,
+      "text": "每一盏灯都找到了自己的窗。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 572,
+        "height": 53
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 3,
+      "text": "我把灯放在村口，解开所有红线。木匠认\n出了屋顶，白猫的主人开了窗。天亮不再\n需要一个人的名字。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 4,
+      "text": "最初只绕着母亲的红线，终于连起许多人\n的门。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 5,
+      "text": "我仍记得她怕冷，记得她落在床边的针。\n一个人被记住，不必先变成传说。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 6,
+      "text": "“我不在灯里等你了。”母亲的声音散入\n清晨的风。斗篷还是破的，但这一次，归\n途有人等。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 0,
+      "text": "舞停了。门后没有另一场祭典，只有一盏\n盏等着被喊回家的灯。青禾的声音从我的\n灯中轻轻松开。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 1,
+      "text": "“这一次，我不留下了。”青禾等着我的\n回答。那些被找回的生活，也等着自己的\n路。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 2,
+      "text": "你成为送灯的人，而不是被留在灯里的\n人。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 748,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 3,
+      "text": "我没有接过那份永远燃烧的旧约。灯只是\n灯，路只是路。我可以停下，也可以再出\n发。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 4,
+      "text": "那本记着白猫、屋顶和歌声的笔记，成了\n村里第一本重新有名字的书。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 5,
+      "text": "我仍记得她怕冷，记得她落在床边的针。\n一个人被记住，不必先变成传说。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "after",
+      "index": 6,
+      "text": "“我不在灯里等你了。”母亲的声音散入\n清晨的风。斗篷还是破的，但这一次，归\n途有人等。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "领取战利品",
+          "textBounds": {
+            "type": 5,
+            "x": 430,
+            "y": 1752.5,
+            "width": 220,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "journal",
+      "index": 0,
+      "text": "信上只剩一句：“别把灯交给林子。”落\n款被擦得干干净净。村里连母亲的名字也\n没人记得。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 600,
+            "y": 1704,
+            "width": 410,
+            "height": 152
+          },
+          "label": "下一页",
+          "textBounds": {
+            "type": 5,
+            "x": 742,
+            "y": 1753.5,
+            "width": 126,
+            "height": 53
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "返回",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "journal",
+      "index": 1,
+      "text": "一头灰狼叼走封信的红线，却没有逃远。\n它在林间回头，像在等我跟上。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 70,
+            "y": 1704,
+            "width": 410,
+            "height": 152
+          },
+          "label": "上一页",
+          "textBounds": {
+            "type": 5,
+            "x": 212,
+            "y": 1753.5,
+            "width": 126,
+            "height": 53
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 600,
+            "y": 1704,
+            "width": 410,
+            "height": 152
+          },
+          "label": "返回行囊",
+          "textBounds": {
+            "type": 5,
+            "x": 721,
+            "y": 1753.5,
+            "width": 168,
+            "height": 53
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "返回",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "before",
+      "index": 0,
+      "text": "信上只剩一句：“别把灯交给林子。”落\n款被擦得干干净净。村里连母亲的名字也\n没人记得。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 0,
+      "kind": "before",
+      "index": 1,
+      "text": "一头灰狼叼走封信的红线，却没有逃远。\n它在林间回头，像在等我跟上。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "kind": "before",
+      "index": 0,
+      "text": "“名字是通行的钱。”她摇着一架没有布\n的织机，“你母亲付了自己的。你拿什么\n来换？”",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "kind": "before",
+      "index": 1,
+      "text": "我认出她指上的银针。那是母亲在每次远\n行前都会带走的一根。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "kind": "before",
+      "index": 0,
+      "text": "第二头灰狼站在王座前的岔路。它嘴里的\n蓝色衣料干净如新，和林缘那片不同。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "kind": "before",
+      "index": 1,
+      "text": "灯照出两条路：一条通往温暖的假家，一\n条留下母亲真实的、带血的足迹。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "before",
+      "index": 0,
+      "text": "九道尾影映出九个家：有的母亲仍在织\n衣，有的从来没有离开。每一个都叫我过\n去。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "before",
+      "index": 1,
+      "text": "只有一道影子说：“你的斗篷又破了。”\n她没有许诺一切恢复原样。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "before",
+      "index": 0,
+      "text": "九个头轮流念出同一句话，却在不同的字\n上停住。毒水把玉简上的刻痕一点点泡\n散。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "before",
+      "index": 1,
+      "text": "这里吞掉的不是人声，是每句话里最难替\n代的那一部分。我得让九句残话接在一\n起。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "kind": "before",
+      "index": 0,
+      "text": "末门前，饕餮吞下整排空名牌。腹中仍响\n着饥饿的回声，仿佛所有过去都还不够。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "kind": "before",
+      "index": 1,
+      "text": "这不是缺少一个更强的灯守。只要仍有人\n被当作燃料，这张嘴就永远不会合上。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 120
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "before",
+      "index": 0,
+      "text": "六足四翼的帝江在无声处旋转。它没有面\n目；每一步都让末门上的一个名字黯下\n去。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "继续阅读",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "kind": "before",
+      "index": 1,
+      "text": "青禾在灯里轻声说：“它不是在恨我们，\n只会照旧跳下去。”我举起连满记忆的红\n线，让旧舞有了可以停下的地方。",
+      "bounds": {
+        "type": 5,
+        "x": 132,
+        "y": 1130,
+        "width": 792,
+        "height": 187
+      },
+      "buttons": [
+        {
+          "bounds": {
+            "type": 5,
+            "x": 120,
+            "y": 1704,
+            "width": 840,
+            "height": 152
+          },
+          "label": "进入战斗",
+          "textBounds": {
+            "type": 5,
+            "x": 452,
+            "y": 1752.5,
+            "width": 176,
+            "height": 55
+          }
+        },
+        {
+          "bounds": {
+            "type": 5,
+            "x": 803,
+            "y": 174,
+            "width": 220,
+            "height": 152
+          },
+          "label": "略过",
+          "textBounds": {
+            "type": 5,
+            "x": 877,
+            "y": 227.5,
+            "width": 72,
+            "height": 45
+          }
+        }
+      ]
+    }
+  ],
+  "screens": [
+    "01-before.png",
+    "01-after.png",
+    "02-before.png",
+    "02-after.png",
+    "03-before.png",
+    "03-after.png",
+    "04-before.png",
+    "04-after.png",
+    "05-before.png",
+    "05-after.png",
+    "06-before.png",
+    "06-after.png",
+    "07-before.png",
+    "07-after.png",
+    "08-before.png",
+    "08-after.png",
+    "09-before.png",
+    "09-after.png",
+    "10-before.png",
+    "10-after.png",
+    "11-before.png",
+    "11-after.png",
+    "12-before.png",
+    "12-after.png",
+    "13-before.png",
+    "13-after.png",
+    "14-before.png",
+    "14-after.png",
+    "15-before.png",
+    "15-after.png",
+    "16-before.png",
+    "16-after.png",
+    "17-before.png",
+    "17-after.png",
+    "18-before.png",
+    "18-after.png",
+    "ending-home-story.png",
+    "ending-home-result.png",
+    "ending-watch-story.png",
+    "ending-watch-result.png",
+    "journal-story.png",
+    "narrow-0.png",
+    "narrow-3.png",
+    "narrow-6.png",
+    "narrow-9.png",
+    "narrow-12.png",
+    "narrow-15.png",
+    "narrow-17.png"
+  ],
+  "errors": [],
+  "warnings": []
+}

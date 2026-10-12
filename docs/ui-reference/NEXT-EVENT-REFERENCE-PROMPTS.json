@@ -1,0 +1,24 @@
+{
+  "mode": "built-in image_gen",
+  "note": "Prepared from current events.js; not generated or approved",
+  "jobs": [
+    {
+      "id": "event-nine_heads",
+      "dest": "images/event-nine_heads.png",
+      "reference": "assets/event-nine_heads-ui-v1.png",
+      "prompt": "Use-case ui-mockup. Complete 9:16 portrait mobile game event UI reference, no device bezel. Watercolor Chinese mythology scene, deep indigo panels, antique gold thin frames, ivory legible simplified Chinese. Upper half independently illustrated story image matching supplied event art. Header 第四章 with HP48/70 and coins68. Title 九首. Exact story text: 「九首人面蛇身而青。」沼泽上方悬着九个头，轮流开口。它们说的名字你一个也不认识，但每一个都像在叫你的祖先。 Lower half three large vertically stacked choice buttons, each with a clear action name and separate readable effect subtitle: 1) 一个一个回答 — 灵韵上限 +2，获得 1 件遗物; 2) 屏住呼吸 — 下一场战斗：中毒 3 层; 3) 往沼泽深处走 — 获得 2 张随机卡牌. No combat hand, enemy intention, invented extra controls, wrong Chinese glyphs or watermark. All buttons fully inside portrait and thumb friendly."
+    },
+    {
+      "id": "event-blind_dance",
+      "dest": "images/event-blind_dance.png",
+      "reference": "assets/event-blind_dance-ui-v1.png",
+      "prompt": "Use-case ui-mockup. Complete 9:16 portrait mobile game event UI reference, no device bezel. Watercolor Chinese mythology scene, deep indigo panels, antique gold thin frames, ivory legible simplified Chinese. Upper half independently illustrated story image matching supplied event art. Header 第四章 with HP48/70 and coins68. Title 浑敦之舞. Exact story text: 「浑敦无面目，是识歌舞。」一个黄囊似的东西在跳，没有脸，跳得很准。你听了三遍才听出来它在唱。 Lower half three large vertically stacked choice buttons, each with a clear action name and separate readable effect subtitle: 1) 跟着跳 — 失去 18 点生命，获得 2 张随机卡牌; 2) 替它数拍子 — 灵韵上限 +2; 3) 闭上眼离开 — 回复 15% 最大生命. No combat hand, enemy intention, invented extra controls, wrong Chinese glyphs or watermark. All buttons fully inside portrait and thumb friendly."
+    },
+    {
+      "id": "event-baize_omen",
+      "dest": "images/event-baize_omen.png",
+      "reference": "assets/event-baize_omen-ui-v1.png",
+      "prompt": "Use-case ui-mockup. Complete 9:16 portrait mobile game event UI reference, no device bezel. Watercolor Chinese mythology scene, deep indigo panels, antique gold thin frames, ivory legible simplified Chinese. Upper half independently illustrated story image matching supplied event art. Header 第四章 with HP48/70 and coins68. Title 白泽之言. Exact story text: 「能言，能知万物之情。」一头白色的兽蹲在路边，看见你就开口了。它知道你的名字、你从哪来、还有几天。 Lower half three large vertically stacked choice buttons, each with a clear action name and separate readable effect subtitle: 1) 问它未来 — 灵韵上限 +1，获得 1 件遗物; 2) 问它怎么活下去 — 最大生命 +12; 3) 不问走开 — 获得 60 金币. No combat hand, enemy intention, invented extra controls, wrong Chinese glyphs or watermark. All buttons fully inside portrait and thumb friendly."
+    }
+  ]
+}

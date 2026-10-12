@@ -1,0 +1,729 @@
+{
+  "tool": "tools/phase6b-lab.js",
+  "batch": "select",
+  "gamesPerArm": 300,
+  "seedFormula": "((i + seedBase*7919) * 2654435761) >>> 0 || 1",
+  "seedBase": 0,
+  "strategies": {
+    "contract": "不发放（suppressContractNodes）",
+    "forge": "模拟器默认策略，各臂一致",
+    "ascension": "模拟器默认策略，各臂一致",
+    "reward": "模拟器默认策略，各臂一致"
+  },
+  "sourceHashes": {
+    "tools/simulate.js": "c74f56fe054a1861763808360fb3b5857f2cc2eb71bde8070b6f7931dd38d6c9",
+    "src/core/cards.js": "8c5151a3c258fdde67b0b31603c191267416f85b0159e8cba1477543365f7b00",
+    "src/core/combat.js": "a7995e6fe8c7a3b1a351b513ea87e3fce6bf4ed1228c99b1926df3ce4ed77d26",
+    "src/core/run.js": "6d8a5f04aeee36178061d42f2ad552149894b3d48326f8529e1e206a68b62321",
+    "src/core/events.js": "27d23cc9c6b28a993a62b89fadb38e2488671bd6dbb7ebc5ace2681783edff7d"
+  },
+  "combos": [
+    {
+      "key": "baseline",
+      "levers": {
+        "values": false,
+        "floor": false,
+        "energy": false
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.32,
+          "clearCI": [
+            0.26977535854935686,
+            0.3747761110935889
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.373333333333333,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.31,
+          "clearCI": [
+            0.2603435250910202,
+            0.3644608039765336
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.3,
+          "clearCI": [
+            0.2509396637740665,
+            0.3541175247180953
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.21,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.4266666666666667,
+          "clearCI": [
+            0.37197357582616974,
+            0.48321405995428957
+          ],
+          "survive9": 0.8166666666666667,
+          "survive9CI": [
+            0.7689713823106349,
+            0.8563547359101086
+          ],
+          "meanReached": 15.756666666666666,
+          "capped": 1
+        }
+      },
+      "gate": {
+        "survive9pp": 14.000000000000002,
+        "clearpp": 12.666666666666671,
+        "reached": 1.546666666666665
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.4266666666666667,
+        "worstP": 0.3,
+        "wins": 54,
+        "losses": 16,
+        "ties": 230,
+        "p": 0.000005853955529388075,
+        "distinguishable": true
+      }
+    },
+    {
+      "key": "values",
+      "levers": {
+        "values": true,
+        "floor": false,
+        "energy": false
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.31666666666666665,
+          "clearCI": [
+            0.2666283506746554,
+            0.371340738776493
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.373333333333333,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.29,
+          "clearCI": [
+            0.24156454609254424,
+            0.34374550182422575
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.2833333333333333,
+          "clearCI": [
+            0.23533085262050668,
+            0.3368144349126687
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.21,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.38666666666666666,
+          "clearCI": [
+            0.3333235932727648,
+            0.44287548020612694
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.51,
+          "capped": 0
+        }
+      },
+      "gate": {
+        "survive9pp": 11.66666666666667,
+        "clearpp": 10.333333333333334,
+        "reached": 1.299999999999999
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.38666666666666666,
+        "worstP": 0.2833333333333333,
+        "wins": 47,
+        "losses": 16,
+        "ties": 237,
+        "p": 0.0001170554163003226,
+        "distinguishable": true
+      }
+    },
+    {
+      "key": "floor",
+      "levers": {
+        "values": false,
+        "floor": true,
+        "energy": false
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.29333333333333333,
+          "clearCI": [
+            0.2446863408173478,
+            0.34720608729121943
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.38,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.2866666666666667,
+          "clearCI": [
+            0.23844603883911672,
+            0.34028162888585606
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.26666666666666666,
+          "clearCI": [
+            0.21980599242978902,
+            0.3194273941443998
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.21,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.38666666666666666,
+          "clearCI": [
+            0.3333235932727648,
+            0.44287548020612694
+          ],
+          "survive9": 0.8266666666666667,
+          "survive9CI": [
+            0.7797738592855163,
+            0.8652993995106191
+          ],
+          "meanReached": 15.56,
+          "capped": 0
+        }
+      },
+      "gate": {
+        "survive9pp": 15.000000000000002,
+        "clearpp": 12,
+        "reached": 1.3499999999999996
+      },
+      "gatePass": {
+        "survive9": false,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.38666666666666666,
+        "worstP": 0.26666666666666666,
+        "wins": 55,
+        "losses": 19,
+        "ties": 226,
+        "p": 0.00003376813810738302,
+        "distinguishable": true
+      }
+    },
+    {
+      "key": "values+floor",
+      "levers": {
+        "values": true,
+        "floor": true,
+        "energy": false
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.2966666666666667,
+          "clearCI": [
+            0.24781139052709278,
+            0.3506634177732718
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.37,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.27666666666666667,
+          "clearCI": [
+            0.2291105831706849,
+            0.3298699439788959
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.25666666666666665,
+          "clearCI": [
+            0.2105333372157727,
+            0.3089529087830243
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.21,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.33666666666666667,
+          "clearCI": [
+            0.28555536789720404,
+            0.39190800270472814
+          ],
+          "survive9": 0.78,
+          "survive9CI": [
+            0.729747382071561,
+            0.8231725540394124
+          ],
+          "meanReached": 15.276666666666667,
+          "capped": 0
+        }
+      },
+      "gate": {
+        "survive9pp": 11.66666666666667,
+        "clearpp": 8.000000000000002,
+        "reached": 1.1499999999999986
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.33666666666666667,
+        "worstP": 0.25666666666666665,
+        "wins": 39,
+        "losses": 15,
+        "ties": 246,
+        "p": 0.0014962588853935205,
+        "distinguishable": true
+      }
+    },
+    {
+      "key": "energy",
+      "levers": {
+        "values": false,
+        "floor": false,
+        "energy": true
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.30333333333333334,
+          "clearCI": [
+            0.254071130112916,
+            0.3575684385710432
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.356666666666667,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.2866666666666667,
+          "clearCI": [
+            0.23844603883911672,
+            0.34028162888585606
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.2833333333333333,
+          "clearCI": [
+            0.23533085262050668,
+            0.3368144349126687
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.206666666666667,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.37,
+          "clearCI": [
+            0.3173317277979069,
+            0.42595544472199826
+          ],
+          "survive9": 0.7966666666666666,
+          "survive9CI": [
+            0.7475056887027621,
+            0.8383261483671974
+          ],
+          "meanReached": 15.303333333333333,
+          "capped": 1
+        }
+      },
+      "gate": {
+        "survive9pp": 12,
+        "clearpp": 8.666666666666668,
+        "reached": 1.1533333333333324
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.37,
+        "worstP": 0.2833333333333333,
+        "wins": 49,
+        "losses": 23,
+        "ties": 228,
+        "p": 0.0029427605301249756,
+        "distinguishable": true
+      }
+    },
+    {
+      "key": "values+energy",
+      "levers": {
+        "values": true,
+        "floor": false,
+        "energy": true
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.2966666666666667,
+          "clearCI": [
+            0.24781139052709278,
+            0.3506634177732718
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.356666666666667,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.2733333333333333,
+          "clearCI": [
+            0.22600557282535585,
+            0.3263925741324276
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.26666666666666666,
+          "clearCI": [
+            0.21980599242978902,
+            0.3194273941443998
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.206666666666667,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.32666666666666666,
+          "clearCI": [
+            0.2760784389370337,
+            0.3816377910895065
+          ],
+          "survive9": 0.6866666666666666,
+          "survive9CI": [
+            0.6320976882894761,
+            0.7365156024511726
+          ],
+          "meanReached": 14.29,
+          "capped": 2
+        }
+      },
+      "gate": {
+        "survive9pp": 11.66666666666667,
+        "clearpp": 6,
+        "reached": 1.1533333333333324
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.32666666666666666,
+        "worstP": 0.26666666666666666,
+        "wins": 39,
+        "losses": 21,
+        "ties": 240,
+        "p": 0.027340133868078074,
+        "distinguishable": true
+      }
+    },
+    {
+      "key": "floor+energy",
+      "levers": {
+        "values": false,
+        "floor": true,
+        "energy": true
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.27666666666666667,
+          "clearCI": [
+            0.2291105831706849,
+            0.3298699439788959
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.363333333333333,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.26666666666666666,
+          "clearCI": [
+            0.21980599242978902,
+            0.3194273941443998
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.36,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.25333333333333335,
+          "clearCI": [
+            0.20744975019457168,
+            0.3054541156124281
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.206666666666667,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.31,
+          "clearCI": [
+            0.2603435250910202,
+            0.3644608039765336
+          ],
+          "survive9": 0.7833333333333333,
+          "survive9CI": [
+            0.7332901513634335,
+            0.8262121649393371
+          ],
+          "meanReached": 15.093333333333334,
+          "capped": 1
+        }
+      },
+      "gate": {
+        "survive9pp": 11.66666666666667,
+        "clearpp": 5.666666666666664,
+        "reached": 1.1533333333333324
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": false,
+        "reached": true
+      },
+      "gateAllPass": false,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.31,
+        "worstP": 0.25333333333333335,
+        "wins": 44,
+        "losses": 27,
+        "ties": 229,
+        "p": 0.056814677932838696,
+        "distinguishable": false
+      }
+    },
+    {
+      "key": "values+floor+energy",
+      "levers": {
+        "values": true,
+        "floor": true,
+        "energy": true
+      },
+      "arms": {
+        "classic": {
+          "clear": 0.2733333333333333,
+          "clearCI": [
+            0.22600557282535585,
+            0.3263925741324276
+          ],
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "meanReached": 14.353333333333333,
+          "capped": 3
+        },
+        "blood": {
+          "clear": 0.26,
+          "clearCI": [
+            0.21362060324984844,
+            0.3124480229407458
+          ],
+          "survive9": 0.7933333333333333,
+          "survive9CI": [
+            0.7439449832316525,
+            0.8353044736465098
+          ],
+          "meanReached": 15.356666666666667,
+          "capped": 0
+        },
+        "guard": {
+          "clear": 0.24333333333333335,
+          "clearCI": [
+            0.19822154124096722,
+            0.29493518399064056
+          ],
+          "survive9": 0.6766666666666666,
+          "survive9CI": [
+            0.6217915462378203,
+            0.7270746039274365
+          ],
+          "meanReached": 14.206666666666667,
+          "capped": 5
+        },
+        "talisman": {
+          "clear": 0.2733333333333333,
+          "clearCI": [
+            0.22600557282535585,
+            0.3263925741324276
+          ],
+          "survive9": 0.69,
+          "survive9CI": [
+            0.6355391960234663,
+            0.7396564749089797
+          ],
+          "meanReached": 14.34,
+          "capped": 2
+        }
+      },
+      "gate": {
+        "survive9pp": 11.66666666666667,
+        "clearpp": 2.9999999999999973,
+        "reached": 1.1500000000000004
+      },
+      "gatePass": {
+        "survive9": true,
+        "clear": true,
+        "reached": true
+      },
+      "gateAllPass": true,
+      "worstVsBest": {
+        "best": "talisman",
+        "worst": "guard",
+        "bestP": 0.2733333333333333,
+        "worstP": 0.24333333333333335,
+        "wins": 32,
+        "losses": 23,
+        "ties": 245,
+        "p": 0.2806097176983544,
+        "distinguishable": false
+      }
+    }
+  ],
+  "passingCombos": [
+    "values+floor+energy"
+  ]
+}

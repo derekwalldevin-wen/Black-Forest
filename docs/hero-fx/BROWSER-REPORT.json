@@ -1,0 +1,232 @@
+{
+  "checks": [
+    "9 actual card submissions: four move styles plus actual healing, multi-hit/echo frames, recovery and numeric parity with heroFx=off",
+    "all 6 captured action timelines freeze under real scene pause",
+    "reduced motion retains one brief pose/glow and recovers",
+    "12 overlapping casts replace old effects instead of accumulating",
+    "shield reaction restores heroine neutral pose",
+    "320px battle layout captured; masks reserve enemy HP/player HUD/card regions",
+    "shutdown clears pose timer, mask and tracked effects"
+  ],
+  "screens": [
+    "strike-390.png",
+    "heavy_blow-390.png",
+    "fu_paper-390.png",
+    "defend-390.png",
+    "drain_life-390.png",
+    "focus-390.png",
+    "seal-320.png"
+  ],
+  "parity": [
+    {
+      "card": "strike",
+      "on": {
+        "hp": 45,
+        "enemyHp": 244,
+        "block": 0,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 244,
+        "block": 0,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "heavy_blow",
+      "on": {
+        "hp": 45,
+        "enemyHp": 236,
+        "block": 0,
+        "energy": 1,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 236,
+        "block": 0,
+        "energy": 1,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "fu_paper",
+      "on": {
+        "hp": 45,
+        "enemyHp": 243,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 1,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 243,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 1,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "defend",
+      "on": {
+        "hp": 45,
+        "enemyHp": 250,
+        "block": 5,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 250,
+        "block": 5,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "drain_life",
+      "on": {
+        "hp": 56,
+        "enemyHp": 239,
+        "block": 0,
+        "energy": 1,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 56,
+        "enemyHp": 239,
+        "block": 0,
+        "energy": 1,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "focus",
+      "on": {
+        "hp": 45,
+        "enemyHp": 250,
+        "block": 0,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 250,
+        "block": 0,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "dagger_fan",
+      "on": {
+        "hp": 45,
+        "enemyHp": 244,
+        "block": 0,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 244,
+        "block": 0,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "thunder_word",
+      "on": {
+        "hp": 45,
+        "enemyHp": 238,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 1,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 238,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 1,
+        "discard": 1,
+        "hand": 0
+      }
+    },
+    {
+      "card": "nine_head",
+      "on": {
+        "hp": 45,
+        "enemyHp": 230,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 1,
+        "discard": 1,
+        "hand": 0
+      },
+      "off": {
+        "hp": 45,
+        "enemyHp": 230,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 1,
+        "discard": 1,
+        "hand": 0
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "scope": "Real browser actions and exact cosmetic-on/off numeric comparisons; no subjective physical phone review."
+}

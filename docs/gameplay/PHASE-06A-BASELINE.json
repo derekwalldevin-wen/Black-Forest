@@ -1,0 +1,501 @@
+{
+  "tool": "tools/ab-test.js",
+  "gamesPerArm": 300,
+  "seedFormula": "((i + seedBase*7919) * 2654435761) >>> 0 || 1",
+  "batch": "select",
+  "seedBase": 0,
+  "only": [
+    "starters",
+    "starters+contract",
+    "ablate"
+  ],
+  "sourceHashes": {
+    "tools/simulate.js": "c74f56fe054a1861763808360fb3b5857f2cc2eb71bde8070b6f7931dd38d6c9",
+    "tools/ab-test.js": "f946943f7329189b9e9965d0f1bf6847235733c2df3ed6b1e6380d900280c697",
+    "src/core/cards.js": "8c5151a3c258fdde67b0b31603c191267416f85b0159e8cba1477543365f7b00",
+    "src/core/combat.js": "a7995e6fe8c7a3b1a351b513ea87e3fce6bf4ed1228c99b1926df3ce4ed77d26",
+    "src/core/run.js": "6d8a5f04aeee36178061d42f2ad552149894b3d48326f8529e1e206a68b62321",
+    "src/core/events.js": "27d23cc9c6b28a993a62b89fadb38e2488671bd6dbb7ebc5ace2681783edff7d"
+  },
+  "experiments": [
+    {
+      "key": "starters",
+      "title": "实验 B · 三套传承到底有没有区别",
+      "base": 0,
+      "arms": [
+        {
+          "name": "classic",
+          "starter": "classic",
+          "contracts": [],
+          "deckOverride": false,
+          "suppressContractNodes": false,
+          "clear": 0.41,
+          "clearCI": [
+            0.35582394978705545,
+            0.4664517850344173
+          ],
+          "clearX": 123,
+          "survive9": 0.8066666666666666,
+          "survive9CI": [
+            0.7582162444921962,
+            0.8473627331531554
+          ],
+          "survive9X": 242,
+          "reach": 15.633333333333333,
+          "hpLost": 11.771436426590844,
+          "turns": 3.178829973403503,
+          "deck": 24.60333333333333,
+          "relics": 12.106666666666667,
+          "capped": 0
+        },
+        {
+          "name": "blood",
+          "starter": "blood",
+          "contracts": [],
+          "deckOverride": false,
+          "suppressContractNodes": false,
+          "clear": 0.4,
+          "clearCI": [
+            0.3461651905739094,
+            0.45636340367217154
+          ],
+          "clearX": 120,
+          "survive9": 0.8733333333333333,
+          "survive9CI": [
+            0.83091882993968,
+            0.9063077515416175
+          ],
+          "survive9X": 262,
+          "reach": 16.293333333333333,
+          "hpLost": 9.44702953201483,
+          "turns": 2.9901186444274686,
+          "deck": 25.413333333333334,
+          "relics": 12.606666666666667,
+          "capped": 0
+        },
+        {
+          "name": "guard",
+          "starter": "guard",
+          "contracts": [],
+          "deckOverride": false,
+          "suppressContractNodes": false,
+          "clear": 0.3433333333333333,
+          "clearCI": [
+            0.29188793515833583,
+            0.39874019582719095
+          ],
+          "clearX": 103,
+          "survive9": 0.8266666666666667,
+          "survive9CI": [
+            0.7797738592855163,
+            0.8652993995106191
+          ],
+          "survive9X": 248,
+          "reach": 15.746666666666666,
+          "hpLost": 10.60039705555882,
+          "turns": 3.325557243954303,
+          "deck": 24.65,
+          "relics": 12.253333333333334,
+          "capped": 0
+        },
+        {
+          "name": "talisman",
+          "starter": "talisman",
+          "contracts": [],
+          "deckOverride": false,
+          "suppressContractNodes": false,
+          "clear": 0.48,
+          "clearCI": [
+            0.4240768008498231,
+            0.536428917999393
+          ],
+          "clearX": 144,
+          "survive9": 0.86,
+          "survive9CI": [
+            0.8161683876377182,
+            0.8947286730763901
+          ],
+          "survive9X": 258,
+          "reach": 16.42,
+          "hpLost": 8.379173089437792,
+          "turns": 3.122031183685597,
+          "deck": 25.586666666666666,
+          "relics": 12.836666666666666,
+          "capped": 0
+        }
+      ],
+      "pairs": [
+        {
+          "arm": "blood",
+          "vs": "classic",
+          "aWins": 30,
+          "bWins": 33,
+          "ties": 237,
+          "surviveA": 24,
+          "surviveB": 4,
+          "surviveTies": 272,
+          "pClear": 0.8013064925040583,
+          "pSurv": 0.00017999112606048617,
+          "dHpLostPerFight": -2.3244068945760117,
+          "dTurnsPerFight": -0.18871132897603482,
+          "dReach": 0.66,
+          "n": 300
+        },
+        {
+          "arm": "guard",
+          "vs": "classic",
+          "aWins": 16,
+          "bWins": 36,
+          "ties": 248,
+          "surviveA": 16,
+          "surviveB": 10,
+          "surviveTies": 274,
+          "pClear": 0.007787436305743516,
+          "pSurv": 0.3269395828247079,
+          "dHpLostPerFight": -1.1710393710320188,
+          "dTurnsPerFight": 0.14672727055079998,
+          "dReach": 0.11333333333333333,
+          "n": 300
+        },
+        {
+          "arm": "talisman",
+          "vs": "classic",
+          "aWins": 43,
+          "bWins": 22,
+          "ties": 235,
+          "surviveA": 24,
+          "surviveB": 8,
+          "surviveTies": 268,
+          "pClear": 0.012502546136489953,
+          "pSurv": 0.007000366691499956,
+          "dHpLostPerFight": -3.3922633371530453,
+          "dTurnsPerFight": -0.05679878971790732,
+          "dReach": 0.7866666666666666,
+          "n": 300
+        }
+      ],
+      "bestVsWorst": [
+        {
+          "key": "clear",
+          "best": "talisman",
+          "bestP": 0.48,
+          "worst": "guard",
+          "worstP": 0.3433333333333333,
+          "pp": 13.666666666666666,
+          "ciOverlap": false,
+          "wins": 57,
+          "losses": 16,
+          "ties": 227,
+          "p": 0.0000015256583158538695
+        },
+        {
+          "key": "survived9",
+          "best": "blood",
+          "bestP": 0.8733333333333333,
+          "worst": "classic",
+          "worstP": 0.8066666666666666,
+          "pp": 6.666666666666665,
+          "ciOverlap": true,
+          "wins": 24,
+          "losses": 4,
+          "ties": 272,
+          "p": 0.00017999112606048617
+        }
+      ]
+    },
+    {
+      "key": "starters+contract",
+      "title": "实验 C · 三套传承在带妖契时的差异",
+      "base": 0,
+      "arms": [
+        {
+          "name": "blood+契",
+          "starter": "blood",
+          "contracts": [
+            "huodou"
+          ],
+          "deckOverride": false,
+          "suppressContractNodes": true,
+          "clear": 0.4,
+          "clearCI": [
+            0.3461651905739094,
+            0.45636340367217154
+          ],
+          "clearX": 120,
+          "survive9": 0.82,
+          "survive9CI": [
+            0.7725668011009401,
+            0.8593416973116006
+          ],
+          "survive9X": 246,
+          "reach": 15.746666666666666,
+          "hpLost": 10.0139703088306,
+          "turns": 3.0517955005234407,
+          "deck": 24.746666666666666,
+          "relics": 12.01,
+          "capped": 0
+        },
+        {
+          "name": "guard+契",
+          "starter": "guard",
+          "contracts": [
+            "huodou"
+          ],
+          "deckOverride": false,
+          "suppressContractNodes": true,
+          "clear": 0.38666666666666666,
+          "clearCI": [
+            0.3333235932727648,
+            0.44287548020612694
+          ],
+          "clearX": 116,
+          "survive9": 0.8066666666666666,
+          "survive9CI": [
+            0.7582162444921962,
+            0.8473627331531554
+          ],
+          "survive9X": 242,
+          "reach": 15.586666666666666,
+          "hpLost": 11.14494391392921,
+          "turns": 3.374899439068558,
+          "deck": 24.513333333333332,
+          "relics": 11.863333333333333,
+          "capped": 1
+        },
+        {
+          "name": "talisman+契",
+          "starter": "talisman",
+          "contracts": [
+            "huodou"
+          ],
+          "deckOverride": false,
+          "suppressContractNodes": true,
+          "clear": 0.51,
+          "clearCI": [
+            0.45366418944294434,
+            0.5660829511324477
+          ],
+          "clearX": 153,
+          "survive9": 0.87,
+          "survive9CI": [
+            0.8272195706954588,
+            0.9034246305940414
+          ],
+          "survive9X": 261,
+          "reach": 16.303333333333335,
+          "hpLost": 8.833695116430414,
+          "turns": 3.184362437399202,
+          "deck": 25.46,
+          "relics": 12.476666666666667,
+          "capped": 0
+        }
+      ],
+      "pairs": [
+        {
+          "arm": "guard+契",
+          "vs": "blood+契",
+          "aWins": 28,
+          "bWins": 32,
+          "ties": 240,
+          "surviveA": 9,
+          "surviveB": 13,
+          "surviveTies": 278,
+          "pClear": 0.6988834276200132,
+          "pSurv": 0.5234670639038088,
+          "dHpLostPerFight": 1.130973605098606,
+          "dTurnsPerFight": 0.32310393854511493,
+          "dReach": -0.16,
+          "n": 300
+        },
+        {
+          "arm": "talisman+契",
+          "vs": "blood+契",
+          "aWins": 49,
+          "bWins": 16,
+          "ties": 235,
+          "surviveA": 23,
+          "surviveB": 8,
+          "surviveTies": 269,
+          "pClear": 0.00005084767048790186,
+          "pSurv": 0.01067384053021669,
+          "dHpLostPerFight": -1.1802751924001924,
+          "dTurnsPerFight": 0.13256693687576032,
+          "dReach": 0.5566666666666666,
+          "n": 300
+        }
+      ],
+      "bestVsWorst": [
+        {
+          "key": "clear",
+          "best": "talisman+契",
+          "bestP": 0.51,
+          "worst": "guard+契",
+          "worstP": 0.38666666666666666,
+          "pp": 12.333333333333336,
+          "ciOverlap": false,
+          "wins": 54,
+          "losses": 17,
+          "ties": 229,
+          "p": 0.000012526823964854701
+        },
+        {
+          "key": "survived9",
+          "best": "talisman+契",
+          "bestP": 0.87,
+          "worst": "guard+契",
+          "worstP": 0.8066666666666666,
+          "pp": 6.333333333333336,
+          "ciOverlap": true,
+          "wins": 22,
+          "losses": 3,
+          "ties": 275,
+          "p": 0.00015652179718017578
+        }
+      ]
+    },
+    {
+      "key": "ablate",
+      "title": "实验 D · 消融：符咒到底强在哪一张牌",
+      "base": 0,
+      "arms": [
+        {
+          "name": "符咒 · 原样",
+          "starter": "talisman",
+          "contracts": [],
+          "deckOverride": false,
+          "suppressContractNodes": false,
+          "clear": 0.48,
+          "clearCI": [
+            0.4240768008498231,
+            0.536428917999393
+          ],
+          "clearX": 144,
+          "survive9": 0.86,
+          "survive9CI": [
+            0.8161683876377182,
+            0.8947286730763901
+          ],
+          "survive9X": 258,
+          "reach": 16.42,
+          "hpLost": 8.379173089437792,
+          "turns": 3.122031183685597,
+          "deck": 25.586666666666666,
+          "relics": 12.836666666666666,
+          "capped": 0
+        },
+        {
+          "name": "符咒 · 玄玑换格挡",
+          "starter": "talisman",
+          "contracts": [],
+          "deckOverride": true,
+          "suppressContractNodes": false,
+          "clear": 0.51,
+          "clearCI": [
+            0.45366418944294434,
+            0.5660829511324477
+          ],
+          "clearX": 153,
+          "survive9": 0.88,
+          "survive9CI": [
+            0.8383421861620733,
+            0.9120491557028189
+          ],
+          "survive9X": 264,
+          "reach": 16.383333333333333,
+          "hpLost": 8.576604147214441,
+          "turns": 3.3153711095549303,
+          "deck": 25.58,
+          "relics": 12.75,
+          "capped": 0
+        },
+        {
+          "name": "符咒 · 去掉全部符箓",
+          "starter": "talisman",
+          "contracts": [],
+          "deckOverride": true,
+          "suppressContractNodes": false,
+          "clear": 0.41,
+          "clearCI": [
+            0.35582394978705545,
+            0.4664517850344173
+          ],
+          "clearX": 123,
+          "survive9": 0.8066666666666666,
+          "survive9CI": [
+            0.7582162444921962,
+            0.8473627331531554
+          ],
+          "survive9X": 242,
+          "reach": 15.633333333333333,
+          "hpLost": 11.771436426590844,
+          "turns": 3.178829973403503,
+          "deck": 24.60333333333333,
+          "relics": 12.106666666666667,
+          "capped": 0
+        }
+      ],
+      "pairs": [
+        {
+          "arm": "符咒 · 玄玑换格挡",
+          "vs": "符咒 · 原样",
+          "aWins": 32,
+          "bWins": 23,
+          "ties": 245,
+          "surviveA": 16,
+          "surviveB": 10,
+          "surviveTies": 274,
+          "pClear": 0.2806097176983539,
+          "pSurv": 0.3269395828247079,
+          "dHpLostPerFight": 0.1974310577766461,
+          "dTurnsPerFight": 0.19333992586933757,
+          "dReach": -0.03666666666666667,
+          "n": 300
+        },
+        {
+          "arm": "符咒 · 去掉全部符箓",
+          "vs": "符咒 · 原样",
+          "aWins": 22,
+          "bWins": 43,
+          "ties": 235,
+          "surviveA": 8,
+          "surviveB": 24,
+          "surviveTies": 268,
+          "pClear": 0.012502546136489953,
+          "pSurv": 0.007000366691499956,
+          "dHpLostPerFight": 3.3922633371530453,
+          "dTurnsPerFight": 0.05679878971790732,
+          "dReach": -0.7866666666666666,
+          "n": 300
+        }
+      ],
+      "bestVsWorst": [
+        {
+          "key": "clear",
+          "best": "符咒 · 玄玑换格挡",
+          "bestP": 0.51,
+          "worst": "符咒 · 去掉全部符箓",
+          "worstP": 0.41,
+          "pp": 10.000000000000004,
+          "ciOverlap": true,
+          "wins": 47,
+          "losses": 17,
+          "ties": 236,
+          "p": 0.00022688238288328256
+        },
+        {
+          "key": "survived9",
+          "best": "符咒 · 玄玑换格挡",
+          "bestP": 0.88,
+          "worst": "符咒 · 去掉全部符箓",
+          "worstP": 0.8066666666666666,
+          "pp": 7.333333333333336,
+          "ciOverlap": true,
+          "wins": 25,
+          "losses": 3,
+          "ties": 272,
+          "p": 0.000027440488338470503
+        }
+      ]
+    }
+  ]
+}

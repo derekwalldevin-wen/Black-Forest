@@ -1,0 +1,28 @@
+{
+  "mode": "user-authorized native font correction",
+  "id": "04-combat-shanhai",
+  "input": "docs/ui-reference/images/04-combat-shanhai-v4.png",
+  "output": "docs/ui-reference/images/04-combat-shanhai-v5.png",
+  "text": "玄玑",
+  "size": 26,
+  "weight": "bold",
+  "box": {
+    "left": 430,
+    "top": 1268,
+    "width": 84,
+    "height": 38
+  },
+  "erase": {
+    "left": 15,
+    "top": 10,
+    "width": 61,
+    "height": 27
+  },
+  "font": "SimSun",
+  "codepoints": [
+    "U+7384",
+    "U+7391"
+  ],
+  "outsideChanges": 0,
+  "insideChanges": 1612
+}

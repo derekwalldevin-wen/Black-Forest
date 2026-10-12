@@ -1,0 +1,11 @@
+{
+  "frames": 22,
+  "transparentAtlases": 4,
+  "checks": [
+    "spirit_gather seal target 215",
+    "qingqiu_seal seal target 215",
+    "fu_paper seal target 540",
+    "4 atlas previews and 7 real screenshots load; 320 width no horizontal overflow"
+  ],
+  "errors": []
+}

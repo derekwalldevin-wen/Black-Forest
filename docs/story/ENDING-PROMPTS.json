@@ -1,0 +1,18 @@
+{
+  "mode": "builtin-imagegen",
+  "reason": "Fresh generation explicitly requested by user; original cell 269 still has no ending output.",
+  "references": [
+    "assets/ui/hero-traveler-source-v1.png",
+    "assets/story/forest-v1.webp"
+  ],
+  "prompts": [
+    {
+      "key": "ending-home",
+      "prompt": "Use case: finished illustration for a narrative card game ending. Reference image 1 defines the exact human heroine: short chestnut hair with a pale streak, indigo cloak with dark red lining, bronze cloud pendant, practical brown clothes, brass lantern. Reference image 2 defines the existing hand-painted dark fairytale watercolor/ink style and village architecture. Create a new scene featuring the SAME woman, not a copy of the reference layout. Opaque landscape image, 3:2, 1536x1024. Rich handmade textures, restrained antique bronze, cool indigo #12101a and warm ochre gold #b08d3f, scarlet thread. Important subjects in central 65%, top and bottom 12% safe margins; clear at small mobile size. Artwork only: no frame, UI, letters, numbers, readable glyphs, logos, watermarks, or panels. No skull heroine, no physical resurrection, no ghost mother. Scene: hopeful bittersweet dawn at the village entrance after the old pact has ended. The heroine kneels beside a low stone and gently sets down her ornate brass lantern. Unfastened red threads loosen from her hand, branching into gentle golden trails toward the warm lit windows of several modest timber houses. A small white cat sits by a doorway; distant villagers greet each other; a repaired roof and hanging ordinary cloth suggest their lives have returned. Her expression is relieved and quietly tender. Mist parts, soft amber sunrise and pale cool sky. Mother's presence is only warmth in the morning breeze. Show clearly that many individual homes have their own lights and that the heroine is free to rest. A complete cinematic scene, one coherent picture."
+    },
+    {
+      "key": "ending-watch",
+      "prompt": "Use case: finished illustration for a narrative card game ending. Reference image 1 defines the exact human heroine: short chestnut hair with a pale streak, indigo cloak with dark red lining, bronze cloud pendant, practical brown clothes, brass lantern. Reference image 2 defines the existing hand-painted dark fairytale watercolor/ink style and village architecture. Create a new scene featuring the SAME woman, not a copy of the reference layout. Opaque landscape image, 3:2, 1536x1024. Rich handmade textures, restrained antique bronze, cool indigo #12101a and warm ochre gold #b08d3f, scarlet thread. Important subjects in central 65%, top and bottom 12% safe margins; clear at small mobile size. Artwork only: no frame, UI, letters, numbers, readable glyphs, logos, watermarks, or panels. No skull heroine, no physical resurrection, no ghost mother. Scene: hopeful bittersweet dawn on an OPEN ROAD between the two realms. The same heroine walks forward freely across a weathered stone bridge, carrying her brass lantern. A small worn notebook and unmarked jade tablets are secured at her belt with red thread. Behind her, ancient oxidized bronze terraces and peach branches recede into jade mist; ahead, a modest forest village with several welcoming lit windows. Thin red thread and tiny warm lights suggest paths to individual homes. Her cloak catches a gentle breeze, her face calm and determined. Sunrise opens the road; the bronze gateway behind her is open, never imprisoning her. She is delivering memories door to door by choice, can return home and rest. A different composition from the home ending: standing walking traveler, long traversable road, connection between realms. One coherent cinematic landscape."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "08-reward-gothic",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-afb797eb-24d9-4c69-9270-70ac5e8be486.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/08-reward-gothic-v3.png",
+  "prompt": "Use-case ui-mockup. One complete portrait 9:16 game screen reference, no device bezel. 黑森林 watercolor dark fantasy card roguelike, indigo #12101a, restrained antique gold #b08d3f borders, ivory #e8dcc0, parchment card rule areas. Clean practical composition, crisp standard printed simplified Chinese. No invented controls, flavor quotation boxes, logos, signatures, pseudo-text or watermark. Exact text, numeric rules and state below are mandatory. Gothic forest reward screen. Header 第一章 and coin68. Title 战利品, subtitle 选择一张牌加入牌组, +22金币. Three full cards triangular: uppercenter 重击 cost2 rule 造成14点伤害; lowerleft 铁壁 cost1 获得8点格挡; lowerright 凝神 cost1 抽2张牌. Large illustrations hammerhit, ironwall, meditating hood. Footer 跳过 active, 继续 disabled. Do not show starter 劈砍 or 格挡 cards. No enemy or combat resources.",
+  "mode": "built-in image_gen"
+}

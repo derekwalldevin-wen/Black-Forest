@@ -1,0 +1,12 @@
+{
+  "id": "09-reward-shanhai",
+  "file": "09-reward-shanhai-v4",
+  "refs": [
+    "images/09-reward-shanhai-v3.png",
+    "GLYPH-GUIDE.png"
+  ],
+  "prompt": "First image is edit target. Second is a real-font GLYPH GUIDE only. Make ONLY lower-right card title correction: copy exact two-character outlines from TOP LARGE HEADING of glyphguide, 玄玑 U+7384 U+7391. Include the 王 radical clearly in second character. Replace current erroneous玄兀. Do not copy background/other labels from guide. Preserve all card artwork, flame costs1/1/0, rules, buttons and every otherpixel.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-bbbf4a67-2568-45d5-98f8-0abd37487b5d.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/09-reward-shanhai-v4.png",
+  "mode": "built-in image_gen"
+}

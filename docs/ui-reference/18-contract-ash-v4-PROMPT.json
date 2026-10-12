@@ -1,0 +1,12 @@
+{
+  "id": "18-contract-ash",
+  "file": "18-contract-ash-v4",
+  "refs": [
+    "images/18-contract-ash-v3.png",
+    "GLYPH-GUIDE.png"
+  ],
+  "prompt": "Firstimageedit target. Secondimage real-font glyphguide. ONLY correct event title by copying exact two-character outline from BOTTOM LARGE HEADING of guide: 灰冢 U+7070 U+51A2. The second character has the distinctive additional dot stroke of 冢; it is NOT 家 U+5BB6. Preserve entire painting, all exact existing options, healing15%, fontscale and layout. No other modifications.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-b49d78a4-2972-4877-bca0-e02d8c7c9539.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/18-contract-ash-v4.png",
+  "mode": "built-in image_gen"
+}

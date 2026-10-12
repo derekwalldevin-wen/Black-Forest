@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黑森林 · 首批美术验收</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#12101a;color:#e8dcc0;font:16px/1.6 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:28px}h1{font-size:26px;color:#c8a86a}p{color:#aaa1b3}a{color:#c8a86a}button{background:#1e1928;color:#e8dcc0;border:1px solid #4a3f5e;padding:9px 16px;border-radius:5px;cursor:pointer;margin-right:8px}button[aria-pressed=true]{border-color:#c8a86a;color:#c8a86a}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:22px}figure{margin:0}img{width:100%;display:block;object-fit:cover;object-position:center;aspect-ratio:var(--ratio,1.5)}figcaption{margin:8px 0;color:#c8a86a}.thumbs{display:flex;gap:24px;flex-wrap:wrap;padding-top:24px}.thumbs img{width:103px}.thumbs figcaption{font-size:12px}iframe{display:block;width:360px;height:640px;border:1px solid #4a3f5e;background:#12101a;margin-top:22px}.pair{display:flex;gap:28px;flex-wrap:wrap}.pair p{max-width:580px}@media(max-width:720px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding:16px}iframe{max-width:100%}}
+</style>
+<main>
+<h1>黑森林 · 哥特篇首批 4 张</h1>
+<p>剑 / 盾 / 月 / 血。查看不同画窗比例下的居中裁切；下排模拟最小 103 px 画窗。实际游戏自动按卡牌描述长度选择比例。</p>
+<nav aria-label="画窗比例">
+<button data-ratio="1.21" aria-pressed="false">最窄 1.21:1</button>
+<button data-ratio="1.5" aria-pressed="true">原图 3:2</button>
+<button data-ratio="1.85" aria-pressed="false">最宽 1.85:1</button>
+</nav>
+<section class="grid" aria-label="卡面插画"></section>
+<section class="thumbs" aria-label="最小尺寸检查"></section>
+<h2>游戏内效果</h2>
+<div class="pair"><iframe title="实际游戏卡面" src="../../index.html?debug=1&amp;auto=1&amp;cards=strike,defend,focus,blood_pact"></iframe>
+<div><p>画窗已启用真正的居中裁切，插画不会盖住铭牌或规则框。可在游戏中点击卡牌检查放大效果。</p>
+<p><a href="../../index.html?debug=1&amp;auto=1&amp;cards=strike,defend,focus,blood_pact" target="_blank">单独打开游戏</a> · <a href="../../index.html?debug=1&amp;auto=1&amp;art=off&amp;cards=strike,defend,focus,blood_pact" target="_blank">关闭插画对照</a></p>
+<p>本批四张均为 1536 × 1024 不透明 PNG；未交付的卡面及东方篇继续显示现有符号图案。原始生成图与完整提示词保存在 docs/art 中。</p></div></div>
+</main>
+<script>
+const subjects=[['sword','剑 · 劈砍 / 重击 / 月刃'],['shield','盾 · 格挡 / 铁壁 / 盾击'],['moon','月 · 凝神 / 暗契 / 月华 / 永夜'],['blood','血 · 血契 / 噬血 / 血月']];
+for(const selector of ['.grid','.thumbs']) document.querySelector(selector).innerHTML=subjects.map(([key,label])=>`<figure><img src="../../assets/art-gothic-${key}.png" alt="${label}"><figcaption>${label}</figcaption></figure>`).join('');
+document.querySelectorAll('button[data-ratio]').forEach(button=>button.addEventListener('click',()=>{document.documentElement.style.setProperty('--ratio',button.dataset.ratio);document.querySelectorAll('button[data-ratio]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));}));
+</script>
+</html>

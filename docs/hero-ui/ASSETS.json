@@ -1,0 +1,30 @@
+[
+  {
+    "source": "assets/ui/hero-traveler-source-v1.png",
+    "file": "assets/ui/hero-traveler-v1.webp",
+    "width": 733,
+    "height": 1100,
+    "hasAlpha": true,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 148742
+  },
+  {
+    "source": "assets/ui/hero-avatar-source-v1.png",
+    "file": "assets/ui/hero-avatar-v1.png",
+    "width": 384,
+    "height": 384,
+    "hasAlpha": true,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": 321025
+  }
+]

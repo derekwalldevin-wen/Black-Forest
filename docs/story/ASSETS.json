@@ -1,0 +1,74 @@
+[
+  {
+    "key": "forest",
+    "file": "assets/story/forest-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 211544,
+    "source": "docs/story/source/forest-v1.png",
+    "sourceHash": "5b3aed34aba7e109cceed4ea7d875f7f45327a63357f4fff6cb129db7e6c07f4"
+  },
+  {
+    "key": "marsh",
+    "file": "assets/story/marsh-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 254114,
+    "source": "docs/story/source/marsh-v1.png",
+    "sourceHash": "c6758394bfccad7e05f4e97dc3b43916faac86615fa87a3d62ca1e33a394efdd"
+  },
+  {
+    "key": "roots",
+    "file": "assets/story/roots-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 266552,
+    "source": "docs/story/source/roots-v1.png",
+    "sourceHash": "4f4d026d9705849b2f0b9c31bff099041bce812527189343513cd5c965b9c525"
+  },
+  {
+    "key": "qingqiu",
+    "file": "assets/story/qingqiu-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 282740,
+    "source": "docs/story/source/qingqiu-v1.png",
+    "sourceHash": "f96d3617d8997396393a5917672786d96da2338084413c80967c5fafe8416315"
+  },
+  {
+    "key": "ashes",
+    "file": "assets/story/ashes-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 226434,
+    "source": "docs/story/source/ashes-v1.png",
+    "sourceHash": "e3344b3a989c88730926134608fcaf456fa628636150b7a69ac550c348f51037"
+  },
+  {
+    "key": "gate",
+    "file": "assets/story/gate-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 282700,
+    "source": "docs/story/source/gate-v1.png",
+    "sourceHash": "412b819cadb608eab5db7fa2f3000a227542de09c031b1b116c628c0a63cf719"
+  },
+  {
+    "key": "ending-home",
+    "file": "assets/story/ending-home-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 321552,
+    "source": "docs/story/source/ending-home-v1.png",
+    "sourceHash": "13c4af61ed24285065c33df6e36e794f1aa8f4a5e414212375b97c6d317418c4"
+  },
+  {
+    "key": "ending-watch",
+    "file": "assets/story/ending-watch-v1.webp",
+    "width": 1152,
+    "height": 768,
+    "bytes": 287870,
+    "source": "docs/story/source/ending-watch-v1.png",
+    "sourceHash": "f8b0418b2fa7ce654c4e8120443277c78a1e9ebf5528c657f03244ff2a602187"
+  }
+]

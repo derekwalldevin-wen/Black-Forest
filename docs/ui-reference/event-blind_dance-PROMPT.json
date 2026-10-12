@@ -1,0 +1,7 @@
+{
+  "id": "event-blind_dance",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-9c477d29-8ca2-4db0-b542-41ce6fab3fb6.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/event-blind_dance.png",
+  "prompt": "Use-case ui-mockup. Complete 9:16 portrait mobile game event UI reference, no device bezel. Watercolor Chinese mythology scene, deep indigo panels, antique gold thin frames, ivory legible simplified Chinese. Upper half independently illustrated story image matching supplied event art. Header 第四章 with HP48/70 and coins68. Title 浑敦之舞. Exact story text: 「浑敦无面目，是识歌舞。」一个黄囊似的东西在跳，没有脸，跳得很准。你听了三遍才听出来它在唱。 Lower half three large vertically stacked choice buttons, each with a clear action name and separate readable effect subtitle: 1) 跟着跳 — 失去 18 点生命，获得 2 张随机卡牌; 2) 替它数拍子 — 灵韵上限 +2; 3) 闭上眼离开 — 回复 15% 最大生命. No combat hand, enemy intention, invented extra controls, wrong Chinese glyphs or watermark. All buttons fully inside portrait and thumb friendly. Illustration: faceless red sack Dijiang dancing abovebronzealtar, exactly6 feet4 wings, no eyes or mouth. Generate anew without input image.",
+  "mode": "built-in image_gen"
+}

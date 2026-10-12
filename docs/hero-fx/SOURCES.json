@@ -1,0 +1,17 @@
+{
+  "selected": {
+    "lantern-blade": "exec-ab972d06-32e5-4f86-8ac8-bcb58f601be2.png",
+    "thread-seal": "exec-4a20bec4-bd16-42cb-83cf-511d3a899a1f.png",
+    "lantern-ward": "exec-9ad10151-e4d8-4532-a0d1-0b72566eb98f.png",
+    "hero-actions": "exec-b4f84012-f9fe-4441-8207-d352f6ba5b1a.png"
+  },
+  "defaultOutputDirectory": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058",
+  "allSelectedCopiedIntoProject": true,
+  "localScripts": {
+    "41": "terminated after three effect outputs; reference-based six-pose heroine output had not returned",
+    "47": "completed: seal margin correction",
+    "54": "terminated; PNG-reference six-pose output had not returned",
+    "62": "completed: independent four-pose heroine sheet"
+  },
+  "rootCauseOfSlowReferenceAttempts": "Not established; no provider diagnostic returned."
+}

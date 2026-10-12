@@ -1,0 +1,28 @@
+{
+  "mode": "user-authorized native font correction",
+  "id": "18-contract-ash",
+  "input": "docs/ui-reference/images/18-contract-ash-v4.png",
+  "output": "docs/ui-reference/images/18-contract-ash-v5.png",
+  "text": "灰冢",
+  "size": 64,
+  "weight": "bold",
+  "box": {
+    "left": 377,
+    "top": 811,
+    "width": 185,
+    "height": 72
+  },
+  "erase": {
+    "left": 16,
+    "top": 9,
+    "width": 153,
+    "height": 56
+  },
+  "font": "SimSun",
+  "codepoints": [
+    "U+7070",
+    "U+51A2"
+  ],
+  "outsideChanges": 0,
+  "insideChanges": 6646
+}

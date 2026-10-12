@@ -1,0 +1,10 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-b2b449c7-3d4d-41d9-a823-6f1ccfe3e914.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/04-combat-shanhai-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected 山海 battle UI. Image1 is supporting creature identity ONLY: preserve faceless tied red sack body, EXACTLY SIX claw feet (three left, three right), EXACTLY FOUR feather wings (two left, two right), no face, no extra limbs. Place full creature small enough its entire body fits above bronze ritual pedestal in upper half. Chinese ink watercolor misty bronze ruin, indigo, cinnabar and jade; restrained square bronze cloud-fret corners. Header 第六章·帝鸿之末, 回合2, 68金币. Name 帝江 and sword intent18 beside creature. Enemy HP92/128 below feet, shield5 RIGHT same baseline. Player skull portrait and HP52/70, blue shield9 RIGHT same baseline. Bottom five cards 符纸 cost1灵韵 造成7点伤害; 封门 cost1灵韵 获得8点格挡; 玄玑 cost0灵韵 获得1点灵韵，抽1张牌; 劈砍 cost1行动力 造成6点伤害; 格挡 cost1行动力 获得5点格挡. Resource strip 行动力2/3 and 灵韵2/3 clearly separate icons, one large 结束回合. No gear, no fake labels, no enemy attack animation, no limbs cut off.",
+  "id": "04-combat-shanhai",
+  "file": "04-combat-shanhai-v2",
+  "refs": [
+    "Z:/00-游戏/portrait-card-game/assets/enemy-dijiang.png"
+  ]
+}

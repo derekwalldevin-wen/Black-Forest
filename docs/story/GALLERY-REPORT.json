@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "art": 8,
+  "screens": 48,
+  "layouts": [
+    {
+      "width": 390,
+      "scroll": 390,
+      "art": 8,
+      "screens": 48,
+      "script": 18,
+      "error": "",
+      "status": "六章与两种结局插画均已接入；下方实景来自完整路线验收。"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "art": 8,
+      "screens": 48,
+      "script": 18,
+      "error": "",
+      "status": "六章与两种结局插画均已接入；下方实景来自完整路线验收。"
+    }
+  ],
+  "errors": []
+}

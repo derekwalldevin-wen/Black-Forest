@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竖屏卡牌手游 · 布局规范</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f5f0; --card:#fff; --line:#e9e3d6; --line-soft:#f0ece2;
+  --ink:#14171e; --ink2:#3a4256; --muted:#7c7a72;
+  --primary:#2f6f5e; --primary-soft:rgba(47,111,94,.09);
+  --warn:#c97b3f; --warn-soft:rgba(201,123,63,.10);
+  --danger:#b06367; --danger-soft:rgba(176,99,103,.10);
+  --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:'Outfit',-apple-system,sans-serif;
+  font-size:15px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:
+    radial-gradient(60% 40% at 8% 0%, rgba(47,111,94,.05), transparent 70%),
+    radial-gradient(50% 35% at 100% 100%, rgba(201,123,63,.05), transparent 70%);
+}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:48px 24px 80px}
+
+h1{font-family:'DM Serif Display',serif;font-size:38px;font-weight:400;letter-spacing:-.01em;line-height:1.2}
+.sub{color:var(--muted);font-size:15px;margin-top:10px;max-width:62ch}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);margin-bottom:14px;font-weight:500}
+
+h2{font-family:'DM Serif Display',serif;font-size:25px;font-weight:400;margin:0 0 8px;letter-spacing:-.005em}
+h3{font-size:16px;font-weight:600;margin:0 0 6px}
+section{margin-top:56px}
+.lede{color:var(--ink2);font-size:14.5px;max-width:70ch;margin-bottom:24px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 2px 8px rgba(0,0,0,.035)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;padding:2px 7px;border-radius:5px;font-weight:500}
+.tag-ok{background:var(--primary-soft);color:var(--primary)}
+.tag-warn{background:var(--warn-soft);color:var(--warn)}
+.tag-no{background:var(--danger-soft);color:var(--danger)}
+
+/* ---------- phone mockup ---------- */
+.stage{display:grid;grid-template-columns:minmax(280px,340px) 1fr;gap:32px;align-items:start}
+@media(max-width:860px){.stage{grid-template-columns:1fr}}
+.phone{
+  position:relative;width:100%;aspect-ratio:9/19.5;
+  background:linear-gradient(180deg,#241a16 0%,#1a1210 100%);
+  border-radius:30px;border:8px solid #14100e;
+  box-shadow:0 12px 40px rgba(0,0,0,.28);
+  overflow:hidden;color:#e8dcc8;font-size:11px;
+}
+.notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:62px;height:15px;background:#0d0a09;border-radius:9px;z-index:5}
+.safe-top{position:absolute;top:0;left:0;right:0;height:26px;border-bottom:1px dashed rgba(232,220,200,.22);z-index:4;pointer-events:none}
+.safe-bot{position:absolute;bottom:0;left:0;right:0;height:30px;border-top:1px dashed rgba(232,220,200,.22);z-index:4;pointer-events:none}
+.safe-lbl{position:absolute;right:5px;font-family:var(--mono);font-size:8px;color:rgba(232,220,200,.5);z-index:5}
+.zone{position:absolute;left:0;right:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px}
+.zone-lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.z-sys{top:26px;height:42px;background:rgba(0,0,0,.24)}
+.z-res{top:68px;height:74px;background:rgba(0,0,0,.16);border-bottom:1px solid rgba(232,220,200,.12)}
+.z-enemy{top:142px;height:250px;background:rgba(90,40,30,.22);border-bottom:1px solid rgba(232,220,200,.12);flex-direction:column;gap:6px}
+.z-status{top:392px;height:66px;background:rgba(0,0,0,.2);border-bottom:1px solid rgba(232,220,200,.12)}
+.z-hand{top:458px;bottom:88px;background:rgba(40,70,60,.2);border-bottom:1px solid rgba(232,220,200,.12);flex-direction:column;gap:8px}
+.z-act{bottom:30px;height:58px;background:rgba(0,0,0,.34)}
+.zone-tag{position:absolute;left:5px;top:4px;font-family:var(--mono);font-size:7.5px;opacity:.5;letter-spacing:.06em}
+
+.heap{position:absolute;left:8px;top:6px;display:flex;gap:3px}
+.heap i{width:12px;height:12px;border-radius:3px;background:rgba(201,123,63,.5);border:1px solid rgba(201,123,63,.8);display:block}
+.pot{position:absolute;right:8px;top:6px;display:flex;gap:4px}
+.pot i{width:11px;height:11px;border-radius:50%;background:rgba(90,140,180,.45);border:1px solid rgba(140,190,230,.8);display:block}
+.foe{font-size:44px;line-height:1;opacity:.82}
+.foe-hp{font-family:var(--mono);font-size:9.5px;color:#f0a0a0}
+.foe-int{font-family:var(--mono);font-size:9px;color:#ffd88a;background:rgba(0,0,0,.4);padding:2px 8px;border-radius:9px}
+.plr{font-family:var(--mono);font-size:10px;display:flex;gap:9px;align-items:center;flex-wrap:wrap;justify-content:center}
+.pstat{font-size:9px;color:#a8d0f0;font-family:var(--mono)}
+
+.cards{display:flex;gap:4px;align-items:flex-end;justify-content:center}
+.pcard{width:47px;height:66px;border-radius:4px;border:1.5px solid;display:flex;flex-direction:column;align-items:center;padding:2px;font-size:7px;line-height:1.2;text-align:center;flex-shrink:0}
+.pcard.atk{background:rgba(140,50,50,.75);border-color:#c97070}
+.pcard.skl{background:rgba(45,80,130,.75);border-color:#7aa8d8}
+.pcard.pwr{background:rgba(100,50,140,.75);border-color:#b088d8}
+.pcard .c{font-family:var(--mono);font-size:8.5px;color:#ffe9a8;font-weight:600}
+.pcard .n{font-size:7.5px;margin-top:1px}
+.pcard .t{font-size:6px;opacity:.7;margin-top:auto}
+.pcard.sel{transform:translateY(-14px) scale(1.16);box-shadow:0 5px 14px rgba(0,0,0,.5);border-color:#ffe9a8}
+
+.actrow{display:flex;align-items:center;justify-content:space-between;padding:0 12px;width:100%}
+.ap{font-family:var(--mono);font-size:15px;color:#ffe08a;font-weight:600}
+.btn-end{background:rgba(120,70,35,.85);border:1.5px solid #d8a55a;border-radius:7px;padding:7px 16px;font-size:10.5px;font-weight:600;color:#ffeec4}
+
+/* thumb overlay */
+.thumb{position:absolute;inset:0;pointer-events:none;z-index:6;border-radius:22px}
+.tz-hard{position:absolute;top:26px;left:0;right:0;height:150px;background:repeating-linear-gradient(45deg,rgba(176,99,103,.20) 0 8px,rgba(176,99,103,.09) 8px 16px)}
+.tz-stretch{position:absolute;top:176px;left:0;right:0;height:175px;background:repeating-linear-gradient(45deg,rgba(201,123,63,.18) 0 8px,rgba(201,123,63,.08) 8px 16px)}
+.tz-easy{position:absolute;top:351px;bottom:30px;left:0;right:0;background:repeating-linear-gradient(45deg,rgba(47,111,94,.20) 0 8px,rgba(47,111,94,.08) 8px 16px)}
+.tz-key{position:absolute;right:6px;font-family:var(--mono);font-size:8px;letter-spacing:.08em;padding:2px 6px;border-radius:4px;color:#fff;z-index:2}
+.arc{position:absolute;right:8px;bottom:36px;width:190px;height:190px;border:1.5px dashed rgba(47,111,94,.75);border-radius:50%}
+
+/* ---------- legend ---------- */
+.legend{display:flex;flex-direction:column;gap:10px}
+.lg{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;padding:11px 13px;border:1px solid var(--line);border-radius:11px;background:var(--card)}
+.lg .k{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-size:13px}
+.lg .k.ok{background:var(--primary-soft);color:var(--primary)}
+.lg .k.warn{background:var(--warn-soft);color:var(--warn)}
+.lg .k.no{background:var(--danger-soft);color:var(--danger)}
+.lg p{font-size:13px;color:var(--ink2);margin-top:2px}
+.lg strong{font-size:14px;font-weight:600}
+
+/* ---------- bench ---------- */
+.bench{display:grid;grid-template-columns:150px 1fr 78px;gap:14px;align-items:center;padding:7px 0}
+.bench-label{font-size:13.5px;color:var(--ink2)}
+.bench-track{height:15px;background:var(--line-soft);border-radius:5px;overflow:hidden}
+.bench-fill{height:100%;border-radius:5px}
+.bench-val{font-family:var(--mono);font-size:12px;text-align:right;color:var(--ink2)}
+
+/* ---------- table ---------- */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:11px;font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:0 12px 9px;font-weight:500}
+td{padding:10px 12px;border-top:1px solid var(--line-soft);vertical-align:top}
+td:first-child{font-weight:500}
+td.mono{font-family:var(--mono);font-size:12.5px}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+
+/* ---------- timeline ---------- */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--primary);opacity:.32}
+.timeline li{position:relative;padding:0 0 22px 32px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:2px;top:5px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--primary)}
+.timeline .ph{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);font-weight:500}
+.timeline h4{font-size:15px;font-weight:600;margin:3px 0 4px}
+.timeline p{font-size:13.5px;color:var(--ink2)}
+
+.note{background:var(--warn-soft);border:1px solid rgba(201,123,63,.25);border-radius:11px;padding:14px 17px;font-size:13.5px;color:#7a4a24;margin-top:16px}
+.note strong{color:#5e3719}
+code{font-family:var(--mono);font-size:12.5px;background:var(--line-soft);padding:1.5px 5px;border-radius:4px;color:var(--ink2)}
+pre{font-family:var(--mono);font-size:12.5px;line-height:1.65;background:#1e2229;color:#d6dae2;padding:16px 18px;border-radius:12px;overflow-x:auto}
+pre .c{color:#7d8595}
+pre .k{color:#c98f6a}
+footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.75}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">Portrait Card Game · 竖屏卡牌手游</div>
+<h1>竖屏卡牌手游<br>布局规范与竞品结论</h1>
+<p class="sub">对标《杀戮尖塔》系统深度 +《月圆之夜》竖屏体验。核心结论：不能靠「把横屏 UI 压扁」，必须改规则 + 按拇指区重新设计。</p>
+
+<!-- ============ 1. 核心结论 ============ -->
+<section>
+  <h2>三个决定性事实</h2>
+  <p class="lede">调研指向同一个方向：竖屏不是「横屏的窄版」，而是一套需要重新做取舍的设计。</p>
+  <div class="grid3">
+    <div class="card">
+      <span class="tag tag-ok">已验证</span>
+      <h3 style="margin-top:10px">月圆之夜改了规则</h3>
+      <p style="font-size:13.5px;color:var(--ink2)">把 StS 的「能量 3 + 多敌人」改成「行动力 + 1V1」。这一改把横向空间需求砍掉一半，卡牌文字才塞得下。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-no">踩坑警告</span>
+      <h3 style="margin-top:10px">StS 手机版被差评</h3>
+      <p style="font-size:13.5px;color:var(--ink2)">评测共识：UI 小得像蚂蚁、误触出牌毁掉 40 分钟的局、上滑手势和 iOS 切 App 冲突、建议买平板。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-ok">硬约束</span>
+      <h3 style="margin-top:10px">拇指区决定生死</h3>
+      <p style="font-size:13.5px;color:var(--ink2)">49% 用户单手持机，60%+ 触摸发生在下半屏。竖屏的真正优势是「底部空间天然充裕」—— 这才是选竖屏的根本原因。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. 布局蓝图 ============ -->
+<section>
+  <h2>竖屏战斗布局蓝图</h2>
+  <p class="lede">设计基准 1080 × 1920（9:16）。右侧拇指区图显示：核心操作必须落在绿色舒适区。</p>
+
+  <div class="stage">
+    <!-- PHONE -->
+    <div>
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="safe-top"></div>
+        <div class="safe-bot"></div>
+        <div class="safe-lbl" style="top:8px">safe-area top</div>
+        <div class="safe-lbl" style="bottom:8px">safe-area bottom</div>
+
+        <div class="zone z-sys"><span class="zone-lbl">状态条 · 金币 / 层数</span></div>
+
+        <div class="zone z-res">
+          <span class="zone-tag">资源区</span>
+          <div class="heap"><i></i><i></i><i></i><i></i></div>
+          <div class="pot"><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="zone z-enemy">
+          <span class="zone-tag">敌人区 · 27%</span>
+          <div class="foe">👹</div>
+          <div class="foe-hp">42 / 60</div>
+          <div class="foe-int">意图 · 攻击 12</div>
+        </div>
+
+        <div class="zone z-status">
+          <div class="plr">
+            <span style="color:#ff9090">HP 58/75</span>
+            <span style="color:#90c0ff">格挡 8</span>
+            <span class="pstat">力量+2 · 敏捷+1</span>
+          </div>
+        </div>
+
+        <div class="zone z-hand">
+          <span class="zone-tag">手牌区 · 36% 核心操作</span>
+          <div class="cards">
+            <div class="pcard atk"><span class="c">1</span><span class="n">打击</span><span class="t">攻击</span></div>
+            <div class="pcard skl sel"><span class="c">1</span><span class="n">防御</span><span class="t">技能</span></div>
+            <div class="pcard atk"><span class="c">2</span><span class="n">重击</span><span class="t">攻击</span></div>
+            <div class="pcard skl"><span class="c">1</span><span class="n">整装</span><span class="t">技能</span></div>
+            <div class="pcard pwr"><span class="c">1</span><span class="n">燃烧</span><span class="t">能力</span></div>
+          </div>
+        </div>
+
+        <div class="zone z-act">
+          <div class="actrow">
+            <span class="ap">⚡ 2 / 3</span>
+            <span class="btn-end">结束回合</span>
+          </div>
+        </div>
+
+        <!-- THUMB OVERLAY -->
+        <div class="thumb">
+          <div class="tz-hard"></div>
+          <div class="tz-stretch"></div>
+          <div class="tz-easy"></div>
+          <div class="arc"></div>
+          <div class="tz-key" style="top:30px;background:rgba(176,99,103,.85)">死区 · 需换手</div>
+          <div class="tz-key" style="top:180px;background:rgba(201,123,63,.85)">拉伸区</div>
+          <div class="tz-key" style="top:356px;background:rgba(47,111,94,.9)">舒适区 · 核心操作</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEGEND -->
+    <div>
+      <div class="legend">
+        <div class="lg">
+          <div class="k no">✕</div>
+          <div><strong>顶部角落 = 死区</strong>
+          <p>单手够不到，必须换握姿势。<b>故意</b>把设置、删除卡、放弃这类破坏性操作放这里 —— 麻烦本身就是防误触功能。</p></div>
+        </div>
+        <div class="lg">
+          <div class="k warn">!</div>
+          <div><strong>中段 = 拉伸区</strong>
+          <p>遗物栏、药水槽放这里。玩家需要点，但不该每回合都点，所以放高一点是合理取舍。</p></div>
+        </div>
+        <div class="lg">
+          <div class="k ok">✓</div>
+          <div><strong>底部 1/3 = 舒适区</strong>
+          <p>手牌 + 行动力 + 结束回合，全在这里，占屏高 47%。每回合要点的东西一个都不放在别处。虚线圆弧 = 拇指自然扫过的范围。</p></div>
+        </div>
+        <div class="lg">
+          <div class="k ok">✓</div>
+          <div><strong>敌人意图不放到底部</strong>
+          <p>手指会遮挡自己按住的元素。意图是每回合必读信息，必须在手指够不到的地方（敌身上方）。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. 触控规范 ============ -->
+<section>
+  <h2>触控硬指标</h2>
+  <p class="lede">间距比尺寸更影响误触率 —— 这是调研里最反直觉的一条。</p>
+
+  <div class="grid2" style="margin-bottom:18px">
+    <div class="card">
+      <h3>目标尺寸标准</h3>
+      <div style="margin-top:14px">
+        <div class="bench"><span class="bench-label">Apple HIG</span><div class="bench-track"><div class="bench-fill" style="width:92%;background:var(--primary)"></div></div><span class="bench-val">44×44 pt</span></div>
+        <div class="bench"><span class="bench-label">Material Design</span><div class="bench-track"><div class="bench-fill" style="width:100%;background:var(--primary)"></div></div><span class="bench-val">48×48 dp</span></div>
+        <div class="bench"><span class="bench-label">WCAG AAA</span><div class="bench-track"><div class="bench-fill" style="width:92%;background:var(--primary)"></div></div><span class="bench-val">44×44 px</span></div>
+        <div class="bench"><span class="bench-label">WCAG AA</span><div class="bench-track"><div class="bench-fill" style="width:50%;background:var(--warn)"></div></div><span class="bench-val">24×24 px</span></div>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:12px">AA 的 24px 是法律底线，不是设计目标。跨平台安全值是 44px。</p>
+    </div>
+
+    <div class="card">
+      <h3>间距 = 误触率</h3>
+      <p style="font-size:13.5px;color:var(--ink2);margin:12px 0 16px">实测案例：两个按钮都 44pt 高、相距 4pt，误触率 <b style="color:var(--danger)">11%</b>；改成相距 12pt，误触率降到 <b style="color:var(--primary)">2%</b>。按钮没变大，只是拉开距离。</p>
+      <div class="bench"><span class="bench-label">相距 4pt</span><div class="bench-track"><div class="bench-fill" style="width:100%;background:var(--danger)"></div></div><span class="bench-val" style="color:var(--danger)">11% 误触</span></div>
+      <div class="bench"><span class="bench-label">相距 12pt</span><div class="bench-track"><div class="bench-fill" style="width:18%;background:var(--primary)"></div></div><span class="bench-val" style="color:var(--primary)">2% 误触</span></div>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:12px">规则：相邻目标 ≥8pt（目标≥44pt 时）；靠屏幕边缘 80pt 内 → ≥16pt。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>StS 踩过的坑 → 对应方案</h3>
+    <div class="tbl" style="margin-top:14px;border:0">
+      <table>
+        <thead><tr><th style="width:26%">移动端问题</th><th style="width:30%">StS 的表现</th><th>本方案对策</th></tr></thead>
+        <tbody>
+          <tr><td>想读卡却打出去了</td><td>长按放大，但手指稍高就误出牌</td><td>长按 400ms 放大，牌移到中上部，<b>拇指区清空</b>后再松手出牌</td></tr>
+          <tr><td>拖动时误放到敌人身上</td><td>目标吸附但反馈弱</td><td>拖过<b>阈值</b>（移动 60px 或 200ms）才算拖拽，否则视为点击</td></tr>
+          <tr><td>选中卡后想取消</td><td>「需要某种随月相变化的手势」</td><td><b>拖回手牌区松手 = 取消</b>，不猜手势</td></tr>
+          <tr><td>牌重叠分不清点哪张</td><td>手机上尤其严重</td><td>选中牌 zIndex 置顶 + 上移 40px + 放大 1.16x</td></tr>
+          <tr><td>手指挡住牌面文字</td><td>无解</td><td>关键信息（意图）放敌身上方，<b>不放底部</b></td></tr>
+          <tr><td>上滑 = 切 App</td><td>iOS 手势冲突</td><td><code>touch-action: none</code> + 拖拽方向只允许向上</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. 卡牌尺寸 ============ -->
+<section>
+  <h2>手牌尺寸自适应</h2>
+  <p class="lede">1080 宽设计分辨率下的牌宽表。<b>超过 5 张启用「选中上移 + 其余下沉」，不要继续缩窄</b> —— 缩到 140px 以下文字就不可读了。</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:14%">手牌数</th><th style="width:14%">牌宽</th><th style="width:14%">间距</th><th style="width:14%">总宽</th><th style="width:20%">策略</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">3 张</td><td class="mono">260px</td><td class="mono">20px</td><td class="mono">820px</td><td><span class="tag tag-ok">扇形</span></td><td>大牌，视觉冲击强</td></tr>
+        <tr><td class="mono">4 张</td><td class="mono">230px</td><td class="mono">16px</td><td class="mono">952px</td><td><span class="tag tag-ok">扇形</span></td><td>舒适区</td></tr>
+        <tr><td class="mono">5 张</td><td class="mono">190px</td><td class="mono">14px</td><td class="mono">1018px</td><td><span class="tag tag-ok">平铺</span></td><td><b>最常见</b>，标准配置</td></tr>
+        <tr><td class="mono">6 张</td><td class="mono">165px</td><td class="mono">10px</td><td class="mono">1030px</td><td><span class="tag tag-warn">上移</span></td><td>略挤</td></tr>
+        <tr><td class="mono">7 张</td><td class="mono">140px</td><td class="mono">8px</td><td class="mono">1024px</td><td><span class="tag tag-warn">上移</span></td><td>重叠开始明显</td></tr>
+        <tr><td class="mono">8 张</td><td class="mono">120px</td><td class="mono">6px</td><td class="mono">996px</td><td><span class="tag tag-no">上移</span></td><td>需选中才看得清</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted);margin-top:12px">牌比例 2:3 或 5:7（接近实体扑克）。190px 宽 → 285px 高。</p>
+</section>
+
+<!-- ============ 5. 技术实现 ============ -->
+<section>
+  <h2>技术实现要点</h2>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Phaser 3 竖屏配置</h3>
+<pre style="margin-top:12px"><span class="k">const</span> config = {
+  type: Phaser.AUTO,
+  parent: <span class="c">'game-container'</span>,
+  width: <span class="c">1080</span>,          <span class="c">// 设计分辨率</span>
+  height: <span class="c">1920</span>,
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH
+  }
+};</pre>
+      <p style="font-size:12.5px;color:var(--ink2);margin-top:12px">Scale Manager 是<b>唯一正确</b>的缩放方式。手动改 CSS 或 <code>transform:scale()</code> 会破坏坐标系、输入处理和物理计算。</p>
+    </div>
+
+    <div class="card">
+      <h3>移动端必需的 CSS</h3>
+<pre style="margin-top:12px"><span class="c">/* 1. 禁止浏览器抢手势 */</span>
+canvas { touch-action: none; }
+
+<span class="c">/* 2. 全屏 + 禁滚动 */</span>
+html, body {
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}</pre>
+      <p style="font-size:12.5px;color:var(--ink2);margin-top:12px">没有 <code>touch-action:none</code>，拖动卡牌会滚动整个页面 —— 这是最常见的移动端 Phaser bug。</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>viewport meta 不能少：</strong><code>width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover</code> 。少了它，移动浏览器会用模拟桌面宽度渲染再缩小，游戏会小到看不清。<code>viewport-fit=cover</code> 配合 <code>env(safe-area-inset-*)</code> 处理刘海和 Home 条。
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h3>扇形手牌数学</h3>
+<pre style="margin-top:12px"><span class="k">const</span> root = { x: centerX, y: 1920 + 200 }; <span class="c">// 圆心放屏幕下方外</span>
+<span class="k">const</span> size = 1200;      <span class="c">// 扇形半径</span>
+<span class="k">const</span> maxAngle = 1.2;   <span class="c">// 总展开角(弧度)</span>
+
+<span class="k">const</span> interval = maxAngle / n;
+hand.<span class="k">forEach</span>((card, i) =&gt; {
+  <span class="k">const</span> rot = (i - (n - <span class="c">1</span>) / <span class="c">2</span>) * interval;
+  <span class="k">const</span> x = root.x + Math.cos(rot - Math.PI / <span class="c">2</span>) * size;
+  <span class="k">const</span> y = root.y + Math.sin(rot - Math.PI / <span class="c">2</span>) * size;
+});</pre>
+    <p style="font-size:12.5px;color:var(--ink2);margin-top:12px">移动端参数：旋转角 <b>15°</b>（PC 25°）；牌间距 ≥ 牌宽 1/3，否则重叠区会误触；牌数 &gt; 8 时增大半径、减小间距，否则边缘牌出屏。经验公式 <code>size = baseSize + (cardCount - 5) * 2.5</code>。</p>
+  </div>
+</section>
+
+<!-- ============ 6. 引擎选型 ============ -->
+<section>
+  <h2>引擎选型</h2>
+  <div class="tbl" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:16%">方案</th><th style="width:28%">优点</th><th style="width:28%">缺点</th><th>建议</th></tr></thead>
+      <tbody>
+        <tr><td>Phaser 3 <span class="tag tag-ok">Web</span></td><td>已熟悉；迭代快；跨平台；免费</td><td>性能不如原生；包体小</td><td><b>原型验证用这个</b></td></tr>
+        <tr><td>Unity + UiCard <span class="tag tag-ok">上架</span></td><td>有开源卡牌 UI 框架；性能好；一键打包 APK</td><td>学习成本高；授权</td><td><b>要上架用这个</b></td></tr>
+        <tr><td>Cocos Creator</td><td>国内生态好；2D 性能强</td><td>需重新学</td><td><span class="tag tag-warn">备选</span></td></tr>
+        <tr><td>Flutter + Flame</td><td>UI 层强；动画顺滑</td><td>游戏性能一般；生态弱</td><td><span class="tag tag-no">不推荐</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-top:16px">
+    <strong>建议路线：</strong>Phaser 3 做原型验证玩法 → 玩法定型后决定是否迁 Unity。如果目标只是「能玩的网页版竖屏卡牌」，Phaser 就够；目标是上架应用商店，Unity 是正解（UiCard 现成框架 + 性能 + 打包）。
+  </div>
+</section>
+
+<!-- ============ 7. 竖屏 vs 横屏 ============ -->
+<section>
+  <h2>竖屏 vs 横屏的核心取舍</h2>
+  <p class="lede">这一栏是整个设计的分水岭 —— 每一行都是因为竖屏而必须做的改动。</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th style="width:22%">维度</th><th style="width:36%">杀戮尖塔（横屏）</th><th>本方案（竖屏）</th></tr></thead>
+      <tbody>
+        <tr><td>敌人数量</td><td>1~3 个，横排</td><td><b>强制 1V1</b> — 省下的横向空间全给卡牌</td></tr>
+        <tr><td>卡牌手数</td><td>5</td><td>5（保持一致，不增加认知负担）</td></tr>
+        <tr><td>战斗场景</td><td>敌人横排 + 底部手牌</td><td>单敌人居中 + <b>大立绘</b>（视觉冲击换空间效率）</td></tr>
+        <tr><td>地图</td><td>15 层连线图</td><td>竖向节点链，<b>滑动</b>查看</td></tr>
+        <tr><td>牌组界面</td><td>网格</td><td>纵向列表 + <b>左滑删牌</b></td></tr>
+        <tr><td>商店</td><td>横向布局</td><td>纵向卡片流 + 底部结算栏</td></tr>
+        <tr><td>资源</td><td>能量 3</td><td>行动力 3（保持，降低学习成本）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 8. 减负系统 ============ -->
+<section>
+  <h2>新手减负系统（抄月圆之夜）</h2>
+  <p class="lede">这是月圆之夜 6 年留存的核心，不是锦上添花。设计时就要埋进去。</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>降低构筑门槛</h3>
+      <ul style="margin:12px 0 0 18px;font-size:13.5px;color:var(--ink2);line-height:1.9">
+        <li><b>Key 牌权重高</b> — 1 张核心卡就能撑起一个流派</li>
+        <li><b>流派种子</b> — 开局 3 选 1 定方向（暴击/护甲/过牌/中毒）</li>
+        <li><b>掉落检定</b> — 卡牌奖励/商店按已有流派偏置掉落</li>
+        <li><b>利好事件多</b> — 首次免费 → 前几次低价 → 后期涨价</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>降低损失厌恶</h3>
+      <ul style="margin:12px 0 0 18px;font-size:13.5px;color:var(--ink2);line-height:1.9">
+        <li><b>进度保存</b> — 打不过可退回重开，起手重洗</li>
+        <li><b>事件保留</b> — 跳过的事件下次还会遇到</li>
+        <li><b>开局伪随机</b> — 前几局事件池固定（承担教学）</li>
+        <li><b>难度分层</b> — 概率保护随周目数增加而减弱</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. 路线图 ============ -->
+<section>
+  <h2>开发路线</h2>
+  <ol class="timeline">
+    <li>
+      <div class="ph">Phase 0 · 1~2 天</div>
+      <h4>玩法验证</h4>
+      <p>竖屏 CombatScene + 1 敌人 1 BOSS + 20 张牌。抽牌/行动力/格挡/意图/结算全套。<b>只做点击出牌，不做拖拽。</b><br><span style="color:var(--muted)">验收：浏览器里能完整打完一场战斗。</span></p>
+    </li>
+    <li>
+      <div class="ph">Phase 1 · 3~5 天</div>
+      <h4>交互打磨</h4>
+      <p>手牌自适应布局、长按预览、拖拽 + 目标吸附、防误触、viewport / touch-action 修复、90fps 验证。<br><span style="color:var(--muted)">验收：真机连续打 20 场不出现误触翻车。</span></p>
+    </li>
+    <li>
+      <div class="ph">Phase 2 · 1~2 周</div>
+      <h4>内容扩充</h4>
+      <p>地图 + 章节 + BOSS、卡牌奖励/篝火/商店、遗物药水、3~4 个流派方向。<br><span style="color:var(--muted)">验收：一局 20~30 分钟通关，能打出至少 3 种流派。</span></p>
+    </li>
+    <li>
+      <div class="ph">Phase 3 · 视投入</div>
+      <h4>美术与音</h4>
+      <p>卡牌插画、敌人立绘、BGM、出牌/受击音效、出牌飞行动画、伤害数字。<br><span style="color:var(--muted)">这决定「能玩」vs「想玩」的分水岭，但优先级排在最后。</span></p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ 10. AI 边界 ============ -->
+<section>
+  <h2>AI 能力边界（诚实评估）</h2>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card">
+      <span class="tag tag-ok">AI 能做好</span>
+      <ul style="margin:12px 0 0 18px;font-size:13.5px;color:var(--ink2);line-height:1.95">
+        <li>卡牌系统 / 效果引擎（数据驱动，扩展容易）</li>
+        <li>战斗状态机（确定性逻辑正是 AI 强项）</li>
+        <li>竖屏布局计算（扇形数学、尺寸计算，规则明确）</li>
+        <li>移动端适配样板代码（有标准答案的工程问题）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-no">AI 做不好</span>
+      <ul style="margin:12px 0 0 18px;font-size:13.5px;color:var(--ink2);line-height:1.95">
+        <li>数值平衡 — 60 张牌需几百小时试玩调整</li>
+        <li>交互手感 — 300ms 还是 400ms，只能真机试</li>
+        <li>美术 — 画不出 700 张统一调性的插画</li>
+        <li>流派设计 — 好玩的核心机制只能拼凑已有的</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tbl" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:42%">目标</th><th>可行性</th></tr></thead>
+      <tbody>
+        <tr><td>做出<strong>能玩的原型</strong>证明玩法成立</td><td><span class="tag tag-ok">高</span> 可行</td></tr>
+        <tr><td>做出<strong>能上架的完整游戏</strong></td><td><span class="tag tag-warn">中</span> 玩法能成，美术和平衡需大量人工投入</td></tr>
+        <tr><td>做出<strong>能和月圆之夜竞争的产品</strong></td><td><span class="tag tag-no">低</span> 需要团队 + 几年</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  调研时间 2026-10-04 · 资料来源：月圆之夜官方长线运营复盘（巨人网络滴答工作室）、各版本更新公告、Phaser 官方 Scale Manager 文档、Steven Hoober 单手使用研究、Apple HIG / Material Design / WCAG 2.5 触控规范、MIT Touch Lab Fitts's Law 研究、2026 H1 国内卡牌赛道分析（伽马数据）。<br>
+  完整调研笔记见 <code>docs/research.md</code>。
+</footer>
+
+</div>
+</body>
+</html>

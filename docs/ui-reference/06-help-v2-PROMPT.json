@@ -1,0 +1,7 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-65c5684c-b40c-4f0c-ac86-b51a864daf4c.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/06-help-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected help design, portrait dark indigo gold panel, title 怎么玩. Five compact illustrated sections, concise exact text: 行动力 / 每回合3点，普通牌消耗行动力; 敌人意图 / 先看伤害，再决定格挡; 灵韵 / 每回合+1，未用可累积; 共鸣 / 同回合连打符箓，后续费用-1，最低0; 战后构筑 / 选择新牌或遗物. Use spirit flame plus a simple red paper card labeled 符纸 for 灵韵 and 共鸣, NOT 凝神 or moon card. Sword to blue shield diagram for enemy intent, three gold energy dots for action. Bottom one large 知道了. No fake rule paragraphs, no tabs invented. Layout spacious enough all five sections fit; this is visual overview, full status dictionary may use scrolling implementation.",
+  "id": "06-help",
+  "file": "06-help-v2"
+}

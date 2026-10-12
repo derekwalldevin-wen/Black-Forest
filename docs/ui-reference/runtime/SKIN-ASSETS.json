@@ -1,0 +1,318 @@
+[
+  {
+    "source": "assets/ui/skin-gothic-source-v1.png",
+    "region": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 350
+    },
+    "crop": {
+      "left": 42,
+      "top": 115,
+      "width": 641,
+      "height": 168
+    },
+    "file": "assets/ui/gothic-primary-v1.png",
+    "width": 641,
+    "height": 168,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-gothic-source-v1.png",
+    "region": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 350
+    },
+    "crop": {
+      "left": 766,
+      "top": 114,
+      "width": 640,
+      "height": 169
+    },
+    "file": "assets/ui/gothic-secondary-v1.png",
+    "width": 640,
+    "height": 169,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-gothic-source-v1.png",
+    "region": {
+      "left": 0,
+      "top": 350,
+      "width": 724,
+      "height": 290
+    },
+    "crop": {
+      "left": 42,
+      "top": 436,
+      "width": 641,
+      "height": 168
+    },
+    "file": "assets/ui/gothic-danger-v1.png",
+    "width": 641,
+    "height": 168,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-gothic-source-v1.png",
+    "region": {
+      "left": 724,
+      "top": 350,
+      "width": 724,
+      "height": 275
+    },
+    "crop": {
+      "left": 766,
+      "top": 436,
+      "width": 641,
+      "height": 168
+    },
+    "file": "assets/ui/gothic-paper-v1.png",
+    "width": 641,
+    "height": 168,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-gothic-source-v1.png",
+    "region": {
+      "left": 0,
+      "top": 640,
+      "width": 810,
+      "height": 446
+    },
+    "crop": {
+      "left": 45,
+      "top": 741,
+      "width": 715,
+      "height": 211
+    },
+    "file": "assets/ui/gothic-panel-v1.png",
+    "width": 715,
+    "height": 211,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-gothic-source-v1.png",
+    "region": {
+      "left": 820,
+      "top": 600,
+      "width": 628,
+      "height": 486
+    },
+    "crop": {
+      "left": 893,
+      "top": 630,
+      "width": 385,
+      "height": 382
+    },
+    "file": "assets/ui/avatar-v1.png",
+    "width": 385,
+    "height": 382,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-shanhai-source-v1.png",
+    "region": {
+      "left": 0,
+      "top": 0,
+      "width": 768,
+      "height": 330
+    },
+    "crop": {
+      "left": 27,
+      "top": 105,
+      "width": 717,
+      "height": 198
+    },
+    "file": "assets/ui/shanhai-primary-v1.png",
+    "width": 717,
+    "height": 198,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-shanhai-source-v1.png",
+    "region": {
+      "left": 768,
+      "top": 0,
+      "width": 768,
+      "height": 330
+    },
+    "crop": {
+      "left": 785,
+      "top": 106,
+      "width": 724,
+      "height": 196
+    },
+    "file": "assets/ui/shanhai-secondary-v1.png",
+    "width": 724,
+    "height": 196,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-shanhai-source-v1.png",
+    "region": {
+      "left": 0,
+      "top": 330,
+      "width": 768,
+      "height": 240
+    },
+    "crop": {
+      "left": 27,
+      "top": 366,
+      "width": 716,
+      "height": 195
+    },
+    "file": "assets/ui/shanhai-danger-v1.png",
+    "width": 716,
+    "height": 195,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-shanhai-source-v1.png",
+    "region": {
+      "left": 768,
+      "top": 330,
+      "width": 768,
+      "height": 240
+    },
+    "crop": {
+      "left": 788,
+      "top": 366,
+      "width": 718,
+      "height": 195
+    },
+    "file": "assets/ui/shanhai-paper-v1.png",
+    "width": 718,
+    "height": 195,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-shanhai-source-v1.png",
+    "region": {
+      "left": 0,
+      "top": 610,
+      "width": 880,
+      "height": 414
+    },
+    "crop": {
+      "left": 27,
+      "top": 671,
+      "width": 813,
+      "height": 209
+    },
+    "file": "assets/ui/shanhai-panel-v1.png",
+    "width": 813,
+    "height": 209,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/skin-shanhai-source-v1.png",
+    "region": {
+      "left": 930,
+      "top": 570,
+      "width": 606,
+      "height": 454
+    },
+    "crop": {
+      "left": 1007,
+      "top": 572,
+      "width": 288,
+      "height": 367
+    },
+    "file": "assets/ui/shield-v1.png",
+    "width": 288,
+    "height": 367,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/gothic-panel-v1.png",
+    "file": "assets/ui/gothic-panel-fill-v1.png",
+    "crop": {
+      "left": 157,
+      "top": 53,
+      "width": 400,
+      "height": 106
+    },
+    "mode": "quiet interior tile",
+    "width": 400,
+    "height": 106,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/gothic-panel-v1.png",
+    "file": "assets/ui/gothic-panel-frame-v1.png",
+    "mode": "isolated edge alpha",
+    "width": 715,
+    "height": 211,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/gothic-paper-v1.png",
+    "file": "assets/ui/gothic-paper-fill-v1.png",
+    "crop": {
+      "left": 141,
+      "top": 42,
+      "width": 359,
+      "height": 84
+    },
+    "mode": "quiet interior tile",
+    "width": 359,
+    "height": 84,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/gothic-paper-v1.png",
+    "file": "assets/ui/gothic-paper-frame-v1.png",
+    "mode": "isolated edge alpha",
+    "width": 641,
+    "height": 168,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/shanhai-panel-v1.png",
+    "file": "assets/ui/shanhai-panel-fill-v1.png",
+    "crop": {
+      "left": 179,
+      "top": 52,
+      "width": 455,
+      "height": 105
+    },
+    "mode": "quiet interior tile",
+    "width": 455,
+    "height": 105,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/shanhai-panel-v1.png",
+    "file": "assets/ui/shanhai-panel-frame-v1.png",
+    "mode": "isolated edge alpha",
+    "width": 813,
+    "height": 209,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/shanhai-paper-v1.png",
+    "file": "assets/ui/shanhai-paper-fill-v1.png",
+    "crop": {
+      "left": 158,
+      "top": 49,
+      "width": 402,
+      "height": 98
+    },
+    "mode": "quiet interior tile",
+    "width": 402,
+    "height": 98,
+    "hasAlpha": true
+  },
+  {
+    "source": "assets/ui/shanhai-paper-v1.png",
+    "file": "assets/ui/shanhai-paper-frame-v1.png",
+    "mode": "isolated edge alpha",
+    "width": 718,
+    "height": 195,
+    "hasAlpha": true
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "assets": 32,
+  "registry": {
+    "relics": [
+      "wolf_totem",
+      "iron_ring",
+      "moon_lens",
+      "blood_stone",
+      "thorn_charm",
+      "marrow_vial",
+      "whetstone",
+      "hunter_charm",
+      "bone_totem",
+      "bronze_mask",
+      "cinnabar_seal",
+      "thunder_bi",
+      "unquenched_ember",
+      "bone_urn"
+    ],
+    "contracts": [
+      "huodou",
+      "huodou_yu"
+    ],
+    "statuses": [
+      "strength",
+      "vulnerable",
+      "weak",
+      "frail",
+      "poison",
+      "thorns",
+      "burn",
+      "burnDmg"
+    ],
+    "intents": [
+      "attack",
+      "defend",
+      "buff",
+      "debuff",
+      "poison",
+      "burn",
+      "rule",
+      "drain",
+      "heal"
+    ],
+    "missing": []
+  },
+  "checks": [
+    "32 unique transparent cutouts; full relic, contract, status and intent registries load",
+    "both realms: 14 relics, contract in reserved row, 6 enemy and 8 player statuses; real status/contract taps preserve hand",
+    "9 intent illustrations match semantics; mixed intent tooltip includes each action and total damage",
+    "all 14 reward objects have their own relic artwork, including whetstone and bronze mask; no card-art substitution",
+    "event relic bar shares correct art and actual tap explanation; art window stays below relic strip",
+    "spirit emblem follows current deck visibility instead of stale scene construction"
+  ],
+  "tactical": [
+    {
+      "type": "attack",
+      "icon": "attack"
+    },
+    {
+      "type": "defend",
+      "icon": "defend"
+    },
+    {
+      "type": "buff",
+      "icon": "buff"
+    },
+    {
+      "type": "debuff",
+      "icon": "debuff"
+    },
+    {
+      "type": "poison",
+      "icon": "poison"
+    },
+    {
+      "type": "burn",
+      "icon": "burn"
+    },
+    {
+      "type": "rule",
+      "icon": "burnDmg"
+    },
+    {
+      "type": "drain",
+      "icon": "drain"
+    },
+    {
+      "type": "heal",
+      "icon": "heal"
+    }
+  ],
+  "screens": [
+    "combat-gothic.png",
+    "contract-gothic.png",
+    "status-gothic.png",
+    "combat-shanhai.png",
+    "contract-shanhai.png",
+    "status-shanhai.png",
+    "intent-details.png",
+    "intent-catalog.png",
+    "reward-relics-01.png",
+    "reward-relics-02.png",
+    "reward-relics-03.png",
+    "reward-relics-04.png",
+    "reward-relics-05.png",
+    "reward-relics-06.png",
+    "reward-relics-07.png",
+    "event-relic-tip.png"
+  ],
+  "errors": [],
+  "warnings": []
+}

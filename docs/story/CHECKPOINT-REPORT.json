@@ -1,0 +1,8 @@
+{
+  "checks": [
+    "step 0: paid aftermath and stable card offers, persisted card/relic stages, no duplicate gold/kills/items",
+    "step 1: paid aftermath and stable card offers, persisted card/relic stages, no duplicate gold/kills/items",
+    "saved decision survives interrupted aftermath and is not asked or awarded twice"
+  ],
+  "errors": []
+}

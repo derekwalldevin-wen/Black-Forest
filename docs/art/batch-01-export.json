@@ -1,0 +1,34 @@
+[
+  {
+    "name": "art-gothic-sword.png",
+    "bytes": 405289,
+    "paletteQuality": 70,
+    "width": 1536,
+    "height": 1024,
+    "opaque": true
+  },
+  {
+    "name": "art-gothic-shield.png",
+    "bytes": 383256,
+    "paletteQuality": 55,
+    "width": 1536,
+    "height": 1024,
+    "opaque": true
+  },
+  {
+    "name": "art-gothic-moon.png",
+    "bytes": 391410,
+    "paletteQuality": 70,
+    "width": 1536,
+    "height": 1024,
+    "opaque": true
+  },
+  {
+    "name": "art-gothic-blood.png",
+    "bytes": 403627,
+    "paletteQuality": 70,
+    "width": 1536,
+    "height": 1024,
+    "opaque": true
+  }
+]

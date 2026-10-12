@@ -1,0 +1,333 @@
+{
+  "mode": "Built-in image_gen; only technical cell extraction and resizing applied afterwards.",
+  "atlases": 4,
+  "frames": 22,
+  "assets": [
+    {
+      "id": "lantern-blade",
+      "file": "assets/anim/hero-fx-lantern-blade-v1.png",
+      "columns": 3,
+      "cell": 256,
+      "source": "docs/hero-fx/source/lantern-blade-v1.png",
+      "sourceSha256": "8c966c59ef867a5169dcfd70e2503cace4750ea485a855767547352fe47dc5f2",
+      "sha256": "40843ae7deec35dfd4aaa5889f92d0ac6fb4794b669d1f978c17a4a7e607f233",
+      "bytes": 274487,
+      "frames": [
+        {
+          "frame": 0,
+          "transparent": 0.8854446411132812,
+          "pixels": 8706,
+          "bounds": {
+            "left": 78,
+            "top": 315,
+            "right": 279,
+            "bottom": 449
+          }
+        },
+        {
+          "frame": 1,
+          "transparent": 0.7180137634277344,
+          "pixels": 35094,
+          "bounds": {
+            "left": 46,
+            "top": 65,
+            "right": 449,
+            "bottom": 435
+          }
+        },
+        {
+          "frame": 2,
+          "transparent": 0.5698585510253906,
+          "pixels": 59993,
+          "bounds": {
+            "left": 40,
+            "top": 40,
+            "right": 486,
+            "bottom": 457
+          }
+        },
+        {
+          "frame": 3,
+          "transparent": 0.6223487854003906,
+          "pixels": 43040,
+          "bounds": {
+            "left": 49,
+            "top": 46,
+            "right": 487,
+            "bottom": 454
+          }
+        },
+        {
+          "frame": 4,
+          "transparent": 0.6348114013671875,
+          "pixels": 19973,
+          "bounds": {
+            "left": 41,
+            "top": 59,
+            "right": 474,
+            "bottom": 433
+          }
+        },
+        {
+          "frame": 5,
+          "transparent": 0.679534912109375,
+          "pixels": 5270,
+          "bounds": {
+            "left": 35,
+            "top": 58,
+            "right": 461,
+            "bottom": 431
+          }
+        }
+      ]
+    },
+    {
+      "id": "thread-seal",
+      "file": "assets/anim/hero-fx-thread-seal-v1.png",
+      "columns": 3,
+      "cell": 256,
+      "source": "docs/hero-fx/source/thread-seal-v2.png",
+      "sourceSha256": "d5a52d7ac911dc9410b328228c1b1eca5a1c89b1822f0a47deb0bcaeda3bd74b",
+      "sha256": "cd3602f8757e3049cb2d752afb28fb11457bf0bedda983795b1ea77821a75a54",
+      "bytes": 428008,
+      "frames": [
+        {
+          "frame": 0,
+          "transparent": 0.7361526489257812,
+          "pixels": 26628,
+          "bounds": {
+            "left": 149,
+            "top": 165,
+            "right": 393,
+            "bottom": 408
+          }
+        },
+        {
+          "frame": 1,
+          "transparent": 0.5374031066894531,
+          "pixels": 56722,
+          "bounds": {
+            "left": 95,
+            "top": 89,
+            "right": 406,
+            "bottom": 445
+          }
+        },
+        {
+          "frame": 2,
+          "transparent": 0.5853309631347656,
+          "pixels": 61303,
+          "bounds": {
+            "left": 56,
+            "top": 110,
+            "right": 414,
+            "bottom": 445
+          }
+        },
+        {
+          "frame": 3,
+          "transparent": 0.5328140258789062,
+          "pixels": 73843,
+          "bounds": {
+            "left": 101,
+            "top": 78,
+            "right": 437,
+            "bottom": 389
+          }
+        },
+        {
+          "frame": 4,
+          "transparent": 0.5056953430175781,
+          "pixels": 68292,
+          "bounds": {
+            "left": 80,
+            "top": 72,
+            "right": 425,
+            "bottom": 409
+          }
+        },
+        {
+          "frame": 5,
+          "transparent": 0.7064857482910156,
+          "pixels": 21572,
+          "bounds": {
+            "left": 118,
+            "top": 114,
+            "right": 381,
+            "bottom": 413
+          }
+        }
+      ]
+    },
+    {
+      "id": "lantern-ward",
+      "file": "assets/anim/hero-fx-lantern-ward-v1.png",
+      "columns": 3,
+      "cell": 256,
+      "source": "docs/hero-fx/source/lantern-ward-v1.png",
+      "sourceSha256": "1f96f3d266d8d704382fa142806f5f43e0a1a8eed0d5b8c75a808443c14215e7",
+      "sha256": "2c5f106b44e2f6a323ed763153c1c7d94445481c61cf53b66176c4772f430e66",
+      "bytes": 342865,
+      "frames": [
+        {
+          "frame": 0,
+          "transparent": 0.8277778625488281,
+          "pixels": 12476,
+          "bounds": {
+            "left": 183,
+            "top": 127,
+            "right": 335,
+            "bottom": 389
+          }
+        },
+        {
+          "frame": 1,
+          "transparent": 0.6356620788574219,
+          "pixels": 35388,
+          "bounds": {
+            "left": 127,
+            "top": 52,
+            "right": 384,
+            "bottom": 448
+          }
+        },
+        {
+          "frame": 2,
+          "transparent": 0.4601631164550781,
+          "pixels": 59651,
+          "bounds": {
+            "left": 91,
+            "top": 15,
+            "right": 428,
+            "bottom": 481
+          }
+        },
+        {
+          "frame": 3,
+          "transparent": 0.3942718505859375,
+          "pixels": 73173,
+          "bounds": {
+            "left": 5,
+            "top": 18,
+            "right": 508,
+            "bottom": 465
+          }
+        },
+        {
+          "frame": 4,
+          "transparent": 0.5091323852539062,
+          "pixels": 36649,
+          "bounds": {
+            "left": 112,
+            "top": 19,
+            "right": 406,
+            "bottom": 475
+          }
+        },
+        {
+          "frame": 5,
+          "transparent": 0.6433982849121094,
+          "pixels": 13918,
+          "bounds": {
+            "left": 151,
+            "top": 30,
+            "right": 363,
+            "bottom": 468
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero-actions",
+      "file": "assets/anim/hero-fx-hero-actions-v1.png",
+      "columns": 2,
+      "cell": 320,
+      "poses": {
+        "ready": 0,
+        "windup": 0,
+        "attack": 1,
+        "recover": 0,
+        "cast": 2,
+        "guard": 3
+      },
+      "source": "docs/hero-fx/source/hero-actions-v1.png",
+      "sourceSha256": "a839e5790013a619500d26922d3234ce309e1ec955adca14b3b55addaae4967c",
+      "sha256": "b364516e4f54055df75ab3ed70cf93fa2e024970df639980a3005cfc904880f4",
+      "bytes": 359687,
+      "frames": [
+        {
+          "frame": 0,
+          "sourceBounds": {
+            "left": 123,
+            "top": 8,
+            "right": 475,
+            "bottom": 592,
+            "n": 109198
+          },
+          "crop": {
+            "left": 101,
+            "top": 0,
+            "width": 397,
+            "height": 615
+          },
+          "scale": 0.45182724252491696,
+          "anchorY": 302
+        },
+        {
+          "frame": 1,
+          "sourceBounds": {
+            "left": 620,
+            "top": 60,
+            "right": 1210,
+            "bottom": 575,
+            "n": 135584
+          },
+          "crop": {
+            "left": 598,
+            "top": 38,
+            "width": 635,
+            "height": 560
+          },
+          "scale": 0.45182724252491696,
+          "anchorY": 302
+        },
+        {
+          "frame": 2,
+          "sourceBounds": {
+            "left": 72,
+            "top": 615,
+            "right": 583,
+            "bottom": 1216,
+            "n": 144937
+          },
+          "crop": {
+            "left": 50,
+            "top": 593,
+            "width": 556,
+            "height": 646
+          },
+          "scale": 0.45182724252491696,
+          "anchorY": 302
+        },
+        {
+          "frame": 3,
+          "sourceBounds": {
+            "left": 731,
+            "top": 687,
+            "right": 1192,
+            "bottom": 1212,
+            "n": 111856
+          },
+          "crop": {
+            "left": 709,
+            "top": 665,
+            "width": 506,
+            "height": 570
+          },
+          "scale": 0.45182724252491696,
+          "anchorY": 302
+        }
+      ]
+    }
+  ]
+}

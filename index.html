@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:,">
+<!-- 移动端三件套:禁缩放 + 禁手势 + 覆盖安全区 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1a1420">
+<title>黑森林 · 暗黑童话卡牌</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body {
+    width:100%; height:100%;
+    background:#12101a;
+    overflow:hidden;
+    overscroll-behavior:none;              /* 禁下拉刷新 */
+    -webkit-tap-highlight-color:transparent; /* 禁点击高亮 */
+    -webkit-touch-callout:none;
+    user-select:none;
+    font-family:'Outfit','Microsoft YaHei',sans-serif;
+  }
+  body { display:flex; align-items:center; justify-content:center; }
+
+  #game-container {
+    position:relative;
+    width:100vw; height:100vh;              /* Scale Manager 依赖父容器有明确尺寸 */
+    overflow:hidden;
+    background:#12101a;
+  }
+  /* 关键:禁掉浏览器手势,否则拖动卡牌会滚动页面 */
+  #game-container canvas { touch-action:none; display:block; }
+
+  /* 竖屏提示(横屏时显示) */
+  #rotate-hint {
+    position:fixed; inset:0; z-index:100;
+    display:none;
+    align-items:center; justify-content:center;
+    flex-direction:column; gap:16px;
+    background:#12101a; color:#c8a86a;
+    font-size:18px; letter-spacing:2px; text-align:center; padding:20px;
+  }
+  #rotate-hint svg { animation:rot 2.4s ease-in-out infinite; }
+  @keyframes rot { 0%,45%{transform:rotate(0)} 55%,100%{transform:rotate(90deg)} }
+
+  /* 桌面端提示 */
+  #desktop-note {
+    position:fixed; bottom:10px; left:0; right:0;
+    text-align:center; font-size:11px; color:#4a4258;
+    letter-spacing:1px; pointer-events:none;
+  }
+  @media (max-width:768px) { #desktop-note { display:none; } }
+</style>
+</head>
+<body>
+
+<div id="game-container"></div>
+
+<div id="rotate-hint">
+  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="7" y="2" width="10" height="20" rx="2"/>
+    <path d="M11 19h2"/>
+  </svg>
+  <div>请竖屏游玩</div>
+</div>
+
+<div id="desktop-note">手机竖屏体验最佳 · 浏览器 F12 可切换设备模拟</div>
+
+<script>
+// 横屏时提示旋转
+function checkOrientation(){
+  var hint = document.getElementById('rotate-hint');
+  var isDesktop = window.innerWidth > 900;
+  var isLandscape = window.innerWidth > window.innerHeight;
+  hint.style.display = (!isDesktop && isLandscape) ? 'flex' : 'none';
+}
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);
+checkOrientation();
+</script>
+
+<script src="assets/vendor/phaser-3.80.1.min.js"></script>
+
+<script src="src/core/cards.js"></script>
+<script src="src/core/enemies.js"></script>
+<script src="src/core/relics.js"></script>
+<script src="src/core/events.js"></script>
+<script src="src/core/starters.js"></script>
+<script src="src/core/contracts.js"></script>
+<script src="src/core/story.js"></script>
+<script src="src/core/story-assets.js"></script>
+<script src="src/core/run.js"></script>
+<script src="src/core/audio-assets.js"></script>
+<script src="src/core/audio.js"></script>
+<script src="src/core/fx.js"></script>
+<script src="src/core/motion-assets.js"></script>
+<script src="src/core/motion.js"></script>
+<script src="src/core/hero-fx-assets.js"></script>
+<script src="src/core/hero-fx.js"></script>
+<script src="src/core/ui.js"></script>
+<script src="src/core/combat.js"></script>
+<script src="src/core/theme.js"></script>
+<script src="src/core/ui-skin.js"></script>
+<script src="src/core/icon-art.js"></script>
+<script src="src/core/loading-art.js"></script>
+
+<script src="src/scenes/BootScene.js"></script>
+<script src="src/scenes/TitleScene.js"></script>
+<script src="src/scenes/CombatScene.js"></script>
+<script src="src/scenes/RewardScene.js"></script>
+<script src="src/scenes/EventScene.js"></script>
+<script src="src/scenes/JournalScene.js"></script>
+<script src="src/scenes/StoryScene.js"></script>
+
+<script src="src/game.js"></script>
+</body>
+</html>

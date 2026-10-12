@@ -1,0 +1,16 @@
+{
+  "battles": 18,
+  "chapters": 6,
+  "choices": 4,
+  "endingCombinations": 16,
+  "checks": [
+    "battle order matches current game",
+    "distinct scenes and clues",
+    "new run resets choices",
+    "legacy saves retain deck and stats",
+    "malformed fields sanitized",
+    "read-only journal excludes unseen spoilers",
+    "pending aftermath/reward persists"
+  ],
+  "errors": []
+}

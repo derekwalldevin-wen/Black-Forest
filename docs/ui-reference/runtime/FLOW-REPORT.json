@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "help scrim, starter cancel and actual talisman start",
+    "saved run restart resets to newly chosen starter",
+    "draw after enlarged selection keeps original card dimensions",
+    "pause return cancel, checkpoint title and resume",
+    "card reward adds once, actual relic center click and continue",
+    "unaffordable event rejects real click",
+    "event option, delete pagination, real deletion and exit",
+    "game over restart opens playable starter selection",
+    "ending replay opens playable starter selection",
+    "actual relic icon center tooltip"
+  ],
+  "errors": []
+}

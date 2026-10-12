@@ -1,0 +1,1023 @@
+{
+  "results": [
+    {
+      "name": "title",
+      "scene": "Title"
+    },
+    {
+      "name": "combat-gothic",
+      "scene": "Combat"
+    },
+    {
+      "name": "combat-shanhai",
+      "scene": "Combat"
+    },
+    {
+      "name": "reward",
+      "scene": "Reward",
+      "cards": [
+        {
+          "id": "iron_wall",
+          "bounds": {
+            "y": 605,
+            "bottom": 1125
+          }
+        },
+        {
+          "id": "drain_life",
+          "bounds": {
+            "y": 1130,
+            "bottom": 1650
+          }
+        },
+        {
+          "id": "sap_flesh",
+          "bounds": {
+            "y": 1130,
+            "bottom": 1650
+          }
+        }
+      ]
+    },
+    {
+      "name": "ending",
+      "scene": "Reward",
+      "cards": [
+        {
+          "id": "heavy_blow",
+          "bounds": {
+            "y": 605,
+            "bottom": 1125
+          }
+        },
+        {
+          "id": "focus",
+          "bounds": {
+            "y": 1130,
+            "bottom": 1650
+          }
+        },
+        {
+          "id": "dagger_fan",
+          "bounds": {
+            "y": 1130,
+            "bottom": 1650
+          }
+        }
+      ]
+    },
+    {
+      "name": "event-moon_spring",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "饮 下"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "连 泉 带 走"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 碰"
+        }
+      ]
+    },
+    {
+      "name": "event-campfire",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "休 息"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "冥 想"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "添 柴"
+        }
+      ]
+    },
+    {
+      "name": "event-bone_pile",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "搜 刮"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "献 祭"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "翻 找"
+        }
+      ]
+    },
+    {
+      "name": "event-lost_lantern",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "交 出 火 折"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "问 路"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 理 他"
+        }
+      ]
+    },
+    {
+      "name": "event-black_market",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "买 遗 物"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "删 一 张 牌"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 买"
+        }
+      ]
+    },
+    {
+      "name": "event-ancient_stele",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "献 上 一 张 牌"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "抄 下 碑 文"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 碰"
+        }
+      ]
+    },
+    {
+      "name": "event-thorn_well",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1446,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1346,
+            "width": 944,
+            "height": 200
+          },
+          "label": "喝 一 口"
+        },
+        {
+          "y": 1664,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1564,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 喝"
+        }
+      ]
+    },
+    {
+      "name": "event-wolf_gaze",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "直 面"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "躲 避"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "大 声 吼"
+        }
+      ]
+    },
+    {
+      "name": "event-moss_shrine",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "贴 近 听"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "取 出 石 头"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "合 上 龛 门"
+        }
+      ]
+    },
+    {
+      "name": "event-qingqiu",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "顺 着 声 音 走"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "守 在 原 地"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "堵 住 耳 朵 走"
+        }
+      ]
+    },
+    {
+      "name": "event-nine_heads",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "一 个 一 个 回 答"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "屏 住 呼 吸"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "往 沼 泽 深 处 走"
+        }
+      ]
+    },
+    {
+      "name": "event-bronze_step",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "往 下 走"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "用 刀 刻 自 己 的 名 字"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "把 阶 阶 填 平"
+        }
+      ]
+    },
+    {
+      "name": "event-blind_dance",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "跟 着 跳"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "替 它 数 拍 子"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "闭 上 眼 离 开"
+        }
+      ]
+    },
+    {
+      "name": "event-baize_omen",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "问 它 未 来"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "问 它 怎 么 活 下 去"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 问 走 开"
+        }
+      ]
+    },
+    {
+      "name": "event-ember_bones",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "握 住"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "埋 回 去"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 碰"
+        }
+      ]
+    },
+    {
+      "name": "event-ash_mound",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "取 火 种"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "再 握 一 次"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "退 后"
+        }
+      ]
+    },
+    {
+      "name": "event-ascend_rites",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "把 契 递 上去"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "只 取 火，不 递 契"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "转 身 走 了"
+        }
+      ]
+    },
+    {
+      "name": "event-forge",
+      "scene": "Event",
+      "choices": [
+        {
+          "y": 1337,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1237,
+            "width": 944,
+            "height": 200
+          },
+          "label": "熔 铸"
+        },
+        {
+          "y": 1555,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1455,
+            "width": 944,
+            "height": 200
+          },
+          "label": "淬 火"
+        },
+        {
+          "y": 1773,
+          "bounds": {
+            "type": 5,
+            "x": 68,
+            "y": 1673,
+            "width": 944,
+            "height": 200
+          },
+          "label": "不 碰"
+        }
+      ]
+    }
+  ],
+  "rewardCardBounds": [
+    {
+      "id": "strike",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "defend",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "quick_jab",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "dagger_fan",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "heavy_blow",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "iron_wall",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "riposte",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "blood_pact",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "focus",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "poison_dart",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "shield_bash",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "wolf_fang",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "drain_life",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "sap_flesh",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "dark_pact",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "thorns_armor",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "chain_spark",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "moonlight",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "moon_edge",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "blood_moon",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "soul_drain",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "eternal_night",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "hunters_mark",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "thorn_ring",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "fu_paper",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "cinnabar",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "seal_gate",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "xuan_ji",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "thunder_word",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "nine_head",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "miasma",
+      "height": 48,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "spirit_gather",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "edict",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "taiji",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "famine",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "qingqiu_seal",
+      "height": 146,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    },
+    {
+      "id": "bronze_vessel",
+      "height": 97,
+      "available": 202,
+      "font": 40,
+      "artRatio": 1.8969072164948453
+    }
+  ],
+  "errors": []
+}

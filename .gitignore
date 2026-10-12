@@ -1,0 +1,29 @@
+# Local workspaces and delivery archives
+.tmp-gen/
+.tmp-upload/
+artifacts/
+$null
+node_modules/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+.vscode/
+.idea/
+
+# Original production inputs are retained locally; runtime assets stay tracked.
+docs/**/source/
+docs/art/original-enemies/
+docs/hero-fx/hero-reference.png
+assets/ui/*-source-*
+assets/*.jpg
+!assets/art-*.jpg

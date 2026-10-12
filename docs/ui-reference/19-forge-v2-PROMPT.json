@@ -1,0 +1,8 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-6bfda11e-d03b-4f89-8d59-ed63a66bf941.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/19-forge-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected existing 铸坊 event. Forest half buried warm furnace and anvil illustration upper half. FULL top bar 第一章, heart48/70, coin68金币. Title 铸坊, narrative 炉子还是温的。. Three stacked options: 熔铸 / 随机移除1张牌，随机获得1张哥特牌; 淬火 / 70金币，获得1张稀有牌; 不碰 / 离开铸坊. Second choice disabled desaturated, text 金币不足 and 68/70. NOT 罕见, use exact 稀有 because actual effect is rare. No levels, upgrading, before-after comparison, confirmation, or chosen-removal UI.",
+  "id": "19-forge",
+  "file": "19-forge-v2",
+  "refs": []
+}

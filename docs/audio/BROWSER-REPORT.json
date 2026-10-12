@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "formal input unlocks audio; 14 PCM assets decode; no autoplay",
+    "actual Web Audio output measured; peak 0.0525",
+    "real card selection and second click produce paper and impact",
+    "fully absorbed hit plays shield without health-hit sound",
+    "partial block has shield and actual health damage",
+    "heal sounds only on actual recovery",
+    "guard, end turn and enemy attack sounds follow combat timing",
+    "actual preview plays both cues; leaving audio page cancels delayed preview",
+    "actual volume and mute controls silence effects",
+    "settings survive reload independently of run save",
+    "scene pause stops tails; no resumed old audio",
+    "background blur stops all sound",
+    "8-voice cap and destroyed sound-object cleanup",
+    "victory, defeat and ending cues use actual scene callbacks",
+    "sound=off comparison flag",
+    "audio settings fit 390/320 viewport",
+    "14-source audition gallery loads without autoplay"
+  ],
+  "assets": 14,
+  "errors": [],
+  "warnings": [],
+  "scope": "Real browser input, decoded audio signal and gameplay callbacks. Physical phone speaker and subjective listening not verified."
+}

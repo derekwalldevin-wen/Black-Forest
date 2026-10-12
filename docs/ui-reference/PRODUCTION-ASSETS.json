@@ -1,0 +1,125 @@
+{
+  "count": 20,
+  "assets": [
+    {
+      "file": "bg-forest-ui-v2.webp",
+      "width": 941,
+      "height": 1672,
+      "bytes": 428580
+    },
+    {
+      "file": "bg-ruins-ui-v2.webp",
+      "width": 941,
+      "height": 1672,
+      "bytes": 438026
+    },
+    {
+      "file": "event-ancient_stele-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 497498
+    },
+    {
+      "file": "event-ascend_rites-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 545726
+    },
+    {
+      "file": "event-ash_mound-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 498254
+    },
+    {
+      "file": "event-baize_omen-ui-v1.webp",
+      "width": 1794,
+      "height": 877,
+      "bytes": 573466
+    },
+    {
+      "file": "event-black_market-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 445880
+    },
+    {
+      "file": "event-blind_dance-ui-v1.webp",
+      "width": 1794,
+      "height": 876,
+      "bytes": 569804
+    },
+    {
+      "file": "event-bone_pile-ui-v1.webp",
+      "width": 1774,
+      "height": 887,
+      "bytes": 471934
+    },
+    {
+      "file": "event-bronze_step-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 547732
+    },
+    {
+      "file": "event-campfire-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 515580
+    },
+    {
+      "file": "event-ember_bones-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 441098
+    },
+    {
+      "file": "event-forge-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 426240
+    },
+    {
+      "file": "event-lost_lantern-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 486456
+    },
+    {
+      "file": "event-moon_spring-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 586794
+    },
+    {
+      "file": "event-moss_shrine-ui-v1.webp",
+      "width": 1774,
+      "height": 887,
+      "bytes": 407368
+    },
+    {
+      "file": "event-nine_heads-ui-v1.webp",
+      "width": 1774,
+      "height": 886,
+      "bytes": 591892
+    },
+    {
+      "file": "event-qingqiu-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 501718
+    },
+    {
+      "file": "event-thorn_well-ui-v2.webp",
+      "width": 1774,
+      "height": 887,
+      "bytes": 351078
+    },
+    {
+      "file": "event-wolf_gaze-ui-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 401206
+    }
+  ]
+}

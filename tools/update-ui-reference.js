@@ -1,0 +1,12 @@
+const fs=require('fs');
+const [id,file,status,note]=process.argv.slice(2);
+const path='docs/ui-reference/SCREENS.json';
+const screens=JSON.parse(fs.readFileSync(path,'utf8'));
+const s=screens.find(x=>x.id===id);
+if(!s||!['reference-ready','draft-needs-review'].includes(status))throw Error('Invalid review');
+const image='images/'+file+'.png';
+if(!fs.existsSync('docs/ui-reference/'+image))throw Error('Missing image');
+if(s.image!==image)s.previousImages=[...new Set([...(s.previousImages||[]),s.image])];
+Object.assign(s,{image,status,note,promptFile:file+'-PROMPT.json'});
+fs.writeFileSync(path,JSON.stringify(screens,null,2));
+console.log(id+': '+status);

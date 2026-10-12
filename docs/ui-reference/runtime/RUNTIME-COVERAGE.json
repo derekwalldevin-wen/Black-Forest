@@ -1,0 +1,3738 @@
+{
+  "total": 46,
+  "rendered": 46,
+  "errors": [],
+  "results": [
+    {
+      "id": "01-title",
+      "reference": "images/01-title-v2.png",
+      "runtime": "01-title.png",
+      "scene": "Title",
+      "stage": null,
+      "texts": [
+        "黑 森 林",
+        "DARK  FOREST",
+        "一张牌的森林，一整晚的黑暗",
+        "穿过第三章的树根，脚下是青铜的阶",
+        "开 始 征 途",
+        "怎 么 玩",
+        "黑森林 · 哥特童话与山海志怪"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1402,
+          "width": 840,
+          "height": 156
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1588,
+          "width": 840,
+          "height": 144
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:01.499Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "02-starter",
+      "reference": "images/02-starter-v2.png",
+      "runtime": "02-starter.png",
+      "scene": "Title",
+      "stage": null,
+      "texts": [
+        "黑 森 林",
+        "DARK  FOREST",
+        "一张牌的森林，一整晚的黑暗",
+        "穿过第三章的树根，脚下是青铜的阶",
+        "开 始 征 途",
+        "怎 么 玩",
+        "黑森林 · 哥特童话与山海志怪",
+        "选 择 传 承",
+        "开局八张牌决定了这局能怎么打",
+        "猎血",
+        "支付生命换取抽牌，用汲取恢复生命。",
+        "✓",
+        "劈砍×3",
+        "格挡×3",
+        "血契",
+        "汲取",
+        "守御",
+        "用格挡减少损失，利用反刺兼顾攻守。",
+        "2",
+        "劈砍×3",
+        "格挡×3",
+        "铁壁",
+        "反刺",
+        "符咒",
+        "灵韵驱动符箓，连续施法降低后续费用。",
+        "3",
+        "劈砍×2",
+        "格挡×3",
+        "符纸",
+        "封门",
+        "玄玑",
+        "含符箓：战斗里会多出一条灵韵资源栏",
+        "行动力用于普通牌　灵韵用于符箓　同回合先打符箓，后续符箓费用 -1",
+        "确 认 开 始",
+        "取 消",
+        "1 / 2 / 3 选择　Enter 确认　Esc 返回"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1402,
+          "width": 840,
+          "height": 156
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1588,
+          "width": 840,
+          "height": 144
+        },
+        {
+          "type": "Rectangle",
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 90,
+          "y": 350,
+          "width": 900,
+          "height": 300
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 90,
+          "y": 670,
+          "width": 900,
+          "height": 300
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 90,
+          "y": 990,
+          "width": 900,
+          "height": 300
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 150,
+          "y": 1438,
+          "width": 360,
+          "height": 124
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 570,
+          "y": 1438,
+          "width": 360,
+          "height": 124
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:06.629Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "03-combat-gothic",
+      "reference": "images/03-combat-gothic-v2.png",
+      "runtime": "03-combat-gothic.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "80 / 80",
+        "16",
+        "下回合",
+        "菜单",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "点击打出"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 119.5
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 50.75000137090683,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 225.86416696448327,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 412.6812,
+          "y": 1277.5,
+          "width": 254.63760000000002,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 810.7500013709068,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:12.518Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "04-combat-shanhai",
+      "reference": "images/04-combat-shanhai-v5.png",
+      "runtime": "04-combat-shanhai.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第六章 · 帝鸿之末",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "1/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "帝江",
+        "120 / 120",
+        "27",
+        "下回合",
+        "菜单",
+        "封门",
+        "符箓",
+        "获得 8 点格挡。",
+        "1",
+        "玄玑",
+        "符箓",
+        "获得 1 点灵韵。抽 1\n 张牌。",
+        "0",
+        "符纸",
+        "符箓",
+        "造成 7 点伤害。",
+        "1",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "术法",
+        "获得 5 点格挡。",
+        "1",
+        "点击打出"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 119.5
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 39.04714151775838,
+          "y": 1286.1250020563602,
+          "width": 241.90571696448322,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 237.87499725818634,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 412.6812,
+          "y": 1277.5,
+          "width": 254.63760000000002,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:19.396Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "05-title-save",
+      "reference": "images/05-title-save.png",
+      "runtime": "05-title-save.png",
+      "scene": "Title",
+      "stage": null,
+      "texts": [
+        "黑 森 林",
+        "DARK  FOREST",
+        "一张牌的森林，一整晚的黑暗",
+        "穿过第三章的树根，脚下是青铜的阶",
+        "第三章 · 永夜王座   生命 42/70",
+        "继 续 征 途",
+        "重 新 开 始",
+        "怎 么 玩",
+        "黑森林 · 哥特童话与山海志怪"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1222,
+          "width": 840,
+          "height": 156
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1408,
+          "width": 840,
+          "height": 144
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1588,
+          "width": 840,
+          "height": 144
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:25.777Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "06-help",
+      "reference": "images/06-help-v2.png",
+      "runtime": "06-help.png",
+      "scene": "Title",
+      "stage": null,
+      "texts": [
+        "黑 森 林",
+        "DARK  FOREST",
+        "一张牌的森林，一整晚的黑暗",
+        "穿过第三章的树根，脚下是青铜的阶",
+        "第三章 · 永夜王座   生命 42/70",
+        "继 续 征 途",
+        "重 新 开 始",
+        "怎 么 玩",
+        "黑森林 · 哥特童话与山海志怪",
+        "战斗与意图",
+        "每回合获得3点行动力。点牌选中，再点或\n上滑打出。右侧图标预告敌人下一次行动；\n结束回合后敌人才会行动。蓝色盾值先抵消\n伤害，剩余伤害扣除生命。",
+        "灵韵与共鸣",
+        "符箓消耗灵韵，普通牌消耗行动力。灵韵每\n回合增加1点，未使用的会保留。本回合每\n打出1张符箓，后续符箓费用降低1，最低为\n0。",
+        "构筑与征途",
+        "战后可以拿牌或跳过；有遗物奖励时还需选\n择遗物。事件提供收益和代价。前三章是森\n林，后三章进入山海篇。根据意图安排格挡\n攻击和资源。",
+        "知道了"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1222,
+          "width": 840,
+          "height": 156
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1408,
+          "width": 840,
+          "height": 144
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1588,
+          "width": 840,
+          "height": 144
+        },
+        {
+          "type": "Rectangle",
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 370,
+          "y": 1458,
+          "width": 340,
+          "height": 124
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:31.737Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "07-confirm",
+      "reference": "images/07-confirm.png",
+      "runtime": "07-confirm.png",
+      "scene": "Title",
+      "stage": null,
+      "texts": [
+        "黑 森 林",
+        "DARK  FOREST",
+        "一张牌的森林，一整晚的黑暗",
+        "穿过第三章的树根，脚下是青铜的阶",
+        "第三章 · 永夜王座   生命 42/70",
+        "继 续 征 途",
+        "重 新 开 始",
+        "怎 么 玩",
+        "黑森林 · 哥特童话与山海志怪",
+        "确定要抹去上次的进度吗？",
+        "确定",
+        "取消"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1222,
+          "width": 840,
+          "height": 156
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1408,
+          "width": 840,
+          "height": 144
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 120,
+          "y": 1588,
+          "width": 840,
+          "height": 144
+        },
+        {
+          "type": "Rectangle",
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 570,
+          "y": 1022,
+          "width": 380,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 130,
+          "y": 1022,
+          "width": 380,
+          "height": 136
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:38.026Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "08-reward-gothic",
+      "reference": "images/08-reward-gothic-v3.png",
+      "runtime": "08-reward-gothic.png",
+      "scene": "Reward",
+      "stage": "card",
+      "texts": [
+        "战 利 品",
+        "击败了 灰狼",
+        "◈  +22",
+        "当前 ◈ 0　·　生命 70/70",
+        "挑 选 一 张 卡 牌",
+        "跳 过",
+        "继 续",
+        "重击",
+        "攻击",
+        "造成 14 点伤害。",
+        "2",
+        "连锁火花",
+        "攻击",
+        "造成 5 点伤害 2 \n次。",
+        "2",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 90,
+          "y": 1692,
+          "width": 380,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 610,
+          "y": 1692,
+          "width": 380,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 340,
+          "y": 591.3333333333333,
+          "width": 400,
+          "height": 533.6666666666667
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 70,
+          "y": 1116.3333333333333,
+          "width": 400,
+          "height": 533.6666666666667
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1116.3333333333333,
+          "width": 400,
+          "height": 533.6666666666667
+        }
+      ],
+      "capturedAt": "2026-10-11T06:28:36.749Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "09-reward-shanhai",
+      "reference": "images/09-reward-shanhai-v5.png",
+      "runtime": "09-reward-shanhai.png",
+      "scene": "Reward",
+      "stage": "card",
+      "texts": [
+        "战 利 品",
+        "击败了 灰狼",
+        "◈  +22",
+        "当前 ◈ 0　·　生命 70/70",
+        "挑 选 一 张 卡 牌",
+        "跳 过",
+        "继 续",
+        "灵蕴",
+        "符箓",
+        "获得 2 点灵韵。\n抽 1 张牌。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。\n抽 1 张牌。",
+        "1",
+        "匕首扇",
+        "攻击",
+        "造成 3 点伤害 2 \n次。",
+        "1"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 90,
+          "y": 1692,
+          "width": 380,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 610,
+          "y": 1692,
+          "width": 380,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 340,
+          "y": 591.3333333333333,
+          "width": 400,
+          "height": 533.6666666666667
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 70,
+          "y": 1116.3333333333333,
+          "width": 400,
+          "height": 533.6666666666667
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1116.3333333333333,
+          "width": 400,
+          "height": 533.6666666666667
+        }
+      ],
+      "capturedAt": "2026-10-11T06:28:42.523Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "10-relic-choice",
+      "reference": "images/10-relic-choice-v2.png",
+      "runtime": "10-relic-choice.png",
+      "scene": "Reward",
+      "stage": "relic",
+      "texts": [
+        "选择遗物",
+        "点击一件即可领取",
+        "继 续",
+        "磨刃石",
+        "每回合打出的第一张攻击牌，额\n外造成 3 点伤害。",
+        "铁誓指环",
+        "每场战斗开始时，获得 6 点格\n挡。"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 610,
+          "y": 1692,
+          "width": 380,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 860,
+          "width": 944,
+          "height": 380
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1285,
+          "width": 944,
+          "height": 380
+        }
+      ],
+      "capturedAt": "2026-10-11T06:28:47.869Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "11-reward-ready",
+      "reference": "images/11-reward-ready-v2.png",
+      "runtime": "11-reward-ready.png",
+      "scene": "Reward",
+      "stage": "continue",
+      "texts": [
+        "选择遗物",
+        "点击一件即可领取",
+        "继续征途",
+        "领取完成",
+        "✓ 卡牌：荆棘护甲",
+        "✓ 遗物：磨刃石"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1692,
+          "width": 380,
+          "height": 136
+        }
+      ],
+      "capturedAt": "2026-10-11T06:28:52.769Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "12-event-gothic",
+      "reference": "images/12-event-gothic.png",
+      "runtime": "12-event-gothic.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "月泉",
+        "一汪泉水映着一轮不存在的月亮。水面浮着不该\n存在的星星。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "饮下",
+        "回复 30% 最大生命",
+        "2",
+        "连泉带走",
+        "失去 8 点最大生命，获得 1 件遗物",
+        "3",
+        "不碰",
+        "离开"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:03.183Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "13-event-shanhai",
+      "reference": "images/13-event-shanhai.png",
+      "runtime": "13-event-shanhai.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "青丘",
+        "「其状如狐而九尾，其音如婴儿。」林子里传来\n小孩哭的声音。你走过去，只看见一条尾巴扫过\n的痕迹，和一地白毛。",
+        "第五章 · 毒泽九首",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "顺着声音走",
+        "失去 12 点生命，灵韵上限 +1",
+        "2",
+        "守在原地",
+        "回复 25% 最大生命，失去 1 张牌",
+        "3",
+        "堵住耳朵走",
+        "获得 30 金币"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 160
+      },
+      "capturedAt": "2026-10-11T06:34:05.967Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "14-event-result",
+      "reference": "images/14-event-result.png",
+      "runtime": "14-event-result.png",
+      "scene": "Event",
+      "stage": "result",
+      "texts": [
+        "泉水是甜的。伤口开始合拢。",
+        "·",
+        "回复 21 点生命",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "69/70  ◈ 0",
+        "尚无遗物",
+        "继 续"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 310,
+          "y": 1535,
+          "width": 460,
+          "height": 130
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:29:03.365Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "15-remove-card",
+      "reference": "images/15-remove-card-v2.png",
+      "runtime": "15-remove-card.png",
+      "scene": "Event",
+      "stage": "remove",
+      "texts": [
+        "‹ 上 一 页",
+        "下 一 页 ›",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "选 择 一 张 牌 丢 弃",
+        "牌组会变薄，牌也会变少。",
+        "方向键选择 · Enter 丢弃 · , . 翻页",
+        "1 / 4",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "匕首扇",
+        "攻击",
+        "造成 3 点伤害 2 次\n",
+        "1",
+        "重击",
+        "攻击",
+        "造成 14 点伤害。",
+        "2",
+        "铁壁",
+        "技能",
+        "获得 8 点格挡。",
+        "1",
+        "反刺",
+        "攻击",
+        "获得 4 点格挡，造\n成 4 点伤害。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "毒镖",
+        "攻击",
+        "造成 4 点伤害，施\n加 2 层中毒。",
+        "1",
+        "盾击",
+        "攻击",
+        "获得 5 点格挡，造\n成 5 点伤害。",
+        "1",
+        "狼牙",
+        "攻击",
+        "造成 8 点伤害。若\n目标中毒，额外造成\n 4 点。",
+        "1"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 207.5,
+          "y": 1678,
+          "width": 185,
+          "height": 124
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 687.5,
+          "y": 1678,
+          "width": 185,
+          "height": 124
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 91.85520133472444,
+          "y": 666.3000082969666,
+          "width": 227.28959733055115,
+          "height": 307.3999834060669
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 321.28792,
+          "y": 701,
+          "width": 214.42416000000003,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 555,
+          "y": 701,
+          "width": 193,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 778,
+          "y": 701,
+          "width": 193,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 98.28792000000001,
+          "y": 1015,
+          "width": 214.42416,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 321.28792,
+          "y": 1015,
+          "width": 214.42416000000003,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 555,
+          "y": 1015,
+          "width": 193,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 778,
+          "y": 1015,
+          "width": 193,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 98.28792000000001,
+          "y": 1329,
+          "width": 214.42416,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 332,
+          "y": 1329,
+          "width": 193,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 555,
+          "y": 1329,
+          "width": 193,
+          "height": 290
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 778,
+          "y": 1329,
+          "width": 193,
+          "height": 290
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:29:07.468Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "16-event-disabled",
+      "reference": "images/16-event-disabled.png",
+      "runtime": "16-event-disabled.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "黑市",
+        "一块空地上摆着几件东西，摆得很整齐。摊主的\n脸藏在兜帽里，看不见。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "买遗物",
+        "花费 60 金币，获得 1 件遗物（还差60金币）",
+        "2",
+        "删一张牌",
+        "花费 70 金币，从牌组移除 1 张牌（还差70金\n币）",
+        "3",
+        "不买",
+        "离开"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:08.736Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "17-contract-ember",
+      "reference": "images/17-contract-ember.png",
+      "runtime": "17-contract-ember.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "焦羽",
+        "一根烧剩的羽毛插在泥里，边缘还是温的。它属\n于一只你没见过的东西。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "握住",
+        "获得妖契：祸斗契",
+        "2",
+        "埋回去",
+        "回复 25% 最大生命",
+        "3",
+        "不碰",
+        "什么也不动，离开这里"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:11.798Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "18-contract-ash",
+      "reference": "images/18-contract-ash-v5.png",
+      "runtime": "18-contract-ash.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "灰冢",
+        "一座没写名字的坟。坟前的火还没灭，石头是热\n的。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "取火种",
+        "获得 1 件遗物",
+        "2",
+        "再握一次",
+        "获得妖契：祸斗契（已持有时改为回复生命）",
+        "3",
+        "退后",
+        "什么也不动，退开几步"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:15.214Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "19-forge",
+      "reference": "images/19-forge-v2.png",
+      "runtime": "19-forge.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "铸坊",
+        "半埋在土里的炉子还是温的。砧上有几道新划痕\n尺寸和你手里这些牌对得上。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "熔铸",
+        "随机移除 1 张牌，随机获得 1 张哥特牌",
+        "2",
+        "淬火",
+        "消耗 70 金币，获得 1 张稀有牌（还差70金币\n",
+        "3",
+        "不碰",
+        "什么也不动，离开铸坊"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:18.638Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "20-ascend",
+      "reference": "images/20-ascend-v2.png",
+      "runtime": "20-ascend.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "升契",
+        "树根下面是青铜的阶。阶上有人等了很久，手里\n捧着一只空碗。",
+        "第五章 · 毒泽九首",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "把契递上去",
+        "妖契升阶，随机获得 1 张牌加入牌组",
+        "2",
+        "只取火，不递契",
+        "回复 30% 最大生命，获得 1 件遗物",
+        "3",
+        "转身走了",
+        "什么也不发生，直接进入山海篇"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:21.812Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "21-relic-tip",
+      "reference": "images/21-relic-tip-v2.png",
+      "runtime": "21-relic-tip.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "82 / 82",
+        "10",
+        "下回合",
+        "菜单",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "点击打出",
+        "铁誓指环",
+        "每场战斗开始时，获得 6 点格挡。"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 399.4,
+          "y": 119.4,
+          "width": 61.200000000000045,
+          "height": 61.19999999999999
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 193
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 50.75000137090683,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 237.87499725818634,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 412.6812,
+          "y": 1277.5,
+          "width": 254.63760000000002,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 70,
+          "y": 410,
+          "width": 940,
+          "height": 300
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:49.802Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "22-card-selected",
+      "reference": "images/22-card-selected-v3.png",
+      "runtime": "22-card-selected.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "79 / 79",
+        "16",
+        "下回合",
+        "菜单",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "劈砍",
+        "造成 6 点伤害。",
+        "1",
+        "点击打出"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 119.5
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 39.04714151775838,
+          "y": 1286.1250020563602,
+          "width": 241.90571696448322,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 225.86416696448327,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 425,
+          "y": 1277.5,
+          "width": 230,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 810.7500013709068,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 330,
+          "y": 1131.6666666666665,
+          "width": 420,
+          "height": 548.3333333333335
+        },
+        {
+          "type": "Graphics",
+          "enabled": true,
+          "x": 390,
+          "y": 1607.25,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:16:55.865Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "23-card-denied",
+      "reference": "images/23-card-denied.png",
+      "runtime": "23-card-denied.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "0/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "76 / 76",
+        "16",
+        "下回合",
+        "菜单",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "点击打出",
+        "行动力不足：需要1，当前0"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 119.5
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 50.75000137090683,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 225.91995309729577,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 425,
+          "y": 1277.5,
+          "width": 230,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:01.872Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "24-enemy-turn",
+      "reference": "images/24-enemy-turn-v2.png",
+      "runtime": "24-enemy-turn.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "5",
+        "敌 方 行 动",
+        "黑暗森林之主",
+        "83 / 83",
+        "10",
+        "下回合",
+        "菜单",
+        "敌方行动…",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "点击打出"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 193
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 237.87499725818634,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 425,
+          "y": 1277.5,
+          "width": 230,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 29.26809533395769,
+          "y": 1272.875698208809,
+          "width": 261.46380933208457,
+          "height": 354.2486035823822
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:07.138Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "25-feedback-block",
+      "reference": "images/25-feedback-block.png",
+      "runtime": "25-feedback-block.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "84 / 84",
+        "16",
+        "下回合",
+        "菜单",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "点击打出",
+        "-6"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 119.5
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 50.75000137090683,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 225.86416696448327,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 412.6812,
+          "y": 1277.5,
+          "width": 254.63760000000002,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 617.8749972581863,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:12.536Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "26-feedback-hurt",
+      "reference": "images/26-feedback-hurt-v2.png",
+      "runtime": "26-feedback-hurt.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "64 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "77 / 77",
+        "16",
+        "下回合",
+        "菜单",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "点击打出",
+        "6"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 119.5
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 39.04714151775838,
+          "y": 1286.1250020563602,
+          "width": 241.90571696448322,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 237.87499725818634,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 425,
+          "y": 1277.5,
+          "width": 230,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:17.901Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "27-feedback-heal",
+      "reference": "images/27-feedback-heal.png",
+      "runtime": "27-feedback-heal.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "53 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "77 / 77",
+        "10",
+        "下回合",
+        "菜单",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "点击打出",
+        "+5"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 193
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 50.75000137090683,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 225.86416696448327,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 412.6812,
+          "y": 1277.5,
+          "width": 254.63760000000002,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 605.8641669644833,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 810.7500013709068,
+          "y": 1286.1250020563602,
+          "width": 218.49999725818634,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:22.675Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "28-battle-banner",
+      "reference": "images/28-battle-banner-v2.png",
+      "runtime": "28-battle-banner.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "0 / 78",
+        "菜单",
+        "胜 利",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "点击打出"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 39.04714151775838,
+          "y": 1286.1250020563602,
+          "width": 241.90571696448322,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 237.87499725818634,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 412.6812,
+          "y": 1277.5,
+          "width": 254.63760000000002,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 617.8749972581863,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:28.578Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "29-game-over",
+      "reference": "images/29-game-over.png",
+      "runtime": "29-game-over.png",
+      "scene": "Combat",
+      "stage": null,
+      "texts": [
+        "第一章 · 迷雾林缘",
+        "回合 1",
+        "◈ 0",
+        "70 / 70",
+        "3/3",
+        "0/3",
+        "灵韵",
+        "行动力",
+        "共鸣 0",
+        "0",
+        "抽牌",
+        "弃牌",
+        "0",
+        "结 束 回 合",
+        "黑暗森林之主",
+        "83 / 83",
+        "10",
+        "下回合",
+        "菜单",
+        "你倒在了林间",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 1\n 张牌。",
+        "1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 2\n 张牌。",
+        "0",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "点击打出",
+        "森林记住了你",
+        "倒在 第一章 · 迷雾林缘",
+        "累计击杀 0 名敌人",
+        "重 头 来 过"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 610,
+          "y": 1746,
+          "width": 380,
+          "height": 128
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 879,
+          "y": 303,
+          "width": 82,
+          "height": 193
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 930,
+          "y": 191,
+          "width": 68,
+          "height": 42
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 39.04714151775838,
+          "y": 1286.1250020563602,
+          "width": 241.90571696448322,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 225.86416696448327,
+          "y": 1281.8124958872795,
+          "width": 248.27166607103345,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 425,
+          "y": 1277.5,
+          "width": 230,
+          "height": 345
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 617.8749972581863,
+          "y": 1281.8124958872795,
+          "width": 224.25000548362732,
+          "height": 336.375008225441
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 799.0471415177584,
+          "y": 1286.1250020563602,
+          "width": 241.9057169644833,
+          "height": 327.7499958872795
+        },
+        {
+          "type": "Graphics",
+          "enabled": false,
+          "x": 390,
+          "y": 1176,
+          "width": 300,
+          "height": 76
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 340,
+          "y": 1188,
+          "width": 400,
+          "height": 124
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:34.004Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "30-ending",
+      "reference": "images/30-ending.png",
+      "runtime": "30-ending.png",
+      "scene": "Reward",
+      "stage": "ending",
+      "texts": [
+        "返 回",
+        "你 走 出 了 黑 森 林",
+        "森林合上了，古籍也翻到了最后一页。你还醒着。",
+        "剩余生命",
+        "31 / 70",
+        "累计击杀",
+        "9 名",
+        "牌组张数",
+        "11 张",
+        "灵韵上限",
+        "3 点",
+        "遗物",
+        "3 件",
+        "再 走 一 次"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 220,
+          "y": 1682,
+          "width": 640,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 340,
+          "y": 1438,
+          "width": 400,
+          "height": 124
+        }
+      ],
+      "capturedAt": "2026-10-11T06:30:01.767Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "31-loading",
+      "reference": "images/31-loading.png",
+      "runtime": "31-loading.png",
+      "scene": "Boot",
+      "stage": null,
+      "texts": [
+        "黑 森 林",
+        "THE BLACK FOREST",
+        "正在点亮提灯… 0%"
+      ],
+      "controls": [],
+      "capturedAt": "2026-10-11T06:30:02.318Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "32-deck-browser",
+      "reference": "images/32-deck-browser.png",
+      "runtime": "32-deck-browser.png",
+      "scene": "Journal",
+      "stage": "deck",
+      "texts": [
+        "我的牌组",
+        "5张 · 5种 · 只读查看",
+        "全部",
+        "攻击",
+        "技能",
+        "能力",
+        "符箓",
+        "劈砍",
+        "攻击",
+        "造成 6 点伤害。",
+        "1",
+        "×1",
+        "格挡",
+        "技能",
+        "获得 5 点格挡。",
+        "1",
+        "×1",
+        "凝神",
+        "技能",
+        "抽 2 张牌。",
+        "1",
+        "×1",
+        "血契",
+        "技能",
+        "失去 3 点生命，抽 \n2 张牌。",
+        "0",
+        "×1",
+        "疾刺",
+        "攻击",
+        "造成 4 点伤害。抽 \n1 张牌。",
+        "1",
+        "×1",
+        "上一页",
+        "下一页",
+        "1 / 1",
+        "劈砍  ·  1行动力",
+        "造成 6 点伤害。",
+        "返回行囊",
+        "返回游戏"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 72,
+          "y": 332,
+          "width": 176,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 262,
+          "y": 332,
+          "width": 176,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 452,
+          "y": 332,
+          "width": 176,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 642,
+          "y": 332,
+          "width": 176,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 832,
+          "y": 332,
+          "width": 176,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 85.07376000000002,
+          "y": 483,
+          "width": 225.85247999999999,
+          "height": 306
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 313.07376,
+          "y": 483,
+          "width": 225.85248,
+          "height": 306
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 541.07376,
+          "y": 483,
+          "width": 225.85248,
+          "height": 306
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 780,
+          "y": 483,
+          "width": 204,
+          "height": 306
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 96,
+          "y": 839,
+          "width": 204,
+          "height": 306
+        },
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 70,
+          "y": 1177,
+          "width": 270,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": false,
+          "x": 740,
+          "y": 1177,
+          "width": 270,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 70,
+          "y": 1752,
+          "width": 410,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 600,
+          "y": 1752,
+          "width": 410,
+          "height": 136
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:40.828Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "33-pause-settings",
+      "reference": "images/33-pause-settings.png",
+      "runtime": "33-pause-settings.png",
+      "scene": "Journal",
+      "stage": "pause",
+      "texts": [
+        "提灯旅人",
+        "行囊已打开 · 战斗已暂停",
+        "查看牌组",
+        "征途进度",
+        "遗物与妖契",
+        "减少动态：关",
+        "触感反馈：关",
+        "触感仅在设备与浏览器支持时生效",
+        "返回标题会保留征途存档。当前战斗将从开头重打\n不能恢复此刻手牌。",
+        "返回标题",
+        "继续游戏"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 140,
+          "y": 452,
+          "width": 800,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 140,
+          "y": 622,
+          "width": 800,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 140,
+          "y": 792,
+          "width": 800,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 140,
+          "y": 972,
+          "width": 800,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 140,
+          "y": 1142,
+          "width": 800,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 140,
+          "y": 1537,
+          "width": 800,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 160,
+          "y": 1752,
+          "width": 760,
+          "height": 136
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:47.846Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "34-route",
+      "reference": "images/34-route.png",
+      "runtime": "34-route.png",
+      "scene": "Journal",
+      "stage": "route",
+      "texts": [
+        "征途进度",
+        "六章十八战 · 沿固定征途前行",
+        "第一章",
+        "迷雾林缘",
+        "◆",
+        "灰狼",
+        "○",
+        "毒蝇伞",
+        "○",
+        "头狼",
+        "第二章",
+        "腐沼深处",
+        "○",
+        "森林女巫",
+        "○",
+        "铁鬃野猪",
+        "○",
+        "沼泽女巫",
+        "第三章",
+        "永夜王座",
+        "○",
+        "灰狼",
+        "○",
+        "头狼",
+        "○",
+        "黑暗森林之主",
+        "第四章",
+        "青丘之国",
+        "○",
+        "九尾狐",
+        "○",
+        "鹿蜀",
+        "○",
+        "穷奇",
+        "第五章",
+        "毒泽九首",
+        "○",
+        "相柳",
+        "○",
+        "蜚",
+        "○",
+        "祸斗",
+        "第六章",
+        "帝鸿之末",
+        "○",
+        "饕餮",
+        "○",
+        "白泽",
+        "○",
+        "帝江",
+        "✓ 已完成    ◆ 当前    ○ 未到达",
+        "返回行囊",
+        "返回游戏"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 70,
+          "y": 1752,
+          "width": 410,
+          "height": 136
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 600,
+          "y": 1752,
+          "width": 410,
+          "height": 136
+        }
+      ],
+      "capturedAt": "2026-10-11T07:17:55.819Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-campfire",
+      "reference": "images/event-campfire.png",
+      "runtime": "event-campfire.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "篝火",
+        "一堆还没熄的灰。有人把火留给了后来的人，火\n苗很小，但确实是暖的。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "休息",
+        "回复 30% 最大生命",
+        "2",
+        "冥想",
+        "从牌组中移除 1 张牌",
+        "3",
+        "添柴",
+        "获得 1 件遗物，受到 6 点伤害"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:25.185Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-bone_pile",
+      "reference": "images/event-bone_pile.png",
+      "runtime": "event-bone_pile.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "骨堆",
+        "一堆骨头堆得很整齐，像是有人数过。你不确定\n那些数字是在数什么。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "搜刮",
+        "获得 45 金币",
+        "2",
+        "献祭",
+        "失去 10 点生命，获得 2 张随机卡牌",
+        "3",
+        "翻找",
+        "移除 1 张牌，获得 30 金币"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:28.653Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-lost_lantern",
+      "reference": "images/event-lost_lantern.png",
+      "runtime": "event-lost_lantern.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "提灯人",
+        "一个提着灯的人站在路中间，灯是灭的。他看起\n来比你先在这里等了很久。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "交出火折",
+        "失去 12 点生命，获得 1 件遗物",
+        "2",
+        "问路",
+        "回复 20 点生命",
+        "3",
+        "不理他",
+        "离开"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:32.709Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-black_market",
+      "reference": "images/event-black_market.png",
+      "runtime": "event-black_market.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "黑市",
+        "一块空地上摆着几件东西，摆得很整齐。摊主的\n脸藏在兜帽里，看不见。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "买遗物",
+        "花费 60 金币，获得 1 件遗物（还差60金币）",
+        "2",
+        "删一张牌",
+        "花费 70 金币，从牌组移除 1 张牌（还差70金\n币）",
+        "3",
+        "不买",
+        "离开"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:36.853Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-ancient_stele",
+      "reference": "images/event-ancient_stele.png",
+      "runtime": "event-ancient_stele.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "古碑",
+        "半截石碑立在苔藓里，上面的字你不认识，但读\n的时候每个字都在发热。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "献上一张牌",
+        "随机移除 1 张牌，获得 1 件遗物",
+        "2",
+        "抄下碑文",
+        "获得 1 张随机卡牌",
+        "3",
+        "不碰",
+        "什么也不发生"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:40.784Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-thorn_well",
+      "reference": "images/event-thorn_well.png",
+      "runtime": "event-thorn_well.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "荆棘井",
+        "井口长满了荆棘，井里的水面上浮着一层红。看\n上去像是很久没有人来打水了。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "喝一口",
+        "回复 25 点生命，下一场战斗开始时带有「虚弱\n 2」",
+        "2",
+        "不喝",
+        "离开"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1346,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1564,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:44.939Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-wolf_gaze",
+      "reference": "images/event-wolf_gaze.png",
+      "runtime": "event-wolf_gaze.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "狼的凝视",
+        "树丛里有十几双眼睛。它们没有靠近，也没有离\n开。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "直面",
+        "失去 10 点生命，获得 2 张随机卡牌",
+        "2",
+        "躲避",
+        "回复 25% 最大生命，下一场战斗开始时带有「\n易伤 2」",
+        "3",
+        "大声吼",
+        "失去 15 点生命，获得 60 金币"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:49.194Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-moss_shrine",
+      "reference": "images/event-moss_shrine.png",
+      "runtime": "event-moss_shrine.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "苔藓神龛",
+        "一座半塌的小龛，里面没有神像，只有一颗用苔\n藓包住的石头，还在缓慢地跳。",
+        "第一章 · 迷雾林缘",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "贴近听",
+        "最大生命 +6，获得 1 件遗物",
+        "2",
+        "取出石头",
+        "失去 15 点生命，获得 2 张随机卡牌",
+        "3",
+        "合上龛门",
+        "什么也不发生"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 104
+      },
+      "capturedAt": "2026-10-11T06:34:53.242Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-nine_heads",
+      "reference": "images/event-nine_heads.png",
+      "runtime": "event-nine_heads.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "九首",
+        "「九首人面蛇身而青。」沼泽上方悬着九个头，\n轮流开口。它们说的名字你一个也不认识，但每\n一个都像在叫你的祖先。",
+        "第五章 · 毒泽九首",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "一个一个回答",
+        "灵韵上限 +2，获得 1 件遗物",
+        "2",
+        "屏住呼吸",
+        "下一场战斗：中毒 3 层",
+        "3",
+        "往沼泽深处走",
+        "获得 2 张随机卡牌"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 160
+      },
+      "capturedAt": "2026-10-11T06:34:57.959Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-bronze_step",
+      "reference": "images/event-bronze_step.png",
+      "runtime": "event-bronze_step.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "青铜阶",
+        "树根下面是台阶。一级一级往下，每一级都刻着\n一个你不认识的字。刻痕里积着比这棵树还老的\n灰。",
+        "第五章 · 毒泽九首",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "往下走",
+        "灵韵上限 +1，回复 20% 最大生命",
+        "2",
+        "用刀刻自己的名字",
+        "失去 1 张牌，灵韵上限 +2",
+        "3",
+        "把阶阶填平",
+        "获得 45 金币"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 160
+      },
+      "capturedAt": "2026-10-11T06:35:01.863Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-blind_dance",
+      "reference": "images/event-blind_dance.png",
+      "runtime": "event-blind_dance.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "浑敦之舞",
+        "「浑敦无面目，是识歌舞。」一个黄囊似的东西\n在跳，没有脸，跳得很准。你听了三遍才听出来\n它在唱。",
+        "第五章 · 毒泽九首",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "跟着跳",
+        "失去 18 点生命，获得 2 张随机卡牌",
+        "2",
+        "替它数拍子",
+        "灵韵上限 +2",
+        "3",
+        "闭上眼离开",
+        "回复 15% 最大生命"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 160
+      },
+      "capturedAt": "2026-10-11T06:35:05.954Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    },
+    {
+      "id": "event-baize_omen",
+      "reference": "images/event-baize_omen.png",
+      "runtime": "event-baize_omen.png",
+      "scene": "Event",
+      "stage": "choose",
+      "texts": [
+        "白泽之言",
+        "「能言，能知万物之情。」一头白色的兽蹲在路\n边，看见你就开口了。它知道你的名字、你从哪\n来、还有几天。",
+        "第五章 · 毒泽九首",
+        "事 件",
+        "48/70  ◈ 0",
+        "尚无遗物",
+        "1",
+        "问它未来",
+        "灵韵上限 +1，获得 1 件遗物",
+        "2",
+        "问它怎么活下去",
+        "最大生命 +12",
+        "3",
+        "不问走开",
+        "获得 60 金币"
+      ],
+      "controls": [
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1237,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1455,
+          "width": 944,
+          "height": 200
+        },
+        {
+          "type": "Container",
+          "enabled": true,
+          "x": 68,
+          "y": 1673,
+          "width": 944,
+          "height": 200
+        }
+      ],
+      "story": {
+        "type": 5,
+        "x": 120,
+        "y": 1008,
+        "width": 840,
+        "height": 160
+      },
+      "capturedAt": "2026-10-11T06:35:09.864Z",
+      "visualReview": "reviewed",
+      "reviewNote": "实际画面已核对材质、文字、区域边界与对应状态；点击流程由独立报告验证。"
+    }
+  ],
+  "complete": true,
+  "note": "46项人工视觉核对完成；真实指针流程、选中/奖励卡规则与窄屏触摸检查通过。物理手机与振动硬件尚未实测。",
+  "reviewed": 46,
+  "reviewedAt": "2026-10-11T07:27:21.282Z",
+  "evidence": [
+    "FLOW-REPORT.json",
+    "JOURNAL-REPORT.json",
+    "GALLERY-REPORT.json",
+    "LOGIC-REPORT.txt",
+    "../implemented/REPORT.json",
+    "../../art/motion/BROWSER-REPORT.json"
+  ]
+}

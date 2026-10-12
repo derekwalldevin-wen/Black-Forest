@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Original reduced-motion hit freeze reproduced before fix; actual hit now restores frame 0",
+    "All 16 enemies: hit/attack/defend recover in normal and reduced modes; attack reaches actual strike frame 2",
+    "Old recovery cannot interrupt a newer attack or consecutive hit",
+    "Scene pause freezes recovery; switching motion setting cancels previous pose timers",
+    "Real end-turn clicks: windup, strike frame, exactly two damage settlements, recovery and next player turn in both modes",
+    "Death and sprite destruction cancel pose timers; no return from death to idle"
+  ],
+  "screens": [
+    "attack-normal.png",
+    "attack-reduced.png",
+    "recovered-idle.png"
+  ],
+  "errors": []
+}

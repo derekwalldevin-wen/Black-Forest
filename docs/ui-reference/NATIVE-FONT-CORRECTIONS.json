@@ -1,0 +1,83 @@
+[
+  {
+    "id": "04-combat-shanhai",
+    "input": "docs/ui-reference/images/04-combat-shanhai-v4.png",
+    "output": "docs/ui-reference/images/04-combat-shanhai-v5.png",
+    "text": "玄玑",
+    "size": 26,
+    "weight": "bold",
+    "box": {
+      "left": 430,
+      "top": 1268,
+      "width": 84,
+      "height": 38
+    },
+    "erase": {
+      "left": 15,
+      "top": 10,
+      "width": 61,
+      "height": 27
+    },
+    "font": "SimSun",
+    "codepoints": [
+      "U+7384",
+      "U+7391"
+    ],
+    "outsideChanges": 0,
+    "insideChanges": 1612
+  },
+  {
+    "id": "09-reward-shanhai",
+    "input": "docs/ui-reference/images/09-reward-shanhai-v4.png",
+    "output": "docs/ui-reference/images/09-reward-shanhai-v5.png",
+    "text": "玄玑",
+    "size": 34,
+    "weight": "bold",
+    "box": {
+      "left": 625,
+      "top": 830,
+      "width": 120,
+      "height": 42
+    },
+    "erase": {
+      "left": 25,
+      "top": 0,
+      "width": 76,
+      "height": 40
+    },
+    "font": "SimSun",
+    "codepoints": [
+      "U+7384",
+      "U+7391"
+    ],
+    "outsideChanges": 0,
+    "insideChanges": 2601
+  },
+  {
+    "id": "18-contract-ash",
+    "input": "docs/ui-reference/images/18-contract-ash-v4.png",
+    "output": "docs/ui-reference/images/18-contract-ash-v5.png",
+    "text": "灰冢",
+    "size": 64,
+    "weight": "bold",
+    "box": {
+      "left": 377,
+      "top": 811,
+      "width": 185,
+      "height": 72
+    },
+    "erase": {
+      "left": 16,
+      "top": 9,
+      "width": 153,
+      "height": 56
+    },
+    "font": "SimSun",
+    "codepoints": [
+      "U+7070",
+      "U+51A2"
+    ],
+    "outsideChanges": 0,
+    "insideChanges": 6646
+  }
+]

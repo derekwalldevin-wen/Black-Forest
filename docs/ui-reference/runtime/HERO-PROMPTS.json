@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Production game illustration, landscape 3:2. A small open antique iron-and-wood reward chest on a mossy boulder beside a cold dark forest path, warm muted gold light and a handful of golden motes rising from within, black pines, blue-grey mist and old distant castle shapes. Gothic watercolor and fine ink brushwork matching the approved reference. Chest in central60% safe area, fully visible, balanced wide scene. Painterly physical materials with blackened iron, chipped wood and subtle warm light. NO interface, NO card frames, NO buttons, NO words, NO letters, NO numbers, NO logos, NO watermark. Opaque illustration for the upper section of the actual relic reward screen.",
+    "file": "assets/ui/reward-chest-v1.webp"
+  },
+  {
+    "mode": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Production game artwork, landscape3:2, no UI. An ancient open illuminated Chinese mythological manuscript resting on dark mossy roots at the threshold where a cold gothic forest meets old bronze stone ruins. Pages are blank aged ivory with only faint nonverbal watercolor washes and gold dust, no readable writing, no symbols resembling letters. A dim lantern on the left, pale morning light between trees, subtle bronze jade motifs on the book clasp, restrained quiet sense of a long journey completed. The complete open book lies in the lower central60%, no cropped pages. Fine ink and hand-painted watercolor, deep indigo #12101a, antique gold #b08d3f, ivory parchment and muted jade. No text, no numbers, no labels, no buttons, no frames, no interface, no logos, no watermark. Opaque illustration for the actual ending screen.",
+    "file": "assets/ui/ending-book-v1.webp"
+  }
+]

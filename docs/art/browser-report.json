@@ -1,0 +1,276 @@
+{
+  "textures": [
+    {
+      "id": "gothic/sword",
+      "loaded": true
+    },
+    {
+      "id": "gothic/shield",
+      "loaded": true
+    },
+    {
+      "id": "gothic/dagger",
+      "loaded": true
+    },
+    {
+      "id": "gothic/blood",
+      "loaded": true
+    },
+    {
+      "id": "gothic/moon",
+      "loaded": true
+    },
+    {
+      "id": "gothic/venom",
+      "loaded": true
+    },
+    {
+      "id": "gothic/fang",
+      "loaded": true
+    },
+    {
+      "id": "gothic/thorns",
+      "loaded": true
+    },
+    {
+      "id": "gothic/spark",
+      "loaded": true
+    },
+    {
+      "id": "gothic/talisman",
+      "loaded": true
+    },
+    {
+      "id": "gothic/thunder",
+      "loaded": true
+    },
+    {
+      "id": "gothic/ring",
+      "loaded": true
+    },
+    {
+      "id": "gothic/cloud",
+      "loaded": true
+    },
+    {
+      "id": "gothic/lens",
+      "loaded": true
+    },
+    {
+      "id": "gothic/eye",
+      "loaded": true
+    },
+    {
+      "id": "gothic/gem",
+      "loaded": true
+    },
+    {
+      "id": "gothic/vial",
+      "loaded": true
+    },
+    {
+      "id": "gothic/lotus",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/sword",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/shield",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/dagger",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/blood",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/moon",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/venom",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/fang",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/thorns",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/spark",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/talisman",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/thunder",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/ring",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/cloud",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/lens",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/eye",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/gem",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/vial",
+      "loaded": true
+    },
+    {
+      "id": "shanhai/lotus",
+      "loaded": true
+    }
+  ],
+  "cropCases": 666,
+  "allCropsPassed": true,
+  "enemies": [
+    {
+      "id": "dijiang",
+      "enemy": "dijiang",
+      "texture": "enemy-dijiang",
+      "realm": "shanhai",
+      "scale": 0.5829596412556054,
+      "y": 595.2914798206277,
+      "feetY": 790,
+      "visibleHeight": 390,
+      "horizon": 790,
+      "targetHeight": 390,
+      "back": "card-back-shanhai"
+    },
+    {
+      "id": "forest-lord",
+      "enemy": "forest_lord",
+      "texture": "enemy-forest-lord",
+      "realm": "gothic",
+      "scale": 0.5563480741797432,
+      "y": 595.2781740370899,
+      "feetY": 790,
+      "visibleHeight": 390,
+      "horizon": 790,
+      "targetHeight": 390,
+      "back": "card-back-gothic"
+    },
+    {
+      "id": "alpha-wolf",
+      "enemy": "alpha_wolf",
+      "texture": "enemy-alpha-wolf",
+      "realm": "gothic",
+      "scale": 0.5921052631578947,
+      "y": 610,
+      "feetY": 790,
+      "visibleHeight": 360,
+      "horizon": 790,
+      "targetHeight": 360,
+      "back": "card-back-gothic"
+    },
+    {
+      "id": "bog-witch",
+      "enemy": "bog_witch",
+      "texture": "enemy-bog-witch",
+      "realm": "gothic",
+      "scale": 0.5202312138728323,
+      "y": 610,
+      "feetY": 790,
+      "visibleHeight": 360,
+      "horizon": 790,
+      "targetHeight": 360,
+      "back": "card-back-gothic"
+    },
+    {
+      "id": "qiongqi",
+      "enemy": "qiongqi",
+      "texture": "enemy-qiongqi",
+      "realm": "shanhai",
+      "scale": 0.5278592375366569,
+      "y": 610,
+      "feetY": 790,
+      "visibleHeight": 360,
+      "horizon": 790,
+      "targetHeight": 360,
+      "back": "card-back-shanhai"
+    },
+    {
+      "id": "huodou",
+      "enemy": "huodou",
+      "texture": "enemy-huodou",
+      "realm": "shanhai",
+      "scale": 0.5278592375366569,
+      "y": 610,
+      "feetY": 790,
+      "visibleHeight": 360,
+      "horizon": 790,
+      "targetHeight": 360,
+      "back": "card-back-shanhai"
+    },
+    {
+      "id": "xiangliu",
+      "enemy": "xiangliu",
+      "texture": "enemy-xiangliu",
+      "realm": "shanhai",
+      "scale": 0.46875,
+      "y": 625,
+      "feetY": 790,
+      "visibleHeight": 330,
+      "horizon": 790,
+      "targetHeight": 330,
+      "back": "card-back-shanhai"
+    },
+    {
+      "id": "taotie",
+      "enemy": "taotie",
+      "texture": "enemy-taotie",
+      "realm": "shanhai",
+      "scale": 0.4748201438848921,
+      "y": 625.2374100719425,
+      "feetY": 790,
+      "visibleHeight": 330,
+      "horizon": 790,
+      "targetHeight": 330,
+      "back": "card-back-shanhai"
+    },
+    {
+      "id": "baize",
+      "enemy": "baize",
+      "texture": "enemy-baize",
+      "realm": "shanhai",
+      "scale": 0.4782608695652174,
+      "y": 625,
+      "feetY": 790,
+      "visibleHeight": 330,
+      "horizon": 790,
+      "targetHeight": 330,
+      "back": "card-back-shanhai"
+    }
+  ],
+  "artOff": true,
+  "otherScenes": [
+    "Reward",
+    "Event"
+  ],
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen.imagegen",
+  "transparent_background": true,
+  "baseEnemyPrompt": "Generate a production 2D game character sprite sheet from this EXACT reference, keeping identity, anatomy, costume, coloration and painterly rendering. True alpha transparent background. Six clearly separated full-body poses in precise 3 columns by 2 rows, 1536x1024, each cell 512x512. Identical scale and camera, ground anchor at local (256,470), body centered, all extremities within cell with 24px padding, never overlap neighboring cells. Read left to right: frame0 neutral stance; frame1 attack anticipation, body draws back; frame2 striking forward with natural limb/head movement, a clearly different active attack pose; frame3 recovered stance close to neutral with gentle breathing variation; frame4 recoiling from a hit; frame5 defensive braced stance. Actual articulated anatomy changes, not copies translated/rotated. NO scenery, NO effects outside body, NO text, NO cell labels, NO cell borders, NO painted checkerboard. Character must look like the reference in EVERY pose.",
+  "referenceDirectory": "assets",
+  "sourceDirectory": "docs/art/motion/source",
+  "note": "Six poses per sheet; imagegen outputs preserved in source, technical normalization performed by prepare-motion-art.js.",
+  "identityAdditions": {
+    "nine-tail": "Exactly nine large fox tails in every frame.",
+    "xiangliu": "Exactly nine individually distinct snake heads on nine connected necks in EVERY frame, no heads added or lost.",
+    "lu-shu": "Preserve the striped horse body and humanlike horse face.",
+    "qiongqi": "Preserve the tiger body and exactly two feathered wings.",
+    "fei": "Preserve ox body, singular central third eye, long serpent tail.",
+    "huodou": "Preserve black dog body and orange flames belonging to its silhouette.",
+    "taotie": "Preserve bronze vessel-shaped maw monster with huge open mouth, no human face.",
+    "baize": "Preserve white lion body, horns and wise face.",
+    "dijiang": "Red faceless egg-shaped body, NO face NO eyes NO mouth NO nose. Exactly SIX small curled legs and FOUR feathered wings, two pairs, in EVERY frame; wings flex and legs shift but their number never changes."
+  },
+  "nineTailRepair": "Keep the six-cell layout and poses; in EACH frame show EXACTLY NINE individually separable fluffy tails behind the fox with nine separated dark pointed tips, arranged as a wide semicircular fan; keep transparent background and reference identity."
+}

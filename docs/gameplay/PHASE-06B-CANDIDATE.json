@@ -1,0 +1,43 @@
+{
+  "note": "本单一经写出不可覆盖（wx）。确认批次只能验证这里登记的候选，不允许换个组合再验——那等于把 8 次抽样里最好的那次当结果。",
+  "declaredAt": "2026-10-07",
+  "candidate": "values+floor+energy",
+  "levers": {
+    "values": true,
+    "floor": true,
+    "energy": true
+  },
+  "gate": {
+    "survive9pp": 11.66666666666667,
+    "clearpp": 2.9999999999999973,
+    "reached": 1.1500000000000004
+  },
+  "gatePassAtDeclare": {
+    "survive9": true,
+    "clear": true,
+    "reached": true
+  },
+  "selectBatch": {
+    "batch": "select",
+    "gamesPerArm": 300,
+    "seedBase": 0,
+    "clearByStarter": [
+      [
+        "classic",
+        0.2733333333333333
+      ],
+      [
+        "blood",
+        0.26
+      ],
+      [
+        "guard",
+        0.24333333333333335
+      ],
+      [
+        "talisman",
+        0.2733333333333333
+      ]
+    ]
+  }
+}

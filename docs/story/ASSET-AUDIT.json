@@ -1,0 +1,85 @@
+{
+  "assets": [
+    {
+      "key": "forest",
+      "file": "assets/story/forest-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "5b3aed34aba7e109cceed4ea7d875f7f45327a63357f4fff6cb129db7e6c07f4",
+      "runtimeHash": "3be1bbcc0041d22c2532a9a463ba254d69c112b2c61a3c7837109d42e32ad45c"
+    },
+    {
+      "key": "marsh",
+      "file": "assets/story/marsh-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "c6758394bfccad7e05f4e97dc3b43916faac86615fa87a3d62ca1e33a394efdd",
+      "runtimeHash": "e72799f6944123549390ab785af056b8a64cbd516ff9254f35cf2d69a5197079"
+    },
+    {
+      "key": "roots",
+      "file": "assets/story/roots-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "4f4d026d9705849b2f0b9c31bff099041bce812527189343513cd5c965b9c525",
+      "runtimeHash": "20801e2eeaeb33a524ea21f8ecdba179e4c7f77762ebaf6e141e8d1477078c89"
+    },
+    {
+      "key": "qingqiu",
+      "file": "assets/story/qingqiu-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "f96d3617d8997396393a5917672786d96da2338084413c80967c5fafe8416315",
+      "runtimeHash": "30c641335245fb760b6b1a34df361f90f3c302afcfd8415193d4fe983467dcc7"
+    },
+    {
+      "key": "ashes",
+      "file": "assets/story/ashes-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "e3344b3a989c88730926134608fcaf456fa628636150b7a69ac550c348f51037",
+      "runtimeHash": "d1f85b42c2b0380c704de92e879277d6d2cfaea55fb5638c637285a0bd51760a"
+    },
+    {
+      "key": "gate",
+      "file": "assets/story/gate-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "412b819cadb608eab5db7fa2f3000a227542de09c031b1b116c628c0a63cf719",
+      "runtimeHash": "b644065f61218fdfefab3e2e9511dbf1a8677d2e7dafe66d2e8ed67dfc0c0f87"
+    },
+    {
+      "key": "ending-home",
+      "file": "assets/story/ending-home-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "13c4af61ed24285065c33df6e36e794f1aa8f4a5e414212375b97c6d317418c4",
+      "runtimeHash": "5d14b457148d3b6dfc72ad488a775950f77924c468081767fac92ae72529ef8d"
+    },
+    {
+      "key": "ending-watch",
+      "file": "assets/story/ending-watch-v1.webp",
+      "width": 1152,
+      "height": 768,
+      "opaque": true,
+      "sourceRatio": 1.5,
+      "sourceHash": "f8b0418b2fa7ce654c4e8120443277c78a1e9ebf5528c657f03244ff2a602187",
+      "runtimeHash": "f58cef385550cce7154d32ec5f48e08c685ba259a265cf88ae84bf2aa8b80972"
+    }
+  ],
+  "errors": []
+}

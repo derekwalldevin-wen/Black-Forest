@@ -1,0 +1,140 @@
+{
+  "note": "历史执行记录；cell_id可能跨轮复用，不能当实时存活证据。最终参考图46/46，见COMPLETION-AUDIT.md。",
+  "jobs": [
+    {
+      "cell_id": "36",
+      "lastObserved": "terminated",
+      "pending": [
+        "event-nine_heads",
+        "event-bronze_step",
+        "event-blind_dance",
+        "event-baize_omen"
+      ],
+      "savedBeforeWait": [
+        "event-wolf_gaze",
+        "event-moss_shrine"
+      ],
+      "reason": "functions.wait 已确认终止旧执行单元，缺失产物重新顺序生成"
+    },
+    {
+      "cell_id": "44",
+      "lastObserved": "terminated",
+      "pending": [
+        "21-relic-tip",
+        "23-card-denied",
+        "24-enemy-turn",
+        "25-feedback-block",
+        "26-feedback-hurt",
+        "27-feedback-heal",
+        "28-battle-banner"
+      ],
+      "savedBeforeWait": [
+        "22-card-selected"
+      ],
+      "reason": "functions.wait 已确认终止旧执行单元，缺失产物重新顺序生成"
+    },
+    {
+      "cell_id": "72",
+      "pending": [
+        "event-nine_heads",
+        "event-blind_dance",
+        "event-baize_omen"
+      ],
+      "lastObserved": "running",
+      "savedBeforeWait": [],
+      "note": "跨轮历史记录，不作为当前任务存活证据；该批三个缺图已由58补齐。"
+    },
+    {
+      "cell_id": "38",
+      "pending": [
+        "23-card-denied"
+      ],
+      "lastObserved": "terminated",
+      "savedBeforeWait": [],
+      "note": "旧调用经functions.wait terminate确认终止，新批次产物已保存。",
+      "reason": "用户明确要求重新生成；functions.wait terminate已确认终止旧执行单元。"
+    },
+    {
+      "cell_id": "48",
+      "pending": [
+        "09-reward-shanhai-v3"
+      ],
+      "lastObserved": "terminated",
+      "savedBeforeWait": [],
+      "note": "旧调用经functions.wait terminate确认终止，新批次产物已保存。",
+      "reason": "用户明确要求重新生成；functions.wait terminate已确认终止旧执行单元。"
+    },
+    {
+      "cell_id": "54",
+      "pending": [],
+      "lastObserved": "completed",
+      "savedBeforeWait": [
+        "21-relic-tip"
+      ],
+      "note": "基础生成成功，产物已保存。"
+    },
+    {
+      "cell_id": "58",
+      "pending": [
+        "21-relic-tip",
+        "23-card-denied",
+        "24-enemy-turn",
+        "25-feedback-block",
+        "26-feedback-hurt",
+        "27-feedback-heal",
+        "28-battle-banner",
+        "22-card-selected",
+        "08-reward-gothic",
+        "09-reward-shanhai",
+        "11-reward-ready",
+        "18-contract-ash",
+        "04-combat-shanhai",
+        "event-nine_heads",
+        "event-blind_dance",
+        "event-baize_omen"
+      ],
+      "lastObserved": "completed",
+      "savedBeforeWait": [
+        "21-relic-tip",
+        "23-card-denied",
+        "24-enemy-turn",
+        "25-feedback-block",
+        "26-feedback-hurt",
+        "27-feedback-heal",
+        "28-battle-banner",
+        "22-card-selected",
+        "08-reward-gothic",
+        "09-reward-shanhai",
+        "11-reward-ready",
+        "18-contract-ash",
+        "04-combat-shanhai",
+        "event-nine_heads",
+        "event-blind_dance",
+        "event-baize_omen"
+      ],
+      "note": "顺序生成16个缺图或修订项，不带输入图片，每张返回立即保存并yield图像以供人工验收。基础通道54已成功。"
+    },
+    {
+      "cell_id": "71",
+      "pending": [],
+      "lastObserved": "completed",
+      "savedBeforeWait": [
+        "24-enemy-turn",
+        "26-feedback-hurt",
+        "28-battle-banner",
+        "22-card-selected",
+        "09-reward-shanhai",
+        "18-contract-ash",
+        "04-combat-shanhai"
+      ],
+      "note": "七项针对性编辑；不覆盖原稿；由返回实际图像人工验收后更新清单。"
+    },
+    {
+      "cell_id": "76",
+      "pending": [],
+      "lastObserved": "terminated",
+      "savedBeforeWait": [],
+      "note": "本轮functions.wait terminate确认终止；放大检查已有v2，疾刺抽牌文字完整，无需重做。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "04-combat-shanhai",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-1594af80-923e-466c-bf34-85b0182fb94f.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/04-combat-shanhai-v3.png",
+  "prompt": "Use-case ui-mockup. One complete portrait 9:16 game screen reference, no device bezel. 黑森林 watercolor dark fantasy card roguelike, indigo #12101a, restrained antique gold #b08d3f borders, ivory #e8dcc0, parchment card rule areas. Clean practical composition, crisp standard printed simplified Chinese. No invented controls, flavor quotation boxes, logos, signatures, pseudo-text or watermark. Exact text, numeric rules and state below are mandatory. Same practical portrait battle geometry, Chinese myth mountains bronzealtar. Header 第六章·帝鸿之末, coin68. Dijiang red sack with EXACTLY6 separately visible feet,4 wings, NO face/eyes/mouth. EnemyHP92/128 sideblue shield5, swordintent18. PlayerHP52/70 sideblue shield9. Five cards: 符纸 GOLD FLAME cost1 造成7点伤害; 封门 GOLD FLAME cost1 获得8点格挡; 玄玑 GOLD FLAME cost0 获得1点灵韵，抽1张牌; 劈砍 BLUE CIRCLE cost1 造成6点伤害; 格挡 BLUE CIRCLE cost1 获得5点格挡. Bottom distinguishes 行动力2/3 with BLUE CIRCLE icon versus 灵韵2/3 with GOLD FLAME icon. Same distinction on card costs. Label 玄玑 exact玑王plus几. Endturn 结束回合. NO swapped icons or same circular icons for both currencies.",
+  "mode": "built-in image_gen"
+}

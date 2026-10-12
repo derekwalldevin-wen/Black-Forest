@@ -1,0 +1,4394 @@
+[
+  {
+    "key": "drain_low_hp",
+    "title": "受伤后汲取：低血量下汲取应当按 RUN.maxHp 封顶，而不是按入场血量",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 35,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "drain_life",
+          "drain_life",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 46,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 29,
+        "enemyBlock": 0,
+        "hand": [
+          "drain_life",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 40,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 29,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "drain_life",
+          "defend",
+          "drain_life"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 35,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "drain_life",
+          "drain_life",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 46,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 29,
+        "enemyBlock": 0,
+        "hand": [
+          "drain_life",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 40,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 29,
+        "enemyBlock": 0,
+        "hand": [
+          "drain_life",
+          "strike",
+          "drain_life",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "cost_normal",
+    "title": "普通出牌与费用：行动力扣减、格挡结算",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "iron_wall",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "iron_wall",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 5,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "iron_wall",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "iron_wall",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "iron_wall",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 5,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "iron_wall",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "talisman_chain",
+    "title": "连续符箓：灵韵扣除、共鸣增长、后续减费",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "fu_paper",
+          "seal_gate",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 1,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "fu_paper",
+          "seal_gate",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 2,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "seal_gate",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 8,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 3,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 3,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "fu_paper",
+          "seal_gate",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 1,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "fu_paper",
+          "seal_gate",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 2,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "seal_gate",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 8,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 3,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 3,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "hand_discard",
+    "title": "回合末手牌整副进弃牌堆（不弃牌就会「牌越打越少」）",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 6,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 12,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 6,
+        "hand": [
+          "defend",
+          "defend",
+          "strike",
+          "strike",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 12,
+        "hand": [
+          "strike",
+          "strike",
+          "defend",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "burn_kill",
+    "title": "灼烧致死：敌人应在自己的回合结算时被烧死，且不再行动",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 64,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 58,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 64,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "strike",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 58,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "contract_trigger",
+    "title": "妖契触发时点：在牌效果之前点燃，且每回合有次数上限",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "strike",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 2,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 2,
+          "burnDmg": 0
+        },
+        "enemyHp": 28,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "strike",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 2,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 2,
+          "burnDmg": 0
+        },
+        "enemyHp": 28,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "huodou_fire",
+    "title": "祸斗循火：敌方回合结算后残留灼烧转成燎原",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 64,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 64,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "thorns_kill",
+    "title": "多段攻击 / 反伤击杀：尖刺把敌人打死后不再进入敌方回合",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 64,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 64,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 34,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "pending_start",
+    "title": "nextCombat：事件挂的开场减益在减益递减之后才挂上",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 2,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 1,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 6,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 12,
+        "hand": [
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 2,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 1,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 6,
+        "hand": [
+          "strike",
+          "defend",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 12,
+        "hand": [
+          "defend",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "damage_times",
+    "title": "多段伤害（九首诀 / 雷光连闪）：每段独立结算，敌人中途死则立即停",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "nine_head",
+          "nine_head",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "nine_head",
+          "nine_head",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "nine_head",
+          "nine_head",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "nine_head",
+          "nine_head",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "nine_head",
+          "nine_head",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "nine_head",
+          "nine_head",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "power_card",
+    "title": "能力牌（永夜）：回合开始按层数加力量，跨回合累积",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "eternal_night",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 0,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 6,
+        "hand": [
+          "strike",
+          "eternal_night",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 2,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 12,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "eternal_night"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "eternal_night",
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 0,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 6,
+        "hand": [
+          "eternal_night",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 2,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 12,
+        "hand": [
+          "eternal_night",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 3,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "draw_loop",
+    "title": "抽牌循环（玄玑）：0 费回灵 + 抽 1，牌区必须守恒",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 1,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 2,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 3,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 1,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 2,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 3,
+        "resonance": 3,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "xuan_ji",
+          "xuan_ji",
+          "xuan_ji"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "resonance_damage",
+    "title": "共鸣伤害（雷旨）：先由遗物起手共鸣 1，再打共鸣伤害",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 1,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "thunder_word",
+          "thunder_word",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":1,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 0,
+        "resonance": 2,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 22,
+        "enemyBlock": 0,
+        "hand": [
+          "thunder_word",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":1,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 0,
+        "resonance": 3,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 0,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": "win",
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":1,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 1,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "thunder_word",
+          "thunder_word",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":1,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 0,
+        "resonance": 2,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 22,
+        "enemyBlock": 0,
+        "hand": [
+          "thunder_word",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":1,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 0,
+        "resonance": 3,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 0,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": "win",
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":1,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "combat_heal_relic",
+    "title": "战斗开场回复遗物：必须同时写进战斗内血量与存档血量",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 57,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0.1,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 57,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0.1,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  },
+  {
+    "key": "relic_mods_total",
+    "title": "多件遗物 mods 叠加：聚合总量必须和逐件加总一致",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 2,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":1,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":6,\"startSpirit\":0,\"startStrength\":1,\"talismanBonus\":0,\"turnStartBlock\":2}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 2,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":1,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":6,\"startSpirit\":0,\"startStrength\":1,\"talismanBonus\":0,\"turnStartBlock\":2}"
+      },
+      {
+        "hp": 66,
+        "maxHp": 70,
+        "block": 2,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "defend",
+          "defend",
+          "strike",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":1,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":6,\"startSpirit\":0,\"startStrength\":1,\"talismanBonus\":0,\"turnStartBlock\":2}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 2,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend",
+          "strike",
+          "defend",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":1,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":6,\"startSpirit\":0,\"startStrength\":1,\"talismanBonus\":0,\"turnStartBlock\":2}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 2,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "strike",
+          "defend",
+          "defend",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":1,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":6,\"startSpirit\":0,\"startStrength\":1,\"talismanBonus\":0,\"turnStartBlock\":2}"
+      },
+      {
+        "hp": 66,
+        "maxHp": 70,
+        "block": 2,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 1,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 33,
+        "enemyBlock": 0,
+        "hand": [
+          "defend",
+          "defend",
+          "strike",
+          "defend",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":1,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":6,\"startSpirit\":0,\"startStrength\":1,\"talismanBonus\":0,\"turnStartBlock\":2}"
+      }
+    ]
+  },
+  {
+    "key": "status_modifiers",
+    "title": "状态修正：虚弱/易伤/脆弱/力量 各自的口径",
+    "status": "pass",
+    "sim": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 2,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "iron_wall",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 2,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 27,
+        "enemyBlock": 0,
+        "hand": [
+          "iron_wall",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 8,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 2,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 27,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 1,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 27,
+        "enemyBlock": 6,
+        "hand": [
+          "defend",
+          "strike",
+          "strike",
+          "iron_wall"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ],
+    "browser": [
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 2,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 40,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "iron_wall",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 2,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 27,
+        "enemyBlock": 0,
+        "hand": [
+          "iron_wall",
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 1,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 8,
+        "energy": 1,
+        "spirit": 1,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 2,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 27,
+        "enemyBlock": 0,
+        "hand": [
+          "strike",
+          "defend"
+        ],
+        "draw": 0,
+        "discard": 2,
+        "turn": 1,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      },
+      {
+        "hp": 70,
+        "maxHp": 70,
+        "block": 0,
+        "energy": 3,
+        "spirit": 2,
+        "resonance": 0,
+        "spiritMax": 3,
+        "st": {
+          "strength": 3,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "eSt": {
+          "strength": 0,
+          "vulnerable": 1,
+          "weak": 0,
+          "frail": 0,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0
+        },
+        "enemyHp": 27,
+        "enemyBlock": 6,
+        "hand": [
+          "iron_wall",
+          "defend",
+          "strike",
+          "strike"
+        ],
+        "draw": 0,
+        "discard": 0,
+        "turn": 2,
+        "over": null,
+        "mods": "{\"bonusDraw\":0,\"burnImmune\":0,\"combatHealPct\":0,\"firstAttackBonus\":0,\"firstTurnEnergy\":0,\"goldBonus\":0,\"killHeal\":0,\"resonanceStart\":0,\"selfIgnite\":0,\"spiritMaxPerFight\":0,\"startBlock\":0,\"startSpirit\":0,\"startStrength\":0,\"talismanBonus\":0,\"turnStartBlock\":0}"
+      }
+    ]
+  }
+]

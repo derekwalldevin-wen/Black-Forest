@@ -1,0 +1,125 @@
+{
+  "tool": "tools/ab-test.js",
+  "gamesPerArm": 300,
+  "seedFormula": "((i + seedBase*7919) * 2654435761) >>> 0 || 1",
+  "batch": "select",
+  "seedBase": 0,
+  "only": [
+    "contract"
+  ],
+  "sourceHashes": {
+    "tools/simulate.js": "c74f56fe054a1861763808360fb3b5857f2cc2eb71bde8070b6f7931dd38d6c9",
+    "tools/ab-test.js": "f946943f7329189b9e9965d0f1bf6847235733c2df3ed6b1e6380d900280c697",
+    "src/core/cards.js": "8c5151a3c258fdde67b0b31603c191267416f85b0159e8cba1477543365f7b00",
+    "src/core/combat.js": "a7995e6fe8c7a3b1a351b513ea87e3fce6bf4ed1228c99b1926df3ce4ed77d26",
+    "src/core/run.js": "6d8a5f04aeee36178061d42f2ad552149894b3d48326f8529e1e206a68b62321",
+    "src/core/events.js": "27d23cc9c6b28a993a62b89fadb38e2488671bd6dbb7ebc5ace2681783edff7d"
+  },
+  "experiments": [
+    {
+      "key": "contract",
+      "title": "实验 A · 妖契到底有没有用",
+      "base": 0,
+      "arms": [
+        {
+          "name": "classic · 无契",
+          "starter": "classic",
+          "contracts": [],
+          "deckOverride": false,
+          "suppressContractNodes": true,
+          "clear": 0.32,
+          "clearCI": [
+            0.26977535854935686,
+            0.3747761110935889
+          ],
+          "clearX": 96,
+          "survive9": 0.71,
+          "survive9CI": [
+            0.6562544981757742,
+            0.7584354539074557
+          ],
+          "survive9X": 213,
+          "reach": 14.373333333333333,
+          "hpLost": 12.468371346518405,
+          "turns": 3.4627211894858942,
+          "deck": 23.026666666666667,
+          "relics": 10.823333333333334,
+          "capped": 3
+        },
+        {
+          "name": "classic · 祸斗契",
+          "starter": "classic",
+          "contracts": [
+            "huodou"
+          ],
+          "deckOverride": false,
+          "suppressContractNodes": true,
+          "clear": 0.39,
+          "clearCI": [
+            0.336530021618916,
+            0.446251432051773
+          ],
+          "clearX": 117,
+          "survive9": 0.7566666666666667,
+          "survive9CI": [
+            0.7050648160093594,
+            0.8017784587590328
+          ],
+          "survive9X": 227,
+          "reach": 14.893333333333333,
+          "hpLost": 11.719746976063153,
+          "turns": 3.214732277254336,
+          "deck": 23.696666666666665,
+          "relics": 11.266666666666667,
+          "capped": 1
+        }
+      ],
+      "pairs": [
+        {
+          "arm": "classic · 祸斗契",
+          "vs": "classic · 无契",
+          "aWins": 43,
+          "bWins": 22,
+          "ties": 235,
+          "surviveA": 27,
+          "surviveB": 13,
+          "surviveTies": 260,
+          "pClear": 0.012502546136489953,
+          "pSurv": 0.03847730828420038,
+          "dHpLostPerFight": -0.7486243704552524,
+          "dTurnsPerFight": -0.24798891223155944,
+          "dReach": 0.52,
+          "n": 300
+        }
+      ],
+      "bestVsWorst": [
+        {
+          "key": "clear",
+          "best": "classic · 祸斗契",
+          "bestP": 0.39,
+          "worst": "classic · 无契",
+          "worstP": 0.32,
+          "pp": 7.000000000000001,
+          "ciOverlap": true,
+          "wins": 43,
+          "losses": 22,
+          "ties": 235,
+          "p": 0.012502546136489953
+        },
+        {
+          "key": "survived9",
+          "best": "classic · 祸斗契",
+          "bestP": 0.7566666666666667,
+          "worst": "classic · 无契",
+          "worstP": 0.71,
+          "pp": 4.666666666666675,
+          "ciOverlap": true,
+          "wins": 27,
+          "losses": 13,
+          "ties": 260,
+          "p": 0.03847730828420038
+        }
+      ]
+    }
+  ]
+}

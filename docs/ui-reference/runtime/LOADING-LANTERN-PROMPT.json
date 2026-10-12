@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: stylized-concept. A single game loading-screen asset: antique black iron gothic lantern with one warm golden candle inside, suspended from a short curved iron hook, front three-quarter view, complete lantern and hook fully visible, centered with generous transparent margin. Fine ink and dark fairytale watercolor, muted antique gold light, cold grey black iron, subtle soft gold aura near glass only, no scenery. Portrait3:4 canvas, lantern occupies central70%. Truly transparent background, preserve delicate glass and outer silhouette. No text, no letters, no numbers, no logo, no interface, no frame, no checkerboard. Match dark forest game's painterly production assets.",
+  "tool": "built-in image_gen",
+  "source": "assets/ui/loading-lantern-source-v1.png",
+  "runtime": "assets/ui/loading-lantern-v1.png",
+  "embedded": "src/core/loading-art.js"
+}

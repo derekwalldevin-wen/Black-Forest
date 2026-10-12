@@ -1,0 +1,370 @@
+[
+  {
+    "id": "01-title",
+    "image": "images/01-title-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "02-starter",
+    "image": "images/02-starter-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "03-combat-gothic",
+    "image": "images/03-combat-gothic-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "04-combat-shanhai",
+    "image": "images/04-combat-shanhai-v5.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "05-title-save",
+    "image": "images/05-title-save.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "06-help",
+    "image": "images/06-help-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "07-confirm",
+    "image": "images/07-confirm.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "08-reward-gothic",
+    "image": "images/08-reward-gothic-v3.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "09-reward-shanhai",
+    "image": "images/09-reward-shanhai-v5.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "10-relic-choice",
+    "image": "images/10-relic-choice-v2.png",
+    "width": 940,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562200956937799
+  },
+  {
+    "id": "11-reward-ready",
+    "image": "images/11-reward-ready-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "12-event-gothic",
+    "image": "images/12-event-gothic.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "13-event-shanhai",
+    "image": "images/13-event-shanhai.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "14-event-result",
+    "image": "images/14-event-result.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "15-remove-card",
+    "image": "images/15-remove-card-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "16-event-disabled",
+    "image": "images/16-event-disabled.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "17-contract-ember",
+    "image": "images/17-contract-ember.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "18-contract-ash",
+    "image": "images/18-contract-ash-v5.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "19-forge",
+    "image": "images/19-forge-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "20-ascend",
+    "image": "images/20-ascend-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "21-relic-tip",
+    "image": "images/21-relic-tip-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "22-card-selected",
+    "image": "images/22-card-selected-v3.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "23-card-denied",
+    "image": "images/23-card-denied.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "24-enemy-turn",
+    "image": "images/24-enemy-turn-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "25-feedback-block",
+    "image": "images/25-feedback-block.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "26-feedback-hurt",
+    "image": "images/26-feedback-hurt-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "27-feedback-heal",
+    "image": "images/27-feedback-heal.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "28-battle-banner",
+    "image": "images/28-battle-banner-v2.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "29-game-over",
+    "image": "images/29-game-over.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "30-ending",
+    "image": "images/30-ending.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "31-loading",
+    "image": "images/31-loading.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "32-deck-browser",
+    "image": "images/32-deck-browser.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "33-pause-settings",
+    "image": "images/33-pause-settings.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "34-route",
+    "image": "images/34-route.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-campfire",
+    "image": "images/event-campfire.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-bone_pile",
+    "image": "images/event-bone_pile.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-lost_lantern",
+    "image": "images/event-lost_lantern.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-black_market",
+    "image": "images/event-black_market.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-ancient_stele",
+    "image": "images/event-ancient_stele.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-thorn_well",
+    "image": "images/event-thorn_well.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-wolf_gaze",
+    "image": "images/event-wolf_gaze.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-moss_shrine",
+    "image": "images/event-moss_shrine.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-nine_heads",
+    "image": "images/event-nine_heads.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-bronze_step",
+    "image": "images/event-bronze_step.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-blind_dance",
+    "image": "images/event-blind_dance.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  },
+  {
+    "id": "event-baize_omen",
+    "image": "images/event-baize_omen.png",
+    "width": 941,
+    "height": 1672,
+    "reviewed": true,
+    "ratio": 0.562799043062201
+  }
+]

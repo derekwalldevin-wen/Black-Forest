@@ -1,0 +1,31 @@
+{
+  "scope": {
+    "battles": 18,
+    "choices": 4,
+    "endings": 2,
+    "illustrations": 8,
+    "fullRouteScreenshots": 48,
+    "fontLayouts": 306,
+    "routeLayouts": 111
+  },
+  "evidence": [
+    "ASSET-AUDIT.json",
+    "BROWSER-REPORT.json",
+    "GALLERY-REPORT.json",
+    "CHECKPOINT-REPORT.json",
+    "LAYOUT-REPORT.json",
+    "LOGIC-REPORT.json",
+    "VISUAL-REVIEW.md",
+    "PACKAGE-REPORT.json"
+  ],
+  "archive": {
+    "file": "artifacts/black-forest-story-20261011.zip",
+    "bytes": 93292378,
+    "sha256": "fa433dcca4ea7bafe0ee32d72215a71b0b0bd15d95f9ca8fe0edf5ca5055ba12",
+    "verifiedEntries": 265
+  },
+  "errors": [],
+  "limitations": [
+    "Debug victories validate story transitions, not human difficulty or physical touchscreen experience."
+  ]
+}

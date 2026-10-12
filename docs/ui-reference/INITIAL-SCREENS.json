@@ -1,0 +1,30 @@
+[
+  {
+    "id": "01-title",
+    "title": "标题入口",
+    "source": "TitleScene.create",
+    "brief": "Moonlit black forest path with one warm lantern, title 黑森林 at upper middle, subtitle DARK FOREST. Three spacious lower buttons 开始征途, 继续征途, 怎么玩, continue has small save summary 第三章 · 生命 48/70. Primary start gold, secondary muted. Atmospheric illustration upper half, no combat HUD.",
+    "status": "pending"
+  },
+  {
+    "id": "02-starter",
+    "title": "传承选择",
+    "source": "TitleScene.showStarterPicker",
+    "brief": "Screen title 选择传承. Three vertically stacked choice panels 血契, 铁壁, 符咒, each distinctive round red/blue/gold emblem, one concise playstyle line and three small starting card silhouettes. Select 铁壁 with gold outline and check. Resource types visible as sword energy and spirit token icons. Bottom two buttons 确认开始 and 返回, primary large. Dark forest backdrop softly blurred.",
+    "status": "pending"
+  },
+  {
+    "id": "03-combat-gothic",
+    "title": "哥特战斗",
+    "source": "CombatScene.create",
+    "brief": "Faithful battle layout: slim top chapter/turn/gold bar 第一章·迷雾林缘, 回合 3, 68金币. Compact relic row below. Upper middle forest lord tree humanoid with branching antlers, moss, burgundy rags standing on grounded oval stone platform; clear intention above 12 with sword icon 下回合. Enemy horizontal red HP 54/81 BELOW platform, shield icon 8 at RIGHT end on same baseline. Player lower middle circular skull avatar left, horizontal HP 48/70, shield icon 6 right, no shield above HP. Bottom third fan of five readable cards 劈砍, 格挡, 凝神, 血契, 疾刺, each small illustration and cost orb. Draw/discard pile counts at outside hand edges. Fixed bottom action bar: energy 2/3 at left, large 结束回合 button right. Keep portrait space balanced; card art not HUD overlap.",
+    "status": "pending"
+  },
+  {
+    "id": "04-combat-shanhai",
+    "title": "山海战斗",
+    "source": "CombatScene.create + syncTheme",
+    "brief": "Same information layout as gothic battle, but ancient Chinese bronze, cinnabar and jade watercolor ruined altar. Palette deep indigo, bronze gold, cinnabar red; square restrained cloud-key fret corners. Faceless red egg-shaped Dijiang monster, exactly SIX curled legs and FOUR feathered wings, no eyes or mouth, on ritual pedestal. Header 第四章·山海之墟, 回合 2. Clear sword intention 18 above creature. Enemy HP 92/128 below feet with shield 5 right. Player avatar left, HP 52/70 and blue shield 9 right. Five cards 符纸, 封门, 玄玑, 劈砍, 格挡 with cinnabar/bronze framed art. Bottom separate energy orb 2/3 and spirit orb 灵韵 2/3 plus right aligned large 结束回合. Preserve screen hierarchy and geometry of preceding battle design.",
+    "status": "pending"
+  }
+]

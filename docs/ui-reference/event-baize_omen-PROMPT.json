@@ -1,0 +1,7 @@
+{
+  "id": "event-baize_omen",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-fa45e85e-4dd9-44aa-a649-0bd0e9cd7071.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/event-baize_omen.png",
+  "prompt": "Use-case ui-mockup. Complete 9:16 portrait mobile game event UI reference, no device bezel. Watercolor Chinese mythology scene, deep indigo panels, antique gold thin frames, ivory legible simplified Chinese. Upper half independently illustrated story image matching supplied event art. Header 第四章 with HP48/70 and coins68. Title 白泽之言. Exact story text: 「能言，能知万物之情。」一头白色的兽蹲在路边，看见你就开口了。它知道你的名字、你从哪来、还有几天。 Lower half three large vertically stacked choice buttons, each with a clear action name and separate readable effect subtitle: 1) 问它未来 — 灵韵上限 +1，获得 1 件遗物; 2) 问它怎么活下去 — 最大生命 +12; 3) 不问走开 — 获得 60 金币. No combat hand, enemy intention, invented extra controls, wrong Chinese glyphs or watermark. All buttons fully inside portrait and thumb friendly. Illustration: white horned lionlike Baize seated in jade forest. Generate anew without input image.",
+  "mode": "built-in image_gen"
+}

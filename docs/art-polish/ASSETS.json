@@ -1,0 +1,514 @@
+[
+  {
+    "id": "wolf_totem",
+    "kind": "relic",
+    "file": "assets/ui/relic-wolf_totem-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 38,
+      "top": 13,
+      "width": 226,
+      "height": 285
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 23542,
+    "sha256": "0a52c811ea177356f2ac6c341baf598f451aa5affd12ed928307b144019cbb47"
+  },
+  {
+    "id": "iron_ring",
+    "kind": "relic",
+    "file": "assets/ui/relic-iron_ring-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 346,
+      "top": 80,
+      "width": 263,
+      "height": 182
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 32640,
+    "sha256": "f28d620459be58e393c7c494612760fcef305b767c349b6709fed3b1e9d60c3e"
+  },
+  {
+    "id": "moon_lens",
+    "kind": "relic",
+    "file": "assets/ui/relic-moon_lens-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 661,
+      "top": 18,
+      "width": 271,
+      "height": 276
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 33115,
+    "sha256": "0d05c028fd699509e3710a56196bd603d7f82f5d2dd71ff4e879adfabd6a91e5"
+  },
+  {
+    "id": "blood_stone",
+    "kind": "relic",
+    "file": "assets/ui/relic-blood_stone-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 998,
+      "top": 12,
+      "width": 194,
+      "height": 290
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 37637,
+    "sha256": "7700574b21284ebc59633bfc72c04fe39fb885e72fe4aa7ac5e011922c438e5a"
+  },
+  {
+    "id": "thorn_charm",
+    "kind": "relic",
+    "file": "assets/ui/relic-thorn_charm-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 47,
+      "top": 312,
+      "width": 227,
+      "height": 291
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 34246,
+    "sha256": "c193c199015bbbe0ba4f07ffe3c0b506521d3bca883ea3728418db64e86f975b"
+  },
+  {
+    "id": "marrow_vial",
+    "kind": "relic",
+    "file": "assets/ui/relic-marrow_vial-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 413,
+      "top": 320,
+      "width": 114,
+      "height": 285
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 25195,
+    "sha256": "8a0a8f940496227001a765b8785df356485d4782ef629fc328a568f315f5314a"
+  },
+  {
+    "id": "whetstone",
+    "kind": "relic",
+    "file": "assets/ui/relic-whetstone-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 632,
+      "top": 320,
+      "width": 276,
+      "height": 281
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 39367,
+    "sha256": "fc972dfb035dc9278b070ac87ee1b6c213e599c8452c6bc137145ed632a84bcd"
+  },
+  {
+    "id": "hunter_charm",
+    "kind": "relic",
+    "file": "assets/ui/relic-hunter_charm-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 955,
+      "top": 313,
+      "width": 269,
+      "height": 284
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 30877,
+    "sha256": "b5110bc9c3ef10aa9b098881fc06c8b582940381b69b2d9443ec6661ef153bde"
+  },
+  {
+    "id": "bone_totem",
+    "kind": "relic",
+    "file": "assets/ui/relic-bone_totem-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 80,
+      "top": 614,
+      "width": 156,
+      "height": 300
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 22371,
+    "sha256": "d2d81e1dc3b38bb71084683562d656ab882badd79c69ee270a5a46b2be07473e"
+  },
+  {
+    "id": "bronze_mask",
+    "kind": "relic",
+    "file": "assets/ui/relic-bronze_mask-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 334,
+      "top": 613,
+      "width": 277,
+      "height": 285
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 56122,
+    "sha256": "128fb37bd9829ec9d2d5beef0a10208051d6d8f826d7c796d18d6de5589993f1"
+  },
+  {
+    "id": "cinnabar_seal",
+    "kind": "relic",
+    "file": "assets/ui/relic-cinnabar_seal-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 680,
+      "top": 617,
+      "width": 200,
+      "height": 285
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 43314,
+    "sha256": "f0ff92a6c4924dbb7da469c7c9efc10ce3c9cd0dc6e8ca17fa412d38a7529907"
+  },
+  {
+    "id": "thunder_bi",
+    "kind": "relic",
+    "file": "assets/ui/relic-thunder_bi-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 965,
+      "top": 628,
+      "width": 261,
+      "height": 263
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 50851,
+    "sha256": "6aa8b887c383f2562c05d1446620024ed3d090eb3d385b8b10c14422bf0c8ed4"
+  },
+  {
+    "id": "unquenched_ember",
+    "kind": "relic",
+    "file": "assets/ui/relic-unquenched_ember-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 25,
+      "top": 928,
+      "width": 265,
+      "height": 290
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 50694,
+    "sha256": "05bd448062f2ad9196051c1f27e215a70dce2beec1f8a1d621a6f386878d112f"
+  },
+  {
+    "id": "bone_urn",
+    "kind": "relic",
+    "file": "assets/ui/relic-bone_urn-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 358,
+      "top": 923,
+      "width": 225,
+      "height": 288
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 46318,
+    "sha256": "ae9107ba4d09f6ce8f34ec0d1a7aaff13852e9a8eface7fc7451dce2c612909d"
+  },
+  {
+    "id": "huodou",
+    "kind": "contract",
+    "file": "assets/ui/contract-huodou-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 646,
+      "top": 916,
+      "width": 272,
+      "height": 309
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 59706,
+    "sha256": "7fedbeeb95393017f9f6069e60b2bc2628a6a2c123fe305000538e33007367c2"
+  },
+  {
+    "id": "huodou_yu",
+    "kind": "contract",
+    "file": "assets/ui/contract-huodou_yu-v1.png",
+    "source": "assets/ui/relic-icons-source-v1.png",
+    "crop": {
+      "left": 946,
+      "top": 907,
+      "width": 299,
+      "height": 326
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 52262,
+    "sha256": "036c688abdebca4f56831ef5c97783c05bf072eac3cb516086c3f1f09d923cb4"
+  },
+  {
+    "id": "attack",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-attack-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 22,
+      "top": 9,
+      "width": 286,
+      "height": 299
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 32473,
+    "sha256": "c2afc3612c4bd1d4fb4feac1f29616e58b2469d85fde6cc1ba26ebb400197bd0"
+  },
+  {
+    "id": "defend",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-defend-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 371,
+      "top": 13,
+      "width": 235,
+      "height": 289
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 43869,
+    "sha256": "228c6d4c3c35c10077ce9ca71fcde17d46c5888cbe8aa9593a5ca8fb72658155"
+  },
+  {
+    "id": "strength",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-strength-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 682,
+      "top": 29,
+      "width": 233,
+      "height": 273
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 46232,
+    "sha256": "669307e12644038c9ee5242ad5c51151712c8309cd070662865f4f88c454be0c"
+  },
+  {
+    "id": "vulnerable",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-vulnerable-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 974,
+      "top": 57,
+      "width": 262,
+      "height": 237
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 39612,
+    "sha256": "34c40c77efe5918c7aff6e4ea829b613d33048afa9e2721637f5f4a2c232bed5"
+  },
+  {
+    "id": "weak",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-weak-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 25,
+      "top": 364,
+      "width": 292,
+      "height": 223
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 20081,
+    "sha256": "a935074261f0ba722d7873f63cc93daffb37a1b6ea2472cbdb0ea5fadee13314"
+  },
+  {
+    "id": "frail",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-frail-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 366,
+      "top": 318,
+      "width": 250,
+      "height": 280
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 43963,
+    "sha256": "5dd1fb79f1093f08629f2a0b1bad2fb49af99dc48817b707a6c55b1dc485360d"
+  },
+  {
+    "id": "poison",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-poison-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 657,
+      "top": 321,
+      "width": 272,
+      "height": 285
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 48020,
+    "sha256": "16b4b0baa1244312d946c5381cd543e67ecc2e3563072421b68cdaacf6cd2779"
+  },
+  {
+    "id": "burn",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-burn-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 998,
+      "top": 307,
+      "width": 209,
+      "height": 301
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 35512,
+    "sha256": "062d762b40a42f4ee00ef6ea8c2d403ea13e176e06ba6ade42d0249eb6b4c437"
+  },
+  {
+    "id": "thorns",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-thorns-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 24,
+      "top": 598,
+      "width": 290,
+      "height": 297
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 30048,
+    "sha256": "6a8fa56def8b06d128007f15e3f61baaea1a43bd5838dc27468f4c01a0a7fb3d"
+  },
+  {
+    "id": "burnDmg",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-burnDmg-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 337,
+      "top": 603,
+      "width": 285,
+      "height": 287
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 45188,
+    "sha256": "cbaa9505dadda71c0b5f7be69f618c5e069b787bc26a45604da6293000fd7472"
+  },
+  {
+    "id": "drain",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-drain-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 643,
+      "top": 637,
+      "width": 286,
+      "height": 291
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 35962,
+    "sha256": "a591e90e04028507b9ba96a0cb43e90f6cba06959ef7036be05138a367ad9417"
+  },
+  {
+    "id": "heal",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-heal-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 950,
+      "top": 622,
+      "width": 287,
+      "height": 278
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 56746,
+    "sha256": "73efaca5727c328b6daa12685dba8abf05343ac480382ffeb09aabd34d6a71f2"
+  },
+  {
+    "id": "buff",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-buff-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 24,
+      "top": 899,
+      "width": 277,
+      "height": 298
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 47733,
+    "sha256": "73784a6c95abe8f511e3807e6c57b27ddfc380fba2da36095d3f2c3406921c07"
+  },
+  {
+    "id": "debuff",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-debuff-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 356,
+      "top": 906,
+      "width": 239,
+      "height": 302
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 49500,
+    "sha256": "da2cdb913d6eeaaf06c3f9910dd3c9608b76e40e3fe1b44aa5038ae2e7548ffa"
+  },
+  {
+    "id": "spirit",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-spirit-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 658,
+      "top": 872,
+      "width": 254,
+      "height": 343
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 48980,
+    "sha256": "a67cdef45a21bbb48ee4678b828af15d76a4efd389845f42a23b57ec7158de6e"
+  },
+  {
+    "id": "power",
+    "kind": "tactical",
+    "file": "assets/ui/tactical-power-v1.png",
+    "source": "assets/ui/tactical-icons-source-v1.png",
+    "crop": {
+      "left": 949,
+      "top": 917,
+      "width": 288,
+      "height": 277
+    },
+    "width": 256,
+    "height": 256,
+    "alphaPixels": 54343,
+    "sha256": "2938d7964eb6f2e33b0f6318b8fa4f85ba985d611745b8e37a752ddb71506218"
+  }
+]

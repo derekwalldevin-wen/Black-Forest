@@ -1,0 +1,11 @@
+{
+  "id": "24-enemy-turn",
+  "file": "24-enemy-turn-v2",
+  "refs": [
+    "images/24-enemy-turn.png"
+  ],
+  "prompt": "Edit only rightmost 疾刺 rule area. Replace it with two readable lines 造成4点伤害， and 抽1张牌. Preserve entire full portrait enemy-turn interface, all5 cards, disabled hand, button敌方行动, HP48/70 and shields, all other pixels.",
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-24c974cd-c3ee-4cc6-9948-7952048d63ee.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/24-enemy-turn-v2.png",
+  "mode": "built-in image_gen"
+}

@@ -1,0 +1,7 @@
+{
+  "source": "C:/Users/Administrator/.codex/generated_images/01a105c9-dcb9-75e0-9d1b-dbc869987058/exec-ce40b0f7-5b16-4845-bec7-82448f91f1d7.png",
+  "dest": "Z:/00-游戏/portrait-card-game/docs/ui-reference/images/02-starter-v2.png",
+  "prompt": "Use case: ui-mockup. One complete portrait 9:16 mobile game interface design reference, no device bezel or external annotations. 黑森林 dark fairy tale card roguelike. Painterly watercolor forest background, deep indigo #12101a UI panels, restrained antique gold #b08d3f borders, ivory #e8dcc0 legible Chinese text. Crisp practical UI hierarchy, large thumb-friendly buttons, sparse ornaments. Use reference only for color, material and typography, not its combat layout or card statistics. Do not invent extra navigation features. Text is short and exact; no decorative gibberish.\nA NEW corrected starter picker. Title 选择传承, subtitle 开局八张牌决定打法. Three stacked spacious choice panels each with icon and EXACT names/short description/card chip counts. 血契: 支付生命换取抽牌，用汲取恢复生命。; chips 劈砍×3 格挡×3 血契 汲取. 铁壁: 用格挡减少损失，反刺兼顾攻守。; chips 劈砍×3 格挡×3 铁壁 反刺. 符咒: 灵韵驱动符箓，连续施法降低费用。; chips 劈砍×2 格挡×3 符纸 封门 玄玑. Red blood droplet, blue shield, bronze paper talisman icons respectively. Select 铁壁 with restrained gold outline and check. Bottom two large buttons 确认开始 and 取消. Small explanatory footer 行动力用于普通牌，灵韵用于符箓. NO characters or fake cards, no current-run resource HUD, no invented effects.",
+  "id": "02-starter",
+  "file": "02-starter-v2"
+}

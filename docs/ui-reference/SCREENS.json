@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "01-title",
+    "title": "标题·首次进入",
+    "source": "TitleScene.create",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/01-title-v2.png",
+    "status": "reference-ready",
+    "note": "新稿已核对；文案、按钮及起始牌组按现有代码设计。",
+    "previousImages": [
+      "images/01-title.png"
+    ],
+    "promptFile": "01-title-v2-PROMPT.json"
+  },
+  {
+    "id": "02-starter",
+    "title": "传承选择",
+    "source": "TitleScene.showStarterPicker",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/02-starter-v2.png",
+    "status": "reference-ready",
+    "note": "新稿已核对；文案、按钮及起始牌组按现有代码设计。",
+    "previousImages": [
+      "images/02-starter.png"
+    ],
+    "promptFile": "02-starter-v2-PROMPT.json"
+  },
+  {
+    "id": "03-combat-gothic",
+    "title": "哥特战斗",
+    "source": "CombatScene.create",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/03-combat-gothic-v2.png",
+    "status": "reference-ready",
+    "note": "已核对五牌费用和效果、行动力及生命条侧边盾值；狼只作装饰示意，实施不增加敌人。选中态需放大描述。",
+    "previousImages": [
+      "images/03-combat-gothic.png"
+    ],
+    "promptFile": "03-combat-gothic-v2-PROMPT.json"
+  },
+  {
+    "id": "04-combat-shanhai",
+    "title": "山海战斗",
+    "source": "CombatScene.create",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/04-combat-shanhai-v5.png",
+    "status": "reference-ready",
+    "note": "已核对帝江无脸六足四翼、两类费用与资源、生命条侧盾；玄玑用用户授权的真实字体校正，修字框外像素未变。",
+    "previousImages": [
+      "images/04-combat-shanhai.png",
+      "images/04-combat-shanhai-v3.png"
+    ],
+    "promptFile": "04-combat-shanhai-v5-PROMPT.json"
+  },
+  {
+    "id": "05-title-save",
+    "title": "标题·已有存档",
+    "source": "TitleScene.create",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/05-title-save.png",
+    "status": "reference-ready",
+    "note": "按钮顺序与存档状态已核对；存档摘要为建议的额外信息展示。",
+    "promptFile": "05-title-save-PROMPT.json"
+  },
+  {
+    "id": "06-help",
+    "title": "玩法帮助",
+    "source": "TitleScene.showHelp",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/06-help-v2.png",
+    "status": "reference-ready",
+    "note": "新稿已核对；文案、按钮及起始牌组按现有代码设计。",
+    "promptFile": "06-help-v2-PROMPT.json",
+    "previousImages": [
+      "images/06-help.png"
+    ]
+  },
+  {
+    "id": "07-confirm",
+    "title": "重新开始确认",
+    "source": "TitleScene.showConfirm",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/07-confirm.png",
+    "status": "reference-ready",
+    "note": "已核对重新开始确认弹窗：取消与确定两项、提示抹去进度、背景遮罩。",
+    "promptFile": "07-confirm-PROMPT.json"
+  },
+  {
+    "id": "08-reward-gothic",
+    "title": "哥特战利品选牌",
+    "source": "RewardScene.buildCardChoices",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/08-reward-gothic-v3.png",
+    "status": "reference-ready",
+    "note": "已核对奖励池重击2费14伤害、铁壁1费8格挡、凝神1费抽2，三角卡面、跳过与禁用继续正确。",
+    "promptFile": "08-reward-gothic-v3-PROMPT.json",
+    "previousImages": [
+      "images/08-reward-gothic.png"
+    ]
+  },
+  {
+    "id": "09-reward-shanhai",
+    "title": "山海战利品选牌",
+    "source": "RewardScene.buildCardChoices",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/09-reward-shanhai-v5.png",
+    "status": "reference-ready",
+    "note": "符纸1灵韵7伤害、封门1灵韵8格挡、玄玑0灵韵且获得1灵韵抽1；玄玑用真实字体校正。",
+    "promptFile": "09-reward-shanhai-v5-PROMPT.json",
+    "previousImages": [
+      "images/09-reward-shanhai.png",
+      "images/09-reward-shanhai-v3.png"
+    ]
+  },
+  {
+    "id": "10-relic-choice",
+    "title": "遗物二选一",
+    "source": "RewardScene.showRelicChoice",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/10-relic-choice-v2.png",
+    "status": "reference-ready",
+    "note": "新稿已核对；文案、按钮及起始牌组按现有代码设计。",
+    "promptFile": "10-relic-choice-v2-PROMPT.json",
+    "previousImages": [
+      "images/10-relic-choice.png"
+    ]
+  },
+  {
+    "id": "11-reward-ready",
+    "title": "奖励已领取",
+    "source": "RewardScene.enableContinue",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/11-reward-ready-v2.png",
+    "status": "reference-ready",
+    "note": "重击与铁誓指环图标、领取完成勾选、继续征途路由和单一继续按钮均已核对。",
+    "promptFile": "11-reward-ready-v2-PROMPT.json",
+    "previousImages": [
+      "images/11-reward-ready.png"
+    ]
+  },
+  {
+    "id": "12-event-gothic",
+    "title": "哥特事件选择",
+    "source": "EventScene.create",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/12-event-gothic.png",
+    "status": "reference-ready",
+    "note": "构图与操作状态已核对，示例数据由运行时替换。",
+    "promptFile": "12-event-gothic-PROMPT.json"
+  },
+  {
+    "id": "13-event-shanhai",
+    "title": "山海事件选择",
+    "source": "EventScene.create",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/13-event-shanhai.png",
+    "status": "reference-ready",
+    "note": "构图与操作状态已核对，示例数据由运行时替换。",
+    "promptFile": "13-event-shanhai-PROMPT.json"
+  },
+  {
+    "id": "14-event-result",
+    "title": "事件结果",
+    "source": "EventScene.showResult",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/14-event-result.png",
+    "status": "reference-ready",
+    "note": "构图与操作状态已核对，示例数据由运行时替换。",
+    "promptFile": "14-event-result-PROMPT.json"
+  },
+  {
+    "id": "15-remove-card",
+    "title": "移除卡牌选择",
+    "source": "EventScene.openCardPicker",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/15-remove-card-v2.png",
+    "status": "reference-ready",
+    "note": "已核对卡名、费用、数量、居中第二排和单页禁用箭头；点击直接丢弃。实现时统一顶部横向状态栏。",
+    "promptFile": "15-remove-card-v2-PROMPT.json",
+    "previousImages": [
+      "images/15-remove-card.png"
+    ]
+  },
+  {
+    "id": "16-event-disabled",
+    "title": "金币不足的选项",
+    "source": "EventScene.pick",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/16-event-disabled.png",
+    "status": "reference-ready",
+    "note": "构图、按钮及不可用状态已核对，示例数据由运行时替换。",
+    "promptFile": "16-event-disabled-PROMPT.json"
+  },
+  {
+    "id": "17-contract-ember",
+    "title": "焦羽·获得妖契",
+    "source": "events.ember_bones",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/17-contract-ember.png",
+    "status": "reference-ready",
+    "note": "构图与选项内容已核对；示例生命金币由运行时替换。",
+    "promptFile": "17-contract-ember-PROMPT.json"
+  },
+  {
+    "id": "18-contract-ash",
+    "title": "灰冢·重复妖契",
+    "source": "events.ash_mound",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/18-contract-ash-v5.png",
+    "status": "reference-ready",
+    "note": "已核对三个选项及已有妖契时恢复15%最大生命；灰冢用用户授权的真实字体校正，保留美术和布局。",
+    "promptFile": "18-contract-ash-v5-PROMPT.json",
+    "previousImages": [
+      "images/18-contract-ash.png",
+      "images/18-contract-ash-v3.png"
+    ]
+  },
+  {
+    "id": "19-forge",
+    "title": "铸坊·换牌加牌",
+    "source": "events.forge",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/19-forge-v2.png",
+    "status": "reference-ready",
+    "note": "已核对随机换牌、70金币购买稀有牌和金币不足禁用状态。",
+    "promptFile": "19-forge-v2-PROMPT.json",
+    "previousImages": [
+      "images/19-forge.png"
+    ]
+  },
+  {
+    "id": "20-ascend",
+    "title": "升契·境域转换",
+    "source": "events.ascend_rites",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/20-ascend-v2.png",
+    "status": "reference-ready",
+    "note": "已核对升阶后随机加牌、回复30%最大生命并获遗物，及离开选项。",
+    "promptFile": "20-ascend-v2-PROMPT.json",
+    "previousImages": [
+      "images/20-ascend.png"
+    ]
+  },
+  {
+    "id": "21-relic-tip",
+    "title": "遗物详情",
+    "source": "CombatScene.showRelicTip",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/21-relic-tip-v2.png",
+    "status": "reference-ready",
+    "note": "已逐图核对：指环下局部提示为开战获得6格挡，不遮意图，无多余说明框；费用、两方HP和侧盾正确。",
+    "previousImages": [
+      "images/21-relic-tip.png"
+    ],
+    "promptFile": "21-relic-tip-v2-PROMPT.json"
+  },
+  {
+    "id": "22-card-selected",
+    "title": "选中卡牌",
+    "source": "CombatScene.selectCard",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/22-card-selected-v3.png",
+    "status": "reference-ready",
+    "note": "准确五张牌，无重复劈砍；选中牌放大、费用1与6伤害及卡内出牌提示可读，HP盾与资源不受遮挡。",
+    "promptFile": "22-card-selected-v3-PROMPT.json",
+    "previousImages": [
+      "images/22-card-selected.png",
+      "images/22-card-selected-v2.png"
+    ]
+  },
+  {
+    "id": "23-card-denied",
+    "title": "资源不足",
+    "source": "CombatScene.playCard",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/23-card-denied.png",
+    "status": "reference-ready",
+    "note": "已核对行动力0/3、五牌保留、四张1费牌变暗、0费血契可用、结束回合可用，HP和盾值不变。",
+    "promptFile": "23-card-denied-PROMPT.json"
+  },
+  {
+    "id": "24-enemy-turn",
+    "title": "敌方行动",
+    "source": "CombatScene.endTurn",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/24-enemy-turn-v2.png",
+    "status": "reference-ready",
+    "note": "放大核对疾刺含造成4点伤害、抽1张牌；敌方行动时手牌禁用，48/70生命与6盾为结算前状态。此前遗漏判断已纠正。",
+    "promptFile": "24-enemy-turn-v2-PROMPT.json",
+    "previousImages": [
+      "images/24-enemy-turn.png"
+    ]
+  },
+  {
+    "id": "25-feedback-block",
+    "title": "格挡反馈",
+    "source": "CombatScene.intakeDamage",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/25-feedback-block.png",
+    "status": "reference-ready",
+    "note": "蓝盾格挡6、玩家48/70不变盾0、意图6；无红绿受击光；五牌与敌方行动禁用状态正确。",
+    "promptFile": "25-feedback-block-PROMPT.json"
+  },
+  {
+    "id": "26-feedback-hurt",
+    "title": "扣血反馈",
+    "source": "CombatScene.intakeDamage",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/26-feedback-hurt-v2.png",
+    "status": "reference-ready",
+    "note": "红光-6和42/70盾0正确，五张手牌全部灰暗禁用、敌方行动按钮禁用，无蓝绿冲击。",
+    "promptFile": "26-feedback-hurt-v2-PROMPT.json",
+    "previousImages": [
+      "images/26-feedback-hurt.png"
+    ]
+  },
+  {
+    "id": "27-feedback-heal",
+    "title": "回血反馈",
+    "source": "CombatScene.healPlayer",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/27-feedback-heal.png",
+    "status": "reference-ready",
+    "note": "已核对绿色局部回血+5、HP53/70盾6，正常行动、全部卡牌与费用正确；无红蓝冲击。",
+    "promptFile": "27-feedback-heal-PROMPT.json"
+  },
+  {
+    "id": "28-battle-banner",
+    "title": "战斗横幅·开场与胜利",
+    "source": "CombatScene.showBanner",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/28-battle-banner-v2.png",
+    "status": "reference-ready",
+    "note": "单一完整胜利整屏，0/81与淡出金粒、隐藏意图、48/70盾6、五牌和结束回合禁用均已核对。",
+    "promptFile": "28-battle-banner-v2-PROMPT.json",
+    "previousImages": [
+      "images/28-battle-banner.png"
+    ]
+  },
+  {
+    "id": "29-game-over",
+    "title": "战败",
+    "source": "CombatScene.gameOver",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/29-game-over.png",
+    "status": "reference-ready",
+    "note": "构图、按钮及不可用状态已核对，示例数据由运行时替换。",
+    "promptFile": "29-game-over-PROMPT.json"
+  },
+  {
+    "id": "30-ending",
+    "title": "通关结算",
+    "source": "RewardScene.showEnding",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/30-ending.png",
+    "status": "reference-ready",
+    "note": "五项统计和两个入口已核对，示例数据由 RUN 替换。",
+    "promptFile": "30-ending-PROMPT.json"
+  },
+  {
+    "id": "31-loading",
+    "title": "资源加载",
+    "source": "BootScene.preload",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/31-loading.png",
+    "status": "reference-ready",
+    "note": "布局可用；加载背景须使用可提前加载的轻量素材，百分比绑定实际进度。",
+    "promptFile": "31-loading-PROMPT.json"
+  },
+  {
+    "id": "32-deck-browser",
+    "title": "牌组浏览·建议新增",
+    "source": "proposal",
+    "scope": "proposed",
+    "realm": "gothic",
+    "image": "images/32-deck-browser.png",
+    "status": "reference-ready",
+    "note": "建议新增的只读牌组页；费用、数量和详情绑定真实牌组，不包含删牌。",
+    "promptFile": "32-deck-browser-PROMPT.json"
+  },
+  {
+    "id": "33-pause-settings",
+    "title": "暂停与设置·建议新增",
+    "source": "proposal",
+    "scope": "proposed",
+    "realm": "gothic",
+    "image": "images/33-pause-settings.png",
+    "status": "reference-ready",
+    "note": "建议新增；暂停、动画与震动设置需实现，返回标题时说明当前战斗需重打。",
+    "promptFile": "33-pause-settings-PROMPT.json"
+  },
+  {
+    "id": "34-route",
+    "title": "征途进度·建议新增",
+    "source": "proposal",
+    "scope": "proposed",
+    "realm": "gothic",
+    "image": "images/34-route.png",
+    "status": "reference-ready",
+    "note": "建议新增的线性进度页；图中章节副标题为示例，实际名称绑定 CHAPTERS，不增加路线分支。",
+    "promptFile": "34-route-PROMPT.json"
+  },
+  {
+    "id": "event-campfire",
+    "title": "篝火",
+    "source": "events.campfire",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-campfire.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "campfire",
+      "name": "篝 火",
+      "art": "spark",
+      "text": "一堆还没熄的灰。有人把火留给了后来的人，火苗很小，但确实是暖的。",
+      "choices": [
+        {
+          "label": "休 息",
+          "detail": "回复 30% 最大生命",
+          "result": "你睡到火快要灭。醒来时鞋是干的。",
+          "effects": [
+            {
+              "op": "heal",
+              "pct": 0.3
+            }
+          ]
+        },
+        {
+          "label": "冥 想",
+          "detail": "从牌组中移除 1 张牌",
+          "result": "你烧掉了它。字迹在火里卷起来，没有发出声音。",
+          "effects": [
+            {
+              "op": "removeCard"
+            }
+          ]
+        },
+        {
+          "label": "添 柴",
+          "detail": "获得 1 件遗物，受到 6 点伤害",
+          "result": "火旺了。代价是几根肋骨。",
+          "effects": [
+            {
+              "op": "relic"
+            },
+            {
+              "op": "damage",
+              "v": 6
+            }
+          ]
+        }
+      ]
+    },
+    "note": "已核对全部选项、代价与收益；示例生命金币由运行时替换。",
+    "promptFile": "event-campfire-PROMPT.json"
+  },
+  {
+    "id": "event-bone_pile",
+    "title": "骨堆",
+    "source": "events.bone_pile",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-bone_pile.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "bone_pile",
+      "name": "骨 堆",
+      "art": "skull",
+      "text": "一堆骨头堆得很整齐，像是有人数过。你不确定那些数字是在数什么。",
+      "choices": [
+        {
+          "label": "搜 刮",
+          "detail": "获得 45 金币",
+          "result": "金币缝在骨缝里，还带着别人的体温。",
+          "effects": [
+            {
+              "op": "gold",
+              "v": 45
+            }
+          ]
+        },
+        {
+          "label": "献 祭",
+          "detail": "失去 10 点生命，获得 2 张随机卡牌",
+          "result": "骨头收下了。两个新的念头住进了你脑子里。",
+          "effects": [
+            {
+              "op": "damage",
+              "v": 10
+            },
+            {
+              "op": "card"
+            },
+            {
+              "op": "card"
+            }
+          ]
+        },
+        {
+          "label": "翻 找",
+          "detail": "移除 1 张牌，获得 30 金币",
+          "result": "你挑走了一副还能用的骨头，丢下了别的。",
+          "effects": [
+            {
+              "op": "removeCard"
+            },
+            {
+              "op": "gold",
+              "v": 30
+            }
+          ]
+        }
+      ]
+    },
+    "note": "已核对全部选项、代价与收益；示例生命金币由运行时替换。",
+    "promptFile": "event-bone_pile-PROMPT.json"
+  },
+  {
+    "id": "event-lost_lantern",
+    "title": "提灯人",
+    "source": "events.lost_lantern",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-lost_lantern.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "lost_lantern",
+      "name": "提 灯 人",
+      "art": "lens",
+      "text": "一个提着灯的人站在路中间，灯是灭的。他看起来比你先在这里等了很久。",
+      "choices": [
+        {
+          "label": "交 出 火 折",
+          "detail": "失去 12 点生命，获得 1 件遗物",
+          "result": "他点亮了灯，往林子深处走了，没有回头。",
+          "effects": [
+            {
+              "op": "damage",
+              "v": 12
+            },
+            {
+              "op": "relic"
+            }
+          ]
+        },
+        {
+          "label": "问 路",
+          "detail": "回复 20 点生命",
+          "result": "他指了个方向。你走了三步才发现那是回头的路，但你的脚不疼了。",
+          "effects": [
+            {
+              "op": "heal",
+              "v": 20
+            }
+          ]
+        },
+        {
+          "label": "不 理 他",
+          "detail": "离开",
+          "result": "你绕开了那盏灯。身后一直没有脚步声。",
+          "effects": [
+            {
+              "op": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "note": "已核对全部选项、代价与收益；示例生命金币由运行时替换。",
+    "promptFile": "event-lost_lantern-PROMPT.json"
+  },
+  {
+    "id": "event-black_market",
+    "title": "黑市",
+    "source": "events.black_market",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-black_market.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "black_market",
+      "name": "黑 市",
+      "art": "coin",
+      "text": "一块空地上摆着几件东西，摆得很整齐。摊主的脸藏在兜帽里，看不见。",
+      "choices": [
+        {
+          "label": "买 遗 物",
+          "detail": "花费 60 金币，获得 1 件遗物",
+          "cost": 60,
+          "result": "他数了钱，把东西推过来，没说一句话。",
+          "effects": [
+            {
+              "op": "relic"
+            }
+          ]
+        },
+        {
+          "label": "删 一 张 牌",
+          "detail": "花费 70 金币，从牌组移除 1 张牌",
+          "cost": 70,
+          "result": "他把一张牌从你手里抽走，撕成两半，扔进火里。",
+          "effects": [
+            {
+              "op": "removeCard"
+            }
+          ]
+        },
+        {
+          "label": "不 买",
+          "detail": "离开",
+          "result": "你摇摇头。他把布盖了回去。",
+          "effects": [
+            {
+              "op": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "note": "已核对全部选项、代价与收益；示例生命金币由运行时替换。",
+    "promptFile": "event-black_market-PROMPT.json"
+  },
+  {
+    "id": "event-ancient_stele",
+    "title": "古碑",
+    "source": "events.ancient_stele",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-ancient_stele.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "ancient_stele",
+      "name": "古 碑",
+      "art": "horn",
+      "text": "半截石碑立在苔藓里，上面的字你不认识，但读的时候每个字都在发热。",
+      "choices": [
+        {
+          "label": "献 上 一 张 牌",
+          "detail": "随机移除 1 张牌，获得 1 件遗物",
+          "result": "碑面暗了一下，然后亮了。",
+          "effects": [
+            {
+              "op": "removeCard",
+              "random": true
+            },
+            {
+              "op": "relic"
+            }
+          ]
+        },
+        {
+          "label": "抄 下 碑 文",
+          "detail": "获得 1 张随机卡牌",
+          "result": "你抄了一整夜。醒来时手上全是墨。",
+          "effects": [
+            {
+              "op": "card"
+            }
+          ]
+        },
+        {
+          "label": "不 碰",
+          "detail": "什么也不发生",
+          "result": "你绕到背面，那里也刻着字。你没看。",
+          "effects": [
+            {
+              "op": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "note": "已核对全部选项、代价与收益；示例生命金币由运行时替换。",
+    "promptFile": "event-ancient_stele-PROMPT.json"
+  },
+  {
+    "id": "event-thorn_well",
+    "title": "荆棘井",
+    "source": "events.thorn_well",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-thorn_well.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "thorn_well",
+      "name": "荆 棘 井",
+      "art": "thorns",
+      "text": "井口长满了荆棘，井里的水面上浮着一层红。看上去像是很久没有人来打水了。",
+      "choices": [
+        {
+          "label": "喝 一 口",
+          "detail": "回复 25 点生命，下一场战斗开始时带有「虚弱 2」",
+          "result": "水是铁锈味的。伤口不疼了，但腿有点软。",
+          "effects": [
+            {
+              "op": "heal",
+              "v": 25
+            },
+            {
+              "op": "status",
+              "st": "weak",
+              "v": 2
+            }
+          ]
+        },
+        {
+          "label": "不 喝",
+          "detail": "离开",
+          "result": "荆棘在你身后合拢了一点。",
+          "effects": [
+            {
+              "op": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "note": "已核对全部选项、代价与收益；示例生命金币由运行时替换。",
+    "promptFile": "event-thorn_well-PROMPT.json"
+  },
+  {
+    "id": "event-wolf_gaze",
+    "title": "狼的凝视",
+    "source": "events.wolf_gaze",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-wolf_gaze.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "wolf_gaze",
+      "name": "狼 的 凝 视",
+      "art": "fang",
+      "text": "树丛里有十几双眼睛。它们没有靠近，也没有离开。",
+      "choices": [
+        {
+          "label": "直 面",
+          "detail": "失去 10 点生命，获得 2 张随机卡牌",
+          "result": "你把木棍举起来。眼睛退开了，留下了两个念头。",
+          "effects": [
+            {
+              "op": "damage",
+              "v": 10
+            },
+            {
+              "op": "card"
+            },
+            {
+              "op": "card"
+            }
+          ]
+        },
+        {
+          "label": "躲 避",
+          "detail": "回复 25% 最大生命，下一场战斗开始时带有「易伤 2」",
+          "result": "你退了很久。退到安全的地方时，腿还在抖。",
+          "effects": [
+            {
+              "op": "heal",
+              "pct": 0.25
+            },
+            {
+              "op": "status",
+              "st": "vulnerable",
+              "v": 2
+            }
+          ]
+        },
+        {
+          "label": "大 声 吼",
+          "detail": "失去 15 点生命，获得 60 金币",
+          "result": "声音散进林子。你踩到的东西响了。",
+          "effects": [
+            {
+              "op": "damage",
+              "v": 15
+            },
+            {
+              "op": "gold",
+              "v": 60
+            }
+          ]
+        }
+      ]
+    },
+    "note": "选项与延后状态已核对，示例数据由运行时替换。"
+  },
+  {
+    "id": "event-moss_shrine",
+    "title": "苔藓神龛",
+    "source": "events.moss_shrine",
+    "scope": "existing",
+    "realm": "gothic",
+    "image": "images/event-moss_shrine.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "moss_shrine",
+      "name": "苔 藓 神 龛",
+      "art": "heart",
+      "text": "一座半塌的小龛，里面没有神像，只有一颗用苔藓包住的石头，还在缓慢地跳。",
+      "choices": [
+        {
+          "label": "贴 近 听",
+          "detail": "最大生命 +6，获得 1 件遗物",
+          "result": "石头跳了一下。你的胸腔跟着跳了一下，从此多跳一拍。",
+          "effects": [
+            {
+              "op": "maxHp",
+              "v": 6
+            },
+            {
+              "op": "relic"
+            }
+          ]
+        },
+        {
+          "label": "取 出 石 头",
+          "detail": "失去 15 点生命，获得 2 张随机卡牌",
+          "result": "苔藓散开了。石头在手里跳得很快。",
+          "effects": [
+            {
+              "op": "damage",
+              "v": 15
+            },
+            {
+              "op": "card"
+            },
+            {
+              "op": "card"
+            }
+          ]
+        },
+        {
+          "label": "合 上 龛 门",
+          "detail": "什么也不发生",
+          "result": "门自己合上了。里面安静了。",
+          "effects": [
+            {
+              "op": "none"
+            }
+          ]
+        }
+      ]
+    },
+    "note": "选项与延后状态已核对，示例数据由运行时替换。"
+  },
+  {
+    "id": "event-nine_heads",
+    "title": "九首",
+    "source": "events.nine_heads",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/event-nine_heads.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "nine_heads",
+      "name": "九 首",
+      "art": "cloud",
+      "text": "「九首人面蛇身而青。」沼泽上方悬着九个头，轮流开口。它们说的名字你一个也不认识，但每一个都像在叫你的祖先。",
+      "choices": [
+        {
+          "label": "一 个 一 个 回 答",
+          "detail": "灵韵上限 +2，获得 1 件遗物",
+          "result": "九个声音终于合成了一句。那句话你听不懂，但你记住了。",
+          "effects": [
+            {
+              "op": "spiritMax",
+              "v": 2
+            },
+            {
+              "op": "relic"
+            }
+          ]
+        },
+        {
+          "label": "屏 住 呼 吸",
+          "detail": "下一场战斗：中毒 3 层",
+          "result": "水面的绿开始往你这边漫。",
+          "effects": [
+            {
+              "op": "status",
+              "st": "poison",
+              "v": 3
+            }
+          ]
+        },
+        {
+          "label": "往 沼 泽 深 处 走",
+          "detail": "获得 2 张随机卡牌",
+          "result": "你踩到了自己的脸。泥里全是脚印，只有一种朝向。",
+          "effects": [
+            {
+              "op": "card"
+            },
+            {
+              "op": "card"
+            }
+          ]
+        }
+      ]
+    },
+    "promptFile": "event-nine_heads-PROMPT.json",
+    "note": "已逐图核对完整故事、三项选择与效果数值，竖屏布局完整；对应异兽形体符合要求。"
+  },
+  {
+    "id": "event-bronze_step",
+    "title": "青铜阶",
+    "source": "events.bronze_step",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/event-bronze_step.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "bronze_step",
+      "name": "青 铜 阶",
+      "art": "thunder",
+      "text": "树根下面是台阶。一级一级往下，每一级都刻着一个你不认识的字。刻痕里积着比这棵树还老的灰。",
+      "choices": [
+        {
+          "label": "往 下 走",
+          "detail": "灵韵上限 +1，回复 20% 最大生命",
+          "result": "台阶尽头没有底。你走了很久，醒来时已经站在下面了。",
+          "effects": [
+            {
+              "op": "spiritMax",
+              "v": 1
+            },
+            {
+              "op": "heal",
+              "pct": 0.2
+            }
+          ]
+        },
+        {
+          "label": "用 刀 刻 自 己 的 名 字",
+          "detail": "失去 1 张牌，灵韵上限 +2",
+          "result": "刀刃卷了。名字留住了，牌丢了。",
+          "effects": [
+            {
+              "op": "removeCard"
+            },
+            {
+              "op": "spiritMax",
+              "v": 2
+            }
+          ]
+        },
+        {
+          "label": "把 阶 阶 填 平",
+          "detail": "获得 45 金币",
+          "result": "灰填平了台阶。你在上面找到一小堆别人留下的东西。",
+          "effects": [
+            {
+              "op": "gold",
+              "v": 45
+            }
+          ]
+        }
+      ]
+    },
+    "promptFile": "event-bronze_step-PROMPT.json",
+    "note": "已核对三项选择与实际效果，全文叙事与按钮均清晰完整。"
+  },
+  {
+    "id": "event-blind_dance",
+    "title": "浑敦之舞",
+    "source": "events.blind_dance",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/event-blind_dance.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "blind_dance",
+      "name": "浑 敦 之 舞",
+      "art": "spark",
+      "text": "「浑敦无面目，是识歌舞。」一个黄囊似的东西在跳，没有脸，跳得很准。你听了三遍才听出来它在唱。",
+      "choices": [
+        {
+          "label": "跟 着 跳",
+          "detail": "失去 18 点生命，获得 2 张随机卡牌",
+          "result": "你跳完之后，发现自己记住了它的舞步。身体比脑子先动。",
+          "effects": [
+            {
+              "op": "damage",
+              "v": 18
+            },
+            {
+              "op": "card"
+            },
+            {
+              "op": "card"
+            }
+          ]
+        },
+        {
+          "label": "替 它 数 拍 子",
+          "detail": "灵韵上限 +2",
+          "result": "一、二、三……数到第一百拍时，它停下来，朝你转了一圈。",
+          "effects": [
+            {
+              "op": "spiritMax",
+              "v": 2
+            }
+          ]
+        },
+        {
+          "label": "闭 上 眼 离 开",
+          "detail": "回复 15% 最大生命",
+          "result": "你闭着眼走了一段。睁开时，舞步还在耳朵里。",
+          "effects": [
+            {
+              "op": "heal",
+              "pct": 0.15
+            }
+          ]
+        }
+      ]
+    },
+    "promptFile": "event-blind_dance-PROMPT.json",
+    "note": "已逐图核对完整故事、三项选择与效果数值，竖屏布局完整；对应异兽形体符合要求。"
+  },
+  {
+    "id": "event-baize_omen",
+    "title": "白泽之言",
+    "source": "events.baize_omen",
+    "scope": "existing",
+    "realm": "shanhai",
+    "image": "images/event-baize_omen.png",
+    "status": "reference-ready",
+    "event": {
+      "id": "baize_omen",
+      "name": "白 泽 之 言",
+      "art": "lens",
+      "text": "「能言，能知万物之情。」一头白色的兽蹲在路边，看见你就开口了。它知道你的名字、你从哪来、还有几天。",
+      "choices": [
+        {
+          "label": "问 它 未 来",
+          "detail": "灵韵上限 +1，获得 1 件遗物",
+          "result": "它说了一个日子。那个日子之后的事，它不肯讲了。",
+          "effects": [
+            {
+              "op": "spiritMax",
+              "v": 1
+            },
+            {
+              "op": "relic"
+            }
+          ]
+        },
+        {
+          "label": "问 它 怎 么 活 下 去",
+          "detail": "最大生命 +12",
+          "result": "它看了你很久，说了一句很像玩笑的话。但你确实活下来了。",
+          "effects": [
+            {
+              "op": "maxHp",
+              "v": 12
+            }
+          ]
+        },
+        {
+          "label": "不 问 走 开",
+          "detail": "获得 60 金币",
+          "result": "它在背后报出了一串数字，等你掏钱才停。",
+          "effects": [
+            {
+              "op": "gold",
+              "v": 60
+            }
+          ]
+        }
+      ]
+    },
+    "promptFile": "event-baize_omen-PROMPT.json",
+    "note": "已逐图核对完整故事、三项选择与效果数值，竖屏布局完整；对应异兽形体符合要求。"
+  }
+]
