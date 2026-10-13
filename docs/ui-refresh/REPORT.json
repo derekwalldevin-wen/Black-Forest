@@ -1,0 +1,54 @@
+{
+  "assets": 6,
+  "checks": [
+    {
+      "width": 320,
+      "chapter": 0,
+      "values": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "nonoverlap": true,
+      "menuIcons": 4
+    },
+    {
+      "width": 320,
+      "chapter": 5,
+      "values": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "nonoverlap": true,
+      "menuIcons": 4
+    },
+    {
+      "width": 390,
+      "chapter": 0,
+      "values": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "nonoverlap": true,
+      "menuIcons": 4
+    },
+    {
+      "width": 390,
+      "chapter": 5,
+      "values": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "nonoverlap": true,
+      "menuIcons": 4
+    }
+  ],
+  "errors": []
+}

@@ -68,6 +68,7 @@ Get-ChildItem (Join-Path $root 'assets\anim') -File -Filter *.png           | Fo
 Get-ChildItem (Join-Path $root 'assets\story') -File -Filter *.webp         | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'assets\audio') -File -Filter *.wav         | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'docs\audio') -File | ForEach-Object { $files.Add($_.FullName) }
+Get-ChildItem (Join-Path $root 'docs\ui-refresh') -File | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'docs\hero-fx') -File |
   Where-Object { $_.Name -notlike '*-reference.png' -and $_.Extension -in '.md','.json','.html','.png' } |
   ForEach-Object { $files.Add($_.FullName) }

@@ -240,6 +240,7 @@ class CombatScene extends Phaser.Scene {
       fontFamily: FONT, fontSize: '52px', color: '#ffffff', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(7);
     this.energyText.setShadow(0, 3, '#000000', 6, false, true);
+    this.energyIcon=this.add.image(108,STAGE.BAR_Y,'ui-refined-energy').setDisplaySize(106,106).setDepth(7);
 
     // 灵韵宝珠：符箓的第二资源条。哥特篇主题下整条隐藏。
     //
@@ -264,7 +265,7 @@ class CombatScene extends Phaser.Scene {
     this.endTurnBtn = makeButton(this, 800, STAGE.BAR_Y, 380, 128, '结 束 回 合', () => this.endTurn(),
       { accent: PAL.gold, color: 0x2c2438, skin:'primary', fontSize: 46 }).setDepth(8);
     this.energyLabel=uiText(this,188,STAGE.BAR_SPIRIT_LABEL_Y,'行动力',34,'#88cfe3').setOrigin(.5).setDepth(7);
-    this.spiritIcon=(iconArt(this,365,STAGE.BAR_SPIRIT_LABEL_Y,44,'tactical','spirit')||drawGlyph(this,365,STAGE.BAR_SPIRIT_LABEL_Y,20,'flame',SPIRIT_COLOR)).setDepth(7).setVisible(false);
+    this.spiritIcon=this.add.image(370,STAGE.BAR_Y,'ui-refined-spirit').setDisplaySize(106,106).setDepth(7).setVisible(false);
     this.resonanceText=uiText(this,436,1898,'',30,'#e8c379').setOrigin(.5).setDepth(7).setVisible(false);
 
     // 牌堆。放在手牌区两侧、卡片上沿之上——既不跟手牌叠在一起，
@@ -1438,7 +1439,10 @@ class CombatScene extends Phaser.Scene {
     const g = this.energyG;
     const showSpirit = RUN.showSpiritMeter(),ex=showSpirit?174:300;
     g.setPosition(ex,STAGE.BAR_Y);drawResourceMeter(g,S.energy,S.energyMax,showSpirit?244:496,0x73bdd8);
-    this.energyLabel.x=ex;this.energyText.x=ex;
+    this.energyLabel.x=ex;this.energyText.x=ex+(showSpirit?40:52);
+    this.energyIcon.x=ex-(showSpirit?64:114);
+    this.energyIcon.setDisplaySize(showSpirit?106:126,showSpirit?106:126).setTint(S.energy>0?0xffffff:0x696d7b);
+    this.energyText.setColor(S.energy>0?'#e8faff':'#9ca3b0');
     this.energyText.setText(S.energy + '/' + S.energyMax);
 
     /* 灵韵：第二个资源圈。
@@ -1449,7 +1453,8 @@ class CombatScene extends Phaser.Scene {
      * 也不能只看当前手牌：符箓全在弃牌堆里时资源栏必须还在。 */
     this.spiritG.setVisible(showSpirit);
     this.spiritText.setVisible(showSpirit);
-    if(this.spiritIcon)this.spiritIcon.setVisible(showSpirit);
+    if(this.spiritIcon)this.spiritIcon.setVisible(showSpirit).setTint(S.spirit>0?0xffffff:0x77716a);
+    this.spiritText.x=476;
     this.resonanceText.setVisible(showSpirit&&S.resonance>0).setText('共鸣 '+S.resonance);
     if (this.spiritLabel) {
       this.spiritLabel.setVisible(showSpirit);

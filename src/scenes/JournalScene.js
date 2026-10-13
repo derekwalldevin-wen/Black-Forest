@@ -16,7 +16,14 @@ class JournalScene extends Phaser.Scene {
   }
   append(o) {this.body.add(o);return o;}
   text(x,y,t,size,color,opts) {return this.append(uiText(this,x,y,t,size,color,opts));}
-  button(x,y,w,t,fn,opts) {return this.append(makeButton(this,x,y,w,136,t,fn,opts));}
+  button(x,y,w,t,fn,opts) {
+    const b=this.append(makeButton(this,x,y,w,136,t,fn,opts));
+    if(opts?.art){
+      b.add(this.add.image(-w/2+88,0,'ui-refined-'+opts.art).setDisplaySize(110,110));
+      const label=b.list.find(o=>o.type==='Text');if(label)label.x=35;
+    }
+    return b;
+  }
   render() {
     this.body.removeAll(true);
     this.append(uiSurface(this,540,920,980,1630,'panel'));
@@ -70,10 +77,10 @@ class JournalScene extends Phaser.Scene {
     this.append(this.add.image(225,260,'ui-avatar').setDisplaySize(220,220));
     this.text(650,212,HERO.name,64,null,{fontStyle:'bold'}).setOrigin(.5);
     this.text(650,305,'行囊已打开 · 战斗已暂停',36,'#b9ab90').setOrigin(.5);
-    this.button(540,520,800,'查看牌组',()=>{this.mode='deck';this.render();},{skin:'secondary'});
-    this.button(540,690,800,'征途进度',()=>{this.mode='route';this.render();},{skin:'secondary'});
-    this.button(540,860,800,'遗物与妖契',()=>{this.mode='relics';this.relicPage=0;this.render();},{skin:'secondary'});
-    this.button(540,1015,800,'旅途手记',()=>{this.scene.launch('Story',{kind:'journal',returnTo:'Journal'});this.scene.pause();this.scene.bringToTop('Story');},{skin:'secondary'});
+    this.button(540,520,800,'查看牌组',()=>{this.mode='deck';this.render();},{skin:'secondary',art:'deck'});
+    this.button(540,690,800,'征途进度',()=>{this.mode='route';this.render();},{skin:'secondary',art:'route'});
+    this.button(540,860,800,'遗物与妖契',()=>{this.mode='relics';this.relicPage=0;this.render();},{skin:'secondary',art:'menu'});
+    this.button(540,1015,800,'旅途手记',()=>{this.scene.launch('Story',{kind:'journal',returnTo:'Journal'});this.scene.pause();this.scene.bringToTop('Story');},{skin:'secondary',art:'journal'});
     this.button(540,1170,800,'减少动态：'+(GAME_PREFS.reducedMotion?'开':'关'),()=>{GAME_PREFS.set('reducedMotion',!GAME_PREFS.reducedMotion);this.render();},{skin:'secondary',fontSize:44});
     this.button(320,1325,410,'触感：'+(GAME_PREFS.haptics?'开':'关'),()=>{GAME_PREFS.set('haptics',!GAME_PREFS.haptics);this.render();},{skin:'secondary',fontSize:42});
     this.button(760,1325,410,'声音设置',()=>{this.mode='audio';this.render();},{skin:'secondary',fontSize:42});

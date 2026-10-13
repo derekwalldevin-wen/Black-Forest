@@ -28,6 +28,8 @@ const GAME_PREFS = {
 };
 
 function preloadUiSkin(scene) {
+  for(const id of ['energy','spirit','menu','deck','route','journal'])
+    scene.load.image('ui-refined-'+id,'assets/ui/refined-'+id+'-v1.png');
   for (const realm of ['gothic', 'shanhai']) for (const part of UI_SKIN_PARTS)
     scene.load.image('ui-'+realm+'-'+part, 'assets/ui/'+realm+'-'+part+'-v1.png');
   scene.load.image('ui-avatar', 'assets/ui/hero-avatar-v1.png');
@@ -98,8 +100,8 @@ function addGameNavigation(scene) {
   // A quiet, thumb-sized utility entry. Battle information keeps the whole centre.
   const b=scene.add.container(964,174).setSize(152,152).setInteractive();
   const g=scene.add.graphics();g.fillStyle(0x14131b,.94);g.fillRoundedRect(-76,-76,152,152,16);g.lineStyle(2,PAL.gold,.5);g.strokeRoundedRect(-76,-76,152,152,16);
-  g.lineStyle(5,0xd6c2a0,1);for(const y of [-31,-15,1])g.lineBetween(-26,y,26,y);
-  const label=uiText(scene,0,38,'菜单',34,'#d6c2a0').setOrigin(.5);b.add([g,label]);
+  const art=scene.add.image(0,-22,'ui-refined-menu').setDisplaySize(106,106);
+  const label=uiText(scene,0,47,'菜单',34,'#e8dcc0').setOrigin(.5);b.add([g,art,label]);
   b.on('pointerdown',(p,x,y,ev)=>{if(ev)ev.stopPropagation();openGameOverlay(scene,'pause');});
   b.on('pointerover',()=>b.setAlpha(.8));b.on('pointerout',()=>b.setAlpha(1));
   scene._navButtons={pause:b,menu:b};nav.add(b);
@@ -111,7 +113,11 @@ function addGameNavigation(scene) {
 
 function drawResourceMeter(g,value,max,width,color) {
   g.clear();g.fillStyle(0x11141c,.94);g.fillRoundedRect(-width/2,-82,width,164,14);
-  g.lineStyle(2,color,.45);g.strokeRoundedRect(-width/2,-82,width,164,14);
+  g.lineStyle(2,0xb08d3f,.7);g.strokeRoundedRect(-width/2,-82,width,164,14);
+  g.lineStyle(1,color,.28);g.strokeRoundedRect(-width/2+7,-75,width-14,150,10);
+  // Deliberately keep the illustrated icon and live number in separate areas.
+  g.lineStyle(2,color,.45);g.lineBetween(-width/2+18,-59,-width/2+18,-36);
+  g.lineBetween(width/2-18,36,width/2-18,59);
   const n=Math.max(1,Math.min(8,max)),gap=9,cell=Math.min(46,(width-42-(n-1)*gap)/n),start=-(n*cell+(n-1)*gap)/2;
   for(let i=0;i<n;i++){g.fillStyle(i<value?color:0x34313d,1);g.fillRoundedRect(start+i*(cell+gap),61,cell,8,3);}
 }

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "energy",
+    "path": "assets/ui/refined-energy-v1.png",
+    "bytes": 82178,
+    "sourceCrop": {
+      "left": 0,
+      "top": 0,
+      "width": 440,
+      "height": 640
+    }
+  },
+  {
+    "id": "spirit",
+    "path": "assets/ui/refined-spirit-v1.png",
+    "bytes": 62642,
+    "sourceCrop": {
+      "left": 440,
+      "top": 0,
+      "width": 360,
+      "height": 640
+    }
+  },
+  {
+    "id": "menu",
+    "path": "assets/ui/refined-menu-v1.png",
+    "bytes": 134135,
+    "sourceCrop": {
+      "left": 800,
+      "top": 0,
+      "width": 454,
+      "height": 640
+    }
+  },
+  {
+    "id": "deck",
+    "path": "assets/ui/refined-deck-v1.png",
+    "bytes": 114980,
+    "sourceCrop": {
+      "left": 0,
+      "top": 650,
+      "width": 402,
+      "height": 560
+    }
+  },
+  {
+    "id": "route",
+    "path": "assets/ui/refined-route-v1.png",
+    "bytes": 128368,
+    "sourceCrop": {
+      "left": 402,
+      "top": 650,
+      "width": 408,
+      "height": 560
+    }
+  },
+  {
+    "id": "journal",
+    "path": "assets/ui/refined-journal-v1.png",
+    "bytes": 125001,
+    "sourceCrop": {
+      "left": 810,
+      "top": 650,
+      "width": 444,
+      "height": 560
+    }
+  }
+]
