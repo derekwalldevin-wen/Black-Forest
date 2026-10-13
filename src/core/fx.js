@@ -6,6 +6,12 @@
  * ========================================================== */
 
 const FX = {
+  // Visual travel only. CombatScene owns the one authoritative damage settlement.
+  enemyStrike(scene) {
+    if(MOTION.reduced)return;
+    const fx=MOTION.effect(scene,'impact',STAGE.ENEMY_X-70,scene.enemyCenterY,170);
+    if(fx)scene.tweens.add({targets:fx,x:STAGE.HERO_X,y:STAGE.HERO_BODY_Y,duration:MOTION.impactDelay,ease:'Quad.easeIn'});
+  },
   // Local player HUD light: persists long enough to read at phone scale.
   playerFeedback(scene, type, sound) {
     SFX.play(scene, sound || type);

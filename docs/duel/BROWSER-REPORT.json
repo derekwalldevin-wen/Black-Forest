@@ -1,0 +1,391 @@
+{
+  "checks": [
+    {
+      "key": "duel-wolf",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3043478260869565,
+      "width": 456.5217391304348,
+      "nameClear": true,
+      "impact": {
+        "x": 704,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-mushroom",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 713.4809391972731,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-witch",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 704.070901324138,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-boar",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3,
+      "width": 455,
+      "nameClear": true,
+      "impact": {
+        "x": 704.4419385507257,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-alpha-wolf",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.3125,
+      "width": 454.125,
+      "nameClear": true,
+      "impact": {
+        "x": 704.0177321664634,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-bog-witch",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 704.4419385507257,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-forest-lord",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 704.0398909657515,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-nine-tail",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.1854103343465046,
+      "width": 414.8936170212766,
+      "nameClear": true,
+      "impact": {
+        "x": 704.0398909657515,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-lu-shu",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.2662337662337662,
+      "width": 443.18181818181813,
+      "nameClear": true,
+      "impact": {
+        "x": 704,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-qiongqi",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.2173913043478262,
+      "width": 424.8695652173913,
+      "nameClear": true,
+      "impact": {
+        "x": 704.0398909657515,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-xiangliu",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 704.070901324138,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-fei",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 704.0044334689126,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-huodou",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.2280701754385965,
+      "width": 429.82456140350877,
+      "nameClear": true,
+      "impact": {
+        "x": 704.4419385507257,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "duel-taotie",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": false,
+      "scale": 1.3142857142857143,
+      "width": 460,
+      "nameClear": true,
+      "impact": {
+        "x": 704,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-baize",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.1370262390670554,
+      "width": 369.533527696793,
+      "nameClear": true,
+      "impact": {
+        "x": 704.0398909657515,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    },
+    {
+      "key": "motion-dijiang",
+      "enemyX": 750,
+      "heroX": 260,
+      "ground": [
+        980,
+        980
+      ],
+      "flip": true,
+      "scale": 1.308139534883721,
+      "width": 443.4593023255814,
+      "nameClear": true,
+      "impact": {
+        "x": 704,
+        "hp": 56,
+        "frame": 2
+      },
+      "recovered": {
+        "x": 750,
+        "y": 980,
+        "state": "idle",
+        "hero": "idle"
+      }
+    }
+  ],
+  "smallScreen": true,
+  "reducedMotion": true,
+  "errors": []
+}

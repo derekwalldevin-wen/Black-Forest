@@ -1,0 +1,818 @@
+[
+  {
+    "id": "wolf",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/wolf.png",
+    "bounds": [
+      {
+        "left": 128,
+        "top": 55,
+        "width": 328,
+        "height": 438,
+        "bottom": 492
+      },
+      {
+        "left": 60,
+        "top": 57,
+        "width": 452,
+        "height": 435,
+        "bottom": 491
+      },
+      {
+        "left": 0,
+        "top": 103,
+        "width": 492,
+        "height": 390,
+        "bottom": 492
+      },
+      {
+        "left": 116,
+        "top": 42,
+        "width": 396,
+        "height": 420,
+        "bottom": 461
+      },
+      {
+        "left": 0,
+        "top": 42,
+        "width": 458,
+        "height": 419,
+        "bottom": 460
+      },
+      {
+        "left": 113,
+        "top": 43,
+        "width": 370,
+        "height": 419,
+        "bottom": 461
+      }
+    ]
+  },
+  {
+    "id": "mushroom",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/mushroom.png",
+    "bounds": [
+      {
+        "left": 132,
+        "top": 60,
+        "width": 285,
+        "height": 421,
+        "bottom": 480
+      },
+      {
+        "left": 50,
+        "top": 71,
+        "width": 462,
+        "height": 410,
+        "bottom": 480
+      },
+      {
+        "left": 0,
+        "top": 111,
+        "width": 441,
+        "height": 370,
+        "bottom": 480
+      },
+      {
+        "left": 128,
+        "top": 46,
+        "width": 285,
+        "height": 403,
+        "bottom": 448
+      },
+      {
+        "left": 94,
+        "top": 76,
+        "width": 347,
+        "height": 373,
+        "bottom": 448
+      },
+      {
+        "left": 95,
+        "top": 93,
+        "width": 309,
+        "height": 356,
+        "bottom": 448
+      }
+    ]
+  },
+  {
+    "id": "witch",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/witch.png",
+    "bounds": [
+      {
+        "left": 84,
+        "top": 97,
+        "width": 348,
+        "height": 380,
+        "bottom": 476
+      },
+      {
+        "left": 52,
+        "top": 35,
+        "width": 460,
+        "height": 439,
+        "bottom": 473
+      },
+      {
+        "left": 0,
+        "top": 156,
+        "width": 448,
+        "height": 314,
+        "bottom": 469
+      },
+      {
+        "left": 105,
+        "top": 88,
+        "width": 337,
+        "height": 364,
+        "bottom": 451
+      },
+      {
+        "left": 85,
+        "top": 79,
+        "width": 314,
+        "height": 378,
+        "bottom": 456
+      },
+      {
+        "left": 135,
+        "top": 87,
+        "width": 317,
+        "height": 371,
+        "bottom": 457
+      }
+    ]
+  },
+  {
+    "id": "boar",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/boar.png",
+    "bounds": [
+      {
+        "left": 89,
+        "top": 51,
+        "width": 356,
+        "height": 439,
+        "bottom": 489
+      },
+      {
+        "left": 43,
+        "top": 56,
+        "width": 469,
+        "height": 434,
+        "bottom": 489
+      },
+      {
+        "left": 0,
+        "top": 98,
+        "width": 508,
+        "height": 392,
+        "bottom": 489
+      },
+      {
+        "left": 66,
+        "top": 50,
+        "width": 375,
+        "height": 418,
+        "bottom": 467
+      },
+      {
+        "left": 93,
+        "top": 47,
+        "width": 370,
+        "height": 421,
+        "bottom": 467
+      },
+      {
+        "left": 105,
+        "top": 60,
+        "width": 375,
+        "height": 408,
+        "bottom": 467
+      }
+    ]
+  },
+  {
+    "id": "alpha-wolf",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-alpha-wolf.png",
+    "bounds": [
+      {
+        "left": 64,
+        "top": 64,
+        "width": 287,
+        "height": 320,
+        "bottom": 383
+      },
+      {
+        "left": 42,
+        "top": 121,
+        "width": 333,
+        "height": 262,
+        "bottom": 382
+      },
+      {
+        "left": 32,
+        "top": 98,
+        "width": 346,
+        "height": 286,
+        "bottom": 383
+      },
+      {
+        "left": 64,
+        "top": 63,
+        "width": 287,
+        "height": 321,
+        "bottom": 383
+      },
+      {
+        "left": 39,
+        "top": 116,
+        "width": 318,
+        "height": 268,
+        "bottom": 383
+      },
+      {
+        "left": 48,
+        "top": 77,
+        "width": 319,
+        "height": 307,
+        "bottom": 383
+      }
+    ]
+  },
+  {
+    "id": "bog-witch",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/bog-witch.png",
+    "bounds": [
+      {
+        "left": 72,
+        "top": 70,
+        "width": 383,
+        "height": 425,
+        "bottom": 494
+      },
+      {
+        "left": 47,
+        "top": 24,
+        "width": 465,
+        "height": 470,
+        "bottom": 493
+      },
+      {
+        "left": 0,
+        "top": 107,
+        "width": 489,
+        "height": 389,
+        "bottom": 495
+      },
+      {
+        "left": 79,
+        "top": 44,
+        "width": 382,
+        "height": 423,
+        "bottom": 466
+      },
+      {
+        "left": 71,
+        "top": 46,
+        "width": 388,
+        "height": 417,
+        "bottom": 462
+      },
+      {
+        "left": 73,
+        "top": 66,
+        "width": 380,
+        "height": 399,
+        "bottom": 464
+      }
+    ]
+  },
+  {
+    "id": "forest-lord",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/forest-lord.png",
+    "bounds": [
+      {
+        "left": 117,
+        "top": 32,
+        "width": 303,
+        "height": 449,
+        "bottom": 480
+      },
+      {
+        "left": 25,
+        "top": 20,
+        "width": 487,
+        "height": 463,
+        "bottom": 482
+      },
+      {
+        "left": 0,
+        "top": 124,
+        "width": 443,
+        "height": 363,
+        "bottom": 486
+      },
+      {
+        "left": 115,
+        "top": 12,
+        "width": 304,
+        "height": 446,
+        "bottom": 457
+      },
+      {
+        "left": 68,
+        "top": 36,
+        "width": 367,
+        "height": 418,
+        "bottom": 453
+      },
+      {
+        "left": 77,
+        "top": 39,
+        "width": 372,
+        "height": 421,
+        "bottom": 459
+      }
+    ]
+  },
+  {
+    "id": "nine-tail",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-nine-tail.png",
+    "bounds": [
+      {
+        "left": 55,
+        "top": 55,
+        "width": 305,
+        "height": 329,
+        "bottom": 383
+      },
+      {
+        "left": 49,
+        "top": 39,
+        "width": 350,
+        "height": 345,
+        "bottom": 383
+      },
+      {
+        "left": 46,
+        "top": 62,
+        "width": 346,
+        "height": 321,
+        "bottom": 382
+      },
+      {
+        "left": 55,
+        "top": 62,
+        "width": 303,
+        "height": 322,
+        "bottom": 383
+      },
+      {
+        "left": 51,
+        "top": 59,
+        "width": 348,
+        "height": 325,
+        "bottom": 383
+      },
+      {
+        "left": 46,
+        "top": 72,
+        "width": 349,
+        "height": 312,
+        "bottom": 383
+      }
+    ]
+  },
+  {
+    "id": "lu-shu",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/lu-shu.png",
+    "bounds": [
+      {
+        "left": 29,
+        "top": 44,
+        "width": 482,
+        "height": 451,
+        "bottom": 494
+      },
+      {
+        "left": 40,
+        "top": 15,
+        "width": 472,
+        "height": 485,
+        "bottom": 499
+      },
+      {
+        "left": 0,
+        "top": 48,
+        "width": 492,
+        "height": 449,
+        "bottom": 496
+      },
+      {
+        "left": 21,
+        "top": 49,
+        "width": 481,
+        "height": 409,
+        "bottom": 457
+      },
+      {
+        "left": 26,
+        "top": 42,
+        "width": 451,
+        "height": 418,
+        "bottom": 459
+      },
+      {
+        "left": 5,
+        "top": 111,
+        "width": 495,
+        "height": 348,
+        "bottom": 458
+      }
+    ]
+  },
+  {
+    "id": "qiongqi",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-qiongqi.png",
+    "bounds": [
+      {
+        "left": 72,
+        "top": 40,
+        "width": 272,
+        "height": 344,
+        "bottom": 383
+      },
+      {
+        "left": 53,
+        "top": 55,
+        "width": 333,
+        "height": 329,
+        "bottom": 383
+      },
+      {
+        "left": 33,
+        "top": 37,
+        "width": 349,
+        "height": 346,
+        "bottom": 382
+      },
+      {
+        "left": 74,
+        "top": 34,
+        "width": 272,
+        "height": 350,
+        "bottom": 383
+      },
+      {
+        "left": 66,
+        "top": 65,
+        "width": 291,
+        "height": 319,
+        "bottom": 383
+      },
+      {
+        "left": 36,
+        "top": 78,
+        "width": 337,
+        "height": 306,
+        "bottom": 383
+      }
+    ]
+  },
+  {
+    "id": "xiangliu",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-xiangliu.png",
+    "bounds": [
+      {
+        "left": 35,
+        "top": 106,
+        "width": 346,
+        "height": 278,
+        "bottom": 383
+      },
+      {
+        "left": 31,
+        "top": 78,
+        "width": 324,
+        "height": 306,
+        "bottom": 383
+      },
+      {
+        "left": 39,
+        "top": 124,
+        "width": 333,
+        "height": 260,
+        "bottom": 383
+      },
+      {
+        "left": 41,
+        "top": 98,
+        "width": 340,
+        "height": 286,
+        "bottom": 383
+      },
+      {
+        "left": 31,
+        "top": 87,
+        "width": 350,
+        "height": 298,
+        "bottom": 384
+      },
+      {
+        "left": 31,
+        "top": 124,
+        "width": 341,
+        "height": 260,
+        "bottom": 383
+      }
+    ]
+  },
+  {
+    "id": "fei",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/fei.png",
+    "bounds": [
+      {
+        "left": 50,
+        "top": 121,
+        "width": 424,
+        "height": 369,
+        "bottom": 489
+      },
+      {
+        "left": 58,
+        "top": 64,
+        "width": 454,
+        "height": 427,
+        "bottom": 490
+      },
+      {
+        "left": 0,
+        "top": 99,
+        "width": 465,
+        "height": 388,
+        "bottom": 486
+      },
+      {
+        "left": 34,
+        "top": 97,
+        "width": 461,
+        "height": 360,
+        "bottom": 456
+      },
+      {
+        "left": 65,
+        "top": 72,
+        "width": 447,
+        "height": 386,
+        "bottom": 457
+      },
+      {
+        "left": 0,
+        "top": 94,
+        "width": 475,
+        "height": 362,
+        "bottom": 455
+      }
+    ]
+  },
+  {
+    "id": "huodou",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-huodou.png",
+    "bounds": [
+      {
+        "left": 82,
+        "top": 41,
+        "width": 250,
+        "height": 342,
+        "bottom": 382
+      },
+      {
+        "left": 52,
+        "top": 108,
+        "width": 337,
+        "height": 275,
+        "bottom": 382
+      },
+      {
+        "left": 31,
+        "top": 119,
+        "width": 350,
+        "height": 265,
+        "bottom": 383
+      },
+      {
+        "left": 82,
+        "top": 54,
+        "width": 250,
+        "height": 330,
+        "bottom": 383
+      },
+      {
+        "left": 57,
+        "top": 110,
+        "width": 268,
+        "height": 274,
+        "bottom": 383
+      },
+      {
+        "left": 48,
+        "top": 113,
+        "width": 319,
+        "height": 271,
+        "bottom": 383
+      }
+    ]
+  },
+  {
+    "id": "taotie",
+    "newArt": true,
+    "frames": 6,
+    "flipX": false,
+    "source": "docs/duel/source/taotie.png",
+    "bounds": [
+      {
+        "left": 51,
+        "top": 91,
+        "width": 430,
+        "height": 401,
+        "bottom": 491
+      },
+      {
+        "left": 33,
+        "top": 72,
+        "width": 479,
+        "height": 414,
+        "bottom": 485
+      },
+      {
+        "left": 0,
+        "top": 157,
+        "width": 480,
+        "height": 316,
+        "bottom": 472
+      },
+      {
+        "left": 52,
+        "top": 84,
+        "width": 430,
+        "height": 385,
+        "bottom": 468
+      },
+      {
+        "left": 62,
+        "top": 58,
+        "width": 369,
+        "height": 399,
+        "bottom": 456
+      },
+      {
+        "left": 32,
+        "top": 126,
+        "width": 428,
+        "height": 330,
+        "bottom": 455
+      }
+    ]
+  },
+  {
+    "id": "baize",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-baize.png",
+    "bounds": [
+      {
+        "left": 76,
+        "top": 41,
+        "width": 263,
+        "height": 342,
+        "bottom": 382
+      },
+      {
+        "left": 65,
+        "top": 79,
+        "width": 294,
+        "height": 305,
+        "bottom": 383
+      },
+      {
+        "left": 72,
+        "top": 76,
+        "width": 301,
+        "height": 307,
+        "bottom": 382
+      },
+      {
+        "left": 71,
+        "top": 53,
+        "width": 277,
+        "height": 331,
+        "bottom": 383
+      },
+      {
+        "left": 54,
+        "top": 66,
+        "width": 295,
+        "height": 318,
+        "bottom": 383
+      },
+      {
+        "left": 46,
+        "top": 86,
+        "width": 325,
+        "height": 297,
+        "bottom": 382
+      }
+    ]
+  },
+  {
+    "id": "dijiang",
+    "newArt": false,
+    "frames": 6,
+    "flipX": true,
+    "source": "assets/anim/enemy-dijiang.png",
+    "bounds": [
+      {
+        "left": 54,
+        "top": 40,
+        "width": 309,
+        "height": 344,
+        "bottom": 383
+      },
+      {
+        "left": 52,
+        "top": 45,
+        "width": 305,
+        "height": 338,
+        "bottom": 382
+      },
+      {
+        "left": 27,
+        "top": 38,
+        "width": 339,
+        "height": 346,
+        "bottom": 383
+      },
+      {
+        "left": 56,
+        "top": 53,
+        "width": 300,
+        "height": 331,
+        "bottom": 383
+      },
+      {
+        "left": 51,
+        "top": 82,
+        "width": 304,
+        "height": 302,
+        "bottom": 383
+      },
+      {
+        "left": 61,
+        "top": 138,
+        "width": 287,
+        "height": 245,
+        "bottom": 382
+      }
+    ]
+  }
+]

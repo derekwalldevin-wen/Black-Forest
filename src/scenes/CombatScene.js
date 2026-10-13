@@ -196,9 +196,9 @@ class CombatScene extends Phaser.Scene {
   }
 
   buildEnemyZone() {
-    const line=this.add.graphics().setDepth(9);line.lineStyle(2,PAL.gold,.5);line.lineBetween(365,STAGE.ENEMY_NAME_Y+40,715,STAGE.ENEMY_NAME_Y+40);
+    const line=this.add.graphics().setDepth(9);line.lineStyle(2,PAL.gold,.5);line.lineBetween(STAGE.ENEMY_X-155,STAGE.ENEMY_NAME_Y+40,STAGE.ENEMY_X+155,STAGE.ENEMY_NAME_Y+40);
     // 敌人名字
-    this.enemyNameText = this.add.text(STAGE.X, STAGE.ENEMY_NAME_Y, '', {
+    this.enemyNameText = this.add.text(STAGE.ENEMY_X, STAGE.ENEMY_NAME_Y, '', {
       fontFamily: FONT, fontSize: '44px', color: '#e8dcc0', fontStyle: 'bold',
       stroke: '#0d0a12', strokeThickness: 6
     }).setOrigin(0.5).setDepth(10);
@@ -589,8 +589,8 @@ class CombatScene extends Phaser.Scene {
       if (n > 0) {
         const meta = STATUS_META[k];
         E.hp = Math.max(0, E.hp - n);
-        FX.pop(this, STAGE.X, this._fxEnemyY(-158), String(n), '#' + meta.color.toString(16).padStart(6, '0'), 44);
-        FX.pop(this, STAGE.X, this._fxEnemyY(-100), meta.name, '#a89a80', 28);
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), String(n), '#' + meta.color.toString(16).padStart(6, '0'), 44);
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-100), meta.name, '#a89a80', 28);
         E.st[k] = n - 1;
         this.refreshEnemyHp();
         if (E.hp <= 0) { E.alive = false; return this.onEnemyDeath(); }
@@ -604,8 +604,8 @@ class CombatScene extends Phaser.Scene {
      * 转成永久的燎原。放在减益递减之后，才拿到「真正残留」的那些层。 */
     const absorbed = enemyTurnRule(E);
     if (absorbed > 0) {
-      FX.pop(this, STAGE.X, this._fxEnemyY(-100), '循火 +' + absorbed, '#e8a03c', 40);
-      FX.pop(this, STAGE.X, this._fxEnemyY(-52), '燎原', '#e8a03c', 28);
+      FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-100), '循火 +' + absorbed, '#e8a03c', 40);
+      FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-52), '燎原', '#e8a03c', 28);
     }
     this.refreshEnemyStatus();
 
@@ -637,9 +637,10 @@ class CombatScene extends Phaser.Scene {
       case 'attack': {
         SFX.play(this,'attack');
         MOTION.playEnemy(this, this.enemySprite, 'attack');
+        FX.enemyStrike(this);
         for (let i = 0; i < act.hits; i++) {
           if (i > 0) this.time.delayedCall(i * 260, () => {
-            if (E.alive && P.hp > 0) { SFX.play(this,'attack'); MOTION.playEnemy(this, this.enemySprite, 'attack'); }
+            if (E.alive && P.hp > 0) { SFX.play(this,'attack'); MOTION.playEnemy(this, this.enemySprite, 'attack'); FX.enemyStrike(this); }
           });
           this.time.delayedCall(MOTION.impactDelay + i * 260, () => {
             if (!E.alive || P.hp <= 0) return;
@@ -649,7 +650,7 @@ class CombatScene extends Phaser.Scene {
             if (act.drain && P.hp < before) {
               const got = Math.min(act.drain, before - P.hp);
               E.hp = Math.min(E.hpMax, E.hp + got);
-              FX.pop(this, STAGE.X, this._fxEnemyY(78), '+' + got, '#c94b40', 34);
+              FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(78), '+' + got, '#c94b40', 34);
               this.refreshEnemyHp();
             }
           });
@@ -660,21 +661,21 @@ class CombatScene extends Phaser.Scene {
         SFX.play(this,'guard');
         E.block += act.block;
         MOTION.playEnemy(this, this.enemySprite, 'defend');
-        if (!MOTION.effect(this, 'guard', STAGE.X, this.enemyCenterY, 260)) FX.aura(this, STAGE.X, this.enemyCenterY, PAL.blue, 220);
+        if (!MOTION.effect(this, 'guard', STAGE.ENEMY_X, this.enemyCenterY, 260)) FX.aura(this, STAGE.ENEMY_X, this.enemyCenterY, PAL.blue, 220);
         this.refreshEnemyHp();
         this.refreshEnemyStatus();
         break;
       }
       case 'buff': {
         E.st[act.stat] = (E.st[act.stat] || 0) + act.v;
-        FX.aura(this, STAGE.X, this.enemyCenterY, PAL.gold, 220);
+        FX.aura(this, STAGE.ENEMY_X, this.enemyCenterY, PAL.gold, 220);
         this.refreshEnemyStatus();
         break;
       }
       case 'rule': {
         // 「循火」本体在 runEnemyTurn 的 enemyTurnRule 里已经算过了，
         // 这里只补一个提示，让预告和实际发生的事对得上。
-        if (E.st.burnDmg > 0) FX.pop(this, STAGE.X, this._fxEnemyY(-52), '循火', '#e8a03c', 30);
+        if (E.st.burnDmg > 0) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-52), '循火', '#e8a03c', 30);
         break;
       }
       case 'debuff': {
@@ -690,7 +691,7 @@ class CombatScene extends Phaser.Scene {
       case 'heal': {
         if (E.hp < E.hpMax && act.v > 0) SFX.play(this,'heal');
         E.hp = Math.min(E.hpMax, E.hp + act.v);
-        FX.pop(this, STAGE.X, this._fxEnemyY(96), '+' + act.v, '#7ec9a0', 48);
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(96), '+' + act.v, '#7ec9a0', 48);
         this.refreshEnemyHp();
         break;
       }
@@ -769,8 +770,8 @@ class CombatScene extends Phaser.Scene {
     if (!E.alive) return 0;
     addStatus(E, 'burn', stacks);
     const hex = '#' + STATUS_META.burn.color.toString(16).padStart(6, '0');
-    FX.pop(this, STAGE.X, this._fxEnemyY(-158), '灼烧 +' + stacks, hex, 40);
-    FX.aura(this, STAGE.X, this._fxEnemyY(-40), STATUS_META.burn.color, 200);
+    FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), '灼烧 +' + stacks, hex, 40);
+    FX.aura(this, STAGE.ENEMY_X, this._fxEnemyY(-40), STATUS_META.burn.color, 200);
     this.refreshEnemyStatus();
     return stacks;
   }
@@ -818,7 +819,7 @@ class CombatScene extends Phaser.Scene {
     if (S.selected === card) S.selected = null;
     this.hidePlayHint();          // 牌已经飞出去了，提示条不能留在原地
     const aimed = (d.type === 'attack');
-    const tx = aimed ? STAGE.X : 450;
+    const tx = aimed ? STAGE.ENEMY_X : 450;
     const ty = aimed ? this.enemyCenterY : STAGE.PLAYER_Y;
     card.flyOut(tx, ty);
     HeroFX.cast(this,d);
@@ -856,7 +857,7 @@ class CombatScene extends Phaser.Scene {
         break;
       case 'damagePoisonBonus': {
         const d = E.st.poison > 0 ? eff.v + eff.bonus : eff.v;
-        if (E.st.poison > 0) FX.pop(this, STAGE.X, this._fxEnemyY(-158), '中毒!', '#6b9b5a', 34);
+        if (E.st.poison > 0) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), '中毒!', '#6b9b5a', 34);
         this.hitEnemy(d);
         break;
       }
@@ -893,7 +894,7 @@ class CombatScene extends Phaser.Scene {
         break;
       case 'enemyLose':
         E.st[eff.stat] = (E.st[eff.stat] || 0) - eff.v;
-        FX.pop(this, STAGE.X, this._fxEnemyY(-172), '-' + eff.v + ' ' + (STATUS_META[eff.stat] || {}).name, '#9d76b8', 34);
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-172), '-' + eff.v + ' ' + (STATUS_META[eff.stat] || {}).name, '#9d76b8', 34);
         break;
       case 'poison':
         this.gainStatus(E, 'poison', eff.v);
@@ -951,17 +952,17 @@ class CombatScene extends Phaser.Scene {
     const real = hitEnemyCore(base, P, E, S.mods, opts);
     if (beforeBlock > E.block) SFX.play(this,'block');
     if (real > 0) SFX.play(this,'impact');
-    if (beforeBlock > E.block) MOTION.effect(this, 'block', STAGE.X, this.enemyCenterY, 240);
-    if (real > 0) MOTION.effect(this, 'impact', STAGE.X, this.enemyCenterY, 270);
+    if (beforeBlock > E.block) MOTION.effect(this, 'block', STAGE.ENEMY_X, this.enemyCenterY, 240);
+    if (real > 0) MOTION.effect(this, 'impact', STAGE.ENEMY_X, this.enemyCenterY, 270);
 
     if (!opts.quiet) {
       FX.hitEnemy(this, this.enemySprite);
       FX.shake(this, 0.004, 120);
-      if (E.block > 0 && real < base) FX.pop(this, STAGE.X, this._fxEnemyY(-172), '-' + (E.block + real), '#6f9ec4', 40);
-      if (real > 0) FX.pop(this, STAGE.X, this.enemyCenterY, String(real), '#ff6b6b', 58);
-      else if (E.block === 0 && base > 0) FX.pop(this, STAGE.X, this.enemyCenterY, '0', '#8a92a8', 40);
+      if (E.block > 0 && real < base) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-172), '-' + (E.block + real), '#6f9ec4', 40);
+      if (real > 0) FX.pop(this, STAGE.ENEMY_X, this.enemyCenterY, String(real), '#ff6b6b', 58);
+      else if (E.block === 0 && base > 0) FX.pop(this, STAGE.ENEMY_X, this.enemyCenterY, '0', '#8a92a8', 40);
     }
-    if (real > 0) FX.burst(this, STAGE.X, this.enemyCenterY, E.elite || E.boss ? 0xd4656a : 0x8c2f39, 10);
+    if (real > 0) FX.burst(this, STAGE.ENEMY_X, this.enemyCenterY, E.elite || E.boss ? 0xd4656a : 0x8c2f39, 10);
     this.refreshEnemyHp();
     this.refreshEnemyStatus();
 
@@ -976,12 +977,14 @@ class CombatScene extends Phaser.Scene {
     if(r.real>0||r.absorbed>0)HeroFX.react(this,r.real>0?'hurt':'block');
 
     if (r.absorbed > 0) {
+      MOTION.effect(this,'block',STAGE.HERO_X,STAGE.HERO_BODY_Y,210);
       FX.playerFeedback(this, 'block');
       FX.pop(this, 450, this._fxPlayerY(-70), '-' + r.absorbed, '#6f9ec4', 42);
       if (!MOTION.effect(this, 'block', 240, STAGE.PLAYER_Y, 180)) FX.aura(this, 240, STAGE.PLAYER_Y, PAL.blue, 90);
     }
     if (r.real > 0) {
       FX.playerFeedback(this, 'hurt');
+      MOTION.effect(this,'hurt',STAGE.HERO_X,STAGE.HERO_BODY_Y,210);
       if (!MOTION.effect(this, 'hurt', 240, STAGE.PLAYER_Y, 240)) FX.slash(this, 240, STAGE.PLAYER_Y, -.5);
       FX.pop(this, 450, this._fxPlayerY(96), String(r.real), '#ff6b6b', 58);
       FX.shake(this, 0.012, 220);
@@ -990,7 +993,7 @@ class CombatScene extends Phaser.Scene {
     if (r.thorns > 0) {
       this.time.delayedCall(140, () => {
         E.hp = Math.max(0, E.hp - r.thorns);
-        FX.pop(this, STAGE.X, this._fxEnemyY(-104), String(r.thorns), '#b08050', 38);
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-104), String(r.thorns), '#b08050', 38);
         this.refreshEnemyHp();
         if (E.hp <= 0) { E.alive = false; this.onEnemyDeath(); }
       });
@@ -1094,7 +1097,7 @@ class CombatScene extends Phaser.Scene {
     if (this.enemyShadow) {
       this.tweens.add({ targets: this.enemyShadow, alpha: 0, duration: 420, ease: 'Quad.easeIn' });
     }
-    FX.burst(this, STAGE.X, this.enemyCenterY, 0x8c2f39, 30);
+    FX.burst(this, STAGE.ENEMY_X, this.enemyCenterY, 0x8c2f39, 30);
     FX.shake(this, 0.014, 400);
     this.time.delayedCall(300, () => { this.intentSlot.removeAll(true); });
     this.time.delayedCall(700, () => this.victory());
@@ -1504,17 +1507,17 @@ class CombatScene extends Phaser.Scene {
     this.enemyNameText.setText(E.name);
     this.enemyNameText.setColor(E.boss ? '#d4656a' : (E.elite ? '#d9a441' : '#e8dcc0'));
 
-    const targetH = E.boss ? 550 : (E.elite ? 520 : 470);
+    const targetH = E.boss ? 450 : (E.elite ? 420 : 390);
     // 脚底钉在地平线上，而不是把贴图中心放在某个写死的 y。
     // 之前写死 570，BOSS 390 高 → 脚底落在 765，而地平线在 790 之下，
     // 脚下空无一物，于是整个人浮在半空。
     const centerY = STAGE.HORIZON - targetH / 2;
-    const animated = MOTION.makeEnemy(this, E.art, targetH, STAGE.X, STAGE.HORIZON);
+    const animated = MOTION.makeEnemy(this, E.art, targetH, STAGE.ENEMY_X, STAGE.HORIZON);
     if (animated) {
       this.enemySprite = animated;
       if (E.tint !== 0xffffff) animated.setTint(E.tint);
     } else if (this.textures.exists(E.art)) {
-      const img = this.add.image(STAGE.X, centerY, E.art).setOrigin(0.5).setDepth(10);
+      const img = this.add.image(STAGE.ENEMY_X, centerY, E.art).setOrigin(0.5).setDepth(10);
       const layout = ENEMY_ART_LAYOUT[E.art];
       const s = targetH / (layout ? layout.visibleBounds.height : img.height);
       if (layout) img.y = STAGE.HORIZON - (layout.visibleBounds.top + layout.visibleBounds.height - layout.height / 2) * s;
@@ -1523,7 +1526,7 @@ class CombatScene extends Phaser.Scene {
       this.enemySprite = img;
     } else {
       // 贴图缺失时的兜底剪影
-      const c = this.add.container(STAGE.X, centerY).setDepth(10);
+      const c = this.add.container(STAGE.ENEMY_X, centerY).setDepth(10);
       const g = this.add.graphics();
       g.fillStyle(0x2a2233, 1);
       g.fillEllipse(0, 0, 200, targetH);
@@ -1532,9 +1535,10 @@ class CombatScene extends Phaser.Scene {
       c.add(g);
       this.enemySprite = c;
     }
-    this.enemySprite.baseX = STAGE.X;
+    this.enemySprite.baseX = STAGE.ENEMY_X;
     this.enemySprite.baseY = this.enemySprite.y;
-    this.enemyCenterY = animated ? STAGE.HORIZON - targetH / 2 : this.enemySprite.y;
+    this.enemyCenterX = STAGE.ENEMY_X;
+    this.enemyCenterY = animated ? STAGE.HORIZON - MOTION_ASSETS.enemies[E.art].visibleHeight * animated.scaleY / 2 : this.enemySprite.y;
 
     /* 接地阴影。这是「有没有站在地上」最决定性的一笔：台座能骗过
      * 眼睛，但脚底那个又小又深的椭圆骗不过。宽高随立绘高度缩放，
@@ -1543,7 +1547,7 @@ class CombatScene extends Phaser.Scene {
     const hov = HOVERING_ENEMIES.indexOf(E.id) >= 0;
     const sg = this.add.graphics().setDepth(3);
     drawContactShadow(
-      sg, STAGE.X, STAGE.HORIZON - (hov ? targetH * 0.045 : 0),
+      sg, STAGE.ENEMY_X, STAGE.HORIZON - (hov ? targetH * 0.045 : 0),
       STAGE.SHADOW_RX * (targetH / 360), targetH * 0.058,
       hov ? 0.42 : 1
     );
@@ -1551,7 +1555,7 @@ class CombatScene extends Phaser.Scene {
 
     // HP 条压在台座前缘之下（台座底 ≈ 907，HP 条 910..958），不再糊在脚上
     if (this.enemyHpBar) this.enemyHpBar.destroy();
-    this.enemyHpBar = makeHpBar(this, STAGE.X - 210, STAGE.ENEMY_HP_Y - 24, 420, 48,
+    this.enemyHpBar = makeHpBar(this, STAGE.ENEMY_X - 180, STAGE.ENEMY_HP_Y - 24, 360, 48,
       E.hp, E.hpMax, E.boss ? 0x8c2f39 : 0xa8443f);
     this.enemyHpBar.setDepth(11);
 
@@ -1612,7 +1616,7 @@ class CombatScene extends Phaser.Scene {
       statusIndex++;
     }
     if (E.block > 0) {
-      this.enemyStatusRow.add(makeBlockBadge(this, STAGE.X + 268, Y, E.block, 36));
+      this.enemyStatusRow.add(makeBlockBadge(this, STAGE.ENEMY_X + 235, Y, E.block, 36));
     }
   }
 

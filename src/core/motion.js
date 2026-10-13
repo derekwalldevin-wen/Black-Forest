@@ -23,7 +23,8 @@ const MOTION = {
     const a = MOTION_ASSETS.enemies[art];
     if (!this.enabled || !a || !scene.textures.exists(a.key)) return null;
     const sprite = scene.add.sprite(x, groundY, a.key, 0)
-      .setOrigin(.5, a.anchorY / a.frameHeight).setScale(height / a.visibleHeight).setDepth(10);
+      .setOrigin(.5, a.anchorY / a.frameHeight).setScale(Math.min(height / a.visibleHeight,460/(a.visibleWidth||a.frameWidth))).setFlipX(!!a.flipX).setDepth(10);
+    sprite.baseX=x;sprite.baseY=groundY;
     sprite._motionKey = a.key;
     sprite._motionTimers = [];
     sprite.once('destroy', () => this.clearEnemyTimers(sprite));
@@ -39,6 +40,8 @@ const MOTION = {
     // Transient poses need an explicit return even when no frame animation runs.
     // Cancel the previous reaction so an old hit cannot reset a newer attack.
     this.clearEnemyTimers(sprite);
+    if(sprite._duelTween){sprite._duelTween.stop();sprite._duelTween=null;}
+    sprite.setPosition(sprite.baseX,sprite.baseY);
     sprite._motionState = state;
     if (this.reduced) {
       sprite.stop().setFrame(state === 'hit' ? 4 : state === 'defend' ? 5 : state === 'attack' ? 1 : 0);
@@ -50,6 +53,8 @@ const MOTION = {
       }));
       return true;
     }
+    if(state==='attack')sprite._duelTween=scene.tweens.add({targets:sprite,x:sprite.baseX-46,duration:this.impactDelay,yoyo:true,hold:20,ease:'Sine.easeInOut'});
+    else if(state==='hit')sprite._duelTween=scene.tweens.add({targets:sprite,x:sprite.baseX+18,duration:65,yoyo:true,ease:'Quad.easeOut'});
     const sequences = {
       idle: { frames: [0, 3], fps: 2, repeat: -1 },
       attack: { frames: [0, 1, 2, 3, 0], fps: 12.5 },
@@ -69,6 +74,7 @@ const MOTION = {
   stopEnemy(sprite) {
     if (!sprite || !sprite._motionKey) return;
     sprite._motionDead = true;
+    if(sprite._duelTween){sprite._duelTween.stop();sprite._duelTween=null;}
     this.clearEnemyTimers(sprite);
     sprite._motionState = 'dead';
     sprite.stop().setFrame(4);
