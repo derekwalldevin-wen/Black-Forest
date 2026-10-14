@@ -1,0 +1,14 @@
+{
+  "base": "http://127.0.0.1:8899/",
+  "checks": [
+    "real input unlock; title decoded and looping",
+    "real music bus signal 0.14394956827163696",
+    "rapid track requests crossfade and retire old sources",
+    "gothic combat automatically selects second score",
+    "independent volume and mute persist",
+    "global mute and background lifecycle",
+    "settings rendered at 320px; journal retains quieter combat track",
+    "sound=off disables music"
+  ],
+  "errors": []
+}

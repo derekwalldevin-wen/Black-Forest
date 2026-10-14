@@ -90,13 +90,16 @@ class JournalScene extends Phaser.Scene {
   }
   renderAudio() {
     this.text(540,220,'声音设置',66,null,{fontStyle:'bold'}).setOrigin(.5);
-    this.text(540,342,'音效与战斗反馈同步',40,'#b9ab90').setOrigin(.5);
-    this.button(540,540,800,'音效：'+(SFX.muted?'静音':'开启'),()=>{SFX.set('muted',!SFX.muted);this.render();if(!SFX.muted)SFX.play(this,'heal');},{skin:'secondary',fontSize:44});
-    this.text(540,750,'音量 '+Math.round(SFX.volume*100)+'%',52,'#e8dcc0').setOrigin(.5);
+    this.text(540,342,'配乐与音效可分别调整',40,'#b9ab90').setOrigin(.5);
+    this.button(540,540,800,'全部声音：'+(SFX.muted?'静音':'开启'),()=>{SFX.set('muted',!SFX.muted);BGM.tick();this.render();if(!SFX.muted)SFX.play(this,'heal');},{skin:'secondary',fontSize:44});
+    this.text(540,750,'音效音量 '+Math.round(SFX.volume*100)+'%',52,'#e8dcc0').setOrigin(.5);
     this.button(290,920,380,'降低音量',()=>{SFX.set('volume',Math.round((SFX.volume-.1)*100)/100);this.render();SFX.play(this,'guard');},{skin:'secondary',fontSize:42}).setEnabled(SFX.volume>0);
     this.button(790,920,380,'提高音量',()=>{SFX.set('volume',Math.round((SFX.volume+.1)*100)/100);this.render();SFX.play(this,'guard');},{skin:'secondary',fontSize:42}).setEnabled(SFX.volume<1);
     this.button(540,1160,800,'试听：格挡与回血',()=>{SFX.play(this,'block');this.time.delayedCall(430,()=>{if(this.mode==='audio')SFX.play(this,'heal');});},{skin:'primary',fontSize:42}).setEnabled(!SFX.muted&&SFX.volume>0);
-    this.text(540,1390,wrapCJK('设置会自动保存。切到后台会停止声音；返回后等待下一次操作。',800,40),40,'#b9ab90',{align:'center',lineSpacing:12}).setOrigin(.5,0);
+    this.text(540,1320,'音乐音量 '+Math.round(BGM.volume*100)+'%',46,'#e8dcc0').setOrigin(.5);
+    this.button(290,1450,380,'音乐减小',()=>{BGM.set('volume',Math.round((BGM.volume-.1)*100)/100);this.render();},{skin:'secondary',fontSize:38}).setEnabled(BGM.volume>0);
+    this.button(790,1450,380,'音乐增大',()=>{BGM.set('volume',Math.round((BGM.volume+.1)*100)/100);this.render();},{skin:'secondary',fontSize:38}).setEnabled(BGM.volume<1);
+    this.button(540,1620,800,'背景音乐：'+(BGM.muted?'静音':'开启'),()=>{BGM.set('muted',!BGM.muted);this.render();},{skin:'secondary',fontSize:38});
   }
   renderRelics() {
     this.text(540,195,'遗物与妖契',66,null,{fontStyle:'bold'}).setOrigin(.5);

@@ -1,0 +1,2949 @@
+{
+  "bpm": 68,
+  "events": [
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 0,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 0,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 0,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 0,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 0,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 0,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 1,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 2,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 3,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 0,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 2,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 3,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 4,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 4,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 4,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 4,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 4,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 4,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 5,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 6,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 7,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 4,
+      "beats": 2,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 6.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 8,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 8,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 8,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 69,
+      "start": 8,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 41,
+      "start": 8,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 8,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 9,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 10,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 11,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 8.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 10,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 48,
+      "start": 12,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 55,
+      "start": 12,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 12,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 12,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 36,
+      "start": 12,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 60,
+      "start": 12,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 13,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 67,
+      "start": 14,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 15,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 12,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 14,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 16,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 16,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 16,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 16,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 16,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 16,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 17,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 18,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 19,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 16,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 17.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 19,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 43,
+      "start": 20,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 20,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 20,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 20,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 31,
+      "start": 20,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 55,
+      "start": 20,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 21,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 22,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 23,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 20,
+      "beats": 2,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 22.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 24,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 24,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 24,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 24,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 24,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 24,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 25,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 26,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 27,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 24,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 26,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 45,
+      "start": 28,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 52,
+      "start": 28,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 61,
+      "start": 28,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 67,
+      "start": 28,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 33,
+      "start": 28,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 57,
+      "start": 28,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 29,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 64,
+      "start": 30,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 31,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 28,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 30,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 31.5,
+      "beats": 0.4,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 32,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 32,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 32,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 32,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 32,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 32,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 33,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 34,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 35,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 32,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 34,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 35,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 36,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 36,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 36,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 36,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 36,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 36,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 37,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 38,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 39,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 36,
+      "beats": 2,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 38.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 40,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 40,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 40,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 69,
+      "start": 40,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 41,
+      "start": 40,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 40,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 41,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 42,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 43,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 40.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 42,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 48,
+      "start": 44,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 55,
+      "start": 44,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 44,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 44,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 36,
+      "start": 44,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 60,
+      "start": 44,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 45,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 67,
+      "start": 46,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 47,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 44,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 46,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 48,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 48,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 48,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 48,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 48,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 48,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 49,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 50,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 51,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 48,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 49.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 51,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 43,
+      "start": 52,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 52,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 52,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 52,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 31,
+      "start": 52,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 55,
+      "start": 52,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 53,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 54,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 55,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 52,
+      "beats": 2,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 54.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 56,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 56,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 56,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 56,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 56,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 56,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 57,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 58,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 59,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 56,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 58,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 45,
+      "start": 60,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 52,
+      "start": 60,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 61,
+      "start": 60,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 67,
+      "start": 60,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 33,
+      "start": 60,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 57,
+      "start": 60,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 61,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 64,
+      "start": 62,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 63,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 60,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 62,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 63.5,
+      "beats": 0.4,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 64,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 64,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 64,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 64,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 64,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 64,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 65,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 66,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 67,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 86,
+      "start": 64,
+      "beats": 1.5,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 89,
+      "start": 66,
+      "beats": 0.75,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 88,
+      "start": 67,
+      "beats": 0.75,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 68,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 68,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 68,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 68,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 68,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 68,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 69,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 70,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 71,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 81,
+      "start": 68,
+      "beats": 2,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 84,
+      "start": 70.5,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 72,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 72,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 72,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 69,
+      "start": 72,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 41,
+      "start": 72,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 72,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 73,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 74,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 75,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 89,
+      "start": 72.5,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 93,
+      "start": 74,
+      "beats": 1.5,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 48,
+      "start": 76,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 55,
+      "start": 76,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 76,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 76,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 36,
+      "start": 76,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 60,
+      "start": 76,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 77,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 67,
+      "start": 78,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 79,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 91,
+      "start": 76,
+      "beats": 1.5,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 88,
+      "start": 78,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 80,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 80,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 80,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 80,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 80,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 80,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 81,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 82,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 83,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 86,
+      "start": 80,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 81,
+      "start": 81.5,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 84,
+      "start": 83,
+      "beats": 0.75,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 43,
+      "start": 84,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 84,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 84,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 84,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 31,
+      "start": 84,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 55,
+      "start": 84,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 85,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 86,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 87,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 82,
+      "start": 84,
+      "beats": 2,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 81,
+      "start": 86.5,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 88,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 88,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 88,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 88,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 88,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 88,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 89,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 90,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 91,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 77,
+      "start": 88,
+      "beats": 1.5,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 81,
+      "start": 90,
+      "beats": 1.5,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 45,
+      "start": 92,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 52,
+      "start": 92,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 61,
+      "start": 92,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 67,
+      "start": 92,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 33,
+      "start": 92,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 57,
+      "start": 92,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 93,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 64,
+      "start": 94,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 95,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "bell",
+      "midi": 85,
+      "start": 92,
+      "beats": 1.5,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 88,
+      "start": 94,
+      "beats": 1,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 81,
+      "start": 95.5,
+      "beats": 0.4,
+      "amp": 0.11,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 96,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 96,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 96,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 96,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 96,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 96,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 97,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 98,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 99,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 96,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 98,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 99,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 84,
+      "start": 99,
+      "beats": 1,
+      "amp": 0.045,
+      "pan": -0.3
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 100,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 100,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 100,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 100,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 100,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 100,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 101,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 102,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 103,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 100,
+      "beats": 2,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 102.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 104,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 104,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 104,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 69,
+      "start": 104,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 41,
+      "start": 104,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 104,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 105,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 106,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 107,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 104.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 81,
+      "start": 106,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 88,
+      "start": 107,
+      "beats": 1,
+      "amp": 0.045,
+      "pan": -0.3
+    },
+    {
+      "kind": "pad",
+      "midi": 48,
+      "start": 108,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 55,
+      "start": 108,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 108,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 64,
+      "start": 108,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 36,
+      "start": 108,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 60,
+      "start": 108,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 109,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 67,
+      "start": 110,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 111,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 108,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 110,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 112,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 112,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 60,
+      "start": 112,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 65,
+      "start": 112,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 38,
+      "start": 112,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 112,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 113,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 114,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 77,
+      "start": 115,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 112,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 113.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 72,
+      "start": 115,
+      "beats": 0.75,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 84,
+      "start": 115,
+      "beats": 1,
+      "amp": 0.045,
+      "pan": -0.3
+    },
+    {
+      "kind": "pad",
+      "midi": 43,
+      "start": 116,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 50,
+      "start": 116,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 58,
+      "start": 116,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 116,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 31,
+      "start": 116,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 55,
+      "start": 116,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 117,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 62,
+      "start": 118,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 119,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 70,
+      "start": 116,
+      "beats": 2,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 118.5,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pad",
+      "midi": 46,
+      "start": 120,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 53,
+      "start": 120,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 57,
+      "start": 120,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 62,
+      "start": 120,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 34,
+      "start": 120,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 58,
+      "start": 120,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 121,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 122,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 74,
+      "start": 123,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 65,
+      "start": 120,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 122,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "bell",
+      "midi": 81,
+      "start": 123,
+      "beats": 1,
+      "amp": 0.045,
+      "pan": -0.3
+    },
+    {
+      "kind": "pad",
+      "midi": 45,
+      "start": 124,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.51
+    },
+    {
+      "kind": "pad",
+      "midi": 52,
+      "start": 124,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": -0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 61,
+      "start": 124,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.17
+    },
+    {
+      "kind": "pad",
+      "midi": 67,
+      "start": 124,
+      "beats": 3.8,
+      "amp": 0.17,
+      "pan": 0.51
+    },
+    {
+      "kind": "bass",
+      "midi": 33,
+      "start": 124,
+      "beats": 2.9,
+      "amp": 0.11,
+      "pan": -0.05
+    },
+    {
+      "kind": "pluck",
+      "midi": 57,
+      "start": 124,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 125,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 64,
+      "start": 126,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": -0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 79,
+      "start": 127,
+      "beats": 0.7,
+      "amp": 0.085,
+      "pan": 0.35
+    },
+    {
+      "kind": "pluck",
+      "midi": 73,
+      "start": 124,
+      "beats": 1.5,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 76,
+      "start": 126,
+      "beats": 1,
+      "amp": 0.16,
+      "pan": 0.12
+    },
+    {
+      "kind": "pluck",
+      "midi": 69,
+      "start": 127.5,
+      "beats": 0.4,
+      "amp": 0.16,
+      "pan": 0.12
+    }
+  ]
+}

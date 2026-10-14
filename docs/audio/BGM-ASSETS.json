@@ -1,0 +1,35 @@
+{
+  "source": "Original composition and deterministic instrumental synthesis: tools/compose-bgm.js. No external samples.",
+  "tracks": [
+    {
+      "id": "title",
+      "title": "灯还亮着",
+      "bpm": 68,
+      "file": "assets/audio/bgm-title-v1.wav",
+      "duration": 112.94116666666666,
+      "bars": 32,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peak": 0.72,
+      "rms": 0.17700587505180967,
+      "seamDelta": 0.003276624939584151,
+      "bytes": 10842396,
+      "sha256": "18a80f5b6893f2bc062c41bf2fc6189808b5c725991f88fe424b3ce4aa8b0f86"
+    },
+    {
+      "id": "gothic",
+      "title": "循灯入林",
+      "bpm": 88,
+      "file": "assets/audio/bgm-gothic-v1.wav",
+      "duration": 87.27270833333333,
+      "bars": 32,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peak": 0.72,
+      "rms": 0.14146293708537633,
+      "seamDelta": 0.007632775666843764,
+      "bytes": 8378224,
+      "sha256": "583be4143b3b91337799f99e16a527ec2d517c72c1301e43b25b8c83caf3348c"
+    }
+  ]
+}

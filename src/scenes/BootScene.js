@@ -7,6 +7,7 @@ class BootScene extends Phaser.Scene {
   preload() {
     GAME_PREFS.load();
     SFX.preload(this);
+    BGM.init(this.game);
     const cx = 540, cy = 960;
 
     const bg = this.add.graphics().setDepth(-2);
