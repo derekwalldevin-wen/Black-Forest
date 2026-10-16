@@ -35,28 +35,29 @@ class RewardScene extends Phaser.Scene {
     this._received = this._storyPending?this._storyPending.progress.received.slice():[];
 
     /* ---------- 战利品结算 ---------- */
-    this.add.text(540, 220, '战 利 品', {
+    this.add.text(540, 220, I18N.t('reward.title'), {
       fontFamily: FONT, fontSize: '64px', color: '#c8a86a', fontStyle: 'bold',
       stroke: '#0d0a12', strokeThickness: 8
     }).setOrigin(0.5).setDepth(5);
 
-    this.add.text(540, 300, '击败了 ' + (this.reward.name || '敌人'), {
+    const enemyKey=this.reward.enemyId||Object.keys(ENEMY_DEFS).find(id=>ENEMY_DEFS[id].name===this.reward.name);
+    this.add.text(540, 300, I18N.t('reward.defeated',{name:enemyKey?I18N.name('enemy',enemyKey):I18N.t('reward.enemy')}), {
       fontFamily: FONT, fontSize: '30px', color: '#8a7f9c'
     }).setOrigin(0.5).setDepth(5);
 
     // 金币飞入动画
-    const gt = this.add.text(540, 440, '◈  +' + this.reward.gold, {
+    const gt = this.add.text(540, 440, '◆  +' + this.reward.gold, {
       fontFamily: FONT, fontSize: '64px', color: '#c8a86a', fontStyle: 'bold',
       stroke: '#0d0a12', strokeThickness: 8
     }).setOrigin(0.5).setDepth(5).setScale(0.4);
     this.tweens.add({ targets: gt, scale: 1, duration: 420, ease: 'Back.easeOut' });
 
-    this.add.text(540, 520, '当前 ◈ ' + RUN.gold + '　·　生命 ' + RUN.hp + '/' + RUN.maxHp, {
+    this.add.text(540, 520, I18N.t('reward.resources',{gold:RUN.gold,hp:RUN.hp,maxHp:RUN.maxHp}), {
       fontFamily: FONT, fontSize: '28px', color: '#a89a80'
     }).setOrigin(0.5).setDepth(5);
 
     /* ---------- 卡牌三选一 ---------- */
-    this.add.text(540, 580, '挑 选 一 张 卡 牌', {
+    this.cardChoiceHeading=this.add.text(540, 580, I18N.t('reward.chooseCard'), {
       fontFamily: FONT, fontSize: '38px', color: '#e8dcc0', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(5);
 
@@ -64,12 +65,12 @@ class RewardScene extends Phaser.Scene {
     this.buildCardChoices();
 
     // 跳过（牌组太厚时可以选择不加牌）
-    this.skipBtn = makeButton(this, 280, 1760, 380, 136, '跳 过', () => this.skipCard(),
+    this.skipBtn = makeButton(this, 280, 1760, 380, 136, I18N.t('reward.skip'), () => this.skipCard(),
       { accent: PAL.boneDim, color: 0x241f30 });
     this.skipBtn.setDepth(6);
 
     /* ---------- 底部按钮（先隐藏，选完卡再出现） ---------- */
-    this.continueBtn = makeButton(this, 800, 1760, 380, 136, '继 续', () => this.goNext(),
+    this.continueBtn = makeButton(this, 800, 1760, 380, 136, I18N.t('reward.continue'), () => this.goNext(),
       { accent: PAL.gold, color: 0x2c2438 });
     this.continueBtn.setEnabled(false);
     this.continueBtn.setDepth(6);
@@ -188,13 +189,11 @@ class RewardScene extends Phaser.Scene {
     FX.aura(this, 540, 1010, PAL.gold, 260);
 
     // 标题换成确认文案
-    for (const c of this.children.list.slice()) {
-      if (c.text === '挑 选 一 张 卡 牌') c.destroy();
-    }
-    this.add.text(540, 640, '「' + CARD_DEFS[id].name + '」已加入牌组', {
+    if(this.cardChoiceHeading?.active)this.cardChoiceHeading.destroy();
+    this.add.text(540, 640, I18N.t('reward.cardAdded',{name:I18N.cardName(CARD_DEFS[id])}), {
       fontFamily: FONT, fontSize: '36px', color: '#7ec9a0', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(5);
-    this.add.text(540, 700, '牌组现有 ' + RUN.deck.length + ' 张牌', {
+    this.add.text(540, 700, I18N.t('reward.deckCount',{count:RUN.deck.length}), {
       fontFamily: FONT, fontSize: '26px', color: '#8a7f9c'
     }).setOrigin(0.5).setDepth(5);
 
@@ -229,10 +228,10 @@ class RewardScene extends Phaser.Scene {
     for (const c of this.children.list.slice()) {
       if (c.text && c.depth === 5) c.destroy();
     }
-    this.add.text(540, 220, '选择遗物', {
+    this.relicChoiceHeading=this.add.text(540, 220, I18N.t('reward.chooseRelic'), {
       fontFamily: FONT, fontSize: '64px', color: '#e8dcc0', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(5);
-    uiText(this,540,320,'点击一件即可领取',42,'#c4b698').setOrigin(.5).setDepth(5);
+    this.relicChoiceHint=uiText(this,540,320,I18N.t('reward.relicHint'),42,'#c4b698').setOrigin(.5).setDepth(5);
     this.relicHero=this.add.image(540,600,'ui-reward-chest').setDisplaySize(944,490).setDepth(4);
 
     const picks = this._storyPending?this._storyPending.progress.relicOffer.slice():[];
@@ -270,10 +269,10 @@ class RewardScene extends Phaser.Scene {
       ig.destroy();
       item.add(drawRelicIcon(this,-320,0,248,id));
 
-      const nm = this.add.text(-150, -115, d.name, {
+      const nm = this.add.text(-150, -115, I18N.name('relic',id,d.name), {
         fontFamily: FONT, fontSize: '44px', color: '#e8dcc0', fontStyle: 'bold'
       }).setOrigin(0,0);
-      const tx = this.add.text(-150, -30, wrapCJK(d.text, 560, 40), {
+      const tx = this.add.text(-150, -30, wrapCJK(I18N.description('relic',id,d.text), 560, 40), {
         fontFamily: FONT, fontSize: '40px', color: '#d1c5ac', align: 'center',
         lineSpacing: 6
       }).setOrigin(0, 0);
@@ -311,24 +310,27 @@ class RewardScene extends Phaser.Scene {
     this.saveStoryReward('continue');
     RUN.save();
     this.tweens.add({ targets: layer, alpha: 0, scale: 0.9, duration: 280, onComplete: () => layer.destroy() });
-    FX.pop(this, 540, 780, '获得遗物：' + RELIC_DEFS[id].name, '#c8a86a', 40);
+    FX.pop(this, 540, 780, I18N.t('reward.relicAdded',{name:I18N.name('relic',id,RELIC_DEFS[id].name)}), '#c8a86a', 40);
     this.time.delayedCall(520, () => this.enableContinue());
   }
 
   enableContinue() {
     this._stage = 'continue';
+    if(this.cardChoiceHeading?.active)this.cardChoiceHeading.destroy();
+    if(this.relicChoiceHeading?.active)this.relicChoiceHeading.setText(I18N.t('reward.title'));
+    if(this.relicChoiceHint?.active)this.relicChoiceHint.destroy();
     this.saveStoryReward('continue');
     if(this.receipt)this.receipt.destroy();
     if(this.relicHero)this.relicHero.destroy();
     this.receipt=this.add.container(540,1450).setDepth(10);
     this.receipt.add(uiSurface(this,0,0,920,300,'panel'));
-    this.receipt.add(uiText(this,0,-94,'领取完成',52,'#e8dcc0',{fontStyle:'bold'}).setOrigin(.5));
+    this.receipt.add(uiText(this,0,-94,I18N.t('reward.claimed'),52,'#e8dcc0',{fontStyle:'bold'}).setOrigin(.5));
     const rows=this._received.length?this._received:[{kind:'skip'}];
     rows.forEach((r,i)=>{
-      const label=r.kind==='card'?'卡牌：'+CARD_DEFS[r.id].name:r.kind==='relic'?'遗物：'+RELIC_DEFS[r.id].name:'跳过加牌，保留当前牌组';
+      const label=r.kind==='card'?I18N.t('reward.cardReceipt',{name:I18N.cardName(CARD_DEFS[r.id])}):r.kind==='relic'?I18N.t('reward.relicReceipt',{name:I18N.name('relic',r.id,RELIC_DEFS[r.id].name)}):I18N.t('reward.skipReceipt');
       this.receipt.add(uiText(this,0,-15+i*70,'✓ '+label,42,'#d9c79c').setOrigin(.5));
     });
-    this.continueBtn.setLabel('继续征途');
+    this.continueBtn.setLabel(I18N.t('reward.continueJourney'));
     this.continueBtn.setEnabled(true);
     this.tweens.add({ targets: this.continueBtn, alpha: 1, y: 1760, duration: 260, ease: 'Back.easeOut' });
   }
@@ -386,13 +388,14 @@ class RewardScene extends Phaser.Scene {
 
     const ending=STORY.ending(),hasStory=!!STORY.state().choices.ending;
     this.add.image(540,650,hasStory&&this.textures.exists('story-'+ending.art)?'story-'+ending.art:'ui-ending-book').setDisplaySize(950,600).setDepth(3);
-    this.add.text(540, 220, hasStory?ending.title:'你 走 出 了 黑 森 林', {
-      fontFamily: FONT, fontSize: '60px', color: '#e8dcc0', fontStyle: 'bold',
+    const endingTitleSize=I18N.locale==='en'?48:60;
+    this.add.text(540, 220, wrapCJK(hasStory?ending.title:I18N.t('reward.escaped'),940,endingTitleSize), {
+      fontFamily: FONT, fontSize: endingTitleSize+'px', color: '#e8dcc0', fontStyle: 'bold',align:'center',
       stroke: '#0d0a12', strokeThickness: 8
     }).setOrigin(0.5).setDepth(5);
 
-    this.add.text(540, 320, hasStory?ending.summary:'森林合上了，古籍也翻到了最后一页。你还醒着。', {
-      fontFamily: FONT, fontSize: '36px', color: '#c4b698'
+    this.add.text(540, 300, wrapCJK(hasStory?ending.summary:I18N.t('reward.escapedSummary'),920,32), {
+      fontFamily: FONT, fontSize: '32px', color: '#c4b698',align:'center'
     }).setOrigin(0.5).setDepth(5);
 
     const c = this.add.container(540, 1200).setDepth(6);
@@ -404,11 +407,11 @@ class RewardScene extends Phaser.Scene {
     g.destroy();c.add(uiSurface(this,0,0,920,540,'panel'));
 
     const stats = [
-      ['剩余生命', RUN.hp + ' / ' + RUN.maxHp],
-      ['累计击杀', RUN.kills + ' 名'],
-      ['牌组张数', RUN.deck.length + ' 张'],
-      ['灵韵上限', (RUN.spiritMax || 3) + ' 点'],
-      ['遗物', RUN.relics.length + ' 件']
+      [I18N.t('reward.hp'), RUN.hp + ' / ' + RUN.maxHp],
+      [I18N.t('reward.kills'), String(RUN.kills)],
+      [I18N.t('reward.deck'), String(RUN.deck.length)],
+      [I18N.t('reward.spirit'), String(RUN.spiritMax || 3)],
+      [I18N.t('reward.relics'), String(RUN.relics.length)]
     ];
     stats.forEach(([k, v], i) => {
       const y = -150 + i * 68;
@@ -416,7 +419,7 @@ class RewardScene extends Phaser.Scene {
       c.add(this.add.text(350, y, v, { fontFamily: FONT, fontSize: '44px', color: '#e8dcc0', fontStyle: 'bold' }).setOrigin(1, 0.5));
     });
 
-    const b = makeButton(this, 0, 300, 400, 110, '再 走 一 次', () => {
+    const b = makeButton(this, 0, 300, 400, 110, I18N.t('reward.again'), () => {
       // 「再走一次」要能换打法，所以回标题的传承选择，而不是直接开一把。
       RUN.clearSave();
       this.cameras.main.fadeOut(300, 0, 0, 0);
@@ -424,10 +427,10 @@ class RewardScene extends Phaser.Scene {
     }, { accent: PAL.gold });
     c.add(b);
 
-    if(hasStory)makeButton(this,540,1650,640,136,'旅途手记',()=>{
+    if(hasStory)makeButton(this,540,1650,640,136,I18N.t('reward.journal'),()=>{
       this.scene.launch('Story',{kind:'journal',returnTo:'Reward'});this.scene.pause();this.scene.bringToTop('Story');
     },{skin:'secondary',fontSize:42}).setDepth(10);
-    const b2 = makeButton(this, 540, hasStory?1820:1750, 640, 136, '返 回', () => {
+    const b2 = makeButton(this, 540, hasStory?1820:1750, 640, 136, I18N.t('reward.back'), () => {
       this.cameras.main.fadeOut(300, 0, 0, 0);
       this.time.delayedCall(320, () => this.scene.start('Title'));
     }, { accent: PAL.blue });

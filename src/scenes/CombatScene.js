@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
  * CombatScene — 竖屏 1V1 回合制战斗
  *
  * 融合点：
@@ -109,6 +109,7 @@ class CombatScene extends Phaser.Scene {
   buildBackground() {
     // 背景图与遮罩浓度由主题决定：哥特篇用 bg-forest，东方篇换成 bg-ruins
     this.bg = paintBackground(this, 0.24);
+    LIVING_SCENE.mount(this);
     // 上半区压得更暗，让敌人立绘突出。
     // 压到地平线为止——再往下会连地面一起洗灰，纵深就没了。
     const v = this.add.graphics().setDepth(1);
@@ -188,15 +189,18 @@ class CombatScene extends Phaser.Scene {
       const y=ids.length>1?130+index*40:150,size=ids.length>1?42:82;
       const item=this.add.container(200,y).setData('contractId',id);
       item.add(iconArt(this,-108,0,size,'contract',id)||drawGlyph(this,-108,0,size*.35,'flame',d.color));
-      item.add(uiText(this,-54,0,d.name,ids.length>1?28:34,'#e8c18e',{fontStyle:'bold'}).setOrigin(0,.5));
+      item.add(uiText(this,-54,0,I18N.name('contract',id,d.name),ids.length>1?28:34,'#e8c18e',{fontStyle:'bold'}).setOrigin(0,.5));
       item.setSize(310,ids.length>1?40:84).setInteractive();
-      item.on('pointerdown',(p,x,y,ev)=>{if(ev)ev.stopPropagation();showArtTip(this,d.name,d.text,'contract',id);});
+      item.on('pointerdown',(p,x,y,ev)=>{if(ev)ev.stopPropagation();showArtTip(this,I18N.name('contract',id,d.name),I18N.description('contract',id,d.text),'contract',id);});
       g.add(item);
     });
   }
 
   buildEnemyZone() {
-    const line=this.add.graphics().setDepth(9);line.lineStyle(2,PAL.gold,.5);line.lineBetween(STAGE.ENEMY_X-155,STAGE.ENEMY_NAME_Y+40,STAGE.ENEMY_X+155,STAGE.ENEMY_NAME_Y+40);
+    if (this.textures.exists('enemy-nameplate')) {
+      this.enemyNameplate = this.add.image(STAGE.ENEMY_X, STAGE.ENEMY_NAME_Y, 'enemy-nameplate')
+        .setOrigin(.5, .55).setDisplaySize(600, 300).setDepth(9);
+    }
     // 敌人名字
     this.enemyNameText = this.add.text(STAGE.ENEMY_X, STAGE.ENEMY_NAME_Y, '', {
       fontFamily: FONT, fontSize: '44px', color: '#e8dcc0', fontStyle: 'bold',
@@ -256,15 +260,15 @@ class CombatScene extends Phaser.Scene {
       fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(7).setVisible(false);
     this.spiritText.setShadow(0, 3, '#000000', 5, false, true);
-    this.spiritLabel = this.add.text(450, STAGE.BAR_SPIRIT_LABEL_Y, '灵韵', {
+    this.spiritLabel = this.add.text(450, STAGE.BAR_SPIRIT_LABEL_Y, I18N.t('combat.spirit'), {
       fontFamily: FONT, fontSize: '34px', color: '#e8c379',
       fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(7).setVisible(false);
     this.spiritLabel.setShadow(0, 2, '#000000', 4, false, true);
 
-    this.endTurnBtn = makeButton(this, 800, STAGE.BAR_Y, 380, 128, '结 束 回 合', () => this.endTurn(),
+    this.endTurnBtn = makeButton(this, 800, STAGE.BAR_Y, 380, 128, I18N.t('combat.endTurn'), () => this.endTurn(),
       { accent: PAL.gold, color: 0x2c2438, skin:'primary', fontSize: 46 }).setDepth(8);
-    this.energyLabel=uiText(this,188,STAGE.BAR_SPIRIT_LABEL_Y,'行动力',34,'#88cfe3').setOrigin(.5).setDepth(7);
+    this.energyLabel=uiText(this,188,STAGE.BAR_SPIRIT_LABEL_Y,I18N.t('combat.energy'),34,'#88cfe3').setOrigin(.5).setDepth(7);
     this.spiritIcon=this.add.image(370,STAGE.BAR_Y,'ui-refined-spirit').setDisplaySize(106,106).setDepth(7).setVisible(false);
     this.resonanceText=uiText(this,436,1898,'',30,'#e8c379').setOrigin(.5).setDepth(7).setVisible(false);
 
@@ -274,8 +278,8 @@ class CombatScene extends Phaser.Scene {
     this.drawPileText = this.add.text(STAGE.PILE_LX, STAGE.PILE_Y, '0', {
       fontFamily: FONT, fontSize: '34px', color: '#e8dcc0', fontStyle: 'bold', stroke: '#0d0a12', strokeThickness: 5
     }).setOrigin(0.5).setDepth(7);
-    this.add.text(STAGE.PILE_LX,STAGE.PILE_Y+82,'抽牌',{fontFamily:FONT,fontSize:'30px',color:'#c8a86a'}).setOrigin(.5).setDepth(7);
-    this.add.text(STAGE.PILE_RX,STAGE.PILE_Y+82,'弃牌',{fontFamily:FONT,fontSize:'30px',color:'#b2a2be'}).setOrigin(.5).setDepth(7);
+    this.add.text(STAGE.PILE_LX,STAGE.PILE_Y+82,I18N.t('combat.draw'),{fontFamily:FONT,fontSize:'30px',color:'#c8a86a'}).setOrigin(.5).setDepth(7);
+    this.add.text(STAGE.PILE_RX,STAGE.PILE_Y+82,I18N.t('combat.discard'),{fontFamily:FONT,fontSize:'30px',color:'#b2a2be'}).setOrigin(.5).setDepth(7);
 
     this.discardPileIcon = this.add.container(STAGE.PILE_RX, STAGE.PILE_Y).setDepth(6);
     this.discardPileText = this.add.text(STAGE.PILE_RX, STAGE.PILE_Y, '0', {
@@ -465,7 +469,7 @@ class CombatScene extends Phaser.Scene {
     // 「点了没反应」正是要消掉的东西，所以按钮必须一上来就是禁用态。
     this.refreshEnergy();
     this.refreshHandState();
-    this.endTurnBtn.setLabel('准 备 中');   // refreshHandState 在 busy 时会写「敌方行动」，但开场其实是「还没开始」
+    this.endTurnBtn.setLabel(I18N.t('combat.preparing'));   // refreshHandState 在 busy 时会写「敌方行动」，但开场其实是「还没开始」
 
     this.time.delayedCall(420, () => this.startPlayerTurn(true));
   }
@@ -489,7 +493,7 @@ class CombatScene extends Phaser.Scene {
     resetContractBurn(S.contractMods);
 
     // 不灭火种：免疫灼烧，代价是每回合烧自己一点
-    if (S.mods.selfIgnite) this.rawDamagePlayer(S.mods.selfIgnite, '火种', 0xd97a2b);
+    if (S.mods.selfIgnite) this.rawDamagePlayer(S.mods.selfIgnite, I18N.t('combat.ignite'), 0xd97a2b);
 
     // 能力牌持续效果
     for (const pw of S.player.powers) {
@@ -573,12 +577,21 @@ class CombatScene extends Phaser.Scene {
       });
     });
 
-    this.showBanner('敌方行动…', 0xd4656a);
+    expireCounter(S.player);
+    const playerBleedLoss = tickEndStatuses(S.player);
+    if (playerBleedLoss > 0) {
+      FX.playerFeedback(this, 'hurt');
+      FX.pop(this, 450, this._fxPlayerY(96), I18N.name('status', 'bleed') + ' −' + playerBleedLoss, '#ce5364', 38);
+      this.refreshPlayer();
+    }
+    if (S.player.hp <= 0) return this.gameOver();
+    this.showBanner(I18N.t('combat.enemyBanner'), 0xd4656a);
     this.time.delayedCall(620, () => this.runEnemyTurn());
   }
 
   runEnemyTurn() {
     const S = this.state, E = S.enemy;
+    beginGuardWindow(S.player);
     // 同下文的理由：敌人已经死了就直接结算，不要开一个打不赢的回合。
     if (!E.alive) return this.victory();
 
@@ -590,8 +603,8 @@ class CombatScene extends Phaser.Scene {
         const meta = STATUS_META[k];
         E.hp = Math.max(0, E.hp - n);
         FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), String(n), '#' + meta.color.toString(16).padStart(6, '0'), 44);
-        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-100), meta.name, '#a89a80', 28);
-        E.st[k] = n - 1;
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-100), I18N.name('status',k,meta.name), '#a89a80', 28);
+        // 伤害循环不减层；下面统一递减一次。
         this.refreshEnemyHp();
         if (E.hp <= 0) { E.alive = false; return this.onEnemyDeath(); }
       }
@@ -604,8 +617,8 @@ class CombatScene extends Phaser.Scene {
      * 转成永久的燎原。放在减益递减之后，才拿到「真正残留」的那些层。 */
     const absorbed = enemyTurnRule(E);
     if (absorbed > 0) {
-      FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-100), '循火 +' + absorbed, '#e8a03c', 40);
-      FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-52), '燎原', '#e8a03c', 28);
+      FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-100), I18N.t('combat.absorb')+' +' + absorbed, '#e8a03c', 40);
+      FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-52), I18N.t('combat.wildfire'), '#e8a03c', 28);
     }
     this.refreshEnemyStatus();
 
@@ -625,6 +638,16 @@ class CombatScene extends Phaser.Scene {
        * 「打出一张牌」才会触发 victory()——手上没牌可打就永久卡住。
        * 敌人死了就该直接结算胜负。 */
       if (!E.alive) return this.victory();
+      if (finishGuardWindow(S.player)) {
+        FX.pop(this, STAGE.HERO_X, this._fxPlayerY(-100), I18N.name('status', 'counter'), '#e8c277', 36);
+      }
+      const bleedLoss = tickEndStatuses(E);
+      if (bleedLoss > 0) {
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-104), I18N.name('status', 'bleed') + ' −' + bleedLoss, '#ce5364', 38);
+        this.refreshEnemyHp();
+        this.refreshEnemyStatus();
+      }
+      if (!E.alive) return this.onEnemyDeath();
       this.startPlayerTurn();
     });
   }
@@ -646,6 +669,11 @@ class CombatScene extends Phaser.Scene {
             if (!E.alive || P.hp <= 0) return;
             const before = P.hp;
             this.intakeDamage(act.dmg);
+            if (act.bleedOnHit && P.hp > 0 && P.hp < before) {
+              addStatus(P, 'bleed', act.bleedOnHit);
+              FX.pop(this, STAGE.HERO_X, this._fxPlayerY(-70), I18N.name('status', 'bleed'), '#ce5364', 34);
+              this.refreshPlayer();
+            }
             // 九尾狐「能食人」：每次命中按实际掉血吸血
             if (act.drain && P.hp < before) {
               const got = Math.min(act.drain, before - P.hp);
@@ -658,6 +686,7 @@ class CombatScene extends Phaser.Scene {
         break;
       }
       case 'defend': {
+        if (act.moveId && act.block === 0) break;
         SFX.play(this,'guard');
         E.block += act.block;
         MOTION.playEnemy(this, this.enemySprite, 'defend');
@@ -675,7 +704,7 @@ class CombatScene extends Phaser.Scene {
       case 'rule': {
         // 「循火」本体在 runEnemyTurn 的 enemyTurnRule 里已经算过了，
         // 这里只补一个提示，让预告和实际发生的事对得上。
-        if (E.st.burnDmg > 0) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-52), '循火', '#e8a03c', 30);
+        if (E.st.burnDmg > 0) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-52), I18N.t('combat.absorb'), '#e8a03c', 30);
         break;
       }
       case 'debuff': {
@@ -770,7 +799,7 @@ class CombatScene extends Phaser.Scene {
     if (!E.alive) return 0;
     addStatus(E, 'burn', stacks);
     const hex = '#' + STATUS_META.burn.color.toString(16).padStart(6, '0');
-    FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), '灼烧 +' + stacks, hex, 40);
+    FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), I18N.name('status','burn')+' +' + stacks, hex, 40);
     FX.aura(this, STAGE.ENEMY_X, this._fxEnemyY(-40), STATUS_META.burn.color, 200);
     this.refreshEnemyStatus();
     return stacks;
@@ -802,6 +831,7 @@ class CombatScene extends Phaser.Scene {
 
     // 第一张攻击牌加成
     const isAttack = d.type === 'attack';
+    S.player.counterAttack = isAttack;
     if (isAttack && !S.firstAttackUsed) {
       S.firstAttackUsed = true;
       if (S.mods.firstAttackBonus) this.hitEnemy(S.mods.firstAttackBonus, { bonus: true });
@@ -847,6 +877,24 @@ class CombatScene extends Phaser.Scene {
   runEffect(eff) {
     const S = this.state, P = S.player, E = S.enemy;
     switch (eff.op) {
+      case 'brace':
+        this.gainBlock(eff.v);
+        P.st.stance = 1;
+        this.refreshPlayer();
+        break;
+      case 'mark':
+        if (E.alive) addStatus(E, 'seal', eff.v);
+        this.refreshEnemyStatus();
+        break;
+      case 'sealBurst':
+        resolveWoundAttack(eff, P, E, S.mods, damage => this.hitEnemy(damage, { talisman: true }));
+        this.refreshEnemyStatus();
+        break;
+      case 'wound':
+      case 'consumeBleed':
+        resolveWoundAttack(eff, P, E, S.mods, damage => this.hitEnemy(damage));
+        this.refreshEnemyStatus();
+        break;
       case 'damage':
         this.hitEnemy(eff.v, { talisman: S.fromTalisman });
         break;
@@ -857,7 +905,7 @@ class CombatScene extends Phaser.Scene {
         break;
       case 'damagePoisonBonus': {
         const d = E.st.poison > 0 ? eff.v + eff.bonus : eff.v;
-        if (E.st.poison > 0) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), '中毒!', '#6b9b5a', 34);
+        if (E.st.poison > 0) FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-158), I18N.t('combat.poisoned'), '#6b9b5a', 34);
         this.hitEnemy(d);
         break;
       }
@@ -880,7 +928,7 @@ class CombatScene extends Phaser.Scene {
         this.healPlayer(eff.v);
         break;
       case 'loseHp':
-        this.rawDamagePlayer(eff.v, '代价', PAL.bloodHi);
+        this.rawDamagePlayer(eff.v, I18N.t('combat.cost'), PAL.bloodHi);
         break;
       case 'selfBuff':
         this.gainStatus(P, eff.stat, eff.v);
@@ -894,7 +942,7 @@ class CombatScene extends Phaser.Scene {
         break;
       case 'enemyLose':
         E.st[eff.stat] = (E.st[eff.stat] || 0) - eff.v;
-        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-172), '-' + eff.v + ' ' + (STATUS_META[eff.stat] || {}).name, '#9d76b8', 34);
+        FX.pop(this, STAGE.ENEMY_X, this._fxEnemyY(-172), '-' + eff.v + ' ' + I18N.name('status',eff.stat,(STATUS_META[eff.stat] || {}).name), '#9d76b8', 34);
         break;
       case 'poison':
         this.gainStatus(E, 'poison', eff.v);
@@ -903,13 +951,13 @@ class CombatScene extends Phaser.Scene {
       /* ---------- 灵韵 / 共鸣（符箓专用算子） ---------- */
       case 'spirit':
         S.spirit = Math.min(S.spiritMax, S.spirit + eff.v);
-        FX.pop(this, 455, STAGE.BAR_SPIRIT_FX_Y, '+' + eff.v + ' 灵韵', '#c9a13f', 36);
+        FX.pop(this, 455, STAGE.BAR_SPIRIT_FX_Y, '+' + eff.v + ' '+I18N.t('combat.spirit'), '#c9a13f', 36);
         break;
       case 'spiritMax':
         S.spiritMax += eff.v;
         RUN.spiritMax = S.spiritMax;
         S.spirit = Math.min(S.spiritMax, S.spirit + eff.v);
-        FX.pop(this, 455, STAGE.BAR_SPIRIT_FX_Y, '灵韵上限 +' + eff.v, '#c9a13f', 34);
+        FX.pop(this, 455, STAGE.BAR_SPIRIT_FX_Y, I18N.t('combat.spiritMax',{value:eff.v}), '#c9a13f', 34);
         break;
       /* 造成 v 点伤害，额外按当前共鸣层数各打一次 */
       case 'resonanceDamage': {
@@ -919,7 +967,7 @@ class CombatScene extends Phaser.Scene {
           this.time.delayedCall(160 + i * 160, () => {
             this.hitEnemy(eff.v, { echo: true, talisman: tal });
             HeroFX.echo(this,true,i);
-            FX.pop(this, STAGE.X, 1660, '共鸣', '#c9a13f', 30);
+            FX.pop(this, STAGE.X, 1660, I18N.t('combat.resonance'), '#c9a13f', 30);
           });
         }
         break;
@@ -1054,7 +1102,7 @@ class CombatScene extends Phaser.Scene {
     if (!silent) {
       const meta = STATUS_META[stat];
       FX.pop(this, isPlayer ? 260 : 540, isPlayer ? 860 : 430,
-        meta.name + ' ' + (stat === 'strength' ? '+' : '') + v,
+        I18N.name('status',stat,meta.name) + ' ' + (stat === 'strength' ? '+' : '') + v,
         '#' + meta.color.toString(16).padStart(6, '0'), 34);
     }
     if (isPlayer) this.refreshPlayer(); else this.refreshEnemyStatus();
@@ -1307,10 +1355,15 @@ class CombatScene extends Phaser.Scene {
     // 但一行都不画。同场景的 CardView 容器却是好的，差异没查到底，
     // 不拿一个「看起来对但可能还有坑」的写法冒险。
     this.hintG = this.add.graphics().setDepth(280).setAlpha(0);
-    this.hintT = this.add.text(0, 0, '点击打出', {
+    this.hintT = this.add.text(0, 0, I18N.t('combat.tap'), {
       fontFamily: FONT, fontSize: '32px', color: '#f0e6d0', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(281).setAlpha(0);
     this.hintT.setShadow(0, 2, '#000000', 6, false, true);
+    this.woundPreview = this.add.text(540, 914, '', {
+      fontFamily: FONT, fontSize: '32px', color: '#f0e6d0',
+      backgroundColor: '#201b28', padding: { x: 20, y: 12 },
+      align: 'center', wordWrap: { width: 810 }, lineSpacing: 4
+    }).setOrigin(0.5).setDepth(279).setVisible(false);
     this._hintX = STAGE.X;
     this._hintY = 1214;
     this._hintProg = 0;
@@ -1391,7 +1444,7 @@ class CombatScene extends Phaser.Scene {
     }
 
     this.hintT.setPosition(x + 34, y);
-    this.hintT.setText(armed ? '松手打出' : (touch ? '上滑打出' : '点击打出'));
+    this.hintT.setText(armed ? I18N.t('combat.release') : (touch ? I18N.t('combat.swipe') : I18N.t('combat.tap')));
     this.hintT.setColor(armed ? '#2b2010' : '#f0e6d0');
     // 金底上的深字不需要投影，留着反而发糊
     this.hintT.setShadow(0, armed ? 0 : 2, '#000000', armed ? 0 : 6, false, true);
@@ -1407,6 +1460,14 @@ class CombatScene extends Phaser.Scene {
     this.hintG.input.enabled = true;
     this.hintG.setAlpha(1);
     this.hintT.setAlpha(1);
+    const preview = previewWoundCard(cv.def, this.state);
+    if (preview) {
+      const op = cv.def.effects[0].op;
+      const key = preview.lethal ? 'lethal' : op === 'sealBurst' ? 'sealBurst' : op === 'consumeBleed'
+        ? (preview.consumes ? 'consume' : 'noBleed') : (preview.wounds ? 'wound' : 'blockedWound');
+      this.woundPreview.setText(I18N.t('combat.preview.damage', { damage: preview.hpLoss, block: preview.absorbed }) + '\n' + I18N.t('combat.preview.' + key, { value: preview.seals }));
+      this.woundPreview.setColor(preview.consumes || preview.wounds || (op === 'sealBurst' && preview.seals > 0) ? '#ffd69b' : '#f0e6d0').setVisible(true);
+    } else this.woundPreview.setVisible(false);
   }
 
   hidePlayHint() {
@@ -1417,6 +1478,7 @@ class CombatScene extends Phaser.Scene {
     this._hintHover = false;
     this.hintG.setAlpha(0);
     this.hintT.setAlpha(0);
+    if (this.woundPreview) this.woundPreview.setVisible(false);
   }
 
   refreshHandState() {
@@ -1434,7 +1496,7 @@ class CombatScene extends Phaser.Scene {
     // 玩家只知道自己点不了，不知道要等多久。
     const canEnd = !S.busy && S.enemy.alive;
     this.endTurnBtn.setEnabled(canEnd);
-    this.endTurnBtn.setLabel(S.busy ? '敌 方 行 动' : '结 束 回 合');
+    this.endTurnBtn.setLabel(S.busy ? I18N.t('combat.enemyActing') : I18N.t('combat.endTurn'));
   }
 
   refreshEnergy() {
@@ -1458,11 +1520,11 @@ class CombatScene extends Phaser.Scene {
     this.spiritText.setVisible(showSpirit);
     if(this.spiritIcon)this.spiritIcon.setVisible(showSpirit).setTint(S.spirit>0?0xffffff:0x77716a);
     this.spiritText.x=476;
-    this.resonanceText.setVisible(showSpirit&&S.resonance>0).setText('共鸣 '+S.resonance);
+    this.resonanceText.setVisible(showSpirit&&S.resonance>0).setText(I18N.t('combat.resonance')+' '+S.resonance);
     if (this.spiritLabel) {
       this.spiritLabel.setVisible(showSpirit);
       // 森林没有主题自带的灵韵标签，回退成「灵韵」
-      if (showSpirit) this.spiritLabel.setText(THEME.spiritLabel || '灵韵');
+      if (showSpirit) this.spiritLabel.setText(I18N.t('combat.spirit'));
     }
     if (showSpirit) {
       const sg = this.spiritG;
@@ -1504,7 +1566,9 @@ class CombatScene extends Phaser.Scene {
    * 敌人显示
    * ======================================================== */
   spawnEnemyVisual(E) {
-    this.enemyNameText.setText(E.name);
+    this.enemyNameText.setText(I18N.name('enemy',E.key,E.name));
+    this.enemyNameText.setFontSize(40);
+    if (this.enemyNameText.width > 420) this.enemyNameText.setFontSize(Math.floor(40 * 420 / this.enemyNameText.width));
     this.enemyNameText.setColor(E.boss ? '#d4656a' : (E.elite ? '#d9a441' : '#e8dcc0'));
 
     const targetH = E.boss ? 450 : (E.elite ? 420 : 390);
@@ -1580,9 +1644,10 @@ class CombatScene extends Phaser.Scene {
     this.intentSlot.add(icon);
 
     // 提示标签
-    const label = this.add.text(0, 74, '下回合', {
-      fontFamily: FONT, fontSize: '28px', color: '#b2a3bf'
-    }).setOrigin(0.5);
+    const moveId = acts[0] && acts[0].moveId;
+    const label = this.add.text(0, 74, moveId ? I18N.t('move.' + moveId + '.hint') : I18N.t('combat.nextTurn'), {
+      fontFamily: FONT, fontSize: '28px', color: '#b2a3bf', align: 'center', wordWrap: { width: 210 }
+    }).setOrigin(0.5, 0);
     this.intentSlot.add(label);
   }
 
@@ -1605,7 +1670,7 @@ class CombatScene extends Phaser.Scene {
   refreshEnemyStatus() {
     const E = this.state.enemy;
     this.enemyStatusRow.removeAll(true);
-    const keys = ['strength', 'vulnerable', 'weak', 'poison', 'burn', 'burnDmg'];
+    const keys = ['strength', 'vulnerable', 'weak', 'poison', 'burn', 'burnDmg', 'bleed', 'seal'];
     const Y = STAGE.ENEMY_HP_Y;
     // 独立侧栏；旧位置 Y+70 与玩家生命条共用一条基线，会互相遮挡。
     let statusIndex = 0;
@@ -1639,7 +1704,7 @@ class CombatScene extends Phaser.Scene {
     }
 
     this.playerStatusRow.removeAll(true);
-    const keys = ['strength', 'vulnerable', 'weak', 'frail', 'poison', 'burn', 'thorns'];
+    const keys = ['strength', 'vulnerable', 'weak', 'frail', 'poison', 'burn', 'thorns', 'bleed', 'stance', 'counter'];
     let x = 806;
     let statusIndex = 0;
     for (const k of keys) {
@@ -1655,24 +1720,24 @@ class CombatScene extends Phaser.Scene {
       const y=STAGE.PLAYER_Y+Math.floor(statusIndex/3)*72;
       const chip=makeStatusChip(this,x,y,'power',P.powers.length);
       chip.removeAllListeners('pointerdown');
-      chip.on('pointerdown',(p,lx,ly,ev)=>{if(ev)ev.stopPropagation();showArtTip(this,'能力 · '+P.powers.length,P.powers.map(pw=>CARD_DEFS[pw.id]?.name||pw.id||'能力').join('、'),'tactical','power');});
+      chip.on('pointerdown',(p,lx,ly,ev)=>{if(ev)ev.stopPropagation();showArtTip(this,I18N.t('combat.powers',{count:P.powers.length}),P.powers.map(pw=>CARD_DEFS[pw.id]?I18N.cardName(CARD_DEFS[pw.id]):pw.id||I18N.t('status.power.name')).join('\n'),'tactical','power');});
       this.playerStatusRow.add(chip);
     }
   }
 
   refreshTop() {
     const ch = RUN.chapterDef();
-    this.chapterText.setText(`第${RUN.chapterNum()}章 · ${ch.name}`);
+    this.chapterText.setText(I18N.t('combat.chapter',{chapter:I18N.chapterNumber(RUN.chapter,RUN.chapterNum()),name:I18N.name('chapter',RUN.chapter,ch.name)}));
     this.refreshTurnText();
     this.refreshGold();
   }
   refreshTurnText() {
     // 回合 0 = 还没进第一回合（开场那 420ms）。直接显示「回合 0」像是
     // 计数出错，玩家会以为游戏卡在零回合——写「准备中」更贴实际。
-    this.turnText.setText(this.state.turn > 0 ? '回合 ' + this.state.turn : '准 备 中');
+    this.turnText.setText(this.state.turn > 0 ? I18N.t('combat.turn',{value:this.state.turn}) : I18N.t('combat.preparing'));
   }
   refreshGold() {
-    this.goldText.setText('◈ ' + RUN.gold);
+    this.goldText.setText('◆ ' + RUN.gold);
   }
 
   refreshRelics() {
@@ -1707,7 +1772,7 @@ class CombatScene extends Phaser.Scene {
 
   showRelicTip(id) {
     const d = RELIC_DEFS[id];
-    return showArtTip(this,d.name,d.text,'relic',id);
+    return showArtTip(this,I18N.name('relic',id,d.name),I18N.description('relic',id,d.text),'relic',id);
   }
 
   /* ==========================================================
@@ -1755,11 +1820,11 @@ class CombatScene extends Phaser.Scene {
       FX.playerFeedback(this, 'heal');
       if (!MOTION.effect(this, 'heal', 240, STAGE.PLAYER_Y, 240)) FX.aura(this, 240, STAGE.PLAYER_Y, 0x57e59f, 90);
     }
-    const storyStep=RUN.globalStep(),storyReward={gold,boss:E.boss,elite:E.elite,name:E.name};
+    const storyStep=RUN.globalStep(),storyReward={gold,boss:E.boss,elite:E.elite,name:E.name,enemyId:E.key};
     if(STORY.needs('after',storyStep))STORY.state().pending={kind:'after',step:storyStep,reward:storyReward};
     RUN.save();
 
-    this.showBanner('胜 利', PAL.gold);
+    this.showBanner(I18N.t('combat.victory'), PAL.gold);
     this.cameras.main.flash(400, 200, 170, 80);
 
     this.time.delayedCall(1100, () => {
@@ -1788,7 +1853,7 @@ class CombatScene extends Phaser.Scene {
     this.hidePlayHint();
     RUN.hp = 0;
     RUN.clearSave();
-    this.showBanner('你倒在了林间', PAL.bloodHi);
+    this.showBanner(I18N.t('combat.fallen'), PAL.bloodHi);
 
     /* 深度必须压过手牌（200+i）与选中牌（260）、出牌提示条（280）。
      * Phaser 的 topOnly 命中是按 depth 排序的：浮层停在 70 时，
@@ -1803,11 +1868,11 @@ class CombatScene extends Phaser.Scene {
     g.strokeRoundedRect(-420, -300, 840, 600, 26);
     c.add(g);
     const ch = RUN.chapterDef();
-    c.add(this.add.text(0, -200, '森林记住了你', { fontFamily: FONT, fontSize: '52px', color: '#e8dcc0', fontStyle: 'bold' }).setOrigin(0.5));
+    c.add(this.add.text(0, -200, I18N.t('combat.remembered'), { fontFamily: FONT, fontSize: '52px', color: '#e8dcc0', fontStyle: 'bold' }).setOrigin(0.5));
     g.clear();c.addAt(uiSurface(this,0,0,944,620,'panel'),0);
-    c.add(this.add.text(0, -100, `倒在 第${RUN.chapterNum()}章 · ${ch.name}`, { fontFamily: FONT, fontSize: '42px', color: '#c4b698' }).setOrigin(0.5));
-    c.add(this.add.text(0, -20, `累计击杀 ${RUN.kills} 名敌人`, { fontFamily: FONT, fontSize: '42px', color: '#c4b698' }).setOrigin(0.5));
-    const b = makeButton(this, 0, 150, 400, 110, '重 头 来 过', () => {
+    c.add(this.add.text(0, -100, I18N.t('combat.defeatChapter',{chapter:I18N.chapterNumber(RUN.chapter,RUN.chapterNum()),name:I18N.name('chapter',RUN.chapter,ch.name)}), { fontFamily: FONT, fontSize: '38px', color: '#c4b698' }).setOrigin(0.5));
+    c.add(this.add.text(0, -20, I18N.t('combat.kills',{value:RUN.kills}), { fontFamily: FONT, fontSize: '42px', color: '#c4b698' }).setOrigin(0.5));
+    const b = makeButton(this, 0, 150, 400, 110, I18N.t('combat.retry'), () => {
       // 回到标题并把传承选择摆出来，而不是直接用无参数 newRun 开一把。
       // 战败后重开正是「想换个打法」的时机，替他套回同一副牌等于没给选择。
       RUN.clearSave();

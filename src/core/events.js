@@ -161,7 +161,7 @@ const EVENTS = [
     choices: [
       {
         label: '献 上 一 张 牌',
-        detail: '随机移除 1 张牌，获得 1 件遗物',
+        detail: '选择移除 1 张牌，获得 1 件遗物',
         result: '碑面暗了一下，然后亮了。',
         effects: [{ op: 'removeCard', random: true }, { op: 'relic' }]
       },
@@ -470,7 +470,7 @@ const EVENTS = [
       },
       {
         label: '淬 火',
-        detail: '消耗 70 金币，获得 1 张稀有牌',
+        detail: '消耗 70 金币，获得 1 张随机卡牌',
         result: '你把金币推进炉膛，听见一声很轻的爆裂。',
         /* 付费一律走 choice.cost，由 EventScene.pick 负责扣钱与资格检查。
          * 原来把 -70 写成 gold 效果：EventScene 只认 c.cost，于是这一项
@@ -540,6 +540,12 @@ function isForgeNode(globalStep) { return !!FORGE_NODES[globalStep]; }
  * 执行一组效果，返回给 UI 播报用的文本数组。
  * 纯函数式地只依赖全局 RUN / CARD_DEFS / rollRelic，不碰 Phaser。
  */
+function eventMessage(key, params, fallback) {
+  return typeof I18N === 'undefined' ? fallback : I18N.t('event.ui.' + key, params, fallback);
+}
+function eventItemName(kind, id, fallback) {
+  return typeof I18N === 'undefined' ? fallback : I18N.name(kind, id, fallback);
+}
 function applyEventEffects(effects) {
   const log = [];
   if (!RUN.nextCombat) RUN.nextCombat = {};
@@ -551,91 +557,91 @@ function applyEventEffects(effects) {
         const before = RUN.hp;
         RUN.healHp(v);
         const got = RUN.hp - before;
-        if (got > 0) log.push('回复 ' + got + ' 点生命');
-        else log.push('生命已满，没有变化');
+        if (got > 0) log.push(eventMessage('heal', {value:got}, '回复 ' + got + ' 点生命'));
+        else log.push(eventMessage('full', {}, '生命已满，没有变化'));
         break;
       }
       case 'damage': {
         const v = Math.max(0, e.v || 0);
         RUN.spendHp(v);
-        log.push('失去 ' + v + ' 点生命');
+        log.push(eventMessage('damage', {value:v}, '失去 ' + v + ' 点生命'));
         break;
       }
       case 'maxHp': {
         const v = e.v || 0;
         RUN.maxHp = Math.max(10, RUN.maxHp + v);
         RUN.hp = Math.max(0, Math.min(RUN.hp + (v < 0 ? v : 0), RUN.maxHp));
-        log.push((v > 0 ? '最大生命 +' : '最大生命 ') + v);
+        log.push(eventMessage('maxHp', {value:(v>0?'+':'')+v}, (v > 0 ? '最大生命 +' : '最大生命 ') + v));
         break;
       }
       case 'gold': {
         const v = e.v || 0;
         RUN.gold = Math.max(0, RUN.gold + v);
-        log.push((v > 0 ? '获得 ' : '失去 ') + Math.abs(v) + ' 金币');
+        log.push(eventMessage(v>0?'goldGain':'goldLoss', {value:Math.abs(v)}, (v > 0 ? '获得 ' : '失去 ') + Math.abs(v) + ' 金币'));
         break;
       }
       case 'spiritMax': {
         const v = e.v || 0;
         RUN.spiritMax = Math.max(1, (RUN.spiritMax || 3) + v);
-        log.push('灵韵上限 ' + (v > 0 ? '+' : '') + v + '（当前 ' + RUN.spiritMax + '）');
+        log.push(eventMessage('spirit', {value:(v>0?'+':'')+v,total:RUN.spiritMax}, '灵韵上限 ' + (v > 0 ? '+' : '') + v + '（当前 ' + RUN.spiritMax + '）'));
         break;
       }
       case 'card': {
         // 抽牌要按当前世界来：进了墟之后才可能抽到符箓
         const id = randomCardId(e.rarity || null, RUN.realm());
-        if (!id) { log.push('没有牌可加'); break; }
+        if (!id) { log.push(eventMessage('noCard', {}, '没有牌可加')); break; }
         RUN.addCard(id);
-        log.push('获得卡牌「' + CARD_DEFS[id].name + '」');
+        log.push(eventMessage('card', {name:eventItemName('card',id,CARD_DEFS[id].name)}, '获得卡牌「' + CARD_DEFS[id].name + '」'));
         break;
       }
       case 'contract': {
         // 已经握着同一张契时不能给空承诺：明确改说回生命，
         // 让玩家看到「这个选项对我无效」而不是以为点不动。
-        if (!e.v || !CONTRACT_DEFS[e.v]) { log.push('没有这样的妖契'); break; }
+        if (!e.v || !CONTRACT_DEFS[e.v]) { log.push(eventMessage('noContract', {}, '没有这样的妖契')); break; }
         if (RUN.hasContract(e.v)) {
           RUN.healHp(Math.round(RUN.maxHp * 0.15));
-          log.push('已经持有「' + CONTRACT_DEFS[e.v].name + '」，改为回复 15% 生命');
+          log.push(eventMessage('owned', {name:eventItemName('contract',e.v,CONTRACT_DEFS[e.v].name)}, '已经持有「' + CONTRACT_DEFS[e.v].name + '」，改为回复 15% 生命'));
           break;
         }
         RUN.addContract(e.v);
-        log.push('获得妖契「' + CONTRACT_DEFS[e.v].name + '」——' + CONTRACT_DEFS[e.v].text);
+        log.push(eventMessage('contract', {name:eventItemName('contract',e.v,CONTRACT_DEFS[e.v].name),text:typeof I18N==='undefined'?CONTRACT_DEFS[e.v].text:I18N.description('contract',e.v,CONTRACT_DEFS[e.v].text)}, '获得妖契「' + CONTRACT_DEFS[e.v].name + '」——' + CONTRACT_DEFS[e.v].text));
         break;
       }
       case 'ascend': {
-        const lines = RUN.ascendContracts();
-        if (lines.length) for (const l of lines) log.push('升契：' + l);
-        else log.push('没有可以升阶的妖契');
+        const lines = RUN.ascendContracts(id=>eventItemName('contract',id,CONTRACT_DEFS[id].name));
+        if (lines.length) for (const l of lines) log.push(eventMessage('ascend', {text:l}, '升契：' + l));
+        else log.push(eventMessage('noAscend', {}, '没有可以升阶的妖契'));
         break;
       }
       case 'forgeSwap': {
         // 铸坊的「熔铸」：退一张换一张。牌组只剩一张时不给退，
         // 否则玩家会被卡在一个必然把牌组清空的选项上。
-        if (RUN.deck.length <= 1) { log.push('牌组只剩一张，没法熔铸'); break; }
+        if (RUN.deck.length <= 1) { log.push(eventMessage('lastCard', {}, '牌组只剩一张，没法熔铸')); break; }
         const realm = RUN.realm();
         const id = randomCardId(null, realm);
-        if (!id) { log.push('没有牌可换'); break; }
+        if (!id) { log.push(eventMessage('noSwap', {}, '没有牌可换')); break; }
         // 退掉随机一张（避开新抽到的那张）
         const pool = RUN.deck.filter(c => c !== id);
         const out = pool[Math.floor(Math.random() * pool.length)];
         RUN.removeCard(out);
         RUN.addCard(id);
-        log.push('熔铸：「' + CARD_DEFS[out].name + '」→「' + CARD_DEFS[id].name + '」');
+        log.push(eventMessage('swap', {from:eventItemName('card',out,CARD_DEFS[out].name),to:eventItemName('card',id,CARD_DEFS[id].name)}, '熔铸：「' + CARD_DEFS[out].name + '」→「' + CARD_DEFS[id].name + '」'));
         break;
       }
       case 'cardId': {
-        if (e.id && CARD_DEFS[e.id]) { RUN.addCard(e.id); log.push('获得卡牌「' + CARD_DEFS[e.id].name + '」'); }
+        if (e.id && CARD_DEFS[e.id]) { RUN.addCard(e.id); log.push(eventMessage('card', {name:eventItemName('card',e.id,CARD_DEFS[e.id].name)}, '获得卡牌「' + CARD_DEFS[e.id].name + '」')); }
         break;
       }
       case 'relic': {
         const id = rollRelic();
-        if (id) { RUN.addRelic(id); log.push('获得遗物「' + RELIC_DEFS[id].name + '」'); }
-        else log.push('遗物已经收集齐了');
+        if (id) { RUN.addRelic(id); log.push(eventMessage('relic', {name:eventItemName('relic',id,RELIC_DEFS[id].name)}, '获得遗物「' + RELIC_DEFS[id].name + '」')); }
+        else log.push(eventMessage('allRelics', {}, '遗物已经收集齐了'));
         break;
       }
       case 'status': {
         if (!e.st) break;
         RUN.nextCombat[e.st] = (RUN.nextCombat[e.st] || 0) + (e.v || 1);
-        log.push('下一场战斗：' + (STATUS_META[e.st] ? STATUS_META[e.st].name : e.st) + ' ' + RUN.nextCombat[e.st]);
+        log.push(eventMessage('status', {name:eventItemName('status',e.st,STATUS_META[e.st]?.name||e.st),value:RUN.nextCombat[e.st]}, '下一场战斗：' + (STATUS_META[e.st] ? STATUS_META[e.st].name : e.st) + ' ' + RUN.nextCombat[e.st]));
         break;
       }
       case 'removeCard':

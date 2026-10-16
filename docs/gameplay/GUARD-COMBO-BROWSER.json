@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "lang": "zh-CN",
+      "ready": {
+        "hp": 70,
+        "counter": 1,
+        "stance": 0
+      },
+      "hit": {
+        "hp": 89,
+        "counter": 0
+      },
+      "noAttackDoesNotReward": true
+    },
+    {
+      "lang": "en",
+      "ready": {
+        "hp": 70,
+        "counter": 1,
+        "stance": 0
+      },
+      "hit": {
+        "hp": 89,
+        "counter": 0
+      },
+      "noAttackDoesNotReward": true
+    }
+  ],
+  "errors": []
+}

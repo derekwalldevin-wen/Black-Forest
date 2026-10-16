@@ -111,7 +111,7 @@ vm.runInContext(`
   globalThis.API = { CARD_DEFS, rollCardId, cardCostType, effectiveCost, isResonant,
     ENEMY_DEFS, spawnEnemy, rollIntent, RELIC_DEFS, rollRelic, RUN, CHAPTERS,
     EVENTS, eventForStep, applyEventEffects, EVENT_NODES, isContractNode, isForgeNode,
-    addStatus, hitEnemy, intakeDamage, gainBlock, tickStatuses, applyPendingStart,
+    addStatus, hitEnemy, intakeDamage, gainBlock, tickStatuses, applyPendingStart, tickEndStatuses, resolveWoundAttack, previewWoundCard, beginGuardWindow, finishGuardWindow, expireCounter,
     discardHand, enemyTurnRule, cardTriggersContract, spendContractBurn, resetContractBurn,
     starterDeck, STARTER_DEFS, CONTRACT_DEFS };
 `, sandbox, { filename: '_export.js' });
@@ -195,6 +195,7 @@ function newState(enemyId, seed, fightIdx) {
    * 配对 A/B 全部失效。必须用 withRng 在调用期间把 Math.random 换掉。 */
   const r = exo(seed, 'enemyHp', fightIdx);
   S.enemy = withRng(r, () => spawnEnemy(enemyId, 0));
+  S.enemy.movePrototype = !!RUN.enemyMovePrototype;
   return S;
 }
 
@@ -298,12 +299,17 @@ function scoreCard(def, S) {
   for (const e of def.effects || []) {
     switch (e.op) {
       case 'damage': dealt += e.v; break;
+      case 'mark': dealt += Math.min(e.v, 3 - (S.enemy.st.seal || 0)) * 2; break;
+      case 'sealBurst': dealt += e.v + (S.enemy.st.seal || 0) * e.bonus; break;
+      case 'wound': dealt += e.v + (S.enemy.block < e.v ? 2 : 0); break;
+      case 'consumeBleed': dealt += e.v + (S.enemy.st.bleed > 0 ? e.bonus - 2 : 0); break;
       case 'damageTimes': dealt += e.v * e.n; break;
       case 'damagePoisonBonus': dealt += e.v; break;
       case 'echoHit': dealt += e.v * (e.n + S.resonance); break;
       case 'resonanceDamage': dealt += e.v * (1 + S.resonance); break;
       case 'drain': dealt += e.v; healed += e.v * (e.mult || 1); break;
       case 'block': blocked += e.v; break;
+      case 'brace': blocked += e.v; break;
       case 'heal': healed += e.v; break;
       case 'poison': dealt += e.v * 2; break;
       case 'enemyDebuff': if (e.stat === 'poison') dealt += e.turns * 2; break;
@@ -360,9 +366,10 @@ function playCardAt(S, idx) {
   else S.energy = Math.max(0, S.energy - cost);
 
   // 第一张攻击牌加成
+  S.player.counterAttack = def.type === 'attack';
   if (def.type === 'attack' && !S.firstAttackUsed) {
     S.firstAttackUsed = true;
-    if (S.mods.firstAttackBonus) G.hitEnemy(S.mods.firstAttackBonus, S.player, S.enemy, S.mods, {});
+    if (S.mods.firstAttackBonus) G.hitEnemy(S.mods.firstAttackBonus, S.player, S.enemy, S.mods, { bonus: true });
   }
 
   /* 妖契触发时点：与 CombatScene.playCard 一致，在**牌效果之前**。
@@ -377,6 +384,10 @@ function playCardAt(S, idx) {
   for (const e of def.effects || []) {
     switch (e.op) {
       case 'damage': G.hitEnemy(e.v, S.player, S.enemy, S.mods, { talisman: isSpirit }); break;
+      case 'mark': if (S.enemy.alive) G.addStatus(S.enemy, 'seal', e.v); break;
+      case 'sealBurst': G.resolveWoundAttack(e, S.player, S.enemy, S.mods); break;
+      case 'wound':
+      case 'consumeBleed': G.resolveWoundAttack(e, S.player, S.enemy, S.mods); break;
       case 'damageTimes': for (let i = 0; i < e.n; i++) G.hitEnemy(e.v, S.player, S.enemy, S.mods, { talisman: isSpirit }); break;
       case 'damagePoisonBonus':
         G.hitEnemy(S.enemy.st.poison > 0 ? e.v + e.bonus : e.v, S.player, S.enemy, S.mods, { talisman: isSpirit });
@@ -399,6 +410,7 @@ function playCardAt(S, idx) {
         break;
       }
       case 'block': G.gainBlock(S.player, e.v); break;
+      case 'brace': G.gainBlock(S.player, e.v); S.player.st.stance = 1; break;
       case 'heal': S.player.hp = Math.min(S.player.maxHp, S.player.hp + e.v); break;
       case 'draw': drawCards(S, e.v); break;
       case 'loseHp': S.player.hp = Math.max(0, S.player.hp - e.v); break;
@@ -438,12 +450,16 @@ function endTurn(S) {
   const ids = S.hand.slice();
   G.discardHand(ids, S.discard);
   S.hand = [];
+  G.expireCounter(S.player);
+  G.tickEndStatuses(S.player);
+  if (S.player.hp <= 0) { S.over = 'dead'; S.busy = false; return false; }
   return true;
 }
 
 /* runEnemyTurn：先结算状态，再让敌人行动 */
 function runEnemyTurn(S) {
   const E = S.enemy;
+  G.beginGuardWindow(S.player);
   if (!E.alive) { S.over = 'win'; S.busy = false; return S; }
 
   // 敌人身上的持续掉血。
@@ -453,7 +469,7 @@ function runEnemyTurn(S) {
     const n = E.st[k] || 0;
     if (n <= 0) continue;
     E.hp = Math.max(0, E.hp - n);
-    E.st[k] = n - 1;
+    // 与场景相同：伤害循环不减层，下面统一递减一次。
     if (E.hp <= 0) { E.alive = false; S.over = 'win'; S.busy = false; return S; }
   }
   for (const k of G.DECAY_STATUSES || ['vulnerable', 'weak', 'frail', 'poison', 'burn']) {
@@ -468,6 +484,7 @@ function runEnemyTurn(S) {
         for (let i = 0; i < act.hits; i++) {
           const before = S.player.hp;
           const r = G.intakeDamage(act.dmg, S.player, E);
+          if (act.bleedOnHit && S.player.hp > 0 && r.real > 0) G.addStatus(S.player, 'bleed', act.bleedOnHit);
           if (act.drain && S.player.hp < before) {
             E.hp = Math.min(E.hpMax, E.hp + Math.min(act.drain, before - S.player.hp));
           }
@@ -489,6 +506,9 @@ function runEnemyTurn(S) {
   }
   if (!E.alive) { S.over = 'win'; S.busy = false; return S; }
   if (S.player.hp <= 0) { S.over = 'dead'; S.busy = false; return S; }
+  G.finishGuardWindow(S.player);
+  G.tickEndStatuses(E);
+  if (!E.alive) { S.over = 'win'; S.busy = false; return S; }
   S.busy = false;
   return S;
 }
@@ -576,6 +596,7 @@ function runGame(maxFight, opts) {
   const seed = opts.seed === undefined ? 1 : (opts.seed >>> 0);
   const strat = Object.assign({}, STRATEGY, opts.strategy || {});
   RUN.newRun(opts.starter);
+  RUN.enemyMovePrototype = !!opts.enemyMoves;
   if (opts.contracts) for (const c of opts.contracts) RUN.addContract(c);
   if (opts.deckOverride) RUN.deck = opts.deckOverride.slice();
 

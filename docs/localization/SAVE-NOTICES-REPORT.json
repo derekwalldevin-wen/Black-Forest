@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "lang": "zh-CN",
+      "recoveredGold": 11,
+      "writeFailureVisible": true,
+      "successClearsNotice": true,
+      "futurePreserved": true
+    },
+    {
+      "lang": "en",
+      "recoveredGold": 11,
+      "writeFailureVisible": true,
+      "successClearsNotice": true,
+      "futurePreserved": true
+    }
+  ],
+  "errors": []
+}

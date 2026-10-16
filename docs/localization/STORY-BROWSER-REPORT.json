@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "lang": "zh-CN",
+      "width": 390,
+      "pages": 142
+    },
+    {
+      "lang": "zh-CN",
+      "width": 320,
+      "pages": 142
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "pages": 142
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "pages": 142
+    }
+  ],
+  "choicePaths": 16,
+  "errors": []
+}

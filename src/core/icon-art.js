@@ -14,11 +14,14 @@ function iconArt(scene,x,y,size,kind,id) {
 function showArtTip(scene,title,description,kind,id) {
   if(scene._artTip?.active)scene._artTip.destroy();
   const c=scene.add.container(540,560).setDepth(420);scene._artTip=c;
-  c.add(uiSurface(scene,0,0,940,300,'panel'));
+  const heading=uiText(scene,-230,0,wrapCJK(title,640,44),44,'#e8dcc0',{fontStyle:'bold'});
+  const body=uiText(scene,-230,0,wrapCJK(description,640,36),36,'#d1c5ac',{lineSpacing:6});
+  const height=Math.max(300,heading.height+body.height+90);
+  heading.setY(-height/2+32);body.setY(heading.y+heading.height+20);
+  c.add(uiSurface(scene,0,0,940,height,'panel'));
   const art=iconArt(scene,-350,0,170,kind,id);if(art)c.add(art);
-  c.add(uiText(scene,-230,-86,title,44,'#e8dcc0',{fontStyle:'bold'}));
-  c.add(uiText(scene,-230,-12,wrapCJK(description,640,36),36,'#d1c5ac',{lineSpacing:6}));
-  c.setSize(940,300).setInteractive();
+  c.add([heading,body]);
+  c.setSize(940,height).setInteractive();
   c.on('pointerdown',(p,x,y,ev)=>{if(ev)ev.stopPropagation();c.destroy();});
   scene.time.delayedCall(3200,()=>{if(c.active)c.destroy();});
   return c;

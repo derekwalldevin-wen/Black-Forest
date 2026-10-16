@@ -1,0 +1,34 @@
+const assert = require('assert/strict'), { G } = require('./simulate');
+const enemy = () => ({ hp: 100, alive: true, block: 0, st: {} });
+function trial(block, hits) {
+  const P = { hp: 70, block, st: { stance: 1 } }, E = enemy();
+  G.beginGuardWindow(P);
+  for (const damage of hits) G.intakeDamage(damage, P, E);
+  return { P, ready: G.finishGuardWindow(P) };
+}
+assert(trial(6, [3, 3]).ready);
+assert(!trial(5, [3, 3]).ready);
+assert(!trial(10, []).ready);
+assert(!trial(10, [0]).ready);
+const { P } = trial(6, [3, 3]);
+assert.equal(P.st.counter, 1); assert.equal(P.st.stance, 0);
+P.st.poison = 1; G.tickStatuses(P); assert.equal(P.st.counter, 1);
+let E = enemy(); P.counterAttack = false;
+G.hitEnemy(5, P, E, {}, { talisman: true }); assert.equal(P.st.counter, 1);
+P.counterAttack = true;
+G.hitEnemy(2, P, E, {}, { bonus: true }); assert.equal(P.st.counter, 1);
+assert.equal(G.hitEnemy(3, P, E, {}), 8); assert.equal(P.st.counter, 0);
+assert.equal(G.hitEnemy(3, P, E, {}), 3);
+P.st.counter = 1; G.expireCounter(P); assert.equal(P.st.counter, 0);
+const wounded = { hp: 70, block: 10, st: { stance: 1 } };
+G.beginGuardWindow(wounded); G.intakeDamage(3, wounded, enemy()); wounded.hp -= 2;
+assert(G.finishGuardWindow(wounded), 'Non-attack HP loss does not invalidate perfect block');
+console.log('PASS: multi-hit full block, failed/no attack windows, damage-over-time independence, single counter hit, relic/talisman exclusions and expiry.');
+const S = { player: { hp: 70, st: { counter: 1 } }, enemy: enemy(), mods: { firstAttackBonus: 3 }, firstAttackUsed: false };
+const preview = G.previewWoundCard(G.CARD_DEFS.rend, S);
+assert.equal(preview.hpLoss, 12); assert.equal(S.player.st.counter, 1);
+S.player.counterAttack = true;
+G.hitEnemy(3, S.player, S.enemy, S.mods, {bonus:true});
+G.resolveWoundAttack(G.CARD_DEFS.rend.effects[0], S.player, S.enemy, S.mods);
+assert.equal(S.enemy.hp, 88); assert.equal(S.player.st.counter, 0);
+console.log('PASS: Counter plus separate relic hit agrees with non-mutating conditional preview.');

@@ -13,8 +13,78 @@
 
 /* 状态增减：统一入口，避免各处直接 unit.st[x] = ... 写漏默认值 */
 function addStatus(unit, stat, v) {
+  if (stat === 'seal') {
+    unit.st.seal = Math.max(0, Math.min(3, (unit.st.seal || 0) + v));
+    return unit.st.seal;
+  }
+  if (stat === 'bleed') {
+    unit.st.bleed = Math.min(3, Math.max(unit.st.bleed || 0, v));
+    return unit.st.bleed;
+  }
   unit.st[stat] = (unit.st[stat] || 0) + v;
   return unit.st[stat];
+}
+
+/* 流血是剩余回合数，不是伤害强度；单位回合结束结算，不触发攻击事件。 */
+function tickEndStatuses(unit) {
+  if (unit.hp <= 0 || !(unit.st.bleed > 0)) return 0;
+  const loss = Math.min(unit.hp, 2);
+  unit.hp -= loss;
+  unit.st.bleed--;
+  if (unit.hp === 0 && 'alive' in unit) unit.alive = false;
+  return loss;
+}
+
+function beginGuardWindow(P) {
+  P.guardAbsorbed = 0;
+  P.guardHpLoss = 0;
+}
+
+function finishGuardWindow(P) {
+  const ready = P.hp > 0 && P.st.stance > 0 && P.guardAbsorbed > 0 && P.guardHpLoss === 0;
+  P.st.stance = 0;
+  if (ready) P.st.counter = 1;
+  return !!ready;
+}
+
+function expireCounter(P) {
+  P.st.counter = 0;
+  P.counterAttack = false;
+}
+
+/* 同一规则供动画场景与离线模拟器调用。hit 回调保留场景伤害反馈。 */
+function resolveWoundAttack(eff, P, E, mods, hit) {
+  if (!E.alive) return 0;
+  let damage = eff.v;
+  if (eff.op === 'sealBurst') {
+    damage += (E.st.seal || 0) * eff.bonus;
+    E.st.seal = 0;
+  }
+  if (eff.op === 'consumeBleed' && E.st.bleed > 0) {
+    E.st.bleed--;
+    damage += eff.bonus;
+  }
+  const dealt = hit ? hit(damage) : hitEnemy(damage, P, E, mods, { talisman: eff.op === 'sealBurst' });
+  if (eff.op === 'wound' && dealt > 0 && E.alive) addStatus(E, 'bleed', eff.turns);
+  return dealt;
+}
+
+/* 条件攻击预览：在副本上走实际伤害路径，包括第一张攻击的独立遗物攻击。 */
+function previewWoundCard(def, S) {
+  const eff = def.effects.find(e => ['wound', 'consumeBleed', 'sealBurst'].includes(e.op));
+  if (!eff) return null;
+  const P = { ...S.player, st: { ...S.player.st } };
+  const E = { ...S.enemy, st: { ...S.enemy.st } };
+  const hp = E.hp, block = E.block;
+  P.counterAttack = def.type === 'attack';
+  if (def.type === 'attack' && !S.firstAttackUsed && S.mods.firstAttackBonus) hitEnemy(S.mods.firstAttackBonus, P, E, S.mods, { bonus: true });
+  const seals = E.st.seal || 0;
+  const consumes = E.alive && eff.op === 'consumeBleed' && E.st.bleed > 0;
+  const beforeHit = E.hp;
+  resolveWoundAttack(eff, P, E, S.mods);
+  return { hpLoss: hp - E.hp, absorbed: block - E.block, consumes: !!consumes,
+    wounds: eff.op === 'wound' && E.alive && E.hp < beforeHit,
+    lethal: !E.alive, bleed: E.st.bleed || 0, seals };
 }
 
 /* 对敌造成伤害。返回实际掉血量（0 = 全部被格挡吸收）。
@@ -24,6 +94,12 @@ function hitEnemy(base, P, E, mods, opts) {
   if (!E.alive) return 0;
 
   let dmg = base + Math.max(0, P.st.strength || 0);
+  // 反击只加到攻击牌的第一次主命中，不加到首击遗物的独立伤害或符箓。
+  if (P.counterAttack && P.st.counter > 0 && !opts.bonus) {
+    dmg += 5;
+    P.st.counter = 0;
+    P.counterAttack = false;
+  }
   // 燎原：敌人自己叠的「受到的每次攻击 +N」
   dmg += Math.max(0, E.st.burnDmg || 0);
   if (opts.talisman && mods && mods.talismanBonus) dmg += mods.talismanBonus;
@@ -50,6 +126,10 @@ function intakeDamage(base, P, E) {
   P.block -= absorbed;
   const real = dmg - absorbed;
   P.hp = Math.max(0, P.hp - real);
+  if (P.st.stance > 0) {
+    P.guardAbsorbed = (P.guardAbsorbed || 0) + absorbed;
+    P.guardHpLoss = (P.guardHpLoss || 0) + real;
+  }
   const thorns = (real > 0 && P.st.thorns > 0 && E.alive) ? P.st.thorns : 0;
   return { absorbed, real, thorns };
 }
@@ -69,7 +149,7 @@ function tickStatuses(unit, mods) {
   for (const k of TICK_STATUSES) {
     const n = unit.st[k] || 0;
     if (n <= 0) continue;
-    unit.st[k] = n - 1;
+    // 层数由下方 DECAY_STATUSES 统一递减，不能在伤害循环里再减一次。
     if (k === 'burn' && mods && mods.burnImmune) continue;
     dmg += n;
   }

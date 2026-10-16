@@ -1,0 +1,191 @@
+{
+  "checks": [
+    {
+      "lang": "zh-CN",
+      "before": {
+        "name": "黑暗森林之主",
+        "spirit": "灵韵",
+        "turn": "回合 1",
+        "enemyHP": 84,
+        "playerHP": 70,
+        "missing": []
+      },
+      "statusLabels": [
+        "架势",
+        "反击准备",
+        "符印",
+        "流血",
+        "力量",
+        "易伤",
+        "虚弱",
+        "脆弱",
+        "中毒",
+        "尖刺",
+        "灼烧",
+        "燎原"
+      ],
+      "tips": [
+        {
+          "stat": "stance",
+          "text": "架势 · 3\n本次敌方行动须至少格挡一次攻击，且\n所有攻击均未扣血，才获得反击准备。\n无攻击不触发；持续损血不影响判定。\n不可叠加。",
+          "fits": true
+        },
+        {
+          "stat": "counter",
+          "text": "反击准备 · 3\n本回合第一张攻击牌的首次主命中伤害+\n5，只生效一次。符箓与遗物独立伤害不\n消耗；回合结束失效，不可叠加。",
+          "fits": true
+        },
+        {
+          "stat": "seal",
+          "text": "符印 · 3\n已有3层，最多3层，不随回合递减。镇\n印消耗全部符印，每层使该次攻击伤害+\n3。战斗结束清除。",
+          "fits": true
+        },
+        {
+          "stat": "bleed",
+          "text": "流血 · 3\n回合结束失去2生命，再减少1回合。剩\n余3回合；重复施加取较长时间，上限3\n回合。",
+          "fits": true
+        },
+        {
+          "stat": "strength",
+          "text": "力量 · 3\n攻击伤害 +3",
+          "fits": true
+        },
+        {
+          "stat": "vulnerable",
+          "text": "易伤 · 3\n受到伤害 +50%",
+          "fits": true
+        },
+        {
+          "stat": "weak",
+          "text": "虚弱 · 3\n造成伤害 -25%",
+          "fits": true
+        },
+        {
+          "stat": "frail",
+          "text": "脆弱 · 3\n获得格挡 -25%",
+          "fits": true
+        },
+        {
+          "stat": "poison",
+          "text": "中毒 · 3\n回合开始失去 3 点生命",
+          "fits": true
+        },
+        {
+          "stat": "thorns",
+          "text": "尖刺 · 3\n受到攻击时反弹 3 点伤害",
+          "fits": true
+        },
+        {
+          "stat": "burn",
+          "text": "灼烧 · 3\n回合开始失去 3 点生命",
+          "fits": true
+        },
+        {
+          "stat": "burnDmg",
+          "text": "燎原 · 3\n受到的每次攻击 +3",
+          "fits": true
+        },
+        {
+          "intent": true,
+          "text": "敌人下一回合\n攻击 8 × 2\n削弱 · 虚弱 2 层\n防御 6\n预计总伤害 16",
+          "fits": true
+        }
+      ],
+      "realEndTurn": true
+    },
+    {
+      "lang": "en",
+      "before": {
+        "name": "Lord of the Forest",
+        "spirit": "Spirit",
+        "turn": "Turn 1",
+        "enemyHP": 82,
+        "playerHP": 70,
+        "missing": []
+      },
+      "statusLabels": [
+        "Brace",
+        "Counter",
+        "Seal",
+        "Bleed",
+        "Strength",
+        "Vulnerable",
+        "Weak",
+        "Frail",
+        "Poison",
+        "Thorns",
+        "Burn",
+        "Wildfire"
+      ],
+      "tips": [
+        {
+          "stat": "stance",
+          "text": "Brace · 3\nBlock at least one hit and lose no HP\nto attacks this enemy turn to gain\nCounter. No attacks means no\nCounter. Damage over time does not\ncount. Does not stack.",
+          "fits": true
+        },
+        {
+          "stat": "counter",
+          "text": "Counter · 3\nYour first Attack this turn deals +5\ndamage on its first main hit only.\nTalismans and separate relic hits do\nnot consume it. Expires at turn end.\nDoes not stack.",
+          "fits": true
+        },
+        {
+          "stat": "seal",
+          "text": "Seal · 3\n3 Seals, max 3. Last until consumed\nor combat ends. Seal Burst\nconsumes all Seals for +3 damage\nper Seal in one hit.",
+          "fits": true
+        },
+        {
+          "stat": "bleed",
+          "text": "Bleed · 3\nLose 2 HP at turn end, then remove\n1 turn. 3 turns left. Reapplying\nkeeps the longer duration, up to 3\nturns.",
+          "fits": true
+        },
+        {
+          "stat": "strength",
+          "text": "Strength · 3\nAttack damage +3",
+          "fits": true
+        },
+        {
+          "stat": "vulnerable",
+          "text": "Vulnerable · 3\nTake 50% more damage.",
+          "fits": true
+        },
+        {
+          "stat": "weak",
+          "text": "Weak · 3\nDeal 25% less damage.",
+          "fits": true
+        },
+        {
+          "stat": "frail",
+          "text": "Frail · 3\nGain 25% less Block.",
+          "fits": true
+        },
+        {
+          "stat": "poison",
+          "text": "Poison · 3\nLose 3 HP at the start of your turn.",
+          "fits": true
+        },
+        {
+          "stat": "thorns",
+          "text": "Thorns · 3\nReturn 3 damage when attacked.",
+          "fits": true
+        },
+        {
+          "stat": "burn",
+          "text": "Burn · 3\nLose 3 HP at the start of your turn.",
+          "fits": true
+        },
+        {
+          "stat": "burnDmg",
+          "text": "Wildfire · 3\nTake +3 damage from each attack.",
+          "fits": true
+        },
+        {
+          "intent": true,
+          "text": "Next Enemy Turn\nAttack 8 × 2\nDebuff · Weak 2 stacks\nBlock 6\nExpected damage: 16",
+          "fits": true
+        }
+      ],
+      "realEndTurn": true
+    }
+  ],
+  "errors": []
+}

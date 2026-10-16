@@ -1,0 +1,2115 @@
+{
+  "games": 300,
+  "old": {
+    "wins": 136,
+    "past9": 268
+  },
+  "candidate": {
+    "wins": 148,
+    "past9": 266
+  },
+  "caps": 0,
+  "scope": "Greedy AI screening only; not human fun or delayed-strategy evidence",
+  "rows": [
+    {
+      "seed": 1,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2654435761,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1013904226,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3668339987,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2027808452,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 387276917,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3041712678,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1401181143,
+      "old": 17,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4055616904,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2415085369,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 774553834,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3428989595,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1788458060,
+      "old": 15,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 147926525,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2802362286,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1161830751,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3816266512,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2175734977,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 535203442,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3189639203,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1549107668,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4203543429,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2563011894,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 922480359,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3576916120,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1936384585,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 295853050,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2950288811,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1309757276,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3964193037,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2323661502,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 683129967,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3337565728,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1697034193,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 56502658,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2710938419,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1070406884,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3724842645,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2084311110,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 443779575,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3098215336,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1457683801,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4112119562,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2471588027,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 831056492,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3485492253,
+      "old": 17,
+      "candidate": 9,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1844960718,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 204429183,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2858864944,
+      "old": 8,
+      "candidate": 12,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1218333409,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3872769170,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2232237635,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 591706100,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3246141861,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1605610326,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4260046087,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2619514552,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 978983017,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3633418778,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1992887243,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 352355708,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3006791469,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1366259934,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4020695695,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2380164160,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 739632625,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3394068386,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1753536851,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 113005316,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2767441077,
+      "old": 15,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1126909542,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3781345303,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2140813768,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 500282233,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3154717994,
+      "old": 17,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1514186459,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4168622220,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2528090685,
+      "old": 15,
+      "candidate": 14,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 887559150,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3541994911,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1901463376,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 260931841,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2915367602,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1274836067,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3929271828,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2288740293,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 648208758,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3302644519,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1662112984,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 21581449,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2676017210,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1035485675,
+      "old": 4,
+      "candidate": 3,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3689921436,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2049389901,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 408858366,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3063294127,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1422762592,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4077198353,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2436666818,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 796135283,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3450571044,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1810039509,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 169507974,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2823943735,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1183412200,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3837847961,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2197316426,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 556784891,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3211220652,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1570689117,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4225124878,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2584593343,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 944061808,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3598497569,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1957966034,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 317434499,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2971870260,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1331338725,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3985774486,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2345242951,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 704711416,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3359147177,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1718615642,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 78084107,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2732519868,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1091988333,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3746424094,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2105892559,
+      "old": 8,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 465361024,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3119796785,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1479265250,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4133701011,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2493169476,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 852637941,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3507073702,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1866542167,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 226010632,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2880446393,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1239914858,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3894350619,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2253819084,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 613287549,
+      "old": 8,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3267723310,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1627191775,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4281627536,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2641096001,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1000564466,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3655000227,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2014468692,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 373937157,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3028372918,
+      "old": 17,
+      "candidate": 11,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1387841383,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4042277144,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2401745609,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 761214074,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3415649835,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1775118300,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 134586765,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2789022526,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1148490991,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3802926752,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2162395217,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 521863682,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3176299443,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1535767908,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4190203669,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2549672134,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 909140599,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3563576360,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1923044825,
+      "old": 17,
+      "candidate": 12,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 282513290,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2936949051,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1296417516,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3950853277,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2310321742,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 669790207,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3324225968,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1683694433,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 43162898,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2697598659,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1057067124,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3711502885,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2070971350,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 430439815,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3084875576,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1444344041,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4098779802,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2458248267,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 817716732,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3472152493,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1831620958,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 191089423,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2845525184,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1204993649,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3859429410,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2218897875,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 578366340,
+      "old": 8,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3232802101,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1592270566,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4246706327,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2606174792,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 965643257,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3620079018,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1979547483,
+      "old": 8,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 339015948,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2993451709,
+      "old": 12,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1352920174,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4007355935,
+      "old": 16,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2366824400,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 726292865,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3380728626,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1740197091,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 99665556,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2754101317,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1113569782,
+      "old": 12,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3768005543,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2127474008,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 486942473,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3141378234,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1500846699,
+      "old": 8,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4155282460,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2514750925,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 874219390,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3528655151,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1888123616,
+      "old": 17,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 247592081,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2902027842,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1261496307,
+      "old": 8,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3915932068,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2275400533,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 634868998,
+      "old": 12,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3289304759,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1648773224,
+      "old": 8,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 8241689,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2662677450,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1022145915,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3676581676,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2036050141,
+      "old": 4,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 395518606,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3049954367,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1409422832,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4063858593,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2423327058,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 782795523,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3437231284,
+      "old": 17,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1796699749,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 156168214,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2810603975,
+      "old": 15,
+      "candidate": 12,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1170072440,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3824508201,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2183976666,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 543445131,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3197880892,
+      "old": 12,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1557349357,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4211785118,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2571253583,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 930722048,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3585157809,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1944626274,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 304094739,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2958530500,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1317998965,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3972434726,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2331903191,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 691371656,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3345807417,
+      "old": 8,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1705275882,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 64744347,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2719180108,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1078648573,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3733084334,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2092552799,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 452021264,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3106457025,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1465925490,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4120361251,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2479829716,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 839298181,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3493733942,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1853202407,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 212670872,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2867106633,
+      "old": 17,
+      "candidate": 8,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1226575098,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3881010859,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2240479324,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 599947789,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3254383550,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1613852015,
+      "old": -1,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4268287776,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2627756241,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 987224706,
+      "old": 12,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3641660467,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2001128932,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 360597397,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3015033158,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 1374501623,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 4028937384,
+      "old": 2,
+      "candidate": 2,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 2388405849,
+      "old": 17,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 747874314,
+      "old": 17,
+      "candidate": 17,
+      "oldCap": 0,
+      "candidateCap": 0
+    },
+    {
+      "seed": 3402310075,
+      "old": -1,
+      "candidate": -1,
+      "oldCap": 0,
+      "candidateCap": 0
+    }
+  ]
+}

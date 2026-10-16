@@ -1,0 +1,5 @@
+{
+  "version": "20261016-card-v2",
+  "features": ["painted-card-materials", "responsive-card-typography", "zh-CN-en", "living-scene"],
+  "experimentalCombat": "opt-in"
+}

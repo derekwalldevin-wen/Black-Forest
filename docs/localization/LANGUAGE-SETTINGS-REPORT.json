@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "mouse switch preserves exact save and removes stale URL override",
+    "English persists after refresh",
+    "keyboard switch back persists without run mutation",
+    "language shortcut cannot dismiss a modal",
+    "storage failure is surfaced; URL preserves session language; run untouched"
+  ],
+  "errors": []
+}

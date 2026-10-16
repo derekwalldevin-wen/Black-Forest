@@ -1,0 +1,16 @@
+const fs=require('fs'),assert=require('assert/strict');
+const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'}),page=await browser.newPage({viewport:{width:390,height:844}}),errors=[],checks=[];page.on('pageerror',e=>errors.push(e.message));
+async function title(){await page.waitForFunction(()=>window.__game?.scene.isActive('Title'));await page.waitForTimeout(100);}
+async function state(){return page.evaluate(()=>({locale:I18N.locale,stored:localStorage.getItem('black-forest-language'),save:localStorage.getItem('darkforest.run'),lang:document.documentElement.lang,title:document.title,missing:[...I18N.missing]}));}
+try{
+await page.goto('http://127.0.0.1:8899/?lang=zh-CN');await title();
+const save=await page.evaluate(()=>{RUN.newRun('guard');RUN.hp=37;RUN.gold=91;RUN.story.choices={witness:'thread'};RUN.story.seen=['before:0'];RUN.save();return localStorage.getItem('darkforest.run');});
+await page.reload();await title();const xy=await page.evaluate(()=>{const r=__game.canvas.getBoundingClientRect(),b=__game.scene.getScene('Title').languageButton;return{x:r.x+b.x*r.width/1080,y:r.y+b.y*r.height/1920};});await page.mouse.click(xy.x,xy.y);await page.waitForFunction(()=>I18N.locale==='en');await title();
+let s=await state();assert.equal(s.save,save);assert.equal(s.stored,'en');assert.equal(s.lang,'en');assert(!/[\u3400-\u9fff]/.test(s.title));assert.deepEqual(s.missing,[]);assert(!page.url().includes('lang='));checks.push('mouse switch preserves exact save and removes stale URL override');
+await page.reload();await title();s=await state();assert.equal(s.locale,'en');assert.equal(s.save,save);await page.screenshot({path:'docs/localization/language-menu-en.png'});checks.push('English persists after refresh');
+await page.keyboard.press('l');await page.waitForFunction(()=>I18N.locale==='zh-CN');await title();assert.equal((await state()).save,save);await page.reload();await title();assert.equal((await state()).locale,'zh-CN');checks.push('keyboard switch back persists without run mutation');
+await page.evaluate(()=>__game.scene.getScene('Title').showHelp());await page.keyboard.press('l');assert.equal((await state()).locale,'zh-CN');checks.push('language shortcut cannot dismiss a modal');
+await page.reload();await title();const denied=await page.evaluate(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(){throw new Error('simulated settings failure');};let result;try{result=I18N.setLocale('en');}finally{Storage.prototype.setItem=original;}return{result,locale:I18N.locale,url:location.href,save:localStorage.getItem('darkforest.run')};});assert.equal(denied.result,false);assert.equal(denied.locale,'en');assert.equal(denied.save,save);assert(denied.url.includes('lang=en'));checks.push('storage failure is surfaced; URL preserves session language; run untouched');
+assert.deepEqual(errors,[]);fs.writeFileSync('docs/localization/LANGUAGE-SETTINGS-REPORT.json',JSON.stringify({checks,errors},null,2));console.log('PASS: '+checks.join('; '));
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1);});

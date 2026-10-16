@@ -6,6 +6,7 @@ class BootScene extends Phaser.Scene {
 
   preload() {
     GAME_PREFS.load();
+    I18N.init();
     SFX.preload(this);
     BGM.init(this.game);
     const cx = 540, cy = 960;
@@ -21,12 +22,12 @@ class BootScene extends Phaser.Scene {
       this.textures.addBase64('loading-backdrop',LOADING_BACKDROP_DATA);
     }
 
-    const title = this.add.text(cx, 560, '黑 森 林', {
-      fontFamily: FONT, fontSize: '96px', color: '#c8a86a', fontStyle: 'bold'
+    const title = this.add.text(cx, 560, I18N.t('title.name'), {
+      fontFamily: FONT, fontSize: I18N.locale==='en'?'80px':'96px', color: '#c8a86a', fontStyle: 'bold'
     }).setOrigin(0.5);
     this.tweens.add({ targets: title, alpha: 0.35, duration: 900, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
 
-    this.add.text(cx,650,'THE BLACK FOREST',{fontFamily:FONT,fontSize:'32px',color:'#a89a80',letterSpacing:6}).setOrigin(.5);
+    this.add.text(cx,650,I18N.t('shell.subtitle'),{fontFamily:FONT,fontSize:'32px',color:'#a89a80',letterSpacing:6}).setOrigin(.5);
     const showLantern=()=>{
       if(this._loadingLantern)return;
       this._loadingLantern=this.add.image(cx,950,'loading-lantern').setDisplaySize(290,400);
@@ -40,7 +41,7 @@ class BootScene extends Phaser.Scene {
       this.events.once('shutdown',()=>this.textures.off('addtexture',onTexture));
       this.textures.addBase64('loading-lantern',LOADING_LANTERN_DATA);
     }
-    const tip = this.add.text(cx, 1320, '正在点亮提灯…', {
+    const tip = this.add.text(cx, 1320, I18N.t('shell.loading'), {
       fontFamily: FONT, fontSize: '40px', color: '#a89a80'
     }).setOrigin(0.5);
 
@@ -52,7 +53,7 @@ class BootScene extends Phaser.Scene {
     const fill = this.add.graphics();
 
     this.load.on('progress', (p) => {
-      tip.setText('正在点亮提灯… '+Math.round(p*100)+'%');
+      tip.setText(I18N.t('shell.loading')+' '+Math.round(p*100)+'%');
       fill.clear();
       fill.fillStyle(0xc8a86a, 1);
       fill.fillRoundedRect(cx - barW / 2, 1240, Math.max(barH, barW * p), barH, barH / 2);
@@ -61,6 +62,7 @@ class BootScene extends Phaser.Scene {
     // 资源清单
     preloadUiSkin(this);
     preloadIconArt(this);
+    this.load.image('enemy-nameplate', 'assets/ui/enemy-nameplate-v1.png');
     for(const [key,file] of Object.entries(STORY_ART))this.load.image('story-'+key,file);
     this.load.image('bg-forest',   'assets/bg-forest-ui-v2.webp');
     this.load.image('bg-ruins',    'assets/bg-ruins-ui-v2.webp');
@@ -102,7 +104,7 @@ class BootScene extends Phaser.Scene {
     });
 
     this.load.on('complete', () => {
-      tip.setText('准备好了');
+      tip.setText(I18N.t('shell.ready'));
       // 调试直入模式：跳过过渡延迟，Title 会在 create() 里立即转场
       const q = (typeof location !== 'undefined') ? new URLSearchParams(location.search) : null;
       if (q && q.get('debug') && q.get('auto')) { this.scene.start('Title'); return; }

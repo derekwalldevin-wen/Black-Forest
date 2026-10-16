@@ -136,7 +136,7 @@ const CARD = {
 
 /* 主题层会原地改写 FONT（见 theme.js 的 applyTheme），
    所以这里是 let 而不是 const。所有场景共享同一个绑定。 */
-let FONT = 'Outfit, "Microsoft YaHei", "PingFang SC", sans-serif';
+let FONT = 'BlackForestSerif, "Microsoft YaHei", "PingFang SC", serif';
 
 /* ------------------------------------------------------------
  * 卡面插画清单（可留空）
@@ -363,6 +363,15 @@ function charEm(ch) {
 
 /** 按 maxPx 宽度把中英混排文本折成多行，返回带 \n 的字符串 */
 function wrapCJK(text, maxPx, fontSize) {
+  if(typeof wrapLocalizedText==='function') {
+    let context=null;
+    if(typeof document!=='undefined'&&document.createElement){
+      wrapCJK._canvas=wrapCJK._canvas||document.createElement('canvas');
+      context=wrapCJK._canvas.getContext('2d');
+      if(context)context.font=fontSize+'px '+FONT;
+    }
+    return wrapLocalizedText(text,maxPx,str=>context?context.measureText(str).width:[...str].reduce((sum,ch)=>sum+charEm(ch)*fontSize,0));
+  }
   const out = [];
   for (const para of String(text).split('\n')) {
     let line = '', wpx = 0;
@@ -371,7 +380,7 @@ function wrapCJK(text, maxPx, fontSize) {
       // 行首避头点：标点不单独起行
       if (wpx + cw > maxPx && line) {
         out.push(line);
-        line = (/[，。、；：！？）」』】…·]/.test(ch)) ? '' : ch;
+        line = ch;
         wpx = line ? cw : 0;
       } else {
         line += ch; wpx += cw;
@@ -765,27 +774,33 @@ class CardView {
     const isSpirit = cardCostType(d) === 'spirit';
     const coreColor = isSpirit ? 0xc9a13f : 0x37697c;
 
-    // 描述先按基准字号折行，数出行数交给 cardLayout 排版。
-    // cardLayout 可能把字号往下压；字号变小只会让行数变少，不会变多，
-    // 所以这里不存在「排完版之后行数变了」的循环依赖。
+    // 先用比例字号估计规则框，再按真实区域逐档换行；不沿用大字号时的旧换行。
     const detailMode = this.selected && s.scene.key === 'Combat';
     const rewardMode = s.scene.key === 'Reward';
-    const baseFont = detailMode || rewardMode ? 40 : Math.max(11, Math.round(w * 0.088));
+    const baseFont = Math.round(w * (detailMode ? 40 / 420 : rewardMode ? .1 : .088));
     const descStr = wrapCJK(describeCard(d), w * 0.80, baseFont);
-    const L = detailMode ? {
-      fontPx:40,
-      art:{x:-w/2+16,y:-h/2+16,w:w-32,h:210},
-      plaque:{x:-w/2+16,y:-h/2+232,w:w-32,h:54},
-      banner:{x:0,y:0,w:0,h:0},
-      rules:{x:-w/2+16,y:-h/2+294,w:w-32,h:h-348}
-    } : rewardMode ? {
-      fontPx:40,
-      art:{x:-w/2+16,y:-h/2+12,w:w-32,h:194},
-      plaque:{x:-w/2+16,y:-50,w:w-32,h:50},
-      banner:{x:-w/2+16,y:0,w:w-32,h:34},
-      rules:{x:-w/2+16,y:40,w:w-32,h:202}
-    } : cardLayout(w, h, descStr.split('\n').length);
-    const descFont = Math.round(L.fontPx);
+    let L = cardLayout(w, h, descStr.split('\n').length);
+    // 详情/奖励构件按各自基准画布缩放，字号与卡宽保持同一比例。
+    if (detailMode || rewardMode) {
+      const referenceW = detailMode ? 420 : 400, referenceH = detailMode ? 540 : 520;
+      const sx = w / referenceW, sy = h / referenceH;
+      const canonical = detailMode ? {
+        art: { x: -194, y: -254, w: 388, h: 210 },
+        plaque: { x: -194, y: -38, w: 388, h: 68 },
+        banner: { x: 0, y: 0, w: 0, h: 0 },
+        rules: { x: -194, y: 38, w: 388, h: 192 }
+      } : {
+        art: { x: -184, y: -248, w: 368, h: 194 },
+        plaque: { x: -184, y: -50, w: 368, h: 72 },
+        banner: { x: -184, y: 22, w: 368, h: 34 },
+        rules: { x: -184, y: 62, w: 368, h: 180 }
+      };
+      L = { fontPx: baseFont };
+      for (const [key, rect] of Object.entries(canonical)) L[key] = { x: rect.x * sx, y: rect.y * sy, w: rect.w * sx, h: rect.h * sy };
+    }
+    const descFont = baseFont;
+    const materialKey='card-material-'+themeKey();
+    const paintedCard=s.textures.exists(materialKey);
 
     const c = this.c || s.add.container(0, 0);
     if (this.c) c.removeAll(true);
@@ -810,10 +825,22 @@ class CardView {
     drawCostGem(g, gemX, gemY, gemR, coreColor);
     c.add(g);
     this.bg = g;
-    if (typeof uiSkin === 'function') {
+    if (paintedCard) {
+      // Separate the painted art well and parchment at the live title position.
+      // This preserves the illustrated border across hand, reward and detail ratios.
+      const tex=s.textures.get(materialKey), source=tex.getSourceImage();
+      const split=Math.round(source.height*.5);
+      if(!tex.has('well')) {
+        tex.add('well',0,0,0,source.width,split);
+        tex.add('paper',0,0,split,source.width,source.height-split);
+      }
+      const join=L.plaque.y-w*.012;
+      c.add(s.add.image(0,-h/2,materialKey,'well').setOrigin(.5,0).setDisplaySize(w,join+h/2));
+      c.add(s.add.image(0,join,materialKey,'paper').setOrigin(.5,0).setDisplaySize(w,h/2-join));
+    } else if (typeof uiSkin === 'function') {
       const shell = uiSkin(s,0,0,w,h,'panel',{margin:18});
       if (shell) c.add(shell);
-      for (const rect of [L.plaque,L.rules]) {
+      for (const rect of [L.rules]) {
         const paper=uiSkin(s,rect.x+rect.w/2,rect.y+rect.h/2,rect.w,rect.h,'paper',{margin:Math.min(14,rect.h/4)});
         if(paper)c.add(paper);
       }
@@ -884,26 +911,57 @@ class CardView {
       c.add(glyph);
     }
 
-    // ---- 文本层
-    const nameT = s.add.text(0, L.plaque.y + L.plaque.h * 0.46, d.name, {
-      fontFamily: FONT, fontSize: (detailMode ? 46 : Math.round(w * 0.112)) + 'px',
-      color: CARD.plaqueText, fontStyle: 'bold'
+    // 铭牌独立置于皮肤和插画之上；宽厚的九宫格纸框不适合短标题。
+    if (!paintedCard) {
+    const namePlate = s.add.graphics();
+    const p = L.plaque;
+    namePlate.fillStyle(CARD.plaque, 1);
+    namePlate.fillRect(p.x,p.y,p.w,p.h);
+    namePlate.lineStyle(Math.max(1,w*.004),CARD.plaqueEdge,1);
+    namePlate.strokeRect(p.x,p.y,p.w,p.h);
+    c.add(namePlate);
+    }
+
+    // ---- 文本层：同时约束宽度和高度，保留真实字体的上下留白。
+    const nameT = s.add.text(0, L.plaque.y + L.plaque.h * 0.5, typeof I18N!=='undefined'?I18N.cardName(d):d.name, {
+      fontFamily: FONT, fontSize: Math.round(w * (detailMode ? 46 / 420 : .112)) + 'px',
+      color: paintedCard ? '#302719' : CARD.plaqueText, fontStyle: 'bold'
     }).setOrigin(0.5);
+    const nameLimit=L.plaque.w-Math.max(16,w*.055);
+    const originalNameSize=parseInt(nameT.style.fontSize,10);
+    if(nameT.width>nameLimit)nameT.setFontSize(Math.max(Math.ceil(originalNameSize*.75),Math.floor(originalNameSize*nameLimit/nameT.width)));
+    while(nameT.width>nameLimit && parseInt(nameT.style.fontSize,10)>Math.ceil(w*.065)) {
+      nameT.setFontSize(parseInt(nameT.style.fontSize,10)-1);
+    }
+    const nameHeightLimit=L.plaque.h-w*.025;
+    while(nameT.height>nameHeightLimit && parseInt(nameT.style.fontSize,10)>8) {
+      nameT.setFontSize(parseInt(nameT.style.fontSize,10)-1);
+    }
     nameT.setShadow(0, 1, '#fff4da', 0, false, false);
     c.add(nameT);
 
     // 绶带上的类型名压在深色底上，用骨白而不是类型色才读得清
-    const typeT = s.add.text(L.banner.x + L.banner.w * 0.062, L.banner.y + L.banner.h * 0.52, ts.label, {
-      fontFamily: FONT, fontSize: (rewardMode ? 30 : Math.round(w * 0.094)) + 'px',
-      color: '#f0e6d0', fontStyle: 'bold'
+    const typeT = s.add.text(L.banner.x + L.banner.w * 0.062, L.banner.y + L.banner.h * 0.52, typeof I18N!=='undefined'?I18N.t(`type.${d.type}`,{},ts.label):ts.label, {
+      fontFamily: FONT, fontSize: Math.round(w * (rewardMode ? .075 : .094)) + 'px',
+      color: paintedCard ? '#65533b' : '#f0e6d0', fontStyle: 'bold'
     }).setOrigin(0, 0.5);
-    typeT.setShadow(0, Math.max(1, w * 0.006), ts.accent, 3, false, true);
+    if(!paintedCard)typeT.setShadow(0, Math.max(1, w * 0.006), ts.accent, 3, false, true);
     if (!detailMode) c.add(typeT); else typeT.destroy();
 
     const desc = s.add.text(0, L.rules.y + L.rules.h * 0.5, descStr, {
       fontFamily: FONT, fontSize: descFont + 'px',
-      color: CARD.text, align: 'center', lineSpacing: detailMode ? 5 : 1
+      color: paintedCard ? '#342b20' : CARD.text, align: 'center', lineSpacing: Math.max(1, Math.round(w * (detailMode ? .012 : .005)))
     }).setOrigin(0.5);
+    {
+      const ruleWidth=L.rules.w-w*.06, ruleHeight=L.rules.h-h*.019;
+      const minFont=Math.max(8,Math.round(w*((detailMode||rewardMode) ? .076 : .055)));
+      let size=descFont;
+      desc.setText(wrapCJK(describeCard(d),ruleWidth,size));
+      while((desc.height>ruleHeight||desc.width>ruleWidth)&&size>minFont){
+        size--;desc.setFontSize(size);desc.setText(wrapCJK(describeCard(d),ruleWidth,size));
+      }
+      L.fontPx=size;
+    }
     c.add(desc);
     this.descT = desc;
     this.nameT = nameT;
@@ -1283,7 +1341,8 @@ function makeHpBar(scene, x, y, w, h, hp, hpMax, color) {
  * 状态徽章（力量/易伤/中毒…）
  * ---------------------------------------------------------- */
 function makeStatusChip(scene, x, y, stat, value) {
-  const meta = STATUS_META[stat] || { name: stat === 'power' ? '能力' : stat, color: PAL.purple };
+  const baseMeta = STATUS_META[stat] || { name: stat === 'power' ? '能力' : stat, color: PAL.purple };
+  const meta = {...baseMeta,name:I18N.name('status',stat,baseMeta.name)};
   const c = scene.add.container(x, y);
   const g = scene.add.graphics();
   const R = 30;
@@ -1297,8 +1356,24 @@ function makeStatusChip(scene, x, y, stat, value) {
   g.lineStyle(2, CARD.edgeHi, 0.75);
   g.strokeCircle(0, 0, R);
   c.add(g);
-  const art=iconArt(scene,-3,-4,58,'tactical',stat);
-  if(art)c.add(art);
+  const art=iconArt(scene,-3,-4,58,'tactical',stat === 'stance' ? 'defend' : stat === 'counter' ? 'attack' : stat);
+  if(stat === 'seal') {
+    const seal = scene.add.graphics();
+    seal.lineStyle(3, meta.color, 1);
+    seal.strokeRect(-16, -23, 28, 34);
+    seal.lineBetween(-11, -13, 7, -13);
+    seal.lineBetween(-11, -2, 7, -2);
+    seal.lineBetween(-2, -19, -2, 5);
+    c.add(seal);
+  }
+  else if(stat === 'bleed') {
+    // 三道伤口，不借用中毒图标，也不只依赖颜色区分。
+    const wound = scene.add.graphics();
+    wound.lineStyle(5, meta.color, 1);
+    for (let i = -1; i <= 1; i++) wound.lineBetween(i * 11 - 6, 9, i * 11 + 6, -18);
+    c.add(wound);
+  }
+  else if(art)c.add(art);
   else c.add(scene.add.text(0,-10,meta.name.slice(0,1),{fontFamily:FONT,fontSize:'26px',color:'#ffffff'}).setOrigin(.5));
   g.fillStyle(0x12101a,.97);g.fillCircle(20,22,18);
   const t = scene.add.text(20, 22, String(value), {
@@ -1310,7 +1385,7 @@ function makeStatusChip(scene, x, y, stat, value) {
   c.setData('stat',stat).setData('value',value).setSize(66,76).setInteractive();
   c.on('pointerdown',(p,lx,ly,ev)=>{
     if(ev)ev.stopPropagation();
-    const desc=stat==='strength'?'攻击伤害 +'+value:stat==='burnDmg'?'受到的每次攻击 +'+value:stat==='thorns'?'受到攻击时反弹 '+value+' 点伤害':stat==='poison'||stat==='burn'?'回合开始失去 '+value+' 点生命':meta.desc||'已生效的能力牌数量';
+    const desc=I18N.t(`status.${stat}.description`,{value},meta.desc||I18N.t('status.power.description'));
     showArtTip(scene,meta.name+' · '+value,desc,'tactical',stat);
   });
   c.setDepth(320);
@@ -1342,10 +1417,12 @@ function makeIntentIcon(scene, x, y, acts, dmgTotal) {
   c.add(glyph);
 
   // 伤害数字（大号，StS 风格预告）
-  const t = scene.add.text(0, 36, dmgTotal > 0 ? String(dmgTotal) : meta.label, {
+  const moveName = primary.moveId ? I18N.t('move.' + primary.moveId + '.name') : null;
+  const t = scene.add.text(0, 36, dmgTotal > 0 ? String(dmgTotal) : (moveName || I18N.t(`intent.${primary.type}.label`,{},meta.label)), {
     fontFamily: FONT, fontSize: dmgTotal > 0 ? '42px' : '30px',
     color: hex, fontStyle: 'bold'
   }).setOrigin(0.5);
+  if (t.width > 112) t.setFontSize(Math.floor(parseInt(t.style.fontSize, 10) * 112 / t.width));
   t.setShadow(0, 3, '#000000', 5, false, true);
   c.add(t);
   const extra=acts.filter(a=>a!==primary).slice(0,3);
@@ -1357,8 +1434,9 @@ function makeIntentIcon(scene, x, y, acts, dmgTotal) {
   c.setSize(124,124).setInteractive();
   c.on('pointerdown',(p,lx,ly,ev)=>{
     if(ev)ev.stopPropagation();
-    const summary=acts.map(a=>{const m=INTENT_META[a.type]||{label:a.type};if(a.type==='attack')return m.label+' '+a.dmg+' × '+a.hits;if(a.type==='defend')return m.label+' '+a.block;return m.label+(a.stat?' · '+(STATUS_META[a.stat]?.name||a.stat):'')+(a.v!=null?' '+a.v:a.turns!=null?' '+a.turns+' 层':'');}).join('，');
-    showArtTip(scene,'敌人下一回合',summary+(dmgTotal>0?'\n预计总伤害 '+dmgTotal:''),'tactical',primary.type==='rule'?'burnDmg':primary.type);
+    const summary=acts.map(a=>{const label=I18N.t(`intent.${a.type}.label`,{},a.type);if(a.type==='attack')return label+' '+a.dmg+' × '+a.hits;if(a.type==='defend')return label+' '+a.block;return label+(a.stat?' · '+I18N.name('status',a.stat,STATUS_META[a.stat]?.name):'')+(a.v!=null?' '+a.v:a.turns!=null?' '+I18N.t('intent.stacks',{value:a.turns}):'');}).join('\n');
+    const moveText = primary.moveId ? I18N.t('move.' + primary.moveId + '.description') + '\n' : '';
+    showArtTip(scene,moveName || I18N.t('intent.title'),moveText+summary+(dmgTotal>0?'\n'+I18N.t('intent.total',{value:dmgTotal}):''),'tactical',primary.type==='rule'?'burnDmg':primary.type);
   });
   return c;
 }

@@ -18,7 +18,7 @@
     -webkit-tap-highlight-color:transparent; /* 禁点击高亮 */
     -webkit-touch-callout:none;
     user-select:none;
-    font-family:'Outfit','Microsoft YaHei',sans-serif;
+    font-family:BlackForestSerif,'Microsoft YaHei',sans-serif;
   }
   body { display:flex; align-items:center; justify-content:center; }
 
@@ -55,16 +55,17 @@
 <body>
 
 <div id="game-container"></div>
+<div id="font-loading" role="status" style="position:fixed;z-index:110;color:#c8a86a;font:20px sans-serif">正在点亮提灯…</div>
 
 <div id="rotate-hint">
   <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
     <rect x="7" y="2" width="10" height="20" rx="2"/>
     <path d="M11 19h2"/>
   </svg>
-  <div>请竖屏游玩</div>
+  <div id="rotate-text">请竖屏游玩</div>
 </div>
 
-<div id="desktop-note">手机竖屏体验最佳 · 浏览器 F12 可切换设备模拟</div>
+<div id="desktop-note">鼠标选择卡牌 · 数字键出牌 · 空格结束回合</div>
 
 <script>
 // 横屏时提示旋转
@@ -80,40 +81,55 @@ checkOrientation();
 </script>
 
 <script src="assets/vendor/phaser-3.80.1.min.js"></script>
+<script src="src/core/i18n.js?v=20261016-card-v2"></script>
+<script src="locales/en.js?v=20261016-card-v2"></script>
+<script src="locales/ui.js?v=20261016-card-v2"></script>
+<script src="locales/combat.js?v=20261016-card-v2"></script>
+<script src="locales/items.js?v=20261016-card-v2"></script>
+<script src="locales/journal.js?v=20261016-card-v2"></script>
+<script src="locales/reward.js?v=20261016-card-v2"></script>
+<script src="locales/events.js?v=20261016-card-v2"></script>
+<script src="locales/story.js?v=20261016-card-v2"></script>
+<script src="locales/shell.js?v=20261016-card-v2"></script>
+<script src="locales/storage.js?v=20261016-card-v2"></script>
+<script src="src/core/save-store.js?v=20261016-card-v2"></script>
+<script src="src/core/text-layout.js?v=20261016-card-v2"></script>
 
-<script src="src/core/cards.js"></script>
-<script src="src/core/enemies.js"></script>
-<script src="src/core/relics.js"></script>
-<script src="src/core/events.js"></script>
-<script src="src/core/starters.js"></script>
-<script src="src/core/contracts.js"></script>
-<script src="src/core/story.js"></script>
-<script src="src/core/story-assets.js"></script>
-<script src="src/core/run.js"></script>
-<script src="src/core/audio-assets.js"></script>
-<script src="src/core/audio.js"></script>
-<script src="src/core/music.js"></script>
-<script src="src/core/fx.js"></script>
-<script src="src/core/motion-assets.js"></script>
-<script src="src/core/duel-art.js"></script>
-<script src="src/core/motion.js"></script>
-<script src="src/core/hero-fx-assets.js"></script>
-<script src="src/core/hero-fx.js"></script>
-<script src="src/core/ui.js"></script>
-<script src="src/core/combat.js"></script>
-<script src="src/core/theme.js"></script>
-<script src="src/core/ui-skin.js"></script>
-<script src="src/core/icon-art.js"></script>
-<script src="src/core/loading-art.js"></script>
+<script src="src/core/cards.js?v=20261016-card-v2"></script>
+<script src="src/core/enemies.js?v=20261016-card-v2"></script>
+<script src="src/core/relics.js?v=20261016-card-v2"></script>
+<script src="src/core/events.js?v=20261016-card-v2"></script>
+<script src="src/core/starters.js?v=20261016-card-v2"></script>
+<script src="src/core/contracts.js?v=20261016-card-v2"></script>
+<script src="src/core/story.js?v=20261016-card-v2"></script>
+<script src="src/core/story-assets.js?v=20261016-card-v2"></script>
+<script src="src/core/run.js?v=20261016-card-v2"></script>
+<script src="src/core/audio-assets.js?v=20261016-card-v2"></script>
+<script src="src/core/audio.js?v=20261016-card-v2"></script>
+<script src="src/core/music.js?v=20261016-card-v2"></script>
+<script src="src/core/fx.js?v=20261016-card-v2"></script>
+<script src="src/core/motion-assets.js?v=20261016-card-v2"></script>
+<script src="src/core/duel-art.js?v=20261016-card-v2"></script>
+<script src="src/core/motion.js?v=20261016-card-v2"></script>
+<script src="src/core/hero-fx-assets.js?v=20261016-card-v2"></script>
+<script src="src/core/hero-fx.js?v=20261016-card-v2"></script>
+<script src="src/core/living-scene.js?v=20261016-card-v2"></script>
+<script src="src/core/ui.js?v=20261016-card-v2"></script>
+<script src="src/core/combat.js?v=20261016-card-v2"></script>
+<script src="src/core/theme.js?v=20261016-card-v2"></script>
+<script src="src/core/ui-skin.js?v=20261016-card-v2"></script>
+<script src="src/core/icon-art.js?v=20261016-card-v2"></script>
+<script src="src/core/loading-art.js?v=20261016-card-v2"></script>
 
-<script src="src/scenes/BootScene.js"></script>
-<script src="src/scenes/TitleScene.js"></script>
-<script src="src/scenes/CombatScene.js"></script>
-<script src="src/scenes/RewardScene.js"></script>
-<script src="src/scenes/EventScene.js"></script>
-<script src="src/scenes/JournalScene.js"></script>
-<script src="src/scenes/StoryScene.js"></script>
+<script src="src/scenes/BootScene.js?v=20261016-card-v2"></script>
+<script src="src/scenes/TitleScene.js?v=20261016-card-v2"></script>
+<script src="src/scenes/CombatScene.js?v=20261016-card-v2"></script>
+<script src="src/scenes/RewardScene.js?v=20261016-card-v2"></script>
+<script src="src/scenes/EventScene.js?v=20261016-card-v2"></script>
+<script src="src/scenes/JournalScene.js?v=20261016-card-v2"></script>
+<script src="src/scenes/StoryScene.js?v=20261016-card-v2"></script>
 
-<script src="src/game.js"></script>
+<script src="src/game.js?v=20261016-card-v2"></script>
+<script src="src/core/fonts.js?v=20261016-card-v2"></script>
 </body>
 </html>

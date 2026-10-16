@@ -31,6 +31,8 @@ Add-Rel 'README.md'
 
 # all game source
 Get-ChildItem (Join-Path $root 'src') -Recurse -File -Filter *.js | ForEach-Object { $files.Add($_.FullName) }
+Get-ChildItem (Join-Path $root 'locales') -Recurse -File -Filter *.js | ForEach-Object { $files.Add($_.FullName) }
+Get-ChildItem (Join-Path $root 'assets\fonts') -File | ForEach-Object { $files.Add($_.FullName) }
 
 # runtime assets only: wired-up card art + webp + enemy png + phaser build.
 # Unregistered .jpg sources and .tmp-gen/ intermediates are deliberately excluded.

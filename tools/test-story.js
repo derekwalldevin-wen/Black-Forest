@@ -17,5 +17,7 @@ let branches=0;for(const witness of ['lives','thread'])for(const vow of ['releas
 }
 RUN.newRun('guard');STORY.complete('before',0);STORY.complete('before',0);assert.equal(RUN.story.seen.length,1);assert.equal(STORY.journal().length,1);assert.equal(STORY.journal()[0].kind,'before');assert(!STORY.journal().some(e=>e.step===17));
 RUN.story.pending={kind:'after',step:0,reward:{gold:20,name:'灰狼'}};RUN.save();RUN.story={seen:[],choices:{},pending:null};RUN.load();assert.equal(RUN.story.pending.kind,'after');assert.equal(RUN.story.pending.reward.gold,20);
-fs.mkdirSync('docs/story',{recursive:true});fs.writeFileSync('docs/story/CONTENT.json',JSON.stringify({chapters:STORY_CHAPTERS,beats:STORY_BEATS,choices:STORY_CHOICES},null,2));
+const speakers=vm.runInContext('STORY_SPEAKERS',context);
+const reviewBeats=STORY_BEATS.map(b=>({...b,before:b.before.map(([id,text])=>[speakers[id],text]),after:b.after.map(([id,text])=>[speakers[id],text])}));
+fs.mkdirSync('docs/story',{recursive:true});fs.writeFileSync('docs/story/CONTENT.json',JSON.stringify({chapters:STORY_CHAPTERS,beats:reviewBeats,choices:STORY_CHOICES},null,2));
 fs.writeFileSync('docs/story/LOGIC-REPORT.json',JSON.stringify({battles:18,chapters:6,choices:4,endingCombinations:branches,checks:['battle order matches current game','distinct scenes and clues','new run resets choices','legacy saves retain deck and stats','malformed fields sanitized','read-only journal excludes unseen spoilers','pending aftermath/reward persists'],errors:[]},null,2));console.log('PASS: 18 story battles, 6 chapters, 4 choices, 16 ending combinations; persistence, legacy saves, journal and content invariants');

@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "lang": "zh-CN",
+      "skip": false,
+      "before": {
+        "deck": 8,
+        "relics": 0,
+        "step": 0
+      },
+      "after": {
+        "deck": 9,
+        "relics": 1,
+        "stalePrompt": false
+      },
+      "advancedOnce": true
+    },
+    {
+      "lang": "zh-CN",
+      "skip": true,
+      "before": {
+        "deck": 8,
+        "relics": 0,
+        "step": 0
+      },
+      "after": {
+        "deck": 8,
+        "relics": 1,
+        "stalePrompt": false
+      },
+      "advancedOnce": true
+    },
+    {
+      "lang": "en",
+      "skip": false,
+      "before": {
+        "deck": 8,
+        "relics": 0,
+        "step": 0
+      },
+      "after": {
+        "deck": 9,
+        "relics": 1,
+        "stalePrompt": false
+      },
+      "advancedOnce": true
+    },
+    {
+      "lang": "en",
+      "skip": true,
+      "before": {
+        "deck": 8,
+        "relics": 0,
+        "step": 0
+      },
+      "after": {
+        "deck": 8,
+        "relics": 1,
+        "stalePrompt": false
+      },
+      "advancedOnce": true
+    }
+  ],
+  "errors": []
+}

@@ -284,6 +284,10 @@ const INTENT_META = {
 };
 
 const STATUS_META = {
+  stance:    { name: '架势', color: 0x79b9e1, desc: '挡住整轮攻击后获得反击准备' },
+  counter:   { name: '反击准备', color: 0xe8c277, desc: '本回合首张攻击牌的首次主命中伤害+5' },
+  seal:      { name: '符印', color: 0xd8ad58, desc: '镇印消耗符印，每层使单次伤害+3；最多3层' },
+  bleed:     { name: '流血', color: 0xce5364, desc: '回合结束失去2生命；剩余回合' },
   strength:  { name: '力量',  color: 0xd9a441, desc: '攻击伤害 +' },
   vulnerable:{ name: '易伤',  color: 0xd4656a, desc: '受到伤害 +50%' },
   weak:      { name: '虚弱',  color: 0x8a7a9a, desc: '造成伤害 -25%' },
@@ -298,7 +302,7 @@ const STATUS_META = {
 /* 回合开始需要结算的「持续掉血」状态。中毒是哥特篇，灼烧是东方篇，
    两者机制相同，只是意象不同，所以共用一条结算路径。 */
 const TICK_STATUSES = ['poison', 'burn'];
-/* 回合结束需要递减的「层数」状态。燎原不递减，是永久增益。 */
+/* 单位回合开始、持续伤害结算后统一递减一次。燎原不递减，是永久增益。 */
 const DECAY_STATUSES = ['vulnerable', 'weak', 'frail', 'poison', 'burn'];
 
 /* 从敌人定义实例化一个战斗单位 */
@@ -327,7 +331,29 @@ function spawnEnemy(id, index) {
  * 打 48 点——实测下来玩家在第 6 回合必死，BOSS 通过率只有 1.7%。
  * 加上 once 之后力量只涨一次，pattern 的原意（开场/中期变强）才成立。
  */
+/* 实验招式与初始牌独立开关，可分别归因。每次只在新玩家回合推进一次。 */
+const ENEMY_MOVE_CYCLES = {
+  wolf: [
+    { moveId: 'wolf_stalk', type: 'defend', block: 0 },
+    { moveId: 'wolf_pounce', type: 'attack', dmg: 10, hits: 1, bleedOnHit: 2 },
+    { moveId: 'wolf_recover', type: 'defend', block: 0 }
+  ],
+  alpha_wolf: [
+    { moveId: 'alpha_howl', type: 'defend', block: 4 },
+    { moveId: 'alpha_pounce', type: 'attack', dmg: 9, hits: 2, bleedOnHit: 2 },
+    { moveId: 'wolf_recover', type: 'defend', block: 0 }
+  ]
+};
+
 function rollIntent(e) {
+  const experiment = e.movePrototype || (typeof location !== 'undefined' && typeof URLSearchParams !== 'undefined' &&
+    new URLSearchParams(location.search).get('enemies') === 'identity');
+  const cycle = experiment && ENEMY_MOVE_CYCLES[e.key];
+  if (cycle) {
+    const cursor = e.moveCursor || 0;
+    e.moveCursor = cursor + 1;
+    return [{ ...cycle[cursor % cycle.length] }];
+  }
   const ratio = e.hp / e.hpMax;
   const used = e.usedPatterns || (e.usedPatterns = {});
   const pool = e.def.pattern.filter(p =>

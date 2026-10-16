@@ -20,21 +20,21 @@ class TitleScene extends Phaser.Scene {
     deco.lineStyle(2, PAL.gold, 0.35);
 
     /* 标题 */
-    this.add.text(cx, 520, '黑 森 林', {
-      fontFamily: FONT, fontSize: '132px', color: '#e8dcc0',
+    this.add.text(cx, 520, I18N.t('title.name'), {
+      fontFamily: FONT, fontSize: I18N.locale==='en'?'100px':'132px', color: '#e8dcc0',
       fontStyle: 'bold', stroke: '#0d0a12', strokeThickness: 10
     }).setOrigin(0.5).setDepth(3);
 
-    this.add.text(cx, 640, 'DARK  FOREST', {
+    this.add.text(cx, 640, I18N.t('shell.subtitle'), {
       fontFamily: FONT, fontSize: '36px', color: '#c8a86a', letterSpacing: 8
     }).setOrigin(0.5).setDepth(3);
 
-    this.add.text(cx, 740, '替失去名字的人，点一盏回家的灯', {
+    this.add.text(cx, 740, I18N.t('title.tagline'), {
       fontFamily: FONT, fontSize: '40px', color: '#c4b698'
     }).setOrigin(0.5).setDepth(3);
 
     // 双世界结构的预告：让玩家知道后半程会翻进山海经
-    this.add.text(cx, 810, '母亲的家书没有署名，红线却伸向林中', {
+    this.add.text(cx, 810, I18N.t('title.letter'), {
       fontFamily: FONT, fontSize: '32px', color: '#a89a80'
     }).setOrigin(0.5).setDepth(3);
 
@@ -45,7 +45,7 @@ class TitleScene extends Phaser.Scene {
     if(hasSave)this.add.image(540,1005,'ui-avatar').setDisplaySize(240,240).setDepth(3);
     else this.add.image(540,1120,'hero-traveler').setDisplaySize(360,540).setDepth(3);
     if (RUN.hasSave() && !loaded) RUN.clearSave();
-    if (hasSave) uiText(this,540,1160,`第${RUN.chapterNum()}章 · ${RUN.chapterDef().name}   生命 ${RUN.hp}/${RUN.maxHp}`,38,'#c4b698').setOrigin(.5).setDepth(4);
+    if (hasSave) uiText(this,540,1160,I18N.t('title.save',{chapter:I18N.chapterNumber(RUN.chapter,RUN.chapterNum()),name:I18N.t(`chapter.${RUN.chapter}.name`),hp:RUN.hp,maxHp:RUN.maxHp}),38,'#c4b698').setOrigin(.5).setDepth(4);
 
     // 统一入口：按钮和键盘都走这里
     // ?debug&auto=1 时跳过标题，直接开一局调试用进度
@@ -106,23 +106,32 @@ class TitleScene extends Phaser.Scene {
     };
     this._modalOpen = false;
 
+    this.changeLanguage=()=>{
+      if(this._starting||this._modalOpen||this._starterPicker)return;
+      const saved=I18N.setLocale(I18N.locale==='en'?'zh-CN':'en');
+      this.scene.restart({languageSaveFailed:!saved});
+    };
+    this.languageButton=makeButton(this,790,160,460,110,I18N.t('shell.language'),()=>this.changeLanguage(),{skin:'secondary',fontSize:34}).setDepth(4);
+    this.add.text(540,260,I18N.t(_settings.languageSaveFailed?'shell.storageError':'shell.preview'),{fontFamily:FONT,fontSize:'26px',color:'#b5a58d',align:'center'}).setOrigin(.5).setDepth(4);
+
     if (this._debugAuto) this.startRun(true);
     else if (this._openStarterOnEnter) { this._openStarterOnEnter = false; this.startRun(); }
 
     this.input.keyboard.on('keydown', (e) => {
       if (this._modalOpen) return;
+      if (e.code==='KeyL'&&!e.repeat){e.preventDefault();this.changeLanguage();return;}
       if (e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); this.startRun(); }
     });
 
     makeButton(this, cx, by, 840, 156,
-      hasSave ? '继 续 征 途' : '开 始 征 途',
+      hasSave ? I18N.t('title.continue') : I18N.t('title.start'),
       () => this.startRun(),
       { accent: PAL.gold, color: 0x2c2438 }
     ).setDepth(4);
 
     if (hasSave) {
-      makeButton(this, cx, by + gap, 840, 144, '重 新 开 始', () => {
-        this.showConfirm('确定要抹去上次的进度吗？', () => {
+      makeButton(this, cx, by + gap, 840, 144, I18N.t('title.restart'), () => {
+        this.showConfirm(I18N.t('title.erase'), () => {
           // 确认后回到传承选择，而不是直接用 classic 开一把。
           // 玩家点「重新开始」时想换打法，替他决定等于取消了这个需求。
           RUN.clearSave();
@@ -131,11 +140,11 @@ class TitleScene extends Phaser.Scene {
       }, { accent: 0x8a6a7a, color: 0x241f30 }).setDepth(4);
     }
 
-    makeButton(this, cx, by + gap * (hasSave ? 2 : 1), 840, 144, '怎 么 玩', () => {
+    makeButton(this, cx, by + gap * (hasSave ? 2 : 1), 840, 144, I18N.t('title.help'), () => {
       this.showHelp();
     }, { accent: PAL.blue, color: 0x1e2634 }).setDepth(4);
 
-    this.add.text(cx, 1840, '黑森林 · 哥特童话与山海志怪', {
+    this.add.text(cx, 1840, I18N.t('title.footer'), {
       fontFamily: FONT, fontSize: '22px', color: '#4a4258'
     }).setOrigin(0.5).setDepth(4);
 
@@ -197,11 +206,11 @@ class TitleScene extends Phaser.Scene {
     panel.strokeRoundedRect(40, 110, 1000, 1560, 32);
     panel.destroy();layer.add(uiSurface(this,540,890,1000,1560,'panel'));
 
-    const title = this.add.text(540, 200, '选 择 传 承', {
+    const title = this.add.text(540, 200, I18N.t('starter.title'), {
       fontFamily: FONT, fontSize: '54px', color: '#e8dcc0', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(71);
     layer.add(title);
-    const sub = this.add.text(540, 274, '开局八张牌决定了这局能怎么打', {
+    const sub = this.add.text(540, 274, I18N.t('starter.subtitle'), {
       fontFamily: FONT, fontSize: '30px', color: '#a89a80'
     }).setOrigin(0.5).setDepth(71);
     layer.add(sub);
@@ -217,10 +226,12 @@ class TitleScene extends Phaser.Scene {
       row._g = this.add.graphics();
       row._skin = uiSkin(this,0,0,RW,RH,'secondary');
       if (row._skin) row.add(row._skin);
-      row._name = this.add.text(-RW / 2 + 40, -RH / 2 + 56, def.name, {
+      row._name = this.add.text(-RW / 2 + 40, -RH / 2 + 56, I18N.t(`starter.${id}.name`,{},def.name), {
         fontFamily: FONT, fontSize: '50px', color: '#e8dcc0', fontStyle: 'bold'
       }).setOrigin(0, 0.5);
-      row._blurb = this.add.text(-RW / 2 + 40, -RH / 2 + 128, def.blurb, {
+      const prototype = starterDeck(id).some(card => ['rend', 'inscribe', 'brace'].includes(card));
+      const blurbKey = prototype ? `starter.${id}.prototype` : `starter.${id}.blurb`;
+      row._blurb = this.add.text(-RW / 2 + 40, -RH / 2 + 128, I18N.t(blurbKey,{},def.blurb), {
         fontFamily: FONT, fontSize: '40px', color: '#c4b698'
       }).setOrigin(0, 0.5);
       row._key = this.add.text(RW / 2 - 40, -RH / 2 + 56, String(i + 1), {
@@ -239,16 +250,17 @@ class TitleScene extends Phaser.Scene {
       for (const g of groups) {
         const cd = CARD_DEFS[g.id];
         const spirit = cardCostType(cd) === 'spirit';
-        const t = this.add.text(cx, cy, cd.name + (g.n > 1 ? '×' + g.n : ''), {
-          fontFamily: FONT, fontSize: '34px', color: spirit ? '#e8c86a' : '#cfc4b0'
+        const t = this.add.text(cx, cy, I18N.cardName(cd) + (g.n > 1 ? '×' + g.n : ''), {
+          fontFamily: FONT, fontSize: I18N.locale==='en'?'28px':'34px', color: spirit ? '#e8c86a' : '#cfc4b0'
         }).setOrigin(0, 0.5);
+        if(cx+t.width>RW/2-30){cx=-RW/2+40;cy+=34;t.setPosition(cx,cy);}
         row.add(t);
         cx += t.width + 26;
       }
       // 符箓那套要在行内也标一下资源，否则只有颜色区分，
       // 色觉障碍玩家看不出哪几张吃灵韵。
       if (def.deck.some(cid => cardCostType(CARD_DEFS[cid]) === 'spirit')) {
-        row._note = this.add.text(-RW / 2 + 40, RH / 2 - 108, '含符箓：战斗里会多出一条灵韵资源栏', {
+        row._note = this.add.text(-RW / 2 + 40, RH / 2 - 108, I18N.t('starter.spiritNote'), {
           fontFamily: FONT, fontSize: '32px', color: '#c9a13f'
         }).setOrigin(0, 0.5);
         row.add(row._note);
@@ -260,17 +272,17 @@ class TitleScene extends Phaser.Scene {
     });
 
     const legend = this.add.text(540, 1330,
-      '行动力用于普通牌　灵韵用于符箓　同回合先打符箓，后续符箓费用 -1', {
+      I18N.t('starter.legend'), {
       fontFamily: FONT, fontSize: '28px', color: '#8a7f9c', align: 'center', wordWrap: { width: 920 }
     }).setOrigin(0.5, 0).setDepth(71);
     layer.add(legend);
 
-    this._starterOk = makeButton(this, 330, 1500, 360, 110, '确 认 开 始', () => this.confirmStarter(), { accent: PAL.gold, color: 0x2c2438 });
-    this._starterCancel = makeButton(this, 750, 1500, 360, 110, '取 消', () => this.closeStarterPicker(), { accent: PAL.boneDim, color: 0x241f30 });
+    this._starterOk = makeButton(this, 330, 1500, 360, 110, I18N.t('starter.confirm'), () => this.confirmStarter(), { accent: PAL.gold, color: 0x2c2438 });
+    this._starterCancel = makeButton(this, 750, 1500, 360, 110, I18N.t('starter.cancel'), () => this.closeStarterPicker(), { accent: PAL.boneDim, color: 0x241f30 });
     this._starterOk.setDepth(71); this._starterCancel.setDepth(71);
     layer.add([this._starterOk, this._starterCancel]);
 
-    this._starterHint = this.add.text(540, 1610, '1 / 2 / 3 选择　Enter 确认　Esc 返回', {
+    this._starterHint = this.add.text(540, 1610, I18N.t('starter.keys'), {
       fontFamily: FONT, fontSize: '24px', color: '#4a4258'
     }).setOrigin(0.5).setDepth(71);
     layer.add(this._starterHint);
@@ -316,6 +328,9 @@ class TitleScene extends Phaser.Scene {
     const id = this._starterPicked;
     if (!id || !STARTER_DEFS[id]) return;
     this._starting = true;              // 闸门在建局之前置位
+    // The player has explicitly confirmed a new journey. Clear both old slots
+    // before creating it; a permission failure must not silently revive the old run.
+    if(!RUN.clearSave()){this._starting=false;return;}
     this.closeStarterPicker();
     RUN.newRun(id);
     RUN.save();                          // 只有确认才落盘
@@ -347,16 +362,17 @@ class TitleScene extends Phaser.Scene {
     g.destroy();panel.add(uiSurface(this,0,0,980,1420,'panel'));
 
     const sections = [
-      ['战斗与意图', '每回合获得3点行动力。点牌选中，再点或上滑打出。右侧图标预告敌人下一次行动；结束回合后敌人才会行动。蓝色盾值先抵消伤害，剩余伤害扣除生命。'],
-      ['灵韵与共鸣', '符箓消耗灵韵，普通牌消耗行动力。灵韵每回合增加1点，未使用的会保留。本回合每打出1张符箓，后续符箓费用降低1，最低为0。'],
-      ['构筑与征途', '战后可以拿牌或跳过；有遗物奖励时还需选择遗物。事件提供收益和代价。前三章是森林，后三章进入山海篇。根据意图安排格挡、攻击和资源。']
+      [I18N.t('help.combat.title'), I18N.t('help.combat.body')],
+      [I18N.t('help.spirit.title'), I18N.t('help.spirit.body')],
+      [I18N.t('help.journey.title'), I18N.t('help.journey.body')]
     ];
     sections.forEach(([title, body], i) => {
-      const y = -584 + i * 330;
+      const y = -584 + i * 360;
       panel.add(this.add.text(-390, y, title, {fontFamily: FONT, fontSize: '48px', color: '#c8a86a', fontStyle: 'bold'}));
-      panel.add(this.add.text(-390, y + 72, wrapCJK(body, 780, 40), {fontFamily: FONT, fontSize: '40px', color: '#e8dcc0', lineSpacing: 10}));
+      const bodySize=I18N.locale==='en'?34:38;
+      panel.add(this.add.text(-390, y + 72, wrapCJK(body, 780, bodySize), {fontFamily: FONT, fontSize: bodySize+'px', color: '#e8dcc0', lineSpacing: 8}));
     });
-    const btn = makeButton(this, 0, 560, 340, 96, '知道了', () => {
+    const btn = makeButton(this, 0, 560, 340, 96, I18N.t('ui.gotIt'), () => {
       this._modalOpen = false;
       this._scrim(false);
       panel.destroy();
@@ -381,10 +397,10 @@ class TitleScene extends Phaser.Scene {
     }).setOrigin(0.5);
     panel.add(t);
 
-    const yes = makeButton(this, 220, 130, 380, 136, '确定', () => {
+    const yes = makeButton(this, 220, 130, 380, 136, I18N.t('ui.confirm'), () => {
       this._modalOpen = false; this._scrim(false); panel.destroy(); onYes();
     }, { accent: PAL.bloodHi, skin:'danger' });
-    const no = makeButton(this, -220, 130, 380, 136, '取消', () => {
+    const no = makeButton(this, -220, 130, 380, 136, I18N.t('ui.cancel'), () => {
       this._modalOpen = false; this._scrim(false); panel.destroy();
     }, { accent: PAL.boneDim });
     panel.add([yes, no]);

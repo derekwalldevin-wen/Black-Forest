@@ -15,6 +15,45 @@
 
 const CARD_DEFS = {
 
+  regroup: {
+    id: 'regroup', name: '整备', type: 'skill', rarity: 'basic',
+    cost: 1, target: 'self', art: 'shield',
+    text: '获得 {v} 点格挡。抽 1 张牌。',
+    effects: [{ op: 'block', v: 3 }, { op: 'draw', v: 1 }]
+  },
+  brace: {
+    id: 'brace', name: '架势', type: 'skill', rarity: 'basic',
+    cost: 1, target: 'self', art: 'shield',
+    text: '获得 {v} 格挡。若挡住敌方整轮攻击，下回合首张攻击的首击伤害 +5。',
+    effects: [{ op: 'brace', v: 6 }]
+  },
+
+  inscribe: {
+    id: 'inscribe', name: '引符', type: 'skill', rarity: 'basic',
+    cost: 1, target: 'enemy', art: 'talisman',
+    text: '施加 1 层符印（最多 3 层）。抽 1 张牌。',
+    effects: [{ op: 'mark', v: 1 }, { op: 'draw', v: 1 }]
+  },
+  seal_burst: {
+    id: 'seal_burst', name: '镇印', type: 'talisman', rarity: 'basic', realm: 'shanhai',
+    cost: 2, costType: 'spirit', target: 'enemy', art: 'talisman',
+    text: '造成 {v} 点伤害。消耗全部符印，每层使本次伤害 +3。',
+    effects: [{ op: 'sealBurst', v: 5, bonus: 3 }]
+  },
+
+  rend: {
+    id: 'rend', name: '割裂', type: 'attack', rarity: 'basic',
+    cost: 1, target: 'enemy', art: 'dagger',
+    text: '造成 {v} 点伤害。若扣除生命，施加 2 回合流血（回合结束失去 2 生命）。',
+    effects: [{ op: 'wound', v: 4, turns: 2 }]
+  },
+  pursuit: {
+    id: 'pursuit', name: '追猎', type: 'attack', rarity: 'basic',
+    cost: 1, target: 'enemy', art: 'fang',
+    text: '造成 {v} 点伤害。若目标流血，消耗 1 回合流血，使本次伤害 +3。',
+    effects: [{ op: 'consumeBleed', v: 6, bonus: 3 }]
+  },
+
   /* ---------- 基础牌：每局开局必带 4 张劈砍 + 4 张格挡 ---------- */
   strike: {
     id: 'strike', name: '劈砍', en: 'Strike', type: 'attack', rarity: 'basic',
@@ -157,7 +196,7 @@ const CARD_DEFS = {
   hunters_mark: {
     id: 'hunters_mark', name: '猎手印记', type: 'skill', rarity: 'rare',
     cost: 1, target: 'enemy', art: 'fang',
-    text: '使目标失去 2 点力量。',
+    text: '施加 3 层虚弱，使目标失去 2 点力量。',
     effects: [{ op: 'enemyDebuff', stat: 'weak', turns: 3 }, { op: 'enemyLose', stat: 'strength', v: 2 }]
   },
   thorn_ring: {
@@ -355,5 +394,5 @@ function describeCard(card) {
   for (const e of card.effects || []) {
     if (typeof e.v === 'number' && e.v > 0) { v = e.v; break; }
   }
-  return card.text.replace('{v}', v);
+  return typeof I18N!=='undefined' ? I18N.cardDescription(card,{v}) : card.text.replace('{v}', v);
 }

@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "lang": "zh-CN",
+      "block": 0,
+      "tip": {
+        "text": "扑杀\n造成9伤害两次；任意一次扣血施加2回\n合流血，重复命中不叠加持续时间。下\n一轮喘息。\n攻击 9 × 2\n预计总伤害 18",
+        "fits": true
+      },
+      "after": {
+        "hp": 52,
+        "bleed": 2
+      },
+      "next": {
+        "hp": 50,
+        "bleed": 1
+      }
+    },
+    {
+      "lang": "en",
+      "block": 18,
+      "tip": {
+        "text": "Savage Pounce\nDeal 9 damage twice. HP loss\napplies 2 turns of Bleed; repeated\nhits do not add durations. Recover\nnext turn.\nAttack 9 × 2\nExpected damage: 18",
+        "fits": true
+      },
+      "after": {
+        "hp": 70,
+        "bleed": 0
+      },
+      "next": {
+        "hp": 70,
+        "bleed": 0
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "lang": "zh-CN",
+      "rejected": {
+        "accepted": false,
+        "hp": 100,
+        "spirit": 1,
+        "count": 5
+      },
+      "setup": {
+        "hp": 100,
+        "seal": 1,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "hand": [
+          "seal_gate",
+          "xuan_ji",
+          "fu_paper",
+          "seal_burst",
+          "strike"
+        ]
+      },
+      "preview": {
+        "cost": "1",
+        "text": "预计扣血 8 · 格挡吸收 0\n消耗 1 层符印：合并为一次攻击",
+        "width": 488,
+        "bottom": 967
+      },
+      "end": {
+        "hp": 92,
+        "seal": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 2,
+        "hand": [
+          "xuan_ji",
+          "fu_paper",
+          "strike"
+        ]
+      }
+    },
+    {
+      "lang": "en",
+      "rejected": {
+        "accepted": false,
+        "hp": 100,
+        "spirit": 1,
+        "count": 5
+      },
+      "setup": {
+        "hp": 100,
+        "seal": 1,
+        "energy": 2,
+        "spirit": 3,
+        "resonance": 0,
+        "hand": [
+          "xuan_ji",
+          "seal_burst",
+          "fu_paper",
+          "seal_gate",
+          "strike"
+        ]
+      },
+      "preview": {
+        "cost": "1",
+        "text": "Expected HP loss: 8 · Block absorbs: 0\nConsume 1 Seals in one hit",
+        "width": 625,
+        "bottom": 967
+      },
+      "end": {
+        "hp": 92,
+        "seal": 0,
+        "energy": 2,
+        "spirit": 1,
+        "resonance": 2,
+        "hand": [
+          "xuan_ji",
+          "fu_paper",
+          "strike"
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "lang": "zh-CN",
+      "mode": "pause",
+      "textCount": 13
+    },
+    {
+      "lang": "zh-CN",
+      "mode": "deck",
+      "textCount": 24
+    },
+    {
+      "lang": "zh-CN",
+      "mode": "route",
+      "textCount": 53
+    },
+    {
+      "lang": "zh-CN",
+      "mode": "audio",
+      "textCount": 13
+    },
+    {
+      "lang": "zh-CN",
+      "mode": "relics",
+      "textCount": 15
+    },
+    {
+      "lang": "en",
+      "mode": "pause",
+      "textCount": 13
+    },
+    {
+      "lang": "en",
+      "mode": "deck",
+      "textCount": 24
+    },
+    {
+      "lang": "en",
+      "mode": "route",
+      "textCount": 53
+    },
+    {
+      "lang": "en",
+      "mode": "audio",
+      "textCount": 13
+    },
+    {
+      "lang": "en",
+      "mode": "relics",
+      "textCount": 15
+    }
+  ],
+  "errors": []
+}

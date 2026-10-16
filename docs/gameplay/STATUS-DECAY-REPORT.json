@@ -1,0 +1,48 @@
+{
+  "actual": [
+    {
+      "hp": 95,
+      "poison": 2,
+      "burn": 1
+    },
+    {
+      "hp": 92,
+      "poison": 1,
+      "burn": 0
+    },
+    {
+      "hp": 91,
+      "poison": 0,
+      "burn": 0
+    },
+    {
+      "hp": 91,
+      "poison": 0,
+      "burn": 0
+    }
+  ],
+  "offline": [
+    {
+      "hp": 95,
+      "poison": 2,
+      "burn": 1
+    },
+    {
+      "hp": 92,
+      "poison": 1,
+      "burn": 0
+    },
+    {
+      "hp": 91,
+      "poison": 0,
+      "burn": 0
+    },
+    {
+      "hp": 91,
+      "poison": 0,
+      "burn": 0
+    }
+  ],
+  "errors": [],
+  "scope": "Enemy status settlement in real scene and simulator; scheduled attacks suppressed. Player core covered by test-logic."
+}

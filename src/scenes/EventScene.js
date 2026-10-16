@@ -12,6 +12,12 @@
 class EventScene extends Phaser.Scene {
   constructor() { super('Event'); }
 
+  eventText(field, index) {
+    const source = index === undefined ? this.evt : this.evt.choices[index];
+    const fallback = field === 'name' || field === 'label' ? source[field].replaceAll(' ', '') : source[field];
+    return I18N.t(`event.${this.evt.id}.${index === undefined ? '' : index + '.'}${field}`, {}, fallback);
+  }
+
   init(data) {
     this._id = (data && data.id) || null;
     this._stage = 'choose';
@@ -82,11 +88,11 @@ class EventScene extends Phaser.Scene {
     g.lineStyle(2, 0x2e2740, 1); g.lineBetween(0, UI.TOPBAR_H, 1080, UI.TOPBAR_H);
 
     const ch = RUN.chapterDef();
-    this.add.text(36, 45, `第${RUN.chapterNum()}章 · ${ch.name}`, {
+    this.add.text(36, 45, I18N.t('combat.chapter',{chapter:I18N.chapterNumber(RUN.chapter,RUN.chapterNum()),name:I18N.name('chapter',RUN.chapter,ch.name)}), {
       fontFamily: FONT, fontSize: '28px', color: '#8a7f9c'
     }).setOrigin(0, 0.5).setDepth(6);
 
-    this.add.text(540, 45, '事 件', {
+    this.add.text(540, 45, I18N.t('event.ui.title'), {
       fontFamily: FONT, fontSize: '30px', color: '#c8a86a', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(6);
 
@@ -100,7 +106,7 @@ class EventScene extends Phaser.Scene {
   }
 
   refreshTop() {
-    this.hpText.setText(`${RUN.hp}/${RUN.maxHp}  ◈ ${RUN.gold}`);
+    this.hpText.setText(`${RUN.hp}/${RUN.maxHp}  ◆ ${RUN.gold}`);
     this.refreshRelicBar();
   }
 
@@ -121,12 +127,12 @@ class EventScene extends Phaser.Scene {
       let x = 540 - totalW / 2;
       for (const id of RUN.relics) {
         const icon=drawRelicIcon(this,x,UI.RES_Y+UI.RES_H/2,size,id).setSize(size+8,size+8).setInteractive();
-        icon.on('pointerdown',(p,lx,ly,ev)=>{if(ev)ev.stopPropagation();const d=RELIC_DEFS[id];showArtTip(this,d.name,d.text,'relic',id);});
+        icon.on('pointerdown',(p,lx,ly,ev)=>{if(ev)ev.stopPropagation();const d=RELIC_DEFS[id];showArtTip(this,I18N.name('relic',id,d.name),I18N.description('relic',id,d.text),'relic',id);});
         g.add(icon);
         x += gap;
       }
     } else {
-      g.add(this.add.text(540, UI.RES_Y + UI.RES_H / 2, '尚无遗物', {
+      g.add(this.add.text(540, UI.RES_Y + UI.RES_H / 2, I18N.t('event.ui.empty'), {
         fontFamily: FONT, fontSize: '24px', color: '#4a4258'
       }).setOrigin(0.5));
     }
@@ -164,7 +170,7 @@ class EventScene extends Phaser.Scene {
     } else ring.destroy();
 
     head.add(uiSurface(this,540,1050,944,312,'paper'));
-    head.add(this.add.text(540, 953, this.evt.name.replaceAll(' ', ''), {
+    head.add(this.add.text(540, 953, this.eventText('name'), {
       fontFamily: FONT, fontSize: '60px', color: '#292119', fontStyle: 'bold'
     }).setOrigin(0.5));
 
@@ -174,9 +180,12 @@ class EventScene extends Phaser.Scene {
     drawPanel(pg, 540 - pw / 2, 800, pw, ph, { line: PAL.gold, lineA: 0.45, lw: 2, radius: 18 });
     pg.destroy();
 
-    this.storyText=this.add.text(540, 1008, wrapCJK(this.evt.text, pw - 96, 40), {
+    this.storyText=this.add.text(540, 1008, wrapCJK(this.eventText('text'), pw - 96, 40), {
       fontFamily: FONT, fontSize: '40px', color: '#292119', align: 'center', lineSpacing: 8
     }).setOrigin(0.5,0);head.add(this.storyText);
+    for(let size=38;this.storyText.height>184&&size>=32;size-=2){
+      this.storyText.setFontSize(size).setText(wrapCJK(this.eventText('text'),pw-96,size));
+    }
   }
 
   /* ---------------- 抉择按钮 ---------------- */
@@ -218,16 +227,18 @@ class EventScene extends Phaser.Scene {
         color: affordable ? '#e8dcc0' : '#5a5268', fontStyle: 'bold'
       }).setOrigin(0.5);
 
-      const label = this.add.text(38, -46, c.label.replaceAll(' ', ''), {
+      const label = this.add.text(38, -46, this.eventText('label',i), {
         fontFamily: FONT, fontSize: '44px', color: affordable ? '#f0e6d0' : '#a89a80', fontStyle: 'bold'
       }).setOrigin(0.5);
 
       const detailText = c.cost && !affordable
-        ? c.detail + `（还差${c.cost - RUN.gold}金币）`
-        : c.detail;
+        ? this.eventText('detail',i) + I18N.t('event.ui.short',{gold:c.cost-RUN.gold})
+        : this.eventText('detail',i);
       const detail = this.add.text(38, 34, wrapCJK(detailText, 750, 36), {
         fontFamily: FONT, fontSize: '36px', color: affordable ? '#d1c5ac' : '#a89a80', align: 'center', lineSpacing: 5
       }).setOrigin(0.5);
+
+      for(let size=34;detail.height>94&&size>=30;size-=2)detail.setFontSize(size).setText(wrapCJK(detailText,750,size));
 
       if(skin)g.destroy();else box.add(g);
       box.add([nb, num, label, detail]);
@@ -268,10 +279,10 @@ class EventScene extends Phaser.Scene {
     this.refreshTop();
 
     if (needPick) {
-      this._pending = { result: c.result, log };
+      this._pending = { result: this.eventText('result',i), log };
       this.openCardPicker(c);
     } else {
-      this.showResult(c.result, log);
+      this.showResult(this.eventText('result',i), log);
     }
   }
 
@@ -284,27 +295,31 @@ class EventScene extends Phaser.Scene {
     const pg = this.add.graphics().setDepth(3);
     pg.destroy();uiSurface(this,540,py+ph/2,pw,ph,'panel').setDepth(3);
 
-    this.add.text(540, py + 145, wrapCJK(text, pw - 100, 44), {
+    this.resultStoryText=this.add.text(540, py + 145, wrapCJK(text, pw - 100, 44), {
       fontFamily: FONT, fontSize: '44px', color: '#e8dcc0', align: 'center', lineSpacing: 12
     }).setOrigin(0.5).setDepth(5);
 
     // 效果清单
     const items = (log || []).slice(0, 6);
+    let logY = Math.max(py + 280,this.resultStoryText.getBounds().bottom+30);
+    this.resultLogTexts=[];
     items.forEach((t, i) => {
-      const y = py + 320 + i * 50;
+      const y = logY;
       this.add.text(540 - pw / 2 + 60, y, '·', {
         fontFamily: FONT, fontSize: '28px', color: PAL.gold
       }).setOrigin(0.5).setDepth(5);
-      this.add.text(540 - pw / 2 + 88, y, t, {
-        fontFamily: FONT, fontSize: '38px', color: '#c4b698'
-      }).setOrigin(0, 0.5).setDepth(5);
+      const row=this.add.text(540 - pw / 2 + 88, y, wrapCJK(t,pw-148,34), {
+        fontFamily: FONT, fontSize: '34px', color: '#c4b698',lineSpacing:5
+      }).setOrigin(0, 0).setDepth(5);
+      this.resultLogTexts.push(row);
+      logY+=row.height+14;
     });
 
     this.refreshTop();
 
     const dead = RUN.hp <= 0;
     this.continueBtn = makeButton(this, 540, 1600, 460, 130,
-      dead ? '继 续' : '继 续',
+      I18N.t('reward.continue'),
       () => this.leave(),
       { accent: dead ? PAL.bloodHi : PAL.gold, color: 0x2c2438 });
     this.continueBtn.setDepth(6);
@@ -326,15 +341,15 @@ class EventScene extends Phaser.Scene {
     this._perPage = 12;
     this._pages = Math.max(1, Math.ceil(this._groups.length / this._perPage));
 
-    this.add.text(540, 560, '选 择 一 张 牌 丢 弃', {
+    this.pickerHeading=this.add.text(540, 560, I18N.t('event.ui.remove'), {
       fontFamily: FONT, fontSize: '40px', color: '#e8dcc0', fontStyle: 'bold'
     }).setOrigin(0.5).setDepth(6);
 
-    this.add.text(540, 620, '牌组会变薄，牌也会变少。', {
+    this.pickerHint=this.add.text(540, 620, I18N.t('event.ui.removeHint'), {
       fontFamily: FONT, fontSize: '26px', color: '#8a7f9c'
     }).setOrigin(0.5).setDepth(6);
 
-    this.add.text(540, 668, '方向键选择 · Enter 丢弃 · , . 翻页', {
+    this.pickerKeys=this.add.text(540, 668, I18N.t('event.ui.keys'), {
       fontFamily: FONT, fontSize: '22px', color: '#5a5268'
     }).setOrigin(0.5).setDepth(6);
 
@@ -342,8 +357,8 @@ class EventScene extends Phaser.Scene {
       fontFamily: FONT, fontSize: '26px', color: '#6a6078'
     }).setOrigin(0.5).setDepth(6);
 
-    this.prevBtn = makeButton(this, 300, 1740, 180, 90, '‹ 上 一 页', () => this.flipPage(-1), { accent: PAL.boneDim, color: 0x241f30 });
-    this.nextBtn = makeButton(this, 780, 1740, 180, 90, '下 一 页 ›', () => this.flipPage(1), { accent: PAL.boneDim, color: 0x241f30 });
+    this.prevBtn = makeButton(this, 300, 1740, 240, 90, I18N.t('event.ui.prev'), () => this.flipPage(-1), { accent: PAL.boneDim, color: 0x241f30 });
+    this.nextBtn = makeButton(this, 780, 1740, 240, 90, I18N.t('event.ui.next'), () => this.flipPage(1), { accent: PAL.boneDim, color: 0x241f30 });
 
     this.renderPickerPage();
   }
@@ -438,12 +453,13 @@ class EventScene extends Phaser.Scene {
     if (this._stage !== 'remove') return;
     RUN.removeCard(id);
     RUN.save();
-    const log = (this._pending.log || []).concat(['丢弃了「' + CARD_DEFS[id].name + '」']);
+    const log = (this._pending.log || []).concat([I18N.t('event.ui.removed',{name:I18N.cardName(CARD_DEFS[id])})]);
     this.showResult(this._pending.result, log);
   }
 
   /* ---------------- 收尾 ---------------- */
   clearStage() {
+    for(const key of ['pickerHeading','pickerHint','pickerKeys'])if(this[key]){this[key].destroy();this[key]=null;}
     if (this.headBox) { this.headBox.destroy(true); this.headBox = null; }
     for (const b of this.choiceBtns) b.box.destroy();
     this.choiceBtns = [];

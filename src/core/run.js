@@ -246,13 +246,13 @@ const RUN = {
   },
 
   /** 升契（阶段五）：把还能升的哥特妖契换成墟形态，返回变化说明。 */
-  ascendContracts() {
+  ascendContracts(formatName = id => CONTRACT_DEFS[id].name) {
     const log = [];
     const next = [];
     for (const id of this.contracts) {
       const d = CONTRACT_DEFS[id];
       const to = d && d.ascend;
-      if (to && CONTRACT_DEFS[to]) { next.push(to); log.push(d.name + ' → ' + CONTRACT_DEFS[to].name); }
+      if (to && CONTRACT_DEFS[to]) { next.push(to); log.push(formatName(id) + ' → ' + formatName(to)); }
       else next.push(id);
     }
     this.contracts = next;
@@ -300,18 +300,39 @@ const RUN = {
     try {
       const out = { schemaVersion: RUN_SCHEMA_VERSION };
       for (const k of SAVE_FIELDS) out[k] = this[k];
-      localStorage.setItem('darkforest.run', JSON.stringify(out));
-    } catch (e) {}
+      const raw=JSON.stringify(out);
+      if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.write(raw,r=>this._parseSave(r));
+      localStorage.setItem('darkforest.run', raw);return true;
+    } catch (e) {if(typeof SAVE_STORE!=='undefined')SAVE_STORE.report('writeFailure');return false;}
+  },
+
+  _parseSave(raw) {
+    let d;try{d=JSON.parse(raw);}catch(_){return null;}
+    if(!d||typeof d!=='object'||Array.isArray(d))return null;
+    if(d.schemaVersion!==undefined&&(!Number.isInteger(d.schemaVersion)||d.schemaVersion<0))return null;
+    if(Number.isInteger(d.schemaVersion)&&d.schemaVersion>RUN_SCHEMA_VERSION){const error=new Error('newer save');error.code='FUTURE_SAVE';throw error;}
+    if(!d.started||!Array.isArray(d.deck)||!d.deck.length||d.deck.some(id=>typeof id!=='string'||!Object.prototype.hasOwnProperty.call(CARD_DEFS,id)))return null;
+    for(const key of ['chapter','step','hp','maxHp','gold','kills','spiritMax'])if(d[key]!==undefined&&(!Number.isFinite(d[key])||d[key]<0))return null;
+    if(d.chapter!==undefined&&(!Number.isInteger(d.chapter)||d.chapter>CHAPTERS.length))return null;
+    if(d.step!==undefined&&(!Number.isInteger(d.step)||d.step>2))return null;
+    if(d.maxHp!==undefined&&d.maxHp<=0)return null;
+    if(d.hp!==undefined&&d.maxHp!==undefined&&d.hp>d.maxHp)return null;
+    for(const key of ['relics','contracts'])if(d[key]!==undefined&&!Array.isArray(d[key]))return null;
+    if(d.relics?.some(id=>typeof id!=='string'||!Object.prototype.hasOwnProperty.call(RELIC_DEFS,id)))return null;
+    for(const key of ['postFightHeal','postFightHealBig'])if(d[key]!==undefined&&(!Number.isFinite(d[key])||d[key]<0||d[key]>1))return null;
+    if(d.nextCombat!==undefined&&(!d.nextCombat||typeof d.nextCombat!=='object'||Array.isArray(d.nextCombat)||Object.values(d.nextCombat).some(v=>!Number.isFinite(v)||v<0)))return null;
+    return d;
   },
 
   /* 读出并校验存档。hasSave() 和 load() 都走它，两边判定必须一致——
    * 以前 hasSave() 只看字符串在不在，于是「有存档」按钮亮着，
    * 点下去 load() 却返回 false，玩家卡在一个哪也去不了的标题页。 */
   _readSave() {
+    if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.read(raw=>this._parseSave(raw));
     try {
       const raw = localStorage.getItem('darkforest.run');
       if (!raw) return null;
-      const d = JSON.parse(raw);
+      const d = this._parseSave(raw);
       if (!d || typeof d !== 'object') return null;
       if (!d.started) return null;
       // 牌组是开局的最低要求：没有它连第一场都组不出来
@@ -325,6 +346,8 @@ const RUN = {
   load() {
     const d = this._readSave();
     if (!d) return false;
+    // Missing legacy fields use fresh defaults, never values left by another run.
+    this.newRun(d.starterId);
     for (const k of SAVE_FIELDS) {
       if (d[k] === undefined) continue;
       this[k] = d[k];
@@ -334,7 +357,7 @@ const RUN = {
      * 内存里若还留着上一次 newRun/load 的妖契，它本身就是数组，
      * 旧档就会「继承」一份不属于它的妖契。判断要看存档里的值。 */
     if (d.contracts === undefined || !Array.isArray(d.contracts)) this.contracts = [];
-    this.contracts = this.contracts.filter(id => !!CONTRACT_DEFS[id]);
+    this.contracts = this.contracts.filter(id => typeof id==='string'&&Object.prototype.hasOwnProperty.call(CONTRACT_DEFS,id));
     // Legacy saves must not inherit another run's story choices or pending rewards.
     this.story = typeof STORY !== 'undefined' ? STORY.normalize(d.story) : {seen:[],choices:{},pending:null};
     /* ---- 旧档迁移 ----
@@ -353,5 +376,5 @@ const RUN = {
     return true;
   },
 
-  clearSave() { try { localStorage.removeItem('darkforest.run'); } catch (e) {} }
+  clearSave() { if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.clear();try { localStorage.removeItem('darkforest.run');return true; } catch (e) {return false;} }
 };

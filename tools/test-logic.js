@@ -10,7 +10,7 @@ const ROOT = path.join(__dirname, '..', 'src', 'core');
 // ui.js 也要进沙箱：CARD（卡面材质）这个共享可变对象定义在它里面，
 // theme.js 的 applyTheme 要原地改写它。不加载 ui.js 就测不到卡面。
 const FILES = ['cards.js', 'enemies.js', 'relics.js', 'events.js', 'starters.js', 'contracts.js',
-  'run.js', 'combat.js', 'theme.js', 'ui.js'];
+  'run.js', 'combat.js', 'theme.js', 'text-layout.js', 'ui.js'];
 
 // 最小浏览器/Phaser 垫片，只为让这几个文件能被求值
 const sandbox = {
@@ -75,7 +75,7 @@ process.on('exit', () => {
 
 /* ---------------- 卡牌 ---------------- */
 section('[卡牌]');
-const VALID_OPS = new Set(['damage', 'damageTimes', 'damagePoisonBonus', 'drain', 'block', 'draw',
+const VALID_OPS = new Set(['brace', 'mark', 'sealBurst', 'wound', 'consumeBleed', 'damage', 'damageTimes', 'damagePoisonBonus', 'drain', 'block', 'draw',
   'heal', 'loseHp', 'selfBuff', 'registerPower', 'enemyDebuff', 'enemyLose', 'poison',
   // 灵韵 / 共鸣：符箓专用算子
   'spirit', 'spiritMax', 'resonanceDamage', 'echoHit']);
@@ -83,7 +83,7 @@ const VALID_STATS = new Set(['strength', 'vulnerable', 'weak', 'frail', 'poison'
   'burn', 'burnDmg']);
 const VALID_TYPES = new Set(['attack', 'skill', 'power', 'talisman']);
 
-ok(Object.keys(sandbox.CARD_DEFS).length === 37, '卡牌数量应为 37，实际 ' + Object.keys(sandbox.CARD_DEFS).length);
+ok(Object.keys(sandbox.CARD_DEFS).length === 43, '卡牌数量应为 43，实际 ' + Object.keys(sandbox.CARD_DEFS).length);
 for (const [id, c] of Object.entries(sandbox.CARD_DEFS)) {
   ok(c.id === id, id + ': id 字段不匹配');
   ok(typeof c.name === 'string' && c.name.length > 0, id + ': 缺名称');
@@ -942,7 +942,7 @@ for (const c of Object.values(sandbox.CARD_DEFS)) {
   }
 }
 const rMin = Math.min(...artRatios), rMax = Math.max(...artRatios);
-ok(artRatios.length === 37 * 3, '画窗比例样本数不对，说明 cardSizeFor/wrapCJK 没真正跑到: ' + artRatios.length);
+ok(artRatios.length === 43 * 3, '画窗比例样本数不对，说明 cardSizeFor/wrapCJK 没真正跑到: ' + artRatios.length);
 ok(rMin >= 1.20, '画窗最窄比例低于 1.20:1，会超出 3:2 出图的安全裁切假设: ' + rMin.toFixed(2));
 ok(rMax <= 1.90, '画窗最宽比例超过 1.90:1，插画会被裁得过扁: ' + rMax.toFixed(2));
 // 37 张卡 / 18 个 art key：这是美术要出的插画套数
@@ -1300,7 +1300,7 @@ ok(sc.indexOf('this.refreshEnergy()') >= 0 && sc.indexOf('this.refreshHandState(
   'startCombat 必须在 delayedCall 之前先刷行动条，否则开场 420ms 按钮可点却无效');
 ok(sc.indexOf('this.refreshEnergy()') < sc.indexOf('delayedCall(420'),
   'refreshEnergy 必须排在 delayedCall(420) 前面');
-ok(/this\.state\.turn > 0 \? '回合 '/.test(SRC.Combat),
+ok(/this\.state\.turn > 0 \? I18N\.t\('combat.turn'/.test(SRC.Combat)&&/I18N\.t\('combat.preparing'\)/.test(SRC.Combat),
   '回合 0 必须显示「准备中」，不能显示「回合 0」');
 // 事件里当场发遗物，顶栏遗物条必须跟着重画
 ok(/refreshRelicBar\(\)/.test(SRC.Event), 'EventScene 缺 refreshRelicBar');
@@ -1346,7 +1346,7 @@ ok(/this\.hintG\.input\.enabled = false/.test(CS) && /this\.hintG\.input\.enable
 const hitH = (CS.match(/_hintHit = new Phaser\.Geom\.Rectangle\([^;]*?,\s*300\s*,\s*(\d+)\s*\)/) || [])[1];
 ok(hitH && hitH >= 70, '提示条命中区高度应 >= 70px（可视只有 58px），实际 ' + hitH);
 // 文案要跟着设备走：鼠标用户看到「点击打出」才找得到入口
-ok(/_inputMode/.test(CS) && /点击打出/.test(CS) && /上滑打出/.test(CS) && /松手打出/.test(CS),
+ok(/_inputMode/.test(CS) && /combat.tap/.test(CS) && /combat.swipe/.test(CS) && /combat.release/.test(CS),
   '提示条缺少随设备切换的文案（点击打出 / 上滑打出 / 松手打出）');
 /* 手势收尾必须有一条不依赖命中测试的路。
  *
@@ -1565,7 +1565,7 @@ ok(!/parseInt\(d, 10\)/.test(sk), '不能把 exec() 返回的数组直接传给 
 ok(/parseInt\(digit, 10\) - 1/.test(sk), '传承下标应当由捕获组解析而来');
 
 ok(/RUN\.clearSave\(\);[\s\S]{0,150}this\.showStarterPicker\(\)/.test(
-   body(SRC.Title, "'重 新 开 始'", 400)),
+   body(SRC.Title, "I18N.t('title.restart')", 400)),
   '「重新开始」应先清档再进传承选择');
 ok(/RUN\.clearSave\(\)[\s\S]{0,200}openStarter: true/.test(SRC.Combat),
   '战败「从头来过」应清档并回到传承选择');
@@ -1732,6 +1732,24 @@ const ascEvt = sandbox.EVENT_MAP.ascend_rites;
 ok(ascEvt && ascEvt.choices.some(c => c.effects.some(e => e.op === 'none')),
   '升契仪式必须提供「不做任何事」的退路');
 
+section('[持续伤害逐回合结算]');
+{
+  const unit = { hp: 100, st: { poison: 3, burn: 2, weak: 2, strength: 4 } };
+  const losses = [0, 1, 2, 3].map(() => sandbox.tickStatuses(unit));
+  ok(JSON.stringify(losses) === '[5,3,1,0]', '毒3/火2应逐回合造成5、3、1、0，不能双重减层');
+  ok(unit.hp === 91 && unit.st.poison === 0 && unit.st.burn === 0,
+    '持续伤害应完整结算9点且状态归零');
+  ok(unit.st.weak === 0 && unit.st.strength === 4, '限时减益递减、力量不递减');
+  const immune = { hp: 100, st: { poison: 3, burn: 3 } };
+  ok(sandbox.tickStatuses(immune, { burnImmune: 1 }) === 3,
+    '免疫灼烧不免疫中毒');
+  ok(immune.st.burn === 2 && immune.st.poison === 2,
+    '免疫与非免疫持续状态都只减1层');
+  const h = { hp: 100, def: sandbox.ENEMY_DEFS.huodou, st: { burn: 5 } };
+  sandbox.tickStatuses(h);
+  ok(sandbox.enemyTurnRule(h) === 4 && h.st.burnDmg === 4,
+    '5层灼烧造成5伤害后剩4层转燎原');
+}
 section('[异兽规则·循火]');
 // 规则本身是纯逻辑：残留灼烧转成永久燎原
 const HD = sandbox.ENEMY_DEFS.huodou;

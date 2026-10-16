@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "fail": false,
+      "state": {
+        "status": "ready",
+        "family": "BlackForestSerif"
+      },
+      "external": [],
+      "errors": []
+    },
+    {
+      "fail": true,
+      "state": {
+        "status": "fallback",
+        "family": "BlackForestSerif",
+        "reason": "A network error occurred."
+      },
+      "external": [],
+      "errors": []
+    }
+  ]
+}

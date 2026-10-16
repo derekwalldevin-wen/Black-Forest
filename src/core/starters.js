@@ -58,6 +58,13 @@ function starterDef(id) {
  *  之后任何一次 RUN.addCard / removeCard 都会改到配置本身，
  *  于是第二局开局牌组跟着第一局变。 */
 function starterDeck(id) {
+  // 独立试玩入口；旧存档仍读取实际保存的牌组，不被开关重写。
+  if (typeof location !== 'undefined' && typeof URLSearchParams !== 'undefined' &&
+      new URLSearchParams(location.search).get('combat') === 'identity') {
+    if (id === 'blood') return ['strike', 'strike', 'defend', 'defend', 'blood_pact', 'drain_life', 'rend', 'pursuit'];
+    if (id === 'guard') return ['strike', 'strike', 'defend', 'defend', 'iron_wall', 'regroup', 'brace', 'quick_jab'];
+    if (id === 'talisman') return ['strike', 'strike', 'defend', 'defend', 'fu_paper', 'seal_gate', 'inscribe', 'seal_burst'];
+  }
   return starterDef(id).deck.slice();
 }
 

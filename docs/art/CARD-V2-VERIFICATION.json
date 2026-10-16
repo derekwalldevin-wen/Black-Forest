@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "lang": "zh-CN",
+      "realm": "gothic",
+      "material": true
+    },
+    {
+      "lang": "zh-CN",
+      "realm": "shanhai",
+      "material": true
+    },
+    {
+      "lang": "en",
+      "realm": "gothic",
+      "material": true
+    },
+    {
+      "lang": "en",
+      "realm": "shanhai",
+      "material": true
+    }
+  ],
+  "combatSelection": true,
+  "errors": []
+}

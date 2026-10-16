@@ -1,0 +1,641 @@
+{
+  "checks": [
+    {
+      "lang": "zh-CN",
+      "id": "moon_spring",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "moon_spring",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "moon_spring",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "campfire",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "campfire",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "zh-CN",
+      "id": "campfire",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "bone_pile",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "bone_pile",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "bone_pile",
+      "choice": 2,
+      "removed": true
+    },
+    {
+      "lang": "zh-CN",
+      "id": "lost_lantern",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "lost_lantern",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "lost_lantern",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "black_market",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "black_market",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "zh-CN",
+      "id": "black_market",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ancient_stele",
+      "choice": 0,
+      "removed": true
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ancient_stele",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ancient_stele",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "thorn_well",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "thorn_well",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "wolf_gaze",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "wolf_gaze",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "wolf_gaze",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "moss_shrine",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "moss_shrine",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "moss_shrine",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "qingqiu",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "qingqiu",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "zh-CN",
+      "id": "qingqiu",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "nine_heads",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "nine_heads",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "nine_heads",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "bronze_step",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "bronze_step",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "zh-CN",
+      "id": "bronze_step",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "blind_dance",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "blind_dance",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "blind_dance",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "baize_omen",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "baize_omen",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "baize_omen",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ember_bones",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ember_bones",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ember_bones",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ash_mound",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ash_mound",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ash_mound",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ascend_rites",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ascend_rites",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "ascend_rites",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "forge",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "forge",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "zh-CN",
+      "id": "forge",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "moon_spring",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "moon_spring",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "moon_spring",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "campfire",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "campfire",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "en",
+      "id": "campfire",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "bone_pile",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "bone_pile",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "bone_pile",
+      "choice": 2,
+      "removed": true
+    },
+    {
+      "lang": "en",
+      "id": "lost_lantern",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "lost_lantern",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "lost_lantern",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "black_market",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "black_market",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "en",
+      "id": "black_market",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ancient_stele",
+      "choice": 0,
+      "removed": true
+    },
+    {
+      "lang": "en",
+      "id": "ancient_stele",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ancient_stele",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "thorn_well",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "thorn_well",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "wolf_gaze",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "wolf_gaze",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "wolf_gaze",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "moss_shrine",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "moss_shrine",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "moss_shrine",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "qingqiu",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "qingqiu",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "en",
+      "id": "qingqiu",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "nine_heads",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "nine_heads",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "nine_heads",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "bronze_step",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "bronze_step",
+      "choice": 1,
+      "removed": true
+    },
+    {
+      "lang": "en",
+      "id": "bronze_step",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "blind_dance",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "blind_dance",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "blind_dance",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "baize_omen",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "baize_omen",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "baize_omen",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ember_bones",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ember_bones",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ember_bones",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ash_mound",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ash_mound",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ash_mound",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ascend_rites",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ascend_rites",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "ascend_rites",
+      "choice": 2,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "forge",
+      "choice": 0,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "forge",
+      "choice": 1,
+      "removed": false
+    },
+    {
+      "lang": "en",
+      "id": "forge",
+      "choice": 2,
+      "removed": false
+    }
+  ],
+  "errors": []
+}

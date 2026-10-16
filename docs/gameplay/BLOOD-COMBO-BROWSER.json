@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "lang": "zh-CN",
+      "rend": {
+        "hp": 96,
+        "bleed": 2
+      },
+      "pursuit": {
+        "hp": 87,
+        "bleed": 1
+      },
+      "end": {
+        "hp": 85,
+        "bleed": 0,
+        "missing": []
+      }
+    },
+    {
+      "lang": "en",
+      "rend": {
+        "hp": 96,
+        "bleed": 2
+      },
+      "pursuit": {
+        "hp": 87,
+        "bleed": 1
+      },
+      "end": {
+        "hp": 85,
+        "bleed": 0,
+        "missing": []
+      }
+    },
+    {
+      "enemyEndBleedDeathReachesReward": true,
+      "beforeDeath": {
+        "kills": 0,
+        "hp": 70
+      },
+      "afterDeath": {
+        "kills": 1,
+        "hp": 70,
+        "attacks": [
+          1
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

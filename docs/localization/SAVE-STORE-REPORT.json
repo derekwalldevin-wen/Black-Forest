@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "successful save rotates previous validated checkpoint",
+    "corrupt primary recovers previous state without destroying recovery source",
+    "failed primary write retains a valid current and backup",
+    "failed backup write does not overwrite primary",
+    "read permission failure does not delete data",
+    "future save is neither downgraded nor overwritten",
+    "explicit clear removes both slots; permission denial is reported",
+    "legacy save migrates through adapter without inheriting story choices",
+    "invalid numeric, resource, array and version fields are rejected",
+    "minimal legacy save receives clean defaults instead of another run state"
+  ],
+  "errors": []
+}

@@ -25,7 +25,7 @@ const THEMES = {
     name: '哥特童话',
     realm: 'gothic',
     bg: 'bg-forest',
-    font: '"Noto Serif SC", "SimSun", "Microsoft YaHei", serif',
+    font: 'BlackForestSerif, "SimSun", "Microsoft YaHei", serif',
     // 资源条的第二格在这里不出现（灵韵是东方篇才引入的机制）
     spiritLabel: null,
 
@@ -91,7 +91,7 @@ const THEMES = {
     name: '山海志怪',
     realm: 'shanhai',
     bg: 'bg-ruins',
-    font: '"Noto Serif SC", "Songti SC", "STSong", "SimSun", "Microsoft YaHei", serif',
+    font: 'BlackForestSerif, "Songti SC", "STSong", "SimSun", "Microsoft YaHei", serif',
     spiritLabel: '灵韵',
 
     pal: {
@@ -861,13 +861,14 @@ function paintBackground(scene, veil) {
  * 做法是一层青铜色的幕布拉开 + 一行竖排标题，然后回调。
  */
 function playRealmTransition(scene, onDone) {
-  const toShan = RUN.justCrossedRealm();
+  // Reward advances the run before playing this transition; use the destination realm.
+  const toShan = RUN.realm() === 'shanhai';
   const color = toShan ? 0x8a2b28 : 0x2a2338;
   const c = scene.add.container(540, 960).setDepth(900);
   const veil = scene.add.graphics();
   veil.fillStyle(color, 1);
   veil.fillRect(-540, -960, 1080, 1920);
-  const label = scene.add.text(0, 0, toShan ? '山 海 經 · 墟' : '黑 森 林', {
+  const label = scene.add.text(0, 0, I18N.t(toShan ? 'realm.shanhai' : 'realm.gothic'), {
     fontFamily: FONT, fontSize: '72px', color: '#e2d9c0', fontStyle: 'bold'
   }).setOrigin(0.5);
   c.add([veil, label]);

@@ -1,0 +1,4062 @@
+{
+  "results": [
+    {
+      "locale": "zh-CN",
+      "rows": [
+        {
+          "id": "regroup",
+          "w": 204,
+          "name": "整备",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "regroup",
+          "w": 300,
+          "name": "整备",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "regroup",
+          "w": 420,
+          "name": "整备",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "brace",
+          "w": 204,
+          "name": "架势",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 62,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "brace",
+          "w": 300,
+          "name": "架势",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 91,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "brace",
+          "w": 420,
+          "name": "架势",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 124,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "inscribe",
+          "w": 204,
+          "name": "引符",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "inscribe",
+          "w": 300,
+          "name": "引符",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "inscribe",
+          "w": 420,
+          "name": "引符",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "seal_burst",
+          "w": 204,
+          "name": "镇印",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "seal_burst",
+          "w": 300,
+          "name": "镇印",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "seal_burst",
+          "w": 420,
+          "name": "镇印",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "rend",
+          "w": 204,
+          "name": "割裂",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 56,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "rend",
+          "w": 300,
+          "name": "割裂",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 85,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "rend",
+          "w": 420,
+          "name": "割裂",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "pursuit",
+          "w": 204,
+          "name": "追猎",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 62,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "pursuit",
+          "w": 300,
+          "name": "追猎",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 94,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "pursuit",
+          "w": 420,
+          "name": "追猎",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 130,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "strike",
+          "w": 204,
+          "name": "劈砍",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "strike",
+          "w": 300,
+          "name": "劈砍",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "strike",
+          "w": 420,
+          "name": "劈砍",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "defend",
+          "w": 204,
+          "name": "格挡",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "defend",
+          "w": 300,
+          "name": "格挡",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "defend",
+          "w": 420,
+          "name": "格挡",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "quick_jab",
+          "w": 204,
+          "name": "疾刺",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "quick_jab",
+          "w": 300,
+          "name": "疾刺",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "quick_jab",
+          "w": 420,
+          "name": "疾刺",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "dagger_fan",
+          "w": 204,
+          "name": "匕首扇",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "dagger_fan",
+          "w": 300,
+          "name": "匕首扇",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "dagger_fan",
+          "w": 420,
+          "name": "匕首扇",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "heavy_blow",
+          "w": 204,
+          "name": "重击",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "heavy_blow",
+          "w": 300,
+          "name": "重击",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "heavy_blow",
+          "w": 420,
+          "name": "重击",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "iron_wall",
+          "w": 204,
+          "name": "铁壁",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "iron_wall",
+          "w": 300,
+          "name": "铁壁",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "iron_wall",
+          "w": 420,
+          "name": "铁壁",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "riposte",
+          "w": 204,
+          "name": "反刺",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "riposte",
+          "w": 300,
+          "name": "反刺",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "riposte",
+          "w": 420,
+          "name": "反刺",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "blood_pact",
+          "w": 204,
+          "name": "血契",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "blood_pact",
+          "w": 300,
+          "name": "血契",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "blood_pact",
+          "w": 420,
+          "name": "血契",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "focus",
+          "w": 204,
+          "name": "凝神",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "focus",
+          "w": 300,
+          "name": "凝神",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "focus",
+          "w": 420,
+          "name": "凝神",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "poison_dart",
+          "w": 204,
+          "name": "毒镖",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "poison_dart",
+          "w": 300,
+          "name": "毒镖",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "poison_dart",
+          "w": 420,
+          "name": "毒镖",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "shield_bash",
+          "w": 204,
+          "name": "盾击",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "shield_bash",
+          "w": 300,
+          "name": "盾击",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "shield_bash",
+          "w": 420,
+          "name": "盾击",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "wolf_fang",
+          "w": 204,
+          "name": "狼牙",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "wolf_fang",
+          "w": 300,
+          "name": "狼牙",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "wolf_fang",
+          "w": 420,
+          "name": "狼牙",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "drain_life",
+          "w": 204,
+          "name": "汲取",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "drain_life",
+          "w": 300,
+          "name": "汲取",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "drain_life",
+          "w": 420,
+          "name": "汲取",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "sap_flesh",
+          "w": 204,
+          "name": "削弱血肉",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "sap_flesh",
+          "w": 300,
+          "name": "削弱血肉",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "sap_flesh",
+          "w": 420,
+          "name": "削弱血肉",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "dark_pact",
+          "w": 204,
+          "name": "暗影契约",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "dark_pact",
+          "w": 300,
+          "name": "暗影契约",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "dark_pact",
+          "w": 420,
+          "name": "暗影契约",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "thorns_armor",
+          "w": 204,
+          "name": "荆棘护甲",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "thorns_armor",
+          "w": 300,
+          "name": "荆棘护甲",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "thorns_armor",
+          "w": 420,
+          "name": "荆棘护甲",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "chain_spark",
+          "w": 204,
+          "name": "连锁火花",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "chain_spark",
+          "w": 300,
+          "name": "连锁火花",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "chain_spark",
+          "w": 420,
+          "name": "连锁火花",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "moonlight",
+          "w": 204,
+          "name": "月光",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "moonlight",
+          "w": 300,
+          "name": "月光",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "moonlight",
+          "w": 420,
+          "name": "月光",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "moon_edge",
+          "w": 204,
+          "name": "月刃",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "moon_edge",
+          "w": 300,
+          "name": "月刃",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "moon_edge",
+          "w": 420,
+          "name": "月刃",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "blood_moon",
+          "w": 204,
+          "name": "血月",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "blood_moon",
+          "w": 300,
+          "name": "血月",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "blood_moon",
+          "w": 420,
+          "name": "血月",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "soul_drain",
+          "w": 204,
+          "name": "灵魂虹吸",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "soul_drain",
+          "w": 300,
+          "name": "灵魂虹吸",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "soul_drain",
+          "w": 420,
+          "name": "灵魂虹吸",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "eternal_night",
+          "w": 204,
+          "name": "永夜",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "eternal_night",
+          "w": 300,
+          "name": "永夜",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "eternal_night",
+          "w": 420,
+          "name": "永夜",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "hunters_mark",
+          "w": 204,
+          "name": "猎手印记",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "hunters_mark",
+          "w": 300,
+          "name": "猎手印记",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "hunters_mark",
+          "w": 420,
+          "name": "猎手印记",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "thorn_ring",
+          "w": 204,
+          "name": "荆棘之环",
+          "nameWidth": 92,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "thorn_ring",
+          "w": 300,
+          "name": "荆棘之环",
+          "nameWidth": 136,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "thorn_ring",
+          "w": 420,
+          "name": "荆棘之环",
+          "nameWidth": 188,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "fu_paper",
+          "w": 204,
+          "name": "符纸",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "fu_paper",
+          "w": 300,
+          "name": "符纸",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "fu_paper",
+          "w": 420,
+          "name": "符纸",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "cinnabar",
+          "w": 204,
+          "name": "朱砂符",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "cinnabar",
+          "w": 300,
+          "name": "朱砂符",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "cinnabar",
+          "w": 420,
+          "name": "朱砂符",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "seal_gate",
+          "w": 204,
+          "name": "封门",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "seal_gate",
+          "w": 300,
+          "name": "封门",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "seal_gate",
+          "w": 420,
+          "name": "封门",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "xuan_ji",
+          "w": 204,
+          "name": "玄玑",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "xuan_ji",
+          "w": 300,
+          "name": "玄玑",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "xuan_ji",
+          "w": 420,
+          "name": "玄玑",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "thunder_word",
+          "w": 204,
+          "name": "雷旨",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "thunder_word",
+          "w": 300,
+          "name": "雷旨",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "thunder_word",
+          "w": 420,
+          "name": "雷旨",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "nine_head",
+          "w": 204,
+          "name": "九首诀",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "nine_head",
+          "w": 300,
+          "name": "九首诀",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "nine_head",
+          "w": 420,
+          "name": "九首诀",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "miasma",
+          "w": 204,
+          "name": "瘴气",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "miasma",
+          "w": 300,
+          "name": "瘴气",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "miasma",
+          "w": 420,
+          "name": "瘴气",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "spirit_gather",
+          "w": 204,
+          "name": "灵蕴",
+          "nameWidth": 46,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "spirit_gather",
+          "w": 300,
+          "name": "灵蕴",
+          "nameWidth": 68,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "spirit_gather",
+          "w": 420,
+          "name": "灵蕴",
+          "nameWidth": 94,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "edict",
+          "w": 204,
+          "name": "帝江诏",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "edict",
+          "w": 300,
+          "name": "帝江诏",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "edict",
+          "w": 420,
+          "name": "帝江诏",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "taiji",
+          "w": 204,
+          "name": "太一击",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "taiji",
+          "w": 300,
+          "name": "太一击",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "taiji",
+          "w": 420,
+          "name": "太一击",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "famine",
+          "w": 204,
+          "name": "饕餮饷",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "famine",
+          "w": 300,
+          "name": "饕餮饷",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "famine",
+          "w": 420,
+          "name": "饕餮饷",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 204,
+          "name": "青丘印",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 300,
+          "name": "青丘印",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 420,
+          "name": "青丘印",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 204,
+          "name": "青铜盏",
+          "nameWidth": 69,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 300,
+          "name": "青铜盏",
+          "nameWidth": 102,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 420,
+          "name": "青铜盏",
+          "nameWidth": 141,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "regroup",
+          "w": 420,
+          "mode": "Combat",
+          "name": "整备",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "brace",
+          "w": 420,
+          "mode": "Combat",
+          "name": "架势",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 136,
+          "maxDesc": 182
+        },
+        {
+          "id": "inscribe",
+          "w": 420,
+          "mode": "Combat",
+          "name": "引符",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "seal_burst",
+          "w": 420,
+          "mode": "Combat",
+          "name": "镇印",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 151,
+          "maxDesc": 182
+        },
+        {
+          "id": "rend",
+          "w": 420,
+          "mode": "Combat",
+          "name": "割裂",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 175,
+          "maxDesc": 182
+        },
+        {
+          "id": "pursuit",
+          "w": 420,
+          "mode": "Combat",
+          "name": "追猎",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 139,
+          "maxDesc": 182
+        },
+        {
+          "id": "strike",
+          "w": 420,
+          "mode": "Combat",
+          "name": "劈砍",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "defend",
+          "w": 420,
+          "mode": "Combat",
+          "name": "格挡",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "quick_jab",
+          "w": 420,
+          "mode": "Combat",
+          "name": "疾刺",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "dagger_fan",
+          "w": 420,
+          "mode": "Combat",
+          "name": "匕首扇",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "heavy_blow",
+          "w": 420,
+          "mode": "Combat",
+          "name": "重击",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "iron_wall",
+          "w": 420,
+          "mode": "Combat",
+          "name": "铁壁",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "riposte",
+          "w": 420,
+          "mode": "Combat",
+          "name": "反刺",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "blood_pact",
+          "w": 420,
+          "mode": "Combat",
+          "name": "血契",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "focus",
+          "w": 420,
+          "mode": "Combat",
+          "name": "凝神",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "poison_dart",
+          "w": 420,
+          "mode": "Combat",
+          "name": "毒镖",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "shield_bash",
+          "w": 420,
+          "mode": "Combat",
+          "name": "盾击",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "wolf_fang",
+          "w": 420,
+          "mode": "Combat",
+          "name": "狼牙",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 151,
+          "maxDesc": 182
+        },
+        {
+          "id": "drain_life",
+          "w": 420,
+          "mode": "Combat",
+          "name": "汲取",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "sap_flesh",
+          "w": 420,
+          "mode": "Combat",
+          "name": "削弱血肉",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "dark_pact",
+          "w": 420,
+          "mode": "Combat",
+          "name": "暗影契约",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "thorns_armor",
+          "w": 420,
+          "mode": "Combat",
+          "name": "荆棘护甲",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "chain_spark",
+          "w": 420,
+          "mode": "Combat",
+          "name": "连锁火花",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "moonlight",
+          "w": 420,
+          "mode": "Combat",
+          "name": "月光",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "moon_edge",
+          "w": 420,
+          "mode": "Combat",
+          "name": "月刃",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "blood_moon",
+          "w": 420,
+          "mode": "Combat",
+          "name": "血月",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "soul_drain",
+          "w": 420,
+          "mode": "Combat",
+          "name": "灵魂虹吸",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "eternal_night",
+          "w": 420,
+          "mode": "Combat",
+          "name": "永夜",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "hunters_mark",
+          "w": 420,
+          "mode": "Combat",
+          "name": "猎手印记",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "thorn_ring",
+          "w": 420,
+          "mode": "Combat",
+          "name": "荆棘之环",
+          "nameWidth": 184,
+          "maxName": 372,
+          "descHeight": 151,
+          "maxDesc": 182
+        },
+        {
+          "id": "fu_paper",
+          "w": 420,
+          "mode": "Combat",
+          "name": "符纸",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "cinnabar",
+          "w": 420,
+          "mode": "Combat",
+          "name": "朱砂符",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "seal_gate",
+          "w": 420,
+          "mode": "Combat",
+          "name": "封门",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "xuan_ji",
+          "w": 420,
+          "mode": "Combat",
+          "name": "玄玑",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "thunder_word",
+          "w": 420,
+          "mode": "Combat",
+          "name": "雷旨",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 99,
+          "maxDesc": 182
+        },
+        {
+          "id": "nine_head",
+          "w": 420,
+          "mode": "Combat",
+          "name": "九首诀",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "miasma",
+          "w": 420,
+          "mode": "Combat",
+          "name": "瘴气",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "spirit_gather",
+          "w": 420,
+          "mode": "Combat",
+          "name": "灵蕴",
+          "nameWidth": 92,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "edict",
+          "w": 420,
+          "mode": "Combat",
+          "name": "帝江诏",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "taiji",
+          "w": 420,
+          "mode": "Combat",
+          "name": "太一击",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "famine",
+          "w": 420,
+          "mode": "Combat",
+          "name": "饕餮饷",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 420,
+          "mode": "Combat",
+          "name": "青丘印",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 420,
+          "mode": "Combat",
+          "name": "青铜盏",
+          "nameWidth": 138,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "regroup",
+          "w": 400,
+          "mode": "Reward",
+          "name": "整备",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "brace",
+          "w": 400,
+          "mode": "Reward",
+          "name": "架势",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "inscribe",
+          "w": 400,
+          "mode": "Reward",
+          "name": "引符",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "seal_burst",
+          "w": 400,
+          "mode": "Reward",
+          "name": "镇印",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "rend",
+          "w": 400,
+          "mode": "Reward",
+          "name": "割裂",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "pursuit",
+          "w": 400,
+          "mode": "Reward",
+          "name": "追猎",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "strike",
+          "w": 400,
+          "mode": "Reward",
+          "name": "劈砍",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "defend",
+          "w": 400,
+          "mode": "Reward",
+          "name": "格挡",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "quick_jab",
+          "w": 400,
+          "mode": "Reward",
+          "name": "疾刺",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "dagger_fan",
+          "w": 400,
+          "mode": "Reward",
+          "name": "匕首扇",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "heavy_blow",
+          "w": 400,
+          "mode": "Reward",
+          "name": "重击",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "iron_wall",
+          "w": 400,
+          "mode": "Reward",
+          "name": "铁壁",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "riposte",
+          "w": 400,
+          "mode": "Reward",
+          "name": "反刺",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "blood_pact",
+          "w": 400,
+          "mode": "Reward",
+          "name": "血契",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "focus",
+          "w": 400,
+          "mode": "Reward",
+          "name": "凝神",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "poison_dart",
+          "w": 400,
+          "mode": "Reward",
+          "name": "毒镖",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "shield_bash",
+          "w": 400,
+          "mode": "Reward",
+          "name": "盾击",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "wolf_fang",
+          "w": 400,
+          "mode": "Reward",
+          "name": "狼牙",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "drain_life",
+          "w": 400,
+          "mode": "Reward",
+          "name": "汲取",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "sap_flesh",
+          "w": 400,
+          "mode": "Reward",
+          "name": "削弱血肉",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "dark_pact",
+          "w": 400,
+          "mode": "Reward",
+          "name": "暗影契约",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "thorns_armor",
+          "w": 400,
+          "mode": "Reward",
+          "name": "荆棘护甲",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "chain_spark",
+          "w": 400,
+          "mode": "Reward",
+          "name": "连锁火花",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "moonlight",
+          "w": 400,
+          "mode": "Reward",
+          "name": "月光",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "moon_edge",
+          "w": 400,
+          "mode": "Reward",
+          "name": "月刃",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "blood_moon",
+          "w": 400,
+          "mode": "Reward",
+          "name": "血月",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "soul_drain",
+          "w": 400,
+          "mode": "Reward",
+          "name": "灵魂虹吸",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "eternal_night",
+          "w": 400,
+          "mode": "Reward",
+          "name": "永夜",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "hunters_mark",
+          "w": 400,
+          "mode": "Reward",
+          "name": "猎手印记",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "thorn_ring",
+          "w": 400,
+          "mode": "Reward",
+          "name": "荆棘之环",
+          "nameWidth": 180,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "fu_paper",
+          "w": 400,
+          "mode": "Reward",
+          "name": "符纸",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "cinnabar",
+          "w": 400,
+          "mode": "Reward",
+          "name": "朱砂符",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "seal_gate",
+          "w": 400,
+          "mode": "Reward",
+          "name": "封门",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "xuan_ji",
+          "w": 400,
+          "mode": "Reward",
+          "name": "玄玑",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "thunder_word",
+          "w": 400,
+          "mode": "Reward",
+          "name": "雷旨",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "nine_head",
+          "w": 400,
+          "mode": "Reward",
+          "name": "九首诀",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "miasma",
+          "w": 400,
+          "mode": "Reward",
+          "name": "瘴气",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "spirit_gather",
+          "w": 400,
+          "mode": "Reward",
+          "name": "灵蕴",
+          "nameWidth": 90,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "edict",
+          "w": 400,
+          "mode": "Reward",
+          "name": "帝江诏",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "taiji",
+          "w": 400,
+          "mode": "Reward",
+          "name": "太一击",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "famine",
+          "w": 400,
+          "mode": "Reward",
+          "name": "饕餮饷",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 400,
+          "mode": "Reward",
+          "name": "青丘印",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 400,
+          "mode": "Reward",
+          "name": "青铜盏",
+          "nameWidth": 135,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        }
+      ],
+      "missing": [],
+      "realInput": "begin/cancel leaves save unchanged; confirm creates eight-card run"
+    },
+    {
+      "locale": "en",
+      "rows": [
+        {
+          "id": "regroup",
+          "w": 204,
+          "name": "Regroup",
+          "nameWidth": 96,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "regroup",
+          "w": 300,
+          "name": "Regroup",
+          "nameWidth": 141,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "regroup",
+          "w": 420,
+          "name": "Regroup",
+          "nameWidth": 195,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "brace",
+          "w": 204,
+          "name": "Brace",
+          "nameWidth": 64,
+          "maxName": 165.56,
+          "descHeight": 75,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "brace",
+          "w": 300,
+          "name": "Brace",
+          "nameWidth": 94,
+          "maxName": 251,
+          "descHeight": 114,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "brace",
+          "w": 420,
+          "name": "Brace",
+          "nameWidth": 130,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "inscribe",
+          "w": 204,
+          "name": "Inscribe",
+          "nameWidth": 94,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "inscribe",
+          "w": 300,
+          "name": "Inscribe",
+          "nameWidth": 138,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "inscribe",
+          "w": 420,
+          "name": "Inscribe",
+          "nameWidth": 191,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "seal_burst",
+          "w": 204,
+          "name": "Seal Burst",
+          "nameWidth": 112,
+          "maxName": 165.56,
+          "descHeight": 65,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "seal_burst",
+          "w": 300,
+          "name": "Seal Burst",
+          "nameWidth": 166,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "seal_burst",
+          "w": 420,
+          "name": "Seal Burst",
+          "nameWidth": 229,
+          "maxName": 357.8,
+          "descHeight": 133,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "rend",
+          "w": 204,
+          "name": "Rend",
+          "nameWidth": 59,
+          "maxName": 165.56,
+          "descHeight": 75,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "rend",
+          "w": 300,
+          "name": "Rend",
+          "nameWidth": 87,
+          "maxName": 251,
+          "descHeight": 114,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "rend",
+          "w": 420,
+          "name": "Rend",
+          "nameWidth": 120,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "pursuit",
+          "w": 204,
+          "name": "Pursuit",
+          "nameWidth": 83,
+          "maxName": 165.56,
+          "descHeight": 75,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "pursuit",
+          "w": 300,
+          "name": "Pursuit",
+          "nameWidth": 122,
+          "maxName": 251,
+          "descHeight": 114,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "pursuit",
+          "w": 420,
+          "name": "Pursuit",
+          "nameWidth": 168,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "strike",
+          "w": 204,
+          "name": "Strike",
+          "nameWidth": 66,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "strike",
+          "w": 300,
+          "name": "Strike",
+          "nameWidth": 98,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "strike",
+          "w": 420,
+          "name": "Strike",
+          "nameWidth": 135,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "defend",
+          "w": 204,
+          "name": "Defend",
+          "nameWidth": 81,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "defend",
+          "w": 300,
+          "name": "Defend",
+          "nameWidth": 120,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "defend",
+          "w": 420,
+          "name": "Defend",
+          "nameWidth": 166,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "quick_jab",
+          "w": 204,
+          "name": "Quick Jab",
+          "nameWidth": 109,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "quick_jab",
+          "w": 300,
+          "name": "Quick Jab",
+          "nameWidth": 161,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "quick_jab",
+          "w": 420,
+          "name": "Quick Jab",
+          "nameWidth": 222,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "dagger_fan",
+          "w": 204,
+          "name": "Fan of Daggers",
+          "nameWidth": 159,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "dagger_fan",
+          "w": 300,
+          "name": "Fan of Daggers",
+          "nameWidth": 245,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "dagger_fan",
+          "w": 420,
+          "name": "Fan of Daggers",
+          "nameWidth": 339,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "heavy_blow",
+          "w": 204,
+          "name": "Heavy Blow",
+          "nameWidth": 132,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "heavy_blow",
+          "w": 300,
+          "name": "Heavy Blow",
+          "nameWidth": 194,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "heavy_blow",
+          "w": 420,
+          "name": "Heavy Blow",
+          "nameWidth": 268,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "iron_wall",
+          "w": 204,
+          "name": "Iron Wall",
+          "nameWidth": 105,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "iron_wall",
+          "w": 300,
+          "name": "Iron Wall",
+          "nameWidth": 156,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "iron_wall",
+          "w": 420,
+          "name": "Iron Wall",
+          "nameWidth": 215,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "riposte",
+          "w": 204,
+          "name": "Riposte",
+          "nameWidth": 85,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "riposte",
+          "w": 300,
+          "name": "Riposte",
+          "nameWidth": 125,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "riposte",
+          "w": 420,
+          "name": "Riposte",
+          "nameWidth": 172,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "blood_pact",
+          "w": 204,
+          "name": "Blood Pact",
+          "nameWidth": 119,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "blood_pact",
+          "w": 300,
+          "name": "Blood Pact",
+          "nameWidth": 176,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "blood_pact",
+          "w": 420,
+          "name": "Blood Pact",
+          "nameWidth": 243,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "focus",
+          "w": 204,
+          "name": "Focus",
+          "nameWidth": 66,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "focus",
+          "w": 300,
+          "name": "Focus",
+          "nameWidth": 97,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "focus",
+          "w": 420,
+          "name": "Focus",
+          "nameWidth": 134,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "poison_dart",
+          "w": 204,
+          "name": "Poison Dart",
+          "nameWidth": 132,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "poison_dart",
+          "w": 300,
+          "name": "Poison Dart",
+          "nameWidth": 194,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "poison_dart",
+          "w": 420,
+          "name": "Poison Dart",
+          "nameWidth": 269,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "shield_bash",
+          "w": 204,
+          "name": "Shield Bash",
+          "nameWidth": 131,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "shield_bash",
+          "w": 300,
+          "name": "Shield Bash",
+          "nameWidth": 193,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "shield_bash",
+          "w": 420,
+          "name": "Shield Bash",
+          "nameWidth": 267,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "wolf_fang",
+          "w": 204,
+          "name": "Wolf Fang",
+          "nameWidth": 113,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "wolf_fang",
+          "w": 300,
+          "name": "Wolf Fang",
+          "nameWidth": 167,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "wolf_fang",
+          "w": 420,
+          "name": "Wolf Fang",
+          "nameWidth": 231,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "drain_life",
+          "w": 204,
+          "name": "Life Drain",
+          "nameWidth": 113,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "drain_life",
+          "w": 300,
+          "name": "Life Drain",
+          "nameWidth": 167,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "drain_life",
+          "w": 420,
+          "name": "Life Drain",
+          "nameWidth": 231,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "sap_flesh",
+          "w": 204,
+          "name": "Wither",
+          "nameWidth": 79,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "sap_flesh",
+          "w": 300,
+          "name": "Wither",
+          "nameWidth": 116,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "sap_flesh",
+          "w": 420,
+          "name": "Wither",
+          "nameWidth": 160,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "dark_pact",
+          "w": 204,
+          "name": "Shadow Pact",
+          "nameWidth": 143,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "dark_pact",
+          "w": 300,
+          "name": "Shadow Pact",
+          "nameWidth": 211,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "dark_pact",
+          "w": 420,
+          "name": "Shadow Pact",
+          "nameWidth": 292,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "thorns_armor",
+          "w": 204,
+          "name": "Thorn Armor",
+          "nameWidth": 150,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "thorns_armor",
+          "w": 300,
+          "name": "Thorn Armor",
+          "nameWidth": 222,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "thorns_armor",
+          "w": 420,
+          "name": "Thorn Armor",
+          "nameWidth": 306,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "chain_spark",
+          "w": 204,
+          "name": "Chain Spark",
+          "nameWidth": 138,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "chain_spark",
+          "w": 300,
+          "name": "Chain Spark",
+          "nameWidth": 203,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "chain_spark",
+          "w": 420,
+          "name": "Chain Spark",
+          "nameWidth": 281,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "moonlight",
+          "w": 204,
+          "name": "Moonlight",
+          "nameWidth": 117,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "moonlight",
+          "w": 300,
+          "name": "Moonlight",
+          "nameWidth": 172,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "moonlight",
+          "w": 420,
+          "name": "Moonlight",
+          "nameWidth": 238,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "moon_edge",
+          "w": 204,
+          "name": "Moonblade",
+          "nameWidth": 127,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "moon_edge",
+          "w": 300,
+          "name": "Moonblade",
+          "nameWidth": 187,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "moon_edge",
+          "w": 420,
+          "name": "Moonblade",
+          "nameWidth": 259,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "blood_moon",
+          "w": 204,
+          "name": "Blood Moon",
+          "nameWidth": 136,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "blood_moon",
+          "w": 300,
+          "name": "Blood Moon",
+          "nameWidth": 200,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "blood_moon",
+          "w": 420,
+          "name": "Blood Moon",
+          "nameWidth": 277,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "soul_drain",
+          "w": 204,
+          "name": "Soul Siphon",
+          "nameWidth": 135,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "soul_drain",
+          "w": 300,
+          "name": "Soul Siphon",
+          "nameWidth": 199,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "soul_drain",
+          "w": 420,
+          "name": "Soul Siphon",
+          "nameWidth": 275,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "eternal_night",
+          "w": 204,
+          "name": "Endless Night",
+          "nameWidth": 155,
+          "maxName": 165.56,
+          "descHeight": 56,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "eternal_night",
+          "w": 300,
+          "name": "Endless Night",
+          "nameWidth": 229,
+          "maxName": 251,
+          "descHeight": 85,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "eternal_night",
+          "w": 420,
+          "name": "Endless Night",
+          "nameWidth": 317,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "hunters_mark",
+          "w": 204,
+          "name": "Hunter's Mark",
+          "nameWidth": 162,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "hunters_mark",
+          "w": 300,
+          "name": "Hunter's Mark",
+          "nameWidth": 239,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "hunters_mark",
+          "w": 420,
+          "name": "Hunter's Mark",
+          "nameWidth": 330,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "thorn_ring",
+          "w": 204,
+          "name": "Ring of Thorns",
+          "nameWidth": 161,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "thorn_ring",
+          "w": 300,
+          "name": "Ring of Thorns",
+          "nameWidth": 248,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "thorn_ring",
+          "w": 420,
+          "name": "Ring of Thorns",
+          "nameWidth": 343,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "fu_paper",
+          "w": 204,
+          "name": "Paper Talisman",
+          "nameWidth": 160,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "fu_paper",
+          "w": 300,
+          "name": "Paper Talisman",
+          "nameWidth": 243,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "fu_paper",
+          "w": 420,
+          "name": "Paper Talisman",
+          "nameWidth": 349,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "cinnabar",
+          "w": 204,
+          "name": "Cinnabar Seal",
+          "nameWidth": 157,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "cinnabar",
+          "w": 300,
+          "name": "Cinnabar Seal",
+          "nameWidth": 232,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "cinnabar",
+          "w": 420,
+          "name": "Cinnabar Seal",
+          "nameWidth": 321,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "seal_gate",
+          "w": 204,
+          "name": "Sealed Gate",
+          "nameWidth": 130,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "seal_gate",
+          "w": 300,
+          "name": "Sealed Gate",
+          "nameWidth": 192,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "seal_gate",
+          "w": 420,
+          "name": "Sealed Gate",
+          "nameWidth": 266,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "xuan_ji",
+          "w": 204,
+          "name": "Xuanji",
+          "nameWidth": 73,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "xuan_ji",
+          "w": 300,
+          "name": "Xuanji",
+          "nameWidth": 108,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "xuan_ji",
+          "w": 420,
+          "name": "Xuanji",
+          "nameWidth": 149,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "thunder_word",
+          "w": 204,
+          "name": "Thunder Edict",
+          "nameWidth": 163,
+          "maxName": 165.56,
+          "descHeight": 65,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "thunder_word",
+          "w": 300,
+          "name": "Thunder Edict",
+          "nameWidth": 240,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "thunder_word",
+          "w": 420,
+          "name": "Thunder Edict",
+          "nameWidth": 332,
+          "maxName": 357.8,
+          "descHeight": 133,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "nine_head",
+          "w": 204,
+          "name": "Ninefold Art",
+          "nameWidth": 140,
+          "maxName": 165.56,
+          "descHeight": 56,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "nine_head",
+          "w": 300,
+          "name": "Ninefold Art",
+          "nameWidth": 207,
+          "maxName": 251,
+          "descHeight": 85,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "nine_head",
+          "w": 420,
+          "name": "Ninefold Art",
+          "nameWidth": 286,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "miasma",
+          "w": 204,
+          "name": "Miasma",
+          "nameWidth": 89,
+          "maxName": 165.56,
+          "descHeight": 22,
+          "maxDesc": 24.255679999999998
+        },
+        {
+          "id": "miasma",
+          "w": 300,
+          "name": "Miasma",
+          "nameWidth": 132,
+          "maxName": 251,
+          "descHeight": 31,
+          "maxDesc": 40.376
+        },
+        {
+          "id": "miasma",
+          "w": 420,
+          "name": "Miasma",
+          "nameWidth": 182,
+          "maxName": 357.8,
+          "descHeight": 44,
+          "maxDesc": 60.526399999999995
+        },
+        {
+          "id": "spirit_gather",
+          "w": 204,
+          "name": "Gather Spirit",
+          "nameWidth": 145,
+          "maxName": 165.56,
+          "descHeight": 45,
+          "maxDesc": 48.31136
+        },
+        {
+          "id": "spirit_gather",
+          "w": 300,
+          "name": "Gather Spirit",
+          "nameWidth": 214,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 75.752
+        },
+        {
+          "id": "spirit_gather",
+          "w": 420,
+          "name": "Gather Spirit",
+          "nameWidth": 296,
+          "maxName": 357.8,
+          "descHeight": 90,
+          "maxDesc": 110.0528
+        },
+        {
+          "id": "edict",
+          "w": 204,
+          "name": "Dijiang's Edict",
+          "nameWidth": 161,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "edict",
+          "w": 300,
+          "name": "Dijiang's Edict",
+          "nameWidth": 238,
+          "maxName": 251,
+          "descHeight": 64,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "edict",
+          "w": 420,
+          "name": "Dijiang's Edict",
+          "nameWidth": 328,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "taiji",
+          "w": 204,
+          "name": "Primordial Strike",
+          "nameWidth": 160,
+          "maxName": 165.56,
+          "descHeight": 56,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "taiji",
+          "w": 300,
+          "name": "Primordial Strike",
+          "nameWidth": 244,
+          "maxName": 251,
+          "descHeight": 91,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "taiji",
+          "w": 420,
+          "name": "Primordial Strike",
+          "nameWidth": 345,
+          "maxName": 357.8,
+          "descHeight": 166,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "famine",
+          "w": 204,
+          "name": "Taotie's Feast",
+          "nameWidth": 149,
+          "maxName": 165.56,
+          "descHeight": 68,
+          "maxDesc": 72.36704
+        },
+        {
+          "id": "famine",
+          "w": 300,
+          "name": "Taotie's Feast",
+          "nameWidth": 220,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 111.12799999999999
+        },
+        {
+          "id": "famine",
+          "w": 420,
+          "name": "Taotie's Feast",
+          "nameWidth": 304,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 159.57920000000001
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 204,
+          "name": "Qingqiu Seal",
+          "nameWidth": 142,
+          "maxName": 165.56,
+          "descHeight": 65,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 300,
+          "name": "Qingqiu Seal",
+          "nameWidth": 210,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 420,
+          "name": "Qingqiu Seal",
+          "nameWidth": 290,
+          "maxName": 357.8,
+          "descHeight": 133,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 204,
+          "name": "Bronze Vessel",
+          "nameWidth": 154,
+          "maxName": 165.56,
+          "descHeight": 65,
+          "maxDesc": 76.904
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 300,
+          "name": "Bronze Vessel",
+          "nameWidth": 227,
+          "maxName": 251,
+          "descHeight": 97,
+          "maxDesc": 117.80000000000001
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 420,
+          "name": "Bronze Vessel",
+          "nameWidth": 314,
+          "maxName": 357.8,
+          "descHeight": 136,
+          "maxDesc": 168.91999999999993
+        },
+        {
+          "id": "regroup",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Regroup",
+          "nameWidth": 191,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "brace",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Brace",
+          "nameWidth": 128,
+          "maxName": 372,
+          "descHeight": 175,
+          "maxDesc": 182
+        },
+        {
+          "id": "inscribe",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Inscribe",
+          "nameWidth": 187,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "seal_burst",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Seal Burst",
+          "nameWidth": 224,
+          "maxName": 372,
+          "descHeight": 142,
+          "maxDesc": 182
+        },
+        {
+          "id": "rend",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Rend",
+          "nameWidth": 117,
+          "maxName": 372,
+          "descHeight": 175,
+          "maxDesc": 182
+        },
+        {
+          "id": "pursuit",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Pursuit",
+          "nameWidth": 165,
+          "maxName": 372,
+          "descHeight": 175,
+          "maxDesc": 182
+        },
+        {
+          "id": "strike",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Strike",
+          "nameWidth": 132,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "defend",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Defend",
+          "nameWidth": 162,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "quick_jab",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Quick Jab",
+          "nameWidth": 217,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "dagger_fan",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Fan of Daggers",
+          "nameWidth": 332,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "heavy_blow",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Heavy Blow",
+          "nameWidth": 263,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "iron_wall",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Iron Wall",
+          "nameWidth": 210,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "riposte",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Riposte",
+          "nameWidth": 169,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "blood_pact",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Blood Pact",
+          "nameWidth": 238,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "focus",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Focus",
+          "nameWidth": 131,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "poison_dart",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Poison Dart",
+          "nameWidth": 263,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "shield_bash",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Shield Bash",
+          "nameWidth": 261,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "wolf_fang",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Wolf Fang",
+          "nameWidth": 226,
+          "maxName": 372,
+          "descHeight": 151,
+          "maxDesc": 182
+        },
+        {
+          "id": "drain_life",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Life Drain",
+          "nameWidth": 226,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "sap_flesh",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Wither",
+          "nameWidth": 157,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "dark_pact",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Shadow Pact",
+          "nameWidth": 286,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "thorns_armor",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Thorn Armor",
+          "nameWidth": 300,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "chain_spark",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Chain Spark",
+          "nameWidth": 275,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "moonlight",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Moonlight",
+          "nameWidth": 233,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "moon_edge",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Moonblade",
+          "nameWidth": 253,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "blood_moon",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Blood Moon",
+          "nameWidth": 271,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "soul_drain",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Soul Siphon",
+          "nameWidth": 269,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "eternal_night",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Endless Night",
+          "nameWidth": 310,
+          "maxName": 372,
+          "descHeight": 175,
+          "maxDesc": 182
+        },
+        {
+          "id": "hunters_mark",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Hunter's Mark",
+          "nameWidth": 323,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "thorn_ring",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Ring of Thorns",
+          "nameWidth": 336,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "fu_paper",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Paper Talisman",
+          "nameWidth": 349,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "cinnabar",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Cinnabar Seal",
+          "nameWidth": 314,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "seal_gate",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Sealed Gate",
+          "nameWidth": 260,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "xuan_ji",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Xuanji",
+          "nameWidth": 146,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "thunder_word",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Thunder Edict",
+          "nameWidth": 325,
+          "maxName": 372,
+          "descHeight": 142,
+          "maxDesc": 182
+        },
+        {
+          "id": "nine_head",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Ninefold Art",
+          "nameWidth": 280,
+          "maxName": 372,
+          "descHeight": 175,
+          "maxDesc": 182
+        },
+        {
+          "id": "miasma",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Miasma",
+          "nameWidth": 178,
+          "maxName": 372,
+          "descHeight": 49,
+          "maxDesc": 182
+        },
+        {
+          "id": "spirit_gather",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Gather Spirit",
+          "nameWidth": 289,
+          "maxName": 372,
+          "descHeight": 103,
+          "maxDesc": 182
+        },
+        {
+          "id": "edict",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Dijiang's Edict",
+          "nameWidth": 321,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "taiji",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Primordial Strike",
+          "nameWidth": 362,
+          "maxName": 372,
+          "descHeight": 136,
+          "maxDesc": 182
+        },
+        {
+          "id": "famine",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Taotie's Feast",
+          "nameWidth": 298,
+          "maxName": 372,
+          "descHeight": 157,
+          "maxDesc": 182
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Qingqiu Seal",
+          "nameWidth": 284,
+          "maxName": 372,
+          "descHeight": 142,
+          "maxDesc": 182
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 420,
+          "mode": "Combat",
+          "name": "Bronze Vessel",
+          "nameWidth": 308,
+          "maxName": 372,
+          "descHeight": 145,
+          "maxDesc": 182
+        },
+        {
+          "id": "regroup",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Regroup",
+          "nameWidth": 187,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "brace",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Brace",
+          "nameWidth": 125,
+          "maxName": 352,
+          "descHeight": 182,
+          "maxDesc": 192
+        },
+        {
+          "id": "inscribe",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Inscribe",
+          "nameWidth": 183,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "seal_burst",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Seal Burst",
+          "nameWidth": 219,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "rend",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Rend",
+          "nameWidth": 115,
+          "maxName": 352,
+          "descHeight": 166,
+          "maxDesc": 192
+        },
+        {
+          "id": "pursuit",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Pursuit",
+          "nameWidth": 161,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "strike",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Strike",
+          "nameWidth": 129,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "defend",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Defend",
+          "nameWidth": 159,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "quick_jab",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Quick Jab",
+          "nameWidth": 213,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "dagger_fan",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Fan of Daggers",
+          "nameWidth": 325,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "heavy_blow",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Heavy Blow",
+          "nameWidth": 257,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "iron_wall",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Iron Wall",
+          "nameWidth": 206,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "riposte",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Riposte",
+          "nameWidth": 165,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "blood_pact",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Blood Pact",
+          "nameWidth": 233,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "focus",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Focus",
+          "nameWidth": 128,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "poison_dart",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Poison Dart",
+          "nameWidth": 257,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "shield_bash",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Shield Bash",
+          "nameWidth": 255,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "wolf_fang",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Wolf Fang",
+          "nameWidth": 221,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "drain_life",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Life Drain",
+          "nameWidth": 221,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "sap_flesh",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Wither",
+          "nameWidth": 154,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "dark_pact",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Shadow Pact",
+          "nameWidth": 279,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "thorns_armor",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Thorn Armor",
+          "nameWidth": 293,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "chain_spark",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Chain Spark",
+          "nameWidth": 269,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "moonlight",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Moonlight",
+          "nameWidth": 228,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "moon_edge",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Moonblade",
+          "nameWidth": 248,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "blood_moon",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Blood Moon",
+          "nameWidth": 265,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "soul_drain",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Soul Siphon",
+          "nameWidth": 263,
+          "maxName": 352,
+          "descHeight": 145,
+          "maxDesc": 192
+        },
+        {
+          "id": "eternal_night",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Endless Night",
+          "nameWidth": 303,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "hunters_mark",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Hunter's Mark",
+          "nameWidth": 316,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "thorn_ring",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Ring of Thorns",
+          "nameWidth": 328,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "fu_paper",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Paper Talisman",
+          "nameWidth": 341,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "cinnabar",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Cinnabar Seal",
+          "nameWidth": 307,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "seal_gate",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Sealed Gate",
+          "nameWidth": 254,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "xuan_ji",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Xuanji",
+          "nameWidth": 143,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "thunder_word",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Thunder Edict",
+          "nameWidth": 317,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "nine_head",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Ninefold Art",
+          "nameWidth": 274,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "miasma",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Miasma",
+          "nameWidth": 175,
+          "maxName": 352,
+          "descHeight": 49,
+          "maxDesc": 192
+        },
+        {
+          "id": "spirit_gather",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Gather Spirit",
+          "nameWidth": 283,
+          "maxName": 352,
+          "descHeight": 100,
+          "maxDesc": 192
+        },
+        {
+          "id": "edict",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Dijiang's Edict",
+          "nameWidth": 314,
+          "maxName": 352,
+          "descHeight": 151,
+          "maxDesc": 192
+        },
+        {
+          "id": "taiji",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Primordial Strike",
+          "nameWidth": 345,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "famine",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Taotie's Feast",
+          "nameWidth": 291,
+          "maxName": 352,
+          "descHeight": 145,
+          "maxDesc": 192
+        },
+        {
+          "id": "qingqiu_seal",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Qingqiu Seal",
+          "nameWidth": 278,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        },
+        {
+          "id": "bronze_vessel",
+          "w": 400,
+          "mode": "Reward",
+          "name": "Bronze Vessel",
+          "nameWidth": 301,
+          "maxName": 352,
+          "descHeight": 186,
+          "maxDesc": 192
+        }
+      ],
+      "missing": [],
+      "realInput": "begin/cancel leaves save unchanged; confirm creates eight-card run"
+    }
+  ],
+  "overflow": [],
+  "errors": []
+}

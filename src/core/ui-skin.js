@@ -28,6 +28,8 @@ const GAME_PREFS = {
 };
 
 function preloadUiSkin(scene) {
+  for (const realm of ['gothic','shanhai'])
+    scene.load.image('card-material-'+realm,'assets/ui/card-'+realm+'-v2.png');
   for(const id of ['energy','spirit','menu','deck','route','journal'])
     scene.load.image('ui-refined-'+id,'assets/ui/refined-'+id+'-v1.png');
   for (const realm of ['gothic', 'shanhai']) for (const part of UI_SKIN_PARTS)
@@ -101,7 +103,7 @@ function addGameNavigation(scene) {
   const b=scene.add.container(964,174).setSize(152,152).setInteractive();
   const g=scene.add.graphics();g.fillStyle(0x14131b,.94);g.fillRoundedRect(-76,-76,152,152,16);g.lineStyle(2,PAL.gold,.5);g.strokeRoundedRect(-76,-76,152,152,16);
   const art=scene.add.image(0,-22,'ui-refined-menu').setDisplaySize(106,106);
-  const label=uiText(scene,0,47,'菜单',34,'#e8dcc0').setOrigin(.5);b.add([g,art,label]);
+  const label=uiText(scene,0,47,I18N.t('combat.menu'),34,'#e8dcc0').setOrigin(.5);b.add([g,art,label]);
   b.on('pointerdown',(p,x,y,ev)=>{if(ev)ev.stopPropagation();openGameOverlay(scene,'pause');});
   b.on('pointerover',()=>b.setAlpha(.8));b.on('pointerout',()=>b.setAlpha(1));
   scene._navButtons={pause:b,menu:b};nav.add(b);
