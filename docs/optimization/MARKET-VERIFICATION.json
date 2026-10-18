@@ -1,0 +1,19 @@
+{
+  "before": {
+    "deck": 8,
+    "gold": 212,
+    "price": 45
+  },
+  "after": {
+    "deck": 9,
+    "gold": 167,
+    "sold": 1
+  },
+  "saved": {
+    "same": true,
+    "buyAgain": false,
+    "removeAgain": false,
+    "skipAgain": 0
+  },
+  "errors": []
+}

@@ -345,7 +345,27 @@ const ENEMY_MOVE_CYCLES = {
   ]
 };
 
+function recordPlayerTactic(state,def){
+  if(def.effects.some(e=>['block','brace'].includes(e.op)))state.defensePlayed=true;
+  if(def.effects.some(e=>['damage','damageTimes','damagePoisonBonus','drain','echoHit','resonanceDamage','wound','consumeBleed','sealBurst'].includes(e.op)))state.attackPlayed=true;
+}
+function finishPlayerTactic(state){
+  const e=state.enemy;
+  e.guardStreak=state.defensePlayed&&!state.attackPlayed?(e.guardStreak||0)+1:0;
+  state.defensePlayed=false;state.attackPlayed=false;
+}
 function rollIntent(e) {
+  const normal=rollBaseIntent(e);
+  if(e.boss&&e.guardStreak>=3){
+    e.guardStreak=0;
+    const counter=e.key==='forest_lord'?
+      {moveId:'roots_counter',type:'debuff',stat:'poison',turns:3}:
+      {moveId:'dance_counter',type:'debuff',stat:'frail',turns:2};
+    return [counter,...normal];
+  }
+  return normal;
+}
+function rollBaseIntent(e) {
   const experiment = e.movePrototype || (typeof location !== 'undefined' && typeof URLSearchParams !== 'undefined' &&
     new URLSearchParams(location.search).get('enemies') === 'identity');
   const cycle = experiment && ENEMY_MOVE_CYCLES[e.key];

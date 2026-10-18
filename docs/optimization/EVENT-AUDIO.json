@@ -1,0 +1,243 @@
+{
+  "decoded": [
+    {
+      "file": "assets/audio/ui-v1.ogg",
+      "duration": 0.08852083333333334,
+      "peak": 0.37160712480545044,
+      "rms": 0.070805749056664
+    },
+    {
+      "file": "assets/audio/ui-v1.m4a",
+      "duration": 0.09,
+      "peak": 0.38670843839645386,
+      "rms": 0.07110734975160916
+    },
+    {
+      "file": "assets/audio/select-v1.ogg",
+      "duration": 0.137125,
+      "peak": 0.32615137100219727,
+      "rms": 0.06886057978534296
+    },
+    {
+      "file": "assets/audio/select-v1.m4a",
+      "duration": 0.14,
+      "peak": 0.31840839982032776,
+      "rms": 0.06702160664755634
+    },
+    {
+      "file": "assets/audio/play-v1.ogg",
+      "duration": 0.24708333333333332,
+      "peak": 0.4261329174041748,
+      "rms": 0.06729758352827932
+    },
+    {
+      "file": "assets/audio/play-v1.m4a",
+      "duration": 0.25,
+      "peak": 0.44264382123947144,
+      "rms": 0.06668096305972011
+    },
+    {
+      "file": "assets/audio/deny-v1.ogg",
+      "duration": 0.18708333333333332,
+      "peak": 0.3019818961620331,
+      "rms": 0.07170506432012215
+    },
+    {
+      "file": "assets/audio/deny-v1.m4a",
+      "duration": 0.19,
+      "peak": 0.31801435351371765,
+      "rms": 0.07101276642403692
+    },
+    {
+      "file": "assets/audio/attack-v1.ogg",
+      "duration": 0.25708333333333333,
+      "peak": 0.3356475830078125,
+      "rms": 0.06995146916040387
+    },
+    {
+      "file": "assets/audio/attack-v1.m4a",
+      "duration": 0.26,
+      "peak": 0.33470848202705383,
+      "rms": 0.06976906430861858
+    },
+    {
+      "file": "assets/audio/impact-v1.ogg",
+      "duration": 0.23708333333333334,
+      "peak": 0.3918795883655548,
+      "rms": 0.07136140143482826
+    },
+    {
+      "file": "assets/audio/impact-v1.m4a",
+      "duration": 0.24,
+      "peak": 0.38418155908584595,
+      "rms": 0.0703964334507786
+    },
+    {
+      "file": "assets/audio/block-v1.ogg",
+      "duration": 0.39708333333333334,
+      "peak": 0.5749987959861755,
+      "rms": 0.06983655004710596
+    },
+    {
+      "file": "assets/audio/block-v1.m4a",
+      "duration": 0.4,
+      "peak": 0.5972928404808044,
+      "rms": 0.07025123951438811
+    },
+    {
+      "file": "assets/audio/guard-v1.ogg",
+      "duration": 0.4774583333333333,
+      "peak": 0.3251034915447235,
+      "rms": 0.07155663691388146
+    },
+    {
+      "file": "assets/audio/guard-v1.m4a",
+      "duration": 0.48,
+      "peak": 0.3253253102302551,
+      "rms": 0.07104040545172602
+    },
+    {
+      "file": "assets/audio/hurt-v1.ogg",
+      "duration": 0.337125,
+      "peak": 0.31295496225357056,
+      "rms": 0.07123958427117934
+    },
+    {
+      "file": "assets/audio/hurt-v1.m4a",
+      "duration": 0.34,
+      "peak": 0.31395232677459717,
+      "rms": 0.070403858555766
+    },
+    {
+      "file": "assets/audio/heal-v1.ogg",
+      "duration": 0.7470833333333333,
+      "peak": 0.29706209897994995,
+      "rms": 0.07099871953859287
+    },
+    {
+      "file": "assets/audio/heal-v1.m4a",
+      "duration": 0.75,
+      "peak": 0.296469509601593,
+      "rms": 0.0706447646095569
+    },
+    {
+      "file": "assets/audio/turn-v1.ogg",
+      "duration": 0.2975,
+      "peak": 0.41327452659606934,
+      "rms": 0.07163576170858502
+    },
+    {
+      "file": "assets/audio/turn-v1.m4a",
+      "duration": 0.3,
+      "peak": 0.4221261143684387,
+      "rms": 0.07038701689457201
+    },
+    {
+      "file": "assets/audio/victory-v1.ogg",
+      "duration": 1.2,
+      "peak": 0.32653874158859253,
+      "rms": 0.07128915837898818
+    },
+    {
+      "file": "assets/audio/victory-v1.m4a",
+      "duration": 1.2,
+      "peak": 0.3259509801864624,
+      "rms": 0.07104787507782086
+    },
+    {
+      "file": "assets/audio/defeat-v1.ogg",
+      "duration": 1.1200416666666666,
+      "peak": 0.3127988278865814,
+      "rms": 0.07115748978486744
+    },
+    {
+      "file": "assets/audio/defeat-v1.m4a",
+      "duration": 1.12,
+      "peak": 0.31062668561935425,
+      "rms": 0.07090557434261992
+    },
+    {
+      "file": "assets/audio/ending-v1.ogg",
+      "duration": 1.9,
+      "peak": 0.32208767533302307,
+      "rms": 0.0709877869822163
+    },
+    {
+      "file": "assets/audio/ending-v1.m4a",
+      "duration": 1.9,
+      "peak": 0.32109808921813965,
+      "rms": 0.07061708904284049
+    },
+    {
+      "file": "assets/audio/event_enter-v1.ogg",
+      "duration": 1.05,
+      "peak": 0.36417925357818604,
+      "rms": 0.07116342212844781
+    },
+    {
+      "file": "assets/audio/event_enter-v1.m4a",
+      "duration": 1.05,
+      "peak": 0.35943472385406494,
+      "rms": 0.07079349695299156
+    },
+    {
+      "file": "assets/audio/event_choice-v1.ogg",
+      "duration": 0.4970833333333333,
+      "peak": 0.3866240382194519,
+      "rms": 0.06968562381172462
+    },
+    {
+      "file": "assets/audio/event_choice-v1.m4a",
+      "duration": 0.5,
+      "peak": 0.36329030990600586,
+      "rms": 0.06830816398982026
+    },
+    {
+      "file": "assets/audio/relic-v1.ogg",
+      "duration": 1.05,
+      "peak": 0.3714548349380493,
+      "rms": 0.07071886516583363
+    },
+    {
+      "file": "assets/audio/relic-v1.m4a",
+      "duration": 1.05,
+      "peak": 0.3654596209526062,
+      "rms": 0.07066198726829102
+    },
+    {
+      "file": "assets/audio/bgm-title-v1.ogg",
+      "duration": 112.94116666666666,
+      "peak": 0.3146320581436157,
+      "rms": 0.07761864118544141
+    },
+    {
+      "file": "assets/audio/bgm-title-v1.m4a",
+      "duration": 112.94097916666666,
+      "peak": 0.31592845916748047,
+      "rms": 0.07773162679785862
+    },
+    {
+      "file": "assets/audio/bgm-gothic-v1.ogg",
+      "duration": 87.27270833333333,
+      "peak": 0.38496679067611694,
+      "rms": 0.08077444902163006
+    },
+    {
+      "file": "assets/audio/bgm-gothic-v1.m4a",
+      "duration": 87.27197916666667,
+      "peak": 0.38094401359558105,
+      "rms": 0.08087856477347184
+    }
+  ],
+  "checks": [
+    "event_enter",
+    "event_choice",
+    "heal",
+    "hurt",
+    "relic",
+    "relic"
+  ],
+  "mute": true,
+  "errors": [],
+  "scope": "Browser decoding and event callbacks; subjective listening and physical speakers not evaluated."
+}

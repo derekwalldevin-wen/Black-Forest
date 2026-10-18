@@ -9,7 +9,9 @@
     "explicit clear removes both slots; permission denial is reported",
     "legacy save migrates through adapter without inheriting story choices",
     "invalid numeric, resource, array and version fields are rejected",
-    "minimal legacy save receives clean defaults instead of another run state"
+    "minimal legacy save receives clean defaults instead of another run state",
+    "difficulty survives save/load with its HP and recovery rules",
+    "legacy save without difficulty uses standard, never the previous run difficulty"
   ],
   "errors": []
 }

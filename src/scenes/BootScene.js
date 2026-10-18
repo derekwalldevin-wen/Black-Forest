@@ -5,6 +5,7 @@ class BootScene extends Phaser.Scene {
   constructor() { super('Boot'); }
 
   preload() {
+    GAME_ASSETS.install(this.load);
     GAME_PREFS.load();
     I18N.init();
     SFX.preload(this);
@@ -104,6 +105,7 @@ class BootScene extends Phaser.Scene {
     });
 
     this.load.on('complete', () => {
+      this.scene.launch('AssetWarmup');
       tip.setText(I18N.t('shell.ready'));
       // 调试直入模式：跳过过渡延迟，Title 会在 create() 里立即转场
       const q = (typeof location !== 'undefined') ? new URLSearchParams(location.search) : null;

@@ -1,0 +1,21 @@
+{
+  "earned": {
+    "version": 1,
+    "cards": [
+      "blood_pact",
+      "defend",
+      "drain_life",
+      "strike"
+    ],
+    "relics": [],
+    "enemies": [
+      "wolf"
+    ],
+    "events": [],
+    "victories": []
+  },
+  "persistsAfterRunClear": true,
+  "persistsAfterReload": true,
+  "bilingual": true,
+  "errors": []
+}

@@ -39,17 +39,23 @@ const RUN_SCHEMA_VERSION = 1;
  * 但不会跳过数据字段——全量恢复会把「调试时强制指定的敌人」一起
  * 存进 localStorage，之后那一局真实游戏每次都打同一个敌人。
  * 反过来，加了新字段却忘了登记，存了也读不回来，所以这里是唯一入口。 */
+const RUN_DIFFICULTIES = Object.freeze({
+  story: Object.freeze({hp:90,heal:.32,bigHeal:.48}),
+  standard: Object.freeze({hp:70,heal:.26,bigHeal:.42}),
+  challenge: Object.freeze({hp:60,heal:.20,bigHeal:.34})
+});
 const SAVE_FIELDS = [
-  'starterId',
+  'starterId', 'difficulty',
   'chapter', 'step', 'hp', 'maxHp', 'gold', 'deck', 'relics', 'kills', 'started',
   'spiritMax', 'postFightHeal', 'postFightHealBig', 'nextCombat',
   /* 阶段二起使用：妖契与升契标记。schemaVersion 仍然是 1——
    * 新增字段向后兼容，旧档缺这两个键时按「没有妖契 / 未升契」处理即可，
    * 不需要为此升版本号。 */
-  'contracts', 'ascended', 'story'
+  'contracts', 'ascended', 'story', 'market'
 ];
 
 const RUN = {
+  difficulty: 'standard',
   starterId: 'classic',
   chapter: 0,        // 0..2
   step: 0,           // 本章第几场（0..len-1）
@@ -122,21 +128,24 @@ const RUN = {
    * starterId 不传（或传了不认识的 id）时走 classic。这是给旧调用留的
    * 兼容口：调试参数、测试、默认 API 都不该因为加了传承而失效。
    * 正常新游戏由标题页的传承选择面板显式传入三个 ID 之一。 */
-  newRun(starterId) {
+  newRun(starterId, difficulty='standard') {
+    this.difficulty=Object.hasOwn(RUN_DIFFICULTIES,difficulty)?difficulty:'standard';
+    const rules=RUN_DIFFICULTIES[this.difficulty];
     this.chapter = 0;
     this.step = 0;
-    this.maxHp = 70;
-    this.hp = 70;
+    this.maxHp = rules.hp;
+    this.hp = rules.hp;
     this.gold = 0;
     this.kills = 0;
     this.started = true;
     this.spiritMax = 3;
-    this.postFightHeal = 0.26;
-    this.postFightHealBig = 0.42;
+    this.postFightHeal = rules.heal;
+    this.postFightHealBig = rules.bigHeal;
     this.relics = [];
     this.contracts = [];
     this.ascended = false;
     this.story = {seen:[],choices:{},pending:null};
+    this.market = null;
     this._forcedEnemy = null;
     this.nextCombat = {};
     this.starterId = starterDef(starterId).id;
@@ -298,6 +307,7 @@ const RUN = {
 
   save() {
     try {
+      if(typeof META_PROGRESS!=='undefined')META_PROGRESS.record(this);
       const out = { schemaVersion: RUN_SCHEMA_VERSION };
       for (const k of SAVE_FIELDS) out[k] = this[k];
       const raw=JSON.stringify(out);
@@ -317,8 +327,13 @@ const RUN = {
     if(d.step!==undefined&&(!Number.isInteger(d.step)||d.step>2))return null;
     if(d.maxHp!==undefined&&d.maxHp<=0)return null;
     if(d.hp!==undefined&&d.maxHp!==undefined&&d.hp>d.maxHp)return null;
+    if(d.difficulty!==undefined&&!Object.hasOwn(RUN_DIFFICULTIES,d.difficulty))return null;
     for(const key of ['relics','contracts'])if(d[key]!==undefined&&!Array.isArray(d[key]))return null;
     if(d.relics?.some(id=>typeof id!=='string'||!Object.prototype.hasOwnProperty.call(RELIC_DEFS,id)))return null;
+    if(d.market!=null){
+      const m=d.market;
+      if(typeof m!=='object'||!Number.isInteger(m.step)||m.step<0||m.step>=18||!Array.isArray(m.stock)||m.stock.length>3||m.stock.some(id=>!CARD_DEFS[id])||!Array.isArray(m.sold)||m.sold.some(i=>!Number.isInteger(i)||i<0||i>=m.stock.length)||typeof m.removed!=='boolean'||typeof m.skipped!=='boolean')return null;
+    }
     for(const key of ['postFightHeal','postFightHealBig'])if(d[key]!==undefined&&(!Number.isFinite(d[key])||d[key]<0||d[key]>1))return null;
     if(d.nextCombat!==undefined&&(!d.nextCombat||typeof d.nextCombat!=='object'||Array.isArray(d.nextCombat)||Object.values(d.nextCombat).some(v=>!Number.isFinite(v)||v<0)))return null;
     return d;
@@ -347,7 +362,7 @@ const RUN = {
     const d = this._readSave();
     if (!d) return false;
     // Missing legacy fields use fresh defaults, never values left by another run.
-    this.newRun(d.starterId);
+    this.newRun(d.starterId,d.difficulty);
     for (const k of SAVE_FIELDS) {
       if (d[k] === undefined) continue;
       this[k] = d[k];

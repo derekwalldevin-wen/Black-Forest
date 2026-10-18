@@ -1,7 +1,7 @@
 {
   "checks": [
-    "formal input unlocks audio; 14 PCM assets decode; no autoplay",
-    "actual Web Audio output measured; peak 0.0538",
+    "formal input unlocks audio; all runtime audio assets decode; no autoplay",
+    "actual Web Audio output measured; peak 0.0485",
     "real card selection and second click produce paper and impact",
     "fully absorbed hit plays shield without health-hit sound",
     "partial block has shield and actual health damage",
@@ -16,9 +16,9 @@
     "victory, defeat and ending cues use actual scene callbacks",
     "sound=off comparison flag",
     "audio settings fit 390/320 viewport",
-    "14-source audition gallery loads without autoplay"
+    "complete source audition gallery loads without autoplay"
   ],
-  "assets": 14,
+  "assets": 17,
   "errors": [],
   "warnings": [],
   "scope": "Real browser input, decoded audio signal and gameplay callbacks. Physical phone speaker and subjective listening not verified."

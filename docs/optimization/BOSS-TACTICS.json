@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "id": "forest_lord",
+      "intent": [
+        {
+          "moveId": "roots_counter",
+          "type": "debuff",
+          "stat": "poison",
+          "turns": 3
+        },
+        {
+          "type": "attack",
+          "dmg": 8,
+          "hits": 2
+        }
+      ],
+      "after": {
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 0,
+          "poison": 2,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0,
+          "counter": 0,
+          "stance": 0
+        }
+      }
+    },
+    {
+      "id": "dijiang",
+      "intent": [
+        {
+          "moveId": "dance_counter",
+          "type": "debuff",
+          "stat": "frail",
+          "turns": 2
+        },
+        {
+          "type": "buff",
+          "stat": "strength",
+          "v": 4
+        }
+      ],
+      "after": {
+        "st": {
+          "strength": 0,
+          "vulnerable": 0,
+          "weak": 0,
+          "frail": 1,
+          "poison": 0,
+          "thorns": 0,
+          "burn": 0,
+          "burnDmg": 0,
+          "counter": 0,
+          "stance": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}

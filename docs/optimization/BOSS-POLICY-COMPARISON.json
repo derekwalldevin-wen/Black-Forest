@@ -1,0 +1,41 @@
+{
+  "scope": "Controlled six-turn fixtures, fixed hands and elevated HP prevent death truncation. Verifies behavioral trigger/recovery with actual play and settlement; not a win-rate or difficulty estimate.",
+  "rows": [
+    {
+      "boss": "forest_lord",
+      "policy": "defend-only",
+      "samples": 100,
+      "turns": 6,
+      "counters": 100,
+      "recoveries": 0,
+      "meanHpLoss": 55.08
+    },
+    {
+      "boss": "forest_lord",
+      "policy": "mixed",
+      "samples": 100,
+      "turns": 6,
+      "counters": 0,
+      "recoveries": 0,
+      "meanHpLoss": 50.12
+    },
+    {
+      "boss": "dijiang",
+      "policy": "defend-only",
+      "samples": 100,
+      "turns": 6,
+      "counters": 100,
+      "recoveries": 0,
+      "meanHpLoss": 129.8
+    },
+    {
+      "boss": "dijiang",
+      "policy": "mixed",
+      "samples": 100,
+      "turns": 6,
+      "counters": 0,
+      "recoveries": 0,
+      "meanHpLoss": 125.32
+    }
+  ]
+}

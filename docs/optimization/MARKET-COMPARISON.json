@@ -1,0 +1,191 @@
+{
+  "seedRule": "(i * 2654435761) >>> 0 || 1, i=0..299; independent market stream",
+  "scope": "Greedy combat; literal first-card purchase or strike removal, not optimal play. Same card/relic/event policies except skip_buy skips every card reward for gold.",
+  "rows": [
+    {
+      "starter": "blood",
+      "policy": "save",
+      "games": 300,
+      "wins": 185,
+      "meanBattlesWon": 16.336666666666666,
+      "meanTransactions": 0,
+      "meanSpent": 0,
+      "meanFinalDeck": 26.10333333333333,
+      "meanRemainingGold": 621.0133333333333
+    },
+    {
+      "starter": "blood",
+      "policy": "buy",
+      "games": 300,
+      "wins": 196,
+      "meanBattlesWon": 16.543333333333333,
+      "meanTransactions": 10.373333333333333,
+      "meanSpent": 578.3,
+      "meanFinalDeck": 36.73,
+      "meanRemainingGold": 52.25666666666667
+    },
+    {
+      "starter": "blood",
+      "policy": "trim",
+      "games": 300,
+      "wins": 201,
+      "meanBattlesWon": 16.166666666666668,
+      "meanTransactions": 2.743333333333333,
+      "meanSpent": 164.6,
+      "meanFinalDeck": 23.15,
+      "meanRemainingGold": 457.29
+    },
+    {
+      "starter": "blood",
+      "policy": "skip_buy",
+      "games": 300,
+      "wins": 155,
+      "meanBattlesWon": 16.743333333333332,
+      "meanTransactions": 12.763333333333334,
+      "meanSpent": 733.15,
+      "meanFinalDeck": 22.596666666666668,
+      "meanRemainingGold": 99.26666666666667
+    },
+    {
+      "starter": "guard",
+      "policy": "save",
+      "games": 300,
+      "wins": 167,
+      "meanBattlesWon": 16.663333333333334,
+      "meanTransactions": 0,
+      "meanSpent": 0,
+      "meanFinalDeck": 26.463333333333335,
+      "meanRemainingGold": 641.31
+    },
+    {
+      "starter": "guard",
+      "policy": "buy",
+      "games": 300,
+      "wins": 189,
+      "meanBattlesWon": 16.763333333333332,
+      "meanTransactions": 10.58,
+      "meanSpent": 582.6166666666667,
+      "meanFinalDeck": 37.163333333333334,
+      "meanRemainingGold": 57.58
+    },
+    {
+      "starter": "guard",
+      "policy": "trim",
+      "games": 300,
+      "wins": 181,
+      "meanBattlesWon": 16.463333333333335,
+      "meanTransactions": 2.8066666666666666,
+      "meanSpent": 168.4,
+      "meanFinalDeck": 23.41,
+      "meanRemainingGold": 459.24
+    },
+    {
+      "starter": "guard",
+      "policy": "skip_buy",
+      "games": 300,
+      "wins": 156,
+      "meanBattlesWon": 17.16,
+      "meanTransactions": 13.28,
+      "meanSpent": 765.3833333333333,
+      "meanFinalDeck": 23.19333333333333,
+      "meanRemainingGold": 99.52333333333333
+    },
+    {
+      "starter": "talisman",
+      "policy": "save",
+      "games": 300,
+      "wins": 241,
+      "meanBattlesWon": 17.68,
+      "meanTransactions": 0,
+      "meanSpent": 0,
+      "meanFinalDeck": 27.653333333333332,
+      "meanRemainingGold": 678.2366666666667
+    },
+    {
+      "starter": "talisman",
+      "policy": "buy",
+      "games": 300,
+      "wins": 230,
+      "meanBattlesWon": 17.656666666666666,
+      "meanTransactions": 11.35,
+      "meanSpent": 627.8166666666667,
+      "meanFinalDeck": 38.986666666666665,
+      "meanRemainingGold": 47.89333333333333
+    },
+    {
+      "starter": "talisman",
+      "policy": "trim",
+      "games": 300,
+      "wins": 233,
+      "meanBattlesWon": 17.526666666666667,
+      "meanTransactions": 2,
+      "meanSpent": 120,
+      "meanFinalDeck": 25.466666666666665,
+      "meanRemainingGold": 548.8533333333334
+    },
+    {
+      "starter": "talisman",
+      "policy": "skip_buy",
+      "games": 300,
+      "wins": 219,
+      "meanBattlesWon": 17.643333333333334,
+      "meanTransactions": 14.033333333333333,
+      "meanSpent": 809.6666666666666,
+      "meanFinalDeck": 24.013333333333332,
+      "meanRemainingGold": 82.25666666666666
+    }
+  ],
+  "flips": [
+    {
+      "starter": "blood",
+      "vsSavingGold": {
+        "buy": {
+          "better": 59,
+          "worse": 48
+        },
+        "trim": {
+          "better": 46,
+          "worse": 30
+        },
+        "skip_buy": {
+          "better": 63,
+          "worse": 93
+        }
+      }
+    },
+    {
+      "starter": "guard",
+      "vsSavingGold": {
+        "buy": {
+          "better": 55,
+          "worse": 33
+        },
+        "trim": {
+          "better": 50,
+          "worse": 36
+        },
+        "skip_buy": {
+          "better": 72,
+          "worse": 83
+        }
+      }
+    },
+    {
+      "starter": "talisman",
+      "vsSavingGold": {
+        "buy": {
+          "better": 31,
+          "worse": 42
+        },
+        "trim": {
+          "better": 26,
+          "worse": 34
+        },
+        "skip_buy": {
+          "better": 45,
+          "worse": 67
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "story",
+        "hp": 90,
+        "maxHp": 90,
+        "heal": 0.32
+      },
+      "loaded": "story"
+    },
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "standard",
+        "hp": 70,
+        "maxHp": 70,
+        "heal": 0.26
+      },
+      "loaded": "standard"
+    },
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "challenge",
+        "hp": 60,
+        "maxHp": 60,
+        "heal": 0.2
+      },
+      "loaded": "challenge"
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "story",
+        "hp": 90,
+        "maxHp": 90,
+        "heal": 0.32
+      },
+      "loaded": "story"
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "standard",
+        "hp": 70,
+        "maxHp": 70,
+        "heal": 0.26
+      },
+      "loaded": "standard"
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "challenge",
+        "hp": 60,
+        "maxHp": 60,
+        "heal": 0.2
+      },
+      "loaded": "challenge"
+    }
+  ],
+  "errors": []
+}

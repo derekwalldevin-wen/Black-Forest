@@ -1,0 +1,15 @@
+{
+  "opening": {
+    "first": true,
+    "all": false,
+    "art": true
+  },
+  "first": {
+    "enemy": true,
+    "motion": true,
+    "missing": 0
+  },
+  "blocked": true,
+  "restored": true,
+  "errors": []
+}

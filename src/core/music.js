@@ -36,7 +36,8 @@ const BGM = {
   if(this.cache.has(choice.id)){this.start(choice.id);return;}
   if(this.pending.has(choice.id)||this.failed.has(choice.id))return;
   const id=choice.id;
-  const job=fetch(`assets/audio/bgm-${id}-v1.wav`).then(r=>{if(!r.ok)throw Error('Music HTTP '+r.status);return r.arrayBuffer();}).then(b=>ctx.decodeAudioData(b)).then(buffer=>{this.cache.set(id,buffer);}).catch(()=>{this.failed.add(id);}).finally(()=>{this.pending.delete(id);if(this.game)this.tick();});
+  const ext=document.createElement('audio').canPlayType('audio/ogg; codecs="vorbis"')?'ogg':'m4a';
+  const job=fetch(`assets/audio/bgm-${id}-v1.${ext}`).then(r=>{if(!r.ok)throw Error('Music HTTP '+r.status);return r.arrayBuffer();}).then(b=>ctx.decodeAudioData(b)).then(buffer=>{this.cache.set(id,buffer);}).catch(()=>{this.failed.add(id);}).finally(()=>{this.pending.delete(id);if(this.game)this.tick();});
   this.pending.set(id,job);
  },
  start(id){

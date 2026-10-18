@@ -18,7 +18,7 @@ const GAME_CONFIG = {
   input: {
     activePointers: 2               // 多点触控：出牌 + 另一只手点结束回合
   },
-  scene: [BootScene, TitleScene, CombatScene, RewardScene, EventScene, JournalScene, StoryScene]
+  scene: [BootScene, AssetWarmupScene, TitleScene, CombatScene, RewardScene, EventScene, JournalScene, StoryScene]
 };
 
 window.addEventListener('load', async () => {

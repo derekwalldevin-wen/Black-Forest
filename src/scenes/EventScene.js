@@ -25,6 +25,7 @@ class EventScene extends Phaser.Scene {
   }
 
   create() {
+    if(GAME_ASSETS.wait(this,false))return;
     syncTheme();
     /* 一次性闸门必须复位。Phaser 复用场景实例，一局里会反复进事件节点，
      * 上一次留下的 _picked === true 会让 pick() 第一行就 return，
@@ -44,6 +45,7 @@ class EventScene extends Phaser.Scene {
 
     this.buildEventHead();
     this.buildChoices();
+    SFX.play(this,'event_enter');
 
     this.input.keyboard.on('keydown', (e) => {
       if (this._stage === 'choose') {
@@ -274,7 +276,9 @@ class EventScene extends Phaser.Scene {
 
     // 先拆掉需要 UI 介入的算子，其余立即结算
     const needPick = effectsNeedCardPick(c.effects);
+    const previousHp=RUN.hp,previousRelics=RUN.relics.length;
     const log = applyEventEffects(c.effects);
+    SFX.play(this,RUN.relics.length>previousRelics?'relic':RUN.hp>previousHp?'heal':RUN.hp<previousHp?'hurt':'event_choice');
     RUN.save();
     this.refreshTop();
 
@@ -288,6 +292,7 @@ class EventScene extends Phaser.Scene {
 
   /* ---------------- 结果页 ---------------- */
   showResult(text, log) {
+    META_PROGRESS.record(RUN,{event:this.evt.id});
     this._stage = 'result';
     this.clearStage();
 

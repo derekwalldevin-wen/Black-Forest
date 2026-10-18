@@ -28,6 +28,10 @@ function Add-Rel([string]$rel) {
 # entry point + docs
 Add-Rel 'index.html'
 Add-Rel 'README.md'
+Add-Rel 'assets/hand-reader.css'
+Add-Rel 'release.json'
+Get-ChildItem (Join-Path $root 'docs\gameplay') -File | Where-Object { $_.Extension -in '.md','.json' } | ForEach-Object { $files.Add($_.FullName) }
+Get-ChildItem (Join-Path $root 'docs\optimization') -File | Where-Object { $_.Extension -in '.md','.json','.txt' } | ForEach-Object { $files.Add($_.FullName) }
 
 # all game source
 Get-ChildItem (Join-Path $root 'src') -Recurse -File -Filter *.js | ForEach-Object { $files.Add($_.FullName) }
@@ -69,6 +73,8 @@ Get-ChildItem (Join-Path $root 'assets\vendor') -File                      | For
 Get-ChildItem (Join-Path $root 'assets\anim') -File -Filter *.png           | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'assets\story') -File -Filter *.webp         | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'assets\audio') -File -Filter *.wav         | ForEach-Object { $files.Add($_.FullName) }
+Get-ChildItem (Join-Path $root 'assets\audio') -File | Where-Object { $_.Extension -in '.ogg','.m4a' } | ForEach-Object { $files.Add($_.FullName) }
+Get-ChildItem (Join-Path $root 'assets\optimized') -Recurse -File | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'docs\audio') -File | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'docs\ui-refresh') -File | ForEach-Object { $files.Add($_.FullName) }
 Get-ChildItem (Join-Path $root 'docs\duel') -File | ForEach-Object { $files.Add($_.FullName) }

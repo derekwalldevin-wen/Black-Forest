@@ -1475,7 +1475,7 @@ ok(!('_forcedEnemy' in saved) && !('_dbgDeck' in saved),
 ok(JSON.stringify(Object.keys(saved).sort()) === JSON.stringify([
   'deck', 'gold', 'hp', 'kills', 'maxHp', 'nextCombat', 'postFightHeal', 'postFightHealBig',
   'relics', 'spiritMax', 'started', 'starterId', 'step', 'chapter', 'schemaVersion',
-  'contracts', 'ascended', 'story'
+  'contracts', 'ascended', 'story', 'market', 'difficulty'
 ].sort()), '存档字段应恰好是白名单，实际 ' + Object.keys(saved).sort().join(','));
 ok(saved.starterId === 'guard' && saved.deck.indexOf('iron_wall') >= 0, '存档应记录传承与对应牌组');
 RUN._forcedEnemy = null; RUN._dbgDeck = null;
@@ -1547,12 +1547,12 @@ ok(sr.indexOf('this._starting = false') >= 0 &&
 
 const cf = body(SRC.Title, 'confirmStarter() {', 600);
 ok(cf.indexOf('if (this._starting) return;') >= 0, 'confirmStarter 缺一次性闸门：连点确认会建两局');
-ok(cf.indexOf('this._starting = true') < cf.indexOf('RUN.newRun(id)'),
+ok(cf.indexOf('this._starting = true') < cf.indexOf('RUN.newRun(id,'),
   'confirmStarter 必须先置闸门再建局');
 // 取消之后 localStorage 应该和点开面板之前一模一样
 ok(!/RUN\.save\(\)/.test(body(SRC.Title, 'pickStarter(id) {', 700)), '选中传承不应写存档');
 ok(!/RUN\.save\(\)/.test(body(SRC.Title, 'closeStarterPicker() {', 700)), '取消传承选择不应写存档');
-ok(cf.indexOf('RUN.save()') > cf.indexOf('RUN.newRun(id)'), '只有确认之后才应该落盘');
+ok(cf.indexOf('RUN.save()') > cf.indexOf('RUN.newRun(id,'), '只有确认之后才应该落盘');
 // 取消一次之后必须还能再开一次：startRun 开头有 if (this._starterPicker) return，
 // 面板关掉时不复位这个闸门，玩家就再也开不了新的一局。
 ok(/this\._starterPicker = false/.test(body(SRC.Title, 'closeStarterPicker() {', 700)),

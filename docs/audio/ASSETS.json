@@ -169,6 +169,42 @@
       "rms": 0.17144356359918017,
       "bytes": 91244,
       "sha256": "8fbd7a18c773bfb06dd7378d2ca00d13fa558bd7f57184c14abc60407438ddaf"
+    },
+    {
+      "id": "event_enter",
+      "file": "assets/audio/event_enter-v1.wav",
+      "duration": 1.05,
+      "gain": 0.38,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78,
+      "rms": 0.15517435404817534,
+      "bytes": 50444,
+      "sha256": "8613fb81e5d2b148624a89f693d8af400bca72b453670ad6f911dde8e566c3d1"
+    },
+    {
+      "id": "event_choice",
+      "file": "assets/audio/event_choice-v1.wav",
+      "duration": 0.5,
+      "gain": 0.44,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78,
+      "rms": 0.13947829519607763,
+      "bytes": 24044,
+      "sha256": "aba2f98e9034c7868f6980928d272b90f941877edd6b0c4e27892042cdb2de16"
+    },
+    {
+      "id": "relic",
+      "file": "assets/audio/relic-v1.wav",
+      "duration": 1.05,
+      "gain": 0.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78,
+      "rms": 0.1514360675735731,
+      "bytes": 50444,
+      "sha256": "b422bcedcecb465204bb4cf4eeb64b3a55f05dfe2a396a47cc093cfcec4ca748"
     }
   ]
 }

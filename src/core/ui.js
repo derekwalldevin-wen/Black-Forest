@@ -741,8 +741,8 @@ function drawGlyph(scene, x, y, size, key, color) {
  * ---------------------------------------------------------- */
 const CARD_SIZE_BY_COUNT = {
   1: { w: 300, h: 450 }, 2: { w: 280, h: 420 }, 3: { w: 260, h: 390 },
-  4: { w: 230, h: 345 }, 5: { w: 230, h: 345 }, 6: { w: 170, h: 255 },
-  7: { w: 150, h: 225 }, 8: { w: 132, h: 198 }, 9: { w: 116, h: 174 }
+  4: { w: 230, h: 345 }, 5: { w: 230, h: 345 }, 6: { w: 230, h: 345 },
+  7: { w: 230, h: 345 }, 8: { w: 230, h: 345 }, 9: { w: 230, h: 345 }
 };
 function cardSizeFor(n) {
   if (n <= 3) return CARD_SIZE_BY_COUNT[n] || CARD_SIZE_BY_COUNT[3];
@@ -1076,13 +1076,13 @@ class CardView {
 
   setPlayable(v) {
     this.playable = v;
-    this.c.setAlpha(v ? 1 : 0.55);
+    this.refreshState();
   }
 
   /* 刷新实际费用：共鸣减免后价格会变低，这里把数字改掉并点亮共鸣标记。
    * 打出比标价便宜的符箓时，用金色表示「省下来的」。 */
   setCost(cost, isSpirit) {
-    if (this.costT && this.costT.text !== String(cost)) this.costT.setText(String(cost));
+    if (this.costT) this.costT.setText((this.playable?'':'×')+String(cost));
     if (this.echoMark) {
       // 减免生效 = 点亮；没减免 = 暗着
       this.echoMark.setAlpha(isSpirit && this.resonanceActive ? 0.95 : 0.25);
@@ -1095,9 +1095,10 @@ class CardView {
     if (this.echoMark) this.echoMark.setAlpha(n > 0 ? 0.95 : 0.25);
   }
 
-  /* 不可用：给一层灰色遮罩提示 */
+  /* Keep rules readable when unaffordable; mark the cost instead of fading paper. */
   refreshState() {
-    this.c.setAlpha(this.playable ? 1 : 0.5);
+    this.c.setAlpha(1);
+    if(this.costT)this.costT.setText((this.playable?'':'×')+String(this.costT.text).replace(/^×/,''));
   }
 
   setHome(x, y, rot, scale) {

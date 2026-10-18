@@ -15,4 +15,8 @@ const legacy=JSON.parse(first);delete legacy.schemaVersion;delete legacy.starter
 for(const patch of [{deck:['not-a-card']},{deck:['constructor']},{relics:['__proto__']},{gold:-1},{maxHp:0},{chapter:99},{step:9},{hp:999},{relics:'bad'},{schemaVersion:'999'},{nextCombat:'bad'},{postFightHeal:9}])assert.equal(RUN._parseSave(JSON.stringify({...JSON.parse(first),...patch})),null);
 checks.push('invalid numeric, resource, array and version fields are rejected');
 RUN.gold=999;RUN.nextCombat={poison:99};data.set(STORE.primary,JSON.stringify({started:true,deck:['strike']}));assert(RUN.load());assert.equal(RUN.gold,0);assert.equal(Object.keys(RUN.nextCombat).length,0);checks.push('minimal legacy save receives clean defaults instead of another run state');
+RUN.newRun('blood','challenge');assert(RUN.save());RUN.newRun('guard','story');assert(RUN.load());assert.equal(RUN.difficulty,'challenge');assert.equal(RUN.maxHp,60);assert.equal(RUN.postFightHeal,.20);
+checks.push('difficulty survives save/load with its HP and recovery rules');
+const oldDifficulty=JSON.parse(first);delete oldDifficulty.difficulty;data.set(STORE.primary,JSON.stringify(oldDifficulty));assert(RUN.load());assert.equal(RUN.difficulty,'standard');assert.equal(RUN.maxHp,70);
+checks.push('legacy save without difficulty uses standard, never the previous run difficulty');
 fs.writeFileSync('docs/localization/SAVE-STORE-REPORT.json',JSON.stringify({checks,errors:[]},null,2));console.log('PASS: '+checks.length+' checkpoint storage scenarios.');

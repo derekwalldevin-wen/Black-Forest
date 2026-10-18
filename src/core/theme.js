@@ -161,12 +161,22 @@ let THEME = null;
  */
 function applyTheme(key) {
   const t = THEMES[key] || THEMES.gothic;
+  if(cardRuleContrast(t.card)<4.5)throw new Error('Card rules contrast must be at least 4.5:1: '+t.key);
   Object.assign(PAL, t.pal);
   if (typeof CARD !== 'undefined') Object.assign(CARD, t.card);
   FONT = t.font;
   if (typeof TYPE_STYLE !== 'undefined') Object.assign(TYPE_STYLE, t.types);
   THEME = t;
   return t;
+}
+
+function cardRuleContrast(card){
+  const luminance=color=>{
+    const n=typeof color==='number'?color:parseInt(color.replace('#',''),16);
+    return [16,8,0].map(shift=>((n>>shift)&255)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);
+  };
+  const a=luminance(card.text),b=luminance(card.rules);
+  return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
 }
 
 /** 当前主题的键名；未初始化时回落到 gothic */
@@ -619,8 +629,7 @@ function drawRulesBox(g, x, y, w, h) {
   const r = cardRadius(w) * 0.7;
   g.fillStyle(CARD.rules, 1);
   g.fillRoundedRect(x, y, w, h, r);
-  g.fillStyle(CARD.shellLo, 0.45);
-  g.fillRoundedRect(x, y, w, h * 0.22, { tl: r, tr: r, bl: 0, br: 0 });
+  // Keep a consistently light reading surface, including when art fails to load.
   g.lineStyle(Math.max(1, w * 0.006), CARD.rulesEdge, 0.6);
   g.strokeRoundedRect(x, y, w, h, r);
 }

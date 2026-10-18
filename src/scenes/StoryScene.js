@@ -3,6 +3,7 @@ class StoryScene extends Phaser.Scene {
  constructor(){super('Story');}
  init(data){this.data=data||{};this.kind=this.data.kind||'before';this.step=this.data.step||0;this.replay=this.kind==='journal';this.index=0;this._closing=false;this._lastInput=-1000;this.chosen=null;}
  create(){
+  if(GAME_ASSETS.wait(this,GAME_ASSETS.firstReady&&this.step===0&&!this.replay))return;
   this.body=this.add.container(0,0);
   if(this.replay){
    const entries=STORY.journal();this.entries=entries;

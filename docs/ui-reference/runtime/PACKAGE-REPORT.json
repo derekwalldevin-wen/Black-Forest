@@ -1,10 +1,10 @@
 ﻿{
     "hashes":  "all match workspace",
-    "runtimeEntries":  313,
-    "archive":  "artifacts/black-forest-hero-fx-20261012.zip",
+    "runtimeEntries":  531,
+    "archive":  ".tmp-gen/black-forest-review-polish.zip",
     "errors":  [
 
                ],
-    "uiTextures":  58,
-    "requiredEntries":  150
+    "uiTextures":  67,
+    "requiredEntries":  241
 }

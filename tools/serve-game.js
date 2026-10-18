@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),http=require('http');
 const root=path.resolve(__dirname,'..');
 const port=Number(process.argv[2]||8899);
-const types={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.css':'text/css','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.json':'application/json','.woff2':'font/woff2','.wav':'audio/wav'};
+const types={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.css':'text/css','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.json':'application/json','.woff':'font/woff','.woff2':'font/woff2','.wav':'audio/wav','.ogg':'audio/ogg','.m4a':'audio/mp4'};
 http.createServer((req,res)=>{
   let name;try{name=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400).end();return;}
   if(name==='/')name='/index.html';

@@ -212,3 +212,13 @@ I18N.register('en',{
   "combat.kills": "Enemies defeated: {value}",
   "combat.spiritMax": "Max Spirit +{value}"
 });
+I18N.register('zh-CN',{
+ 'move.roots_counter.name':'缠根破守','move.roots_counter.hint':'破守：中毒3','move.roots_counter.description':'连续三个回合只防御不进攻会招致缠根：在原定行动前额外施加3层中毒。穿插伤害牌可打断计数。',
+ 'move.dance_counter.name':'裂甲之舞','move.dance_counter.hint':'破守：脆弱2','move.dance_counter.description':'连续三个回合只防御不进攻会招致裂甲：在原定行动前额外施加2回合脆弱。穿插伤害牌可打断计数。',
+ 'move.boss_recover.name':'收势','move.boss_recover.hint':'休整：无攻击','move.boss_recover.description':'破守之后的休整回合，不攻击、不增加格挡。趁机进攻或整理手牌。'
+});
+I18N.register('en',{
+ 'move.roots_counter.name':'Entangling Roots','move.roots_counter.hint':'Counter: Poison 3','move.roots_counter.description':'Three consecutive turns playing defense but no damage card add 3 Poison before the normal action. A damage card breaks the streak.',
+ 'move.dance_counter.name':'Armor-Rending Dance','move.dance_counter.hint':'Counter: Frail 2','move.dance_counter.description':'Three consecutive turns playing defense but no damage card add 2 turns of Frail before the normal action. A damage card breaks the streak.',
+ 'move.boss_recover.name':'Recovery','move.boss_recover.hint':'Rest: no attack','move.boss_recover.description':'After its counter, the boss rests without attacking or gaining Block. Use this opening to attack or prepare.'
+});

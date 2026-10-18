@@ -1,0 +1,807 @@
+{
+  "quality": 88,
+  "alphaQuality": 100,
+  "resized": false,
+  "rows": [
+    {
+      "src": "assets/ui/card-gothic-v2.png",
+      "dest": "assets/optimized/ui/card-gothic-v2.webp",
+      "before": 2901279,
+      "after": 269312
+    },
+    {
+      "src": "assets/ui/card-shanhai-v2.png",
+      "dest": "assets/optimized/ui/card-shanhai-v2.webp",
+      "before": 3045961,
+      "after": 338032
+    },
+    {
+      "src": "assets/ui/refined-energy-v1.png",
+      "dest": "assets/optimized/ui/refined-energy-v1.webp",
+      "before": 82178,
+      "after": 19108
+    },
+    {
+      "src": "assets/ui/refined-spirit-v1.png",
+      "dest": "assets/optimized/ui/refined-spirit-v1.webp",
+      "before": 62642,
+      "after": 14118
+    },
+    {
+      "src": "assets/ui/refined-menu-v1.png",
+      "dest": "assets/optimized/ui/refined-menu-v1.webp",
+      "before": 134135,
+      "after": 23490
+    },
+    {
+      "src": "assets/ui/refined-deck-v1.png",
+      "dest": "assets/optimized/ui/refined-deck-v1.webp",
+      "before": 114980,
+      "after": 23188
+    },
+    {
+      "src": "assets/ui/refined-route-v1.png",
+      "dest": "assets/optimized/ui/refined-route-v1.webp",
+      "before": 128368,
+      "after": 24176
+    },
+    {
+      "src": "assets/ui/refined-journal-v1.png",
+      "dest": "assets/optimized/ui/refined-journal-v1.webp",
+      "before": 125001,
+      "after": 22306
+    },
+    {
+      "src": "assets/ui/gothic-primary-v1.png",
+      "dest": "assets/optimized/ui/gothic-primary-v1.webp",
+      "before": 271387,
+      "after": 36390
+    },
+    {
+      "src": "assets/ui/gothic-secondary-v1.png",
+      "dest": "assets/optimized/ui/gothic-secondary-v1.webp",
+      "before": 252508,
+      "after": 30262
+    },
+    {
+      "src": "assets/ui/gothic-danger-v1.png",
+      "dest": "assets/optimized/ui/gothic-danger-v1.webp",
+      "before": 263599,
+      "after": 33110
+    },
+    {
+      "src": "assets/ui/gothic-paper-v1.png",
+      "dest": "assets/optimized/ui/gothic-paper-v1.webp",
+      "before": 287486,
+      "after": 37070
+    },
+    {
+      "src": "assets/ui/gothic-panel-v1.png",
+      "dest": "assets/optimized/ui/gothic-panel-v1.webp",
+      "before": 303598,
+      "after": 37164
+    },
+    {
+      "src": "assets/ui/gothic-paper-fill-v1.png",
+      "dest": "assets/optimized/ui/gothic-paper-fill-v1.webp",
+      "before": 63176,
+      "after": 6734
+    },
+    {
+      "src": "assets/ui/gothic-paper-frame-v1.png",
+      "dest": "assets/optimized/ui/gothic-paper-frame-v1.webp",
+      "before": 105752,
+      "after": 16024
+    },
+    {
+      "src": "assets/ui/gothic-panel-fill-v1.png",
+      "dest": "assets/optimized/ui/gothic-panel-fill-v1.webp",
+      "before": 64296,
+      "after": 6068
+    },
+    {
+      "src": "assets/ui/gothic-panel-frame-v1.png",
+      "dest": "assets/optimized/ui/gothic-panel-frame-v1.webp",
+      "before": 103587,
+      "after": 14914
+    },
+    {
+      "src": "assets/ui/shanhai-primary-v1.png",
+      "dest": "assets/optimized/ui/shanhai-primary-v1.webp",
+      "before": 394659,
+      "after": 60520
+    },
+    {
+      "src": "assets/ui/shanhai-secondary-v1.png",
+      "dest": "assets/optimized/ui/shanhai-secondary-v1.webp",
+      "before": 335511,
+      "after": 45440
+    },
+    {
+      "src": "assets/ui/shanhai-danger-v1.png",
+      "dest": "assets/optimized/ui/shanhai-danger-v1.webp",
+      "before": 367611,
+      "after": 55786
+    },
+    {
+      "src": "assets/ui/shanhai-paper-v1.png",
+      "dest": "assets/optimized/ui/shanhai-paper-v1.webp",
+      "before": 392786,
+      "after": 54760
+    },
+    {
+      "src": "assets/ui/shanhai-panel-v1.png",
+      "dest": "assets/optimized/ui/shanhai-panel-v1.webp",
+      "before": 349643,
+      "after": 43582
+    },
+    {
+      "src": "assets/ui/shanhai-paper-fill-v1.png",
+      "dest": "assets/optimized/ui/shanhai-paper-fill-v1.webp",
+      "before": 90458,
+      "after": 11668
+    },
+    {
+      "src": "assets/ui/shanhai-paper-frame-v1.png",
+      "dest": "assets/optimized/ui/shanhai-paper-frame-v1.webp",
+      "before": 105676,
+      "after": 15422
+    },
+    {
+      "src": "assets/ui/shanhai-panel-fill-v1.png",
+      "dest": "assets/optimized/ui/shanhai-panel-fill-v1.webp",
+      "before": 80375,
+      "after": 8806
+    },
+    {
+      "src": "assets/ui/shanhai-panel-frame-v1.png",
+      "dest": "assets/optimized/ui/shanhai-panel-frame-v1.webp",
+      "before": 108003,
+      "after": 15076
+    },
+    {
+      "src": "assets/ui/hero-avatar-v1.png",
+      "dest": "assets/optimized/ui/hero-avatar-v1.webp",
+      "before": 321025,
+      "after": 57578
+    },
+    {
+      "src": "assets/ui/shield-v1.png",
+      "dest": "assets/optimized/ui/shield-v1.webp",
+      "before": 287908,
+      "after": 42730
+    },
+    {
+      "src": "assets/ui/relic-wolf_totem-v1.png",
+      "dest": "assets/optimized/ui/relic-wolf_totem-v1.webp",
+      "before": 54047,
+      "after": 13774
+    },
+    {
+      "src": "assets/ui/relic-iron_ring-v1.png",
+      "dest": "assets/optimized/ui/relic-iron_ring-v1.webp",
+      "before": 78971,
+      "after": 17150
+    },
+    {
+      "src": "assets/ui/relic-moon_lens-v1.png",
+      "dest": "assets/optimized/ui/relic-moon_lens-v1.webp",
+      "before": 77349,
+      "after": 15980
+    },
+    {
+      "src": "assets/ui/relic-blood_stone-v1.png",
+      "dest": "assets/optimized/ui/relic-blood_stone-v1.webp",
+      "before": 73864,
+      "after": 16506
+    },
+    {
+      "src": "assets/ui/relic-thorn_charm-v1.png",
+      "dest": "assets/optimized/ui/relic-thorn_charm-v1.webp",
+      "before": 74893,
+      "after": 22380
+    },
+    {
+      "src": "assets/ui/relic-marrow_vial-v1.png",
+      "dest": "assets/optimized/ui/relic-marrow_vial-v1.webp",
+      "before": 58287,
+      "after": 13074
+    },
+    {
+      "src": "assets/ui/relic-whetstone-v1.png",
+      "dest": "assets/optimized/ui/relic-whetstone-v1.webp",
+      "before": 83357,
+      "after": 16862
+    },
+    {
+      "src": "assets/ui/relic-hunter_charm-v1.png",
+      "dest": "assets/optimized/ui/relic-hunter_charm-v1.webp",
+      "before": 68920,
+      "after": 18142
+    },
+    {
+      "src": "assets/ui/relic-bone_totem-v1.png",
+      "dest": "assets/optimized/ui/relic-bone_totem-v1.webp",
+      "before": 48286,
+      "after": 13562
+    },
+    {
+      "src": "assets/ui/relic-bronze_mask-v1.png",
+      "dest": "assets/optimized/ui/relic-bronze_mask-v1.webp",
+      "before": 116462,
+      "after": 26784
+    },
+    {
+      "src": "assets/ui/relic-cinnabar_seal-v1.png",
+      "dest": "assets/optimized/ui/relic-cinnabar_seal-v1.webp",
+      "before": 86002,
+      "after": 18428
+    },
+    {
+      "src": "assets/ui/relic-thunder_bi-v1.png",
+      "dest": "assets/optimized/ui/relic-thunder_bi-v1.webp",
+      "before": 123448,
+      "after": 23652
+    },
+    {
+      "src": "assets/ui/relic-unquenched_ember-v1.png",
+      "dest": "assets/optimized/ui/relic-unquenched_ember-v1.webp",
+      "before": 100917,
+      "after": 21800
+    },
+    {
+      "src": "assets/ui/relic-bone_urn-v1.png",
+      "dest": "assets/optimized/ui/relic-bone_urn-v1.webp",
+      "before": 97562,
+      "after": 20126
+    },
+    {
+      "src": "assets/ui/contract-huodou-v1.png",
+      "dest": "assets/optimized/ui/contract-huodou-v1.webp",
+      "before": 109530,
+      "after": 27244
+    },
+    {
+      "src": "assets/ui/contract-huodou_yu-v1.png",
+      "dest": "assets/optimized/ui/contract-huodou_yu-v1.webp",
+      "before": 86331,
+      "after": 21968
+    },
+    {
+      "src": "assets/ui/tactical-attack-v1.png",
+      "dest": "assets/optimized/ui/tactical-attack-v1.webp",
+      "before": 63544,
+      "after": 19622
+    },
+    {
+      "src": "assets/ui/tactical-defend-v1.png",
+      "dest": "assets/optimized/ui/tactical-defend-v1.webp",
+      "before": 88959,
+      "after": 19926
+    },
+    {
+      "src": "assets/ui/tactical-strength-v1.png",
+      "dest": "assets/optimized/ui/tactical-strength-v1.webp",
+      "before": 102868,
+      "after": 21908
+    },
+    {
+      "src": "assets/ui/tactical-vulnerable-v1.png",
+      "dest": "assets/optimized/ui/tactical-vulnerable-v1.webp",
+      "before": 93596,
+      "after": 21230
+    },
+    {
+      "src": "assets/ui/tactical-weak-v1.png",
+      "dest": "assets/optimized/ui/tactical-weak-v1.webp",
+      "before": 42045,
+      "after": 12098
+    },
+    {
+      "src": "assets/ui/tactical-frail-v1.png",
+      "dest": "assets/optimized/ui/tactical-frail-v1.webp",
+      "before": 96242,
+      "after": 21498
+    },
+    {
+      "src": "assets/ui/tactical-poison-v1.png",
+      "dest": "assets/optimized/ui/tactical-poison-v1.webp",
+      "before": 103038,
+      "after": 26006
+    },
+    {
+      "src": "assets/ui/tactical-burn-v1.png",
+      "dest": "assets/optimized/ui/tactical-burn-v1.webp",
+      "before": 62800,
+      "after": 15204
+    },
+    {
+      "src": "assets/ui/tactical-thorns-v1.png",
+      "dest": "assets/optimized/ui/tactical-thorns-v1.webp",
+      "before": 60507,
+      "after": 19658
+    },
+    {
+      "src": "assets/ui/tactical-burnDmg-v1.png",
+      "dest": "assets/optimized/ui/tactical-burnDmg-v1.webp",
+      "before": 93135,
+      "after": 27372
+    },
+    {
+      "src": "assets/ui/tactical-drain-v1.png",
+      "dest": "assets/optimized/ui/tactical-drain-v1.webp",
+      "before": 72659,
+      "after": 19792
+    },
+    {
+      "src": "assets/ui/tactical-heal-v1.png",
+      "dest": "assets/optimized/ui/tactical-heal-v1.webp",
+      "before": 126881,
+      "after": 33732
+    },
+    {
+      "src": "assets/ui/tactical-buff-v1.png",
+      "dest": "assets/optimized/ui/tactical-buff-v1.webp",
+      "before": 95563,
+      "after": 28018
+    },
+    {
+      "src": "assets/ui/tactical-debuff-v1.png",
+      "dest": "assets/optimized/ui/tactical-debuff-v1.webp",
+      "before": 95103,
+      "after": 21372
+    },
+    {
+      "src": "assets/ui/tactical-spirit-v1.png",
+      "dest": "assets/optimized/ui/tactical-spirit-v1.webp",
+      "before": 75628,
+      "after": 21822
+    },
+    {
+      "src": "assets/ui/tactical-power-v1.png",
+      "dest": "assets/optimized/ui/tactical-power-v1.webp",
+      "before": 118852,
+      "after": 28262
+    },
+    {
+      "src": "assets/ui/enemy-nameplate-v1.png",
+      "dest": "assets/optimized/ui/enemy-nameplate-v1.webp",
+      "before": 938237,
+      "after": 167030
+    },
+    {
+      "src": "assets/card-back-gothic.png",
+      "dest": "assets/optimized/card-back-gothic.webp",
+      "before": 340404,
+      "after": 232906
+    },
+    {
+      "src": "assets/card-back-shanhai.png",
+      "dest": "assets/optimized/card-back-shanhai.webp",
+      "before": 370143,
+      "after": 207030
+    },
+    {
+      "src": "assets/enemy-wolf.png",
+      "dest": "assets/optimized/enemy-wolf.webp",
+      "before": 693762,
+      "after": 90806
+    },
+    {
+      "src": "assets/enemy-mushroom.png",
+      "dest": "assets/optimized/enemy-mushroom.webp",
+      "before": 870728,
+      "after": 295806
+    },
+    {
+      "src": "assets/enemy-witch.png",
+      "dest": "assets/optimized/enemy-witch.webp",
+      "before": 923490,
+      "after": 198602
+    },
+    {
+      "src": "assets/enemy-boar.png",
+      "dest": "assets/optimized/enemy-boar.webp",
+      "before": 1047714,
+      "after": 239240
+    },
+    {
+      "src": "assets/enemy-alpha-wolf.png",
+      "dest": "assets/optimized/enemy-alpha-wolf.webp",
+      "before": 129999,
+      "after": 89518
+    },
+    {
+      "src": "assets/enemy-bog-witch.png",
+      "dest": "assets/optimized/enemy-bog-witch.webp",
+      "before": 149711,
+      "after": 110434
+    },
+    {
+      "src": "assets/enemy-forest-lord.png",
+      "dest": "assets/optimized/enemy-forest-lord.webp",
+      "before": 148243,
+      "after": 121138
+    },
+    {
+      "src": "assets/enemy-nine-tail.png",
+      "dest": "assets/optimized/enemy-nine-tail.webp",
+      "before": 1901061,
+      "after": 297908
+    },
+    {
+      "src": "assets/enemy-lu-shu.png",
+      "dest": "assets/optimized/enemy-lu-shu.webp",
+      "before": 1222545,
+      "after": 205108
+    },
+    {
+      "src": "assets/enemy-qiongqi.png",
+      "dest": "assets/optimized/enemy-qiongqi.webp",
+      "before": 172785,
+      "after": 122196
+    },
+    {
+      "src": "assets/enemy-xiangliu.png",
+      "dest": "assets/optimized/enemy-xiangliu.webp",
+      "before": 356708,
+      "after": 267418
+    },
+    {
+      "src": "assets/enemy-fei.png",
+      "dest": "assets/optimized/enemy-fei.webp",
+      "before": 1472106,
+      "after": 211506
+    },
+    {
+      "src": "assets/enemy-huodou.png",
+      "dest": "assets/optimized/enemy-huodou.webp",
+      "before": 133109,
+      "after": 106312
+    },
+    {
+      "src": "assets/enemy-taotie.png",
+      "dest": "assets/optimized/enemy-taotie.webp",
+      "before": 190416,
+      "after": 123404
+    },
+    {
+      "src": "assets/enemy-baize.png",
+      "dest": "assets/optimized/enemy-baize.webp",
+      "before": 175916,
+      "after": 119380
+    },
+    {
+      "src": "assets/enemy-dijiang.png",
+      "dest": "assets/optimized/enemy-dijiang.webp",
+      "before": 157025,
+      "after": 113336
+    },
+    {
+      "src": "assets/anim/duel-wolf-v1.png",
+      "dest": "assets/optimized/anim/duel-wolf-v1.webp",
+      "before": 838157,
+      "after": 174082
+    },
+    {
+      "src": "assets/anim/duel-mushroom-v1.png",
+      "dest": "assets/optimized/anim/duel-mushroom-v1.webp",
+      "before": 701418,
+      "after": 167540
+    },
+    {
+      "src": "assets/anim/duel-witch-v1.png",
+      "dest": "assets/optimized/anim/duel-witch-v1.webp",
+      "before": 767773,
+      "after": 150984
+    },
+    {
+      "src": "assets/anim/duel-boar-v1.png",
+      "dest": "assets/optimized/anim/duel-boar-v1.webp",
+      "before": 906747,
+      "after": 190802
+    },
+    {
+      "src": "assets/anim/enemy-alpha-wolf.png",
+      "dest": "assets/optimized/anim/enemy-alpha-wolf.webp",
+      "before": 1039570,
+      "after": 235574
+    },
+    {
+      "src": "assets/anim/duel-bog-witch-v1.png",
+      "dest": "assets/optimized/anim/duel-bog-witch-v1.webp",
+      "before": 1072760,
+      "after": 278104
+    },
+    {
+      "src": "assets/anim/duel-forest-lord-v1.png",
+      "dest": "assets/optimized/anim/duel-forest-lord-v1.webp",
+      "before": 861243,
+      "after": 258904
+    },
+    {
+      "src": "assets/anim/enemy-nine-tail.png",
+      "dest": "assets/optimized/anim/enemy-nine-tail.webp",
+      "before": 1404049,
+      "after": 286270
+    },
+    {
+      "src": "assets/anim/duel-lu-shu-v1.png",
+      "dest": "assets/optimized/anim/duel-lu-shu-v1.webp",
+      "before": 1007605,
+      "after": 237974
+    },
+    {
+      "src": "assets/anim/enemy-qiongqi.png",
+      "dest": "assets/optimized/anim/enemy-qiongqi.webp",
+      "before": 1251341,
+      "after": 279720
+    },
+    {
+      "src": "assets/anim/enemy-xiangliu.png",
+      "dest": "assets/optimized/anim/enemy-xiangliu.webp",
+      "before": 1340471,
+      "after": 338972
+    },
+    {
+      "src": "assets/anim/duel-fei-v1.png",
+      "dest": "assets/optimized/anim/duel-fei-v1.webp",
+      "before": 855299,
+      "after": 199508
+    },
+    {
+      "src": "assets/anim/enemy-huodou.png",
+      "dest": "assets/optimized/anim/enemy-huodou.webp",
+      "before": 964586,
+      "after": 253190
+    },
+    {
+      "src": "assets/anim/duel-taotie-v1.png",
+      "dest": "assets/optimized/anim/duel-taotie-v1.webp",
+      "before": 934102,
+      "after": 193066
+    },
+    {
+      "src": "assets/anim/enemy-baize.png",
+      "dest": "assets/optimized/anim/enemy-baize.webp",
+      "before": 1170235,
+      "after": 262568
+    },
+    {
+      "src": "assets/anim/enemy-dijiang.png",
+      "dest": "assets/optimized/anim/enemy-dijiang.webp",
+      "before": 1195340,
+      "after": 316548
+    },
+    {
+      "src": "assets/anim/fx-claw-impact.png",
+      "dest": "assets/optimized/anim/fx-claw-impact.webp",
+      "before": 243587,
+      "after": 102686
+    },
+    {
+      "src": "assets/anim/fx-shield-impact.png",
+      "dest": "assets/optimized/anim/fx-shield-impact.webp",
+      "before": 540584,
+      "after": 147744
+    },
+    {
+      "src": "assets/anim/fx-heal.png",
+      "dest": "assets/optimized/anim/fx-heal.webp",
+      "before": 474223,
+      "after": 124828
+    },
+    {
+      "src": "assets/anim/hero-fx-lantern-blade-v1.png",
+      "dest": "assets/optimized/anim/hero-fx-lantern-blade-v1.webp",
+      "before": 274487,
+      "after": 99626
+    },
+    {
+      "src": "assets/anim/hero-fx-thread-seal-v1.png",
+      "dest": "assets/optimized/anim/hero-fx-thread-seal-v1.webp",
+      "before": 428008,
+      "after": 140416
+    },
+    {
+      "src": "assets/anim/hero-fx-lantern-ward-v1.png",
+      "dest": "assets/optimized/anim/hero-fx-lantern-ward-v1.webp",
+      "before": 342865,
+      "after": 134884
+    },
+    {
+      "src": "assets/anim/hero-fx-hero-actions-v1.png",
+      "dest": "assets/optimized/anim/hero-fx-hero-actions-v1.webp",
+      "before": 359687,
+      "after": 82072
+    },
+    {
+      "src": "assets/art-gothic-sword.png",
+      "dest": "assets/optimized/art-gothic-sword.webp",
+      "before": 405289,
+      "after": 201906
+    },
+    {
+      "src": "assets/art-gothic-shield.png",
+      "dest": "assets/optimized/art-gothic-shield.webp",
+      "before": 383256,
+      "after": 280960
+    },
+    {
+      "src": "assets/art-gothic-dagger.png",
+      "dest": "assets/optimized/art-gothic-dagger.webp",
+      "before": 395226,
+      "after": 225426
+    },
+    {
+      "src": "assets/art-gothic-blood.png",
+      "dest": "assets/optimized/art-gothic-blood.webp",
+      "before": 403627,
+      "after": 172902
+    },
+    {
+      "src": "assets/art-gothic-moon.png",
+      "dest": "assets/optimized/art-gothic-moon.webp",
+      "before": 391410,
+      "after": 230198
+    },
+    {
+      "src": "assets/art-gothic-venom.png",
+      "dest": "assets/optimized/art-gothic-venom.webp",
+      "before": 395588,
+      "after": 179054
+    },
+    {
+      "src": "assets/art-gothic-fang.png",
+      "dest": "assets/optimized/art-gothic-fang.webp",
+      "before": 376860,
+      "after": 250872
+    },
+    {
+      "src": "assets/art-gothic-thorns.png",
+      "dest": "assets/optimized/art-gothic-thorns.webp",
+      "before": 382650,
+      "after": 231880
+    },
+    {
+      "src": "assets/art-gothic-spark.png",
+      "dest": "assets/optimized/art-gothic-spark.webp",
+      "before": 395604,
+      "after": 206354
+    },
+    {
+      "src": "assets/art-gothic-talisman.png",
+      "dest": "assets/optimized/art-gothic-talisman.webp",
+      "before": 402276,
+      "after": 195462
+    },
+    {
+      "src": "assets/art-gothic-thunder.png",
+      "dest": "assets/optimized/art-gothic-thunder.webp",
+      "before": 387041,
+      "after": 206576
+    },
+    {
+      "src": "assets/art-gothic-ring.png",
+      "dest": "assets/optimized/art-gothic-ring.webp",
+      "before": 408682,
+      "after": 220264
+    },
+    {
+      "src": "assets/art-gothic-cloud.png",
+      "dest": "assets/optimized/art-gothic-cloud.webp",
+      "before": 388466,
+      "after": 236390
+    },
+    {
+      "src": "assets/art-gothic-lens.png",
+      "dest": "assets/optimized/art-gothic-lens.webp",
+      "before": 360607,
+      "after": 238732
+    },
+    {
+      "src": "assets/art-gothic-eye.png",
+      "dest": "assets/optimized/art-gothic-eye.webp",
+      "before": 392619,
+      "after": 240722
+    },
+    {
+      "src": "assets/art-gothic-gem.jpg",
+      "dest": "assets/optimized/art-gothic-gem.webp",
+      "before": 404581,
+      "after": 196572
+    },
+    {
+      "src": "assets/art-gothic-vial.png",
+      "dest": "assets/optimized/art-gothic-vial.webp",
+      "before": 386304,
+      "after": 235192
+    },
+    {
+      "src": "assets/art-gothic-lotus.png",
+      "dest": "assets/optimized/art-gothic-lotus.webp",
+      "before": 387155,
+      "after": 201970
+    },
+    {
+      "src": "assets/art-shanhai-sword.jpg",
+      "dest": "assets/optimized/art-shanhai-sword.webp",
+      "before": 399457,
+      "after": 347578
+    },
+    {
+      "src": "assets/art-shanhai-shield.jpg",
+      "dest": "assets/optimized/art-shanhai-shield.webp",
+      "before": 395949,
+      "after": 373058
+    },
+    {
+      "src": "assets/art-shanhai-blood.jpg",
+      "dest": "assets/optimized/art-shanhai-blood.webp",
+      "before": 399177,
+      "after": 384488
+    },
+    {
+      "src": "assets/art-shanhai-venom.jpg",
+      "dest": "assets/optimized/art-shanhai-venom.webp",
+      "before": 384875,
+      "after": 365652
+    },
+    {
+      "src": "assets/art-shanhai-fang.jpg",
+      "dest": "assets/optimized/art-shanhai-fang.webp",
+      "before": 405524,
+      "after": 388766
+    },
+    {
+      "src": "assets/art-shanhai-thorns.jpg",
+      "dest": "assets/optimized/art-shanhai-thorns.webp",
+      "before": 404212,
+      "after": 385668
+    },
+    {
+      "src": "assets/art-shanhai-spark.jpg",
+      "dest": "assets/optimized/art-shanhai-spark.webp",
+      "before": 382757,
+      "after": 363376
+    },
+    {
+      "src": "assets/art-shanhai-thunder.jpg",
+      "dest": "assets/optimized/art-shanhai-thunder.webp",
+      "before": 380716,
+      "after": 364350
+    },
+    {
+      "src": "assets/art-shanhai-ring.jpg",
+      "dest": "assets/optimized/art-shanhai-ring.webp",
+      "before": 400245,
+      "after": 343736
+    },
+    {
+      "src": "assets/art-shanhai-cloud.jpg",
+      "dest": "assets/optimized/art-shanhai-cloud.webp",
+      "before": 397965,
+      "after": 391692
+    },
+    {
+      "src": "assets/art-shanhai-eye.jpg",
+      "dest": "assets/optimized/art-shanhai-eye.webp",
+      "before": 382536,
+      "after": 352900
+    },
+    {
+      "src": "assets/art-shanhai-vial.jpg",
+      "dest": "assets/optimized/art-shanhai-vial.webp",
+      "before": 397633,
+      "after": 332920
+    },
+    {
+      "src": "assets/art-shanhai-lotus.jpg",
+      "dest": "assets/optimized/art-shanhai-lotus.webp",
+      "before": 386298,
+      "after": 363912
+    }
+  ],
+  "before": 56406058,
+  "after": 18712454
+}

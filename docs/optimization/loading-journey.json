@@ -1,0 +1,504 @@
+{
+  "profile": "12 Mbps, 60 ms RTT, cold HTTP cache, headless Edge, 390x844; story off; resources/bytes captured at title",
+  "titleMs": 4579,
+  "combatMs": 26827,
+  "bytes": 4728061,
+  "resources": [
+    {
+      "url": "/assets/hand-reader.css",
+      "bytes": 1044,
+      "duration": 79.59999999962747
+    },
+    {
+      "url": "/assets/vendor/phaser-3.80.1.min.js",
+      "bytes": 1181917,
+      "duration": 1435.7999999998137
+    },
+    {
+      "url": "/src/core/i18n.js",
+      "bytes": 2320,
+      "duration": 79.70000000018626
+    },
+    {
+      "url": "/locales/en.js",
+      "bytes": 4603,
+      "duration": 100.40000000037253
+    },
+    {
+      "url": "/locales/ui.js",
+      "bytes": 5322,
+      "duration": 99.80000000074506
+    },
+    {
+      "url": "/locales/combat.js",
+      "bytes": 12370,
+      "duration": 115.1000000005588
+    },
+    {
+      "url": "/locales/items.js",
+      "bytes": 4204,
+      "duration": 161.70000000018626
+    },
+    {
+      "url": "/locales/journal.js",
+      "bytes": 4013,
+      "duration": 161.70000000018626
+    },
+    {
+      "url": "/locales/reward.js",
+      "bytes": 2330,
+      "duration": 178
+    },
+    {
+      "url": "/locales/events.js",
+      "bytes": 31087,
+      "duration": 225.20000000018626
+    },
+    {
+      "url": "/locales/shell.js",
+      "bytes": 1265,
+      "duration": 226.90000000037253
+    },
+    {
+      "url": "/locales/story.js",
+      "bytes": 40174,
+      "duration": 255.70000000018626
+    },
+    {
+      "url": "/locales/storage.js",
+      "bytes": 1443,
+      "duration": 239.59999999962747
+    },
+    {
+      "url": "/src/core/save-store.js",
+      "bytes": 2157,
+      "duration": 244.09999999962747
+    },
+    {
+      "url": "/src/core/text-layout.js",
+      "bytes": 934,
+      "duration": 286.79999999981374
+    },
+    {
+      "url": "/src/core/market.js",
+      "bytes": 3926,
+      "duration": 317
+    },
+    {
+      "url": "/src/core/cards.js",
+      "bytes": 16936,
+      "duration": 317.90000000037253
+    },
+    {
+      "url": "/src/core/enemies.js",
+      "bytes": 20228,
+      "duration": 362.5
+    },
+    {
+      "url": "/src/core/relics.js",
+      "bytes": 5452,
+      "duration": 332.5
+    },
+    {
+      "url": "/src/core/events.js",
+      "bytes": 27900,
+      "duration": 392.5
+    },
+    {
+      "url": "/src/core/contracts.js",
+      "bytes": 3042,
+      "duration": 408.40000000037253
+    },
+    {
+      "url": "/src/core/starters.js",
+      "bytes": 3829,
+      "duration": 408.90000000037253
+    },
+    {
+      "url": "/src/core/story-assets.js",
+      "bytes": 439,
+      "duration": 424.29999999981374
+    },
+    {
+      "url": "/src/core/story.js",
+      "bytes": 20858,
+      "duration": 439.59999999962747
+    },
+    {
+      "url": "/src/core/run.js",
+      "bytes": 18603,
+      "duration": 501.09999999962747
+    },
+    {
+      "url": "/src/core/audio.js",
+      "bytes": 3186,
+      "duration": 486.30000000074506
+    },
+    {
+      "url": "/src/core/audio-assets.js",
+      "bytes": 1856,
+      "duration": 485.80000000074506
+    },
+    {
+      "url": "/src/core/music.js",
+      "bytes": 4638,
+      "duration": 501.30000000074506
+    },
+    {
+      "url": "/src/core/fx.js",
+      "bytes": 4855,
+      "duration": 516.3000000007451
+    },
+    {
+      "url": "/src/core/motion-assets.js",
+      "bytes": 3901,
+      "duration": 562.5
+    },
+    {
+      "url": "/src/core/duel-art.js",
+      "bytes": 3943,
+      "duration": 562.6000000005588
+    },
+    {
+      "url": "/src/core/motion.js",
+      "bytes": 4926,
+      "duration": 568.5
+    },
+    {
+      "url": "/src/core/hero-fx-assets.js",
+      "bytes": 985,
+      "duration": 563.5999999996275
+    },
+    {
+      "url": "/src/core/hero-fx.js",
+      "bytes": 5404,
+      "duration": 589.7000000001863
+    },
+    {
+      "url": "/src/core/living-scene.js",
+      "bytes": 4231,
+      "duration": 638.5999999996275
+    },
+    {
+      "url": "/src/core/ui.js",
+      "bytes": 59768,
+      "duration": 776.3000000007451
+    },
+    {
+      "url": "/src/core/combat.js",
+      "bytes": 9239,
+      "duration": 668
+    },
+    {
+      "url": "/src/core/theme.js",
+      "bytes": 34421,
+      "duration": 729.7999999998137
+    },
+    {
+      "url": "/src/core/ui-skin.js",
+      "bytes": 6403,
+      "duration": 677.6000000005588
+    },
+    {
+      "url": "/src/core/icon-art.js",
+      "bytes": 1816,
+      "duration": 729.5
+    },
+    {
+      "url": "/src/core/asset-variants.js",
+      "bytes": 10821,
+      "duration": 776.3999999994412
+    },
+    {
+      "url": "/src/core/loading-art.js",
+      "bytes": 95195,
+      "duration": 958.5
+    },
+    {
+      "url": "/src/core/hand-reader.js",
+      "bytes": 3574,
+      "duration": 806.2999999998137
+    },
+    {
+      "url": "/src/core/asset-stream.js",
+      "bytes": 1680,
+      "duration": 806
+    },
+    {
+      "url": "/src/scenes/BootScene.js",
+      "bytes": 5824,
+      "duration": 861.1000000005588
+    },
+    {
+      "url": "/src/scenes/TitleScene.js",
+      "bytes": 20215,
+      "duration": 897.5
+    },
+    {
+      "url": "/src/scenes/CombatScene.js",
+      "bytes": 85837,
+      "duration": 1065.6000000005588
+    },
+    {
+      "url": "/src/scenes/RewardScene.js",
+      "bytes": 20409,
+      "duration": 927.2000000001863
+    },
+    {
+      "url": "/src/scenes/EventScene.js",
+      "bytes": 19371,
+      "duration": 988.0999999996275
+    },
+    {
+      "url": "/src/scenes/JournalScene.js",
+      "bytes": 12462,
+      "duration": 996
+    },
+    {
+      "url": "/src/scenes/StoryScene.js",
+      "bytes": 7176,
+      "duration": 1003.6000000005588
+    },
+    {
+      "url": "/src/game.js",
+      "bytes": 1040,
+      "duration": 1033.6000000005588
+    },
+    {
+      "url": "/src/core/fonts.js",
+      "bytes": 872,
+      "duration": 1050.699999999255
+    },
+    {
+      "url": "/assets/fonts/BlackForestSerif-Regular.woff",
+      "bytes": 774768,
+      "duration": 599.4000000003725
+    },
+    {
+      "url": "/assets/audio/ui-v1.ogg",
+      "bytes": 3858,
+      "duration": 89.79999999981374
+    },
+    {
+      "url": "/assets/audio/select-v1.ogg",
+      "bytes": 4710,
+      "duration": 92.40000000037253
+    },
+    {
+      "url": "/assets/audio/deny-v1.ogg",
+      "bytes": 4188,
+      "duration": 89.70000000018626
+    },
+    {
+      "url": "/assets/optimized/ui/refined-energy-v1.webp",
+      "bytes": 19108,
+      "duration": 122.09999999962747
+    },
+    {
+      "url": "/assets/optimized/ui/refined-spirit-v1.webp",
+      "bytes": 14118,
+      "duration": 120.5
+    },
+    {
+      "url": "/assets/optimized/ui/refined-menu-v1.webp",
+      "bytes": 23490,
+      "duration": 136.30000000074506
+    },
+    {
+      "url": "/assets/optimized/ui/refined-deck-v1.webp",
+      "bytes": 23188,
+      "duration": 201.5
+    },
+    {
+      "url": "/assets/optimized/ui/refined-route-v1.webp",
+      "bytes": 24176,
+      "duration": 206.3999999994412
+    },
+    {
+      "url": "/assets/optimized/ui/refined-journal-v1.webp",
+      "bytes": 22306,
+      "duration": 230.59999999962747
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-primary-v1.webp",
+      "bytes": 36390,
+      "duration": 278.80000000074506
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-secondary-v1.webp",
+      "bytes": 30262,
+      "duration": 276.29999999981374
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-danger-v1.webp",
+      "bytes": 33110,
+      "duration": 278.19999999925494
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-paper-v1.webp",
+      "bytes": 37070,
+      "duration": 339
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-panel-v1.webp",
+      "bytes": 37164,
+      "duration": 339.09999999962747
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-paper-fill-v1.webp",
+      "bytes": 6734,
+      "duration": 306.5
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-paper-frame-v1.webp",
+      "bytes": 16024,
+      "duration": 369.5
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-panel-fill-v1.webp",
+      "bytes": 6068,
+      "duration": 353.3999999994412
+    },
+    {
+      "url": "/assets/optimized/ui/gothic-panel-frame-v1.webp",
+      "bytes": 14914,
+      "duration": 369.79999999981374
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-primary-v1.webp",
+      "bytes": 60520,
+      "duration": 446.3999999994412
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-secondary-v1.webp",
+      "bytes": 45440,
+      "duration": 539.3000000007451
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-danger-v1.webp",
+      "bytes": 55786,
+      "duration": 584.7999999998137
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-paper-v1.webp",
+      "bytes": 54760,
+      "duration": 585.5999999996275
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-panel-v1.webp",
+      "bytes": 43582,
+      "duration": 571.2000000001863
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-paper-fill-v1.webp",
+      "bytes": 11668,
+      "duration": 476.90000000037253
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-paper-frame-v1.webp",
+      "bytes": 15422,
+      "duration": 568.7999999998137
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-panel-fill-v1.webp",
+      "bytes": 8806,
+      "duration": 569.1999999992549
+    },
+    {
+      "url": "/assets/optimized/ui/shanhai-panel-frame-v1.webp",
+      "bytes": 15076,
+      "duration": 629.7000000001863
+    },
+    {
+      "url": "/assets/optimized/ui/hero-avatar-v1.webp",
+      "bytes": 57578,
+      "duration": 830.6000000005588
+    },
+    {
+      "url": "/assets/ui/hero-traveler-v1.webp",
+      "bytes": 148742,
+      "duration": 1079
+    },
+    {
+      "url": "/assets/optimized/ui/shield-v1.webp",
+      "bytes": 42730,
+      "duration": 782.8999999994412
+    },
+    {
+      "url": "/assets/ui/reward-chest-v1.webp",
+      "bytes": 319472,
+      "duration": 1451.6000000005588
+    },
+    {
+      "url": "/assets/ui/ending-book-v1.webp",
+      "bytes": 355574,
+      "duration": 1512.3999999994412
+    },
+    {
+      "url": "/assets/bg-forest-ui-v2.webp",
+      "bytes": 428580,
+      "duration": 1482.5
+    },
+    {
+      "url": "/assets/audio/play-v1.ogg",
+      "bytes": 5464,
+      "duration": 85.59999999962747
+    },
+    {
+      "url": "/assets/audio/attack-v1.ogg",
+      "bytes": 5454,
+      "duration": 116.29999999981374
+    },
+    {
+      "url": "/assets/audio/impact-v1.ogg",
+      "bytes": 5146,
+      "duration": 116
+    },
+    {
+      "url": "/assets/audio/block-v1.ogg",
+      "bytes": 5552,
+      "duration": 116.1000000005588
+    },
+    {
+      "url": "/assets/audio/guard-v1.ogg",
+      "bytes": 5318,
+      "duration": 115.5
+    },
+    {
+      "url": "/assets/audio/hurt-v1.ogg",
+      "bytes": 5615,
+      "duration": 116
+    },
+    {
+      "url": "/assets/audio/heal-v1.ogg",
+      "bytes": 5950,
+      "duration": 163.19999999925494
+    },
+    {
+      "url": "/assets/audio/turn-v1.ogg",
+      "bytes": 5260,
+      "duration": 192.79999999981374
+    },
+    {
+      "url": "/assets/audio/victory-v1.ogg",
+      "bytes": 7621,
+      "duration": 207.70000000018626
+    },
+    {
+      "url": "/assets/audio/defeat-v1.ogg",
+      "bytes": 6826,
+      "duration": 198.5
+    },
+    {
+      "url": "/assets/audio/ending-v1.ogg",
+      "bytes": 10255,
+      "duration": 208.6000000005588
+    },
+    {
+      "url": "/assets/optimized/ui/relic-wolf_totem-v1.webp",
+      "bytes": 13774,
+      "duration": 300.70000000018626
+    }
+  ],
+  "errors": []
+}

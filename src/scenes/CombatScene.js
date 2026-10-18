@@ -49,6 +49,7 @@ class CombatScene extends Phaser.Scene {
    * 构建
    * ======================================================== */
   create() {
+    if(GAME_ASSETS.wait(this,GAME_ASSETS.canStart(this)))return;
     // Resume a settled battle's narrative/reward without paying or fighting twice.
     const storyStep=RUN.globalStep(),pending=STORY.state().pending;
     if(pending&&pending.step===storyStep){this.scene.start(pending.kind==='after'?'Story':'Reward',pending.kind==='after'?{kind:'after',step:storyStep,reward:pending.reward}:pending.reward);return;}
@@ -96,6 +97,7 @@ class CombatScene extends Phaser.Scene {
     this.buildActionBar();
     addGameNavigation(this);
     this.buildPlayHint();
+    HAND_READER.mount(this);
     this.bindInput();
 
     this.startCombat();
@@ -553,6 +555,7 @@ class CombatScene extends Phaser.Scene {
   endTurn() {
     const S = this.state;
     if (S.busy || !S.enemy.alive) return;
+    finishPlayerTactic(S);
     SFX.play(this,'turn');
     S.busy = true;
     this.selectCard(null);
@@ -744,15 +747,10 @@ class CombatScene extends Phaser.Scene {
       if (S.selected) S.selected.setSelected(false);
       S.selected = null;
       this.syncHandFocus();
+      this.updateHandLayout();
       return;
     }
-    if (!card.playable) {
-      if (S.selected) S.selected.setSelected(false);
-      S.selected = null;
-      this.syncHandFocus();
-      card.deny();
-      return;
-    }
+    // Inspection is always allowed; playCard alone validates payment.
 
     if (S.selected === card) {
       // 再点一次已选中的牌 = 打出。
@@ -769,6 +767,7 @@ class CombatScene extends Phaser.Scene {
     card.setSelected(true);
     card.c.setDepth(260);
     this.syncHandFocus();
+    this.updateHandLayout();
   }
 
   /* 选中一张时把其余手牌压下去。没有这一步的话，5 张牌里
@@ -780,7 +779,7 @@ class CombatScene extends Phaser.Scene {
     for (const c of S.hand) {
       if (c === S.selected) continue;
       c.setPressed(false);
-      c.c.setAlpha(S.selected ? 0.62 : (c.playable ? 1 : 0.55));
+      c.refreshState();
     }
     if (S.selected) { this.showPlayHint(S.selected); this.drawPlayHint(0, false); }
     else this.hidePlayHint();
@@ -813,6 +812,7 @@ class CombatScene extends Phaser.Scene {
     const payable = effectiveCost(d, S.resonance);
     const available = cardCostType(d) === 'spirit' ? S.spirit : S.energy;
     if (payable > available) { card.deny(); return false; }
+    recordPlayerTactic(S,d);
     SFX.play(this,'play');
     S.busy = true;
     // 朱砂印这类遗物只加成符箓伤害，这里给结算打个标记
@@ -1126,6 +1126,7 @@ class CombatScene extends Phaser.Scene {
     S.busy = true;
 
     RUN.kills++;
+    META_PROGRESS.record(RUN,{enemy:E.key});
     if (S.mods.killHeal) this.healPlayer(S.mods.killHeal);
     if (S.mods.killEnergy) S.energy += S.mods.killEnergy;
 
@@ -1262,7 +1263,7 @@ class CombatScene extends Phaser.Scene {
       this._inputMode = p.wasTouch ? 'touch' : 'mouse';
       this._drag = { id: p.id, card: cv, sx: p.x, sy: p.y, prog: 0, armed: false, active: false };
       if (S.busy) return;
-      if (!cv.playable) { cv.deny(); return; }
+      if (!cv.playable) { this.selectCard(cv); this._drag=null; pressing=false; return; }
       // 首触反馈：按下这一帧就要有反应，不等抬起。
       // 只压 y 不动 scale——scale 是 setSelected 独占的，两个补间抢
       // 同一个属性会让抬起时卡在 0.96 倍缩放上下不来。
@@ -1319,7 +1320,12 @@ class CombatScene extends Phaser.Scene {
 
     S.hand.forEach((c, i) => {
       const t = n === 1 ? 0 : (i / (n - 1) - 0.5) * 2;
-      const x = startX + i * spread;
+      let x = startX + i * spread;
+      const selectedIndex=S.hand.indexOf(S.selected);
+      if(selectedIndex>=0&&i!==selectedIndex){
+        if(i<selectedIndex)x=120+(selectedIndex<=1?0:i/(selectedIndex-1)*90);
+        else x=870+(n-selectedIndex<=2?0:(i-selectedIndex-1)/(n-selectedIndex-2)*90);
+      }
       const y = baseY + (n <= 5 ? 0 : Math.abs(t) * 16);
       const rot = t * rotMax;
       const sc = 1 - Math.abs(t) * 0.05;
@@ -1444,7 +1450,7 @@ class CombatScene extends Phaser.Scene {
     }
 
     this.hintT.setPosition(x + 34, y);
-    this.hintT.setText(armed ? I18N.t('combat.release') : (touch ? I18N.t('combat.swipe') : I18N.t('combat.tap')));
+    this.hintT.setText(this.state.selected&&!this.state.selected.playable?(I18N.locale==='en'?'Not enough resources':'资源不足，可查看'):(armed ? I18N.t('combat.release') : (touch ? I18N.t('combat.swipe') : I18N.t('combat.tap'))));
     this.hintT.setColor(armed ? '#2b2010' : '#f0e6d0');
     // 金底上的深字不需要投影，留着反而发糊
     this.hintT.setShadow(0, armed ? 0 : 2, '#000000', armed ? 0 : 6, false, true);

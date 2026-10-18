@@ -5,7 +5,7 @@ const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-pri
  const page=await browser.newPage({viewport:{width:540,height:960}}),errors=[],results=[];
  page.on('pageerror',e=>errors.push(e.message));
  try{for(const lang of ['zh-CN','en']){
-  await page.goto('http://127.0.0.1:8899/?lang='+lang);await page.waitForFunction(()=>window.__game?.scene.isActive('Title'));
+  await page.goto('http://127.0.0.1:8899/?lang='+lang);await page.waitForFunction(()=>window.__game?.scene.isActive('Title')&&GAME_ASSETS.ready);
   const rows=await page.evaluate(()=>{
    const s=__game.scene.getScene('Title'),original=s.scene.key,rows=[];
    try{for(const mode of ['Title','Reward','Combat'])for(const scale of [.6,.8,1]){

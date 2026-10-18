@@ -1,0 +1,20 @@
+{
+  "rows": [
+    {
+      "difficulty": "story",
+      "wins": 241,
+      "games": 300
+    },
+    {
+      "difficulty": "standard",
+      "wins": 183,
+      "games": 300
+    },
+    {
+      "difficulty": "challenge",
+      "wins": 119,
+      "games": 300
+    }
+  ],
+  "note": "Paired seeds 1–300; greedy policy without shop purchases. Not human win rates."
+}

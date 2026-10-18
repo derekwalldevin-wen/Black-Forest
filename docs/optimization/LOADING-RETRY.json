@@ -1,0 +1,18 @@
+{
+  "blocked": 2,
+  "failed": {
+    "ready": false,
+    "keys": [
+      "enemy-nameplate",
+      "enemy-wolf"
+    ],
+    "title": true,
+    "combat": false
+  },
+  "restored": {
+    "ready": true,
+    "failed": [],
+    "queue": 0
+  },
+  "errors": []
+}

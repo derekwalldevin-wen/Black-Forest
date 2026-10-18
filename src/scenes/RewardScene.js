@@ -15,7 +15,9 @@ class RewardScene extends Phaser.Scene {
   }
 
   create() {
+    if(GAME_ASSETS.wait(this,false))return;
     syncTheme();
+    this._shopButton=null;this._marketDialog=null;
     this.cameras.main.fadeIn(320, 0, 0, 0);
 
     // ?debug&scene=ending 直接渲染通关结算画面（用于回归测试）
@@ -65,7 +67,7 @@ class RewardScene extends Phaser.Scene {
     this.buildCardChoices();
 
     // 跳过（牌组太厚时可以选择不加牌）
-    this.skipBtn = makeButton(this, 280, 1760, 380, 136, I18N.t('reward.skip'), () => this.skipCard(),
+    this.skipBtn = makeButton(this, 280, 1760, 380, 136, I18N.t('reward.skip')+' +'+MARKET.skipGold+'◆', () => this.skipCard(),
       { accent: PAL.boneDim, color: 0x241f30 });
     this.skipBtn.setDepth(6);
 
@@ -205,6 +207,7 @@ class RewardScene extends Phaser.Scene {
   skipCard() {
     if (this._picked) return;
     this._picked = true;
+    MARKET.skip(RUN);
     this.skipBtn.destroy();
     this._received.push({kind:'skip'});this.saveStoryReward(this.offerRelic?'relic':'continue');
     for (const c of this.choices) {
@@ -306,6 +309,7 @@ class RewardScene extends Phaser.Scene {
     }
 
     RUN.addRelic(id);
+    SFX.play(this,'relic');
     this._received.push({kind:'relic',id});
     this.saveStoryReward('continue');
     RUN.save();
@@ -315,6 +319,9 @@ class RewardScene extends Phaser.Scene {
   }
 
   enableContinue() {
+    if(RUN.step===2&&!this._shopButton){
+      this._shopButton=makeButton(this,540,1610,700,100,I18N.locale==='en'?'Supply shop · buy / remove':'旅途补给 · 购牌 / 精简',()=>openMarket(this),{fontSize:36}).setDepth(15);
+    }
     this._stage = 'continue';
     if(this.cardChoiceHeading?.active)this.cardChoiceHeading.destroy();
     if(this.relicChoiceHeading?.active)this.relicChoiceHeading.setText(I18N.t('reward.title'));
@@ -322,8 +329,8 @@ class RewardScene extends Phaser.Scene {
     this.saveStoryReward('continue');
     if(this.receipt)this.receipt.destroy();
     if(this.relicHero)this.relicHero.destroy();
-    this.receipt=this.add.container(540,1450).setDepth(10);
-    this.receipt.add(uiSurface(this,0,0,920,300,'panel'));
+    this.receipt=this.add.container(540,this._shopButton?1400:1450).setDepth(10);
+    this.receipt.add(uiSurface(this,0,0,920,this._shopButton?280:300,'panel'));
     this.receipt.add(uiText(this,0,-94,I18N.t('reward.claimed'),52,'#e8dcc0',{fontStyle:'bold'}).setOrigin(.5));
     const rows=this._received.length?this._received:[{kind:'skip'}];
     rows.forEach((r,i)=>{
@@ -372,6 +379,8 @@ class RewardScene extends Phaser.Scene {
   }
 
   showEnding() {
+    META_PROGRESS.record(RUN,{cleared:true});
+    if(this._shopButton)this._shopButton.destroy();
     SFX.play(this,'ending');
     this._ending = true;
     this._stage = 'ending';

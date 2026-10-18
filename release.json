@@ -1,5 +1,5 @@
 {
-  "version": "20261016-card-v2",
-  "features": ["painted-card-materials", "responsive-card-typography", "zh-CN-en", "living-scene"],
+  "version": "20261018-review-polish",
+  "features": ["painted-card-materials", "readable-card-rules", "semantic-hand-reader", "staged-asset-loading", "webp-art", "ogg-aac-audio", "event-relic-audio", "supply-shop", "boss-defense-counter", "difficulty-selection", "persistent-collection-achievements", "zh-CN-en", "living-scene"],
   "experimentalCombat": "opt-in"
 }

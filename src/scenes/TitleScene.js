@@ -5,7 +5,14 @@ class TitleScene extends Phaser.Scene {
   constructor() { super('Title'); }
 
   create() {
+    mountProgressButton(this);
     const cx = 540;
+    this._waitingAssets=false;
+    this.assetProgress=this.add.text(540,1860,'',{fontFamily:FONT,fontSize:'26px',color:'#e8dcc0'}).setOrigin(.5).setDepth(20);
+    this.assetProgress.setInteractive({useHandCursor:true}).on('pointerdown',()=>GAME_ASSETS.retry(this));
+      const updateProgress=()=>this.assetProgress.setText(!GAME_ASSETS.loading&&GAME_ASSETS.failures.length?(I18N.locale==='en'?'Loading failed — tap to retry':'素材加载失败 · 点击重试'):GAME_ASSETS.ready?'':(I18N.locale==='en'?'Preparing journey: ':'旅途素材准备中：')+Math.round(GAME_ASSETS.progress*100)+'%');
+    this.events.on('update',updateProgress);
+    this.events.once('shutdown',()=>this.events.off('update',updateProgress));
 
     // 标题页永远是「哥特童话」那扇门：进墟之后回来的玩家看到的还是同一个入口
     syncTheme('gothic');
@@ -69,6 +76,16 @@ class TitleScene extends Phaser.Scene {
     this._starting = false;
 
     this._goCombat = (immediate) => {
+      if(!GAME_ASSETS.canStart(this)){
+        if(!this._waitingAssets){
+          this._waitingAssets=true;
+          const resume=()=>{this.game.events.off('assets-ready',resume);this.game.events.off('assets-first-ready',resume);this._waitingAssets=false;if(this.scene.isActive())this._goCombat(immediate);};
+          if(!GAME_ASSETS.firstReady)this.game.events.once('assets-first-ready',resume);
+          this.game.events.once('assets-ready',resume);
+          this.events.once('shutdown',()=>{this.game.events.off('assets-ready',resume);this.game.events.off('assets-first-ready',resume);});
+        }
+        return;
+      }
       const go = () => {
         if (this._debugScene === 'ending') this.scene.start('Reward');
         else if (this._debugScene === 'reward') this.scene.start('Reward', { gold: 22, name: '灰狼' });
@@ -198,6 +215,7 @@ class TitleScene extends Phaser.Scene {
     this._starterLayer = layer;
     this._starterRows = [];
     this._starterPicked = STARTER_MENU[0];
+    this._difficultyPicked=null;
 
     const panel = this.add.graphics();
     panel.fillStyle(PAL.panel, 0.98);
@@ -327,12 +345,13 @@ class TitleScene extends Phaser.Scene {
     if (this._starting) return;
     const id = this._starterPicked;
     if (!id || !STARTER_DEFS[id]) return;
+    if(!this._difficultyPicked){openDifficultyPicker(this,selected=>{this._difficultyPicked=selected;this.confirmStarter();});return;}
     this._starting = true;              // 闸门在建局之前置位
     // The player has explicitly confirmed a new journey. Clear both old slots
     // before creating it; a permission failure must not silently revive the old run.
     if(!RUN.clearSave()){this._starting=false;return;}
     this.closeStarterPicker();
-    RUN.newRun(id);
+    RUN.newRun(id,this._difficultyPicked);
     RUN.save();                          // 只有确认才落盘
     this._goCombat(false);
   }

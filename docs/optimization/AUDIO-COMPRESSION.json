@@ -1,0 +1,176 @@
+{
+  "note": "Short cues use measured RMS with -2 dB sample-peak cap; music uses EBU R128 loudnorm. Playback gains retain intentional hierarchy. This is not a claim of identical perceptual loudness.",
+  "rows": [
+    {
+      "src": "assets/audio/attack-v1.wav",
+      "originalBytes": 12524,
+      "oggBytes": 5454,
+      "aacBytes": 3070,
+      "inputMeanDb": -15.3,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-7.699999999999999dB"
+    },
+    {
+      "src": "assets/audio/bgm-gothic-v1.wav",
+      "originalBytes": 8378224,
+      "oggBytes": 853574,
+      "aacBytes": 1072503,
+      "inputMeanDb": -17,
+      "inputPeakDb": -2.9,
+      "processing": "loudnorm=I=-20:TP=-2:LRA=11"
+    },
+    {
+      "src": "assets/audio/bgm-title-v1.wav",
+      "originalBytes": 10842396,
+      "oggBytes": 610489,
+      "aacBytes": 1382249,
+      "inputMeanDb": -15,
+      "inputPeakDb": -2.9,
+      "processing": "loudnorm=I=-20:TP=-2:LRA=11"
+    },
+    {
+      "src": "assets/audio/block-v1.wav",
+      "originalBytes": 19244,
+      "oggBytes": 5552,
+      "aacBytes": 3657,
+      "inputMeanDb": -20.6,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-2.3999999999999986dB"
+    },
+    {
+      "src": "assets/audio/defeat-v1.wav",
+      "originalBytes": 53806,
+      "oggBytes": 6826,
+      "aacBytes": 6203,
+      "inputMeanDb": -15,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-8dB"
+    },
+    {
+      "src": "assets/audio/deny-v1.wav",
+      "originalBytes": 9164,
+      "oggBytes": 4188,
+      "aacBytes": 2161,
+      "inputMeanDb": -15.2,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-7.800000000000001dB"
+    },
+    {
+      "src": "assets/audio/ending-v1.wav",
+      "originalBytes": 91244,
+      "oggBytes": 10255,
+      "aacBytes": 13358,
+      "inputMeanDb": -15.3,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-7.699999999999999dB"
+    },
+    {
+      "src": "assets/audio/event_choice-v1.wav",
+      "originalBytes": 24044,
+      "oggBytes": 7261,
+      "aacBytes": 5118,
+      "inputMeanDb": -17.1,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-5.899999999999999dB"
+    },
+    {
+      "src": "assets/audio/event_enter-v1.wav",
+      "originalBytes": 50444,
+      "oggBytes": 8026,
+      "aacBytes": 7384,
+      "inputMeanDb": -16.2,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-6.800000000000001dB"
+    },
+    {
+      "src": "assets/audio/guard-v1.wav",
+      "originalBytes": 23084,
+      "oggBytes": 5318,
+      "aacBytes": 3664,
+      "inputMeanDb": -15.4,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-7.6dB"
+    },
+    {
+      "src": "assets/audio/heal-v1.wav",
+      "originalBytes": 36044,
+      "oggBytes": 5950,
+      "aacBytes": 5718,
+      "inputMeanDb": -14.6,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-8.4dB"
+    },
+    {
+      "src": "assets/audio/hurt-v1.wav",
+      "originalBytes": 16366,
+      "oggBytes": 5615,
+      "aacBytes": 3245,
+      "inputMeanDb": -15.3,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-7.699999999999999dB"
+    },
+    {
+      "src": "assets/audio/impact-v1.wav",
+      "originalBytes": 11564,
+      "oggBytes": 5146,
+      "aacBytes": 2859,
+      "inputMeanDb": -16.9,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-6.100000000000001dB"
+    },
+    {
+      "src": "assets/audio/play-v1.wav",
+      "originalBytes": 12044,
+      "oggBytes": 5464,
+      "aacBytes": 3068,
+      "inputMeanDb": -16.3,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-6.699999999999999dB"
+    },
+    {
+      "src": "assets/audio/relic-v1.wav",
+      "originalBytes": 50444,
+      "oggBytes": 8356,
+      "aacBytes": 7707,
+      "inputMeanDb": -16.4,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-6.600000000000001dB"
+    },
+    {
+      "src": "assets/audio/select-v1.wav",
+      "originalBytes": 6766,
+      "oggBytes": 4710,
+      "aacBytes": 2140,
+      "inputMeanDb": -13.8,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-9.2dB"
+    },
+    {
+      "src": "assets/audio/turn-v1.wav",
+      "originalBytes": 14444,
+      "oggBytes": 5260,
+      "aacBytes": 3079,
+      "inputMeanDb": -17.7,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-5.300000000000001dB"
+    },
+    {
+      "src": "assets/audio/ui-v1.wav",
+      "originalBytes": 4364,
+      "oggBytes": 3858,
+      "aacBytes": 1543,
+      "inputMeanDb": -16.9,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-6.100000000000001dB"
+    },
+    {
+      "src": "assets/audio/victory-v1.wav",
+      "originalBytes": 57644,
+      "oggBytes": 7621,
+      "aacBytes": 8584,
+      "inputMeanDb": -15.4,
+      "inputPeakDb": -2.2,
+      "processing": "volume=-7.6dB"
+    }
+  ]
+}

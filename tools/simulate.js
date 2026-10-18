@@ -26,7 +26,7 @@ const vm = require('vm');
 const crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..', 'src', 'core');
-const FILES = ['cards.js', 'enemies.js', 'relics.js', 'events.js', 'starters.js', 'contracts.js',
+const FILES = ['cards.js', 'market.js', 'enemies.js', 'relics.js', 'events.js', 'starters.js', 'contracts.js',
   'run.js', 'combat.js'];
 
 /* ------------------------------------------------------------
@@ -42,6 +42,16 @@ const FILES = ['cards.js', 'enemies.js', 'relics.js', 'events.js', 'starters.js'
 function hash32() {
   let h = 2166136261 >>> 0;
   for (let i = 0; i < arguments.length; i++) {
+    if (typeof arguments[i] === 'string') {
+      // Domain labels and fight indices must not collapse to numeric zero.
+      for (const ch of arguments[i]) {
+        const code=ch.codePointAt(0);
+        h=Math.imul(h^(code&255),16777619)>>>0;
+        h=Math.imul(h^(code>>>8),16777619)>>>0;
+      }
+      h=(h^(h>>>13))>>>0;
+      continue;
+    }
     let v = arguments[i] >>> 0;
     for (let b = 0; b < 4; b++) {
       h ^= (v >>> (b * 8)) & 0xff;
@@ -108,7 +118,7 @@ for (const f of FILES) {
   vm.runInContext(fs.readFileSync(path.join(ROOT, f), 'utf8'), sandbox, { filename: f });
 }
 vm.runInContext(`
-  globalThis.API = { CARD_DEFS, rollCardId, cardCostType, effectiveCost, isResonant,
+  globalThis.API = { recordPlayerTactic, finishPlayerTactic, MARKET, CARD_DEFS, rollCardId, cardCostType, effectiveCost, isResonant,
     ENEMY_DEFS, spawnEnemy, rollIntent, RELIC_DEFS, rollRelic, RUN, CHAPTERS,
     EVENTS, eventForStep, applyEventEffects, EVENT_NODES, isContractNode, isForgeNode,
     addStatus, hitEnemy, intakeDamage, gainBlock, tickStatuses, applyPendingStart, tickEndStatuses, resolveWoundAttack, previewWoundCard, beginGuardWindow, finishGuardWindow, expireCounter,
@@ -237,7 +247,7 @@ function drawCards(S, n) {
       S.draw = shuffle(S.discard.slice());
       S.discard = [];
     }
-    if (S.hand.length >= 10) return;
+    if (S.hand.length >= 9) return;
     S.hand.push(S.draw.pop());
   }
 }
@@ -350,6 +360,7 @@ function playCardAt(S, idx) {
   const isSpirit = cardCostType(def) === 'spirit';
   const available = isSpirit ? S.spirit : S.energy;
   if (cost > available) return false;      // 与实战一致的付不起判定
+  G.recordPlayerTactic(S,def);
 
   S.busy = true;
   /* 共鸣的计数时点必须和实战一致。
@@ -446,6 +457,7 @@ function playBest(S) {
 /* endTurn：整副手牌进弃牌堆 */
 function endTurn(S) {
   if (S.busy || !S.enemy.alive) return false;
+  G.finishPlayerTactic(S);
   S.busy = true;
   const ids = S.hand.slice();
   G.discardHand(ids, S.discard);
@@ -594,8 +606,9 @@ function runFight(enemyId, seed, fightIdx, caps) {
 function runGame(maxFight, opts) {
   opts = opts || {};
   const seed = opts.seed === undefined ? 1 : (opts.seed >>> 0);
+  setSeed(seed);
   const strat = Object.assign({}, STRATEGY, opts.strategy || {});
-  RUN.newRun(opts.starter);
+  RUN.newRun(opts.starter,opts.difficulty);
   RUN.enemyMovePrototype = !!opts.enemyMoves;
   if (opts.contracts) for (const c of opts.contracts) RUN.addContract(c);
   if (opts.deckOverride) RUN.deck = opts.deckOverride.slice();
@@ -603,6 +616,7 @@ function runGame(maxFight, opts) {
   const TOTAL = maxFight || 18;
   const log = [];
   const events = [];
+  const purchases = [];
   let died = -1;
   let deathReason = '';
   let cappedGames = 0;
@@ -652,9 +666,9 @@ function runGame(maxFight, opts) {
     if (cards.length && strat.card !== 'skip') {
       const take = strat.card === 'first' ? cards[0] : cards[Math.min(cards.length - 1, 1)];
       RUN.addCard(take);
-    }
+    } else G.MARKET.skip(RUN);
     // 遗物：精英/BOSS 必给，否则 step 为奇数时给
-    const offerRelic = !!(E.boss || E.elite) || (RUN.step % 2 === 1);
+    const offerRelic = !!E.boss || (RUN.step % 2 === 1);
     if (offerRelic) {
       const cand = [];
       let guard = 0;
@@ -667,6 +681,21 @@ function runGame(maxFight, opts) {
         const take = strat.relic === 'first' ? cand[0] : cand[cand.length - 1];
         RUN.addRelic(take);
       }
+    }
+
+    // Shop choices use the same mutation rules and an independent offer stream.
+    if(RUN.step===2&&strat.market&&strat.market!=='none'){
+      const rnd=exo(seed,'market',g);
+      G.MARKET.stock(RUN,()=>withRng(rnd,()=>G.rollCardId(realm)));
+      if(strat.market==='remove-basic'){
+        const index=RUN.deck.indexOf('strike'),before=RUN.gold;
+        if(index>=0&&G.MARKET.remove(RUN,index))purchases.push({g,kind:'remove',id:'strike',paid:before-RUN.gold});
+      }else if(strat.market==='buy-first'){
+        for(let index=0;index<RUN.market.stock.length;index++){
+          const id=RUN.market.stock[index],before=RUN.gold;
+          if(G.MARKET.buy(RUN,index))purchases.push({g,kind:'buy',id,paid:before-RUN.gold});
+        }
+      }else throw Error('Unknown market strategy: '+strat.market);
     }
 
     /* ---- 事件节点 ---- */
@@ -702,7 +731,7 @@ function runGame(maxFight, opts) {
   }
 
   return {
-    died, deathReason, log, events,
+    died, deathReason, log, events, purchases,
     deck: RUN.deck.length, relics: RUN.relics.length, gold: RUN.gold,
     contracts: RUN.contracts.slice(), ascended: !!RUN.ascended, cappedGames,
     maxHp: RUN.maxHp
@@ -796,12 +825,8 @@ console.log('前半程(' + '1-' + half + ')  : 各战无条件通过率均值 ' 
 console.log('后半程(' + (half + 1) + '-' + TOTAL_FIGHTS + ') : 各战无条件通过率均值 ' + (avg(half, TOTAL_FIGHTS) * 100).toFixed(1) + '%');
 if (CHAPTERS_TO_RUN === G.CHAPTERS.length) {
   // 过境后的条件通关率：先活到第 10 战，再看能不能打完
-  let entered = 0, finished = 0;
-  for (let i = 0; i < GAMES; i++) {
-    const seed = (i * 2654435761) >>> 0 || 1;
-    const r = runGame(TOTAL_FIGHTS, { seed });
-    if (r.died < 0 || r.died > 8) { entered++; if (r.died < 0) finished++; }
-  }
+  // Use the same cohort as the table, rather than running a second cohort.
+  const entered = past9, finished = cleared;
   console.log('过境后条件通关率: ' + (entered ? (finished / entered * 100).toFixed(1) : '0.0') +
     '%  （分母 = 活到第 10 战的局数 ' + entered + '）');
 }
