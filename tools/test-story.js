@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
-const files=['cards','enemies','relics','events','starters','contracts','story','run'];
+const files=['storage-backend','cards','enemies','relics','events','starters','contracts','story','run'];
 const storage=new Map(),context={console,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)}};
 vm.createContext(context);vm.runInContext(files.map(f=>fs.readFileSync('src/core/'+f+'.js','utf8')).join('\n')+'\nthis.data={STORY_CHAPTERS,STORY_BEATS,STORY_CHOICES,STORY,RUN,CHAPTERS};',context);
 const {STORY_CHAPTERS,STORY_BEATS,STORY_CHOICES,STORY,RUN,CHAPTERS}=context.data;

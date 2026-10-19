@@ -9,7 +9,7 @@ const vm = require('vm');
 const ROOT = path.join(__dirname, '..', 'src', 'core');
 // ui.js 也要进沙箱：CARD（卡面材质）这个共享可变对象定义在它里面，
 // theme.js 的 applyTheme 要原地改写它。不加载 ui.js 就测不到卡面。
-const FILES = ['cards.js', 'enemies.js', 'relics.js', 'events.js', 'starters.js', 'contracts.js',
+const FILES = ['storage-backend.js', 'cards.js', 'enemies.js', 'relics.js', 'events.js', 'starters.js', 'contracts.js',
   'run.js', 'combat.js', 'theme.js', 'text-layout.js', 'ui.js'];
 
 // 最小浏览器/Phaser 垫片，只为让这几个文件能被求值

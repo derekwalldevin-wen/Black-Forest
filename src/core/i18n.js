@@ -5,14 +5,14 @@ const I18N = {
  locale:'zh-CN', dictionaries:{}, missing:new Set(),
  register(locale,values){this.dictionaries[locale]={...(this.dictionaries[locale]||{}),...values};},
  init(){
-  let saved='';try{saved=localStorage.getItem('black-forest-language')||'';}catch(_){}
+  let saved='';try{saved=STORAGE_BACKEND.getItem('black-forest-language')||'';}catch(_){}
   const q=new URLSearchParams(location.search),preview=q.get('lang'),valid=l=>['zh-CN','en'].includes(l);
   this.locale=valid(preview)?preview:valid(saved)?saved:'zh-CN';
   this.updateDocument();
  },
  setLocale(locale){
   if(!['zh-CN','en'].includes(locale))return false;
-  let saved=true;try{localStorage.setItem('black-forest-language',locale);}catch(_){saved=false;}
+  let saved=true;try{saved=STORAGE_BACKEND.setItem('black-forest-language',locale);}catch(_){saved=false;}
   this.locale=locale;this.missing.clear();
   // Remove a stale preview override so a refresh follows the user's selection.
   try{const url=new URL(location.href);if(saved)url.searchParams.delete('lang');else url.searchParams.set('lang',locale);history.replaceState(null,'',url);}catch(_){}

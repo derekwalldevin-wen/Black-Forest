@@ -1,12 +1,46 @@
 # 黑森林 · Black Forest
 
-竖屏 9:16 暗黑童话卡牌 Roguelike 浏览器原型。前九战为黑森林，后九战进入山海经之墟；Phaser 3.80.1 本地部署，无构建步骤。
+竖屏 9:16 暗黑童话卡牌 Roguelike。前九战为黑森林，后九战进入山海经之墟；Phaser 3.80.1 本地部署，网页版无构建步骤，另有可独立运行的 Windows 桌面试玩版（R1）。
 
-[在线试玩](https://derekwalldevin-wen.github.io/Black-Forest/) · [当前优化清单](docs/optimization/REVIEW-RESPONSE.md)
+[在线试玩](https://derekwalldevin-wen.github.io/Black-Forest/) · [当前优化清单](docs/optimization/REVIEW-RESPONSE.md) · [R1 桌面报告](docs/steam/R1-DESKTOP-REPORT.md)
 
 ## 运行与操作
 
+### 网页版
+
 需要 Node.js，运行 `node tools/serve-game.js 8899`，打开 http://127.0.0.1:8899/ 。也可以使用 `python -m http.server 8899 --bind 127.0.0.1`。不能直接双击 HTML 使用 file:// 加载。
+
+### Windows 桌面试玩版（R1）
+
+桌面试玩版是独立于开发环境的可运行载体：不需要 Node/Python、不需要开发服务器、不需要 GitHub Pages，
+断网可玩，进度存在本机用户数据目录。
+
+两个候选包在 `artifacts/desktop/`：
+
+| 包 | 文件 | 用法 |
+|---|---|---|
+| 可解压运行包 | `BlackForest-Desktop-1.0.0-x64.zip` | 解压到任意目录，运行里面的 `Black Forest.exe` |
+| 安装包 | `BlackForest-Desktop-1.0.0-x64.exe` | 双击安装，按安装向导选目录（普通用户权限即可，不写注册表 HKLM） |
+
+- 窗口是竖屏 9:16，`F11` 切全屏，`Esc` 退出全屏；窗口位置与尺寸会记住，
+  下次启动恢复；如果原显示器已被拔掉，窗口会回到当前显示器中央。
+- 重复双击不会开出第二个窗口，第二次启动会把已有窗口叫到前面。
+- 试玩包**未做代码签名**，Windows 可能弹出「未知发布者」提示，这是预期状态。
+- 玩家进度不在安装目录里，在 `%APPDATA%\Black Forest\data\default\`。
+  卸载不会删掉它，重装也不会丢。
+
+从网页版迁移进度：
+
+1. 在网页版标题页点「进度备份 · 导出」→「导出进度文件」，浏览器下载一个 JSON。
+2. 打开桌面试玩版，标题页点「进度备份 · 导出」→「从文件导入进度」，选那个 JSON。
+3. 桌面版会先校验文件、再备份现有数据、再覆盖；确认页会列出会被覆盖的项目。
+   导入失败不会改动现有数据。
+
+桌面试玩版没有改动卡牌数值、敌人招式、难度与奖励经济，实验内容仍按原开关启用。
+详细交付与验收记录见 [R1 桌面报告](docs/steam/R1-DESKTOP-REPORT.md)，
+存储位置与迁移规则见 [存储契约](docs/steam/STORAGE-CONTRACT.md)。
+
+### 操作
 
 点击手牌查看，再次点击或上滑出牌；数字键选择手牌，回合结束按钮推进战斗。菜单可查看牌组、征途、状态说明、声音和减少动态设置。标题页支持简体中文/英文切换，英文仍为预览译文。
 

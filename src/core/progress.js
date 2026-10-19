@@ -2,12 +2,24 @@
 const META_PROGRESS={
  key:'black-forest-progress-v1',error:false,writeFailed:false,
  empty(){return {version:1,cards:[],relics:[],enemies:[],events:[],victories:[]};},
+ /* 结构校验。read() 和跨端导入共用同一份规则，避免两处判断不一致。 */
+ validateRaw(raw){
+  if(typeof raw!=='string'||!raw)return null;
+  let d;try{d=JSON.parse(raw);}catch(_){return null;}
+  if(!d||typeof d!=='object'||Array.isArray(d))return null;
+  if(d.version!==1)return null;
+  for(const k of ['cards','relics','enemies','events','victories']){
+   if(!Array.isArray(d[k]))return null;
+   if(d[k].some(v=>typeof v!=='string'))return null;
+  }
+  return d;
+ },
  read(){
   this.error=false;
   try{
-   const raw=localStorage.getItem(this.key);if(!raw)return this.empty();
-   const d=JSON.parse(raw);
-   if(d.version!==1||['cards','relics','enemies','events','victories'].some(k=>!Array.isArray(d[k])||d[k].some(v=>typeof v!=='string')))throw Error('invalid progress');
+   const raw=STORAGE_BACKEND.getItem(this.key);if(!raw)return this.empty();
+   const d=this.validateRaw(raw);
+   if(!d)throw Error('invalid progress');
    return d;
   }catch(_){this.error=true;return this.empty();}
  },
@@ -18,7 +30,11 @@ const META_PROGRESS={
   add('cards',run.deck||[],CARD_DEFS);add('relics',run.relics||[],RELIC_DEFS);
   add('enemies',extra.enemy?[extra.enemy]:[],ENEMY_DEFS);add('events',extra.event?[extra.event]:[],EVENT_MAP);
   if(extra.cleared&&run.globalStep()>=17){const id=(run.difficulty||'standard')+':'+run.starterId;d.victories=[...new Set([...d.victories,id])].sort();}
-  try{localStorage.setItem(this.key,JSON.stringify(d));this.writeFailed=false;return true;}catch(_){this.error=true;this.writeFailed=true;return false;}
+  try{
+   const ok=STORAGE_BACKEND.setItem(this.key,JSON.stringify(d));
+   if(!ok){this.error=true;this.writeFailed=true;return false;}
+   this.writeFailed=false;return true;
+  }catch(_){this.error=true;this.writeFailed=true;return false;}
  },
  achievements(d){return [
   {id:'first',zh:'初入黑森林',en:'First light',hintZh:'击败一种敌人',hintEn:'Defeat an enemy',done:d.enemies.length>0},
@@ -39,7 +55,7 @@ function mountProgressButton(scene){
  entry.onclick=()=>{
   if(dialog)return;const d=META_PROGRESS.read();dialog=document.createElement('dialog');dialog.className='hand-reader';dialog.style.fontSize='20px';
   const title=document.createElement('h2');title.id='progress-title';title.textContent=entry.textContent;dialog.setAttribute('aria-labelledby',title.id);dialog.append(title);
-  const intro=document.createElement('p');intro.textContent=META_PROGRESS.error||META_PROGRESS.writeFailed?(en?'Progress storage is unavailable; recent progress may not be saved. Existing records have not been overwritten.':'进度存储不可用，最近进度可能未保存；已有记录未被覆盖。'):(en?'Saved on this browser across journeys. Achievements grant no combat bonuses. Debug runs do not count.':'记录保存在当前浏览器，跨局保留。成就不提供战斗属性；调试模式不计入。');dialog.append(intro);
+  const intro=document.createElement('p');intro.textContent=(META_PROGRESS.error||META_PROGRESS.writeFailed?(en?'Progress storage is unavailable; recent progress may not be saved. Existing records have not been overwritten.':'进度存储不可用，最近进度可能未保存；已有记录未被覆盖。'):I18N.t(STORAGE_BACKEND.isDesktop()?'storage.savedIn.desktop':'storage.savedIn.web'))+' '+(en?'Achievements grant no combat bonuses. Debug runs do not count.':'成就不提供战斗属性；调试模式不计入。');dialog.append(intro);
   const list=document.createElement('ul');list.style.listStyle='none';list.style.padding='0';for(const a of META_PROGRESS.achievements(d)){const item=document.createElement('li');item.textContent=(a.done?'✓ ': '○ ')+(en?a.en:a.zh)+' — '+(en?a.hintEn:a.hintZh);list.append(item);}dialog.append(list);
   for(const [key,defs,titleText] of [['cards',CARD_DEFS,en?'Cards':'卡牌'],['relics',RELIC_DEFS,en?'Relics':'遗物'],['enemies',ENEMY_DEFS,en?'Enemies defeated':'已击败敌人']]){
    const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent=titleText+' '+d[key].length;details.append(summary);

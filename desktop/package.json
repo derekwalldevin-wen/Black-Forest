@@ -1,0 +1,58 @@
+{
+  "name": "black-forest-desktop",
+  "productName": "Black Forest",
+  "version": "1.0.0",
+  "description": "黑森林 · Black Forest — 离线可玩、进度可靠保存的 Windows 桌面试玩版",
+  "author": "Black Forest",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "stage": "node build/stage.js",
+    "package": "node build/package.js",
+    "build": "node build/package.js",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "44.9.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "com.blackforest.playtest",
+    "productName": "Black Forest",
+    "asar": true,
+    "directories": {
+      "output": "../artifacts/desktop",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "lib/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "app",
+        "to": "app-web"
+      }
+    ],
+    "win": {
+      "icon": "build/icon.png",
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "zip", "arch": ["x64"] }
+      ],
+      "artifactName": "BlackForest-Desktop-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "黑森林 Black Forest",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

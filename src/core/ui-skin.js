@@ -5,7 +5,7 @@ const GAME_PREFS = {
   reducedMotion: typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches,
   haptics: false,
   load() {
-    try { const p = JSON.parse(localStorage.getItem('black-forest-ui-settings') || '{}');
+    try { const p = JSON.parse(STORAGE_BACKEND.getItem('black-forest-ui-settings') || '{}');
       if (typeof p.reducedMotion === 'boolean') this.reducedMotion = p.reducedMotion;
       if (typeof p.haptics === 'boolean') this.haptics = p.haptics;
     } catch (_) {}
@@ -22,7 +22,7 @@ const GAME_PREFS = {
   set(key, value) {
     if (!['reducedMotion', 'haptics'].includes(key)) return;
     this[key] = !!value; this.apply();
-    try { localStorage.setItem('black-forest-ui-settings', JSON.stringify({reducedMotion:this.reducedMotion,haptics:this.haptics})); } catch (_) {}
+    try { if (STORAGE_BACKEND.setItem('black-forest-ui-settings', JSON.stringify({reducedMotion:this.reducedMotion,haptics:this.haptics}))===false) STORAGE_BACKEND.reportFailure(); } catch (_) {}
   },
   pulse() { if (this.haptics && typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(18); }
 };

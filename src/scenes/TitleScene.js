@@ -6,6 +6,7 @@ class TitleScene extends Phaser.Scene {
 
   create() {
     mountProgressButton(this);
+    mountTransferButton(this);
     const cx = 540;
     this._waitingAssets=false;
     this.assetProgress=this.add.text(540,1860,'',{fontFamily:FONT,fontSize:'26px',color:'#e8dcc0'}).setOrigin(.5).setDepth(20);
@@ -48,6 +49,9 @@ class TitleScene extends Phaser.Scene {
     /* 按钮区：放在拇指可达的中下部 */
     const loaded = RUN.load();
     const hasSave = !!loaded;
+    /* 来自更新版本的存档：当前版本读不了，但也不会被自动覆盖。
+     * 只有玩家明确选择放弃，才能开始新的一局。 */
+    this._futureSave = !loaded && typeof SAVE_STORE!=='undefined' && SAVE_STORE.status==='future';
     const by = hasSave ? 1300 : 1480, gap = 180;
     if(hasSave)this.add.image(540,1005,'ui-avatar').setDisplaySize(240,240).setDepth(3);
     else this.add.image(540,1120,'hero-traveler').setDisplaySize(360,540).setDepth(3);
@@ -116,6 +120,18 @@ class TitleScene extends Phaser.Scene {
       if (hasSave && loaded) { this._goCombat(immediate); return; }
       // 存档存在但过不了校验：清掉，别让「继续」按钮一直亮着却点不动
       if (hasSave && !loaded) RUN.clearSave();
+      // 来自更新版本的存档：先问清楚再丢弃。自动清除会毁掉玩家在别的
+      // 版本里留下的进度，必须由玩家自己点头。
+      if (this._futureSave) {
+        this.showConfirm(I18N.t('title.futureSave'), () => {
+          SAVE_STORE.forceClear();
+          this._futureSave=false;
+          this._starterPicker=true;
+          this._starting=false;
+          this.showStarterPicker();
+        });
+        return;
+      }
       // 没有有效存档：先选传承，确认后才建新局
       this._starterPicker = true;
       this._starting = false;
@@ -200,7 +216,7 @@ class TitleScene extends Phaser.Scene {
    * 新开一个场景等于把模态遮罩和一次性闸门再实现一遍。
    *
    * 只有「确认」才建 RUN 并存盘。选中、翻看、取消都不写存档——
-   * 取消之后回到标题，localStorage 应该和点开面板之前一模一样。
+   * 取消之后回到标题，存档与偏好应该和点开面板之前一模一样。
    *
    * _modalOpen 顺手置位：create() 里那个 Enter/Space 直通 startRun 的
    * 键盘处理器第一行就是 `if (this._modalOpen) return`，所以面板开着

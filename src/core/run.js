@@ -32,12 +32,19 @@ const REALM_SPLIT = 3;
  * 以后加字段（战斗快照、妖契、路线）时在这里 +1 并写迁移分支。 */
 const RUN_SCHEMA_VERSION = 1;
 
+/* 未来格式保护：存档里的 schemaVersion 比本客户端能理解的版本新时，
+ * 不允许被静默覆盖或删除。桌面试玩版会真的遇到「用旧包打开新包存的档」，
+ * 网页版保留同一套语义，两端行为一致。 */
+if(typeof STORAGE_BACKEND!=='undefined'&&typeof SAVE_STORE!=='undefined'){
+ STORAGE_BACKEND.setGuard(SAVE_STORE.primary,RUN_SCHEMA_VERSION);
+}
+
 /* 存档只写、也只读这些字段。
  *
  * 白名单而不是全量：RUN 上还挂着 _forcedEnemy / _dbgDeck 这类
  * 只在 ?debug 下用一次的暂存字段。JSON.stringify 本来就会跳过函数，
  * 但不会跳过数据字段——全量恢复会把「调试时强制指定的敌人」一起
- * 存进 localStorage，之后那一局真实游戏每次都打同一个敌人。
+ * 存进存档，之后那一局真实游戏每次都打同一个敌人。
  * 反过来，加了新字段却忘了登记，存了也读不回来，所以这里是唯一入口。 */
 const RUN_DIFFICULTIES = Object.freeze({
   story: Object.freeze({hp:90,heal:.32,bigHeal:.48}),
@@ -312,7 +319,7 @@ const RUN = {
       for (const k of SAVE_FIELDS) out[k] = this[k];
       const raw=JSON.stringify(out);
       if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.write(raw,r=>this._parseSave(r));
-      localStorage.setItem('darkforest.run', raw);return true;
+      return STORAGE_BACKEND.setItem('darkforest.run',raw);
     } catch (e) {if(typeof SAVE_STORE!=='undefined')SAVE_STORE.report('writeFailure');return false;}
   },
 
@@ -345,7 +352,7 @@ const RUN = {
   _readSave() {
     if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.read(raw=>this._parseSave(raw));
     try {
-      const raw = localStorage.getItem('darkforest.run');
+      const raw = STORAGE_BACKEND.getItem('darkforest.run');
       if (!raw) return null;
       const d = this._parseSave(raw);
       if (!d || typeof d !== 'object') return null;
@@ -391,5 +398,5 @@ const RUN = {
     return true;
   },
 
-  clearSave() { if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.clear();try { localStorage.removeItem('darkforest.run');return true; } catch (e) {return false;} }
+  clearSave() { if(typeof SAVE_STORE!=='undefined')return SAVE_STORE.clear();return STORAGE_BACKEND.removeItem('darkforest.run'); }
 };

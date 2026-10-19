@@ -29,8 +29,8 @@ const HAND_READER = {
     const status=document.createElement('p');status.textContent=(en?'Your status: ':'我方状态：')+Object.entries(S.player.st).filter(([id,n])=>n>0&&STATUS_META[id]).map(([id,n])=>I18N.name('status',id,STATUS_META[id].name)+' '+n).join(' · ');dialog.append(status);
     const fontLabel=document.createElement('label');fontLabel.textContent=en?'Text size ':'文字大小 ';
     const size=document.createElement('input');size.type='range';size.min='16';size.max='28';size.value='20';
-    try{size.value=localStorage.getItem('black-forest-reading-size')||'20';}catch(_){}
-    const resize=()=>{dialog.style.fontSize=size.value+'px';try{localStorage.setItem('black-forest-reading-size',size.value);}catch(_){}};
+    try{size.value=STORAGE_BACKEND.getItem('black-forest-reading-size')||'20';}catch(_){}
+    const resize=()=>{dialog.style.fontSize=size.value+'px';try{STORAGE_BACKEND.setItem('black-forest-reading-size',size.value);}catch(_){}};
     size.addEventListener('input',resize);fontLabel.append(size);dialog.append(fontLabel);resize();
     const list=document.createElement('ol');dialog.append(list);
     let selected=null;

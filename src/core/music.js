@@ -3,7 +3,7 @@ const BGM = {
  volume:.35,muted:false,game:null,current:null,wanted:null,cache:new Map(),pending:new Map(),voices:new Set(),failed:new Set(),hidden:false,
  init(game){
   if(this.game)return;this.game=game;this.disabled=new URLSearchParams(location.search).get('sound')==='off';
-  try{const p=JSON.parse(localStorage.getItem('black-forest-music-settings')||'{}');if(Number.isFinite(p.volume))this.volume=Math.max(0,Math.min(1,p.volume));this.muted=p.muted===true;}catch(_){}
+  try{const p=JSON.parse(STORAGE_BACKEND.getItem('black-forest-music-settings')||'{}');if(Number.isFinite(p.volume))this.volume=Math.max(0,Math.min(1,p.volume));this.muted=p.muted===true;}catch(_){}
   const ctx=game.sound.context;if(!ctx)return;
   this.bus=ctx.createGain();this.bus.gain.value=0;this.bus.connect(game.sound.destination);
   this._visibility=()=>{this.hidden=document.hidden;this.tick();};
@@ -14,7 +14,7 @@ const BGM = {
   game.events.once('destroy',()=>{this.stop();this.bus.disconnect();document.removeEventListener('visibilitychange',this._visibility);document.removeEventListener('pointerdown',this._unlock,true);document.removeEventListener('keydown',this._unlock,true);game.events.off('step',this.tick,this);game.events.off('blur',this._blur);game.events.off('focus',this._focus);this.game=null;});
  },
  set(key,value){if(key==='volume'&&Number.isFinite(value))this.volume=Math.max(0,Math.min(1,value));else if(key==='muted')this.muted=!!value;else return;
-  try{localStorage.setItem('black-forest-music-settings',JSON.stringify({volume:this.volume,muted:this.muted}));}catch(_){}this.tick();
+  try{if(STORAGE_BACKEND.setItem('black-forest-music-settings',JSON.stringify({volume:this.volume,muted:this.muted}))===false)STORAGE_BACKEND.reportFailure();}catch(_){}this.tick();
  },
  choose(){
   const scenes=this.game.scene,active=k=>scenes.isActive(k);

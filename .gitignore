@@ -4,6 +4,8 @@
 artifacts/
 $null
 node_modules/
+desktop/app/
+desktop/node_modules/
 __pycache__/
 *.pyc
 *.log

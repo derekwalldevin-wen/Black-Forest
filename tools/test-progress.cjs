@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert/strict'),data=new Map();let fail=false;
 const box={URLSearchParams,location:{search:''},localStorage:{getItem:k=>data.get(k)||null,setItem:(k,v)=>{if(fail)throw Error('quota');data.set(k,v);}}};vm.createContext(box);
-for(const f of ['cards','enemies','relics','events','starters','progress'])vm.runInContext(fs.readFileSync('src/core/'+f+'.js','utf8'),box);
+for(const f of ['cards','enemies','relics','events','starters','storage-backend','progress'])vm.runInContext(fs.readFileSync('src/core/'+f+'.js','utf8'),box);
 const M=vm.runInContext('META_PROGRESS',box),run={deck:['strike','defend','strike'],relics:['iron_ring'],difficulty:'challenge',starterId:'blood',globalStep:()=>18};
 assert(M.record(run,{enemy:'wolf',event:'campfire',cleared:true}));assert(M.record(run,{enemy:'wolf',cleared:true}));
 let d=M.read();assert.equal(d.cards.length,2);assert.equal(d.enemies.length,1);assert.equal(d.victories.length,1);assert(M.achievements(d).find(a=>a.id==='challenge').done);

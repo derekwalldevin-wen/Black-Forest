@@ -10,6 +10,7 @@
     "legacy save migrates through adapter without inheriting story choices",
     "invalid numeric, resource, array and version fields are rejected",
     "minimal legacy save receives clean defaults instead of another run state",
+    "a backend reporting failure by returning false surfaces as a failed save, not a silent success",
     "difficulty survives save/load with its HP and recovery rules",
     "legacy save without difficulty uses standard, never the previous run difficulty"
   ],
