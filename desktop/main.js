@@ -456,6 +456,22 @@ async function runInputScript(win, steps) {
       results.push({ waitFor: step.waitFor, satisfied: ok, last, afterMs: Date.now() - PROCESS_START });
       if (!ok) { logger.write('waitFor-timeout', step.waitFor); }
     }
+    if (step.clickAt) {
+      /* 按对象的实际位置点击：按钮的视觉框和命中区可能不在同一处
+       * （皮肤按钮就是一个），写死坐标会时灵时不灵。 */
+      const pt = await win.webContents.executeJavaScript(
+        '(()=>{try{const r=(' + step.clickAt + ');return r&&typeof r.x==="number"&&typeof r.y==="number"?r:null;}catch(e){return null;}})()',
+        true
+      );
+      if (!pt) { results.push({ clickAt: step.clickAt, error: 'no position' }); continue; }
+      const view = await canvasToViewport(win, pt.x, pt.y);
+      win.webContents.sendInputEvent({ type: 'mouseMove', x: view.x, y: view.y });
+      win.webContents.sendInputEvent({ type: 'mouseDown', x: view.x, y: view.y, button: 'left', clickCount: 1 });
+      await sleep(40);
+      win.webContents.sendInputEvent({ type: 'mouseUp', x: view.x, y: view.y, button: 'left', clickCount: 1 });
+      await sleep(150);
+      results.push({ clickAt: step.clickAt, at: view, target: { x: pt.x, y: pt.y } });
+    }
     if (step.click) {
       const pt = await canvasToViewport(win, step.click[0], step.click[1]);
       win.webContents.sendInputEvent({ type: 'mouseMove', x: pt.x, y: pt.y });

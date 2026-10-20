@@ -6,7 +6,7 @@
       "realm": "gothic",
       "enemy": "wolf",
       "enemyName": "灰狼",
-      "enemyHp": 29,
+      "enemyHp": 30,
       "hand": 5,
       "ready": true
     },
@@ -16,7 +16,7 @@
       "realm": "gothic",
       "enemy": "mushroom",
       "enemyName": "毒蝇伞",
-      "enemyHp": 23,
+      "enemyHp": 22,
       "hand": 5,
       "ready": true
     },
@@ -26,7 +26,7 @@
       "realm": "gothic",
       "enemy": "alpha_wolf",
       "enemyName": "头狼",
-      "enemyHp": 56,
+      "enemyHp": 57,
       "hand": 5,
       "ready": true
     },
@@ -46,7 +46,7 @@
       "realm": "gothic",
       "enemy": "boar",
       "enemyName": "铁鬃野猪",
-      "enemyHp": 38,
+      "enemyHp": 36,
       "hand": 5,
       "ready": true
     },
@@ -56,7 +56,7 @@
       "realm": "gothic",
       "enemy": "bog_witch",
       "enemyName": "沼泽女巫",
-      "enemyHp": 62,
+      "enemyHp": 60,
       "hand": 5,
       "ready": true
     },
@@ -66,7 +66,7 @@
       "realm": "gothic",
       "enemy": "wolf",
       "enemyName": "灰狼",
-      "enemyHp": 29,
+      "enemyHp": 26,
       "hand": 5,
       "ready": true
     },
@@ -76,7 +76,7 @@
       "realm": "gothic",
       "enemy": "alpha_wolf",
       "enemyName": "头狼",
-      "enemyHp": 56,
+      "enemyHp": 57,
       "hand": 5,
       "ready": true
     },
@@ -86,7 +86,7 @@
       "realm": "gothic",
       "enemy": "forest_lord",
       "enemyName": "黑暗森林之主",
-      "enemyHp": 78,
+      "enemyHp": 81,
       "hand": 5,
       "ready": true
     },
@@ -96,7 +96,7 @@
       "realm": "shanhai",
       "enemy": "nine_tail",
       "enemyName": "九尾狐",
-      "enemyHp": 40,
+      "enemyHp": 37,
       "hand": 5,
       "ready": true
     },
@@ -116,7 +116,7 @@
       "realm": "shanhai",
       "enemy": "qiongqi",
       "enemyName": "穷奇",
-      "enemyHp": 63,
+      "enemyHp": 67,
       "hand": 5,
       "ready": true
     },
@@ -126,7 +126,7 @@
       "realm": "shanhai",
       "enemy": "xiangliu",
       "enemyName": "相柳",
-      "enemyHp": 49,
+      "enemyHp": 48,
       "hand": 5,
       "ready": true
     },
@@ -146,7 +146,7 @@
       "realm": "shanhai",
       "enemy": "huodou",
       "enemyName": "祸斗",
-      "enemyHp": 68,
+      "enemyHp": 71,
       "hand": 5,
       "ready": true
     },
@@ -156,7 +156,7 @@
       "realm": "shanhai",
       "enemy": "taotie",
       "enemyName": "饕餮",
-      "enemyHp": 54,
+      "enemyHp": 55,
       "hand": 5,
       "ready": true
     },
@@ -166,7 +166,7 @@
       "realm": "shanhai",
       "enemy": "baize",
       "enemyName": "白泽",
-      "enemyHp": 47,
+      "enemyHp": 51,
       "hand": 5,
       "ready": true
     },
@@ -176,7 +176,7 @@
       "realm": "shanhai",
       "enemy": "dijiang",
       "enemyName": "帝江",
-      "enemyHp": 120,
+      "enemyHp": 124,
       "hand": 5,
       "ready": true
     }

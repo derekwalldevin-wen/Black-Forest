@@ -2,58 +2,58 @@
   "runs": [
     {
       "run": 1,
-      "totalMs": 8382,
-      "titleReadyMs": 3961,
-      "combatReadyMs": 7528,
+      "totalMs": 7977,
+      "titleReadyMs": 4077,
+      "combatReadyMs": 7492,
       "titleSatisfied": true,
       "combatSatisfied": true,
       "exit": 0
     },
     {
       "run": 2,
-      "totalMs": 10188,
-      "titleReadyMs": 4101,
-      "combatReadyMs": 8258,
+      "totalMs": 7201,
+      "titleReadyMs": 3591,
+      "combatReadyMs": 6683,
       "titleSatisfied": true,
       "combatSatisfied": true,
       "exit": 0
     },
     {
       "run": 3,
-      "totalMs": 8341,
-      "titleReadyMs": 2869,
-      "combatReadyMs": 7571,
-      "titleSatisfied": true,
-      "combatSatisfied": true,
-      "exit": 0
+      "totalMs": 180074,
+      "titleReadyMs": null,
+      "combatReadyMs": null,
+      "titleSatisfied": false,
+      "combatSatisfied": false,
+      "exit": null
     },
     {
       "run": 4,
-      "totalMs": 8580,
-      "titleReadyMs": 3964,
-      "combatReadyMs": 7601,
+      "totalMs": 7813,
+      "titleReadyMs": 4085,
+      "combatReadyMs": 7352,
       "titleSatisfied": true,
       "combatSatisfied": true,
       "exit": 0
     },
     {
       "run": 5,
-      "totalMs": 9544,
-      "titleReadyMs": 2609,
-      "combatReadyMs": 7186,
+      "totalMs": 7375,
+      "titleReadyMs": 3524,
+      "combatReadyMs": 7024,
       "titleSatisfied": true,
       "combatSatisfied": true,
       "exit": 0
     }
   ],
   "title": {
-    "min": 2609,
-    "max": 4101,
-    "avg": 3501
+    "min": 3524,
+    "max": 4085,
+    "avg": 3819
   },
   "combat": {
-    "min": 7186,
-    "max": 8258,
-    "avg": 7629
+    "min": 6683,
+    "max": 7492,
+    "avg": 7138
   }
 }

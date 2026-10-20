@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-19T14:19:55.050Z",
-  "tempRoot": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-DnYHw2",
+  "generatedAt": "2026-10-20T14:09:09.334Z",
+  "tempRoot": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-NI5OGZ",
   "results": [
     {
       "id": "D01",
       "title": "从独立目录解压、启动、进入战斗",
       "status": "通过",
-      "detail": "exe: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-DnYHw2\\解压 运行包\\Black Forest.exe\ndata: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-DnYHw2\\资料 目录\nexit=0 elapsed=201261ms\n资源 404: 0 / 渲染错误: 0 / 被拦截外网请求: 0\n流程到达战斗: true / 结束时在战斗场景: true\n存储键: black-forest-progress-v1,black-forest-reading-size,darkforest.run,darkforest.run.backup",
+      "detail": "exe: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-NI5OGZ\\解压 运行包\\Black Forest.exe\ndata: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-NI5OGZ\\资料 目录\nexit=0 elapsed=202280ms\n资源 404: 0 / 渲染错误: 0 / 被拦截外网请求: 0\n流程到达战斗: true / 结束时在战斗场景: true\n存储键: black-forest-progress-v1,black-forest-reading-size,darkforest.run,darkforest.run.backup",
       "evidence": [
         "docs/steam/evidence/r1/portable/",
         "docs/steam/evidence/r1/portable/portable-runtime.log"
@@ -24,7 +24,7 @@
     {
       "id": "D06",
       "title": "损坏 / 双损坏 / 未来格式 / 中断写入 / 拒写",
-      "status": "基础存档已建立: 主档=true 侧车=true 游戏级备份=true\n主档损坏 → 状态=recovered，仍能读出本局=true，坏文件保留=true\n主档损坏且无侧车 → 状态=recovered，仍能读出本局=true\n双档损坏 → 状态=corrupt，主档保留=true，备份保留=true\n未来版本存档 → 状态=future，文件未被覆盖=true\n中断写入残留 → 读到的主档=有效，状态=null\n只读主档 → 写入返回=false，存档状态=writeFailure，原有数据未被破坏=true\n资料目录不可创建 → 写入返回=false，存档状态=writeFailure，程序仍正常退出=true",
+      "status": "通过",
       "detail": "基础存档已建立: 主档=true 侧车=true 游戏级备份=true\n主档损坏 → 状态=recovered，仍能读出本局=true，坏文件保留=true\n主档损坏且无侧车 → 状态=recovered，仍能读出本局=true\n双档损坏 → 状态=corrupt，主档保留=true，备份保留=true\n未来版本存档 → 状态=future，文件未被覆盖=true\n中断写入残留 → 读到的主档=有效，状态=null\n只读主档 → 写入返回=false，存档状态=writeFailure，原有数据未被破坏=true\n资料目录不可创建 → 写入返回=false，存档状态=writeFailure，程序仍正常退出=true",
       "evidence": [
         "docs/steam/evidence/r1/"
@@ -52,7 +52,7 @@
       "id": "D08",
       "title": "窗口位置恢复、失效显示器、Alt-Tab 后可用",
       "status": "通过",
-      "detail": "保存的旧位置: x=6000 y=4000（假设那块显示器已被拔掉）\n恢复后的窗口: {\"x\":693,\"y\":42,\"width\":534,\"height\":949}\n窗口落在可见显示器上=true\n最小化/还原返回: handled 4065396\n还原后再次启动退出码=0，窗口状态={\"x\":693,\"y\":42,\"width\":534,\"height\":949}\n首次启动退出码=0",
+      "detail": "保存的旧位置: x=6000 y=4000（假设那块显示器已被拔掉）\n恢复后的窗口: {\"x\":693,\"y\":42,\"width\":534,\"height\":949}\n窗口落在可见显示器上=true\n最小化/还原返回: handled 855814\n还原后再次启动退出码=0，窗口状态={\"x\":693,\"y\":42,\"width\":534,\"height\":949}\n首次启动退出码=0",
       "evidence": [
         "docs/steam/evidence/r1/"
       ]
@@ -70,7 +70,7 @@
       "id": "D01-installer",
       "title": "安装包：安装 → 启动 → 存档不进安装目录",
       "status": "通过",
-      "detail": "安装目录: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-DnYHw2\\安装 目录\n安装退出码=0\n安装后可执行文件存在=true\n从安装目录启动退出码=0\n启动后模式=desktop，资源就绪=true\n安装目录里的玩家数据文件=0 个（应为 0）\n数据目录=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-DnYHw2\\install-data\\installed\\data",
+      "detail": "安装目录: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-NI5OGZ\\安装 目录\n安装退出码=0\n安装后可执行文件存在=true\n从安装目录启动退出码=0\n启动后模式=desktop，资源就绪=true\n安装目录里的玩家数据文件=0 个（应为 0）\n数据目录=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-NI5OGZ\\install-data\\installed\\data",
       "evidence": [
         "docs/steam/evidence/r1/"
       ]
@@ -78,8 +78,8 @@
     {
       "id": "D11",
       "title": "五次冷启动计时",
-      "status": "通过",
-      "detail": "{\n  \"runs\": [\n    {\n      \"run\": 1,\n      \"totalMs\": 8382,\n      \"titleReadyMs\": 3961,\n      \"combatReadyMs\": 7528,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 2,\n      \"totalMs\": 10188,\n      \"titleReadyMs\": 4101,\n      \"combatReadyMs\": 8258,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 3,\n      \"totalMs\": 8341,\n      \"titleReadyMs\": 2869,\n      \"combatReadyMs\": 7571,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 4,\n      \"totalMs\": 8580,\n      \"titleReadyMs\": 3964,\n      \"combatReadyMs\": 7601,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 5,\n      \"totalMs\": 9544,\n      \"titleReadyMs\": 2609,\n      \"combatReadyMs\": 7186,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    }\n  ],\n  \"title\": {\n    \"min\": 2609,\n    \"max\": 4101,\n    \"avg\": 3501\n  },\n  \"combat\": {\n    \"min\": 7186,\n    \"max\": 8258,\n    \"avg\": 7629\n  }\n}",
+      "status": "部分通过",
+      "detail": "{\n  \"runs\": [\n    {\n      \"run\": 1,\n      \"totalMs\": 7977,\n      \"titleReadyMs\": 4077,\n      \"combatReadyMs\": 7492,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 2,\n      \"totalMs\": 7201,\n      \"titleReadyMs\": 3591,\n      \"combatReadyMs\": 6683,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 3,\n      \"totalMs\": 180074,\n      \"titleReadyMs\": null,\n      \"combatReadyMs\": null,\n      \"titleSatisfied\": false,\n      \"combatSatisfied\": false,\n      \"exit\": null\n    },\n    {\n      \"run\": 4,\n      \"totalMs\": 7813,\n      \"titleReadyMs\": 4085,\n      \"combatReadyMs\": 7352,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    },\n    {\n      \"run\": 5,\n      \"totalMs\": 7375,\n      \"titleReadyMs\": 3524,\n      \"combatReadyMs\": 7024,\n      \"titleSatisfied\": true,\n      \"combatSatisfied\": true,\n      \"exit\": 0\n    }\n  ],\n  \"title\": {\n    \"min\": 3524,\n    \"max\": 4085,\n    \"avg\": 3819\n  },\n  \"combat\": {\n    \"min\": 6683,\n    \"max\": 7492,\n    \"avg\": 7138\n  }\n}",
       "evidence": [
         "docs/steam/evidence/r1/performance.json"
       ]
@@ -88,7 +88,7 @@
       "id": "D04",
       "title": "十八战 / 事件 / 商店 / 结局在桌面包可达",
       "status": "通过",
-      "detail": "十八战: 18/18 就绪\n  第1章第1战 gothic → wolf（灰狼 HP29）\n  第1章第2战 gothic → mushroom（毒蝇伞 HP23）\n  第1章第3战 gothic → alpha_wolf（头狼 HP56）\n  第2章第1战 gothic → witch（森林女巫 HP34）\n  第2章第2战 gothic → boar（铁鬃野猪 HP38）\n  第2章第3战 gothic → bog_witch（沼泽女巫 HP62）\n  第3章第1战 gothic → wolf（灰狼 HP29）\n  第3章第2战 gothic → alpha_wolf（头狼 HP56）\n  第3章第3战 gothic → forest_lord（黑暗森林之主 HP78）\n  第4章第1战 shanhai → nine_tail（九尾狐 HP40）\n  第4章第2战 shanhai → lu_shu（鹿蜀 HP41）\n  第4章第3战 shanhai → qiongqi（穷奇 HP63）\n  第5章第1战 shanhai → xiangliu（相柳 HP49）\n  第5章第2战 shanhai → fei（蜚 HP32）\n  第5章第3战 shanhai → huodou（祸斗 HP68）\n  第6章第1战 shanhai → taotie（饕餮 HP54）\n  第6章第2战 shanhai → baize（白泽 HP47）\n  第6章第3战 shanhai → dijiang（帝江 HP120）\n事件: campfire✓、ancient_stele✓、black_market✓、nine_heads✓\n商店: {\"dialogOpen\":true,\"items\":3,\"hasRemove\":true}\n奖励场景就绪: {\"ready\":true}；结局: {\"ready\":true,\"victory\":true}\n素材加载失败: []；协议层 404: 0\n已加载贴图: 237",
+      "detail": "十八战: 18/18 就绪\n  第1章第1战 gothic → wolf（灰狼 HP30）\n  第1章第2战 gothic → mushroom（毒蝇伞 HP22）\n  第1章第3战 gothic → alpha_wolf（头狼 HP57）\n  第2章第1战 gothic → witch（森林女巫 HP34）\n  第2章第2战 gothic → boar（铁鬃野猪 HP36）\n  第2章第3战 gothic → bog_witch（沼泽女巫 HP60）\n  第3章第1战 gothic → wolf（灰狼 HP26）\n  第3章第2战 gothic → alpha_wolf（头狼 HP57）\n  第3章第3战 gothic → forest_lord（黑暗森林之主 HP81）\n  第4章第1战 shanhai → nine_tail（九尾狐 HP37）\n  第4章第2战 shanhai → lu_shu（鹿蜀 HP41）\n  第4章第3战 shanhai → qiongqi（穷奇 HP67）\n  第5章第1战 shanhai → xiangliu（相柳 HP48）\n  第5章第2战 shanhai → fei（蜚 HP32）\n  第5章第3战 shanhai → huodou（祸斗 HP71）\n  第6章第1战 shanhai → taotie（饕餮 HP55）\n  第6章第2战 shanhai → baize（白泽 HP51）\n  第6章第3战 shanhai → dijiang（帝江 HP124）\n事件: campfire✓、ancient_stele✓、black_market✓、nine_heads✓\n商店: {\"dialogOpen\":true,\"items\":3,\"hasRemove\":true}\n奖励场景就绪: {\"ready\":true}；结局: {\"ready\":true,\"victory\":true}\n素材加载失败: []；协议层 404: 0\n已加载贴图: 237",
       "evidence": [
         "docs/steam/evidence/r1/coverage/"
       ]
@@ -97,7 +97,7 @@
       "id": "D03-en",
       "title": "英文流程：标题→传承→难度→出牌→敌方回合",
       "status": "通过",
-      "detail": "退出码=0\n语言=en\n出牌后的状态: {\"locale\":\"en\",\"hand\":4,\"energy\":2,\"enemyHp\":20}\n结束时的场景: [\"Combat\"]，敌人 HP=20\n资源 404: 0",
+      "detail": "退出码=0\n语言=en\n出牌后的状态: {\"locale\":\"en\",\"hand\":4,\"energy\":2,\"enemyHp\":29}\n结束时的场景: [\"Combat\"]，敌人 HP=29\n资源 404: 0",
       "evidence": [
         "docs/steam/evidence/r1/english/"
       ]
@@ -106,7 +106,7 @@
       "id": "迁移",
       "title": "网页导出文件 → 桌面导入：备份、写入、拒绝不合格文件",
       "status": "通过",
-      "detail": "导入返回: {\"ok\":true,\"applied\":[\"darkforest.run\",\"black-forest-progress-v1\",\"black-forest-language\",\"black-forest-audio-settings\",\"black-forest-music-settings\",\"black-forest-ui-settings\",\"black-forest-reading-size\"],\"backupDir\":\"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\bf-r1-DnYHw2\\\\transfer-data\\\\transfer\\\\backups\\\\import-2026-10-19T14-16-34-228Z\"}\n导入后存在的键: [\"darkforest.run\",\"black-forest-progress-v1\",\"black-forest-language\",\"black-forest-audio-settings\",\"black-forest-music-settings\",\"black-forest-ui-settings\",\"black-forest-reading-size\"]\n导入后的值: {\"language\":\"en\",\"readingSize\":\"26\",\"audio\":\"{\\\"volume\\\":0.31,\\\"muted\\\":true}\",\"music\":\"{\\\"volume\\\":0.27,\\\"muted\\\":true}\",\"ui\":\"{\\\"reducedMotion\\\":true,\\\"haptics\\\":true}\",\"runGold\":123,\"runStarter\":\"blood\",\"progressCards\":4}\n导入后本局能读出来: true\n不合格文件的导入返回: {\"ok\":false,\"code\":\"futureVersion\"}\n不合格导入没有改动现有数据: true\n导入前做的备份目录: [\"import-2026-10-19T14-16-34-228Z\"]",
+      "detail": "导入返回: {\"ok\":true,\"applied\":[\"darkforest.run\",\"black-forest-progress-v1\",\"black-forest-language\",\"black-forest-audio-settings\",\"black-forest-music-settings\",\"black-forest-ui-settings\",\"black-forest-reading-size\"],\"backupDir\":\"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\bf-r1-NI5OGZ\\\\transfer-data\\\\transfer\\\\backups\\\\import-2026-10-20T14-04-36-672Z\"}\n导入后存在的键: [\"darkforest.run\",\"black-forest-progress-v1\",\"black-forest-language\",\"black-forest-audio-settings\",\"black-forest-music-settings\",\"black-forest-ui-settings\",\"black-forest-reading-size\"]\n导入后的值: {\"language\":\"en\",\"readingSize\":\"26\",\"audio\":\"{\\\"volume\\\":0.31,\\\"muted\\\":true}\",\"music\":\"{\\\"volume\\\":0.27,\\\"muted\\\":true}\",\"ui\":\"{\\\"reducedMotion\\\":true,\\\"haptics\\\":true}\",\"runGold\":123,\"runStarter\":\"blood\",\"progressCards\":4}\n导入后本局能读出来: true\n不合格文件的导入返回: {\"ok\":false,\"code\":\"futureVersion\"}\n不合格导入没有改动现有数据: true\n导入前做的备份目录: [\"import-2026-10-20T14-04-36-672Z\"]",
       "evidence": [
         "docs/steam/evidence/r1/"
       ]
@@ -115,7 +115,43 @@
       "id": "D10-部分",
       "title": "无 Node/Python 的 PATH、无源码目录启动",
       "status": "通过",
-      "detail": "PATH=C:\\Windows\\System32;C:\\Windows;C:\\Windows\\System32\\Wbem（里面没有 node / python）\n工作目录=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-DnYHw2\\no-node-cwd（没有项目源码）\n退出码=0\n到达战斗=true\n结束时场景=[\"Combat\"]\n运行期存储键=[\"black-forest-progress-v1\",\"black-forest-reading-size\",\"darkforest.run\",\"darkforest.run.backup\"]",
+      "detail": "PATH=C:\\Windows\\System32;C:\\Windows;C:\\Windows\\System32\\Wbem（里面没有 node / python）\n工作目录=C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-NI5OGZ\\no-node-cwd（没有项目源码）\n退出码=0\n到达战斗=true\n结束时场景=[\"Combat\"]\n运行期存储键=[\"black-forest-progress-v1\",\"black-forest-reading-size\",\"darkforest.run\",\"darkforest.run.backup\"]",
+      "evidence": [
+        "docs/steam/evidence/r1/"
+      ]
+    },
+    {
+      "id": "D03-reward",
+      "title": "奖励→商店→继续（真实点击链）",
+      "status": "通过",
+      "detail": "退出码=0，截图 6 张（evidence/r1/reward-shop/）\n各步回报：\n  {\"active\":true,\"step\":2,\"chapter\":0,\"gold\":0,\"deck\":8,\"starter\":\"classic\",\"skipBtn\":{\"x\":280,\"y\":1760,\"active\":true},\"shopBtn\":null}\n  {\"stage\":\"continue\",\"shopButton\":{\"x\":540,\"y\":1610,\"active\":true},\"gold\":12,\"deck\":8}\n  gold=200\n  {\"dialogOpen\":true,\"items\":3,\"title\":\"旅途补给 · ◆ 200\"}\n  {\"gold\":95,\"deck\":8,\"market\":{\"step\":2,\"stock\":[\"blood_pact\",\"drain_life\",\"riposte\"],\"sold\":[0],\"removed\":true,\"skipped\":true},\"items\":3}\n  {\"shopClosed\":true,\"stage\":\"continue\"}\n  直接进战斗\n  {\"combat\":true,\"enemy\":\"witch\",\"storyActive\":false,\"chapter\":1,\"step\":0}",
+      "evidence": [
+        "docs/steam/evidence/r1/reward-shop/"
+      ]
+    },
+    {
+      "id": "D08-modal",
+      "title": "模态弹窗的焦点进入与退出",
+      "status": "通过",
+      "detail": "退出码=0\n  {\"dialogOpen\":true,\"activeTag\":\"BUTTON\",\"activeText\":\"返回战斗\",\"focusInsideDialog\":true}\n  {\"dialogClosed\":true,\"activeTag\":\"BUTTON\",\"activeClass\":\"hand-reader-entry\",\"activeText\":\"手牌一览 · H\"}\n  {\"stillInCombat\":true,\"busy\":false,\"hand\":5}",
+      "evidence": [
+        "docs/steam/evidence/r1/modal/"
+      ]
+    },
+    {
+      "id": "D08-fullscreen",
+      "title": "全屏开关（主进程窗口接口）",
+      "status": "通过",
+      "detail": "{\n  \"before\": {\n    \"fullScreen\": false,\n    \"bounds\": {\n      \"x\": 693,\n      \"y\": 42,\n      \"width\": 534,\n      \"height\": 949\n    },\n    \"focused\": true\n  },\n  \"during\": {\n    \"fullScreen\": true,\n    \"bounds\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 1920,\n      \"height\": 1080\n    },\n    \"focused\": true\n  },\n  \"after\": {\n    \"fullScreen\": false,\n    \"bounds\": {\n      \"x\": 693,\n      \"y\": 42,\n      \"width\": 534,\n      \"height\": 949\n    },\n    \"focused\": true\n  },\n  \"worked\": true\n}",
+      "evidence": [
+        "docs/steam/evidence/r1/"
+      ]
+    },
+    {
+      "id": "D07-legacy",
+      "title": "旧存档（无 schemaVersion/starterId）导入桌面试玩版并迁移",
+      "status": "通过",
+      "detail": "{\n  \"importResult\": {\n    \"ok\": true,\n    \"applied\": [\n      \"darkforest.run\",\n      \"black-forest-language\"\n    ],\n    \"backupDir\": \"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\bf-r1-NI5OGZ\\\\legacy-data\\\\legacy\\\\backups\\\\import-2026-10-20T14-09-07-405Z\"\n  },\n  \"fileBeforeLoad\": {\n    \"hasSchemaVersion\": false,\n    \"hasStarterId\": false,\n    \"hasContracts\": false,\n    \"hasStory\": false,\n    \"deck\": 8,\n    \"gold\": 50\n  },\n  \"loaded\": true,\n  \"run\": {\n    \"starterId\": \"classic\",\n    \"difficulty\": \"standard\",\n    \"hp\": 60,\n    \"maxHp\": 70,\n    \"gold\": 50,\n    \"chapter\": 0,\n    \"step\": 0,\n    \"deckSize\": 8,\n    \"contracts\": 0\n  },\n  \"fileAfterLoad\": {\n    \"schemaVersion\": 1,\n    \"starterId\": \"classic\",\n    \"contracts\": 0,\n    \"story\": {\n      \"seen\": 0,\n      \"choices\": 0\n    }\n  }\n}",
       "evidence": [
         "docs/steam/evidence/r1/"
       ]

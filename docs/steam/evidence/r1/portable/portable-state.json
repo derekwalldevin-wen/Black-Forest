@@ -21,7 +21,7 @@
   "combat": {
     "enemy": "wolf",
     "enemyHp": 23,
-    "playerHp": 70,
+    "playerHp": 64,
     "hand": 5,
     "energy": 3,
     "spirit": 2,

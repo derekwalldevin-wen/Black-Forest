@@ -59,7 +59,9 @@ class TitleScene extends Phaser.Scene {
     if (hasSave) uiText(this,540,1160,I18N.t('title.save',{chapter:I18N.chapterNumber(RUN.chapter,RUN.chapterNum()),name:I18N.t(`chapter.${RUN.chapter}.name`),hp:RUN.hp,maxHp:RUN.maxHp}),38,'#c4b698').setOrigin(.5).setDepth(4);
 
     // 统一入口：按钮和键盘都走这里
-    // ?debug&auto=1 时跳过标题，直接开一局调试用进度
+    // ?debug=1&auto=1 时跳过标题，直接开一局调试用进度。
+    // 注意必须是 debug=1：下面判的是 q.get('debug')，而 "?debug"（无值）
+    // 取出来是空串，会被判假——写 "?debug&auto=1" 不会进这个分支。
     const q = (typeof location !== 'undefined') ? new URLSearchParams(location.search) : null;
     this._debugAuto = !!(q && q.get('debug') && q.get('auto'));
     this._debugScene = q ? (q.get('scene') || '') : '';

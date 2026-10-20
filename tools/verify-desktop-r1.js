@@ -246,8 +246,20 @@ scenarios['corruption'] = () => {
   out.push('资料目录不可创建 → 写入返回=' + (w6 && w6.saveReturned) + '，存档状态=' + (w6 && w6.saveStatus) +
     '，程序仍正常退出=' + (r6.code === 0));
 
-  return record('D06', '损坏 / 双损坏 / 未来格式 / 中断写入 / 拒写', out.join('\n'), out.join('\n'),
-    ['docs/steam/evidence/r1/']);
+  /* 逐条判定，别把明细当结论写进 status —— 摘要会被读成「部分通过」。 */
+  const expect = [
+    ['主档损坏', /主档损坏 → 状态=recovered.*仍能读出本局=true.*坏文件保留=true/],
+    ['主档损坏且无侧车', /主档损坏且无侧车 → 状态=recovered.*仍能读出本局=true/],
+    ['双档损坏', /双档损坏 → 状态=corrupt.*主档保留=true.*备份保留=true/],
+    ['未来版本存档', /未来版本存档 → 状态=future.*文件未被覆盖=true/],
+    ['中断写入残留', /中断写入残留 → 读到的主档=有效/],
+    ['只读主档', /只读主档 → 写入返回=false.*存档状态=writeFailure.*原有数据未被破坏=true/],
+    ['资料目录不可创建', /资料目录不可创建 → 写入返回=false.*存档状态=writeFailure.*程序仍正常退出=true/]
+  ];
+  const text = out.join('\n');
+  const bad = expect.filter(([, re]) => !re.test(text)).map(([name]) => name);
+  record('D06', '损坏 / 双损坏 / 未来格式 / 中断写入 / 拒写',
+    bad.length === 0 ? '通过' : '失败：' + bad.join('、'), text, ['docs/steam/evidence/r1/']);
 };
 
 /* D07：中断的清档不会通过备份复活旧局；新局落盘后旧局不回来。 */
@@ -670,6 +682,111 @@ scenarios['no-node'] = () => {
   ].join('\n');
   const ok = r.code === 0 && !!(combat && combat.satisfied);
   record('D10-部分', '无 Node/Python 的 PATH、无源码目录启动', ok ? '通过' : '失败', detail,
+    ['docs/steam/evidence/r1/']);
+};
+
+/* D03 补齐：奖励→商店→继续，全部用真实鼠标键盘点完。
+ * 用 ?debug&auto=1&scene=reward&chapter=0&step=2 直接进奖励页
+ * （step=2 才会出现商店按钮），这是隔离测试资料加速，不是绕过流程。 */
+scenarios['reward-shop'] = () => {
+  const exe = path.join(ART, 'win-unpacked', 'Black Forest.exe');
+  const dataRoot = path.join(tmpRoot, 'reward-data');
+  const evidenceDir = path.join(EVIDENCE, 'reward-shop');
+  fs.mkdirSync(evidenceDir, { recursive: true });
+  const r = runApp(exe, [
+    '--profile=reward', '--data-dir=' + dataRoot,
+    '--url-query=debug=1&auto=1&scene=reward&chapter=0&step=2',
+    '--input=' + path.join(INPUTS, 'flow-reward-shop.json'),
+    '--input-out=' + path.join(tmpRoot, 'reward-input.json'),
+    '--evidence-dir=' + evidenceDir,
+    '--probe-delay=2000'
+  ], { timeout: 600000 });
+  const input = readJson(path.join(tmpRoot, 'reward-input.json')) || [];
+  const evals = input.filter(x => x.eval).map(x => x.eval);
+  const shots = input.filter(x => x.shot).length;
+  const detail = [
+    '退出码=' + r.code + '，截图 ' + shots + ' 张（evidence/r1/reward-shop/）',
+    '各步回报：',
+    ...evals.map(e => '  ' + e)
+  ].join('\n');
+  const bought = evals.some(e => /"gold":\d+/.test(e) && !/"gold":0/.test(e));
+  const shopClosed = evals.some(e => /"shopClosed":true/.test(e));
+  const nextBattle = evals.some(e => /"combat":true/.test(e));
+  record('D03-reward', '奖励→商店→继续（真实点击链）',
+    (bought && shopClosed && nextBattle) ? '通过' : '部分通过', detail,
+    ['docs/steam/evidence/r1/reward-shop/']);
+};
+
+/* D08 补齐：模态弹窗的焦点进出。 */
+scenarios['modal-focus'] = () => {
+  const exe = path.join(ART, 'win-unpacked', 'Black Forest.exe');
+  const dataRoot = path.join(tmpRoot, 'modal-data');
+  const evidenceDir = path.join(EVIDENCE, 'modal');
+  fs.mkdirSync(evidenceDir, { recursive: true });
+  const r = runApp(exe, [
+    '--profile=modal', '--data-dir=' + dataRoot,
+    '--input=' + path.join(INPUTS, 'flow-modal-focus.json'),
+    '--input-out=' + path.join(tmpRoot, 'modal-input.json'),
+    '--evidence-dir=' + evidenceDir,
+    '--probe-delay=2000'
+  ], { timeout: 600000 });
+  const input = readJson(path.join(tmpRoot, 'modal-input.json')) || [];
+  const evals = input.filter(x => x.eval).map(x => x.eval);
+  const detail = ['退出码=' + r.code, ...evals.map(e => '  ' + e)].join('\n');
+  const focusInside = evals.some(e => /"focusInsideDialog":true/.test(e));
+  const closed = evals.some(e => /"dialogClosed":true/.test(e));
+  const stillCombat = evals.some(e => /"stillInCombat":true/.test(e));
+  record('D08-modal', '模态弹窗的焦点进入与退出', (focusInside && closed && stillCombat) ? '通过' : '部分通过', detail,
+    ['docs/steam/evidence/r1/modal/']);
+};
+
+/* D08 补齐：全屏开关。 */
+scenarios['fullscreen'] = () => {
+  const exe = path.join(ART, 'win-unpacked', 'Black Forest.exe');
+  const dataRoot = path.join(tmpRoot, 'fs-data');
+  const r = runApp(exe, [
+    '--profile=fs', '--data-dir=' + dataRoot,
+    '--script=' + path.join(PROBES, 'fullscreen-check.js'),
+    '--script-out=' + path.join(tmpRoot, 'fs.json'),
+    '--probe-delay=6000'
+  ], { timeout: 300000 });
+  const fs = readJson(path.join(tmpRoot, 'fs.json')) || {};
+  const detail = JSON.stringify(fs, null, 2);
+  record('D08-fullscreen', '全屏开关（主进程窗口接口）', fs.worked ? '通过' : '失败', detail,
+    ['docs/steam/evidence/r1/']);
+};
+
+/* D07 补齐：旧存档（网页版早期格式）跨端迁进桌面包。 */
+scenarios['legacy-import'] = () => {
+  const exe = path.join(ART, 'win-unpacked', 'Black Forest.exe');
+  const dataRoot = path.join(tmpRoot, 'legacy-data');
+  const legacyRun = {
+    started: true,
+    deck: ['strike', 'strike', 'strike', 'defend', 'defend', 'defend', 'iron_wall', 'riposte'],
+    relics: ['iron_ring'],
+    gold: 50, chapter: 0, step: 0, hp: 60, maxHp: 70, kills: 3, spiritMax: 3,
+    postFightHeal: 0.26, postFightHealBig: 0.42, nextCombat: {}
+    /* 故意不带 schemaVersion / starterId / difficulty / story / contracts / market */
+  };
+  const payload = {
+    format: 'black-forest-transfer', version: 1,
+    exportedAt: new Date().toISOString(), source: 'web', appVersion: '20261018-review-polish',
+    data: { 'darkforest.run': JSON.stringify(legacyRun), 'black-forest-language': 'zh-CN' }
+  };
+  const template = fs.readFileSync(path.join(PROBES, 'legacy-import.js'), 'utf8');
+  const probeFile = path.join(tmpRoot, 'legacy-probe.js');
+  fs.writeFileSync(probeFile, template.replace('__PAYLOAD__', JSON.stringify(payload)), 'utf8');
+
+  runApp(exe, ['--profile=legacy', '--data-dir=' + dataRoot,
+    '--script=' + probeFile, '--script-out=' + path.join(tmpRoot, 'legacy.json'),
+    '--probe-delay=3000'], { timeout: 300000 });
+  const lg = readJson(path.join(tmpRoot, 'legacy.json')) || {};
+  const detail = JSON.stringify(lg, null, 2);
+  const ok = !!(lg.importResult && lg.importResult.ok) && lg.loaded === true &&
+    lg.run && lg.run.starterId === 'classic' && lg.run.contracts === 0 &&
+    lg.fileAfterLoad && lg.fileAfterLoad.schemaVersion === 1 &&
+    lg.fileBeforeLoad && lg.fileBeforeLoad.hasSchemaVersion === false;
+  record('D07-legacy', '旧存档（无 schemaVersion/starterId）导入桌面试玩版并迁移', ok ? '通过' : '失败', detail,
     ['docs/steam/evidence/r1/']);
 };
 

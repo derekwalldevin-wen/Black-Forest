@@ -38,7 +38,8 @@
 
 桌面试玩版没有改动卡牌数值、敌人招式、难度与奖励经济，实验内容仍按原开关启用。
 详细交付与验收记录见 [R1 桌面报告](docs/steam/R1-DESKTOP-REPORT.md)，
-存储位置与迁移规则见 [存储契约](docs/steam/STORAGE-CONTRACT.md)。
+存储位置与迁移规则见 [存储契约](docs/steam/STORAGE-CONTRACT.md)，
+给下一阶段的交接与决策请求见 [CODEX-R1-DESKTOP](docs/steam/CODEX-R1-DESKTOP.md)。
 
 ### 操作
 
