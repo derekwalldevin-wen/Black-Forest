@@ -1,0 +1,42 @@
+name: Windows desktop candidate
+
+on:
+  push:
+    branches: [main, codex/r1-desktop]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: desktop/package-lock.json
+      - name: Install locked desktop dependencies
+        working-directory: desktop
+        run: npm ci
+      - name: Check game and storage rules
+        run: node tools/check-release.cjs
+      - name: Build unsigned Windows candidates
+        run: node desktop/build/package.js
+      - name: Verify packaged resource hashes
+        run: node tools/test-desktop-package.js --require-package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BlackForest-Windows-preview
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            artifacts/desktop/BlackForest-Desktop-*-x64.exe
+            artifacts/desktop/BlackForest-Desktop-*-x64.zip
+            artifacts/desktop/SHA256SUMS.txt
+            artifacts/desktop/release-manifest.json

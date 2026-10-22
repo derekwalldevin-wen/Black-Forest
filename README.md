@@ -15,18 +15,20 @@
 桌面试玩版是独立于开发环境的可运行载体：不需要 Node/Python、不需要开发服务器、不需要 GitHub Pages，
 断网可玩，进度存在本机用户数据目录。
 
-两个候选包在 `artifacts/desktop/`：
+当前桌面预览版：**1.0.1-preview.1**。
+[GitHub 下载页](https://github.com/derekwalldevin-wen/Black-Forest/releases/tag/desktop-v1.0.1-preview.1) · [版本说明](docs/steam/RELEASE-NOTES-1.0.1-preview.1.md)。
+两个候选包也保存在本地 `artifacts/desktop/`：
 
 | 包 | 文件 | 用法 |
 |---|---|---|
-| 可解压运行包 | `BlackForest-Desktop-1.0.0-x64.zip` | 解压到任意目录，运行里面的 `Black Forest.exe` |
-| 安装包 | `BlackForest-Desktop-1.0.0-x64.exe` | 双击安装，按安装向导选目录（普通用户权限即可，不写注册表 HKLM） |
+| 可解压运行包 | `BlackForest-Desktop-1.0.1-preview.1-x64.zip` | 解压到任意目录，运行里面的 `Black Forest.exe` |
+| 安装包 | `BlackForest-Desktop-1.0.1-preview.1-x64.exe` | 双击安装，按安装向导选目录（普通用户权限即可，不写注册表 HKLM） |
 
 - 窗口是竖屏 9:16，`F11` 切全屏，`Esc` 退出全屏；窗口位置与尺寸会记住，
   下次启动恢复；如果原显示器已被拔掉，窗口会回到当前显示器中央。
 - 重复双击不会开出第二个窗口，第二次启动会把已有窗口叫到前面。
 - 试玩包**未做代码签名**，Windows 可能弹出「未知发布者」提示，这是预期状态。
-- 玩家进度不在安装目录里，在 `%APPDATA%\Black Forest\data\default\`。
+- 玩家进度不在安装目录里，默认资料文件在 `%APPDATA%\Black Forest\data\default\data\`，同级有日志与导入备份目录。
   卸载不会删掉它，重装也不会丢。
 
 从网页版迁移进度：
@@ -40,6 +42,21 @@
 详细交付与验收记录见 [R1 桌面报告](docs/steam/R1-DESKTOP-REPORT.md)，
 存储位置与迁移规则见 [存储契约](docs/steam/STORAGE-CONTRACT.md)，
 给下一阶段的交接与决策请求见 [CODEX-R1-DESKTOP](docs/steam/CODEX-R1-DESKTOP.md)。
+
+### 从源码构建桌面包
+
+开发环境需要 Node.js 22 和 npm。以下命令从项目根目录执行：
+
+```powershell
+npm ci --prefix desktop
+node tools/check-release.cjs
+node desktop/build/package.js
+node tools/test-desktop-package.js --require-package
+```
+
+构建会生成安装包、可解压运行包、`SHA256SUMS.txt` 与 `release-manifest.json`。
+网页内容版本与桌面容器版本分别记录；修改后的候选包需要重新进行桌面实跑。
+GitHub Actions 会在主分支、R1 分支和 PR 上执行源码检查、打包及资源哈希验证；自动构建不替代干净电脑或真人验收。
 
 ### 操作
 

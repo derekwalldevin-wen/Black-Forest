@@ -12,6 +12,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const { spawnSync } = require('node:child_process');
 const { collect, ROOT } = require('./collect-assets.js');
 
 const STAGE = path.resolve(__dirname, '..', 'app');
@@ -25,6 +26,10 @@ const LICENSE_FILES = [
 ];
 
 function rmrf(target) {
+  const resolved = path.resolve(target);
+  if (resolved !== STAGE || path.dirname(resolved) !== path.resolve(__dirname, '..')) {
+    throw new Error('Refusing to remove a path outside desktop/app');
+  }
   fs.rmSync(target, { recursive: true, force: true });
 }
 
@@ -60,6 +65,9 @@ function stage(options = {}) {
   if (assets.missing.length) {
     throw new Error('资源清单里有不存在的文件：\n  ' + assets.missing.join('\n  '));
   }
+  if (assets.unresolved.length) {
+    throw new Error('Unresolved runtime asset references:\n  ' + assets.unresolved.join('\n  '));
+  }
   rmrf(STAGE);
   fs.mkdirSync(STAGE, { recursive: true });
 
@@ -78,7 +86,7 @@ function stage(options = {}) {
   /* 许可文件 */
   for (const rel of LICENSE_FILES) {
     const full = path.join(ROOT, rel.replace(/\//g, path.sep));
-    if (!fs.existsSync(full)) continue;
+    if (!fs.existsSync(full)) throw new Error('Required licence file missing: ' + rel);
     copyFile(full, path.join(STAGE, rel.replace(/\//g, path.sep)));
     files.push(rel);
   }
@@ -110,10 +118,14 @@ function stage(options = {}) {
     entries.push({ path: rel, bytes, sha256: sha256(full) });
   }
   const release = JSON.parse(fs.readFileSync(path.join(ROOT, 'release.json'), 'utf8'));
+  const desktop = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
+  const git = spawnSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' });
   const manifest = {
     format: 'black-forest-desktop-manifest',
     version: 1,
-    appVersion: options.appVersion || release.version,
+    appVersion: options.appVersion || desktop.version,
+    gameVersion: release.version,
+    sourceCommit: git.status === 0 ? git.stdout.trim() : null,
     generatedAt: new Date().toISOString(),
     fileCount: entries.length,
     totalBytes: total,
@@ -122,6 +134,8 @@ function stage(options = {}) {
   fs.writeFileSync(path.join(STAGE, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8');
   fs.writeFileSync(path.join(STAGE, 'version.json'), JSON.stringify({
     appVersion: manifest.appVersion,
+    gameVersion: manifest.gameVersion,
+    sourceCommit: manifest.sourceCommit,
     generatedAt: manifest.generatedAt,
     fileCount: entries.length,
     totalBytes: total

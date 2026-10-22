@@ -278,8 +278,8 @@ function createWindow() {
         if (CLI['script']) {
           try {
             /* 探针要在游戏真正就绪之后才跑，否则读到的还是空场景。 */
-            const ready = await waitForTitle(win, 180000);
-            if (!ready) logger.write('script-title-timeout', 'the title scene never became active');
+            const ready = await waitForGame(win, 180000);
+            if (!ready) throw new Error('No playable game scene became active before the probe');
             const code = fs.readFileSync(path.resolve(CLI['script']), 'utf8');
             const result = await win.webContents.executeJavaScript(code, true);
             const out = CLI['script-out'] ? path.resolve(CLI['script-out']) : path.join(paths.logDir, 'script-result.json');
@@ -400,14 +400,14 @@ function lockNetwork() {
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-/* 等标题场景真正就绪。冷启动要加载字体、引擎和一批素材，
- * 固定等待时间不可靠——之前就因为探针跑得太早，读到的是空场景。 */
-async function waitForTitle(win, timeout) {
+/* 输入可能已经推进到战斗/奖励/剧情；探针等待任一游戏场景，
+ * 避免流程成功后仍等待已关闭的标题页三分钟。 */
+async function waitForGame(win, timeout) {
   const deadline = Date.now() + timeout;
   while (Date.now() < deadline) {
     try {
       const ok = await win.webContents.executeJavaScript(
-        '(()=>{try{const g=window.__game;if(!g)return false;const s=g.scene.getScene("Title");return !!(s&&s.scene.isActive());}catch(_){return false;}})()',
+        '(()=>{try{const g=window.__game;if(!g)return false;return ["Title","Combat","Reward","Event","Journal","Story"].some(k=>g.scene.isActive(k));}catch(_){return false;}})()',
         true
       );
       if (ok) return true;

@@ -18,6 +18,8 @@ if (!fs.existsSync(path.join(STAGE, 'manifest.json'))) {
   process.exit(1);
 }
 const manifest = JSON.parse(fs.readFileSync(path.join(STAGE, 'manifest.json'), 'utf8'));
+assert.equal(manifest.appVersion, require('../desktop/package.json').version, 'desktop version mismatch');
+assert.equal(manifest.gameVersion, require('../release.json').version, 'game content version mismatch');
 const sha256 = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 
 /* 1. 清单里的每一个文件都存在、大小一致、哈希一致。 */
@@ -105,6 +107,7 @@ if (fs.existsSync(unpacked)) {
   assert.deepEqual(straySave, [], 'save files must not live in the installation directory');
   ok('the installation directory carries no player save');
 } else {
+  assert.ok(!process.argv.includes('--require-package'), 'packaged output is required for release verification');
   ok('the packaged output was not built yet, so the package-level checks are skipped');
 }
 

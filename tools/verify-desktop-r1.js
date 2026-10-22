@@ -15,10 +15,13 @@ const { spawnSync, spawn } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const ART = path.join(ROOT, 'artifacts', 'desktop');
-const EVIDENCE = path.join(ROOT, 'docs', 'steam', 'evidence', 'r1');
+const EVIDENCE = process.env.BLACKFOREST_EVIDENCE_DIR
+  ? path.resolve(process.env.BLACKFOREST_EVIDENCE_DIR)
+  : path.join(ROOT, 'docs', 'steam', 'evidence', 'r1');
 const PROBES = path.join(ROOT, 'tools', 'desktop-probes');
 const INPUTS = path.join(ROOT, 'tools', 'desktop-inputs');
-const ZIP = path.join(ART, 'BlackForest-Desktop-1.0.0-x64.zip');
+const DESKTOP_VERSION = require('../desktop/package.json').version;
+const ZIP = path.join(ART, 'BlackForest-Desktop-' + DESKTOP_VERSION + '-x64.zip');
 
 const results = [];
 const tmpRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'bf-r1-'));
@@ -366,7 +369,7 @@ scenarios['performance'] = () => {
 
 /* D01：安装包实测。静默安装到中文+空格路径，再从安装目录启动。 */
 scenarios['installer'] = () => {
-  const installer = path.join(ART, 'BlackForest-Desktop-1.0.0-x64.exe');
+  const installer = path.join(ART, 'BlackForest-Desktop-' + DESKTOP_VERSION + '-x64.exe');
   if (!fs.existsSync(installer)) return record('D01-installer', '安装包', '失败', '找不到安装包');
   const installDir = path.join(tmpRoot, '安装 目录');
   fs.mkdirSync(installDir, { recursive: true });
@@ -797,7 +800,7 @@ const wanted = process.argv.slice(2);
 const list = wanted.length ? wanted : Object.keys(scenarios);
 fs.mkdirSync(EVIDENCE, { recursive: true });
 for (const name of list) {
-  if (!scenarios[name]) { console.log('unknown scenario: ' + name); continue; }
+  if (!scenarios[name]) { record(name, 'unknown scenario', '失败', name); continue; }
   try { scenarios[name](); }
   catch (e) { record(name, '场景执行异常', '失败', String((e && e.stack) || e)); }
 }
@@ -807,3 +810,4 @@ fs.writeFileSync(path.join(EVIDENCE, 'verification.json'), JSON.stringify({
   results
 }, null, 2), 'utf8');
 console.log('\nreport: ' + path.join(EVIDENCE, 'verification.json'));
+if (results.some(r => r.status === '失败')) process.exitCode = 1;

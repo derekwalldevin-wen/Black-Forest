@@ -11,6 +11,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const fs = require('node:fs');
+const crypto = require('node:crypto');
 const { stage } = require('./stage.js');
 
 const desktopDir = path.resolve(__dirname, '..');
@@ -18,7 +19,7 @@ const outputDir = path.resolve(desktopDir, '..', 'artifacts', 'desktop');
 
 function run(cmd, args) {
   console.log('> ' + cmd + ' ' + args.join(' '));
-  const r = spawnSync(cmd, args, { cwd: desktopDir, stdio: 'inherit', shell: true });
+  const r = spawnSync(cmd, args, { cwd: desktopDir, stdio: 'inherit', shell: false });
   if (r.status !== 0) {
     console.error('build step failed with code ' + r.status);
     process.exit(r.status === null ? 1 : r.status);
@@ -33,7 +34,27 @@ if (!fs.existsSync(path.join(desktopDir, 'node_modules', 'electron-builder'))) {
   process.exit(1);
 }
 
-run('npx', ['electron-builder', '--win', '--x64', '--publish', 'never']);
+const builder = require.resolve('electron-builder/out/cli/cli.js');
+run(process.execPath, [builder, '--win', '--x64', '--publish', 'never']);
+
+// Attach these files to a GitHub prerelease; do not commit executable archives.
+const { version } = require('../package.json');
+const prefix = 'BlackForest-Desktop-' + version + '-x64';
+const artifacts = ['exe', 'zip'].map(ext => {
+  const name = prefix + '.' + ext;
+  const full = path.join(outputDir, name);
+  const sha256 = crypto.createHash('sha256').update(fs.readFileSync(full)).digest('hex');
+  return { name, bytes: fs.statSync(full).size, sha256 };
+});
+const metadata = {
+  format: 'black-forest-release', version, channel: 'preview',
+  builtAt: new Date().toISOString(), sourceCommit: manifest.sourceCommit,
+  gameVersion: manifest.gameVersion, signed: false,
+  runtime: { files: manifest.fileCount, bytes: manifest.totalBytes }, artifacts
+};
+fs.writeFileSync(path.join(outputDir, 'release-manifest.json'), JSON.stringify(metadata, null, 2) + '\n');
+fs.writeFileSync(path.join(outputDir, 'SHA256SUMS.txt'),
+  artifacts.map(a => a.sha256 + '  ' + a.name).join('\n') + '\n');
 
 console.log('\nartifacts:');
 for (const name of fs.readdirSync(outputDir)) {
