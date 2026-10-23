@@ -1,0 +1,2 @@
+a7901a9dba157d6d946b293b50e6bf6fe1c407324b980af97c2aba15ed0f1fbf  BlackForest-Desktop-1.0.1-preview.1-x64.exe
+1ed4c9c6ef9fb8abc93ad153ef6f89e847ec54d9296018fad9e208a26c0f1af3  BlackForest-Desktop-1.0.1-preview.1-x64.zip

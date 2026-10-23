@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-10-23T15:08:18.950Z",
+  "status": "passed",
+  "from": "1.0.0",
+  "to": "1.0.1-preview.1",
+  "method": "Old portable executable writes isolated shared profile; new portable executable reads it. No player profile touched.",
+  "checks": [
+    "run checkpoint",
+    "run backup",
+    "language",
+    "sfx",
+    "bgm",
+    "UI preferences",
+    "reading size",
+    "collection"
+  ],
+  "before": {
+    "before": {
+      "locale": "zh-CN",
+      "sfxVolume": 0.55,
+      "sfxMuted": false,
+      "bgmVolume": 0.35,
+      "bgmMuted": false,
+      "reducedMotion": true,
+      "haptics": false
+    },
+    "saved": true,
+    "keys": [
+      "black-forest-audio-settings",
+      "black-forest-language",
+      "black-forest-music-settings",
+      "black-forest-progress-v1",
+      "black-forest-reading-size",
+      "black-forest-ui-settings",
+      "darkforest.run"
+    ],
+    "mode": "desktop",
+    "location": "Z:\\00-游戏\\portrait-card-game\\.tmp-gen\\upgrade-check-F92Fju\\shared-profile-data\\upgrade\\data",
+    "run": {
+      "starterId": "blood",
+      "difficulty": "challenge",
+      "gold": 123,
+      "hp": 55,
+      "chapter": 1
+    },
+    "version": "1.0.0"
+  },
+  "after": {
+    "mode": "desktop",
+    "location": "Z:\\00-游戏\\portrait-card-game\\.tmp-gen\\upgrade-check-F92Fju\\shared-profile-data\\upgrade\\data",
+    "keys": [
+      "black-forest-audio-settings",
+      "black-forest-language",
+      "black-forest-music-settings",
+      "black-forest-progress-v1",
+      "black-forest-reading-size",
+      "black-forest-ui-settings",
+      "darkforest.run",
+      "darkforest.run.backup"
+    ],
+    "raw": {
+      "language": "en",
+      "audio": "{\"volume\":0.31,\"muted\":true}",
+      "music": "{\"volume\":0.27,\"muted\":true}",
+      "ui": "{\"reducedMotion\":true,\"haptics\":true}",
+      "readingSize": "26",
+      "run": {
+        "schemaVersion": 1,
+        "starterId": "blood",
+        "difficulty": "challenge",
+        "chapter": 1,
+        "step": 1,
+        "hp": 55,
+        "maxHp": 60,
+        "gold": 123,
+        "deck": [
+          "strike",
+          "strike",
+          "strike",
+          "defend",
+          "defend",
+          "defend",
+          "blood_pact",
+          "drain_life"
+        ],
+        "relics": [],
+        "kills": 0,
+        "started": true,
+        "spiritMax": 3,
+        "postFightHeal": 0.2,
+        "postFightHealBig": 0.34,
+        "nextCombat": {},
+        "contracts": [],
+        "ascended": false,
+        "story": {
+          "seen": [],
+          "choices": {},
+          "pending": null
+        },
+        "market": null
+      },
+      "backup": {
+        "schemaVersion": 1,
+        "starterId": "blood",
+        "difficulty": "challenge",
+        "chapter": 1,
+        "step": 1,
+        "hp": 55,
+        "maxHp": 60,
+        "gold": 123,
+        "deck": [
+          "strike",
+          "strike",
+          "strike",
+          "defend",
+          "defend",
+          "defend",
+          "blood_pact",
+          "drain_life"
+        ],
+        "relics": [],
+        "kills": 0,
+        "started": true,
+        "spiritMax": 3,
+        "postFightHeal": 0.2,
+        "postFightHealBig": 0.34,
+        "nextCombat": {},
+        "contracts": [],
+        "ascended": false,
+        "story": {
+          "seen": [],
+          "choices": {},
+          "pending": null
+        },
+        "market": null
+      },
+      "progress": {
+        "version": 1,
+        "cards": [
+          "blood_pact",
+          "defend",
+          "drain_life",
+          "strike"
+        ],
+        "relics": [],
+        "enemies": [
+          "wolf"
+        ],
+        "events": [],
+        "victories": []
+      }
+    },
+    "applied": {
+      "locale": "en",
+      "sfxVolume": 0.31,
+      "sfxMuted": true,
+      "bgmVolume": 0.27,
+      "bgmMuted": true,
+      "reducedMotion": true,
+      "haptics": true
+    },
+    "runLoaded": true,
+    "run": {
+      "starterId": "blood",
+      "difficulty": "challenge",
+      "gold": 123,
+      "hp": 55,
+      "chapter": 1,
+      "step": 1
+    },
+    "saveStatus": null,
+    "version": "1.0.1-preview.1"
+  }
+}

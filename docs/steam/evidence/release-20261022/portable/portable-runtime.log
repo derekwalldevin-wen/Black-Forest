@@ -1,0 +1,6 @@
+2026-10-22T14:40:58.686Z [validator] keys=darkforest.run,darkforest.run.backup,black-forest-progress-v1,black-forest-language,black-forest-audio-settings,black-forest-music-settings,black-forest-ui-settings,black-forest-reading-size
+2026-10-22T14:40:58.765Z [start] webRoot=C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\解压 运行包\resources\app-web data=C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\资料 目录\verify\data profile=verify
+2026-10-22T14:41:00.455Z [console] [info] %c %c %c %c %c Phaser v3.80.1 (WebGL | Web Audio) %c https://phaser.io background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent (app://bundle/assets/vendor/phaser-3.80.1.min.js:1)
+2026-10-22T14:41:19.473Z [input] steps=35
+2026-10-22T14:41:19.528Z [script] result written to C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\portable-state.json
+2026-10-22T14:41:19.642Z [capture] Z:\00-游戏\portrait-card-game\docs\steam\evidence\release-20261022\portable\09-portable-final.png

@@ -1,0 +1,59 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "totalMs": 6016,
+      "titleReadyMs": 2816,
+      "combatReadyMs": 5716,
+      "titleSatisfied": true,
+      "combatSatisfied": true,
+      "exit": 0
+    },
+    {
+      "run": 2,
+      "totalMs": 6020,
+      "titleReadyMs": 2842,
+      "combatReadyMs": 5748,
+      "titleSatisfied": true,
+      "combatSatisfied": true,
+      "exit": 0
+    },
+    {
+      "run": 3,
+      "totalMs": 6048,
+      "titleReadyMs": 2864,
+      "combatReadyMs": 5770,
+      "titleSatisfied": true,
+      "combatSatisfied": true,
+      "exit": 0
+    },
+    {
+      "run": 4,
+      "totalMs": 6092,
+      "titleReadyMs": 2854,
+      "combatReadyMs": 5821,
+      "titleSatisfied": true,
+      "combatSatisfied": true,
+      "exit": 0
+    },
+    {
+      "run": 5,
+      "totalMs": 6004,
+      "titleReadyMs": 2798,
+      "combatReadyMs": 5731,
+      "titleSatisfied": true,
+      "combatSatisfied": true,
+      "exit": 0
+    }
+  ],
+  "title": {
+    "min": 2798,
+    "max": 2864,
+    "avg": 2835
+  },
+  "combat": {
+    "min": 5716,
+    "max": 5821,
+    "avg": 5757
+  }
+}

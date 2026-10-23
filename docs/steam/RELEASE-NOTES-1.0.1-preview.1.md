@@ -43,7 +43,7 @@
 
 ## 验证边界与反馈
 
-历史 R1 记录见 [R1 桌面报告](R1-DESKTOP-REPORT.md)，本次候选包的复测与校验值见 [发布准备记录](RELEASE-PREP-20261022.md)。
+历史 R1 记录见 [R1 桌面报告](https://github.com/derekwalldevin-wen/Black-Forest/blob/codex/r1-desktop/docs/steam/R1-DESKTOP-REPORT.md)，本次候选包的复测与校验值见 [发布准备记录](https://github.com/derekwalldevin-wen/Black-Forest/blob/codex/r1-desktop/docs/steam/RELEASE-PREP-20261022.md)。
 
 仍待补齐：真正干净 Windows 电脑验收、跨设备与系统缩放验收、英文人工审校、真人构筑平衡和重玩体验、实体音响听感。手柄、Steam Deck、Steam 云存档与 Steam 成就未声明支持。本地成就不是 Steam 成就。
 

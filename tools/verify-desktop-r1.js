@@ -27,7 +27,9 @@ const results = [];
 const tmpRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'bf-r1-'));
 
 function record(id, title, status, detail, evidence) {
-  results.push({ id, title, status, detail, evidence: evidence || [] });
+  const evidenceRoot = path.relative(ROOT, EVIDENCE).split(path.sep).join('/');
+  const evidencePaths = (evidence || []).map(file => file.replace('docs/steam/evidence/r1', evidenceRoot));
+  results.push({ id, title, status, detail, evidence: evidencePaths });
   console.log('[' + id + '] ' + status + ' — ' + title);
   if (detail) console.log('    ' + String(detail).split('\n').join('\n    '));
 }
@@ -326,7 +328,7 @@ scenarios['duplicate-launch'] = () => {
   record('D08', '重复启动的行为', secondInstance > 0 ? '通过' : '部分通过', detail, ['docs/steam/evidence/r1/']);
 };
 
-/* D11：五次冷启动到标题与首战可操作。
+/* D11：五次新进程、新资料目录启动到标题与首战可操作；不清理操作系统缓存。
  * 每次必须用独立的资料目录：共用的话第二次起标题会变成「继续征途」，
  * 按钮位置变了，固定坐标点空，测出来的就不是冷启动而是空等。 */
 scenarios['performance'] = () => {
@@ -363,7 +365,7 @@ scenarios['performance'] = () => {
   const detail = JSON.stringify({ runs, title: stat(titles), combat: stat(combats) }, null, 2);
   fs.writeFileSync(path.join(EVIDENCE, 'performance.json'), detail, 'utf8');
   const allOk = runs.every(r => r.titleSatisfied && r.combatSatisfied);
-  record('D11', '五次冷启动计时', titles.length === 5 && allOk ? '通过' : '部分通过', detail,
+  record('D11', '五次新进程、新资料目录启动计时（系统缓存未控制）', titles.length === 5 && allOk ? '通过' : '部分通过', detail,
     ['docs/steam/evidence/r1/performance.json']);
 };
 

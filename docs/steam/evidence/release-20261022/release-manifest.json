@@ -1,0 +1,25 @@
+{
+  "format": "black-forest-release",
+  "version": "1.0.1-preview.1",
+  "channel": "preview",
+  "builtAt": "2026-10-22T14:36:39.466Z",
+  "sourceCommit": "2e43d99fd5ca223368726839fc1c886ea49d9054",
+  "gameVersion": "20261018-review-polish",
+  "signed": false,
+  "runtime": {
+    "files": 281,
+    "bytes": 49437446
+  },
+  "artifacts": [
+    {
+      "name": "BlackForest-Desktop-1.0.1-preview.1-x64.exe",
+      "bytes": 159876125,
+      "sha256": "a7901a9dba157d6d946b293b50e6bf6fe1c407324b980af97c2aba15ed0f1fbf"
+    },
+    {
+      "name": "BlackForest-Desktop-1.0.1-preview.1-x64.zip",
+      "bytes": 201581074,
+      "sha256": "1ed4c9c6ef9fb8abc93ad153ef6f89e847ec54d9296018fad9e208a26c0f1af3"
+    }
+  ]
+}

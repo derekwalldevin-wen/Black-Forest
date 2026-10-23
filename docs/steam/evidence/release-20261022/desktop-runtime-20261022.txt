@@ -1,0 +1,244 @@
+[D01] 通过 — 从独立目录解压、启动、进入战斗
+    exe: C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\解压 运行包\Black Forest.exe
+    data: C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\资料 目录
+    exit=0 elapsed=22072ms
+    资源 404: 0 / 渲染错误: 0 / 被拦截外网请求: 0
+    流程到达战斗: true / 结束时在战斗场景: true
+    存储键: black-forest-progress-v1,black-forest-reading-size,darkforest.run,darkforest.run.backup
+[D05] 通过 — 八类存储关闭重开后保留
+    OK   语言 → "en"
+    OK   音效音量/静音 → "{\"volume\":0.31,\"muted\":true}"
+    OK   音乐音量/静音 → "{\"volume\":0.27,\"muted\":true}"
+    OK   减少动态/触感 → "{\"reducedMotion\":true,\"haptics\":true}"
+    OK   阅读字号 → "26"
+    OK   本局检查点 → "{\"starterId\":\"blood\",\"difficulty\":\"challenge\",\"gold\":123,\"hp\":55,\"chapter\":1,\"step\":1}"
+    OK   收藏进度键 → true
+    两次运行退出码: 0 / 0
+[D06] 通过 — 损坏 / 双损坏 / 未来格式 / 中断写入 / 拒写
+    基础存档已建立: 主档=true 侧车=true 游戏级备份=true
+    主档损坏 → 状态=recovered，仍能读出本局=true，坏文件保留=true
+    主档损坏且无侧车 → 状态=recovered，仍能读出本局=true
+    双档损坏 → 状态=corrupt，主档保留=true，备份保留=true
+    未来版本存档 → 状态=future，文件未被覆盖=true
+    中断写入残留 → 读到的主档=有效，状态=null
+    只读主档 → 写入返回=false，存档状态=writeFailure，原有数据未被破坏=true
+    资料目录不可创建 → 写入返回=false，存档状态=writeFailure，程序仍正常退出=true
+[D07] 通过 — 中断清档不复活旧局；新局落盘后旧局不回来
+    旧局 A 已落盘: true
+    模拟中断清档：备份已删、主档保留=true
+    新局 B 落盘: talisman/story/gold=777
+    重进后读到的局: {"starterId":"talisman","difficulty":"story","gold":777,"hp":33,"chapter":2,"step":0}（应为局 B：talisman/story/gold 777/hp 33）
+    旧局 A 是否复活: 否
+    存档状态: null
+[D02] 通过 — 会话层断网：外网请求被拦截
+    外网尝试: https://example.com/ → 被拦截
+               http://127.0.0.1:1/ → 被拦截
+               https://cdn.jsdelivr.net/npm/x → 被拦截
+    主进程记录的拦截计数: 0，日志里的拦截行: 0
+    结论: 没有任何外网请求能出去
+[D01-installer] 通过 — 安装包：安装 → 启动 → 存档不进安装目录
+    安装目录: C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\安装 目录
+    安装退出码=0
+    安装后可执行文件存在=true
+    从安装目录启动退出码=0
+    启动后模式=desktop，资源就绪=true
+    安装目录里的玩家数据文件=0 个（应为 0）
+    数据目录=C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\install-data\installed\data
+[D04] 通过 — 十八战 / 事件 / 商店 / 结局在桌面包可达
+    十八战: 18/18 就绪
+      第1章第1战 gothic → wolf（灰狼 HP26）
+      第1章第2战 gothic → mushroom（毒蝇伞 HP25）
+      第1章第3战 gothic → alpha_wolf（头狼 HP57）
+      第2章第1战 gothic → witch（森林女巫 HP32）
+      第2章第2战 gothic → boar（铁鬃野猪 HP37）
+      第2章第3战 gothic → bog_witch（沼泽女巫 HP61）
+      第3章第1战 gothic → wolf（灰狼 HP27）
+      第3章第2战 gothic → alpha_wolf（头狼 HP55）
+      第3章第3战 gothic → forest_lord（黑暗森林之主 HP83）
+      第4章第1战 shanhai → nine_tail（九尾狐 HP35）
+      第4章第2战 shanhai → lu_shu（鹿蜀 HP36）
+      第4章第3战 shanhai → qiongqi（穷奇 HP63）
+      第5章第1战 shanhai → xiangliu（相柳 HP48）
+      第5章第2战 shanhai → fei（蜚 HP35）
+      第5章第3战 shanhai → huodou（祸斗 HP70）
+      第6章第1战 shanhai → taotie（饕餮 HP55）
+      第6章第2战 shanhai → baize（白泽 HP46）
+      第6章第3战 shanhai → dijiang（帝江 HP124）
+    事件: campfire✓、ancient_stele✓、black_market✓、nine_heads✓
+    商店: {"dialogOpen":true,"items":3,"hasRemove":true}
+    奖励场景就绪: {"ready":true}；结局: {"ready":true,"victory":true}
+    素材加载失败: []；协议层 404: 0
+    已加载贴图: 237
+[D03-en] 通过 — 英文流程：标题→传承→难度→出牌→敌方回合
+    退出码=0
+    语言=en
+    出牌后的状态: {"locale":"en","hand":4,"energy":2,"enemyHp":30}
+    结束时的场景: ["Combat"]，敌人 HP=30
+    资源 404: 0
+[迁移] 通过 — 网页导出文件 → 桌面导入：备份、写入、拒绝不合格文件
+    导入返回: {"ok":true,"applied":["darkforest.run","black-forest-progress-v1","black-forest-language","black-forest-audio-settings","black-forest-music-settings","black-forest-ui-settings","black-forest-reading-size"],"backupDir":"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-OnlkOB\\transfer-data\\transfer\\backups\\import-2026-10-22T14-43-57-978Z"}
+    导入后存在的键: ["darkforest.run","black-forest-progress-v1","black-forest-language","black-forest-audio-settings","black-forest-music-settings","black-forest-ui-settings","black-forest-reading-size"]
+    导入后的值: {"language":"en","readingSize":"26","audio":"{\"volume\":0.31,\"muted\":true}","music":"{\"volume\":0.27,\"muted\":true}","ui":"{\"reducedMotion\":true,\"haptics\":true}","runGold":123,"runStarter":"blood","progressCards":4}
+    导入后本局能读出来: true
+    不合格文件的导入返回: {"ok":false,"code":"futureVersion"}
+    不合格导入没有改动现有数据: true
+    导入前做的备份目录: ["import-2026-10-22T14-43-57-978Z"]
+[D10-部分] 通过 — 无 Node/Python 的 PATH、无源码目录启动
+    PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem（里面没有 node / python）
+    工作目录=C:\Users\ADMINI~1\AppData\Local\Temp\bf-r1-OnlkOB\no-node-cwd（没有项目源码）
+    退出码=0
+    到达战斗=true
+    结束时场景=["Combat"]
+    运行期存储键=["black-forest-progress-v1","black-forest-reading-size","darkforest.run","darkforest.run.backup"]
+[D03-reward] 通过 — 奖励→商店→继续（真实点击链）
+    退出码=0，截图 6 张（evidence/r1/reward-shop/）
+    各步回报：
+      {"active":true,"step":2,"chapter":0,"gold":0,"deck":8,"starter":"classic","skipBtn":{"x":280,"y":1760,"active":true},"shopBtn":null}
+      {"stage":"continue","shopButton":{"x":540,"y":1610,"active":true},"gold":12,"deck":8}
+      gold=200
+      {"dialogOpen":true,"items":3,"title":"旅途补给 · ◆ 200"}
+      {"gold":95,"deck":8,"market":{"step":2,"stock":["blood_pact","iron_wall","quick_jab"],"sold":[0],"removed":true,"skipped":true},"items":3}
+      {"shopClosed":true,"stage":"continue"}
+      直接进战斗
+      {"combat":true,"enemy":"witch","storyActive":false,"chapter":1,"step":0}
+[D08-modal] 通过 — 模态弹窗的焦点进入与退出
+    退出码=0
+      {"dialogOpen":true,"activeTag":"BUTTON","activeText":"返回战斗","focusInsideDialog":true}
+      {"dialogClosed":true,"activeTag":"BUTTON","activeClass":"hand-reader-entry","activeText":"手牌一览 · H"}
+      {"stillInCombat":true,"busy":false,"hand":5}
+[D08-fullscreen] 通过 — 全屏开关（主进程窗口接口）
+    {
+      "before": {
+        "fullScreen": false,
+        "bounds": {
+          "x": 693,
+          "y": 42,
+          "width": 534,
+          "height": 949
+        },
+        "focused": true
+      },
+      "during": {
+        "fullScreen": true,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "focused": true
+      },
+      "after": {
+        "fullScreen": false,
+        "bounds": {
+          "x": 693,
+          "y": 42,
+          "width": 534,
+          "height": 949
+        },
+        "focused": true
+      },
+      "worked": true
+    }
+[D07-legacy] 通过 — 旧存档（无 schemaVersion/starterId）导入桌面试玩版并迁移
+    {
+      "importResult": {
+        "ok": true,
+        "applied": [
+          "darkforest.run",
+          "black-forest-language"
+        ],
+        "backupDir": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\bf-r1-OnlkOB\\legacy-data\\legacy\\backups\\import-2026-10-22T14-45-13-416Z"
+      },
+      "fileBeforeLoad": {
+        "hasSchemaVersion": false,
+        "hasStarterId": false,
+        "hasContracts": false,
+        "hasStory": false,
+        "deck": 8,
+        "gold": 50
+      },
+      "loaded": true,
+      "run": {
+        "starterId": "classic",
+        "difficulty": "standard",
+        "hp": 60,
+        "maxHp": 70,
+        "gold": 50,
+        "chapter": 0,
+        "step": 0,
+        "deckSize": 8,
+        "contracts": 0
+      },
+      "fileAfterLoad": {
+        "schemaVersion": 1,
+        "starterId": "classic",
+        "contracts": 0,
+        "story": {
+          "seen": 0,
+          "choices": 0
+        }
+      }
+    }
+[D11] 通过 — 五次冷启动计时
+    {
+      "runs": [
+        {
+          "run": 1,
+          "totalMs": 6016,
+          "titleReadyMs": 2816,
+          "combatReadyMs": 5716,
+          "titleSatisfied": true,
+          "combatSatisfied": true,
+          "exit": 0
+        },
+        {
+          "run": 2,
+          "totalMs": 6020,
+          "titleReadyMs": 2842,
+          "combatReadyMs": 5748,
+          "titleSatisfied": true,
+          "combatSatisfied": true,
+          "exit": 0
+        },
+        {
+          "run": 3,
+          "totalMs": 6048,
+          "titleReadyMs": 2864,
+          "combatReadyMs": 5770,
+          "titleSatisfied": true,
+          "combatSatisfied": true,
+          "exit": 0
+        },
+        {
+          "run": 4,
+          "totalMs": 6092,
+          "titleReadyMs": 2854,
+          "combatReadyMs": 5821,
+          "titleSatisfied": true,
+          "combatSatisfied": true,
+          "exit": 0
+        },
+        {
+          "run": 5,
+          "totalMs": 6004,
+          "titleReadyMs": 2798,
+          "combatReadyMs": 5731,
+          "titleSatisfied": true,
+          "combatSatisfied": true,
+          "exit": 0
+        }
+      ],
+      "title": {
+        "min": 2798,
+        "max": 2864,
+        "avg": 2835
+      },
+      "combat": {
+        "min": 5716,
+        "max": 5821,
+        "avg": 5757
+      }
+    }
+
+report: Z:\00-游戏\portrait-card-game\docs\steam\evidence\release-20261022\verification.json
