@@ -22,7 +22,8 @@ const GAME_PREFS = {
   set(key, value) {
     if (!['reducedMotion', 'haptics'].includes(key)) return;
     this[key] = !!value; this.apply();
-    try { if (STORAGE_BACKEND.setItem('black-forest-ui-settings', JSON.stringify({reducedMotion:this.reducedMotion,haptics:this.haptics}))===false) STORAGE_BACKEND.reportFailure(); } catch (_) {}
+    try { const previous=JSON.parse(STORAGE_BACKEND.getItem('black-forest-ui-settings')||'{}');
+      if (STORAGE_BACKEND.setItem('black-forest-ui-settings', JSON.stringify({...previous,reducedMotion:this.reducedMotion,haptics:this.haptics}))===false) STORAGE_BACKEND.reportFailure(); } catch (_) {}
   },
   pulse() { if (this.haptics && typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(18); }
 };
@@ -107,7 +108,11 @@ function addGameNavigation(scene) {
   b.on('pointerdown',(p,x,y,ev)=>{if(ev)ev.stopPropagation();openGameOverlay(scene,'pause');});
   b.on('pointerover',()=>b.setAlpha(.8));b.on('pointerout',()=>b.setAlpha(1));
   scene._navButtons={pause:b,menu:b};nav.add(b);
-  const key=e=>{if(e.code==='Escape'&&!scene._modalOpen)openGameOverlay(scene,'pause');};
+  const key=e=>{if(e.code!=='Escape'||e.repeat||scene._modalOpen||e.target?.closest?.('dialog,input,select,textarea'))return;
+    e.preventDefault();
+    if(scene.state?.selected&&!scene.state.busy)scene.selectCard(null);
+    else openGameOverlay(scene,'pause');
+  };
   scene.input.keyboard.on('keydown',key);
   scene.events.once('shutdown',()=>scene.input.keyboard.off('keydown',key));
   return nav;

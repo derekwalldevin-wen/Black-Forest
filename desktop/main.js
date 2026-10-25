@@ -22,9 +22,8 @@ const { Logger } = require('./lib/logger');
 
 const WEB_SCHEME = 'app';
 const WEB_HOST = 'bundle';
-const GAME_ASPECT = 1080 / 1920;
-const MIN_W = 380;
-const MIN_H = 640;
+const MIN_W = 360;
+const MIN_H = 440;
 /* 进程启动时刻：冷启动计时用它，量的是「从拉起程序到界面可用」。 */
 const PROCESS_START = Date.now();
 
@@ -137,13 +136,13 @@ function registerAppProtocol() {
   });
 }
 
-/* 窗口尺寸：竖屏 9:16，按当前显示器工作区缩放。
+/* 宽屏默认窗口保留中央 9:16 战斗区，余量用于原生阅读栏。
  * 恢复的旧位置如果落在已经拔掉的显示器上，回到主显示器中央。 */
 function fitBounds(saved) {
   const display = screen.getPrimaryDisplay();
   const work = display.workArea;
   const defH = Math.max(MIN_H, Math.min(Math.round(work.height * 0.92), 1040));
-  const defW = Math.max(MIN_W, Math.round(defH * GAME_ASPECT));
+  const defW = Math.max(MIN_W, Math.min(1280, Math.round(work.width * 0.94)));
   const center = {
     x: Math.round(work.x + (work.width - defW) / 2),
     y: Math.round(work.y + (work.height - defH) / 2),

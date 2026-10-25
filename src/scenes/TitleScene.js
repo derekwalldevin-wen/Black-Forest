@@ -176,7 +176,7 @@ class TitleScene extends Phaser.Scene {
     }
 
     makeButton(this, cx, by + gap * (hasSave ? 2 : 1), 840, 144, I18N.t('title.help'), () => {
-      this.showHelp();
+      TUTORIAL.open(this,{replay:true});
     }, { accent: PAL.blue, color: 0x1e2634 }).setDepth(4);
 
     this.add.text(cx, 1840, I18N.t('title.footer'), {

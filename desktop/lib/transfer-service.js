@@ -111,6 +111,10 @@ class TransferService {
         if (!p || typeof p !== 'object' || Array.isArray(p)) return { ok: false, code: 'invalidValue' };
         if (p.reducedMotion !== undefined && typeof p.reducedMotion !== 'boolean') return { ok: false, code: 'invalidValue' };
         if (p.haptics !== undefined && typeof p.haptics !== 'boolean') return { ok: false, code: 'invalidValue' };
+        if (p.tutorialR2 !== undefined) {
+          const g=p.tutorialR2;
+          if(!g||typeof g!=='object'||Array.isArray(g)||typeof g.disabled!=='boolean'||!Array.isArray(g.seen)||g.seen.length>3||g.seen.some(id=>!['first','combo','reward'].includes(id))||new Set(g.seen).size!==g.seen.length)return { ok: false, code: 'invalidValue' };
+        }
         return { ok: true };
       }
       case 'black-forest-reading-size':

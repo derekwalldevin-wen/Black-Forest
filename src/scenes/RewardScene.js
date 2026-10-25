@@ -94,7 +94,7 @@ class RewardScene extends Phaser.Scene {
      * 数字键只认 /^Digit([1-9])$/ 收不到小键盘（Numpad1）和部分输入法布局，
      * 长按还会连发。跟 CombatScene 用同一套解析。 */
     this.input.keyboard.on('keydown', (e) => {
-      if (this._ending) return;
+      if (this._ending || this._modalOpen || DESKTOP_UI.isControlEvent(e)) return;
       if (e.repeat) return;
       const dm = /^(?:Digit|Numpad)([1-9])$/.exec(e.code || '');
       const digit = dm ? dm[1] : (/^[1-9]$/.test(e.key || '') ? e.key : null);

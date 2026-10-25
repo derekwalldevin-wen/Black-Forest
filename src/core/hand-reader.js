@@ -4,7 +4,7 @@ const HAND_READER = {
     const entry=document.createElement('button');entry.className='hand-reader-entry';
     entry.textContent=I18N.locale==='en'?'Read hand · H':'手牌一览 · H';
     entry.setAttribute('aria-haspopup','dialog');document.body.append(entry);
-    const position=()=>{const r=scene.game.canvas.getBoundingClientRect();entry.style.left=(r.left+r.width*.5)+'px';entry.style.top=(r.top+r.height*.635)+'px';entry.hidden=!scene.scene.isActive();};
+    const position=()=>{const r=scene.game.canvas.getBoundingClientRect();entry.style.left=(r.left+12)+'px';entry.style.top=(r.top+r.height*.13)+'px';entry.style.transform='none';entry.hidden=!scene.scene.isActive();};
     const open=()=>this.open(scene,entry);
     entry.addEventListener('click',open);
     const key=e=>{if(e.code==='KeyH'&&scene.scene.isActive()&&!scene._modalOpen){e.preventDefault();open();}};
@@ -42,7 +42,7 @@ const HAND_READER = {
     }
     const close=document.createElement('button');close.textContent=en?'Back to battle':'返回战斗';close.addEventListener('click',()=>dialog.close());dialog.append(close);
     dialog.addEventListener('keydown',e=>e.stopPropagation());
-    dialog.addEventListener('close',()=>{dialog.remove();scene._handDialog=null;scene._modalOpen=false;if(scene.sys.isPaused())scene.scene.resume();entry?.focus();if(selected&&S.hand.includes(selected))scene.selectCard(selected);},{once:true});
+    dialog.addEventListener('close',()=>{dialog.remove();scene._handDialog=null;scene._modalOpen=false;if(scene.sys.isPaused())scene.scene.resume();entry?.focus();if(selected&&S.hand.includes(selected)&&S.selected!==selected)scene.selectCard(selected);},{once:true});
     scene._modalOpen=true;scene._handDialog=dialog;scene.scene.pause();document.body.append(dialog);dialog.showModal();close.focus();
   }
 };

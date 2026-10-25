@@ -369,9 +369,9 @@ class CombatScene extends Phaser.Scene {
      * 这里按一下就直接打出，不走触屏那套「选中 → 上滑」：
      * 桌面端用鼠标拖拽本来就是反人类的，一次按键出一张牌才对。 */
     this.input.keyboard.on('keydown', (e) => {
+      if (e.repeat || this._modalOpen || DESKTOP_UI.isControlEvent(e)) return;
       if (this.state && this.state.busy) return;
       if (e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); this.endTurn(); return; }
-      if (e.repeat) return;
       let digit = null;
       const m = /^(?:Digit|Numpad)([1-9])$/.exec(e.code || '');
       if (m) digit = m[1];
@@ -554,7 +554,7 @@ class CombatScene extends Phaser.Scene {
 
   endTurn() {
     const S = this.state;
-    if (S.busy || !S.enemy.alive) return;
+    if (S.busy || this._modalOpen || !S.enemy.alive) return;
     finishPlayerTactic(S);
     SFX.play(this,'turn');
     S.busy = true;
@@ -741,7 +741,7 @@ class CombatScene extends Phaser.Scene {
    * 提示条由 syncHandFocus 统一挂 / 收，避免出现「提示条还挂着但牌已经没了」。 */
   selectCard(card) {
     const S = this.state;
-    if (S.busy) return;
+    if (S.busy || this._modalOpen) return;
 
     if (card === null) {
       if (S.selected) S.selected.setSelected(false);
@@ -807,7 +807,7 @@ class CombatScene extends Phaser.Scene {
   playCard(card) {
     const S = this.state;
     // 所有输入入口共用提交校验，过期手势不能移除牌或重复扣费。
-    if (!S || S.busy || !S.enemy.alive || !card || card._leaving || !S.hand.includes(card)) return false;
+    if (!S || S.busy || this._modalOpen || !S.enemy.alive || !card || card._leaving || !S.hand.includes(card)) return false;
     const d = card.def;
     const payable = effectiveCost(d, S.resonance);
     const available = cardCostType(d) === 'spirit' ? S.spirit : S.energy;

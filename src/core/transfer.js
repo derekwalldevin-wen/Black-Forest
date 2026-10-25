@@ -11,7 +11,7 @@
 const TRANSFER = {
   FORMAT: 'black-forest-transfer',
   VERSION: 1,
-  APP_VERSION: '20261018-review-polish',
+  APP_VERSION: '20261025-r2',
   MAX_FILE_BYTES: 2 * 1024 * 1024,
   MAX_VALUE_BYTES: 512 * 1024,
 
@@ -61,6 +61,10 @@ const TRANSFER = {
         if (!p || typeof p !== 'object' || Array.isArray(p)) return 'invalidValue';
         if (p.reducedMotion !== undefined && typeof p.reducedMotion !== 'boolean') return 'invalidValue';
         if (p.haptics !== undefined && typeof p.haptics !== 'boolean') return 'invalidValue';
+        if (p.tutorialR2 !== undefined) {
+          const g=p.tutorialR2;
+          if(!g||typeof g!=='object'||Array.isArray(g)||typeof g.disabled!=='boolean'||!Array.isArray(g.seen)||g.seen.length>3||g.seen.some(id=>!['first','combo','reward'].includes(id))||new Set(g.seen).size!==g.seen.length)return 'invalidValue';
+        }
         return null;
       }
       case 'black-forest-reading-size':

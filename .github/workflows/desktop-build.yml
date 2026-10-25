@@ -2,9 +2,9 @@ name: Windows desktop candidate
 
 on:
   push:
-    branches: [main, codex/r1-desktop]
+    branches: [main, codex/r1-desktop, codex/r2-desktop]
   pull_request:
-    branches: [main]
+    branches: [main, codex/r1-desktop]
   workflow_dispatch:
 
 permissions:

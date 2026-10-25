@@ -128,5 +128,26 @@ assert.equal(Object.keys(emptyBuild.data).length, 0);
 assert.equal(T.parse(JSON.stringify(emptyBuild)).code, 'noData');
 ok('an export taken with nothing stored is rejected on import instead of silently clearing data');
 
+/* R2 guide preferences remain compatible, and both import boundaries reject malformed tips. */
+const hostModule={exports:{}};
+vm.runInNewContext(fs.readFileSync('desktop/lib/transfer-service.js','utf8'),{
+  module:hostModule,exports:hostModule.exports,Buffer,require:id=>id==='electron'?{dialog:{}}:require(id)
+});
+const host=new hostModule.exports.TransferService({}, {}, {});
+for(const config of [
+  {seen:[],disabled:false},
+  {seen:['first','combo','reward'],disabled:true}
+]){
+  const raw=JSON.stringify({reducedMotion:true,haptics:false,tutorialR2:config});
+  assert.equal(T.validateValue('black-forest-ui-settings',raw),null);
+  assert.equal(host.validateValue('black-forest-ui-settings',raw).ok,true);
+}
+for(const config of [null,{seen:['unknown'],disabled:false},{seen:['first','first'],disabled:false},{seen:'first',disabled:false},{seen:[],disabled:'yes'}]){
+  const raw=JSON.stringify({tutorialR2:config});
+  assert.equal(T.validateValue('black-forest-ui-settings',raw),'invalidValue');
+  assert.equal(host.validateValue('black-forest-ui-settings',raw).ok,false);
+}
+ok('R2 tutorial preferences preserve old settings and reject malformed or duplicate lesson IDs on both import boundaries');
+
 console.log('PASS: ' + checks.length + ' progress transfer scenarios.');
 for (const c of checks) console.log('  - ' + c);

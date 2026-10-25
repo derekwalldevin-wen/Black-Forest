@@ -27,6 +27,8 @@ window.addEventListener('load', async () => {
   if(notice)notice.textContent=I18N.t('shell.loading');
   await loadGameFont();
   if(notice)notice.remove();
+  DESKTOP_UI.installInputFence();
   const game = new Phaser.Game(GAME_CONFIG);
   window.__game = game;   // 方便在控制台调试
+  DESKTOP_UI.mount(game);
 });

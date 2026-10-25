@@ -1,7 +1,7 @@
 {
   "name": "black-forest-desktop",
   "productName": "Black Forest",
-  "version": "1.0.1-preview.1",
+  "version": "1.1.0-preview.1",
   "description": "黑森林 · Black Forest — 离线可玩、进度可靠保存的 Windows 桌面试玩版",
   "author": "Black Forest",
   "license": "MIT",
@@ -40,8 +40,18 @@
     "win": {
       "icon": "build/icon.png",
       "target": [
-        { "target": "nsis", "arch": ["x64"] },
-        { "target": "zip", "arch": ["x64"] }
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
       ],
       "artifactName": "BlackForest-Desktop-${version}-${arch}.${ext}"
     },
