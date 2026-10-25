@@ -35,7 +35,18 @@ if (!fs.existsSync(path.join(desktopDir, 'node_modules', 'electron-builder'))) {
 }
 
 const builder = require.resolve('electron-builder/out/cli/cli.js');
-run(process.execPath, [builder, '--win', '--x64', '--publish', 'never']);
+const builderArgs = [builder, '--win', '--x64', '--publish', 'never'];
+// Optional, version-checked local runtime for offline builds. CI keeps its locked download path.
+if (process.env.BLACKFOREST_ELECTRON_DIST) {
+  const dist = path.resolve(process.env.BLACKFOREST_ELECTRON_DIST);
+  const actual = fs.readFileSync(path.join(dist, 'version'), 'utf8').trim();
+  const expected = require('../package.json').devDependencies.electron;
+  if (actual !== expected || !fs.existsSync(path.join(dist, 'electron.exe'))) {
+    throw new Error('Local Electron runtime must match the locked version ' + expected);
+  }
+  builderArgs.push('--config.electronDist=' + dist);
+}
+run(process.execPath, builderArgs);
 
 // Attach these files to a GitHub prerelease; do not commit executable archives.
 const { version } = require('../package.json');

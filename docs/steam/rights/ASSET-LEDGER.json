@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T01:02:56.907Z",
+  "generatedAt": "2026-10-25T01:13:05.825Z",
   "scope": "Current runtime assets plus included third-party licence files; source code, text and contributor assignments need separate review",
   "commercialClearance": false,
   "summary": {
@@ -780,8 +780,8 @@
     },
     {
       "file": "assets/desktop-ui.css",
-      "bytes": 4171,
-      "sha256": "1948499bd44498a7f06082da9d937c1592e1e056d4d4ebd481c254543c9ea535",
+      "bytes": 4660,
+      "sha256": "6b7686012eaf15e6416a49acf594fb1f4bbecf951e56c2767cec407c262d8c01",
       "group": "interface-code",
       "sourceEvidence": [
         "assets/desktop-ui.css"
