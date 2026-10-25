@@ -1,0 +1,34 @@
+[
+  {
+    "waitFor": "(()=>{const c=__game?.scene.getScene(\"Combat\");return c?.scene.isActive()&&!c.state.busy&&c.state.hand.length>0})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 4092
+  },
+  {
+    "clickSelector": ".hand-reader-entry",
+    "text": "Read hand · H",
+    "at": {
+      "x": 76,
+      "y": 123
+    }
+  },
+  {
+    "waitFor": "!!document.querySelector(\"dialog.hand-reader[open]\")",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 4323
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\narrow-reader\\reader.png"
+  },
+  {
+    "key": "Escape"
+  },
+  {
+    "waitFor": "(()=>{const c=__game?.scene.getScene(\"Combat\");return c?.scene.isActive()&&!c.state.busy&&c.state.hand.length>0})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 4542
+  }
+]

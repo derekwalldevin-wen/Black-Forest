@@ -1,0 +1,36 @@
+staged 284 files, 47.17 MB
+> C:\Users\Administrator\AppData\Local\Microsoft\WinGet\Packages\OpenJS.NodeJS.22_Microsoft.Winget.Source_8wekyb3d8bbwe\node-v22.22.0-win-x64\node.exe Z:\00-游戏\portrait-card-game\desktop\node_modules\electron-builder\out\cli\cli.js --win --x64 --publish never --config.electronDist=Z:\00-游戏\portrait-card-game\desktop\node_modules\electron\dist
+  • electron-builder  version=26.15.3 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=44.9.0 arch=x64 buildFromSource=false workspaceRoot=Z:\00-游戏\portrait-card-game\desktop projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=44.9.0 appOutDir=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked
+  • using custom unpacked Electron distribution  electronDist=node_modules\electron\dist
+  • copying unpacked Electron  source=Z:\00-游戏\portrait-card-game\desktop\node_modules\electron\dist destination=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked
+  • searching for node modules  pm=npm searchDir=Z:\00-游戏\portrait-card-game\desktop
+  • searching for node modules  pm=traversal searchDir=Z:\00-游戏\portrait-card-game\desktop
+  • using manual traversal of node_modules to build dependency tree
+  • no node modules returned while searching directories  searchDirectories=[""]
+  • updating asar integrity executable resource  executablePath=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked\Black Forest.exe
+  • signing with signtool.exe  path=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked\Black Forest.exe
+  • building        target=zip arch=x64 file=Z:\00-游戏\portrait-card-game\artifacts\desktop\BlackForest-Desktop-1.1.0-preview.1-x64.zip
+  • building        target=nsis file=Z:\00-游戏\portrait-card-game\artifacts\desktop\BlackForest-Desktop-1.1.0-preview.1-x64.exe archs=x64 oneClick=false perMachine=false
+  • signing with signtool.exe  path=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked\resources\elevate.exe
+  • signing with signtool.exe  path=Z:\00-游戏\portrait-card-game\artifacts\desktop\BlackForest-Desktop-1.1.0-preview.1-x64.__uninstaller.exe
+  • signing with signtool.exe  path=Z:\00-游戏\portrait-card-game\artifacts\desktop\BlackForest-Desktop-1.1.0-preview.1-x64.exe
+  • building block map  blockMapFile=Z:\00-游戏\portrait-card-game\artifacts\desktop\BlackForest-Desktop-1.1.0-preview.1-x64.exe.blockmap
+
+artifacts:
+  BlackForest-Desktop-1.0.0-x64.exe  152.47 MB
+  BlackForest-Desktop-1.0.0-x64.exe.blockmap  0.16 MB
+  BlackForest-Desktop-1.0.0-x64.zip  192.24 MB
+  BlackForest-Desktop-1.0.1-preview.1-x64.exe  152.47 MB
+  BlackForest-Desktop-1.0.1-preview.1-x64.exe.blockmap  0.16 MB
+  BlackForest-Desktop-1.0.1-preview.1-x64.zip  192.24 MB
+  BlackForest-Desktop-1.1.0-preview.1-x64.exe  152.56 MB
+  BlackForest-Desktop-1.1.0-preview.1-x64.exe.blockmap  0.16 MB
+  BlackForest-Desktop-1.1.0-preview.1-x64.zip  192.33 MB
+  builder-debug.yml  0.01 MB
+  release-manifest.json  0.00 MB
+  SHA256SUMS.txt  0.00 MB

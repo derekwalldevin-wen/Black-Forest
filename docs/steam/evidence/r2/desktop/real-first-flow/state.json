@@ -1,0 +1,98 @@
+{
+  "version": "1.1.0-preview.1",
+  "locale": "zh-CN",
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1
+  },
+  "canvas": {
+    "x": 666.25,
+    "y": 17,
+    "width": 589.5,
+    "height": 1048
+  },
+  "window": {
+    "ok": true,
+    "fullScreen": true,
+    "focused": true,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "wide": true,
+  "lessons": [
+    "first"
+  ],
+  "modal": false,
+  "hand": 5,
+  "energy": 3,
+  "model": {
+    "scene": "Combat",
+    "locale": "zh-CN",
+    "chapter": "迷雾林缘 · 回合 2",
+    "intent": "攻击 6 × 1",
+    "attack": 6,
+    "enemyName": "灰狼",
+    "hp": 69,
+    "maxHp": 70,
+    "block": 0,
+    "energy": 3,
+    "spirit": 2,
+    "resonance": 0,
+    "hand": [
+      {
+        "index": 0,
+        "name": "劈砍",
+        "cost": 1,
+        "resource": "行动力",
+        "unaffordable": false,
+        "selected": false
+      },
+      {
+        "index": 1,
+        "name": "格挡",
+        "cost": 1,
+        "resource": "行动力",
+        "unaffordable": false,
+        "selected": false
+      },
+      {
+        "index": 2,
+        "name": "劈砍",
+        "cost": 1,
+        "resource": "行动力",
+        "unaffordable": false,
+        "selected": false
+      },
+      {
+        "index": 3,
+        "name": "反刺",
+        "cost": 1,
+        "resource": "行动力",
+        "unaffordable": false,
+        "selected": false
+      },
+      {
+        "index": 4,
+        "name": "劈砍",
+        "cost": 1,
+        "resource": "行动力",
+        "unaffordable": false,
+        "selected": false
+      }
+    ],
+    "selected": null,
+    "canPlay": false,
+    "ready": true,
+    "showSpirit": false,
+    "feedback": "点一次查看，再确认打出",
+    "player": [],
+    "enemy": [],
+    "enemyBlock": 0
+  },
+  "missingTranslations": []
+}

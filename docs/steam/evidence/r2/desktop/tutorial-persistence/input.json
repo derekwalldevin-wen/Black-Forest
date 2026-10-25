@@ -1,0 +1,8 @@
+[
+  {
+    "waitFor": "(()=>{const c=__game?.scene.getScene(\"Combat\");return c?.scene.isActive()&&!c.state.busy&&c.state.hand.length>0})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 4223
+  }
+]

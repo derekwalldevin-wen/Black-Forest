@@ -1,0 +1,202 @@
+[
+  {
+    "waitFor": "(()=>{const s=window.__game.scene.getScene('Title');return !!(s&&s.scene.isActive()&&typeof s.startRun==='function');})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 4961
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\01-title.png"
+  },
+  {
+    "click": [
+      540,
+      1480
+    ],
+    "at": {
+      "x": 633,
+      "y": 694
+    }
+  },
+  {
+    "waitFor": "(()=>{const s=window.__game.scene.getScene('Title');return !!(s&&s._starterLayer);})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 6075
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\02-starter-picker.png"
+  },
+  {
+    "click": [
+      130,
+      726
+    ],
+    "at": {
+      "x": 446,
+      "y": 349
+    }
+  },
+  {
+    "click": [
+      330,
+      1500
+    ],
+    "at": {
+      "x": 537,
+      "y": 703
+    }
+  },
+  {
+    "waitFor": "(()=>!!document.querySelector('.hand-reader button'))()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 7893
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\03-difficulty.png"
+  },
+  {
+    "clickSelector": ".hand-reader button",
+    "text": "开始征途",
+    "at": {
+      "x": 397,
+      "y": 634
+    }
+  },
+  {
+    "waitFor": "(()=>{const st=window.__game.scene.getScene('Story');return !!(st&&st.scene.isActive());})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 8836
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\04-story.png"
+  },
+  {
+    "click": [
+      913,
+      250
+    ],
+    "at": {
+      "x": 804,
+      "y": 131
+    }
+  },
+  {
+    "waitFor": "!!document.querySelector(\".r2-guide[open]\")",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 10930
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\first-lesson.png"
+  },
+  {
+    "clickSelector": ".r2-guide .guide-next",
+    "text": "下一步",
+    "at": {
+      "x": 402,
+      "y": 579
+    }
+  },
+  {
+    "clickSelector": ".r2-guide .guide-next",
+    "text": "下一步",
+    "at": {
+      "x": 486,
+      "y": 579
+    }
+  },
+  {
+    "clickSelector": ".r2-guide .guide-next",
+    "text": "返回游戏",
+    "at": {
+      "x": 494,
+      "y": 594
+    }
+  },
+  {
+    "waitFor": "(()=>{const c=__game?.scene.getScene(\"Combat\");return c?.scene.isActive()&&!c.state.busy&&c.state.hand.length>0})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 11682
+  },
+  {
+    "key": "F11"
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\wide-battle.png"
+  },
+  {
+    "clickSelector": ".desktop-hand button",
+    "text": "1 · 格挡1 行动力",
+    "at": {
+      "x": 468,
+      "y": 518
+    }
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\selected-card.png"
+  },
+  {
+    "clickSelector": "#desktop-left nav button:nth-child(2)",
+    "text": "大字手牌 · H",
+    "at": {
+      "x": 443,
+      "y": 390
+    }
+  },
+  {
+    "waitFor": "!!document.querySelector(\"dialog.hand-reader[open]\")",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 14019
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\hand-reader.png"
+  },
+  {
+    "key": "Escape"
+  },
+  {
+    "waitFor": "(()=>{const c=__game?.scene.getScene(\"Combat\");return c?.scene.isActive()&&!c.state.busy&&c.state.hand.length>0})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 14290
+  },
+  {
+    "clickSelector": "#desktop-right .primary",
+    "text": "确认打出",
+    "at": {
+      "x": 1348,
+      "y": 283
+    }
+  },
+  {
+    "waitFor": "(()=>{const c=__game?.scene.getScene(\"Combat\");return c?.scene.isActive()&&!c.state.busy&&c.state.hand.length>0})()",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 14796
+  },
+  {
+    "clickAt": "(()=>{const c=__game.scene.getScene(\"Combat\");return {x:c.endTurnBtn.x,y:c.endTurnBtn.y}})()",
+    "at": {
+      "x": 1103,
+      "y": 1005
+    },
+    "target": {
+      "x": 800,
+      "y": 1810
+    }
+  },
+  {
+    "waitFor": "__game.scene.getScene(\"Combat\").state.turn>=2&&!__game.scene.getScene(\"Combat\").state.busy",
+    "satisfied": true,
+    "last": true,
+    "afterMs": 17153
+  },
+  {
+    "shot": "Z:\\00-游戏\\portrait-card-game\\docs\\steam\\evidence\\r2\\desktop\\real-first-flow\\after-enemy-turn.png"
+  }
+]
