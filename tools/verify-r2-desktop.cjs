@@ -13,7 +13,7 @@ function run(id,input,query='',profile=id){
  assert.equal(r.status,0,id+' application exited abnormally '+r.error);assert(fs.existsSync(output),id+' no probe result (check single-instance lock)');const state=JSON.parse(fs.readFileSync(output,'utf8')),steps=JSON.parse(fs.readFileSync(log,'utf8'));assert(!state.error,JSON.stringify(state));assert(steps.filter(s=>s.waitFor).every(s=>s.satisfied),id+' input wait failed');assert(steps.every(s=>!s.error),id+' input target missing');
  const runtime=fs.readFileSync(path.join(WORK,'data',profile,'logs/runtime.log'),'utf8');assert(!/\[asset-missing\]|\[render-gone\]|\[input-failed\]|\[script-failed\]|\[console\] \[error\]/.test(runtime),id+' runtime errors');
  fs.writeFileSync(path.join(directory,'state.json'),JSON.stringify(state,null,2));fs.writeFileSync(path.join(directory,'runtime.txt'),runtime);
- assert.equal(state.version,'1.1.0-preview.1');assert.deepEqual(state.missingTranslations,[]);cases.push({id,passed:true,viewport:state.viewport,canvas:state.canvas,wide:state.wide});console.log('PASS '+id);return state;
+ assert.equal(state.version,'1.1.0-preview.1');assert.deepEqual(state.missingTranslations,[]);if(state.wide)assert(state.canvas.height>state.viewport.height*.94,id+' stage must refill after fullscreen');cases.push({id,passed:true,viewport:state.viewport,canvas:state.canvas,wide:state.wide});console.log('PASS '+id);return state;
 }
 let flow=JSON.parse(fs.readFileSync(path.join(ROOT,'tools/desktop-inputs/flow-combat.json')));
 const waitCombat=flow.findIndex(s=>s.waitFor?.includes('c&&c.scene.isActive'));

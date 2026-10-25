@@ -40,7 +40,9 @@ const DESKTOP_UI = {
     const enemyBox=this.node('section',null,'desktop-box');enemyBox.append(this.enemyHeading,this.enemyStatus);
     right.append(cardBox,actionBox,playerBox,enemyBox);
     this.entry=this.button('',()=>this.guide(),'r2-guide-entry');document.body.append(left,right,this.entry);
-    this.resize=()=>{document.body.classList.toggle('desktop-wide',innerWidth>=1040&&innerHeight>=560);game.scale.refresh();this.positionEntry();};
+    this.resize=()=>{document.body.classList.toggle('desktop-wide',innerWidth>=1040&&innerHeight>=560);
+      requestAnimationFrame(()=>{game.scale.getParentBounds();game.scale.refresh();this.positionEntry();});
+    };
     window.addEventListener('resize',this.resize);this.resize();
     let last=0;game.events.on('poststep',time=>{if(Date.now()-last<120)return;last=Date.now();this.tick();});
     this.tick();

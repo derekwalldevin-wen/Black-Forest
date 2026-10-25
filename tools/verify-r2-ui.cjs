@@ -31,6 +31,7 @@ async function main(){
   if(!baseline){
    const context=await browser.newContext({viewport:{width:1366,height:768}}),p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));
    await p.goto(base+'/?debug=1&auto=1&starter=guard&cards=strike,defend,focus,heavy_blow,iron_wall');await ready(p);
+   await p.setViewportSize({width:1920,height:1080});await p.waitForFunction(()=>{const r=__game.canvas.getBoundingClientRect(),b=document.getElementById('game-container').getBoundingClientRect();return Math.abs(r.height-Math.min(b.height,b.width*1920/1080))<2;});await p.setViewportSize({width:1366,height:768});await p.waitForFunction(()=>{const r=__game.canvas.getBoundingClientRect(),b=document.getElementById('game-container').getBoundingClientRect();return Math.abs(r.height-Math.min(b.height,b.width*1920/1080))<2;});checks.push('Window resize remeasures grid parent and fits stage without stale letterboxing');
    await p.locator('#desktop-left .desktop-hand button').first().click();await p.waitForFunction(()=>__game.scene.getScene('Combat').state.selected);
    const selected=await state(p);await p.locator('#desktop-left .desktop-hand button').first().click();assert.deepEqual(await state(p),selected,'semantic inspection never plays');
     await p.locator('#desktop-left nav button').nth(1).click();
