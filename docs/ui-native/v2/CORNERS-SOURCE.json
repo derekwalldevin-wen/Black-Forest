@@ -1,0 +1,7 @@
+{
+  "key": "corners",
+  "transparent": true,
+  "prompt": "Use case: stylized-concept. Production UI transparent decorative corner overlays matching the attached gothic parchment UI concept. Square1024x1024 atlas exact2columns by2rows, four equal512x512 cells. Each cell contains one L-SHAPED ornate antique brass vine corner with lush blue-grey ivy and small gilded leaves, genuinely transparent everywhere around/inside the L; absolutely NO paper, beige rectangle, painted backdrop or interior fill. Top-left cell: top-left frame corner extending toward right and down. Top-right: top-right corner extending left and down. Bottom-left: bottom-left extending right and up. Bottom-right: bottom-right extending left and up. Each entire L ornament fits inside its own cell with12px transparent margin and is70-100px thick at full512cell resolution, a few graceful leaves curl into the transparent inner space. Beautiful detailed engraved gold, black bronze outlines, soft highlights, exact botanical language of reference. No text, numbers, panels, drop shadow matte, frame interior, background color, labels or watermark. Actual alpha outside the vine shapes.",
+  "ref": "utility-concepts-v1.webp",
+  "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-1e2f7167-ce07-4ae0-8d09-a17a39754744.png"
+}

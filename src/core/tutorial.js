@@ -51,23 +51,24 @@ const TUTORIAL = {
     const wasPaused=scene.sys.isPaused();scene._modalOpen=true;if(!wasPaused)scene.scene.pause();
     let index=0,disable=false;
     const render=()=>{
-      dialog.replaceChildren();
-      const progress=document.createElement('p');progress.className='guide-progress';progress.textContent=this.text('旅人指南','Traveller’s guide')+' · '+(index+1)+' / '+pages.length;
-      const title=document.createElement('h2');title.id='r2-guide-heading';title.textContent=pages[index][0];
-      const body=document.createElement('p');body.textContent=pages[index][1];
-      const example=document.createElement('p');example.className='guide-example';example.textContent=pages[index][2];
+      const f=PAINTED_UI.frame(dialog,{kind:'guide',title:this.text('旅人指南','Traveller’s guide'),kicker:this.text('借一页灯光，读懂下一步','A LITTLE LIGHT FOR THE ROAD'),titleId:'r2-guide-heading'});
+      const progress=document.createElement('p');progress.className='guide-progress';progress.textContent=(index+1)+' / '+pages.length;
+      const track=PAINTED_UI.node('div',null,'guide-step-track');for(let i=0;i<pages.length;i++){const step=PAINTED_UI.node('span',kind==='first'?[this.text('意图','Intent'),this.text('格挡','Block'),this.text('出牌','Cards')][i]:String(i+1),i<=index?'is-current':'');step.dataset.step=i+1;track.append(step);}
+      const heading=PAINTED_UI.node('h3',pages[index][0],'guide-page-title');
+      const body=document.createElement('p');body.className='guide-body';body.textContent=pages[index][1];
+      const example=document.createElement('div');example.className='guide-example';example.append(PAINTED_UI.node('h4',this.text('示例','Example'),'guide-example-label'),PAINTED_UI.image(PAINTED_UI.assets[index===1?'defend':'attack'],'guide-example-art'),PAINTED_UI.node('p',pages[index][2]));
       const controls=document.createElement('div');controls.className='guide-controls';
       const button=(text,action,className)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.className=className||'';b.addEventListener('click',action);controls.append(b);return b;};
-      if(index>0)button(this.text('上一步','Back'),()=>{index--;render();});
+      if(index>0){controls.classList.add('has-back');button(this.text('上一步','Back'),()=>{index--;render();},'guide-back');}
       const next=button(index===pages.length-1?this.text('返回游戏','Back to game'):this.text('下一步','Next'),()=>{if(index===pages.length-1)dialog.close();else{index++;render();}},'guide-next');
-      button(replay?this.text('关闭','Close'):this.text('暂时跳过','Skip for now'),()=>dialog.close());
-      if(!replay)button(this.text('不再自动提示','Disable automatic tips'),()=>{disable=true;dialog.close();});
-      dialog.append(progress,title,body,example,controls);next.focus();
+      button(replay?this.text('关闭','Close'):this.text('暂时跳过','Skip for now'),()=>dialog.close(),'guide-skip');
+      if(!replay)button(this.text('不再自动提示','Disable automatic tips'),()=>{disable=true;dialog.close();},'guide-disable');
+      f.body.append(progress,track,heading,body,example);f.footer.append(controls);controls.classList.add('painted-guide-controls');next.focus();
     };
     const close=()=>{
       this.dialog=null;dialog.remove();scene._modalOpen=false;
       if(!replay){this.seen.push(kind);if(disable)this.disabled=true;this.save();}
-      if(!wasPaused&&scene.sys.isPaused())scene.scene.resume();
+      if(!wasPaused)scene.scene.resume();
       if(previous?.isConnected)previous.focus();
       scene.events.off('shutdown',shutdown);
     };

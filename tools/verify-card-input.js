@@ -70,12 +70,12 @@ const server = http.createServer((req, res) => {
       return { removed: !s.state.hand.includes(c), destroyed: !c.c.active,
         stale: stale === false && s.state.energy === energy && s.state.discardPile.length === pile,
         denied: denied === false && retained, busy: s.state.busy,
-        enemyCenter: s.enemyHpBar.x + 210, playerRight: s.playerHpBar.x + 340,
+        enemyCenter: s.enemyHpBar.x + 180, enemyTarget: STAGE.ENEMY_X, playerRight: s.playerHpBar.x + 340,
         shieldLeft: s.blockBadge.x - 38 };
     });
     assert.equal(checks.removed, true); assert.equal(checks.destroyed, true);
     assert.equal(checks.stale, true); assert.equal(checks.denied, true);
-    assert.equal(checks.busy, false); assert.equal(checks.enemyCenter, 540);
+    assert.equal(checks.busy, false); assert.equal(checks.enemyCenter, checks.enemyTarget);
     assert.ok(checks.shieldLeft > checks.playerRight);
     const end=await page.evaluate(()=>{
       const s=window.__game.scene.getScene('Combat'),r=s.game.canvas.getBoundingClientRect();

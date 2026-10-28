@@ -1373,7 +1373,14 @@ ok(/d\.armed\)|d\.armed;/.test(CS) && /PLAY_LIFT \* d\.prog/.test(CS),
   '上滑进度没有换算成卡的上移量');
 ok(/this\.scene|_drag\.card\.c\.y|d\.card\.c\.y/.test(CS), '拖拽没有驱动卡的 y');
 // gameout 要连拖拽一起清，否则系统手势打断后下一次抬手会带着陈旧起点
-ok(/gameout[\s\S]{0,200}_drag = null/.test(CS), 'gameout 没有清理 _drag');
+{
+  const recovery=/const recoverPointer = \(\) => \{([\s\S]*?)\n    \};/.exec(CS);
+  const down=new Map([[1,{x:10,y:10}]]),marks=new Set([1]);let cancelled=false,shown=false;
+  const scene={_cardPointer:marks,_drag:{id:1},state:{hand:[{_cancelGesture(){cancelled=true;}}],busy:false},syncHandFocus(){shown=true;}};
+  if(recovery)new Function('down',recovery[1]).call(scene,down);
+  ok(!!recovery&&CS.includes("this.input.on('gameout', recoverPointer)")&&scene._drag===null&&down.size===0&&marks.size===0&&cancelled&&shown,
+    'gameout 必须清理拖拽与指针记录，同时恢复仍选中的牌的确认入口');
+}
 // Phaser 复用场景实例：走完 战斗 -> 奖励 -> 事件 -> 再进战斗 进的是同一个 create()。
 // _ended 不复位的话，第二场战斗的 victory() 第一行就 return，
 // state.busy 永远为 true，敌人死了也不进奖励页——玩家被软锁。

@@ -1,0 +1,33 @@
+{
+  "capturedAt": "2026-10-25T05:26:39.335Z",
+  "source": "Existing user IAB tab, same origin and existing chapter-five journey save",
+  "steps": [
+    "Reload fixed scripts and continue saved journey",
+    "Inspect Blood Moon without playing, then end turn",
+    "Observe next turn with no selected card",
+    "Play Sealing Gate using Spirit",
+    "Play Shield Bash using Energy"
+  ],
+  "observedAfterRedraw": {
+    "chapter": "毒泽九首",
+    "turn": 2,
+    "energy": 3,
+    "spirit": 4,
+    "hand": 5,
+    "selected": null
+  },
+  "observedAfterTwoPlays": {
+    "hp": "47/62",
+    "block": 15,
+    "energy": 2,
+    "spirit": 3,
+    "resonance": 1,
+    "hand": 3,
+    "selected": null
+  },
+  "logComparison": {
+    "baselineLatestError": "2026-10-25T05:04:56.642Z",
+    "retainedHistoricalErrors": 11,
+    "newErrors": []
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "key": "achievements",
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. Production achievement illustration atlas for a gothic storybook game, matching the attached UI reference. Eight different ornate vertical gold-framed miniature paintings on a transparent background. Exact 4 columns by 2 rows grid, landscape1536x1024, equal384x512 cells. Reading order: 1 glowing traveller lantern inside forest gate; 2 fan of magical collectible cards; 3 antique treasure chest and relics; 4 winding branching road through mist; 5 crowned antlered forest throne amid ominous trees; 6 welcoming cottage with lantern in window; 7 lit lantern resisting storm and thorns; 8 compass above three diverging paths. Exquisite engraved gold corners and double gold frame around every miniature, deep indigo interior, jewel colors, watercolor botanicals. Each plaque fits wholly inside90% of its own cell, transparent gaps between cells. Recognizable at50x70px. No letters, text, digits, labels, writing, checkmarks, watermark or extra panels. Genuine alpha outside all plaques.",
+    "ref": "utility-concepts-v1.webp",
+    "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-fcb25c64-08f6-4629-be21-e89bf3754267.png"
+  },
+  {
+    "key": "service",
+    "transparent": true,
+    "prompt": "Use case: precise-object-edit. Reconstruct ONLY the scissors-and-cards illustration in the lower-left service panel of attached supply-shop concept, as a standalone production cutout square768x768. Exquisite ornate antique brass shears open diagonally across two midnight indigo playing cards engraved with gold vines, with surrounding lush ivy, tiny ivory wildflowers and blue-grey leaves. Preserve the reference gothic fairy-tale watercolor style, rich material detail and strong diagonal composition. Comfortable transparent margins with full scissor handles and tips visible. Genuine alpha transparent background, no paper backdrop, no UI panel, no text, numbers, glyphs, labels, frame or watermark.",
+    "ref": "shop-concept-v1.webp",
+    "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-6d55655f-23ee-4d3f-baf8-0f159aee1368.png"
+  },
+  {
+    "key": "vignettes",
+    "transparent": true,
+    "prompt": "Use case: stylized-concept. Production colored item vignette atlas for a gothic fairy-tale game shop. The attached image is a strict style reference for its lush colored watercolor object collages, ivy and tiny flowers around the objects, irregular transparent painted edges. Exactly18 separate illustrations in EXACT6columns by3rows on landscape1536x1024. Equal256x341.33 cells, no grid. Reading order: 1 crimson-slashing steel sword; 2 blue silver shield; 3 antique dagger with burgundy cloth; 4 crystal vial of green healing liquid; 5 bleeding crimson heart entwined by black thorns; 6 purple all-seeing occult eye; 7 luminous full moon with midnight clouds; 8 emerald flame rising from ornate gold incense basin; 9 blue star globe in golden armillary rings like first shop item reference; 10 silver wolf fang with red ribbon; 11 bright violet lightning bolt; 12 ivory lotus with golden light; 13 jade paper talisman hanging from red thread without writing; 14 coiled thorn branch and ivory roses; 15 golden jewel; 16 smoky green poison flask; 17 small swirling amber spark; 18 rolling teal mist clouds. Every object fits the central80% of its cell, dark blue-grey botanical sprigs around it, saturated jewel highlights, exquisite bronze details. Actual alpha around each independent vignette so they blend onto parchment, NO solid rectangles behind objects, no borders or frames. Full objects remain in their own cells, equal scale. No text, letters, numbers, labels, glyphs resembling writing or watermark.",
+    "ref": "shop-concept-v1.webp",
+    "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-063017e1-bd74-4e32-9894-04e35ee7ecad.png"
+  }
+]

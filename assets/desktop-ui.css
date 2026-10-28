@@ -10,6 +10,9 @@ body.desktop-wide #desktop-left{display:grid;grid-template-rows:auto auto auto m
 #desktop-left .desktop-hand{overflow:auto;min-height:0;scrollbar-width:thin;margin-top:0}
 #desktop-left summary{cursor:pointer;color:#bfb7c9;font-size:14px}
 #desktop-right{grid-column:3;grid-row:1;justify-self:start;width:min(100%,370px)}
+body.desktop-wide #desktop-right{display:grid;grid-template-rows:minmax(0,1fr) auto;overflow:hidden}
+.desktop-reading{min-height:0;overflow:auto;scrollbar-width:thin;display:flex;flex-direction:column;gap:14px}
+.desktop-action-box{box-shadow:0 -5px 20px #12101a99}
 body.desktop-wide #game-container{grid-column:2;grid-row:1}
 .desktop-rail h1{font:600 27px/1.3 BlackForestSerif,serif;color:#efcf88;margin:2px 0 8px}
 .desktop-rail h2{font-size:18px;color:#efcf88;margin:0 0 10px}
@@ -27,9 +30,13 @@ body.desktop-wide #game-container{grid-column:2;grid-row:1}
 .desktop-hand button{width:100%;padding:8px 10px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
 .desktop-hand .selected{border-color:#ffe0a1;box-shadow:inset 3px 0 #ffe0a1;background:#3c3240}
 .desktop-hand .cost{font-size:13px;color:#b9dce8;white-space:nowrap}
-.desktop-hand .unaffordable .cost{color:#f7a9a4}
+.desktop-hand .unaffordable{background:#25252a;border-color:#65616c;color:#bcb9c3}
+.desktop-hand .unaffordable .cost{color:#bcb9c3}
+.desktop-hand .unaffordable.selected{background:#35343a;border-color:#b8b3c1;box-shadow:inset 3px 0 #b8b3c1}
 .desktop-card{background:#e9dec4;color:#29241e;border-color:#b49b65}
 .desktop-card h2{color:#33291b;font-size:23px}.desktop-card .muted{color:#5c5145}
+.desktop-card.unaffordable{background:#dedddd;border-color:#aaa6ae;color:#29282b}
+.desktop-card.unaffordable h2,.desktop-card.unaffordable .muted{color:#49474d}
 .desktop-card .card-rules{font-size:19px;line-height:1.7;white-space:pre-line;margin:14px 0}
 .desktop-feedback{border-left:3px solid #84c8e3;padding-left:10px;color:#d8ecf5;min-height:26px}
 .desktop-status{margin:8px 0;padding-left:19px}.desktop-status li{padding-bottom:8px}

@@ -1,0 +1,368 @@
+{
+  "generatedAt": "2026-10-25T04:23:34.245Z",
+  "scope": "Edge browser, CSS viewport emulation and real browser mouse/keyboard/touch events; no physical-phone claim",
+  "layouts": [
+    {
+      "lang": "zh-CN",
+      "width": 320,
+      "height": 568,
+      "dialog": {
+        "x": 10,
+        "y": 12,
+        "width": 300,
+        "height": 544
+      },
+      "footer": {
+        "x": 19,
+        "y": 389.8125,
+        "width": 282,
+        "height": 157.1875
+      },
+      "body": {
+        "x": 19,
+        "y": 136.21875,
+        "width": 282,
+        "height": 253.59375
+      },
+      "bodyScrolls": true,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 390,
+      "height": 844,
+      "dialog": {
+        "x": 10,
+        "y": 52.3125,
+        "width": 370,
+        "height": 739.375
+      },
+      "footer": {
+        "x": 19,
+        "y": 646.296875,
+        "width": 352,
+        "height": 136.390625
+      },
+      "body": {
+        "x": 19,
+        "y": 166.78125,
+        "width": 352,
+        "height": 479.515625
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 768,
+      "height": 1024,
+      "dialog": {
+        "x": 54,
+        "y": 97.328125,
+        "width": 660,
+        "height": 829.328125
+      },
+      "footer": {
+        "x": 66,
+        "y": 759.8125,
+        "width": 636,
+        "height": 154.84375
+      },
+      "body": {
+        "x": 66,
+        "y": 237.8125,
+        "width": 636,
+        "height": 522
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 1280,
+      "height": 720,
+      "dialog": {
+        "x": 310,
+        "y": 17.609375,
+        "width": 660,
+        "height": 684.78125
+      },
+      "footer": {
+        "x": 322,
+        "y": 557,
+        "width": 636,
+        "height": 133.390625
+      },
+      "body": {
+        "x": 322,
+        "y": 128.828125,
+        "width": 636,
+        "height": 428.171875
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 1366,
+      "height": 768,
+      "dialog": {
+        "x": 353,
+        "y": 41.609375,
+        "width": 660,
+        "height": 684.78125
+      },
+      "footer": {
+        "x": 365,
+        "y": 581,
+        "width": 636,
+        "height": 133.390625
+      },
+      "body": {
+        "x": 365,
+        "y": 152.828125,
+        "width": 636,
+        "height": 428.171875
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "height": 568,
+      "dialog": {
+        "x": 10,
+        "y": 12,
+        "width": 300,
+        "height": 544
+      },
+      "footer": {
+        "x": 19,
+        "y": 389.8125,
+        "width": 282,
+        "height": 157.1875
+      },
+      "body": {
+        "x": 19,
+        "y": 136.21875,
+        "width": 282,
+        "height": 253.59375
+      },
+      "bodyScrolls": true,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "dialog": {
+        "x": 10,
+        "y": 34.0625,
+        "width": 370,
+        "height": 775.875
+      },
+      "footer": {
+        "x": 19,
+        "y": 664.546875,
+        "width": 352,
+        "height": 136.390625
+      },
+      "body": {
+        "x": 19,
+        "y": 168.671875,
+        "width": 352,
+        "height": 495.875
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "height": 1024,
+      "dialog": {
+        "x": 54,
+        "y": 85.703125,
+        "width": 660,
+        "height": 852.578125
+      },
+      "footer": {
+        "x": 66,
+        "y": 771.4375,
+        "width": 636,
+        "height": 154.84375
+      },
+      "body": {
+        "x": 66,
+        "y": 249.4375,
+        "width": 636,
+        "height": 522
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "height": 720,
+      "dialog": {
+        "x": 310,
+        "y": 17.609375,
+        "width": 660,
+        "height": 684.78125
+      },
+      "footer": {
+        "x": 322,
+        "y": 557,
+        "width": 636,
+        "height": 133.390625
+      },
+      "body": {
+        "x": 322,
+        "y": 128.828125,
+        "width": 636,
+        "height": 428.171875
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1366,
+      "height": 768,
+      "dialog": {
+        "x": 353,
+        "y": 41.609375,
+        "width": 660,
+        "height": 684.78125
+      },
+      "footer": {
+        "x": 365,
+        "y": 581,
+        "width": 636,
+        "height": 133.390625
+      },
+      "body": {
+        "x": 365,
+        "y": 152.828125,
+        "width": 636,
+        "height": 428.171875
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.66), rgba(9, 9, 17, 0.808)), url(\"http://127.0.0.1:50757/assets/ui/loading-backdrop-v1.webp\")",
+      "pageOverflow": false
+    }
+  ],
+  "runs": [
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "story",
+        "hp": 90,
+        "maxHp": 90,
+        "heal": 0.32,
+        "bigHeal": 0.48
+      },
+      "loaded": "story",
+      "starts": 1
+    },
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "standard",
+        "hp": 70,
+        "maxHp": 70,
+        "heal": 0.26,
+        "bigHeal": 0.42
+      },
+      "loaded": "standard",
+      "starts": 1
+    },
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "challenge",
+        "hp": 60,
+        "maxHp": 60,
+        "heal": 0.2,
+        "bigHeal": 0.34
+      },
+      "loaded": "challenge",
+      "starts": 1
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "story",
+        "hp": 90,
+        "maxHp": 90,
+        "heal": 0.32,
+        "bigHeal": 0.48
+      },
+      "loaded": "story",
+      "starts": 1
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "standard",
+        "hp": 70,
+        "maxHp": 70,
+        "heal": 0.26,
+        "bigHeal": 0.42
+      },
+      "loaded": "standard",
+      "starts": 1
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "challenge",
+        "hp": 60,
+        "maxHp": 60,
+        "heal": 0.2,
+        "bigHeal": 0.34
+      },
+      "loaded": "challenge",
+      "starts": 1
+    }
+  ],
+  "checks": [
+    "Ten Chinese/English layouts; touch selection; no text overflow or overlapping headings; all options fit on desktop/tablet; footer remains visible; Back resumes without starting",
+    "Three difficulty rules in both languages reach combat unchanged, save/reload correctly, and duplicate confirm starts once",
+    "Same-frame difficulty open/cancel recovers after queued pause/resume on three consecutive attempts",
+    "Default radio focus, arrow selection, Space isolation, Escape cancel, reopen, duplicate-dialog guard, keyboard confirmation and first-lesson handoff"
+  ],
+  "errors": [],
+  "missing": []
+}

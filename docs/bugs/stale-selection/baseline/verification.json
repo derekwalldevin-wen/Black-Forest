@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-10-25T05:12:01.657Z",
+  "baseline": true,
+  "scope": "Real browser canvas clicks/taps, keyboard end turn, complete enemy turns and redraws; isolated debug profiles use a five-card deck with actual game resources and effects",
+  "results": [
+    {
+      "fixture": {
+        "id": "reported-flow",
+        "width": 1366,
+        "height": 768,
+        "lang": "zh-CN",
+        "chapter": 4,
+        "enemy": "fei"
+      },
+      "rounds": [
+        {
+          "before": {
+            "turn": 1,
+            "energy": 3,
+            "spirit": 1,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "defend",
+              "fu_paper",
+              "blood_moon",
+              "seal_gate",
+              "strike"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 2,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "strike",
+              "blood_moon",
+              "defend",
+              "fu_paper",
+              "seal_gate"
+            ],
+            "hint": true
+          },
+          "oldDestroyed": true,
+          "attempted": {
+            "turn": 2,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "strike",
+              "blood_moon",
+              "defend",
+              "fu_paper",
+              "seal_gate"
+            ],
+            "hint": true
+          },
+          "errors": [
+            "Cannot read properties of undefined (reading 'sys')"
+          ]
+        }
+      ],
+      "errors": [
+        "Cannot read properties of undefined (reading 'sys')"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "case": "reported-flow",
+      "message": "Cannot read properties of undefined (reading 'sys')"
+    }
+  ]
+}

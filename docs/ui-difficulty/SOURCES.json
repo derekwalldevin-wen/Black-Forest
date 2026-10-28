@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-10-25",
+  "tool": "Built-in image_gen; no CLI fallback",
+  "mockup": {
+    "file": "docs/ui-difficulty/concept-v1.webp",
+    "source": "docs/ui-difficulty/source/difficulty-concept-v1.png",
+    "prompt": "Use case: ui-mockup\nAsset type: high fidelity game UI art direction mockup, portrait 1024 x 1536.\nPrimary request: Redesign the difficulty selection modal for an existing Chinese dark fairy tale deckbuilding game Black Forest. Attached Image 1 is a functional screenshot reference: preserve its exact three difficulties and all numbers, but redesign completely. Image 2 is the game's existing misty forest art style reference.\nVisual style: hand painted gothic storybook, engraved antique brass, deep midnight indigo #12101a, muted warm parchment #f1e5cc, antique gold #b08d3f. Elegant and restrained, polished indie game UI. Clear readable Chinese typography, generous whitespace. No skull protagonist, no modern blue radio buttons.\nComposition: one large centered panel against dim forest backdrop, mobile portrait, no device bezel. Decorative small lantern crest at top, heading below. Three generously spaced horizontal selection cards stacked vertically: Story with amber lantern illustration at left, Standard with silver sword illustration at left and a clearly selected warm gold outline plus a check at upper right, Challenge with thorn wrapped crimson crystal illustration at left. Each card has title, short supporting caption, big HP value at right, and two clearly separated restoration stats at the bottom. All icons modest in size and never behind text. Recommended small badge on Standard. Bottom footer has a wide gold primary button then subtle secondary Back button. Light is soft; keep decorative shapes away from reading zones. No tiny explanatory text.\nText (verbatim, exact Chinese):\ntop: \"征途启程\"\nheading: \"选择本局难度\"\nintro: \"本局开始后固定 · 卡牌、敌人招式与奖励相同\"\ncard 1: \"故事\" \"从容探索，了解世界\" \"90 HP\" \"普通战后 32%\" \"精英 / BOSS 48%\"\ncard 2: \"标准\" \"在风险中寻找胜机\" \"推荐\" \"70 HP\" \"普通战后 26%\" \"精英 / BOSS 42%\"\ncard 3: \"挑战\" \"为每一次抉择付出代价\" \"60 HP\" \"普通战后 20%\" \"精英 / BOSS 34%\"\nbelow cards: \"回复数值按生命上限计算\"\nprimary button: \"开始征途\"\nsecondary button: \"返回\"\nConstraints: show all three cards fully inside the screen with comfortable padding, coherent 2D actual implementable HTML game UI, no perspective. This is an art mockup; produce one finished screen, not a contact sheet.",
+    "inputs": [
+      {
+        "role": "functional reference",
+        "file": "user-provided difficulty screenshot"
+      },
+      {
+        "role": "style reference",
+        "file": "assets/ui/loading-backdrop-v1.webp"
+      }
+    ]
+  },
+  "emblems": {
+    "file": "assets/ui/difficulty-emblems-v1.webp",
+    "source": "docs/ui-difficulty/source/difficulty-emblems-v1.png",
+    "prompt": "Use case: stylized-concept\nAsset type: production-ready game UI illustration atlas, transparent PNG, wide 1536 x 512, exactly three equal square cells in one horizontal row.\nInput image: reference for artistic style and subjects only, not an edit target.\nPrimary request: Paint the three small difficulty emblems from this gothic game UI concept as separate detailed 2D illustrated vignettes. Left square cell: glowing antique brass lantern hanging from a curved dark branch, tiny amber autumn leaves and moss. Middle square cell: single elegant upright silver sword planted in a dark rock, tiny ivory wildflowers, matching the Standard panel. Right square cell: single tall dark red faceted crystal wrapped with black thorn branches and a few crimson leaves, matching the Challenge panel.\nStyle/medium: hand painted dark fairy tale storybook art, finely engraved brass, soft watercolor edges, subtle painterly parchment-style edge fade BUT no opaque parchment background. Three objects equal visual weight and same scale. Detailed but legible at 80px. Muted ivory/gold, charcoal, amber, oxblood. Each motif centered in its own exact one-third cell; bounding box fits x+10% to90% and y15% to85% of each cell; no illustration crosses into adjacent cells.\nConstraints: transparent background outside the objects/vignettes, actual alpha, no background scenery, no user interface, no frames, no circles, no borders, absolutely no text, letters, numbers, selection marks or watermarks. Keep all three full motifs inside their cells. Produce one atlas file.",
+    "inputs": [
+      {
+        "role": "style/subject reference",
+        "file": "docs/ui-difficulty/concept-v1.webp"
+      }
+    ],
+    "original": {
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true
+    },
+    "runtime": {
+      "width": 1536,
+      "height": 512,
+      "format": "WebP",
+      "quality": 88
+    },
+    "postProcessing": "Encoding and proportional resize only. Runtime CSS displays one equal atlas cell per option. All UI text is rendered as DOM text."
+  },
+  "commercialClearance": false,
+  "rightsNote": "Generation record retained. Existing reference rights, provider terms and publisher ownership still need project release review."
+}

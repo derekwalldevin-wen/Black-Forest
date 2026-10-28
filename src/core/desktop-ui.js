@@ -9,7 +9,7 @@ const DESKTOP_UI = {
   },
   node(tag,text,className){const n=document.createElement(tag);if(text)n.textContent=text;if(className)n.className=className;return n;},
   mount(game){
-    this.game=game;TUTORIAL.load();
+    this.game=game;TUTORIAL.load();PAINTED_UI.install(document.body);this.paintedRealm=PAINTED_UI.realm();
     const left=this.node('aside',null,'desktop-rail'),right=this.node('aside',null,'desktop-rail');
     left.id='desktop-left';right.id='desktop-right';
     left.setAttribute('aria-label',this.text('战况与操作','Battle and controls'));
@@ -20,25 +20,26 @@ const DESKTOP_UI = {
     this.intentHeading=this.node('h2');this.intent=this.node('p');this.attack=this.node('p',null,'desktop-feedback');
     const intentBox=this.node('section',null,'desktop-box');intentBox.append(this.intentHeading,this.intent,this.attack);
     this.controls=this.node('p',null,'muted');const nav=this.node('nav',null,'desktop-actions');
-    this.menuButton=this.button('',()=>this.overlay('pause'));this.deckButton=this.button('',()=>{const scene=this.combat();if(scene?.scene.isActive())HAND_READER.open(scene,this.deckButton);});
-    this.guideButton=this.button('',()=>this.guide());nav.append(this.menuButton,this.deckButton,this.guideButton);
-    const controlsBox=this.node('section',null,'desktop-box'),shortcuts=this.node('details');this.shortcutHeading=this.node('summary');shortcuts.append(this.shortcutHeading,this.controls);controlsBox.append(shortcuts,nav);
+    this.menuButton=this.button('',()=>this.overlay('pause'));this.deckButton=this.button('',()=>{const scene=this.combat();if(scene?.scene.isActive())HAND_READER.open(scene);});
+    this.guideButton=this.button('',()=>this.guide());nav.append(this.menuButton,this.guideButton);
+    const controlsBox=this.node('section',null,'desktop-box'),shortcuts=this.node('details');this.shortcutHeading=this.node('summary');shortcuts.append(this.shortcutHeading,this.controls,this.deckButton);controlsBox.append(shortcuts,nav);
     this.handTitle=this.node('h2');this.hand=this.node('ol',null,'desktop-hand');
     const handBox=this.node('section',null,'desktop-box');handBox.append(this.handTitle,this.hand);
     left.append(titleBox,intentBox,controlsBox,handBox);
     this.cardTitle=this.node('h2');this.cardMeta=this.node('p',null,'muted');this.cardRules=this.node('p',null,'card-rules');
-    const cardBox=this.node('section',null,'desktop-box desktop-card');cardBox.append(this.cardTitle,this.cardMeta,this.cardRules);
+    const cardBox=this.node('section',null,'desktop-box desktop-card');this.cardBox=cardBox;cardBox.append(this.cardTitle,this.cardMeta,this.cardRules);
     this.feedback=this.node('p',null,'desktop-feedback');this.feedback.setAttribute('role','status');
     const actions=this.node('div',null,'desktop-actions');
     this.playButton=this.button('',()=>{const s=this.combat();if(s?.scene.isActive())s.playCard(s.state.selected);},'primary');
     this.cancelButton=this.button('',()=>{const s=this.combat();if(s?.scene.isActive()){s.selectCard(null);this.cancelButton.blur();}});
     actions.append(this.playButton,this.cancelButton);
-    const actionBox=this.node('section',null,'desktop-box');actionBox.append(this.feedback,actions);
+    const actionBox=this.node('section',null,'desktop-box desktop-action-box');actionBox.append(this.feedback,actions);
     this.playerHeading=this.node('h2');this.playerSummary=this.node('p');this.playerStatus=this.node('ul',null,'desktop-status');
     const playerBox=this.node('section',null,'desktop-box');playerBox.append(this.playerHeading,this.playerSummary,this.playerStatus);
     this.enemyHeading=this.node('h2');this.enemyStatus=this.node('ul',null,'desktop-status');
     const enemyBox=this.node('section',null,'desktop-box');enemyBox.append(this.enemyHeading,this.enemyStatus);
-    right.append(cardBox,actionBox,playerBox,enemyBox);
+    const reading=this.node('div',null,'desktop-reading');reading.append(cardBox,playerBox,enemyBox);
+    right.append(reading,actionBox);
     this.entry=this.button('',()=>this.guide(),'r2-guide-entry');document.body.append(left,right,this.entry);
     this.resize=()=>{document.body.classList.toggle('desktop-wide',innerWidth>=1040&&innerHeight>=560);
       requestAnimationFrame(()=>{game.scale.getParentBounds();game.scale.refresh();this.positionEntry();});
@@ -67,7 +68,7 @@ const DESKTOP_UI = {
   model(scene){
     const t=this.text.bind(this),s=scene?.scene.key==='Combat'?scene.state:null;
     if(!s)return {scene:scene?.scene.key||'',locale:I18N.locale,chapter:t('沿着提灯继续前行','Follow the lantern'),hand:[],selected:null,player:[],enemy:[]};
-    const c=s.selected,d=c?.def,cost=d?effectiveCost(d,s.resonance):0,spirit=d&&cardCostType(d)==='spirit';
+    const c=scene.isLiveHandCard(s.selected)?s.selected:null,d=c?.def,cost=d?effectiveCost(d,s.resonance):0,spirit=d&&cardCostType(d)==='spirit';
     const resource=spirit?t('灵韵','Spirit'):t('行动力','Energy'),available=spirit?s.spirit:s.energy;
     const ready=scene.scene.isActive()&&!s.busy&&!scene._modalOpen&&!scene._ended&&s.enemy.alive;
     return {scene:'Combat',locale:I18N.locale,chapter:I18N.name('chapter',RUN.chapter,RUN.chapterDef().name)+' · '+t('回合 ','Turn ')+s.turn,
@@ -80,6 +81,7 @@ const DESKTOP_UI = {
       player:this.statusRows(s.player),enemy:this.statusRows(s.enemy),enemyBlock:s.enemy.block};
   },
   tick(){
+    const realm=PAINTED_UI.realm();if(realm!==this.paintedRealm){PAINTED_UI.install(document.body,realm);this.paintedRealm=realm;}
     const scene=this.active();this.positionEntry();
     this.entry.hidden=!scene||!['Combat','Reward','Event','Journal'].includes(scene.scene.key)||!!TUTORIAL.dialog;
     if(scene)TUTORIAL.maybe(scene);
@@ -101,8 +103,9 @@ const DESKTOP_UI = {
     if(focusedHandIndex!=null)this.hand.querySelector('[data-hand-index="'+focusedHandIndex+'"]')?.focus({preventScroll:true});
     this.hand.scrollTop=handScroll;
     this.cardTitle.textContent=m.selected?.name||t('选择一张卡牌','Select a card');
+    this.cardBox.classList.toggle('unaffordable',!!m.selected&&m.selected.cost>m.selected.available);
     this.cardMeta.textContent=m.selected?t(`${m.selected.cost} ${m.selected.resource} · 当前 ${m.selected.available}`,`${m.selected.cost} ${m.selected.resource} · Available ${m.selected.available}`):t('完整说明会显示在这里','The full card rules appear here');
-    this.cardRules.textContent=m.selected?.description||t('费用不足的牌也可以查看。查看不会扣除资源或移除手牌。','You can inspect unaffordable cards. Inspection spends no resources and removes no cards.');
+    this.cardRules.textContent=m.selected?.description||t('灰色卡牌表示资源不足，仍可查看。查看不会扣除资源或移除手牌。','Grey cards need more resources and can still be inspected. Inspection spends no resources and removes no cards.');
     this.feedback.textContent=m.feedback||t('旅程准备中','Preparing your journey');this.playButton.textContent=t('确认打出','Play selected card');this.playButton.disabled=!m.canPlay;
     this.cancelButton.textContent=t('取消选中','Clear selection');this.cancelButton.disabled=!m.selected||!m.ready;
     this.playerHeading.textContent=t('我方状态','Your status');this.enemyHeading.textContent=m.enemyName||t('敌方状态','Enemy status');

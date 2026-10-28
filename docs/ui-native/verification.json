@@ -1,0 +1,970 @@
+{
+  "generatedAt": "2026-10-25T12:15:44.029Z",
+  "scope": "Isolated Edge browser; mobile viewport and desktop UI; desktop import bridge stub, no native OS picker claim",
+  "layouts": [
+    {
+      "file": "phone-zh-CN-collection.webp",
+      "name": "collection",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    },
+    {
+      "file": "phone-zh-CN-save.webp",
+      "name": "save",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 204.078125,
+      "w": 370,
+      "h": 435.828125,
+      "footer": [
+        562.90625,
+        629.90625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        46
+      ]
+    },
+    {
+      "file": "phone-zh-CN-hand.webp",
+      "name": "hand",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        78.375,
+        39.1875,
+        78.375,
+        78.375,
+        78.375,
+        78.375,
+        78.375,
+        78.375,
+        78.375,
+        46
+      ]
+    },
+    {
+      "file": "phone-zh-CN-guide.webp",
+      "name": "guide",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 179.734375,
+      "w": 370,
+      "h": 484.53125,
+      "footer": [
+        531.265625,
+        654.265625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "phone-zh-CN-market.webp",
+      "name": "market",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        47.1875,
+        47.1875,
+        47.1875,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "phone-en-collection.webp",
+      "name": "collection",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    },
+    {
+      "file": "phone-en-save.webp",
+      "name": "save",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 177.765625,
+      "w": 370,
+      "h": 488.46875,
+      "footer": [
+        589.234375,
+        656.234375
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        46
+      ]
+    },
+    {
+      "file": "phone-en-hand.webp",
+      "name": "hand",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        78.375,
+        117.5625,
+        78.375,
+        117.5625,
+        39.1875,
+        117.5625,
+        117.5625,
+        78.375,
+        78.375,
+        46
+      ]
+    },
+    {
+      "file": "phone-en-guide.webp",
+      "name": "guide",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 123.25,
+      "w": 370,
+      "h": 597.484375,
+      "footer": [
+        587.734375,
+        710.734375
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "phone-en-market.webp",
+      "name": "market",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        707.421875,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        47.1875,
+        47.1875,
+        47.1875,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        66.78125,
+        66.78125
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-collection.webp",
+      "name": "collection",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 12,
+      "w": 900,
+      "h": 696,
+      "footer": [
+        594.203125,
+        694
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-save.webp",
+      "name": "save",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 140.875,
+      "w": 900,
+      "h": 438.25,
+      "footer": [
+        492.125,
+        565.125
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        46
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-hand.webp",
+      "name": "hand",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 12,
+      "w": 900,
+      "h": 696,
+      "footer": [
+        594.203125,
+        694
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        46
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-guide.webp",
+      "name": "guide",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 163.9375,
+      "w": 900,
+      "h": 392.125,
+      "footer": [
+        469.0625,
+        542.0625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-market.webp",
+      "name": "market",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 12,
+      "w": 900,
+      "h": 696,
+      "footer": [
+        594.203125,
+        694
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        50,
+        50,
+        50,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "desktop-en-collection.webp",
+      "name": "collection",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 12,
+      "w": 900,
+      "h": 696,
+      "footer": [
+        594.203125,
+        694
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    },
+    {
+      "file": "desktop-en-save.webp",
+      "name": "save",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 129.25,
+      "w": 900,
+      "h": 461.5,
+      "footer": [
+        503.75,
+        576.75
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        46
+      ]
+    },
+    {
+      "file": "desktop-en-hand.webp",
+      "name": "hand",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 12,
+      "w": 900,
+      "h": 696,
+      "footer": [
+        594.203125,
+        694
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        39.1875,
+        46
+      ]
+    },
+    {
+      "file": "desktop-en-guide.webp",
+      "name": "guide",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 132.21875,
+      "w": 900,
+      "h": 455.5625,
+      "footer": [
+        500.78125,
+        573.78125
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "desktop-en-market.webp",
+      "name": "market",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 190,
+      "y": 12,
+      "w": 900,
+      "h": 696,
+      "footer": [
+        594.203125,
+        694
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "20px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        50,
+        50,
+        50,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "small-zh-CN-collection.webp",
+      "name": "collection",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        456.203125,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    },
+    {
+      "file": "small-zh-CN-save.webp",
+      "name": "save",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 63.453125,
+      "w": 300,
+      "h": 441.078125,
+      "footer": [
+        431.53125,
+        494.53125
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        46
+      ]
+    },
+    {
+      "file": "small-zh-CN-hand.webp",
+      "name": "hand",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        456.203125,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        78.375,
+        78.375,
+        78.375,
+        78.375,
+        39.1875,
+        78.375,
+        78.375,
+        78.375,
+        78.375,
+        46
+      ]
+    },
+    {
+      "file": "small-zh-CN-guide.webp",
+      "name": "guide",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 50.734375,
+      "w": 300,
+      "h": 466.53125,
+      "footer": [
+        388.265625,
+        507.265625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "small-zh-CN-market.webp",
+      "name": "market",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        435.421875,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        47.1875,
+        47.1875,
+        47.1875,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        66.78125,
+        66.78125
+      ]
+    },
+    {
+      "file": "small-en-collection.webp",
+      "name": "collection",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        456.203125,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    },
+    {
+      "file": "small-en-save.webp",
+      "name": "save",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 41.703125,
+      "w": 300,
+      "h": 484.578125,
+      "footer": [
+        453.28125,
+        516.28125
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        46
+      ]
+    },
+    {
+      "file": "small-en-hand.webp",
+      "name": "hand",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        456.203125,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        78.375,
+        117.5625,
+        117.5625,
+        117.5625,
+        117.5625,
+        117.5625,
+        117.5625,
+        117.5625,
+        117.5625,
+        46
+      ]
+    },
+    {
+      "file": "small-en-guide.webp",
+      "name": "guide",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        379.421875,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        66.78125,
+        66.78125,
+        46
+      ]
+    },
+    {
+      "file": "small-en-market.webp",
+      "name": "market",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 300,
+      "h": 544,
+      "footer": [
+        435.421875,
+        546
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        47.1875,
+        47.1875,
+        47.1875,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        66.78125,
+        66.78125
+      ]
+    },
+    {
+      "file": "phone-shanhai-market.webp",
+      "name": "market",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        47.1875,
+        47.1875,
+        47.1875,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "file": "phone-import-error.webp",
+      "name": "save",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 137.09375,
+      "w": 370,
+      "h": 569.8125,
+      "footer": [
+        629.90625,
+        696.90625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        70,
+        70,
+        46
+      ]
+    },
+    {
+      "file": "subpath-collection.webp",
+      "name": "collection",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 10,
+      "y": 12,
+      "w": 370,
+      "h": 820,
+      "footer": [
+        728.203125,
+        822
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "18px",
+      "frame": "url(\"http://127.0.0.1:59827/Black-Forest/assets/ui/modal-frame-v1.webp\")",
+      "paper": "url(\"http://127.0.0.1:59827/Black-Forest/assets/ui/modal-paper-v1.webp\")",
+      "buttons": [
+        46
+      ]
+    }
+  ],
+  "checks": [
+    "Web export downloads a valid transfer JSON without changing progress",
+    "phone-zh-CN: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "phone-en: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "desktop-zh-CN: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "desktop-en: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "small-zh-CN: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "small-en: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "Oriental card art/material, five-card deletion floor, desktop import confirm/cancel/apply/error UI with isolated bridge stubs (native file picker not claimed)",
+    "GitHub Pages subdirectory resolves panel art, styles and card assets",
+    "Final fixed-footer removal shortcut opens/focuses service, Escape resumes; preview page serves phone and desktop English screenshots"
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,368 @@
+{
+  "generatedAt": "2026-10-28T12:51:06.127Z",
+  "scope": "Edge browser, CSS viewport emulation and real browser mouse/keyboard/touch events; no physical-phone claim",
+  "layouts": [
+    {
+      "lang": "zh-CN",
+      "width": 320,
+      "height": 568,
+      "dialog": {
+        "x": 9,
+        "y": 8,
+        "width": 302,
+        "height": 552
+      },
+      "footer": {
+        "x": 24,
+        "y": 397.265625,
+        "width": 272,
+        "height": 144.734375
+      },
+      "body": {
+        "x": 24,
+        "y": 159.5,
+        "width": 272,
+        "height": 237.765625
+      },
+      "bodyScrolls": true,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 390,
+      "height": 844,
+      "dialog": {
+        "x": 9,
+        "y": 51.90625,
+        "width": 372,
+        "height": 740.1875
+      },
+      "footer": {
+        "x": 26,
+        "y": 631.15625,
+        "width": 338,
+        "height": 140.9375
+      },
+      "body": {
+        "x": 26,
+        "y": 259.65625,
+        "width": 338,
+        "height": 371.5
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 768,
+      "height": 1024,
+      "dialog": {
+        "x": 71,
+        "y": 55.578125,
+        "width": 626,
+        "height": 912.84375
+      },
+      "footer": {
+        "x": 98,
+        "y": 783.578125,
+        "width": 572,
+        "height": 154.84375
+      },
+      "body": {
+        "x": 98,
+        "y": 302.578125,
+        "width": 572,
+        "height": 481
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 1280,
+      "height": 720,
+      "dialog": {
+        "x": 327,
+        "y": 31.421875,
+        "width": 626,
+        "height": 657.140625
+      },
+      "footer": {
+        "x": 354,
+        "y": 529.171875,
+        "width": 572,
+        "height": 129.390625
+      },
+      "body": {
+        "x": 354,
+        "y": 188.171875,
+        "width": 572,
+        "height": 341
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "zh-CN",
+      "width": 1366,
+      "height": 768,
+      "dialog": {
+        "x": 370,
+        "y": 55.421875,
+        "width": 626,
+        "height": 657.140625
+      },
+      "footer": {
+        "x": 397,
+        "y": 553.171875,
+        "width": 572,
+        "height": 129.390625
+      },
+      "body": {
+        "x": 397,
+        "y": 212.171875,
+        "width": 572,
+        "height": 341
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "height": 568,
+      "dialog": {
+        "x": 9,
+        "y": 8,
+        "width": 302,
+        "height": 552
+      },
+      "footer": {
+        "x": 24,
+        "y": 381.328125,
+        "width": 272,
+        "height": 160.671875
+      },
+      "body": {
+        "x": 24,
+        "y": 176,
+        "width": 272,
+        "height": 205.328125
+      },
+      "bodyScrolls": true,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "dialog": {
+        "x": 9,
+        "y": 8,
+        "width": 372,
+        "height": 828
+      },
+      "footer": {
+        "x": 26,
+        "y": 653.265625,
+        "width": 338,
+        "height": 162.734375
+      },
+      "body": {
+        "x": 26,
+        "y": 233.75,
+        "width": 338,
+        "height": 419.515625
+      },
+      "bodyScrolls": true,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "height": 1024,
+      "dialog": {
+        "x": 71,
+        "y": 55.578125,
+        "width": 626,
+        "height": 912.84375
+      },
+      "footer": {
+        "x": 98,
+        "y": 783.578125,
+        "width": 572,
+        "height": 154.84375
+      },
+      "body": {
+        "x": 98,
+        "y": 302.578125,
+        "width": 572,
+        "height": 481
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1280,
+      "height": 720,
+      "dialog": {
+        "x": 327,
+        "y": 31.421875,
+        "width": 626,
+        "height": 657.140625
+      },
+      "footer": {
+        "x": 354,
+        "y": 529.171875,
+        "width": 572,
+        "height": 129.390625
+      },
+      "body": {
+        "x": 354,
+        "y": 188.171875,
+        "width": 572,
+        "height": 341
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1366,
+      "height": 768,
+      "dialog": {
+        "x": 370,
+        "y": 55.421875,
+        "width": 626,
+        "height": 657.140625
+      },
+      "footer": {
+        "x": 397,
+        "y": 553.171875,
+        "width": 572,
+        "height": 129.390625
+      },
+      "body": {
+        "x": 397,
+        "y": 212.171875,
+        "width": 572,
+        "height": 341
+      },
+      "bodyScrolls": false,
+      "overflow": [],
+      "headingOverlap": false,
+      "backdrop": "linear-gradient(rgba(9, 9, 17, 0.19), rgba(9, 9, 17, 0.41)), url(\"http://127.0.0.1:59753/assets/ui/difficulty/forest-v2.webp\")",
+      "pageOverflow": false
+    }
+  ],
+  "runs": [
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "story",
+        "hp": 90,
+        "maxHp": 90,
+        "heal": 0.32,
+        "bigHeal": 0.48
+      },
+      "loaded": "story",
+      "starts": 1
+    },
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "standard",
+        "hp": 70,
+        "maxHp": 70,
+        "heal": 0.26,
+        "bigHeal": 0.42
+      },
+      "loaded": "standard",
+      "starts": 1
+    },
+    {
+      "lang": "zh-CN",
+      "before": {
+        "difficulty": "challenge",
+        "hp": 60,
+        "maxHp": 60,
+        "heal": 0.2,
+        "bigHeal": 0.34
+      },
+      "loaded": "challenge",
+      "starts": 1
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "story",
+        "hp": 90,
+        "maxHp": 90,
+        "heal": 0.32,
+        "bigHeal": 0.48
+      },
+      "loaded": "story",
+      "starts": 1
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "standard",
+        "hp": 70,
+        "maxHp": 70,
+        "heal": 0.26,
+        "bigHeal": 0.42
+      },
+      "loaded": "standard",
+      "starts": 1
+    },
+    {
+      "lang": "en",
+      "before": {
+        "difficulty": "challenge",
+        "hp": 60,
+        "maxHp": 60,
+        "heal": 0.2,
+        "bigHeal": 0.34
+      },
+      "loaded": "challenge",
+      "starts": 1
+    }
+  ],
+  "checks": [
+    "Ten Chinese/English layouts; touch selection; no text overflow or overlapping headings; all options fit on desktop/tablet; footer remains visible; Back resumes without starting",
+    "Three difficulty rules in both languages reach combat unchanged, save/reload correctly, and duplicate confirm starts once",
+    "Same-frame difficulty open/cancel recovers after queued pause/resume on three consecutive attempts",
+    "Default radio focus, arrow selection, Space isolation, Escape cancel, reopen, duplicate-dialog guard, keyboard confirmation and first-lesson handoff"
+  ],
+  "errors": [],
+  "missing": []
+}

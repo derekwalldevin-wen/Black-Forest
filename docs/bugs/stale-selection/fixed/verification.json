@@ -1,0 +1,470 @@
+{
+  "generatedAt": "2026-10-25T11:17:23.899Z",
+  "baseline": false,
+  "scope": "Real browser canvas clicks/taps, keyboard end turn, complete enemy turns and redraws; isolated debug profiles use a five-card deck with actual game resources and effects",
+  "results": [
+    {
+      "fixture": {
+        "id": "desktop-gothic",
+        "width": 1366,
+        "height": 768,
+        "lang": "zh-CN",
+        "chapter": 0,
+        "enemy": "forest_lord"
+      },
+      "rounds": [
+        {
+          "before": {
+            "turn": 1,
+            "energy": 3,
+            "spirit": 1,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "strike",
+              "defend",
+              "seal_gate",
+              "fu_paper",
+              "blood_moon"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 2,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "strike",
+              "fu_paper",
+              "blood_moon",
+              "defend",
+              "seal_gate"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "blood_moon",
+              "defend",
+              "seal_gate"
+            ],
+            "hint": false
+          }
+        },
+        {
+          "before": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": "seal_gate",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "blood_moon",
+              "defend",
+              "seal_gate"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 3,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "defend",
+              "blood_moon",
+              "seal_gate",
+              "fu_paper",
+              "strike"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 3,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "defend",
+              "blood_moon",
+              "seal_gate"
+            ],
+            "hint": false
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "fixture": {
+        "id": "narrow-gothic",
+        "width": 390,
+        "height": 844,
+        "lang": "zh-CN",
+        "chapter": 0,
+        "enemy": "forest_lord",
+        "keyboardEnd": true
+      },
+      "rounds": [
+        {
+          "before": {
+            "turn": 1,
+            "energy": 3,
+            "spirit": 1,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "strike",
+              "blood_moon",
+              "seal_gate",
+              "fu_paper",
+              "defend"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 2,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "fu_paper",
+              "seal_gate",
+              "defend",
+              "blood_moon",
+              "strike"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "defend",
+              "blood_moon"
+            ],
+            "hint": false
+          }
+        },
+        {
+          "before": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": "seal_gate",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "seal_gate",
+              "defend",
+              "blood_moon"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 3,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "strike",
+              "defend",
+              "fu_paper",
+              "blood_moon"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 3,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "defend",
+              "blood_moon"
+            ],
+            "hint": false
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "fixture": {
+        "id": "desktop-shanhai",
+        "width": 1280,
+        "height": 720,
+        "lang": "en",
+        "chapter": 4,
+        "enemy": "fei"
+      },
+      "rounds": [
+        {
+          "before": {
+            "turn": 1,
+            "energy": 3,
+            "spirit": 1,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "fu_paper",
+              "strike",
+              "defend",
+              "blood_moon",
+              "seal_gate"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 2,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "defend",
+              "strike",
+              "seal_gate",
+              "fu_paper",
+              "blood_moon"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "defend",
+              "seal_gate",
+              "blood_moon"
+            ],
+            "hint": false
+          }
+        },
+        {
+          "before": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": "seal_gate",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "defend",
+              "seal_gate",
+              "blood_moon"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 3,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "strike",
+              "blood_moon",
+              "defend",
+              "fu_paper"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 3,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "blood_moon",
+              "defend"
+            ],
+            "hint": false
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "fixture": {
+        "id": "touch-shanhai",
+        "width": 390,
+        "height": 844,
+        "lang": "en",
+        "chapter": 4,
+        "enemy": "fei",
+        "touch": true
+      },
+      "rounds": [
+        {
+          "before": {
+            "turn": 1,
+            "energy": 3,
+            "spirit": 1,
+            "busy": false,
+            "selected": "blood_moon",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "fu_paper",
+              "defend",
+              "blood_moon",
+              "strike",
+              "seal_gate"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 2,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "fu_paper",
+              "defend",
+              "strike",
+              "blood_moon"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "seal_gate",
+              "defend",
+              "blood_moon"
+            ],
+            "hint": false
+          }
+        },
+        {
+          "before": {
+            "turn": 2,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": "seal_gate",
+            "selectedInHand": true,
+            "selectedAlive": true,
+            "hand": [
+              "seal_gate",
+              "defend",
+              "blood_moon"
+            ],
+            "hint": true
+          },
+          "after": {
+            "turn": 3,
+            "energy": 3,
+            "spirit": 2,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "blood_moon",
+              "defend",
+              "fu_paper",
+              "seal_gate",
+              "strike"
+            ],
+            "hint": false
+          },
+          "oldDestroyed": true,
+          "paid": {
+            "turn": 3,
+            "energy": 2,
+            "spirit": 1,
+            "busy": false,
+            "selected": null,
+            "selectedInHand": false,
+            "selectedAlive": false,
+            "hand": [
+              "blood_moon",
+              "defend",
+              "seal_gate"
+            ],
+            "hint": false
+          }
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "errors": []
+}

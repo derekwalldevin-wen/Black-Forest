@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Default hand uses real cards and resources",
+    "Five AI-reference/live-panel pairs",
+    "Previous/current implementation switch",
+    "Desktop English gallery"
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,23 @@
+{
+  "capture": "Transcribed from the browser diagnostic emitted by verify-difficulty.cjs --keyboard-only before the queued-resume fix",
+  "symptom": "Keyboard-confirmed run remains on a paused Title with no open dialog",
+  "observed": {
+    "titleSceneStatus": 6,
+    "combatSceneStatus": 1,
+    "titleStarting": true,
+    "titleWaitingAssets": false,
+    "titlePicked": "standard",
+    "titleModal": false,
+    "runStarted": true,
+    "runGlobalStep": 0,
+    "runDifficulty": "standard",
+    "tutorialSeen": [],
+    "tutorialDisabled": false,
+    "tutorialDialog": false,
+    "assetsReady": true,
+    "firstAssetsReady": true,
+    "assetFailures": [],
+    "openDialogs": []
+  },
+  "cause": "ScenePlugin.pause queues work; checking isPaused before enqueueing the matching resume can skip recovery when the dialog closes in the same frame."
+}

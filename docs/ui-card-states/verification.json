@@ -1,0 +1,2099 @@
+{
+  "generatedAt": "2026-10-25T11:15:20.783Z",
+  "scope": "WebGL and forced Canvas renderers; real rendered pixel samples; two realms and screen widths; controlled resources, free cards, resonance discounts, selection rebuilds, rejection and actual Spirit payment",
+  "results": [
+    {
+      "id": "webgl-phone-gothic",
+      "states": [
+        {
+          "name": "energy-only",
+          "resources": {
+            "energy": 1,
+            "spirit": 0,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "fu_paper",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 638,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 39.61904761904762
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 41.45
+            }
+          ]
+        },
+        {
+          "name": "spirit-only",
+          "resources": {
+            "energy": 0,
+            "spirit": 2,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 42.05
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.92857142857143
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 638,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 39.61904761904762
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            }
+          ]
+        },
+        {
+          "name": "free-after-resonance",
+          "resources": {
+            "energy": 0,
+            "spirit": 0,
+            "resonance": 2
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 42.05
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.92857142857143
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 638,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 39.61904761904762
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            }
+          ]
+        },
+        {
+          "name": "restored",
+          "resources": {
+            "energy": 3,
+            "spirit": 3,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 42.05
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.92857142857143
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "2",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 44.46666666666667
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 638,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 39.61904761904762
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 41.45
+            }
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "id": "seal_gate",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 33,
+            "top": 639,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "fu_paper",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 65,
+            "top": 641,
+            "width": 21,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": true,
+          "box": {
+            "left": 184,
+            "top": 645,
+            "width": 21,
+            "height": 5
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 304,
+            "top": 638,
+            "width": 21,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "strike",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "1",
+          "selected": false,
+          "box": {
+            "left": 336,
+            "top": 639,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        }
+      ],
+      "before": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "after": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "paid": [
+        {
+          "id": "seal_gate",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 82,
+            "top": 639,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 41.45
+        },
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": false,
+          "box": {
+            "left": 150,
+            "top": 641,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 219,
+            "top": 638,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 39.833333333333336
+        },
+        {
+          "id": "strike",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 288,
+            "top": 639,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 0
+        }
+      ]
+    },
+    {
+      "id": "webgl-desktop-shanhai",
+      "states": [
+        {
+          "name": "energy-only",
+          "resources": {
+            "energy": 1,
+            "spirit": 0,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "fu_paper",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 35.923809523809524
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 576,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.8125
+            },
+            {
+              "id": "seal_gate",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            }
+          ]
+        },
+        {
+          "name": "spirit-only",
+          "resources": {
+            "energy": 0,
+            "spirit": 2,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2375
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 576,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.8125
+            },
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.3625
+            }
+          ]
+        },
+        {
+          "name": "free-after-resonance",
+          "resources": {
+            "energy": 0,
+            "spirit": 0,
+            "resonance": 2
+          },
+          "cards": [
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2375
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 576,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.8125
+            },
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.3625
+            }
+          ]
+        },
+        {
+          "name": "restored",
+          "resources": {
+            "energy": 3,
+            "spirit": 3,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2375
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "2",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 35.923809523809524
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 576,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.8125
+            },
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.3625
+            }
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "id": "fu_paper",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 480,
+            "top": 577,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": true,
+          "box": {
+            "left": 630,
+            "top": 583,
+            "width": 21,
+            "height": 5
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "strike",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "1",
+          "selected": false,
+          "box": {
+            "left": 749,
+            "top": 579,
+            "width": 21,
+            "height": 5
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 765,
+            "top": 576,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "seal_gate",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 781,
+            "top": 577,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        }
+      ],
+      "before": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "after": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "paid": [
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": false,
+          "box": {
+            "left": 529,
+            "top": 577,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "strike",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 596,
+            "top": 579,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 664,
+            "top": 576,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 33
+        },
+        {
+          "id": "seal_gate",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 733,
+            "top": 577,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 35.4875
+        }
+      ]
+    },
+    {
+      "id": "canvas-phone-gothic",
+      "states": [
+        {
+          "name": "energy-only",
+          "resources": {
+            "energy": 1,
+            "spirit": 0,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "fu_paper",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "seal_gate",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.666666666666664
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 637,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 39.575
+            }
+          ]
+        },
+        {
+          "name": "spirit-only",
+          "resources": {
+            "energy": 0,
+            "spirit": 2,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.785714285714285
+            },
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 43.91428571428571
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 637,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 39.575
+            }
+          ]
+        },
+        {
+          "name": "free-after-resonance",
+          "resources": {
+            "energy": 0,
+            "spirit": 0,
+            "resonance": 2
+          },
+          "cards": [
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.785714285714285
+            },
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 43.91428571428571
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 637,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 39.575
+            }
+          ]
+        },
+        {
+          "name": "restored",
+          "resources": {
+            "energy": 3,
+            "spirit": 3,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "heavy_blow",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "2",
+              "selected": false,
+              "box": {
+                "left": 47,
+                "top": 639,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 41.3375
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 116,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.785714285714285
+            },
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 184,
+                "top": 642,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 43.91428571428571
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 253,
+                "top": 641,
+                "width": 21,
+                "height": 4
+              },
+              "rgbSpread": 43.666666666666664
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 322,
+                "top": 637,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 39.575
+            }
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": true,
+          "box": {
+            "left": 184,
+            "top": 643,
+            "width": 21,
+            "height": 5
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "fu_paper",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 304,
+            "top": 641,
+            "width": 21,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "seal_gate",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 314,
+            "top": 642,
+            "width": 21,
+            "height": 5
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "strike",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "1",
+          "selected": false,
+          "box": {
+            "left": 325,
+            "top": 641,
+            "width": 21,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 336,
+            "top": 637,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        }
+      ],
+      "before": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "after": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "paid": [
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": false,
+          "box": {
+            "left": 82,
+            "top": 639,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "seal_gate",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 150,
+            "top": 641,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 42.86904761904762
+        },
+        {
+          "id": "strike",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 219,
+            "top": 641,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 288,
+            "top": 637,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 39.525
+        }
+      ]
+    },
+    {
+      "id": "canvas-desktop-shanhai",
+      "states": [
+        {
+          "name": "energy-only",
+          "resources": {
+            "energy": 1,
+            "spirit": 0,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "fu_paper",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.375
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 575,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.75
+            }
+          ]
+        },
+        {
+          "name": "spirit-only",
+          "resources": {
+            "energy": 0,
+            "spirit": 2,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2125
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.6625
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 575,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.75
+            }
+          ]
+        },
+        {
+          "name": "free-after-resonance",
+          "resources": {
+            "energy": 0,
+            "spirit": 0,
+            "resonance": 2
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2125
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.6625
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×2",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "strike",
+              "affordable": false,
+              "playable": false,
+              "gray": true,
+              "alpha": 1,
+              "costText": "×1",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 0
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 575,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.75
+            }
+          ]
+        },
+        {
+          "name": "restored",
+          "resources": {
+            "energy": 3,
+            "spirit": 3,
+            "resonance": 0
+          },
+          "cards": [
+            {
+              "id": "seal_gate",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 495,
+                "top": 577,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.2125
+            },
+            {
+              "id": "fu_paper",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 562,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.6625
+            },
+            {
+              "id": "heavy_blow",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "2",
+              "selected": false,
+              "box": {
+                "left": 630,
+                "top": 579,
+                "width": 21,
+                "height": 5
+              },
+              "rgbSpread": 35.8
+            },
+            {
+              "id": "strike",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "1",
+              "selected": false,
+              "box": {
+                "left": 699,
+                "top": 578,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 35.375
+            },
+            {
+              "id": "blood_pact",
+              "affordable": true,
+              "playable": true,
+              "gray": false,
+              "alpha": 1,
+              "costText": "0",
+              "selected": false,
+              "box": {
+                "left": 767,
+                "top": 575,
+                "width": 20,
+                "height": 4
+              },
+              "rgbSpread": 32.75
+            }
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "id": "seal_gate",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 480,
+            "top": 577,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "fu_paper",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 512,
+            "top": 578,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": true,
+          "box": {
+            "left": 630,
+            "top": 583,
+            "width": 21,
+            "height": 5
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "strike",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "1",
+          "selected": false,
+          "box": {
+            "left": 749,
+            "top": 578,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 781,
+            "top": 575,
+            "width": 20,
+            "height": 4
+          },
+          "pixelSample": "occluded by the inspected-card layout"
+        }
+      ],
+      "before": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "after": {
+        "energy": 1,
+        "spirit": 0,
+        "hand": 5
+      },
+      "paid": [
+        {
+          "id": "seal_gate",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 529,
+            "top": 577,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 35.2125
+        },
+        {
+          "id": "heavy_blow",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×2",
+          "selected": false,
+          "box": {
+            "left": 596,
+            "top": 579,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "strike",
+          "affordable": false,
+          "playable": false,
+          "gray": true,
+          "alpha": 1,
+          "costText": "×1",
+          "selected": false,
+          "box": {
+            "left": 664,
+            "top": 579,
+            "width": 21,
+            "height": 4
+          },
+          "rgbSpread": 0
+        },
+        {
+          "id": "blood_pact",
+          "affordable": true,
+          "playable": true,
+          "gray": false,
+          "alpha": 1,
+          "costText": "0",
+          "selected": false,
+          "box": {
+            "left": 733,
+            "top": 575,
+            "width": 20,
+            "height": 4
+          },
+          "rgbSpread": 32.9125
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

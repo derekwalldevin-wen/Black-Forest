@@ -1,0 +1,725 @@
+{
+  "generatedAt": "2026-10-25T12:56:18.064Z",
+  "tool": "image_gen.imagegen (built-in)",
+  "references": [
+    "docs/ui-native/shop-concept-v1.webp",
+    "docs/ui-native/utility-concepts-v1.webp"
+  ],
+  "commercialClearance": false,
+  "records": [
+    {
+      "key": "shell",
+      "ref": "utility-concepts-v1.webp",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Production UI artwork extraction from the attached approved four-panel concept board. Reproduce the ornate parchment panel design language EXACTLY, including substantial gilded vine and leaf corner ornaments, dark bronze outer contour, little decorative central diamonds, thin paired gold inner rails, fine watercolor paper with naturally aged edges. Create ONE blank rectangular panel shell, square 1024x1024 for nine-slicing, not four panels. Entire center is clean quiet warm ivory parchment suitable for runtime text. Keep border ornament within 145px of edges; large lush leafy corners fit within 175x175px so a 192px nine-slice keeps them intact. Center portions of each edge are straight, parallel, continuous. Actual transparent outside the irregular outer silhouette, opaque paper inside. Front view. Faithfully retain the intricate botanical ornament and beveled brass detail of the reference rather than reducing to a thin line. Remove ALL text, icons, props, buttons, headings, illustrations and UI content from the interior. No fake letters or watermark.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-d91de9ab-e343-409f-ac27-6b06281cd5d6.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/shell-v2.webp",
+          "width": 1024,
+          "height": 1024,
+          "alpha": true,
+          "bytes": 233714,
+          "sha256": "f2df52c8d2c0edb1d903f83093392123d4b509433fc76481d0445f7761d7d6d0"
+        }
+      ],
+      "originalSha256": "31de3ee64fe46e7c827d07efa5f0aa71f25981dc1a26cf1093c21191827080f1",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/utility-concepts-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "headers",
+      "ref": "utility-concepts-v1.webp",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Production UI artwork extraction from attached approved concept board. Re-create its FOUR large header prop collages with maximal fidelity to their composition, painted material and lush botanical detail. A square 1536x1536 transparent sprite atlas of EXACTLY 1 column and 4 equal horizontal rows (each 1536x384), no grid lines. Row1 the ornate fan of midnight indigo playing cards and golden crescent amid ivy and blue-grey small flowers. Row2 open illustrated travel journal with ivory pages, black quill, ink pot and lavender branches. Row3 large antique gold eight-point compass/star medal framed by laurel and botanical sprigs. Row4 dark leather archive chest with ornate brass fittings, blank parchment scroll and lavender botanicals. Each collage horizontally centered in its row, maximum 90% row width and 90% row height, keep transparent margins between rows, do not overlap. Actual alpha transparency around and behind every collage. These are large ornamental mastheads, not tiny icons. No panels, frames surrounding a cell, labels, numbers, symbols resembling text, legible writing or watermark. Same elaborate watercolor and engraved gold as reference.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-34a032b3-7574-4460-b75f-ca870dd92e22.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/header-hand-v2.webp",
+          "width": 900,
+          "height": 274,
+          "alpha": true,
+          "bytes": 132654,
+          "sha256": "54bdc4d85b33b3d0436e6c10c44104967d24527066605be973bd198babb615ce",
+          "sourceCell": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 314
+          }
+        },
+        {
+          "file": "assets/ui/native/header-guide-v2.webp",
+          "width": 900,
+          "height": 253,
+          "alpha": true,
+          "bytes": 133966,
+          "sha256": "289d282a88fa0d25314f43807d5b03aca282b63fc9ec06c15e170c51073c6be6",
+          "sourceCell": {
+            "left": 0,
+            "top": 314,
+            "width": 1254,
+            "height": 313
+          }
+        },
+        {
+          "file": "assets/ui/native/header-collection-v2.webp",
+          "width": 900,
+          "height": 264,
+          "alpha": true,
+          "bytes": 149980,
+          "sha256": "a9100102b5a29793f9dec83d348d0606e2eaecb405f7289350a02edad61c4bf6",
+          "sourceCell": {
+            "left": 0,
+            "top": 627,
+            "width": 1254,
+            "height": 314
+          }
+        },
+        {
+          "file": "assets/ui/native/header-save-v2.webp",
+          "width": 900,
+          "height": 261,
+          "alpha": true,
+          "bytes": 138120,
+          "sha256": "676c2b81aa7be9881d330383f678d5f082e5a4fd62ff3fbfe6c328ffc4c6c024",
+          "sourceCell": {
+            "left": 0,
+            "top": 941,
+            "width": 1254,
+            "height": 313
+          }
+        }
+      ],
+      "originalSha256": "62ea767db4b3fe97a0054e7983b34491c316b4f7df212a6441ab2d517c5ab57a",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/utility-concepts-v1.webp"
+        }
+      ],
+      "preview": "docs/ui-native/v2/headers-atlas.webp"
+    },
+    {
+      "key": "components",
+      "ref": "utility-concepts-v1.webp",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Production UI component atlas derived faithfully from the attached approved four-panel design. Generate a landscape 1536x1024 transparent atlas in EXACTLY 2 columns and 4 rows, eight equal 768x256 cells with no visible grid, each component fills its cell with 12px transparent exterior gutter. Reading order left to right then down: 1 blank large GOLD primary button with chamfered corners, detailed multiple gold outlines, warm etched gold center and ornate leaf end caps; 2 blank INK BLUE secondary button same shape and gold edge; 3 blank BLACK TITLE CARTOUCHE with elegantly curved pointed ends, brass vine crown and cream/gold inner rim; 4 blank IVORY PARCHMENT CONTENT ROW PANEL with finely beveled gold double outline and compact diamond corner ornaments, quiet pale center; 5 blank DARK CHARCOAL EXAMPLE PANEL with gold filigree double frame and quiet near-black center; 6 blank IVORY SMALL INSET PANEL with etched gold edge and quiet pale center; 7 horizontal gold vine/diamond ornamental divider on transparent background; 8 blank BLACK AND GOLD WALLET CARTOUCHE. Preserve the reference actual ornament richness and material textures. Every functional center MUST be empty: no text, numbers, icons, arrows, writing, labels or watermark. Whole components visible, no overlapping neighboring cells. Actual alpha outside each component, opaque centers for components1-6 and8.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-d796a05e-b4dc-452a-b850-b63e86ba8a79.png",
+      "originalSha256": "eea4578c7358baecd7925bf86b9154ae966c5a6eecdaa862f2eccbfb1a97c640",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/utility-concepts-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "shop-hero",
+      "ref": "shop-concept-v1.webp",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Extract and faithfully reconstruct ONLY the illustrated HEADER of the attached approved supply-shop concept as a production game texture, landscape 1536x640. Preserve its composition and visual richness: huge amber wrought-brass lantern at upper LEFT, beautifully worn leather satchel with straps centered LEFT, gold coins and rolled fabrics on the bench, full moon and distant gothic castle in dark watercolor forest behind, dense ivy and ornate curved gilded vine corners. The lower quarter has the original large dark curved gold TITLE CARTOUCHE, perfectly EMPTY, centered horizontally and spanning 60% width. Upper RIGHT has the original smaller dark gold-edged wallet cartouche, perfectly EMPTY, centered at x83%, y55%, width26%, height25%. Leave both placards clear and dark for runtime lettering. Strong readable lantern light, rich material detailing from reference, not a generic dark forest panorama. Crop out the entire shop body, item rows and footer. No text, glyphs, prices, labels, numbers, watermark, characters or extra UI elements. Full bleed image.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-7ddd0e3e-3ede-48bc-a45a-b8f81cc73ffb.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/shop-hero-v2.webp",
+          "width": 1440,
+          "height": 600,
+          "alpha": false,
+          "bytes": 335064,
+          "sha256": "7747c8730e1c5fa8241aa0c3a27bf2112a31c328dd826d082a25d6edf405db06"
+        }
+      ],
+      "originalSha256": "da30c0ced07ae3b904cbbd4885be9e3b5cefae3c652d6df8ff4e6423ce7f4fef",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/shop-concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "components-clean",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Edit this production UI atlas: remove ONLY the brown/bronze backdrop OUTSIDE the eight individual components and make it genuinely transparent alpha. Preserve every component pixel, exact position, exact 1536x1024 canvas size, 2 columns x4rows layout, gilded outlines, ornaments, shadows tight to frames, all gold, blue, ivory and black INTERIOR fills and textures. The horizontal botanical divider in bottom-left must be isolated on transparency. There must be no brown matte rectangular field around any component. Empty alpha gutters between all components. Do not rearrange, rescale, add text, crop or change design. Actual alpha transparency.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-493d923b-5821-423e-a90b-d54311293e2f.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/button-gold-v2.webp",
+          "width": 714,
+          "height": 175,
+          "alpha": true,
+          "bytes": 50044,
+          "sha256": "a0750ddb6ba5ef5e862c337e76224a8feedaf5db09e614e8b52d6b5a3e720aab",
+          "sourceCell": {
+            "left": 0,
+            "top": 0,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/button-ink-v2.webp",
+          "width": 716,
+          "height": 177,
+          "alpha": true,
+          "bytes": 43874,
+          "sha256": "d6a183bcc62b4310977a661a1de62f4c2d5cd13c9535ae68de0032e9f5e94bd3",
+          "sourceCell": {
+            "left": 768,
+            "top": 0,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/title-v2.webp",
+          "width": 714,
+          "height": 251,
+          "alpha": true,
+          "bytes": 53084,
+          "sha256": "8c5c6b548f5e30b435009e919d3d1bb0f2f55023fd9f2ac9afccdfc11a279347",
+          "sourceCell": {
+            "left": 0,
+            "top": 256,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/row-v2.webp",
+          "width": 720,
+          "height": 211,
+          "alpha": true,
+          "bytes": 31514,
+          "sha256": "15941fbfd585f3d0954b17ca27bb9271a58558be335c8d0996f06631f87a752e",
+          "sourceCell": {
+            "left": 768,
+            "top": 256,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/example-v2.webp",
+          "width": 720,
+          "height": 234,
+          "alpha": true,
+          "bytes": 47088,
+          "sha256": "86d416459696d53e5daa909f7c79699e8cdc171678fba57df457030ac951178a",
+          "sourceCell": {
+            "left": 0,
+            "top": 512,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/inset-v2.webp",
+          "width": 710,
+          "height": 233,
+          "alpha": true,
+          "bytes": 26552,
+          "sha256": "e77c113c3839926d047d8c01c80c050711e96d544ee02a354380ec025d4fae2c",
+          "sourceCell": {
+            "left": 768,
+            "top": 512,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/divider-v2.webp",
+          "width": 694,
+          "height": 108,
+          "alpha": true,
+          "bytes": 29670,
+          "sha256": "29d0f01b3a28837173d145ce6d07e507934bb4fb9a9a805cead6d0396b31aa0b",
+          "sourceCell": {
+            "left": 0,
+            "top": 768,
+            "width": 768,
+            "height": 256
+          }
+        },
+        {
+          "file": "assets/ui/native/wallet-v2.webp",
+          "width": 714,
+          "height": 222,
+          "alpha": true,
+          "bytes": 56568,
+          "sha256": "e82b14a763c6f2278e92b61198573c201d48c60f93d05679aae7cd25e4e1e848",
+          "sourceCell": {
+            "left": 768,
+            "top": 768,
+            "width": 768,
+            "height": 256
+          }
+        }
+      ],
+      "originalSha256": "62933ab7e4ea7356f9667c67e6a7fb8566d2ebc3da261825c0bd68e7f1d986bb",
+      "referenceRoles": [
+        {
+          "role": "edit target",
+          "file": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-d796a05e-b4dc-452a-b850-b63e86ba8a79.png"
+        }
+      ],
+      "preview": "docs/ui-native/v2/components-clean-atlas.webp"
+    },
+    {
+      "key": "resources",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Production resource medallion sprite strip based on the attached approved game concept. Reconstruct its three resource icons as exquisite miniature round black-enamel antique-gold medallions. EXACTLY three equal square cells in a horizontal 1536x512 transparent strip. Cell1 a faceted red ruby HEART for health; cell2 a pointed glowing blue CRYSTAL for action energy; cell3 a luminous purple spiral ORB for spirit. Each circular medallion fills80% of its cell, outer border engraved gold double ring, subtle bevels, saturated jewel highlights, velvety dark interior, faithful to the resource bar illustrated in the first panel of the reference. Fully separated with transparent gutters; actual alpha background outside each circular medallion. No text, no numerals, no labels, no panels, no writing, no watermark.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-ef7feb1a-2992-4729-a413-8db551d3b447.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/resource-health-v2.webp",
+          "width": 128,
+          "height": 129,
+          "alpha": true,
+          "bytes": 9780,
+          "sha256": "31603a96229b831139d3deb08909c4ce74a646e5b3d86ee8fc46880155d5be48",
+          "sourceCell": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          }
+        },
+        {
+          "file": "assets/ui/native/resource-energy-v2.webp",
+          "width": 128,
+          "height": 129,
+          "alpha": true,
+          "bytes": 9534,
+          "sha256": "12b8ef4d47156b91c68d72d977f1bb567aec0dc3950845f389c46a2f97b2192e",
+          "sourceCell": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          }
+        },
+        {
+          "file": "assets/ui/native/resource-spirit-v2.webp",
+          "width": 128,
+          "height": 129,
+          "alpha": true,
+          "bytes": 10306,
+          "sha256": "9ac3d0ef3108c6af68eff0add873a1f069434a83f543fdb6d746774387de9024",
+          "sourceCell": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          }
+        }
+      ],
+      "originalSha256": "f66be4e5f7ed1f5459cba54c9df8f7f5e9d87ab449825a227ca0e412892134c7",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/utility-concepts-v1.webp"
+        }
+      ],
+      "preview": "docs/ui-native/v2/resources-atlas.webp"
+    },
+    {
+      "key": "achievements",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Production achievement illustration atlas for a gothic storybook game, matching the attached UI reference. Eight different ornate vertical gold-framed miniature paintings on a transparent background. Exact 4 columns by 2 rows grid, landscape1536x1024, equal384x512 cells. Reading order: 1 glowing traveller lantern inside forest gate; 2 fan of magical collectible cards; 3 antique treasure chest and relics; 4 winding branching road through mist; 5 crowned antlered forest throne amid ominous trees; 6 welcoming cottage with lantern in window; 7 lit lantern resisting storm and thorns; 8 compass above three diverging paths. Exquisite engraved gold corners and double gold frame around every miniature, deep indigo interior, jewel colors, watercolor botanicals. Each plaque fits wholly inside90% of its own cell, transparent gaps between cells. Recognizable at50x70px. No letters, text, digits, labels, writing, checkmarks, watermark or extra panels. Genuine alpha outside all plaques.",
+      "ref": "utility-concepts-v1.webp",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-fcb25c64-08f6-4629-be21-e89bf3754267.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/achievements-v2.webp",
+          "width": 1008,
+          "height": 672,
+          "alpha": true,
+          "bytes": 441728,
+          "sha256": "bd66c244644d321afbf13b9e6016a7098160fa9b5df70149dba7cb4af884a3af"
+        }
+      ],
+      "originalSha256": "e09af299d9484db4e15077fe6deb82db6626404ef3a58e56c213b26396287c90",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/utility-concepts-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "service",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Reconstruct ONLY the scissors-and-cards illustration in the lower-left service panel of attached supply-shop concept, as a standalone production cutout square768x768. Exquisite ornate antique brass shears open diagonally across two midnight indigo playing cards engraved with gold vines, with surrounding lush ivy, tiny ivory wildflowers and blue-grey leaves. Preserve the reference gothic fairy-tale watercolor style, rich material detail and strong diagonal composition. Comfortable transparent margins with full scissor handles and tips visible. Genuine alpha transparent background, no paper backdrop, no UI panel, no text, numbers, glyphs, labels, frame or watermark.",
+      "ref": "shop-concept-v1.webp",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-6d55655f-23ee-4d3f-baf8-0f159aee1368.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/service-v2.webp",
+          "width": 512,
+          "height": 512,
+          "alpha": true,
+          "bytes": 135096,
+          "sha256": "c9ab773b3f93fe59054a2aa154a977b8d09134bb10c70582c18704e88ccd8937"
+        }
+      ],
+      "originalSha256": "046898ee6b374c2b6fa736d04b4af5b349c98c5f04db208ba7e0871bb384d222",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/shop-concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "vignettes",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Production colored item vignette atlas for a gothic fairy-tale game shop. The attached image is a strict style reference for its lush colored watercolor object collages, ivy and tiny flowers around the objects, irregular transparent painted edges. Exactly18 separate illustrations in EXACT6columns by3rows on landscape1536x1024. Equal256x341.33 cells, no grid. Reading order: 1 crimson-slashing steel sword; 2 blue silver shield; 3 antique dagger with burgundy cloth; 4 crystal vial of green healing liquid; 5 bleeding crimson heart entwined by black thorns; 6 purple all-seeing occult eye; 7 luminous full moon with midnight clouds; 8 emerald flame rising from ornate gold incense basin; 9 blue star globe in golden armillary rings like first shop item reference; 10 silver wolf fang with red ribbon; 11 bright violet lightning bolt; 12 ivory lotus with golden light; 13 jade paper talisman hanging from red thread without writing; 14 coiled thorn branch and ivory roses; 15 golden jewel; 16 smoky green poison flask; 17 small swirling amber spark; 18 rolling teal mist clouds. Every object fits the central80% of its cell, dark blue-grey botanical sprigs around it, saturated jewel highlights, exquisite bronze details. Actual alpha around each independent vignette so they blend onto parchment, NO solid rectangles behind objects, no borders or frames. Full objects remain in their own cells, equal scale. No text, letters, numbers, labels, glyphs resembling writing or watermark.",
+      "ref": "shop-concept-v1.webp",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-063017e1-bd74-4e32-9894-04e35ee7ecad.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/item-sword-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 50818,
+          "sha256": "5fcbd7c4fef4e3409e572976d18a8e11d616b158e37cf01a69024de1ccd7f123",
+          "sourceCell": {
+            "left": 0,
+            "top": 0,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-shield-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 54500,
+          "sha256": "029298952bcac8888c64c8e2aae5e092b7ea069693ec35b6f2ecfdd92af452fd",
+          "sourceCell": {
+            "left": 256,
+            "top": 0,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-dagger-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 52526,
+          "sha256": "23bf75d07eed4bbe6d9ed262a05fffcb53576fc899eda549c46feef09569546c",
+          "sourceCell": {
+            "left": 512,
+            "top": 0,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-vial-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 58478,
+          "sha256": "2c9f1e3db30590e0cc82554434fe8b467d7c22ea8f2befb3fcf2c7c5fd4a2cc4",
+          "sourceCell": {
+            "left": 768,
+            "top": 0,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-blood-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 55064,
+          "sha256": "4121979344b90afdfc2a65dd491ab99f26fffe427252e9c64d819c1890bd83a8",
+          "sourceCell": {
+            "left": 1024,
+            "top": 0,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-eye-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 59180,
+          "sha256": "23573b7618d4b75dddd4328f27e0fac3cbdefab953e925fea08f27966916c7e1",
+          "sourceCell": {
+            "left": 1280,
+            "top": 0,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-moon-v2.webp",
+          "width": 256,
+          "height": 342,
+          "alpha": true,
+          "bytes": 51154,
+          "sha256": "371601fcaf3fd48e6f882e42d46bf7aabc2864f704de054adc89e2d54c05309e",
+          "sourceCell": {
+            "left": 0,
+            "top": 341,
+            "width": 256,
+            "height": 342
+          }
+        },
+        {
+          "file": "assets/ui/native/item-lens-v2.webp",
+          "width": 256,
+          "height": 342,
+          "alpha": true,
+          "bytes": 55854,
+          "sha256": "94c26380c42f29572d8ee8e1b4a00a25fba8c67fa0574464093d496e4a7715ce",
+          "sourceCell": {
+            "left": 256,
+            "top": 341,
+            "width": 256,
+            "height": 342
+          }
+        },
+        {
+          "file": "assets/ui/native/item-ring-v2.webp",
+          "width": 256,
+          "height": 342,
+          "alpha": true,
+          "bytes": 62354,
+          "sha256": "fcb906d3e1e99b6fae4336f5282bbe571e2e98fb1a10e86ae847b109e7c904ba",
+          "sourceCell": {
+            "left": 512,
+            "top": 341,
+            "width": 256,
+            "height": 342
+          }
+        },
+        {
+          "file": "assets/ui/native/item-fang-v2.webp",
+          "width": 256,
+          "height": 342,
+          "alpha": true,
+          "bytes": 51436,
+          "sha256": "3aa262480c43b5f6903fbe892a469ea45bfffe227fc639bc5fcac44f8629d7ba",
+          "sourceCell": {
+            "left": 768,
+            "top": 341,
+            "width": 256,
+            "height": 342
+          }
+        },
+        {
+          "file": "assets/ui/native/item-thunder-v2.webp",
+          "width": 256,
+          "height": 342,
+          "alpha": true,
+          "bytes": 55420,
+          "sha256": "ffccd59e1202d6fa9e6cd81b7a4f87bdf573e7a63b869035d5dc37832909c204",
+          "sourceCell": {
+            "left": 1024,
+            "top": 341,
+            "width": 256,
+            "height": 342
+          }
+        },
+        {
+          "file": "assets/ui/native/item-lotus-v2.webp",
+          "width": 256,
+          "height": 342,
+          "alpha": true,
+          "bytes": 54362,
+          "sha256": "8fd27d3ba21b5187ca6457935a62f0b41f5bb49a13fdfe91ac85009a4284a129",
+          "sourceCell": {
+            "left": 1280,
+            "top": 341,
+            "width": 256,
+            "height": 342
+          }
+        },
+        {
+          "file": "assets/ui/native/item-talisman-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 59162,
+          "sha256": "34bd316c8a775f893d8382396ea057245c421e4cbb3f7301866d4d64cfe5846e",
+          "sourceCell": {
+            "left": 0,
+            "top": 683,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-thorns-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 57784,
+          "sha256": "cac6ae0264b657af1087ee78ccdb1a637d6420c13e469126d5051c10ea8468e7",
+          "sourceCell": {
+            "left": 256,
+            "top": 683,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-gem-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 52744,
+          "sha256": "1f255d42811f4db940b6aedff4c496e38d64f19e05725b6ba7b816b493331781",
+          "sourceCell": {
+            "left": 512,
+            "top": 683,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-venom-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 61472,
+          "sha256": "a53d0ef648bf917b6a3c189990f20209325952b4c538caaae00bab6361e4a0f9",
+          "sourceCell": {
+            "left": 768,
+            "top": 683,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-spark-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 54662,
+          "sha256": "8761565e7691c9e7b8fe3b23271678dff17f1a05758296095a874aae94a4a882",
+          "sourceCell": {
+            "left": 1024,
+            "top": 683,
+            "width": 256,
+            "height": 341
+          }
+        },
+        {
+          "file": "assets/ui/native/item-cloud-v2.webp",
+          "width": 256,
+          "height": 341,
+          "alpha": true,
+          "bytes": 56474,
+          "sha256": "ef4b06e1800451b5c577d17bf446698a9426101947487d892fb225c9442f6e97",
+          "sourceCell": {
+            "left": 1280,
+            "top": 683,
+            "width": 256,
+            "height": 341
+          }
+        }
+      ],
+      "originalSha256": "9d9459864ebac247b9aa1f8afcb524ecf3c2bda27cfa7c98043b2717bad80c3d",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/shop-concept-v1.webp"
+        }
+      ],
+      "preview": "docs/ui-native/v2/vignettes-atlas.webp"
+    },
+    {
+      "key": "corners",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Production UI transparent decorative corner overlays matching the attached gothic parchment UI concept. Square1024x1024 atlas exact2columns by2rows, four equal512x512 cells. Each cell contains one L-SHAPED ornate antique brass vine corner with lush blue-grey ivy and small gilded leaves, genuinely transparent everywhere around/inside the L; absolutely NO paper, beige rectangle, painted backdrop or interior fill. Top-left cell: top-left frame corner extending toward right and down. Top-right: top-right corner extending left and down. Bottom-left: bottom-left extending right and up. Bottom-right: bottom-right extending left and up. Each entire L ornament fits inside its own cell with12px transparent margin and is70-100px thick at full512cell resolution, a few graceful leaves curl into the transparent inner space. Beautiful detailed engraved gold, black bronze outlines, soft highlights, exact botanical language of reference. No text, numbers, panels, drop shadow matte, frame interior, background color, labels or watermark. Actual alpha outside the vine shapes.",
+      "ref": "utility-concepts-v1.webp",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-1e2f7167-ce07-4ae0-8d09-a17a39754744.png",
+      "outputs": [
+        {
+          "file": "assets/ui/native/corner-tl-v2.webp",
+          "width": 220,
+          "height": 220,
+          "alpha": true,
+          "bytes": 19590,
+          "sha256": "0be4f5218eceec78fe681ba44a441b92d00eae88872ed475878f9cbbf7df511d",
+          "sourceCell": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          }
+        },
+        {
+          "file": "assets/ui/native/corner-tr-v2.webp",
+          "width": 220,
+          "height": 220,
+          "alpha": true,
+          "bytes": 17704,
+          "sha256": "bd7ef7d66b41a2d56d6fa474c6c45f146ae09c0d568810363b4c41594daf2d39",
+          "sourceCell": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          }
+        },
+        {
+          "file": "assets/ui/native/corner-bl-v2.webp",
+          "width": 220,
+          "height": 220,
+          "alpha": true,
+          "bytes": 20918,
+          "sha256": "bfd52f2b221a22ae5f72517b93944e0ae0197f49b50bc8d7fefb7fc9bc86326a",
+          "sourceCell": {
+            "left": 0,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          }
+        },
+        {
+          "file": "assets/ui/native/corner-br-v2.webp",
+          "width": 220,
+          "height": 220,
+          "alpha": true,
+          "bytes": 19688,
+          "sha256": "a44003ad0a0b762ee4e41079758beac75434ab981f3b9f2539f176e2977e3d8f",
+          "sourceCell": {
+            "left": 627,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          }
+        }
+      ],
+      "originalSha256": "c82e7634c410813184fadac98d0947e6af23f9700dba79ac9e1407e230858227",
+      "referenceRoles": [
+        {
+          "role": "approved visual reference",
+          "file": "docs/ui-native/utility-concepts-v1.webp"
+        }
+      ],
+      "preview": "docs/ui-native/v2/corners-atlas.webp"
+    }
+  ],
+  "totalRuntimeBytes": 3149680,
+  "note": "Initial parallel illustration batch did not return and was stopped; sequential built-in image generation succeeded for every required asset. All originals are retained. Cropping/encoding only, no programmatic painting.",
+  "runtimeFiles": 41
+}

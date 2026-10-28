@@ -22,7 +22,7 @@
   { "wait": 1100 },
   { "shot": "05-shop-removed.png" },
   { "eval": "(()=>{const d=document.querySelector('dialog.hand-reader');return JSON.stringify({gold:RUN.gold,deck:RUN.deck.length,market:RUN.market,items:d?d.querySelectorAll('ul li').length:0});})()" },
-  { "clickSelector": "dialog.hand-reader > button:last-of-type" },
+  { "clickSelector": "dialog.hand-reader .painted-footer button" },
   { "wait": 1100 },
   { "eval": "(()=>{const d=document.querySelector('dialog.hand-reader');return JSON.stringify({shopClosed:!d,stage:(window.__game.scene.getScene('Reward')||{})._stage});})()" },
   { "clickAt": "(()=>{const b=window.__game.scene.getScene('Reward').continueBtn;return b&&b.active?{x:b.x,y:b.y}:null;})()" },

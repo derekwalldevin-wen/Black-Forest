@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="black-forest-release" content="20261028-ui-fidelity">
 <link rel="icon" href="data:,">
 <!-- 移动端三件套:禁缩放 + 禁手势 + 覆盖安全区 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -53,13 +54,15 @@
   }
   @media (max-width:768px) { #desktop-note { display:none; } }
 </style>
-<link rel="stylesheet" href="assets/hand-reader.css?v=20261025-r2">
-<link rel="stylesheet" href="assets/desktop-ui.css?v=20261025-r2">
+<link rel="stylesheet" href="assets/hand-reader.css?v=20261025-play-controls">
+<link rel="stylesheet" href="assets/desktop-ui.css?v=20261025-card-gray">
+<link rel="stylesheet" href="assets/painted-ui.css?v=20261025-native-fidelity">
+<link rel="stylesheet" href="assets/difficulty-ui.css?v=20261026-difficulty-fidelity">
 </head>
 <body>
 
 <div id="game-container"></div>
-<div id="font-loading" role="status" style="position:fixed;z-index:110;color:#c8a86a;font:20px sans-serif">正在点亮提灯…</div>
+<div id="font-loading" role="status">正在点亮提灯…</div>
 
 <div id="rotate-hint">
   <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +94,7 @@ checkOrientation();
 <script src="locales/ui.js?v=20261025-r2"></script>
 <script src="locales/combat.js?v=20261025-r2"></script>
 <script src="locales/items.js?v=20261025-r2"></script>
-<script src="locales/journal.js?v=20261025-r2"></script>
+<script src="locales/journal.js?v=20261025-play-controls"></script>
 <script src="locales/reward.js?v=20261025-r2"></script>
 <script src="locales/events.js?v=20261025-r2"></script>
 <script src="locales/story.js?v=20261025-r2"></script>
@@ -101,7 +104,7 @@ checkOrientation();
 <script src="src/core/text-layout.js?v=20261025-r2"></script>
 
 <script src="src/core/cards.js?v=20261025-r2"></script>
-<script src="src/core/market.js?v=20261025-r2"></script>
+<script src="src/core/market.js?v=20261025-native-fidelity"></script>
 <script src="src/core/enemies.js?v=20261025-r2"></script>
 <script src="src/core/relics.js?v=20261025-r2"></script>
 <script src="src/core/events.js?v=20261025-r2"></script>
@@ -120,7 +123,7 @@ checkOrientation();
 <script src="src/core/hero-fx-assets.js?v=20261025-r2"></script>
 <script src="src/core/hero-fx.js?v=20261025-r2"></script>
 <script src="src/core/living-scene.js?v=20261025-r2"></script>
-<script src="src/core/ui.js?v=20261025-r2"></script>
+<script src="src/core/ui.js?v=20261025-card-gray"></script>
 <script src="src/core/combat.js?v=20261025-r2"></script>
 <script src="src/core/theme.js?v=20261025-r2"></script>
 <script src="src/core/ui-skin.js?v=20261025-r2"></script>
@@ -128,19 +131,20 @@ checkOrientation();
 <script src="src/core/loading-art.js?v=20261025-r2"></script>
 
 <script src="src/core/asset-variants.js?v=20261025-r2"></script>
-<script src="src/core/hand-reader.js?v=20261025-r2"></script>
-<script src="src/core/tutorial.js?v=20261025-r2"></script>
-<script src="src/core/desktop-ui.js?v=20261025-r2"></script>
-<script src="src/core/difficulty-ui.js?v=20261025-r2"></script>
-<script src="src/core/progress.js?v=20261025-r2"></script>
-<script src="src/core/transfer.js?v=20261025-r2"></script>
+<script src="src/core/painted-ui.js?v=20261025-native-fidelity"></script>
+<script src="src/core/hand-reader.js?v=20261025-native-fidelity"></script>
+<script src="src/core/tutorial.js?v=20261025-native-fidelity"></script>
+<script src="src/core/desktop-ui.js?v=20261025-native-fidelity"></script>
+<script src="src/core/difficulty-ui.js?v=20261026-difficulty-fidelity"></script>
+<script src="src/core/progress.js?v=20261025-native-fidelity"></script>
+<script src="src/core/transfer.js?v=20261025-native-fidelity"></script>
 <script src="src/core/asset-stream.js?v=20261025-r2"></script>
 <script src="src/scenes/BootScene.js?v=20261025-r2"></script>
 <script src="src/scenes/TitleScene.js?v=20261025-r2"></script>
-<script src="src/scenes/CombatScene.js?v=20261025-r2"></script>
+<script src="src/scenes/CombatScene.js?v=20261025-card-gray"></script>
 <script src="src/scenes/RewardScene.js?v=20261025-r2"></script>
 <script src="src/scenes/EventScene.js?v=20261025-r2"></script>
-<script src="src/scenes/JournalScene.js?v=20261025-r2"></script>
+<script src="src/scenes/JournalScene.js?v=20261025-play-controls"></script>
 <script src="src/scenes/StoryScene.js?v=20261025-r2"></script>
 
 <script src="src/game.js?v=20261025-r2"></script>

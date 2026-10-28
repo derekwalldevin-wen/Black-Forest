@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-25T01:13:05.825Z",
+  "generatedAt": "2026-10-28T12:59:25.243Z",
   "scope": "Current runtime assets plus included third-party licence files; source code, text and contributor assignments need separate review",
   "commercialClearance": false,
   "summary": {
-    "provenance-review-pending": 127,
-    "generation-record-found-terms-pending": 52,
+    "provenance-review-pending": 128,
+    "generation-record-found-terms-pending": 101,
     "source-documented-owner-confirmation-pending": 38,
-    "project-source": 2,
+    "project-source": 4,
     "licence-included": 6
   },
   "entries": [
@@ -780,11 +780,23 @@
     },
     {
       "file": "assets/desktop-ui.css",
-      "bytes": 4660,
-      "sha256": "6b7686012eaf15e6416a49acf594fb1f4bbecf951e56c2767cec407c262d8c01",
+      "bytes": 5278,
+      "sha256": "e2cbd1d1536465dde8d73fae37d48f42087eb9e93f2379f5ebf5f7b0c6ccc6ce",
       "group": "interface-code",
       "sourceEvidence": [
         "assets/desktop-ui.css"
+      ],
+      "license": "Project authorship/assignment confirmation pending",
+      "ai": "development-tool-use; content-disclosure assessed separately",
+      "status": "project-source"
+    },
+    {
+      "file": "assets/difficulty-ui.css",
+      "bytes": 11388,
+      "sha256": "978917ee7cf24c317cc38c51b18e348b12a56f513a241d112f733750eda8a3d3",
+      "group": "interface-code",
+      "sourceEvidence": [
+        "assets/difficulty-ui.css"
       ],
       "license": "Project authorship/assignment confirmation pending",
       "ai": "development-tool-use; content-disclosure assessed separately",
@@ -1064,8 +1076,8 @@
     },
     {
       "file": "assets/hand-reader.css",
-      "bytes": 1044,
-      "sha256": "23a9c2a7f149bbd57af6cf1ae7e180eba66be2b4d31a297d19f39432a78ed81d",
+      "bytes": 1042,
+      "sha256": "74a4e37c40709ca4ee3f0734928c0cfcfd286ae860f657a2697b2d58b6563efe",
       "group": "interface-code",
       "sourceEvidence": [
         "assets/hand-reader.css"
@@ -2915,6 +2927,18 @@
       "status": "provenance-review-pending"
     },
     {
+      "file": "assets/painted-ui.css",
+      "bytes": 19330,
+      "sha256": "e829c65660438bd0e16051b455045c2751c2119a3023b23706288e151a8b04b1",
+      "group": "interface-code",
+      "sourceEvidence": [
+        "assets/painted-ui.css"
+      ],
+      "license": "Project authorship/assignment confirmation pending",
+      "ai": "development-tool-use; content-disclosure assessed separately",
+      "status": "project-source"
+    },
+    {
       "file": "assets/story/ashes-v1.webp",
       "bytes": 226434,
       "sha256": "d1f85b42c2b0380c704de92e879277d6d2cfaea55fb5638c637285a0bd51760a",
@@ -3019,6 +3043,78 @@
       "status": "provenance-review-pending"
     },
     {
+      "file": "assets/ui/difficulty/challenge-v2.webp",
+      "bytes": 104088,
+      "sha256": "05067d174a242706fde0b897d387f4a37389ee746515fd2975ba06f4743b2aee",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-difficulty/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/difficulty/crest-v2.webp",
+      "bytes": 103038,
+      "sha256": "87d851cc508f41550873b7fb19cfff9f07902429d69c01d7fb4809effe91b58e",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-difficulty/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/difficulty/forest-v2.webp",
+      "bytes": 614958,
+      "sha256": "bcfef1f6f9738513198107fff6f7dc0864af7b453f6e209fb6e1d6a1b13a6cce",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-difficulty/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/difficulty/shell-v2.webp",
+      "bytes": 319482,
+      "sha256": "57ead266a2ce114d9dc220a626246271252b5abc6f79d67a2889b9c227a89467",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-difficulty/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/difficulty/standard-v2.webp",
+      "bytes": 114068,
+      "sha256": "93fe1d2b76099ad54de052554ed9f92d1424797dca90f92852fd3a5879a6e4a5",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-difficulty/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/difficulty/story-v2.webp",
+      "bytes": 115548,
+      "sha256": "86b44c589d40b4ac4e385ddae69d93dc57402517454b8c8d303d3eee0f9fc3bc",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-difficulty/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
       "file": "assets/ui/ending-book-v1.webp",
       "bytes": 355574,
       "sha256": "ff0cdc5a277e1a4ddf9ef397221831852f2f24c382e74c1b27a750201b04ffed",
@@ -3045,6 +3141,536 @@
       "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
       "ai": "needs-per-asset-confirmation",
       "status": "provenance-review-pending"
+    },
+    {
+      "file": "assets/ui/loading-backdrop-v1.webp",
+      "bytes": 21720,
+      "sha256": "f826d29677575f3cd8672cabca12976a96a40773bda2305753eb67da6134db27",
+      "group": "artwork",
+      "sourceEvidence": [
+        "docs/ui-reference/PRODUCTION-ASSETS.json",
+        "docs/hero-ui/ASSETS.json",
+        "docs/ui-refresh/ASSETS.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "needs-per-asset-confirmation",
+      "status": "provenance-review-pending"
+    },
+    {
+      "file": "assets/ui/modal-emblems-v1.webp",
+      "bytes": 140322,
+      "sha256": "3116019f8ef58bca3bc2c441cdc3ee5a19c806f1cc2f46d7cf59b0948973d755",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/modal-paper-v1.webp",
+      "bytes": 107976,
+      "sha256": "229361c1b92a42df3d2bc81dc30d3f284a347e5bf1f95c8aaba01d091b50acf6",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/achievements-v2.webp",
+      "bytes": 441728,
+      "sha256": "bd66c244644d321afbf13b9e6016a7098160fa9b5df70149dba7cb4af884a3af",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/button-gold-v2.webp",
+      "bytes": 50044,
+      "sha256": "a0750ddb6ba5ef5e862c337e76224a8feedaf5db09e614e8b52d6b5a3e720aab",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/button-ink-v2.webp",
+      "bytes": 43874,
+      "sha256": "d6a183bcc62b4310977a661a1de62f4c2d5cd13c9535ae68de0032e9f5e94bd3",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/corner-bl-v2.webp",
+      "bytes": 20918,
+      "sha256": "bfd52f2b221a22ae5f72517b93944e0ae0197f49b50bc8d7fefb7fc9bc86326a",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/corner-br-v2.webp",
+      "bytes": 19688,
+      "sha256": "a44003ad0a0b762ee4e41079758beac75434ab981f3b9f2539f176e2977e3d8f",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/corner-tl-v2.webp",
+      "bytes": 19590,
+      "sha256": "0be4f5218eceec78fe681ba44a441b92d00eae88872ed475878f9cbbf7df511d",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/corner-tr-v2.webp",
+      "bytes": 17704,
+      "sha256": "bd7ef7d66b41a2d56d6fa474c6c45f146ae09c0d568810363b4c41594daf2d39",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/divider-v2.webp",
+      "bytes": 29670,
+      "sha256": "29d0f01b3a28837173d145ce6d07e507934bb4fb9a9a805cead6d0396b31aa0b",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/example-v2.webp",
+      "bytes": 47088,
+      "sha256": "86d416459696d53e5daa909f7c79699e8cdc171678fba57df457030ac951178a",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/header-collection-v2.webp",
+      "bytes": 149980,
+      "sha256": "a9100102b5a29793f9dec83d348d0606e2eaecb405f7289350a02edad61c4bf6",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/header-guide-v2.webp",
+      "bytes": 133966,
+      "sha256": "289d282a88fa0d25314f43807d5b03aca282b63fc9ec06c15e170c51073c6be6",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/header-hand-v2.webp",
+      "bytes": 132654,
+      "sha256": "54bdc4d85b33b3d0436e6c10c44104967d24527066605be973bd198babb615ce",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/header-save-v2.webp",
+      "bytes": 138120,
+      "sha256": "676c2b81aa7be9881d330383f678d5f082e5a4fd62ff3fbfe6c328ffc4c6c024",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/inset-v2.webp",
+      "bytes": 26552,
+      "sha256": "e77c113c3839926d047d8c01c80c050711e96d544ee02a354380ec025d4fae2c",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-blood-v2.webp",
+      "bytes": 55064,
+      "sha256": "4121979344b90afdfc2a65dd491ab99f26fffe427252e9c64d819c1890bd83a8",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-cloud-v2.webp",
+      "bytes": 56474,
+      "sha256": "ef4b06e1800451b5c577d17bf446698a9426101947487d892fb225c9442f6e97",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-dagger-v2.webp",
+      "bytes": 52526,
+      "sha256": "23bf75d07eed4bbe6d9ed262a05fffcb53576fc899eda549c46feef09569546c",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-eye-v2.webp",
+      "bytes": 59180,
+      "sha256": "23573b7618d4b75dddd4328f27e0fac3cbdefab953e925fea08f27966916c7e1",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-fang-v2.webp",
+      "bytes": 51436,
+      "sha256": "3aa262480c43b5f6903fbe892a469ea45bfffe227fc639bc5fcac44f8629d7ba",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-gem-v2.webp",
+      "bytes": 52744,
+      "sha256": "1f255d42811f4db940b6aedff4c496e38d64f19e05725b6ba7b816b493331781",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-lens-v2.webp",
+      "bytes": 55854,
+      "sha256": "94c26380c42f29572d8ee8e1b4a00a25fba8c67fa0574464093d496e4a7715ce",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-lotus-v2.webp",
+      "bytes": 54362,
+      "sha256": "8fd27d3ba21b5187ca6457935a62f0b41f5bb49a13fdfe91ac85009a4284a129",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-moon-v2.webp",
+      "bytes": 51154,
+      "sha256": "371601fcaf3fd48e6f882e42d46bf7aabc2864f704de054adc89e2d54c05309e",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-ring-v2.webp",
+      "bytes": 62354,
+      "sha256": "fcb906d3e1e99b6fae4336f5282bbe571e2e98fb1a10e86ae847b109e7c904ba",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-shield-v2.webp",
+      "bytes": 54500,
+      "sha256": "029298952bcac8888c64c8e2aae5e092b7ea069693ec35b6f2ecfdd92af452fd",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-spark-v2.webp",
+      "bytes": 54662,
+      "sha256": "8761565e7691c9e7b8fe3b23271678dff17f1a05758296095a874aae94a4a882",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-sword-v2.webp",
+      "bytes": 50818,
+      "sha256": "5fcbd7c4fef4e3409e572976d18a8e11d616b158e37cf01a69024de1ccd7f123",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-talisman-v2.webp",
+      "bytes": 59162,
+      "sha256": "34bd316c8a775f893d8382396ea057245c421e4cbb3f7301866d4d64cfe5846e",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-thorns-v2.webp",
+      "bytes": 57784,
+      "sha256": "cac6ae0264b657af1087ee78ccdb1a637d6420c13e469126d5051c10ea8468e7",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-thunder-v2.webp",
+      "bytes": 55420,
+      "sha256": "ffccd59e1202d6fa9e6cd81b7a4f87bdf573e7a63b869035d5dc37832909c204",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-venom-v2.webp",
+      "bytes": 61472,
+      "sha256": "a53d0ef648bf917b6a3c189990f20209325952b4c538caaae00bab6361e4a0f9",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/item-vial-v2.webp",
+      "bytes": 58478,
+      "sha256": "2c9f1e3db30590e0cc82554434fe8b467d7c22ea8f2befb3fcf2c7c5fd4a2cc4",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/resource-energy-v2.webp",
+      "bytes": 9534,
+      "sha256": "12b8ef4d47156b91c68d72d977f1bb567aec0dc3950845f389c46a2f97b2192e",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/resource-health-v2.webp",
+      "bytes": 9780,
+      "sha256": "31603a96229b831139d3deb08909c4ce74a646e5b3d86ee8fc46880155d5be48",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/resource-spirit-v2.webp",
+      "bytes": 10306,
+      "sha256": "9ac3d0ef3108c6af68eff0add873a1f069434a83f543fdb6d746774387de9024",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/row-v2.webp",
+      "bytes": 31514,
+      "sha256": "15941fbfd585f3d0954b17ca27bb9271a58558be335c8d0996f06631f87a752e",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/service-v2.webp",
+      "bytes": 135096,
+      "sha256": "c9ab773b3f93fe59054a2aa154a977b8d09134bb10c70582c18704e88ccd8937",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/shell-v2.webp",
+      "bytes": 233714,
+      "sha256": "f2df52c8d2c0edb1d903f83093392123d4b509433fc76481d0445f7761d7d6d0",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/shop-hero-v2.webp",
+      "bytes": 335064,
+      "sha256": "7747c8730e1c5fa8241aa0c3a27bf2112a31c328dd826d082a25d6edf405db06",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/title-v2.webp",
+      "bytes": 53084,
+      "sha256": "8c5c6b548f5e30b435009e919d3d1bb0f2f55023fd9f2ac9afccdfc11a279347",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/native/wallet-v2.webp",
+      "bytes": 56568,
+      "sha256": "e82b14a763c6f2278e92b61198573c201d48c60f93d05679aae7cd25e4e1e848",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-native/v2/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
     },
     {
       "file": "assets/ui/reward-chest-v1.webp",

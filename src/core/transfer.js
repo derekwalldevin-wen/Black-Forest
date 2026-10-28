@@ -157,46 +157,47 @@ const TRANSFER = {
 function mountTransferButton(scene) {
   const t = (key, params) => I18N.t(key, params);
   const entry = document.createElement('button');
-  entry.className = 'hand-reader-entry';
+  entry.className = 'hand-reader-entry title-utility transfer-entry';
   entry.textContent = t('transfer.button');
   entry.setAttribute('aria-haspopup', 'dialog');
   document.body.append(entry);
 
   const position = () => {
     const r = scene.game.canvas.getBoundingClientRect();
-    /* 放在左下角，和居中的「收藏与成就」分开，避免叠在开始按钮上。 */
-    entry.style.left = (r.left + r.width * .2) + 'px';
-    entry.style.top = (r.top + r.height * .93) + 'px';
+    /* 标题页底部双入口，左右各占一栏，长英文可换行。 */
+    entry.style.left = (r.left + r.width * .26) + 'px';
+    entry.style.top = (r.top + r.height * .943) + 'px';
+    entry.style.width = (r.width * .44) + 'px';
     entry.hidden = !scene.scene.isActive() || scene._modalOpen;
   };
   scene.events.on('update', position); position();
   scene.events.once('shutdown', () => { scene.events.off('update', position); entry.remove(); });
 
   entry.onclick = () => {
-    if (scene._transferDialog) return;
+    if (scene._transferDialog || scene._modalOpen) return;
     const desktop = STORAGE_BACKEND.isDesktop();
     const dialog = document.createElement('dialog');
     dialog.className = 'hand-reader';
-    dialog.setAttribute('aria-labelledby', 'transfer-title');
-    const title = document.createElement('h2');
-    title.id = 'transfer-title';
-    title.textContent = t('transfer.title');
-    dialog.append(title);
+    const ui=PAINTED_UI,f=ui.frame(dialog,{kind:'save',title:t('transfer.title'),kicker:ui.text('封存旅程 · 进度备份','PRESERVE YOUR JOURNEY'),titleId:'transfer-title'});
 
     const where = document.createElement('p');
     where.textContent = t('transfer.where', { where: STORAGE_BACKEND.describe() });
-    dialog.append(where);
+    where.className='painted-inset';f.body.append(where);
+    f.body.append(ui.image(ui.assets.headerSave,'transfer-hero'));
 
     const hint = document.createElement('p');
     hint.textContent = desktop ? t('transfer.hintDesktop') : t('transfer.hintWeb');
-    dialog.append(hint);
+    hint.className='painted-note';f.body.append(hint);
 
     const status = document.createElement('p');
-    dialog.append(status);
-    const say = (text, ok) => { status.textContent = text; status.style.color = ok ? '#8fbf7a' : '#e0a0a0'; };
+    status.className='painted-status';status.setAttribute('role','status');f.body.append(status);
+    const say = (text, ok) => { status.textContent = text; status.dataset.ok=String(ok); };
+    const actions=ui.node('div',null,'transfer-actions');f.body.append(actions);
 
     const exportBtn = document.createElement('button');
+    exportBtn.type='button';exportBtn.className='primary';
     exportBtn.textContent = t('transfer.export');
+    exportBtn.append(ui.node('small',ui.text(desktop?'选择备份保存位置':'保存为 JSON 备份文件',desktop?'Choose where to save':'Save a JSON backup')));
     exportBtn.onclick = async () => {
       const payload = TRANSFER.build();
       if (desktop && window.blackForestDesktop && window.blackForestDesktop.transfer) {
@@ -211,11 +212,13 @@ function mountTransferButton(scene) {
         else say(t('transfer.exportFailed', { code: TRANSFER.errorText(r.code) }), false);
       }
     };
-    dialog.append(exportBtn);
+    actions.append(exportBtn);
 
     if (desktop) {
       const importBtn = document.createElement('button');
+      importBtn.type='button';
       importBtn.textContent = t('transfer.import');
+      importBtn.append(ui.node('small',ui.text('选择已导出的进度文件','Choose an exported progress file')));
       importBtn.onclick = async () => {
         say(t('transfer.waiting'), true);
         const picked = await window.blackForestDesktop.transfer.pickFile();
@@ -224,6 +227,7 @@ function mountTransferButton(scene) {
         const parsed = TRANSFER.parse(picked.text);
         if (!parsed.ok) { say(t('transfer.rejected', { code: TRANSFER.errorText(parsed.code) }), false); return; }
         const confirm = document.createElement('div');
+        f.body.querySelector('.transfer-confirm')?.remove();confirm.className='transfer-confirm';
         const list = document.createElement('p');
         list.textContent = t('transfer.willReplace', { count: parsed.keys.length, keys: parsed.keys.join('、') });
         confirm.append(list);
@@ -232,8 +236,8 @@ function mountTransferButton(scene) {
         const no = document.createElement('button');
         no.textContent = t('transfer.cancel');
         confirm.append(yes, no);
-        dialog.append(confirm);
-        no.onclick = () => confirm.remove();
+        f.body.append(confirm);no.focus();confirm.scrollIntoView({block:'nearest'});
+        no.onclick = () => {confirm.remove();importBtn.focus();};
         yes.onclick = async () => {
           confirm.remove();
           say(t('transfer.importing'), true);
@@ -245,26 +249,12 @@ function mountTransferButton(scene) {
           }
         };
       };
-      dialog.append(importBtn);
+      actions.append(importBtn);
     }
 
-    const close = document.createElement('button');
-    close.textContent = t('transfer.close');
-    close.onclick = () => dialog.close();
-    dialog.append(close);
-    dialog.addEventListener('keydown', e => e.stopPropagation());
-    dialog.addEventListener('close', () => {
-      dialog.remove();
-      scene._transferDialog = null;
-      scene._modalOpen = false;
-      if (scene.scene.isPaused()) scene.scene.resume();
-      entry.focus();
-    }, { once: true });
-    scene._modalOpen = true;
+    const guidance=ui.node('section',null,'transfer-guidance');guidance.append(ui.node('h3',ui.text('状态信息','Storage information')),ui.node('p',ui.text(desktop?'导入前会备份原进度；确认后才覆盖文件中包含的记录。':'网页进度保存在当前浏览器。导出的文件可在桌面版导入。',desktop?'Imports back up existing progress before replacing the records contained in your file.':'Web progress stays in this browser. Exported files can be imported in the desktop edition.')));f.body.append(guidance);guidance.append(status);
+    const close=ui.button('× '+t('transfer.close'),()=>dialog.close());close.setAttribute('aria-label',t('transfer.close'));f.footer.append(close);
     scene._transferDialog = dialog;
-    scene.scene.pause();
-    document.body.append(dialog);
-    dialog.showModal();
-    close.focus();
+    ui.open(scene,dialog,{trigger:entry,onClose:()=>{scene._transferDialog=null;}});
   };
 }
