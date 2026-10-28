@@ -28,3 +28,9 @@
 - `node desktop/build/collect-assets.js`：273 个运行文件全部解析，无资源缺失或未覆盖的源码引用。新素材已被桌面资源收集器识别。
 
 这是可交互的自适应还原：英文与窄屏的换行、统计排列和滚动与原稿有所调整。浏览器视口模拟不等于手机真机测试。本轮修改已接入本地游戏，未构建新安装包，也未提交或发布 GitHub Pages。
+
+## 上线跟进 · 2026-10-28
+
+上述 10 月 26 日制作记录保留。现已将完整更新合并至 main 并部署至 [GitHub Pages](https://derekwalldevin-wen.github.io/Black-Forest/?v=20261028-ui-fidelity)，网页版本标记为 `20261028-ui-fidelity`。发布提交 `3fde2be652a65bdb8713839f7dbd802c39543870` 的 [Pages 部署](https://github.com/derekwalldevin-wen/Black-Forest/actions/runs/40702673662)与 [Windows CI](https://github.com/derekwalldevin-wen/Black-Forest/actions/runs/40702674242)均通过。
+
+线上验收确认 273 个运行资源返回 HTTP 200、47 张本轮生产 UI 图片与本地 SHA-256 一致；在隔离浏览器中完成中文 390×844 与英文 1280×720 的真实键盘/触控开局、难度选择、首次教学、确认出牌、存档保存/恢复及插画手牌阅读，无页面脚本错误或缺失资源。原始数据见 [线上验收 JSON](../../deployment/20261028-ONLINE-VERIFICATION.json)。这仍是网页与视口模拟验收，不是手机真机或真人首次试玩结论；此前发布的 Windows 安装包没有因此自动更新。
