@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-28T12:59:25.243Z",
+  "generatedAt": "2026-10-28T16:23:12.821Z",
   "scope": "Current runtime assets plus included third-party licence files; source code, text and contributor assignments need separate review",
   "commercialClearance": false,
   "summary": {
     "provenance-review-pending": 128,
-    "generation-record-found-terms-pending": 101,
+    "generation-record-found-terms-pending": 104,
     "source-documented-owner-confirmation-pending": 38,
     "project-source": 4,
     "licence-included": 6
@@ -780,8 +780,8 @@
     },
     {
       "file": "assets/desktop-ui.css",
-      "bytes": 5278,
-      "sha256": "e2cbd1d1536465dde8d73fae37d48f42087eb9e93f2379f5ebf5f7b0c6ccc6ce",
+      "bytes": 9858,
+      "sha256": "880b7add38e689c8275a0a5e2692ef98f5e5cf39c3c0cbb08eacc522fb339088",
       "group": "interface-code",
       "sourceEvidence": [
         "assets/desktop-ui.css"
@@ -2928,8 +2928,8 @@
     },
     {
       "file": "assets/painted-ui.css",
-      "bytes": 19330,
-      "sha256": "e829c65660438bd0e16051b455045c2751c2119a3023b23706288e151a8b04b1",
+      "bytes": 18824,
+      "sha256": "9c515fa971873e1d4ea865aa544df9e99f64bfba6ecac712bec831865a4b7e7f",
       "group": "interface-code",
       "sourceEvidence": [
         "assets/painted-ui.css"
@@ -3141,6 +3141,42 @@
       "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
       "ai": "needs-per-asset-confirmation",
       "status": "provenance-review-pending"
+    },
+    {
+      "file": "assets/ui/immersive/card-frame-v1.webp",
+      "bytes": 28350,
+      "sha256": "9e07ab76838b02519e9bd7d91fe4d86413f6eec3d286776a1236eba131ebe255",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-immersive/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/immersive/world-gothic-v1.webp",
+      "bytes": 588864,
+      "sha256": "37f06d0e0a5cb9c3ccac640a684ae9f80fe9f86232086609630303b15cc60471",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-immersive/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
+    },
+    {
+      "file": "assets/ui/immersive/world-shanhai-v1.webp",
+      "bytes": 555186,
+      "sha256": "991fffed796e0d4234c49decfa004c33bb03e8e3e3900e6973064d736c97425b",
+      "group": "interface-artwork",
+      "sourceEvidence": [
+        "docs/ui-immersive/SOURCES.json"
+      ],
+      "license": "Generation/service terms, reference rights and publisher ownership require confirmation",
+      "ai": "pre-generated-AI-documented",
+      "status": "generation-record-found-terms-pending"
     },
     {
       "file": "assets/ui/loading-backdrop-v1.webp",

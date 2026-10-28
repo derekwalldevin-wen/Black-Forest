@@ -8,6 +8,7 @@ const production=JSON.parse(fs.readFileSync(path.join(ROOT,'docs/art/production.
 const stem=name=>path.basename(name).replace(/\.[^.]+$/,'');
 const known=new Map(production.map(r=>[stem(r.filename),r]));
 function classify(file){
+ if(/^assets\/ui\/immersive\/.*\.webp$/.test(file))return{group:'interface-artwork',sourceEvidence:['docs/ui-immersive/SOURCES.json'],license:'Generation/service terms, reference rights and publisher ownership require confirmation',ai:'pre-generated-AI-documented',status:'generation-record-found-terms-pending'};
  if(file.includes('/vendor/'))return{group:'engine',sourceEvidence:['assets/vendor/PHASER-LICENSE.md'],license:'MIT',ai:'not-applicable',status:'licence-included'};
  if(file.includes('/fonts/'))return{group:'font',sourceEvidence:['assets/fonts/MANIFEST.json','assets/fonts/NOTICE.txt','assets/fonts/OFL.txt'],license:'SIL OFL 1.1',ai:'not-applicable',status:'licence-included'};
  if(file.includes('/audio/'))return{group:file.includes('bgm-')?'music':'sound',sourceEvidence:file.includes('bgm-')?['tools/compose-bgm.js','docs/audio/BGM-ASSETS.json','docs/audio/BGM-DELIVERY.md','tools/optimize-audio.cjs']:['tools/generate-sfx.js','docs/audio/ASSETS.json','tools/optimize-audio.cjs'],license:'Project authorship/assignment confirmation pending',ai:'procedural-synthesis-documented; not model-generated audio',status:'source-documented-owner-confirmation-pending'};

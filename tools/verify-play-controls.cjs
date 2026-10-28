@@ -60,14 +60,14 @@ async function main(){
    await p.close();
    for(const lang of ['zh-CN','en'])for(const [width,height] of [[1040,560],[1280,720]]){
     const q=await b.newPage({viewport:{width,height}});q.on('pageerror',e=>errors.push(e.message));await q.goto('http://127.0.0.1:'+server.address().port+'/?debug=1&auto=1&lang='+lang+'&enemy=forest_lord');await ready(q);
-    await q.locator('.desktop-hand button').first().click();await q.waitForFunction(()=>!document.querySelector('#desktop-right .primary').disabled);
+    await q.locator('.desktop-hand-toggle').click();await q.locator('.desktop-hand button').first().click();await q.locator('.desktop-hand-toggle').click();await q.waitForFunction(()=>!document.querySelector('#desktop-right .primary').disabled);
     assert.equal(await q.locator('#desktop-left nav button').filter({hasText:/Read hand|大字手牌/}).count(),0);
-    assert.equal(await q.locator('#desktop-left details').getAttribute('open'),null);
+    assert.equal(await q.locator('#desktop-left .desktop-hand-pocket').getAttribute('open'),null);
     const bounds=await q.locator('#desktop-right .primary').evaluate(n=>{const r=n.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height,screenH:innerHeight};});assert(bounds.y>=0&&bounds.y+bounds.h<=bounds.screenH);
     await q.screenshot({path:path.join(out,`desktop-${width}-${lang}.webp`),type:'webp',quality:88});
     await q.evaluate(()=>{const area=document.querySelector('.desktop-reading');area.scrollTop=area.scrollHeight;});
     const fixed=await q.locator('#desktop-right .primary').evaluate(n=>{const r=n.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height};});assert(Math.abs(fixed.y-bounds.y)<1);
-    await q.locator('#desktop-left details summary').click();await q.locator('#desktop-left details button').click();await q.getByRole('dialog').waitFor();await q.keyboard.press('Escape');await ready(q);
+    await q.locator('#desktop-left .desktop-tools summary').click();await q.locator('#desktop-left .desktop-tools button').click();await q.getByRole('dialog').waitFor();await q.keyboard.press('Escape');await ready(q);
     const before=await state(q);await q.locator('#desktop-right .primary').click();await q.waitForFunction(n=>__game.scene.getScene('Combat').state.hand.length!==n,before.hand);await ready(q);
     checks.push({name:`Desktop ${width}x${height} ${lang}: pinned confirm, collapsed reading tool, actual confirmed play`,passed:true,bounds});await q.close();
    }

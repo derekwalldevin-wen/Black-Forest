@@ -1,0 +1,388 @@
+{
+  "generatedAt": "2026-10-28T16:10:06.468Z",
+  "scope": "Edge CSS viewport and mouse/keyboard emulation; no physical-device claim",
+  "layouts": [
+    {
+      "name": "1040x560-zh-CN-0",
+      "wide": true,
+      "realm": "gothic",
+      "canvas": {
+        "x": 369.125,
+        "y": 11,
+        "w": 303.75,
+        "h": 540,
+        "bottom": 551
+      },
+      "rails": [
+        {
+          "rect": {
+            "x": 22,
+            "y": 10,
+            "w": 328.125,
+            "h": 540,
+            "bottom": 550
+          },
+          "overflow": false
+        },
+        {
+          "rect": {
+            "x": 689.875,
+            "y": 10,
+            "w": 328.125,
+            "h": 540,
+            "bottom": 550
+          },
+          "overflow": false
+        }
+      ],
+      "pageOverflow": false,
+      "nav": {
+        "x": 22,
+        "y": 498,
+        "w": 328.125,
+        "h": 44,
+        "bottom": 542
+      },
+      "background": "linear-gradient(90deg, rgba(11, 11, 18, 0.19), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, rgba(11, 11, 18, 0.25)), url(\"http://127.0.0.1:59043/Black-Forest/assets/ui/immersive/world-gothic-v1.webp\")",
+      "confirmedPlay": {
+        "before": {
+          "energy": 3,
+          "spirit": 1,
+          "hand": 5,
+          "turn": 1,
+          "selected": null
+        },
+        "after": {
+          "energy": 2,
+          "spirit": 1,
+          "hand": 4,
+          "turn": 1,
+          "selected": null
+        }
+      }
+    },
+    {
+      "name": "1280x720-zh-CN-0",
+      "wide": true,
+      "realm": "gothic",
+      "canvas": {
+        "x": 446.375,
+        "y": 15,
+        "w": 389.25,
+        "h": 692,
+        "bottom": 707
+      },
+      "rails": [
+        {
+          "rect": {
+            "x": 38.390625,
+            "y": 14,
+            "w": 368.59375,
+            "h": 692,
+            "bottom": 706
+          },
+          "overflow": false
+        },
+        {
+          "rect": {
+            "x": 873.015625,
+            "y": 14,
+            "w": 360,
+            "h": 692,
+            "bottom": 706
+          },
+          "overflow": false
+        }
+      ],
+      "pageOverflow": false,
+      "nav": {
+        "x": 38.390625,
+        "y": 654,
+        "w": 368.59375,
+        "h": 44,
+        "bottom": 698
+      },
+      "background": "linear-gradient(90deg, rgba(11, 11, 18, 0.19), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, rgba(11, 11, 18, 0.25)), url(\"http://127.0.0.1:59043/Black-Forest/assets/ui/immersive/world-gothic-v1.webp\")",
+      "confirmedPlay": {
+        "before": {
+          "energy": 3,
+          "spirit": 1,
+          "hand": 5,
+          "turn": 1,
+          "selected": null
+        },
+        "after": {
+          "energy": 2,
+          "spirit": 1,
+          "hand": 4,
+          "turn": 1,
+          "selected": null
+        }
+      }
+    },
+    {
+      "name": "1280x720-en-0",
+      "wide": true,
+      "realm": "gothic",
+      "canvas": {
+        "x": 446.375,
+        "y": 15,
+        "w": 389.25,
+        "h": 692,
+        "bottom": 707
+      },
+      "rails": [
+        {
+          "rect": {
+            "x": 38.390625,
+            "y": 14,
+            "w": 368.59375,
+            "h": 692,
+            "bottom": 706
+          },
+          "overflow": false
+        },
+        {
+          "rect": {
+            "x": 873.015625,
+            "y": 14,
+            "w": 360,
+            "h": 692,
+            "bottom": 706
+          },
+          "overflow": false
+        }
+      ],
+      "pageOverflow": false,
+      "nav": {
+        "x": 38.390625,
+        "y": 654,
+        "w": 368.59375,
+        "h": 44,
+        "bottom": 698
+      },
+      "background": "linear-gradient(90deg, rgba(11, 11, 18, 0.19), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, rgba(11, 11, 18, 0.25)), url(\"http://127.0.0.1:59043/Black-Forest/assets/ui/immersive/world-gothic-v1.webp\")",
+      "confirmedPlay": {
+        "before": {
+          "energy": 3,
+          "spirit": 1,
+          "hand": 5,
+          "turn": 1,
+          "selected": null
+        },
+        "after": {
+          "energy": 2,
+          "spirit": 1,
+          "hand": 4,
+          "turn": 1,
+          "selected": null
+        }
+      }
+    },
+    {
+      "name": "1920x1080-zh-CN-0",
+      "wide": true,
+      "realm": "gothic",
+      "canvas": {
+        "x": 665.125,
+        "y": 15,
+        "w": 591.75,
+        "h": 1052,
+        "bottom": 1067
+      },
+      "rails": [
+        {
+          "rect": {
+            "x": 226.53125,
+            "y": 14,
+            "w": 380,
+            "h": 1052,
+            "bottom": 1066
+          },
+          "overflow": false
+        },
+        {
+          "rect": {
+            "x": 1313.46875,
+            "y": 14,
+            "w": 360,
+            "h": 1052,
+            "bottom": 1066
+          },
+          "overflow": false
+        }
+      ],
+      "pageOverflow": false,
+      "nav": {
+        "x": 226.53125,
+        "y": 1014,
+        "w": 380,
+        "h": 44,
+        "bottom": 1058
+      },
+      "background": "linear-gradient(90deg, rgba(11, 11, 18, 0.19), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, rgba(11, 11, 18, 0.25)), url(\"http://127.0.0.1:59043/Black-Forest/assets/ui/immersive/world-gothic-v1.webp\")",
+      "confirmedPlay": {
+        "before": {
+          "energy": 3,
+          "spirit": 1,
+          "hand": 5,
+          "turn": 1,
+          "selected": null
+        },
+        "after": {
+          "energy": 2,
+          "spirit": 1,
+          "hand": 4,
+          "turn": 1,
+          "selected": null
+        }
+      }
+    },
+    {
+      "name": "2560x1440-en-0",
+      "wide": true,
+      "realm": "gothic",
+      "canvas": {
+        "x": 883.875,
+        "y": 15,
+        "w": 794.25,
+        "h": 1412,
+        "bottom": 1427
+      },
+      "rails": [
+        {
+          "rect": {
+            "x": 438.875,
+            "y": 14,
+            "w": 380,
+            "h": 1412,
+            "bottom": 1426
+          },
+          "overflow": false
+        },
+        {
+          "rect": {
+            "x": 1741.125,
+            "y": 14,
+            "w": 360,
+            "h": 1412,
+            "bottom": 1426
+          },
+          "overflow": false
+        }
+      ],
+      "pageOverflow": false,
+      "nav": {
+        "x": 438.875,
+        "y": 1374,
+        "w": 380,
+        "h": 44,
+        "bottom": 1418
+      },
+      "background": "linear-gradient(90deg, rgba(11, 11, 18, 0.19), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, rgba(11, 11, 18, 0.25)), url(\"http://127.0.0.1:59043/Black-Forest/assets/ui/immersive/world-gothic-v1.webp\")",
+      "confirmedPlay": {
+        "before": {
+          "energy": 3,
+          "spirit": 1,
+          "hand": 5,
+          "turn": 1,
+          "selected": null
+        },
+        "after": {
+          "energy": 2,
+          "spirit": 1,
+          "hand": 4,
+          "turn": 1,
+          "selected": null
+        }
+      }
+    },
+    {
+      "name": "1280x720-en-4",
+      "wide": true,
+      "realm": "shanhai",
+      "canvas": {
+        "x": 446.375,
+        "y": 15,
+        "w": 389.25,
+        "h": 692,
+        "bottom": 707
+      },
+      "rails": [
+        {
+          "rect": {
+            "x": 38.390625,
+            "y": 14,
+            "w": 368.59375,
+            "h": 692,
+            "bottom": 706
+          },
+          "overflow": false
+        },
+        {
+          "rect": {
+            "x": 873.015625,
+            "y": 14,
+            "w": 360,
+            "h": 692,
+            "bottom": 706
+          },
+          "overflow": false
+        }
+      ],
+      "pageOverflow": false,
+      "nav": {
+        "x": 38.390625,
+        "y": 654,
+        "w": 368.59375,
+        "h": 44,
+        "bottom": 698
+      },
+      "background": "linear-gradient(90deg, rgba(13, 14, 13, 0.314), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, rgba(13, 14, 13, 0.333)), url(\"http://127.0.0.1:59043/Black-Forest/assets/ui/immersive/world-shanhai-v1.webp\")",
+      "confirmedPlay": {
+        "before": {
+          "energy": 3,
+          "spirit": 1,
+          "hand": 5,
+          "turn": 1,
+          "selected": null
+        },
+        "after": {
+          "energy": 2,
+          "spirit": 1,
+          "hand": 4,
+          "turn": 1,
+          "selected": null
+        }
+      }
+    },
+    {
+      "name": "390x844-zh-CN-0",
+      "wide": false,
+      "realm": "gothic",
+      "canvas": {
+        "x": 0,
+        "y": 75,
+        "w": 390,
+        "h": 693.328125,
+        "bottom": 768.328125
+      },
+      "rails": [],
+      "pageOverflow": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "background": "none"
+    }
+  ],
+  "checks": [
+    "Nine-card tray, zero-resource grey inspection, optional statuses, Escape isolation, large-text reader, next-turn reinspection",
+    "Wide to narrow to wide resize refits stage"
+  ],
+  "errors": [],
+  "missing": []
+}

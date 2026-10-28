@@ -12,6 +12,7 @@ const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http:
 async function ready(page){await page.waitForFunction(()=>window.__game?.scene.getScene('Combat')?.state?.busy===false);await page.waitForFunction(()=>__game.scene.getScene('Combat').state.hand.every(c=>c.c.alpha>.99));}
 async function state(page){return page.evaluate(()=>{const s=__game.scene.getScene('Combat').state;return {hand:s.hand.length,energy:s.energy,spirit:s.spirit,hp:s.player.hp,enemyHp:s.enemy.hp,turn:s.turn};});}
 async function tapCard(page,index){const point=await page.evaluate(index=>{const c=__game.scene.getScene('Combat').state.hand[index],r=__game.canvas.getBoundingClientRect();return{x:r.x+c.c.x*r.width/1080,y:r.y+c.c.y*r.height/1920};},index);await page.mouse.click(point.x,point.y,{delay:80});}
+async function openHand(page){if(!await page.locator('.desktop-hand-pocket').evaluate(n=>n.open))await page.locator('.desktop-hand-toggle').click();}
 async function main(){
  await new Promise(r=>server.listen(0,'127.0.0.1',r));let browser;const results=[],checks=[],errors=[];
  try{
@@ -30,23 +31,23 @@ async function main(){
    const name=`${width}x${height}-${scale}-${lang}`;
    if(!baseline||scale===1)await p.screenshot({path:path.join(out,name+'.webp'),type:'webp',quality:83});results.push({physicalTarget:{width,height},emulatedScale:scale,lang,...metrics});await context.close();
   }
-  if(!baseline){
+  if(!baseline&&!process.argv.includes('--layouts-only')){
    const context=await browser.newContext({viewport:{width:1366,height:768}}),p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));
    await p.goto(base+'/?debug=1&auto=1&starter=guard&cards=strike,defend,focus,heavy_blow,iron_wall');await ready(p);
    await p.setViewportSize({width:1920,height:1080});await p.waitForFunction(()=>{const r=__game.canvas.getBoundingClientRect(),b=document.getElementById('game-container').getBoundingClientRect();return Math.abs(r.height-Math.min(b.height,b.width*1920/1080))<2;});await p.setViewportSize({width:1366,height:768});await p.waitForFunction(()=>{const r=__game.canvas.getBoundingClientRect(),b=document.getElementById('game-container').getBoundingClientRect();return Math.abs(r.height-Math.min(b.height,b.width*1920/1080))<2;});checks.push('Window resize remeasures grid parent and fits stage without stale letterboxing');
-   await p.locator('#desktop-left .desktop-hand button').first().click();await p.waitForFunction(()=>__game.scene.getScene('Combat').state.selected);
+   await openHand(p);await p.locator('#desktop-left .desktop-hand button').first().click();await p.waitForFunction(()=>__game.scene.getScene('Combat').state.selected);
    const selected=await state(p);await p.locator('#desktop-left .desktop-hand button').first().click();assert.deepEqual(await state(p),selected,'semantic inspection never plays');
-    await p.locator('#desktop-left details summary').click();await p.locator('#desktop-left details button').click();
+    await p.locator('#desktop-left .desktop-tools summary').click();await p.locator('#desktop-left .desktop-tools button').click();
     try{await p.getByRole('dialog').waitFor({timeout:4000});}catch(e){console.log('READER',await p.evaluate(()=>{const c=__game.scene.getScene('Combat');return{active:c.scene.isActive(),paused:c.sys.isPaused(),modal:c._modalOpen,busy:c.state.busy,dialogs:[...document.querySelectorAll('dialog')].map(d=>({open:d.open,text:d.innerText.slice(0,80)}))};}),errors);throw e;}
     await p.locator('dialog li button').first().click();assert.deepEqual(await state(p),selected,'reader reinspection never plays');
    await p.mouse.click(8,8);await p.keyboard.press('Escape');await p.waitForFunction(()=>!__game.scene.getScene('Combat').state.selected);assert(!await p.evaluate(()=>__game.scene.isActive('Journal')));
    await p.keyboard.press('Escape');await p.waitForFunction(()=>__game.scene.isActive('Journal'));await p.keyboard.press('Escape');await ready(p);checks.push('Esc clears selection before opening menu; repeated inspection never spends');
    await p.evaluate(()=>{const c=__game.scene.getScene('Combat');c.state.drawPile.push('focus','strike','defend','heavy_blow');c.drawCards(4);c.state.energy=0;c.state.spirit=0;for(const id of ['poison','bleed','weak','vulnerable','frail'])c.state.player.st[id]=2;for(const id of ['burn','poison','bleed','weak','seal'])c.state.enemy.st[id]=2;c.refreshEnergy();c.refreshPlayer();c.refreshEnemyStatus();});
-   await p.waitForFunction(()=>document.querySelectorAll('.desktop-hand button').length===9);await p.locator('.desktop-hand button').nth(8).click();await p.waitForFunction(()=>document.querySelector('#desktop-right .desktop-feedback').textContent.includes('费用不足'));assert(await p.locator('#desktop-right .primary').isDisabled());
+   await p.waitForFunction(()=>document.querySelectorAll('.desktop-hand button').length===9);await openHand(p);await p.locator('.desktop-hand button').nth(8).click();await p.waitForFunction(()=>document.querySelector('#desktop-right .desktop-feedback').textContent.includes('费用不足'));assert(await p.locator('#desktop-right .primary').isDisabled());
    const denied=await state(p);await p.keyboard.press('Enter');assert.deepEqual(await state(p),denied);await p.screenshot({path:path.join(out,'nine-cards-status-denied.webp'),type:'webp',quality:88});checks.push('Nine-card inspection, insufficient resources, multiple status rules and focused-button Enter');
    await p.locator('#desktop-left nav button').last().click();await p.getByRole('dialog').waitFor();const modal=await state(p);await p.keyboard.press('1');await p.keyboard.press('Space');assert.deepEqual(await state(p),modal);await p.screenshot({path:path.join(out,'guide-replay.webp'),type:'webp',quality:88});await p.keyboard.press('Escape');await ready(p);checks.push('Guide modal pauses combat, isolates input, closes and resumes');
    await p.evaluate(()=>{const c=__game.scene.getScene('Combat');c.state.energy=3;c.state.spirit=3;c.refreshHandState();});
-   await p.locator('.desktop-hand button').first().click();await p.waitForFunction(()=>!document.querySelector('#desktop-right .primary').disabled);
+   await openHand(p);await p.locator('.desktop-hand button').first().click();await p.waitForFunction(()=>!document.querySelector('#desktop-right .primary').disabled);
    const beforePlay=await state(p),payment=await p.evaluate(()=>{
     const c=__game.scene.getScene('Combat'),card=c.state.selected;window.__r2Played=card;window.__r2Accepted=0;
     const original=c.playCard;c.playCard=function(card){const accepted=original.call(this,card);if(accepted)window.__r2Accepted++;return accepted;};

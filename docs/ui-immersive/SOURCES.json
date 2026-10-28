@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-28",
+  "tool": "image_gen.imagegen",
+  "purpose": "Widescreen game environments; no UI text baked into artwork",
+  "records": [
+    {
+      "key": "gothic",
+      "prompt": "Use case: precise-object-edit. Asset type: production WIDESCREEN game environment extension, 16:9 landscape 2560x1440. Image1 is the approved Black Forest watercolor environment/style reference. Recompose into a continuous broad moonlit forest world extending far to both sides of a portrait combat stage placed later at the center. No UI in this image. On far LEFT: enormous ancient tree, curling roots, ivy, a hanging warm amber lantern, subtle moths, low mossy stones with natural space for a separate traveler cutout to stand in front. On RIGHT: deep forest glade, ruined arch silhouettes and dark foliage, quiet moonlit mist leaving room for a separate creature or card illustration. Across CENTER: a receding narrow stone path, distant gothic castle and pale moon in grey-blue mist. Deep indigo #12101a, antique gold #b08d3f accents, muted moss and burgundy leaves, exceptionally rich ink-and-watercolor old storybook detail, layered depth. Side areas should be beautiful environmental art that players can enjoy, not dark blank filler. Calm lighting supports overlay text at extreme top/bottom; no large bright focal light behind side text. Preserve the reference materials and restrained palette. NO characters, interface, panels, frames, parchment boxes, labels, letters, numbers, dashboard, text or watermark. Full-bleed scenery.",
+      "reference": "assets/ui/difficulty/forest-v2.webp",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-4403d530-06fd-4eb3-bced-bfeecaa131f0.png",
+      "file": "assets/ui/immersive/world-gothic-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 588864,
+      "sha256": "37f06d0e0a5cb9c3ccac640a684ae9f80fe9f86232086609630303b15cc60471"
+    },
+    {
+      "key": "shanhai",
+      "prompt": "Use case: precise-object-edit. Asset type: WIDESCREEN production environment extension for the Eastern chapter of the Black Forest card game. Approved reference image supplies exact ink-watercolor, ancient architecture and colors. Recompose as a full broad 16:9 landscape, 2560x1440, continuous atmospheric world behind a portrait battle canvas added later in the center. Towering misty karst mountains and distant broken stone bridge at CENTER, pale ivory sun through vapor; ancient gnarled pine, hanging faded red ribbons, mossy paving and weathered bronze ritual lantern on far LEFT; on far RIGHT a tall carved bronze and stone ancestral totem, hanging cinnabar tassels and dark pine canopy. Rich engraved taotie bronze detail, patina, subdued cinnabar #8a2b28, ochre gold #b08d3f, ink-green #0d0e0d, grey-ivory mist. Illustrated old Shan Hai Jing manuscript with fine watercolor granulation, no glossy 3D render. Side foreground gives room for separate traveler/creature cutouts while keeping beautiful recognizable scenery. Lower side edges dark and quiet enough for brief live captions, center path recedes into distance. NO characters, monsters, interface panels, parchment rectangles, buttons, frames, labels, text, calligraphy, numbers or watermark. Full bleed scenery matching reference.",
+      "reference": "assets/bg-ruins-ui-v2.webp",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-fb3fc7fb-327a-42ed-94d3-19df2d52541f.png",
+      "file": "assets/ui/immersive/world-shanhai-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 555186,
+      "sha256": "991fffed796e0d4234c49decfa004c33bb03e8e3e3900e6973064d736c97425b"
+    }
+  ],
+  "reused": [
+    {
+      "source": "assets/ui/native/inset-v2.webp",
+      "sourceEvidence": "docs/ui-native/v2/SOURCES.json",
+      "file": "assets/ui/immersive/card-frame-v1.webp",
+      "operation": "Mechanical crop of complete upper frame; omit atlas gutter and next cell fragment",
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 710,
+        "height": 204
+      },
+      "sha256": "9e07ab76838b02519e9bd7d91fe4d86413f6eec3d286776a1236eba131ebe255"
+    }
+  ]
+}
