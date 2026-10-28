@@ -94,7 +94,7 @@ node tools/simulate.js 1500
 
 ## 仍需完善
 
-这是可试玩原型，尚不是 Steam 上架完成版本。本次网页更新标识为 `20261028-ui-fidelity`，包含桌面阅读与分步教学、卡牌操作修复、费用不足灰显，以及难度/商店/手牌/教学/收藏/存档的插画 UI。详见 [R2 工程报告](docs/steam/R2-REPORT.md)、[插画 UI 还原](docs/ui-native/v2/REPORT.md)、[难度选择还原](docs/ui-difficulty/v2/REPORT.md)与[出牌修复](docs/bugs/play-controls/REPORT.md)。此前卡面、加载、音频与玩法优化的交付审查保留在[历史验收记录](docs/optimization/RELEASE-AUDIT.md)。
+这是可试玩原型，尚不是 Steam 上架完成版本。本次网页更新标识为 `20261029-immersive-world`，宽屏默认显示完整境域场景与旅人/对手立绘，选牌后才展开插画与规则，手牌和状态按需展开；包含桌面阅读与分步教学、卡牌操作修复、费用不足灰显，以及难度/商店/手牌/教学/收藏/存档的插画 UI。详见 [R2 工程报告](docs/steam/R2-REPORT.md)、[插画 UI 还原](docs/ui-native/v2/REPORT.md)、[难度选择还原](docs/ui-difficulty/v2/REPORT.md)与[出牌修复](docs/bugs/play-controls/REPORT.md)。此前卡面、加载、音频与玩法优化的交付审查保留在[历史验收记录](docs/optimization/RELEASE-AUDIT.md)。
 
 现有代码保留全局对象和零构建方式；不能由逻辑断言通过推断可维护性或真人体验已达商业发布标准。触屏真机、屏幕阅读器全流程及真人平衡仍需要独立验收。
 

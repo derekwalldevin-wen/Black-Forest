@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-28T12:50:24.621Z",
+  "generatedAt": "2026-10-28T16:14:47.608Z",
   "baseline": false,
   "checks": [
     {
       "name": "Confirm remains available after leaving and returning to canvas",
       "passed": true,
       "selected": {
-        "selected": "defend",
+        "selected": "blood_pact",
         "hand": 5,
         "energy": 3,
         "hint": true,
@@ -16,7 +16,7 @@
         "modal": false
       },
       "returned": {
-        "selected": "defend",
+        "selected": "blood_pact",
         "hand": 5,
         "energy": 3,
         "hint": true,
@@ -30,7 +30,7 @@
       "name": "Interrupted pressed/swipe gesture cancels without paying and restores selected confirm",
       "passed": true,
       "gestureBefore": {
-        "selected": "defend",
+        "selected": "blood_pact",
         "hand": 5,
         "energy": 3,
         "hint": true,
@@ -40,7 +40,7 @@
         "modal": false
       },
       "gestureAfter": {
-        "selected": "defend",
+        "selected": "blood_pact",
         "hand": 5,
         "energy": 3,
         "hint": true,
@@ -54,7 +54,7 @@
       "name": "Insufficient-resource submission preserves card and visible explanation",
       "passed": true,
       "deniedBefore": {
-        "selected": "defend",
+        "selected": "strike",
         "hand": 5,
         "energy": 0,
         "hint": true,
@@ -64,7 +64,7 @@
         "modal": false
       },
       "denied": {
-        "selected": "defend",
+        "selected": "strike",
         "hand": 5,
         "energy": 0,
         "hint": true,
@@ -83,7 +83,7 @@
       "name": "Visible confirmation plays once after resources recover",
       "passed": true,
       "acceptedBefore": {
-        "selected": "defend",
+        "selected": "strike",
         "hand": 5,
         "energy": 3,
         "hint": true,
@@ -115,10 +115,10 @@
       "name": "Desktop 1040x560 zh-CN: pinned confirm, collapsed reading tool, actual confirmed play",
       "passed": true,
       "bounds": {
-        "x": 714.5,
-        "y": 480.40625,
-        "w": 88,
-        "h": 45.59375,
+        "x": 691.875,
+        "y": 425.890625,
+        "w": 158.0625,
+        "h": 50,
         "screenH": 560
       }
     },
@@ -126,10 +126,10 @@
       "name": "Desktop 1280x720 zh-CN: pinned confirm, collapsed reading tool, actual confirmed play",
       "passed": true,
       "bounds": {
-        "x": 885.5,
-        "y": 634.40625,
-        "w": 88,
-        "h": 45.59375,
+        "x": 875.015625,
+        "y": 546.5,
+        "w": 174,
+        "h": 50,
         "screenH": 720
       }
     },
@@ -137,10 +137,10 @@
       "name": "Desktop 1040x560 en: pinned confirm, collapsed reading tool, actual confirmed play",
       "passed": true,
       "bounds": {
-        "x": 714.5,
-        "y": 428.8125,
-        "w": 168.078125,
-        "h": 43.59375,
+        "x": 691.875,
+        "y": 425.890625,
+        "w": 158.0625,
+        "h": 50,
         "screenH": 560
       }
     },
@@ -148,10 +148,10 @@
       "name": "Desktop 1280x720 en: pinned confirm, collapsed reading tool, actual confirmed play",
       "passed": true,
       "bounds": {
-        "x": 885.5,
-        "y": 634.40625,
-        "w": 168.078125,
-        "h": 45.59375,
+        "x": 875.015625,
+        "y": 546.5,
+        "w": 174,
+        "h": 50,
         "screenH": 720
       }
     },
