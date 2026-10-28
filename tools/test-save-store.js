@@ -2,8 +2,11 @@ const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
 const data=new Map();let fault=null;
 const db={getItem(k){if(fault==='read')throw Error('denied');return data.get(k)||null;},setItem(k,v){if(fault==='write'||fault===k)throw Error('quota');data.set(k,String(v));},removeItem(k){if(fault==='clear')throw Error('denied');data.delete(k);}};
 const box={localStorage:db};vm.createContext(box);
-for(const f of ['cards','enemies','relics','events','starters','contracts','story','save-store','run'])vm.runInContext(fs.readFileSync('src/core/'+f+'.js','utf8'),box);
+for(const f of ['cards','enemies','relics','events','starters','contracts','story','storage-backend','save-store','run'])vm.runInContext(fs.readFileSync('src/core/'+f+'.js','utf8'),box);
 const {RUN,STORE}=vm.runInContext('({RUN,STORE:SAVE_STORE})',box),checks=[];
+/* 注入可故障的存储后端：SAVE_STORE.backend 是留给宿主的正式接入口，
+ * 网页版默认走 STORAGE_BACKEND（localStorage），测试用后端覆盖它。 */
+STORE.backend=db;
 RUN.newRun('guard');RUN.gold=11;assert(RUN.save());const first=data.get(STORE.primary);RUN.gold=22;assert(RUN.save());const second=data.get(STORE.primary);assert.equal(data.get(STORE.backup),first);checks.push('successful save rotates previous validated checkpoint');
 data.set(STORE.primary,'{broken');assert(RUN.load());assert.equal(RUN.gold,11);assert.equal(STORE.status,'recovered');assert.equal(data.get(STORE.primary),'{broken');assert.equal(data.get(STORE.backup),first);RUN.gold=33;assert(RUN.save());assert.equal(data.get(STORE.backup),first);checks.push('corrupt primary recovers previous state without destroying recovery source');
 data.set(STORE.primary,second);fault=STORE.primary;RUN.gold=44;assert.equal(RUN.save(),false);assert.equal(data.get(STORE.primary),second);assert.equal(data.get(STORE.backup),second);assert.equal(STORE.status,'writeFailure');fault=null;checks.push('failed primary write retains a valid current and backup');
@@ -15,6 +18,13 @@ const legacy=JSON.parse(first);delete legacy.schemaVersion;delete legacy.starter
 for(const patch of [{deck:['not-a-card']},{deck:['constructor']},{relics:['__proto__']},{gold:-1},{maxHp:0},{chapter:99},{step:9},{hp:999},{relics:'bad'},{schemaVersion:'999'},{nextCombat:'bad'},{postFightHeal:9}])assert.equal(RUN._parseSave(JSON.stringify({...JSON.parse(first),...patch})),null);
 checks.push('invalid numeric, resource, array and version fields are rejected');
 RUN.gold=999;RUN.nextCombat={poison:99};data.set(STORE.primary,JSON.stringify({started:true,deck:['strike']}));assert(RUN.load());assert.equal(RUN.gold,0);assert.equal(Object.keys(RUN.nextCombat).length,0);checks.push('minimal legacy save receives clean defaults instead of another run state');
+/* 后端失败时是「返回 false」而不是抛异常（桌面版的文件存储就是这样）。
+   这种情况下也必须如实上报失败，不能照样弹「已保存」。 */
+const soft=new Map();let softFail=false;
+STORE.backend={getItem:k=>soft.has(k)?soft.get(k):null,setItem:(k,v)=>{if(softFail)return false;soft.set(k,String(v));return true;},removeItem:k=>{soft.delete(k);return true;}};
+RUN.newRun('guard');RUN.gold=7;softFail=true;assert.equal(RUN.save(),false);assert.equal(STORE.status,'writeFailure');
+softFail=false;assert.equal(RUN.save(),true);assert.equal(STORE.status,null);checks.push('a backend reporting failure by returning false surfaces as a failed save, not a silent success');
+STORE.backend=db;
 RUN.newRun('blood','challenge');assert(RUN.save());RUN.newRun('guard','story');assert(RUN.load());assert.equal(RUN.difficulty,'challenge');assert.equal(RUN.maxHp,60);assert.equal(RUN.postFightHeal,.20);
 checks.push('difficulty survives save/load with its HP and recovery rules');
 const oldDifficulty=JSON.parse(first);delete oldDifficulty.difficulty;data.set(STORE.primary,JSON.stringify(oldDifficulty));assert(RUN.load());assert.equal(RUN.difficulty,'standard');assert.equal(RUN.maxHp,70);

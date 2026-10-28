@@ -1,0 +1,107 @@
+{
+  "images": [
+    {
+      "version": "new",
+      "lang": "zh-CN",
+      "size": "320x568"
+    },
+    {
+      "version": "new",
+      "lang": "zh-CN",
+      "size": "390x844"
+    },
+    {
+      "version": "new",
+      "lang": "zh-CN",
+      "size": "768x1024"
+    },
+    {
+      "version": "new",
+      "lang": "zh-CN",
+      "size": "1280x720"
+    },
+    {
+      "version": "new",
+      "lang": "zh-CN",
+      "size": "1366x768"
+    },
+    {
+      "version": "new",
+      "lang": "en",
+      "size": "320x568"
+    },
+    {
+      "version": "new",
+      "lang": "en",
+      "size": "390x844"
+    },
+    {
+      "version": "new",
+      "lang": "en",
+      "size": "768x1024"
+    },
+    {
+      "version": "new",
+      "lang": "en",
+      "size": "1280x720"
+    },
+    {
+      "version": "new",
+      "lang": "en",
+      "size": "1366x768"
+    },
+    {
+      "version": "old",
+      "lang": "zh-CN",
+      "size": "320x568"
+    },
+    {
+      "version": "old",
+      "lang": "zh-CN",
+      "size": "390x844"
+    },
+    {
+      "version": "old",
+      "lang": "zh-CN",
+      "size": "768x1024"
+    },
+    {
+      "version": "old",
+      "lang": "zh-CN",
+      "size": "1280x720"
+    },
+    {
+      "version": "old",
+      "lang": "zh-CN",
+      "size": "1366x768"
+    },
+    {
+      "version": "old",
+      "lang": "en",
+      "size": "320x568"
+    },
+    {
+      "version": "old",
+      "lang": "en",
+      "size": "390x844"
+    },
+    {
+      "version": "old",
+      "lang": "en",
+      "size": "768x1024"
+    },
+    {
+      "version": "old",
+      "lang": "en",
+      "size": "1280x720"
+    },
+    {
+      "version": "old",
+      "lang": "en",
+      "size": "1366x768"
+    }
+  ],
+  "materialImages": 6,
+  "errors": [],
+  "missing": []
+}

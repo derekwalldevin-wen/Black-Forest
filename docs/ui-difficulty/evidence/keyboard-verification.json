@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-10-25T04:20:51.618Z",
+  "scope": "Edge browser, CSS viewport emulation and real browser mouse/keyboard/touch events; no physical-phone claim",
+  "layouts": [],
+  "runs": [],
+  "checks": [
+    "Ten Chinese/English layouts; touch selection; no text overflow or overlapping headings; all options fit on desktop/tablet; footer remains visible; Back resumes without starting",
+    "Three difficulty rules in both languages reach combat unchanged, save/reload correctly, and duplicate confirm starts once",
+    "Default radio focus, arrow selection, Space isolation, Escape cancel, reopen, duplicate-dialog guard, keyboard confirmation and first-lesson handoff"
+  ],
+  "errors": [],
+  "missing": []
+}

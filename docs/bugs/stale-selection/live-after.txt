@@ -1,0 +1,50 @@
+Browser tab: 2, Title: "黑森林 · 暗黑童话卡牌", URL: "http://127.0.0.1:8899/?v=20261025-play-controls".
+1 AXWebArea 黑森林 · 暗黑童话卡牌, URL: 127.0.0.1:8899/?v=20261025-play-controls
+	2 container Description: 战况与操作, ID: desktop-left
+		3 container
+			51 text 行旅札记
+			5 heading 黑森林, Value: 1
+				52 text 黑森林
+			53 text 毒泽九首 · 回合 2
+		8 container
+			9 heading 敌人下一步, Value: 2
+				54 text 敌人下一步
+			55 text 攻击 4 × 3 攻击预估合计 12 · 当前格挡 15。状态与连击会影响实际结算。
+		12 container
+			13 button (collapsed) 操作提示与快捷键, Secondary Actions: Expand
+				56 text 操作提示与快捷键
+			15 button 菜单
+			16 button 重看教学
+		17 container
+			18 heading 手牌 · 点击只查看, Value: 2
+				57 text 手牌 · 点击只查看
+			50 content list
+				58 checkbox 1 · 血月 2 行动力, Value: 0
+				59 checkbox 2 · 荆棘之环 2 行动力, Value: 0
+				60 checkbox 3 · 毒镖 1 行动力, Value: 0
+	20 container Description: 卡牌与状态详情, ID: desktop-right
+		21 container
+			22 heading 选择一张卡牌, Value: 2
+				61 text 选择一张卡牌
+			62 text 完整说明会显示在这里 费用不足的牌也可以查看。查看不会扣除资源或移除手牌。
+		25 container
+			26 heading 我方状态, Value: 2
+				63 text 我方状态
+			64 text 生命 47/62 · 格挡 15 · 行动力 2 · 灵韵 3 · 共鸣 1
+			28 content list
+				65 container
+					66 AXListMarker •
+					67 text 虚弱 1 造成伤害 -25%
+		32 container
+			33 heading 蜚, Value: 2
+				68 text 蜚
+			35 content list
+				69 container
+					70 AXListMarker •
+					71 text 灼烧 6 回合开始失去 6 点生命
+		39 container
+			72 text 点一次查看，再确认打出
+			41 button (disabled) 确认打出
+			42 button (disabled) 取消选中
+
+The focused UI element is 1 AXWebArea 黑森林 · 暗黑童话卡牌, URL: 127.0.0.1:8899/?v=20261025-play-controls

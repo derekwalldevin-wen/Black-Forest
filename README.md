@@ -1,12 +1,64 @@
 # 黑森林 · Black Forest
 
-竖屏 9:16 暗黑童话卡牌 Roguelike 浏览器原型。前九战为黑森林，后九战进入山海经之墟；Phaser 3.80.1 本地部署，无构建步骤。
+竖屏 9:16 暗黑童话卡牌 Roguelike。前九战为黑森林，后九战进入山海经之墟；Phaser 3.80.1 本地部署，网页版无构建步骤，另有可独立运行的 Windows 桌面试玩版（R1）。
 
-[在线试玩](https://derekwalldevin-wen.github.io/Black-Forest/) · [当前优化清单](docs/optimization/REVIEW-RESPONSE.md)
+[在线试玩](https://derekwalldevin-wen.github.io/Black-Forest/) · [当前优化清单](docs/optimization/REVIEW-RESPONSE.md) · [R1 桌面报告](docs/steam/R1-DESKTOP-REPORT.md)
 
 ## 运行与操作
 
+### 网页版
+
 需要 Node.js，运行 `node tools/serve-game.js 8899`，打开 http://127.0.0.1:8899/ 。也可以使用 `python -m http.server 8899 --bind 127.0.0.1`。不能直接双击 HTML 使用 file:// 加载。
+
+### Windows 桌面试玩版（R1）
+
+桌面试玩版是独立于开发环境的可运行载体：不需要 Node/Python、不需要开发服务器、不需要 GitHub Pages，
+断网可玩，进度存在本机用户数据目录。
+
+当前桌面预览版：**1.0.1-preview.1**。
+[GitHub 下载页](https://github.com/derekwalldevin-wen/Black-Forest/releases/tag/desktop-v1.0.1-preview.1) · [版本说明](docs/steam/RELEASE-NOTES-1.0.1-preview.1.md)。
+两个候选包也保存在本地 `artifacts/desktop/`：
+
+| 包 | 文件 | 用法 |
+|---|---|---|
+| 可解压运行包 | `BlackForest-Desktop-1.0.1-preview.1-x64.zip` | 解压到任意目录，运行里面的 `Black Forest.exe` |
+| 安装包 | `BlackForest-Desktop-1.0.1-preview.1-x64.exe` | 双击安装，按安装向导选目录（普通用户权限即可，不写注册表 HKLM） |
+
+- 窗口是竖屏 9:16，`F11` 切全屏，`Esc` 退出全屏；窗口位置与尺寸会记住，
+  下次启动恢复；如果原显示器已被拔掉，窗口会回到当前显示器中央。
+- 重复双击不会开出第二个窗口，第二次启动会把已有窗口叫到前面。
+- 试玩包**未做代码签名**，Windows 可能弹出「未知发布者」提示，这是预期状态。
+- 玩家进度不在安装目录里，默认资料文件在 `%APPDATA%\Black Forest\data\default\data\`，同级有日志与导入备份目录。
+  卸载不会删掉它，重装也不会丢。
+
+从网页版迁移进度：
+
+1. 在网页版标题页点「进度备份 · 导出」→「导出进度文件」，浏览器下载一个 JSON。
+2. 打开桌面试玩版，标题页点「进度备份 · 导出」→「从文件导入进度」，选那个 JSON。
+3. 桌面版会先校验文件、再备份现有数据、再覆盖；确认页会列出会被覆盖的项目。
+   导入失败不会改动现有数据。
+
+桌面试玩版没有改动卡牌数值、敌人招式、难度与奖励经济，实验内容仍按原开关启用。
+详细交付与验收记录见 [R1 桌面报告](docs/steam/R1-DESKTOP-REPORT.md)，
+存储位置与迁移规则见 [存储契约](docs/steam/STORAGE-CONTRACT.md)，
+给下一阶段的交接与决策请求见 [CODEX-R1-DESKTOP](docs/steam/CODEX-R1-DESKTOP.md)。
+
+### 从源码构建桌面包
+
+开发环境需要 Node.js 22 和 npm。以下命令从项目根目录执行：
+
+```powershell
+npm ci --prefix desktop
+node tools/check-release.cjs
+node desktop/build/package.js
+node tools/test-desktop-package.js --require-package
+```
+
+构建会生成安装包、可解压运行包、`SHA256SUMS.txt` 与 `release-manifest.json`。
+网页内容版本与桌面容器版本分别记录；修改后的候选包需要重新进行桌面实跑。
+GitHub Actions 会在主分支、R1 分支和 PR 上执行源码检查、打包及资源哈希验证；自动构建不替代干净电脑或真人验收。
+
+### 操作
 
 点击手牌查看，再次点击或上滑出牌；数字键选择手牌，回合结束按钮推进战斗。菜单可查看牌组、征途、状态说明、声音和减少动态设置。标题页支持简体中文/英文切换，英文仍为预览译文。
 
@@ -42,7 +94,7 @@ node tools/simulate.js 1500
 
 ## 仍需完善
 
-这是可试玩原型，尚不是 Steam 上架完成版本。本轮优化已覆盖卡面、分段加载、音频压缩与反馈、构筑分流、BOSS 反制、难度及局外目标；本版发布标识为 `20261018-review-polish`，交付审查见 [验收记录](docs/optimization/RELEASE-AUDIT.md)。具体状态和验证记录以优化清单为准。
+这是可试玩原型，尚不是 Steam 上架完成版本。本次网页更新标识为 `20261028-ui-fidelity`，包含桌面阅读与分步教学、卡牌操作修复、费用不足灰显，以及难度/商店/手牌/教学/收藏/存档的插画 UI。详见 [R2 工程报告](docs/steam/R2-REPORT.md)、[插画 UI 还原](docs/ui-native/v2/REPORT.md)、[难度选择还原](docs/ui-difficulty/v2/REPORT.md)与[出牌修复](docs/bugs/play-controls/REPORT.md)。此前卡面、加载、音频与玩法优化的交付审查保留在[历史验收记录](docs/optimization/RELEASE-AUDIT.md)。
 
 现有代码保留全局对象和零构建方式；不能由逻辑断言通过推断可维护性或真人体验已达商业发布标准。触屏真机、屏幕阅读器全流程及真人平衡仍需要独立验收。
 

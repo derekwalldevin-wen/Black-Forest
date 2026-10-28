@@ -2,11 +2,14 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="black-forest-release" content="20261028-ui-fidelity">
 <link rel="icon" href="data:,">
 <!-- 移动端三件套:禁缩放 + 禁手势 + 覆盖安全区 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#1a1420">
+<!-- 桌面版把页面放在受控的 app:// 源下，这条 CSP 对网页版同样生效 -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' data: blob:; worker-src 'self' blob:; object-src 'none'; base-uri 'none'">
 <title>黑森林 · 暗黑童话卡牌</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -51,12 +54,15 @@
   }
   @media (max-width:768px) { #desktop-note { display:none; } }
 </style>
-<link rel="stylesheet" href="assets/hand-reader.css?v=20261018-review-polish">
+<link rel="stylesheet" href="assets/hand-reader.css?v=20261025-play-controls">
+<link rel="stylesheet" href="assets/desktop-ui.css?v=20261025-card-gray">
+<link rel="stylesheet" href="assets/painted-ui.css?v=20261025-native-fidelity">
+<link rel="stylesheet" href="assets/difficulty-ui.css?v=20261026-difficulty-fidelity">
 </head>
 <body>
 
 <div id="game-container"></div>
-<div id="font-loading" role="status" style="position:fixed;z-index:110;color:#c8a86a;font:20px sans-serif">正在点亮提灯…</div>
+<div id="font-loading" role="status">正在点亮提灯…</div>
 
 <div id="rotate-hint">
   <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +78,7 @@
 // 横屏时提示旋转
 function checkOrientation(){
   var hint = document.getElementById('rotate-hint');
-  var isDesktop = window.innerWidth > 900;
+  var isDesktop = !('ontouchstart' in window) || window.innerWidth > 900;
   var isLandscape = window.innerWidth > window.innerHeight;
   hint.style.display = (!isDesktop && isLandscape) ? 'flex' : 'none';
 }
@@ -82,61 +88,66 @@ checkOrientation();
 </script>
 
 <script src="assets/vendor/phaser-3.80.1.min.js"></script>
-<script src="src/core/i18n.js?v=20261018-review-polish"></script>
-<script src="locales/en.js?v=20261018-review-polish"></script>
-<script src="locales/ui.js?v=20261018-review-polish"></script>
-<script src="locales/combat.js?v=20261018-review-polish"></script>
-<script src="locales/items.js?v=20261018-review-polish"></script>
-<script src="locales/journal.js?v=20261018-review-polish"></script>
-<script src="locales/reward.js?v=20261018-review-polish"></script>
-<script src="locales/events.js?v=20261018-review-polish"></script>
-<script src="locales/story.js?v=20261018-review-polish"></script>
-<script src="locales/shell.js?v=20261018-review-polish"></script>
-<script src="locales/storage.js?v=20261018-review-polish"></script>
-<script src="src/core/save-store.js?v=20261018-review-polish"></script>
-<script src="src/core/text-layout.js?v=20261018-review-polish"></script>
+<script src="src/core/storage-backend.js?v=20261025-r2"></script>
+<script src="src/core/i18n.js?v=20261025-r2"></script>
+<script src="locales/en.js?v=20261025-r2"></script>
+<script src="locales/ui.js?v=20261025-r2"></script>
+<script src="locales/combat.js?v=20261025-r2"></script>
+<script src="locales/items.js?v=20261025-r2"></script>
+<script src="locales/journal.js?v=20261025-play-controls"></script>
+<script src="locales/reward.js?v=20261025-r2"></script>
+<script src="locales/events.js?v=20261025-r2"></script>
+<script src="locales/story.js?v=20261025-r2"></script>
+<script src="locales/shell.js?v=20261025-r2"></script>
+<script src="locales/storage.js?v=20261025-r2"></script>
+<script src="src/core/save-store.js?v=20261025-r2"></script>
+<script src="src/core/text-layout.js?v=20261025-r2"></script>
 
-<script src="src/core/cards.js?v=20261018-review-polish"></script>
-<script src="src/core/market.js?v=20261018-review-polish"></script>
-<script src="src/core/enemies.js?v=20261018-review-polish"></script>
-<script src="src/core/relics.js?v=20261018-review-polish"></script>
-<script src="src/core/events.js?v=20261018-review-polish"></script>
-<script src="src/core/starters.js?v=20261018-review-polish"></script>
-<script src="src/core/contracts.js?v=20261018-review-polish"></script>
-<script src="src/core/story.js?v=20261018-review-polish"></script>
-<script src="src/core/story-assets.js?v=20261018-review-polish"></script>
-<script src="src/core/run.js?v=20261018-review-polish"></script>
-<script src="src/core/audio-assets.js?v=20261018-review-polish"></script>
-<script src="src/core/audio.js?v=20261018-review-polish"></script>
-<script src="src/core/music.js?v=20261018-review-polish"></script>
-<script src="src/core/fx.js?v=20261018-review-polish"></script>
-<script src="src/core/motion-assets.js?v=20261018-review-polish"></script>
-<script src="src/core/duel-art.js?v=20261018-review-polish"></script>
-<script src="src/core/motion.js?v=20261018-review-polish"></script>
-<script src="src/core/hero-fx-assets.js?v=20261018-review-polish"></script>
-<script src="src/core/hero-fx.js?v=20261018-review-polish"></script>
-<script src="src/core/living-scene.js?v=20261018-review-polish"></script>
-<script src="src/core/ui.js?v=20261018-review-polish"></script>
-<script src="src/core/combat.js?v=20261018-review-polish"></script>
-<script src="src/core/theme.js?v=20261018-review-polish"></script>
-<script src="src/core/ui-skin.js?v=20261018-review-polish"></script>
-<script src="src/core/icon-art.js?v=20261018-review-polish"></script>
-<script src="src/core/loading-art.js?v=20261018-review-polish"></script>
+<script src="src/core/cards.js?v=20261025-r2"></script>
+<script src="src/core/market.js?v=20261025-native-fidelity"></script>
+<script src="src/core/enemies.js?v=20261025-r2"></script>
+<script src="src/core/relics.js?v=20261025-r2"></script>
+<script src="src/core/events.js?v=20261025-r2"></script>
+<script src="src/core/starters.js?v=20261025-r2"></script>
+<script src="src/core/contracts.js?v=20261025-r2"></script>
+<script src="src/core/story.js?v=20261025-r2"></script>
+<script src="src/core/story-assets.js?v=20261025-r2"></script>
+<script src="src/core/run.js?v=20261025-r2"></script>
+<script src="src/core/audio-assets.js?v=20261025-r2"></script>
+<script src="src/core/audio.js?v=20261025-r2"></script>
+<script src="src/core/music.js?v=20261025-r2"></script>
+<script src="src/core/fx.js?v=20261025-r2"></script>
+<script src="src/core/motion-assets.js?v=20261025-r2"></script>
+<script src="src/core/duel-art.js?v=20261025-r2"></script>
+<script src="src/core/motion.js?v=20261025-r2"></script>
+<script src="src/core/hero-fx-assets.js?v=20261025-r2"></script>
+<script src="src/core/hero-fx.js?v=20261025-r2"></script>
+<script src="src/core/living-scene.js?v=20261025-r2"></script>
+<script src="src/core/ui.js?v=20261025-card-gray"></script>
+<script src="src/core/combat.js?v=20261025-r2"></script>
+<script src="src/core/theme.js?v=20261025-r2"></script>
+<script src="src/core/ui-skin.js?v=20261025-r2"></script>
+<script src="src/core/icon-art.js?v=20261025-r2"></script>
+<script src="src/core/loading-art.js?v=20261025-r2"></script>
 
-<script src="src/core/asset-variants.js?v=20261018-review-polish"></script>
-<script src="src/core/hand-reader.js?v=20261018-review-polish"></script>
-<script src="src/core/difficulty-ui.js?v=20261018-review-polish"></script>
-<script src="src/core/progress.js?v=20261018-review-polish"></script>
-<script src="src/core/asset-stream.js?v=20261018-review-polish"></script>
-<script src="src/scenes/BootScene.js?v=20261018-review-polish"></script>
-<script src="src/scenes/TitleScene.js?v=20261018-review-polish"></script>
-<script src="src/scenes/CombatScene.js?v=20261018-review-polish"></script>
-<script src="src/scenes/RewardScene.js?v=20261018-review-polish"></script>
-<script src="src/scenes/EventScene.js?v=20261018-review-polish"></script>
-<script src="src/scenes/JournalScene.js?v=20261018-review-polish"></script>
-<script src="src/scenes/StoryScene.js?v=20261018-review-polish"></script>
+<script src="src/core/asset-variants.js?v=20261025-r2"></script>
+<script src="src/core/painted-ui.js?v=20261025-native-fidelity"></script>
+<script src="src/core/hand-reader.js?v=20261025-native-fidelity"></script>
+<script src="src/core/tutorial.js?v=20261025-native-fidelity"></script>
+<script src="src/core/desktop-ui.js?v=20261025-native-fidelity"></script>
+<script src="src/core/difficulty-ui.js?v=20261026-difficulty-fidelity"></script>
+<script src="src/core/progress.js?v=20261025-native-fidelity"></script>
+<script src="src/core/transfer.js?v=20261025-native-fidelity"></script>
+<script src="src/core/asset-stream.js?v=20261025-r2"></script>
+<script src="src/scenes/BootScene.js?v=20261025-r2"></script>
+<script src="src/scenes/TitleScene.js?v=20261025-r2"></script>
+<script src="src/scenes/CombatScene.js?v=20261025-card-gray"></script>
+<script src="src/scenes/RewardScene.js?v=20261025-r2"></script>
+<script src="src/scenes/EventScene.js?v=20261025-r2"></script>
+<script src="src/scenes/JournalScene.js?v=20261025-play-controls"></script>
+<script src="src/scenes/StoryScene.js?v=20261025-r2"></script>
 
-<script src="src/game.js?v=20261018-review-polish"></script>
-<script src="src/core/fonts.js?v=20261018-review-polish"></script>
+<script src="src/game.js?v=20261025-r2"></script>
+<script src="src/core/fonts.js?v=20261025-r2"></script>
 </body>
 </html>

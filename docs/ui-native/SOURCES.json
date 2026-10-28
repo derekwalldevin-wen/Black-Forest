@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-10-25T11:57:27.261Z",
+  "tool": "image_gen.imagegen (built-in)",
+  "commercialClearance": false,
+  "concept": {
+    "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-f51eb48b-26ff-49ac-a2d2-2373c6ddfb19.png",
+    "file": "docs/ui-native/shop-concept-v1.webp",
+    "prompt": "Use case: ui-mockup\nAsset type: finished portrait 1024x1536 game UI concept.\nPrimary request: Redesign the plain supply-shop modal of the Chinese dark fairy tale deckbuilder Black Forest into a polished hand-painted game shop. Input 1 is functional information only, input 2 is the approved visual style anchor.\nStyle: the same gothic watercolor forest, engraved antique brass and aged ivory parchment as the approved difficulty menu. Restrained ornament, strong readable typography and clear functional hierarchy. No modern web-form appearance.\nComposition: dimmed game background, centered parchment modal with brass vine corners. Wide illustrated header with an amber lantern, leather provision satchel and old coins, with calm dark negative space behind title. Wallet pill at upper right. Three clearly separated horizontal product rows, each with a small painted card-art thumbnail at left, large Chinese title and concise readable description, price and obvious purchase button. Below is a compact bordered card-removal service with a shears / fading-card icon and a closed accordion. Bottom fixed footer with large Leave Shop button; all content fits a portrait mobile screen. Items have distinct genuine paintings, not emoji. No merchant character.\nText verbatim:\n\"旅途补给\" \"◆ 764\" \"每张商品限购一次 · 每间商店限删一张\"\nrow1 \"玄玑\" \"获得1点灵韵。抽1张牌。\" \"◆45\" \"购买\"\nrow2 \"灵蕴\" \"获得2点灵韵。抽1张牌。\" \"◆75\" \"购买\"\nrow3 \"削弱血肉\" \"施加2层虚弱。\" \"◆75\" \"购买\"\nservice \"精简牌组\" \"◆60\" \"选择要移除的卡牌\" \"牌组至少保留5张\"\nfooter \"离开商店\"\nConstraints: faithful numerical rules, legible actual UI proportions, use exact Chinese text; no device frame, no angled perspective. Include space for real runtime text in implementation. Do not show purchase confirmations or extra features.",
+    "referenceRoles": [
+      "User supply-shop screenshot: functional requirements",
+      "docs/ui-difficulty/concept-v1.webp: approved visual style"
+    ]
+  },
+  "assets": [
+    {
+      "key": "emblems",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: production game UI emblem atlas. Generate exactly six separate hand-painted emblems on a genuinely TRANSPARENT background, arranged in an exact 3 columns by 2 rows grid on a landscape 1536x1024 canvas, equal 512x512 cells with no grid lines. Center each emblem inside its cell with generous transparent margin, no crossing cell boundaries. Reading order: top left leather provision satchel with a small glowing lantern and gold coins; top middle fan of three ornate illustrated playing cards; top right open traveller journal with warm ivory pages; bottom left antique brass laurel medal with an amber stone; bottom middle rolled sealed parchment beside a small archive case; bottom right a lantern beside a brass compass. Restrained gothic fairy-tale watercolor and detailed painted props, engraved antique brass, muted charcoal leather, warm ivory, soft amber lighting. Match a dark forest deckbuilding game. Recognizable at 60px. No characters, skulls, scenery, letters, numbers, UI panels, labels, borders, checkerboard pattern, white matte or shadows outside the individual objects. Actual alpha transparency.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-dcf7bd63-0bea-4131-838f-84265f178963.png",
+      "file": "assets/ui/modal-emblems-v1.webp",
+      "output": {
+        "width": 768,
+        "height": 512,
+        "alpha": true,
+        "bytes": 140322,
+        "sha256": "3116019f8ef58bca3bc2c441cdc3ee5a19c806f1cc2f46d7cf59b0948973d755"
+      }
+    },
+    {
+      "key": "frame",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: production game UI nine-slice border texture, square 1024x1024. Generate one restrained elegant antique brass rectangular frame on a genuinely transparent background. Fine engraved interwoven forest vines and little leaf motifs only along the outermost 80 pixels on all four sides, stronger compact corner ornaments that fit inside 90x90 pixels. Straight parallel rails through the center of each edge suitable for stretch nine-slicing at 96 pixels. The entire inner region x96..928 y96..928 must be COMPLETELY transparent, no paper or interior fill, no object inside. Frame fits wholly within canvas and does not touch/crop ornate edges. Painterly gothic fairy tale style, antique gold #b08d3f with dark bronze shadows #352a24, ivory highlights, refined subdued detail readable at small size. Front view, exact square, no perspective. No text, symbols, lettering, numbers, characters, skulls, scenery, mockup or checkerboard. Actual alpha transparency.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-f87cb009-0f0c-4941-b36a-d206dd63cb86.png",
+      "file": "assets/ui/modal-frame-v1.webp",
+      "output": {
+        "width": 1024,
+        "height": 1024,
+        "alpha": true,
+        "bytes": 167258,
+        "sha256": "5cf6332ae71f9c08ca80869bd1adc3daa34cd4304bb2bcb6dc4be8f222d7b482"
+      }
+    },
+    {
+      "key": "paper",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: production game UI parchment material. Generate a flat front-facing square 1024x1024 seamless aged ivory parchment texture, warm pale cream #f1e5cc, fine watercolor paper fibers, very subtle low-contrast cloudy variation. Uniform brightness, quiet and clean enough for black Chinese and English small text. Restrained gothic storybook game material. Fill the entire canvas with paper. No borders, writing, letters, numbers, ornaments, creases, burns, dark stains, objects, vignetting or cast shadows. This is only a flat text panel background texture.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-0c212c49-0065-43b9-a917-d6dab4101666.png",
+      "file": "assets/ui/modal-paper-v1.webp",
+      "output": {
+        "width": 1024,
+        "height": 1024,
+        "alpha": false,
+        "bytes": 107976,
+        "sha256": "229361c1b92a42df3d2bc81dc30d3f284a347e5bf1f95c8aaba01d091b50acf6"
+      }
+    },
+    {
+      "key": "shop",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: production game supply-shop header illustration, very wide landscape 1536x512, aspect ratio 3:1. A warm lantern-lit travelling supply bench at the edge of a dark fairy-tale forest. A small hanging antique brass lantern and worn leather provision satchel at the far LEFT, a few brass coins, a rolled blank parchment and a cloth bundle at the far RIGHT. Keep the central 50 percent dark quiet negative space, roughly #17131c, for runtime title typography; no objects in central text zone. Restrained exquisite watercolor and painted game art, muted indigo black, charcoal brown leather, antique gold #b08d3f, amber lantern light and soft mist. Elegant, practical and readable as a short horizontal header. No people, faces, skulls, text, letters, numbers, prices, UI frames, buttons, labels, logos or watermark. Full bleed art.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-55de375c-f570-460a-8688-e00d8dbdb099.png",
+      "file": "assets/ui/modal-shop-banner-v1.webp",
+      "output": {
+        "width": 1536,
+        "height": 512,
+        "alpha": false,
+        "bytes": 139810,
+        "sha256": "a37579961dd6b561058a89c102da5466cf1f1c73e764fc3a139571660f421c14"
+      }
+    }
+  ],
+  "utilityConcepts": {
+    "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-f0821f73-8d84-4f6c-92ba-3d5aa19af14e.png",
+    "file": "docs/ui-native/utility-concepts-v1.webp",
+    "prompt": "Use case: ui-mockup. Create one landscape 2048x1152 finished concept design board for a gothic fairy-tale deckbuilding game. Four complete portrait modal interfaces side by side at equal size with slim dark gutters: (1) 手牌一览, a fan-of-cards painted emblem, HP / Energy / Spirit resource chips, three illustrated card entries with readable rules, text-size slider, footer 返回战斗; (2) 旅人指南, an open painted journal emblem, three-step progress, heading 先看敌人下一步, a short explanatory paragraph and highlighted example box, buttons 下一步 and 暂时跳过; (3) 收藏与成就, antique brass laurel medal emblem, eight compact achievement tiles in 2 columns with some gold unlocked and some muted locked, accordion rows 卡牌 遗物 敌人, footer 返回; (4) 存档管理, sealed scroll and archive-case emblem, storage-location inset, large buttons 导出备份 and 导入存档, status text area and footer 关闭. Consistent quiet aged ivory parchment backgrounds, engraved brass vine nine-slice frames, charcoal indigo surroundings, warm amber accents, dark real-looking readable typography. Hand-painted watercolor prop illustrations and restrained ornament. Every panel has a clear header, scrollable body and fixed bottom action area. Refined practical game UI, strong hierarchy, accessible controls and generous breathing space. No characters or skulls, no device mockup, no perspective, no extra gameplay features, no English filler paragraphs, no watermark. This is the complementary concept board for four utility UI surfaces in the same game; all panels must be fully visible.",
+    "note": "Visual direction only. Generated sample text, card stats, achievements and save paths are not authoritative. Runtime uses existing definitions and real fonts.",
+    "generationNote": "Initial multi-reference concept request did not return; stopped after extended wait. Simplified independent request completed successfully."
+  }
+}

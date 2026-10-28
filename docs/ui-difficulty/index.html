@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黑森林 · 难度选择原稿还原</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:32px 20px 60px;background:#12101a;color:#f1e5cc;font:16px/1.65 'Microsoft YaHei',sans-serif}main{max-width:1140px;margin:auto}h1{font:32px/1.3 Georgia,'Microsoft YaHei',serif;margin:0 0 12px}p{color:#c4b799;max-width:850px}a{color:#edcc82}nav,.controls{display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap;margin:20px 0}.controls{padding:14px;border:1px solid #5d4a2d;background:#1b1721}.controls label{display:flex;align-items:center;gap:8px}select,button{font:inherit;color:#f1e5cc;background:#29212c;border:1px solid #7b633c;padding:7px 12px;cursor:pointer;min-height:44px}button[aria-pressed=true]{background:#795a29;border-color:#e6c27d}select:focus-visible,button:focus-visible{outline:2px solid #edcc82;outline-offset:3px}.compare{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}figure{margin:0;background:#1b1721;border:1px solid #5d4a2d;padding:14px}figcaption{color:#d3b878;margin-bottom:12px}img{display:block;width:100%;height:auto}.compare.desktop{grid-template-columns:1fr 1.8fr}.materials{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.materials figure{display:flex;flex-direction:column;justify-content:center}.materials img{max-height:200px;object-fit:contain}.materials figcaption{font-size:13px}details{margin-top:28px}summary{cursor:pointer;color:#edcc82;padding:8px 0}h2{font-size:20px;margin:0 0 12px}.status{font-size:13px;color:#b9ab8f}@media(max-width:650px){body{padding:22px 12px}.compare,.compare.desktop{grid-template-columns:1fr}h1{font-size:26px}.materials{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+<h1>难度选择 · 原稿与游戏实景</h1>
+<p>已将提灯牌匾、森林城堡背景、藤叶金框和三档完整插画接入实际游戏。选中框、推荐签与按钮状态由界面绘制；难度名称、生命值和回复比例使用真实字体与游戏数据。</p>
+<nav><a href="../../index.html?v=20261026-difficulty-fidelity">进入本地游戏</a><a href="v2/SOURCES.json">本轮提示词与素材记录</a><a href="v2/REPORT.md">交付与验收说明</a><a href="v2/evidence/verification.json">浏览器验收记录</a></nav>
+<div class="controls" aria-label="实景对照选项">
+ <button id="new" aria-pressed="true">本轮还原</button><button id="old" aria-pressed="false">上一版</button>
+ <label>画面<select id="viewport"><option value="390x844">手机 390 × 844</option><option value="320x568">窄屏 320 × 568</option><option value="768x1024">平板 768 × 1024</option><option value="1280x720">桌面 1280 × 720</option><option value="1366x768">桌面 1366 × 768</option></select></label>
+ <label>语言<select id="locale"><option value="zh-CN">中文</option><option value="en">English</option></select></label>
+</div>
+<div class="compare" id="compare">
+<figure><figcaption>01 · 已批准的 AI 美术稿</figcaption><a href="concept-v1.webp"><img src="concept-v1.webp" alt="哥特森林、提灯牌匾、羊皮纸及三档难度选项的原始设计稿"></a></figure>
+<figure><figcaption id="caption" aria-live="polite">02 · 本轮还原 · 手机 390 × 844 · 中文</figcaption><a id="capture-link" href="v2/evidence/390x844-zh-CN.webp"><img id="capture" src="v2/evidence/390x844-zh-CN.webp" alt="实际游戏中的难度选择界面，真实文字与可交互控件"></a></figure>
+</div>
+<p class="status">实景来自独立浏览器。窄屏与英文长文允许中部滚动，开始与返回按钮固定可见；三档规则保持原值。已验收中英文 10 种布局、6 次实际建局与存档，以及触控、键盘、取消和教学衔接。尚未发布到线上。</p>
+<details><summary>查看本轮生产美术素材（6 张）</summary><div class="materials">
+<figure><figcaption>提灯标题（文字由代码显示）</figcaption><img loading="lazy" src="../../assets/ui/difficulty/crest-v2.webp" alt="无字提灯牌匾"></figure>
+<figure><figcaption>故事 · 提灯与秋叶</figcaption><img loading="lazy" src="../../assets/ui/difficulty/story-v2.webp" alt="故事难度空白插画面板"></figure>
+<figure><figcaption>标准 · 长剑与白花</figcaption><img loading="lazy" src="../../assets/ui/difficulty/standard-v2.webp" alt="标准难度空白插画面板"></figure>
+<figure><figcaption>挑战 · 荆棘晶石</figcaption><img loading="lazy" src="../../assets/ui/difficulty/challenge-v2.webp" alt="挑战难度空白插画面板"></figure>
+<figure><figcaption>藤叶羊皮纸外框</figcaption><img loading="lazy" src="../../assets/ui/difficulty/shell-v2.webp" alt="藤叶雕花纸张壳"></figure>
+<figure><figcaption>月夜森林城堡外景</figcaption><img loading="lazy" src="../../assets/ui/difficulty/forest-v2.webp" alt="月夜森林、提灯与哥特城堡"></figure>
+</div></details>
+</main>
+<script>
+let version='new';const $=id=>document.getElementById(id);
+function update(){const view=$('viewport'),lang=$('locale'),prefix=version==='new'?'v2/':'';const src=prefix+'evidence/'+view.value+'-'+lang.value+'.webp';$('capture').src=src;$('capture-link').href=src;$('caption').textContent='02 · '+(version==='new'?'本轮还原':'上一版')+' · '+view.selectedOptions[0].text+' · '+lang.selectedOptions[0].text;$('compare').classList.toggle('desktop',view.value.startsWith('1280')||view.value.startsWith('1366'));for(const id of ['new','old'])$(id).setAttribute('aria-pressed',String(id===version));}
+for(const id of ['new','old'])$(id).onclick=()=>{version=id;update();};$('viewport').onchange=update;$('locale').onchange=update;
+</script>
+</html>

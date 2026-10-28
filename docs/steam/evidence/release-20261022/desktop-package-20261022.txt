@@ -1,0 +1,8 @@
+PASS: 7 desktop package scenarios.
+  - every file listed in the manifest exists with the recorded size and SHA-256
+  - the stage contains nothing that the manifest does not list
+  - no source tree, dev dependency, temporary image, test file or log is shipped
+  - entry point, engine, font, stylesheet and licences are all included
+  - the packaged app carries every manifest file with an identical hash
+  - the container code is packed into app.asar with the main process and preload
+  - the installation directory carries no player save

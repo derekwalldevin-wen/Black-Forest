@@ -2,14 +2,14 @@
 const SFX = {
  volume:.55,muted:false,game:null,active:new Set(),recent:[],last:new Map(),bound:new WeakSet(),
  load(){
-  try{const p=JSON.parse(localStorage.getItem('black-forest-audio-settings')||'{}');if(Number.isFinite(p.volume))this.volume=Math.max(0,Math.min(1,p.volume));if(typeof p.muted==='boolean')this.muted=p.muted;}catch(_){}
+  try{const p=JSON.parse(STORAGE_BACKEND.getItem('black-forest-audio-settings')||'{}');if(Number.isFinite(p.volume))this.volume=Math.max(0,Math.min(1,p.volume));if(typeof p.muted==='boolean')this.muted=p.muted;}catch(_){}
  },
  set(key,value){
   if(key==='volume'&&Number.isFinite(value))this.volume=Math.max(0,Math.min(1,value));
   else if(key==='muted')this.muted=!!value;else return;
   for(const s of this.active)s.setVolume(this.muted?0:this.volume*SFX_ASSETS[s._sfxName].gain);
   if(this.muted||this.volume===0)this.stop();
-  try{localStorage.setItem('black-forest-audio-settings',JSON.stringify({volume:this.volume,muted:this.muted}));}catch(_){}
+  try{if(STORAGE_BACKEND.setItem('black-forest-audio-settings',JSON.stringify({volume:this.volume,muted:this.muted}))===false)STORAGE_BACKEND.reportFailure();}catch(_){}
  },
  init(game){
   if(this.game===game)return;this.game=game;this.load();

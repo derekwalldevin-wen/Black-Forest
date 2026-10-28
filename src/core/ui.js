@@ -762,6 +762,7 @@ class CardView {
     this.restW = w; this.restH = h;
     this.selected = false;
     this.playable = true;
+    this.affordable = true;
     this.homeX = 0; this.homeY = 0; this.homeScale = 1; this.homeRot = 0;
     this.fanRot = 0;
     this._build();
@@ -805,6 +806,16 @@ class CardView {
     const c = this.c || s.add.container(0, 0);
     if (this.c) c.removeAll(true);
     this.c = c;
+    if (s.game.renderer.type === Phaser.CANVAS && !c._costFilterInstalled) {
+      // Canvas fallback: scope the grayscale filter to this card's draw calls.
+      const render = c.renderCanvas;
+      c.renderCanvas = function(renderer,src,...args) {
+        const context=renderer.currentContext,previous=context.filter;
+        if(src._grayForCost)context.filter=(previous&&previous!=='none'?previous+' ':'')+'grayscale(1)';
+        try{return render.call(this,renderer,src,...args);}finally{context.filter=previous;}
+      };
+      c._costFilterInstalled = true;
+    }
 
     // ---- 卡面构件全部画在同一张 Graphics 上：Phaser 会把一个 Graphics
     // 合成一次绘制调用，比拆成七八个对象省得多，5 张手牌的移动也跟手。
@@ -999,6 +1010,9 @@ class CardView {
   }
 
   setSelected(v) {
+    // Discard/leave animations destroy the Phaser container. Never rebuild a
+    // dead view if an old gesture or selection reference arrives afterwards.
+    if (!this.c?.active || !this.c.scene || this._leaving) { this.selected = false; return this; }
     const combatDetail = this.scene.scene.key === 'Combat';
     if (combatDetail && v) this._restDepth = this.c.depth;
     const previousCost = this.costT && this.costT.text;
@@ -1074,15 +1088,16 @@ class CardView {
     return this;
   }
 
-  setPlayable(v) {
+  setPlayable(v, affordable=v) {
     this.playable = v;
+    this.affordable = affordable;
     this.refreshState();
   }
 
   /* 刷新实际费用：共鸣减免后价格会变低，这里把数字改掉并点亮共鸣标记。
    * 打出比标价便宜的符箓时，用金色表示「省下来的」。 */
   setCost(cost, isSpirit) {
-    if (this.costT) this.costT.setText((this.playable?'':'×')+String(cost));
+    if (this.costT) this.costT.setText((this.affordable?'':'×')+String(cost).replace(/^×+/,''));
     if (this.echoMark) {
       // 减免生效 = 点亮；没减免 = 暗着
       this.echoMark.setAlpha(isSpirit && this.resonanceActive ? 0.95 : 0.25);
@@ -1095,10 +1110,22 @@ class CardView {
     if (this.echoMark) this.echoMark.setAlpha(n > 0 ? 0.95 : 0.25);
   }
 
-  /* Keep rules readable when unaffordable; mark the cost instead of fading paper. */
+  /* Insufficient resources desaturate the whole card, keeping text opaque. */
   refreshState() {
+    if (!this.c?.active || !this.c.scene) return;
     this.c.setAlpha(1);
-    if(this.costT)this.costT.setText((this.playable?'':'×')+String(this.costT.text).replace(/^×/,''));
+    const gray = this.scene.scene.key==='Combat' && !this.affordable;
+    this.c._grayForCost = gray;
+    if (this.scene.game.renderer.type === Phaser.WEBGL) {
+      if (gray && !this._costGrayFX) {
+        this._costGrayFX = this.c.postFX.addColorMatrix();
+        this._costGrayFX.grayscale(1);
+      } else if (!gray && this._costGrayFX) {
+        this.c.postFX.remove(this._costGrayFX);
+        this._costGrayFX = null;
+      }
+    }
+    if(this.costT)this.costT.setText((this.affordable?'':'×')+String(this.costT.text).replace(/^×+/,''));
   }
 
   setHome(x, y, rot, scale) {

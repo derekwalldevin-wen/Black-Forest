@@ -1,0 +1,186 @@
+{
+  "version": 2,
+  "date": "2026-10-26",
+  "tool": "image_gen.imagegen",
+  "reference": "docs/ui-difficulty/concept-v1.webp",
+  "purpose": "Faithful production adaptation; all labels and rules are real DOM text",
+  "records": [
+    {
+      "key": "plates",
+      "prompt": "Use case: precise-object-edit. Production UI texture extraction from the attached approved Black Forest difficulty screen. Faithfully reconstruct its THREE wide option plates as a single sprite atlas. Canvas1536x1296, EXACTLY ONE COLUMN and THREE equal1536x432 horizontal rows. Top row STORY: glowing amber lantern on curved dark branch amid autumn ivy and watercolor midnight forest on the LEFTmost28%; middle row STANDARD: upright elegant silver sword in dark rock, ivory wildflowers and deep forest painted on LEFTmost28%; bottom row CHALLENGE: tall crimson faceted crystal entwined in black thorns and crimson leaves on LEFTmost28%. Match their exact reference compositions and painterly irregular transition fading RIGHT into warm quiet parchment. Every plate has the reference double antique bronze-gold bevel frame with angled corners, tiny leaf engravings and delicate dark contour. The center and right70% of EACH plate is completely blank warm ivory parchment, clear for live text. Remove ALL names, captions, HP numbers, labels, percentage values, dividers, badges and checkmarks; no lettering anywhere. Each whole plate fits in its own equal cell with10px transparent exterior gutter; no overlap between rows. Selected glow will be added in game, so ALL THREE frames use the same neutral bronze-gold state. Actual alpha outside the three framed plates, opaque artwork and parchment inside. No other interface, title, footer, background beyond each plate, icons or watermark. Preserve elaborate reference illustration and frames, do not simplify into tiny floating icons.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-05dec0f7-66cb-452b-88f9-c717c6ae082a.png",
+      "originalSha256": "384edef1c312a3a11eda410a78638a61e9bb2d278e5146a1a98ce117d3b34e24",
+      "outputs": [],
+      "status": "superseded-aspect-ratio",
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "crest",
+      "prompt": "Use case: precise-object-edit. From the approved attached Black Forest difficulty UI, extract and faithfully reconstruct ONLY the top ornamental title crest as a production UI asset. One wide symmetrical antique dark bronze cartouche, horizontal engraved near-black plaque with elaborate curling gold acanthus leaves, ivy and a glowing small warm amber lantern mounted above its center, delicate chain and filigree, broad tips extending left and right. Match the attached reference's hand painted watercolor and fine antique engraved line art, luxurious but aged. Completely BLANK plaque center, generous dark quiet horizontal center for live title text. Actual transparent background outside its irregular silhouette. All lantern/ivy/scrollwork within canvas; no cropping. Single object centered on a 1536 by 640 wide canvas. NO text, letters, numbers, mockup, interface screen, rectangular paper background, watermark or ground shadow. Do not produce a flat icon, preserve the ornate illustrated material and fine curls from the reference.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-9324b3b1-0d7e-4f06-a7c9-f897e02fb17a.png",
+      "originalSha256": "ae032f75dd69ffd038e3a520c19cd7f9e685695ea93411b0956d04601b3fc412",
+      "outputs": [
+        {
+          "file": "assets/ui/difficulty/crest-v2.webp",
+          "width": 1000,
+          "height": 334,
+          "alpha": true,
+          "bytes": 103038,
+          "sha256": "87d851cc508f41550873b7fb19cfff9f07902429d69c01d7fb4809effe91b58e"
+        }
+      ],
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "shell",
+      "prompt": "Use case: precise-object-edit. Reconstruct ONLY the blank outer parchment window shell from attached approved Black Forest difficulty UI as reusable production UI artwork. Portrait canvas 1024x1400. Large central rectangular aged ivory parchment, subtle fibers and tea staining at edges, very quiet even ivory center. Full ornate thin DOUBLE antique gold/bronze outer frame with tiny engraved diamonds, beveled stepped corners, black fine contour, delicate ivy and gold acanthus ornament growing inward ONLY at four extreme corners. Precisely match reference watercolor/old book illustration. The entire interior is EMPTY blank paper; no titles, lamps, crest, buttons, option plates, inner boxes, separators, text, symbols or numbers. No dark footer: paper everywhere within frame so live flow can vary. Frame occupies near edge; keep all ornament within outer 80px border area, central large 85% absolutely blank readable ivory. True transparency only OUTSIDE the framed rectangle, with 8px clear exterior margin. Single full window frame, front view, no perspective, no scene, no mockup.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-cbc26670-5211-4d13-904c-3db83dd502eb.png",
+      "originalSha256": "34c63f992c70c6932db01a3371f28a9aaaac1a99e311ce2741a8e76978ccc5b4",
+      "outputs": [
+        {
+          "file": "assets/ui/difficulty/shell-v2.webp",
+          "width": 1024,
+          "height": 1383,
+          "alpha": true,
+          "bytes": 319482,
+          "sha256": "57ead266a2ce114d9dc220a626246271252b5abc6f79d67a2889b9c227a89467"
+        }
+      ],
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "forest",
+      "prompt": "Use case: precise-object-edit. Reconstruct the FULL BACKGROUND scenery of attached approved Black Forest UI illustration, completely removing the whole central UI, all parchment, buttons, cards, frames, crests, labels and text. Reveal a continuous atmospheric midnight forest behind it. Portrait 1024x1536 watercolor storybook illustration with exceptionally fine ink detail, in the same exact painterly style. Gothic ruined castle in blue-grey mist at center distance, a winding stone path leading toward it, pale full moon above; great ancient dark tree trunks and warm amber hanging lanterns frame BOTH far edges, sparse gold and burgundy ivy, deep indigo #12101a shadows, silvery moonlight and tiny warm firefly points. Quiet misty dark center to support a real overlay placed later. Preserve source's restrained antique earth colors, aged-paper watercolor grain, material texture and composition, no characters. Full bleed artwork, no transparency, no text or interface elements anywhere.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-369c1425-63bd-4d11-a228-8d3401d8e371.png",
+      "originalSha256": "b548a787035bbb42630982356ae98c8607e6e3c5ce1fc97e745f26c866185143",
+      "outputs": [
+        {
+          "file": "assets/ui/difficulty/forest-v2.webp",
+          "width": 1024,
+          "height": 1536,
+          "alpha": false,
+          "bytes": 614958,
+          "sha256": "bcfef1f6f9738513198107fff6f7dc0864af7b453f6e209fb6e1d6a1b13a6cce"
+        }
+      ],
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "plates-square",
+      "prompt": "Production UI asset, square image. Draw THREE wide illustrated difficulty option plates stacked vertically, one equal512px-high row per plate on square1536x1536 canvas. Match the approved attached Black Forest game's elegant dark watercolor and antique bronze engraving style. Each plate3:1 horizontal aspect, framed by double thin bronze-gold bevel border with angled corners and leaf engraving. STORY top: lantern and autumn ivy; STANDARD middle: silver sword in stone and white flowers; CHALLENGE bottom: crimson crystal with black thorns. Each detailed illustration is confined to LEFT25% of plate and fades fully to light quiet parchment by LEFT32%; all remaining area is EMPTY ivory parchment for live text. No text, badges, numbers, symbols or controls. All three have neutral bronze frames, no selected highlight. Exact equal row heights, wide but tall enough to keep the entire vertical sword/lantern/crystal visible. Minimal8px transparent gutters outside each plate; opaque artwork inside. Actual transparent background. Do not include any other UI or backdrop.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-deeb598e-8216-4994-8214-2cc23ed96f31.png",
+      "originalSha256": "764253710adb4d9ced394b1d6a53b907fa6a9e8beb7c1e5ffc41eb6df2ad57de",
+      "outputs": [],
+      "status": "superseded-aspect-ratio",
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "story",
+      "prompt": "One SINGLE story difficulty option plate for the Black Forest game, WIDE LANDSCAPE 3:1 aspect ratio. Faithfully adapt the STORY row of attached approved UI. A complete illustrated amber lantern hanging from curled dark branch with rich gold autumn ivy and moonlit forest, confined entirely to LEFT25% of the plate. Fade softly to clean warm ivory parchment by32%; remaining68% entirely empty quiet parchment for live text. Thin DOUBLE antique bronze-gold engraved frame with cut angled corners, ivy engravings and dark contour enclosing the whole plate, match the watercolor/ink antique storybook reference exactly. Large visible complete lantern, no cropping. Minimal exterior transparent margin, actual transparency outside frame, opaque paper within. ONLY ONE full width rectangular plate fills the image. NO text, numbers, icons, badges, ticks, dividers, other plates, screen backdrop or mockup.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-2cc8363d-cb7a-4440-bb1f-11e70300d85d.png",
+      "originalSha256": "fb5a00d9b26a84bf5148217d81f16243f4e2fa93263eac0e678beac2b4b4c0f3",
+      "outputs": [
+        {
+          "file": "assets/ui/difficulty/story-v2.webp",
+          "width": 1000,
+          "height": 300,
+          "alpha": true,
+          "bytes": 115548,
+          "sha256": "86b44c589d40b4ac4e385ddae69d93dc57402517454b8c8d303d3eee0f9fc3bc"
+        }
+      ],
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "standard",
+      "prompt": "One SINGLE STANDARD difficulty option plate for the Black Forest game, WIDE LANDSCAPE 3:1 aspect ratio. Faithfully adapt the STANDARD row of attached approved UI. A complete elegant silver longsword standing in dark rock with delicate ivory wildflowers and a deep moonlit forest, confined to LEFT25% of plate. Watercolor edges fade fully into quiet clean warm ivory parchment by35%; all remaining area entirely EMPTY parchment for live text. Thin DOUBLE antique bronze-gold engraved frame, cut angled corners and minute ivy carvings and dark ink contour. Precise hand-painted old storybook materials of the reference, elaborate but readable. One full rectangular plate fills canvas, minimal exterior transparent gutter; actual transparent background outside, opaque paper within. No selected highlight. NO text, number, Recommended badge, checkmark, symbols, dividers, other plates or scene backdrop. Complete sword fits in image, vertical dominant blade and recognizable rock, not a floating tiny sword icon.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-c57ae34c-d5a2-4643-ab82-cef2b288fcc5.png",
+      "originalSha256": "e162291c99bee14716c07febb519f8949d7d4154afb2c8d00e12151c03a45459",
+      "outputs": [
+        {
+          "file": "assets/ui/difficulty/standard-v2.webp",
+          "width": 1000,
+          "height": 315,
+          "alpha": true,
+          "bytes": 114068,
+          "sha256": "93fe1d2b76099ad54de052554ed9f92d1424797dca90f92852fd3a5879a6e4a5"
+        }
+      ],
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    },
+    {
+      "key": "challenge",
+      "prompt": "One SINGLE CHALLENGE difficulty option plate for the Black Forest game, wide LANDSCAPE 3:1 aspect. Faithfully adapt the CHALLENGE row of attached approved UI. Large sharp faceted dark crimson crystal entwined in black thorn vines, burgundy ivy, misty ruined gothic forest, all illustration on LEFT25%. Its fine watercolor edge fades completely into clean warm ivory parchment by35%; remaining65% empty paper for live text. Thin DOUBLE antique bronze-gold beveled engraved frame with cut angled corners, leaf carvings and fine dark ink contour, exact luxurious aged storybook material of the source. Minimal clear exterior margin. Actual transparent background outside frame, opaque inside. One full width plate fills image, crystal fully visible. Neutral bronze frame. NO text, letters, numbers, checkmark, badge, labels, stat divider, buttons, other plates, background scenery or mockup. Preserve elaborate painted illustration and fine ornament, avoid flat icon.",
+      "originalPath": "C:\\Users\\Administrator\\.codex\\generated_images\\01a105c9-dcb9-75e0-9d1b-dbc869987058\\exec-d096f968-0757-446a-8b82-de1f70ef46cb.png",
+      "originalSha256": "1d8fe3b4105dba820f94f8d42fbad71701c324e011e41dcb986e8c333b16d572",
+      "outputs": [
+        {
+          "file": "assets/ui/difficulty/challenge-v2.webp",
+          "width": 1000,
+          "height": 269,
+          "alpha": true,
+          "bytes": 104088,
+          "sha256": "05067d174a242706fde0b897d387f4a37389ee746515fd2975ba06f4743b2aee"
+        }
+      ],
+      "referenceRoles": [
+        {
+          "role": "approved visual style and composition",
+          "file": "docs/ui-difficulty/concept-v1.webp"
+        }
+      ]
+    }
+  ],
+  "reused": [
+    "assets/ui/native/button-gold-v2.webp",
+    "assets/ui/native/button-ink-v2.webp",
+    "assets/ui/native/divider-v2.webp"
+  ],
+  "rights": "Generation history recorded; publisher ownership, reference rights and service terms need separate confirmation.",
+  "runtimeFiles": 6,
+  "totalRuntimeBytes": 1371182,
+  "failedAttempts": [
+    {
+      "key": "plates-square-two-reference-edit",
+      "status": "tool-call-terminated-after-no-result",
+      "note": "No image returned; repeated as fresh single-reference generation, then superseded by separate plates."
+    }
+  ],
+  "normalization": "Only alpha-bounds crop, resize and WebP encoding. Superseded atlases are preserved as source records; separate production plates avoid atlas aspect mismatch.",
+  "reuseEvidence": "docs/ui-native/v2/SOURCES.json"
+}

@@ -1,0 +1,110 @@
+
+Checking test-logic.js
+  稀有度分布: {"rare":132,"common":1269,"uncommon":599}
+  [卡牌]  3733 条
+  [敌人]  535 条
+  [遗物]  676 条
+  [Run]  72 条
+  [伤害公式]  4 条
+  [事件]  569 条
+  [事件效果]  19 条
+  [事件流程]  10 条
+  [境域]  35 条
+  [灵韵/共鸣]  18 条
+  东方篇符箓混入率: 49.9%
+  [双境域抽卡]  2 条
+  [状态结算]  15 条
+  [主题层]  59 条
+  [卡面材质]  317 条
+  [卡面插画]  313 条
+  [once 机制]  53 条
+  [遗物·东方]  2434 条
+  [战后恢复]  8 条
+  [牌堆循环]  18 条
+  [战斗舞台]  34 条
+  [自定义光标]  8 条
+  [一次性闸门]  15 条
+  [弹窗与开场态]  13 条
+  [出牌手势]  31 条
+  [传承配置]  26 条
+  [灵韵显示判定]  4 条
+  [存档格式与迁移]  24 条
+  [开局入口分流]  29 条
+  [一次性闸门复位]  16 条
+  [妖契]  25 条
+  [妖契事件]  17 条
+  [持续伤害逐回合结算]  6 条
+  [异兽规则·循火]  11 条
+
+=== 9238 passed, 0 failed ===
+  [离线模拟器]  89 条
+
+Checking test-localization.js
+PASS: 43 card translations; parameters, unchanged rules, missing-key tracking and word/punctuation wrapping.
+
+Checking test-save-store.js
+PASS: 13 checkpoint storage scenarios.
+
+Checking test-story.js
+PASS: 18 story battles, 6 chapters, 4 choices, 16 ending combinations; persistence, legacy saves, journal and content invariants
+
+Checking test-progress.cjs
+PASS: unique collections and achievements, duplicate settlement, debug exclusion, quota failure, corrupt/future progress preserved
+
+Checking test-storage-backend.js
+PASS: 5 storage backend scenarios.
+  - the web backend keeps localStorage semantics for get/set/remove
+  - the desktop backend exposes the same call shape and reports the host data location
+  - a save from a newer version is neither overwritten nor deleted until the player discards it
+  - every storage key in use is declared, and no code bypasses the storage backend
+  - the storage key list covers run, backup, collection, language, sfx, music, motion and reading size
+
+Checking test-desktop-store.js
+PASS: 12 host storage scenarios.
+  - write/read round trip persists the value in a versioned envelope
+  - a second write rotates the previous good value into a sidecar backup
+  - a damaged primary falls back to the sidecar and keeps the damaged file on disk
+  - two damaged slots report corruption and preserve both original files
+  - an unknown newer storage format is neither read nor overwritten
+  - an explicit remove clears the future-format lock and allows a fresh write
+  - an unwritable data directory fails the write instead of half-creating files
+  - a replacement onto an occupied path fails without destroying the existing entry
+  - removing a slot also removes its sidecar so an abandoned run cannot revive
+  - enumeration lists only real slots and reads their current values
+  - the whole data directory can be copied out as an import backup
+  - a leftover temp file from an interrupted write never surfaces as the slot value
+
+Checking test-desktop-integration.js
+PASS: 7 desktop integration scenarios.
+  - a value written through the desktop backend reads back through the same backend
+  - the desktop backend persists to a file on disk with a versioned envelope
+  - enumeration lists what the desktop backend actually stored
+  - removing a slot makes it unreadable and the sidecar does not revive it
+  - a damaged primary is reported as recovered and the previous value is returned
+  - two damaged slots report corruption and yield no value
+  - a newer storage format is neither read nor overwritten through the desktop backend
+
+Checking test-transfer.js
+PASS: 7 progress transfer scenarios.
+  - a well-formed progress file is accepted with every key listed
+  - a partial file is accepted so untouched desktop data survives
+  - seventeen malformed or out-of-range files are rejected with a specific reason
+  - error codes resolve to a message, and unknown codes stay visible instead of being hidden
+  - an oversized file or an oversized single item is refused before it reaches the storage layer
+  - an exported file parses back into the same key set
+  - an export taken with nothing stored is rejected on import instead of silently clearing data
+
+Checking ab-test.js
+离线 A/B 对照 · 每臂 200 局 · 战斗 18 战
+玩家 AI：与 simulate.js 同一套贪心基准线（只按当回合收益打分，无前瞻）
+自检：
+  通过  同种子重复运行
+  通过  相同配置的两个臂
+  通过  deckOverride 等于 classic
+  通过  外生流不受内生流消耗影响
+  通过  同种子换构筑：敌人血量序列一致（blood vs guard）
+  通过  同种子换构筑：敌人血量序列一致（blood vs talisman）
+  通过  敌人血量序列样本不足，配对前提未被真正验证
+  全部通过
+
+All release source checks passed. Packaged runtime verification is separate.

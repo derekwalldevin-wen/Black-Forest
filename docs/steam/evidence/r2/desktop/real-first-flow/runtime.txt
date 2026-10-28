@@ -1,0 +1,6 @@
+2026-10-25T01:26:28.807Z [validator] keys=darkforest.run,darkforest.run.backup,black-forest-progress-v1,black-forest-language,black-forest-audio-settings,black-forest-music-settings,black-forest-ui-settings,black-forest-reading-size
+2026-10-25T01:26:28.937Z [start] webRoot=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked\resources\app-web data=Z:\00-游戏\portrait-card-game\.tmp-gen\r2-desktop-CfuxfU\data\real-first-flow\data profile=real-first-flow
+2026-10-25T01:26:30.883Z [console] [info] %c %c %c %c %c Phaser v3.80.1 (WebGL | Web Audio) %c https://phaser.io background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent (app://bundle/assets/vendor/phaser-3.80.1.min.js:1)
+2026-10-25T01:26:46.006Z [input] steps=41
+2026-10-25T01:26:46.053Z [script] result written to Z:\00-游戏\portrait-card-game\.tmp-gen\r2-desktop-CfuxfU\real-first-flow-state.json
+2026-10-25T01:26:46.275Z [capture] Z:\00-游戏\portrait-card-game\docs\steam\evidence\r2\desktop\real-first-flow\final.png

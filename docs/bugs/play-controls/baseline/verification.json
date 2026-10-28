@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-10-25T03:51:05.374Z",
+  "baseline": true,
+  "checks": [
+    {
+      "name": "Confirm remains available after leaving and returning to canvas",
+      "passed": false,
+      "selected": {
+        "selected": "defend",
+        "hand": 5,
+        "energy": 3,
+        "hint": true,
+        "drag": false,
+        "busy": false,
+        "turn": 1,
+        "modal": false
+      },
+      "returned": {
+        "selected": "defend",
+        "hand": 5,
+        "energy": 3,
+        "hint": false,
+        "drag": false,
+        "busy": false,
+        "turn": 1,
+        "modal": false
+      }
+    },
+    {
+      "name": "Insufficient-resource submission preserves card and visible explanation",
+      "passed": false,
+      "deniedBefore": {
+        "selected": "defend",
+        "hand": 5,
+        "energy": 0,
+        "hint": true,
+        "drag": false,
+        "busy": false,
+        "turn": 1,
+        "modal": false
+      },
+      "denied": {
+        "selected": "defend",
+        "hand": 5,
+        "energy": 0,
+        "hint": false,
+        "drag": false,
+        "busy": false,
+        "turn": 1,
+        "modal": false
+      }
+    },
+    {
+      "name": "Low-frequency hand reader has no floating battle entry",
+      "passed": false,
+      "floating": 1
+    }
+  ],
+  "errors": []
+}

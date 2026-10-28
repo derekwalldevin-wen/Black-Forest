@@ -1,0 +1,26 @@
+[
+  {
+    "level": "error",
+    "message": "TypeError: Cannot read properties of undefined (reading 'sys')\n    at initialize.setInteractive (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:152716)\n    at CardView._build (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:993:7)\n    at CardView.setSelected (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:1008:12)\n    at CombatScene.selectCard (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:775:32)\n    at initialize.<anonymous> (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:362:36)\n    at a.emit (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:1601)\n    at initialize.processMoveEvents (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:475254)\n    at initialize.update (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:470164)\n    at initialize.updateInputPlugins (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:462272)\n    at initialize.onMouseMove (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:463870)",
+    "timestamp": "2026-10-25T05:04:56.642Z",
+    "url": "http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js"
+  },
+  {
+    "level": "error",
+    "message": "TypeError: Cannot read properties of undefined (reading 'sys')\n    at initialize.setInteractive (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:152716)\n    at CardView._build (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:993:7)\n    at CardView.setSelected (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:1008:12)\n    at CombatScene.selectCard (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:775:32)\n    at initialize.release (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:1260:13)\n    at a.emit (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:1687)\n    at initialize.processUpEvents (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:478114)\n    at initialize.update (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:469788)\n    at initialize.updateInputPlugins (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:462272)\n    at initialize.onMouseUp (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:464028)",
+    "timestamp": "2026-10-25T05:04:56.642Z",
+    "url": "http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js"
+  },
+  {
+    "level": "error",
+    "message": "TypeError: Cannot read properties of undefined (reading 'sys')\n    at initialize.setInteractive (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:152716)\n    at CardView._build (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:993:7)\n    at CardView.setSelected (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:1008:12)\n    at CombatScene.selectCard (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:775:32)\n    at initialize.release (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:1260:13)\n    at a.emit (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:1687)\n    at initialize.processUpEvents (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:478114)\n    at initialize.update (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:469788)\n    at initialize.updateInputPlugins (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:462272)\n    at initialize.onMouseUp (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:464028)",
+    "timestamp": "2026-10-25T05:04:56.642Z",
+    "url": "http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js"
+  },
+  {
+    "level": "error",
+    "message": "TypeError: Cannot read properties of undefined (reading 'sys')\n    at initialize.setInteractive (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:152716)\n    at CardView._build (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:993:7)\n    at CardView.setSelected (http://127.0.0.1:8899/src/core/ui.js?v=20261025-r2:1008:12)\n    at CombatScene.selectCard (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:775:32)\n    at initialize.release (http://127.0.0.1:8899/src/scenes/CombatScene.js?v=20261025-play-controls:1260:13)\n    at a.emit (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:1687)\n    at initialize.processUpEvents (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:478114)\n    at initialize.update (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:469788)\n    at initialize.updateInputPlugins (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:462272)\n    at initialize.onMouseUp (http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js:1:464028)",
+    "timestamp": "2026-10-25T05:04:56.642Z",
+    "url": "http://127.0.0.1:8899/assets/vendor/phaser-3.80.1.min.js"
+  }
+]

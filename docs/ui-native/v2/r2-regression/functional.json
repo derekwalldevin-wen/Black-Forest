@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-25T13:37:26.443Z",
+  "baseline": false,
+  "scope": "Browser CSS viewport and DPR emulation; actual OS scaling is not claimed",
+  "matrix": [],
+  "checks": [
+    "Window resize remeasures grid parent and fits stage without stale letterboxing",
+    "Esc clears selection before opening menu; repeated inspection never spends",
+    "Nine-card inspection, insufficient resources, multiple status rules and focused-button Enter",
+    "Guide modal pauses combat, isolates input, closes and resumes",
+    "Explicit confirm plays exactly once and pays the selected card actual cost, including draw cards",
+    "Touch-sized narrow English layout, long talisman rules, quiet reading shortcut and durable 26px reading",
+    "First encounter appears automatically; progress survives preference update and reload",
+    "Each default starter gets a distinct second-encounter lesson; first reward explains skip and deck size"
+  ],
+  "errors": []
+}

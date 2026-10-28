@@ -77,7 +77,14 @@ class JournalScene extends Phaser.Scene {
     this.append(this.add.image(225,260,'ui-avatar').setDisplaySize(220,220));
     this.text(650,212,I18N.t('journal.hero',{},HERO.name),60,null,{fontStyle:'bold'}).setOrigin(.5);
     this.text(650,305,I18N.t('journal.paused'),36,'#b9ab90').setOrigin(.5);
-    this.button(540,520,800,I18N.t('journal.viewDeck'),()=>{this.mode='deck';this.render();},{skin:'secondary',art:'deck'});
+    if(this.returnTo==='Combat'){
+      this.button(320,520,410,I18N.t('journal.viewDeck'),()=>{this.mode='deck';this.render();},{skin:'secondary',fontSize:38});
+      this.button(760,520,410,I18N.t('journal.readHand'),()=>{
+        const combat=this.scene.get('Combat');
+        combat.events.once('resume',()=>HAND_READER.open(combat));
+        this.close();
+      },{skin:'secondary',fontSize:38});
+    }else this.button(540,520,800,I18N.t('journal.viewDeck'),()=>{this.mode='deck';this.render();},{skin:'secondary',art:'deck'});
     this.button(540,690,800,I18N.t('journal.route'),()=>{this.mode='route';this.render();},{skin:'secondary',art:'route'});
     this.button(540,860,800,I18N.t('journal.items'),()=>{this.mode='relics';this.relicPage=0;this.render();},{skin:'secondary',art:'menu'});
     this.button(540,1015,800,I18N.t('journal.story'),()=>{this.scene.launch('Story',{kind:'journal',returnTo:'Journal'});this.scene.pause();this.scene.bringToTop('Story');},{skin:'secondary',art:'journal'});

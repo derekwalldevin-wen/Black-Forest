@@ -325,9 +325,20 @@ class CombatScene extends Phaser.Scene {
     });
     // 手指移出画布（系统手势 / 通知栏下拉）时不清账的话，
     // 这根手指的起点会一直留着，下一次抬手算出一个巨大的位移。
-    this.input.on('gameout', () => {
+    const recoverPointer = () => {
       down.clear(); this._cardPointer.clear();
-      this._drag = null; this.hidePlayHint();
+      for (const card of this.state?.hand || []) card._cancelGesture?.();
+      this._drag = null;
+      // Losing pointer focus cancels a gesture, not the selected card. Keep
+      // the only narrow-screen confirm control available when the player returns.
+      if (this.state && !this.state.busy && !this._modalOpen && !this._ended) this.syncHandFocus();
+    };
+    this.input.on('gameout', recoverPointer);
+    this.events.on('resume', recoverPointer);
+    this.game.events.on('blur', recoverPointer);
+    this.events.once('shutdown', () => {
+      this.events.off('resume', recoverPointer);
+      this.game.events.off('blur', recoverPointer);
     });
 
     /* 上滑出牌手势统一在场景层记账。
@@ -369,9 +380,9 @@ class CombatScene extends Phaser.Scene {
      * 这里按一下就直接打出，不走触屏那套「选中 → 上滑」：
      * 桌面端用鼠标拖拽本来就是反人类的，一次按键出一张牌才对。 */
     this.input.keyboard.on('keydown', (e) => {
+      if (e.repeat || this._modalOpen || DESKTOP_UI.isControlEvent(e)) return;
       if (this.state && this.state.busy) return;
       if (e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); this.endTurn(); return; }
-      if (e.repeat) return;
       let digit = null;
       const m = /^(?:Digit|Numpad)([1-9])$/.exec(e.code || '');
       if (m) digit = m[1];
@@ -478,6 +489,7 @@ class CombatScene extends Phaser.Scene {
 
   startPlayerTurn(first) {
     const S = this.state;
+    this.selectCard(null);
     S.turn++;
     S.busy = true;
     S.firstAttackUsed = false;
@@ -554,11 +566,13 @@ class CombatScene extends Phaser.Scene {
 
   endTurn() {
     const S = this.state;
-    if (S.busy || !S.enemy.alive) return;
+    if (S.busy || this._modalOpen || !S.enemy.alive) return;
     finishPlayerTactic(S);
     SFX.play(this,'turn');
-    S.busy = true;
+    // Clear the inspected view before locking input or discarding the hand.
+    // A destroyed previous-turn view must never remain the active selection.
     this.selectCard(null);
+    S.busy = true;
     this.refreshHandState();
 
     // 手牌退场。逐张错开飞向弃牌堆，比一次性 destroy 更有
@@ -739,17 +753,28 @@ class CombatScene extends Phaser.Scene {
    * 画面上没有任何东西告诉玩家还得再点一下。现在出牌改走上滑手势
    * （bindInput 里的 _drag 记账），这里只管选中态，
    * 提示条由 syncHandFocus 统一挂 / 收，避免出现「提示条还挂着但牌已经没了」。 */
+  isLiveHandCard(card) {
+    return !!(card && this.state?.hand.includes(card) && !card._leaving && card.c?.active && card.c.scene);
+  }
+
   selectCard(card) {
     const S = this.state;
-    if (S.busy) return;
+    if (!S) return false;
+    if (S.selected && !this.isLiveHandCard(S.selected)) {
+      S.selected = null;
+      this.hidePlayHint();
+    }
 
     if (card === null) {
-      if (S.selected) S.selected.setSelected(false);
+      const previous = S.selected;
       S.selected = null;
+      if (previous) previous.setSelected(false);
       this.syncHandFocus();
       this.updateHandLayout();
-      return;
+      return true;
     }
+    // Cleanup is allowed while busy; new selection and payment are not.
+    if (S.busy || this._modalOpen || !this.isLiveHandCard(card)) return false;
     // Inspection is always allowed; playCard alone validates payment.
 
     if (S.selected === card) {
@@ -776,6 +801,7 @@ class CombatScene extends Phaser.Scene {
   syncHandFocus() {
     const S = this.state;
     if (!S) return;
+    if (S.selected && !this.isLiveHandCard(S.selected)) S.selected = null;
     for (const c of S.hand) {
       if (c === S.selected) continue;
       c.setPressed(false);
@@ -807,7 +833,7 @@ class CombatScene extends Phaser.Scene {
   playCard(card) {
     const S = this.state;
     // 所有输入入口共用提交校验，过期手势不能移除牌或重复扣费。
-    if (!S || S.busy || !S.enemy.alive || !card || card._leaving || !S.hand.includes(card)) return false;
+    if (!S || S.busy || this._modalOpen || !S.enemy.alive || !this.isLiveHandCard(card)) return false;
     const d = card.def;
     const payable = effectiveCost(d, S.resonance);
     const available = cardCostType(d) === 'spirit' ? S.spirit : S.energy;
@@ -1231,8 +1257,7 @@ class CombatScene extends Phaser.Scene {
 
       if (mine && d.active) {
         if (d.armed) {
-          // 提示条先收掉：playCard 里会重新排版，提示条留在原地会很突兀
-          scene.hidePlayHint();
+          // playCard hides the control only after accepting the submission.
           scene.playCard(cv);
           return;
         }
@@ -1277,6 +1302,12 @@ class CombatScene extends Phaser.Scene {
     // 场景级 pointerup 兜底要用（见 bindInput）。存引用而不是再写一遍收尾逻辑：
     // 两份逻辑迟早会走偏，闸门只有一个才收得住。
     cv._releaseSwipe = release;
+    cv._cancelGesture = () => {
+      if (!pressing) return;
+      pressing = false;
+      cv.setPressed(false);
+      settle(120);
+    };
 
     // 手指按住后滑出卡牌：Phaser 只发 pointerout，不会补发 pointerup。
     // 上滑出牌时不能在这里收尾——那正是手势进行到一半，交给场景级的
@@ -1405,7 +1436,6 @@ class CombatScene extends Phaser.Scene {
       if (this.state.busy) return;
       const cv = this.state.selected;
       if (!cv) return;
-      this.hidePlayHint();
       this.playCard(cv);
     });
   }
@@ -1460,6 +1490,7 @@ class CombatScene extends Phaser.Scene {
    *  90px 的净空，放不下一个悬空的提示框。 */
   showPlayHint(cv) {
     if (!this.hintG) return;
+    if (!this.isLiveHandCard(cv)) { this.hidePlayHint(); return; }
     this._hintX = cv.c.x;
     this._hintY = cv.c.y + (cv.h * cv.c.scaleX) / 2 - 28;
     this._hintHit.setTo(this._hintX - 150, this._hintY - 38, 300, 76);
@@ -1489,12 +1520,17 @@ class CombatScene extends Phaser.Scene {
 
   refreshHandState() {
     const S = this.state;
+    if (S.selected && !this.isLiveHandCard(S.selected)) {
+      S.selected = null;
+      this.hidePlayHint();
+    }
     for (const c of S.hand) {
       // 可打出判定要按「这张牌实际要付多少」来算，符箓看灵韵、哥特牌看行动力
       const cost = effectiveCost(c.def, S.resonance);
       const pool = cardCostType(c.def) === 'spirit' ? S.spirit : S.energy;
-      const can = !S.busy && cost <= pool && this.state.enemy.alive;
-      c.setPlayable(can);
+      const affordable = cost <= pool;
+      const can = !S.busy && affordable && this.state.enemy.alive;
+      c.setPlayable(can, affordable);
       c.setCost(cost, cardCostType(c.def) === 'spirit');
       c.setResonance(S.resonance);
     }
@@ -1503,6 +1539,10 @@ class CombatScene extends Phaser.Scene {
     const canEnd = !S.busy && S.enemy.alive;
     this.endTurnBtn.setEnabled(canEnd);
     this.endTurnBtn.setLabel(S.busy ? I18N.t('combat.enemyActing') : I18N.t('combat.endTurn'));
+    if (S.selected && !S.busy && !this._modalOpen) {
+      this.showPlayHint(S.selected);
+      this.drawPlayHint(this._hintProg, this._hintArmed);
+    }
   }
 
   refreshEnergy() {

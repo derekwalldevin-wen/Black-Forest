@@ -1,0 +1,6 @@
+2026-10-25T01:26:51.759Z [validator] keys=darkforest.run,darkforest.run.backup,black-forest-progress-v1,black-forest-language,black-forest-audio-settings,black-forest-music-settings,black-forest-ui-settings,black-forest-reading-size
+2026-10-25T01:26:51.808Z [start] webRoot=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked\resources\app-web data=Z:\00-游戏\portrait-card-game\.tmp-gen\r2-desktop-CfuxfU\data\english-nine-status\data profile=english-nine-status
+2026-10-25T01:26:52.216Z [console] [info] %c %c %c %c %c Phaser v3.80.1 (WebGL | Web Audio) %c https://phaser.io background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent (app://bundle/assets/vendor/phaser-3.80.1.min.js:1)
+2026-10-25T01:26:57.585Z [input] steps=7
+2026-10-25T01:26:57.658Z [script] result written to Z:\00-游戏\portrait-card-game\.tmp-gen\r2-desktop-CfuxfU\english-nine-status-state.json
+2026-10-25T01:26:57.891Z [capture] Z:\00-游戏\portrait-card-game\docs\steam\evidence\r2\desktop\english-nine-status\final.png

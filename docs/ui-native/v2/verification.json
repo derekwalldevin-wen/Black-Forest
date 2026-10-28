@@ -1,0 +1,969 @@
+{
+  "generatedAt": "2026-10-25T13:43:01.148Z",
+  "scope": "Isolated Edge browser; mobile viewport and desktop UI; desktop import bridge stub, no native OS picker claim",
+  "layouts": [
+    {
+      "file": "phone-zh-CN-collection.webp",
+      "name": "collection",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 378,
+      "h": 832,
+      "footer": [
+        745.0625,
+        817
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-zh-CN-save.webp",
+      "name": "save",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 33.890625,
+      "w": 378,
+      "h": 776.203125,
+      "footer": [
+        739,
+        789.09375
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-zh-CN-hand.webp",
+      "name": "hand",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 378,
+      "h": 832,
+      "footer": [
+        714.0625,
+        817
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-zh-CN-guide.webp",
+      "name": "guide",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 51.390625,
+      "w": 378,
+      "h": 741.21875,
+      "footer": [
+        641.609375,
+        771.609375
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        44,
+        44,
+        24
+      ]
+    },
+    {
+      "file": "phone-zh-CN-market.webp",
+      "name": "market",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 7.796875,
+      "y": 21.703125,
+      "w": 374.390625,
+      "h": 800.578125,
+      "footer": [
+        722.1875,
+        801.28125
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        41,
+        41,
+        41,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-en-collection.webp",
+      "name": "collection",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 378,
+      "h": 832,
+      "footer": [
+        745.0625,
+        817
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-en-save.webp",
+      "name": "save",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6.234375,
+      "w": 378,
+      "h": 831.53125,
+      "footer": [
+        766.671875,
+        816.765625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-en-hand.webp",
+      "name": "hand",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 378,
+      "h": 832,
+      "footer": [
+        714.0625,
+        817
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-en-guide.webp",
+      "name": "guide",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 10.71875,
+      "w": 378,
+      "h": 822.546875,
+      "footer": [
+        682.265625,
+        812.265625
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        44,
+        44,
+        24
+      ]
+    },
+    {
+      "file": "phone-en-market.webp",
+      "name": "market",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 7.796875,
+      "y": 16.484375,
+      "w": 374.390625,
+      "h": 811.015625,
+      "footer": [
+        727.40625,
+        806.5
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        41,
+        41,
+        41,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        46.09375
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-collection.webp",
+      "name": "collection",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        613.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-save.webp",
+      "name": "save",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        613.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-hand.webp",
+      "name": "hand",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        582.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-guide.webp",
+      "name": "guide",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        535.15625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        44,
+        44,
+        24
+      ]
+    },
+    {
+      "file": "desktop-zh-CN-market.webp",
+      "name": "market",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        584.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        47,
+        47,
+        47,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-en-collection.webp",
+      "name": "collection",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        613.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-en-save.webp",
+      "name": "save",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        613.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-en-hand.webp",
+      "name": "hand",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        582.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        47.390625
+      ]
+    },
+    {
+      "file": "desktop-en-guide.webp",
+      "name": "guide",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        535.15625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        44,
+        44,
+        24
+      ]
+    },
+    {
+      "file": "desktop-en-market.webp",
+      "name": "market",
+      "viewport": [
+        1280,
+        720
+      ],
+      "x": 260,
+      "y": 6,
+      "w": 760,
+      "h": 708,
+      "footer": [
+        584.765625,
+        688
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "19px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        47,
+        47,
+        47,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        47.390625
+      ]
+    },
+    {
+      "file": "small-zh-CN-collection.webp",
+      "name": "collection",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        476.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        46.09375
+      ]
+    },
+    {
+      "file": "small-zh-CN-save.webp",
+      "name": "save",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        476.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        46.09375
+      ]
+    },
+    {
+      "file": "small-zh-CN-hand.webp",
+      "name": "hand",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        448.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        46.09375
+      ]
+    },
+    {
+      "file": "small-zh-CN-guide.webp",
+      "name": "guide",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        406.5625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        38.796875,
+        38.796875,
+        24
+      ]
+    },
+    {
+      "file": "small-zh-CN-market.webp",
+      "name": "market",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6.40625,
+      "y": 6,
+      "w": 307.1875,
+      "h": 556,
+      "footer": [
+        450.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        41,
+        41,
+        41,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        46.09375
+      ]
+    },
+    {
+      "file": "small-en-collection.webp",
+      "name": "collection",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        476.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        46.09375
+      ]
+    },
+    {
+      "file": "small-en-save.webp",
+      "name": "save",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        476.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        46.09375
+      ]
+    },
+    {
+      "file": "small-en-hand.webp",
+      "name": "hand",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        448.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "28px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        46.09375
+      ]
+    },
+    {
+      "file": "small-en-guide.webp",
+      "name": "guide",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 308,
+      "h": 556,
+      "footer": [
+        406.5625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        38.796875,
+        38.796875,
+        24
+      ]
+    },
+    {
+      "file": "small-en-market.webp",
+      "name": "market",
+      "viewport": [
+        320,
+        568
+      ],
+      "x": 6.40625,
+      "y": 6,
+      "w": 307.1875,
+      "h": 556,
+      "footer": [
+        450.0625,
+        545
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        41,
+        41,
+        41,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-shanhai-market.webp",
+      "name": "market",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 7.796875,
+      "y": 21.703125,
+      "w": 374.390625,
+      "h": 800.578125,
+      "footer": [
+        722.1875,
+        801.28125
+      ],
+      "overflow": false,
+      "bodyScrollable": false,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        41,
+        41,
+        41,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        42,
+        22,
+        46.09375
+      ]
+    },
+    {
+      "file": "phone-import-error.webp",
+      "name": "save",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 378,
+      "h": 832,
+      "footer": [
+        766.90625,
+        817
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        76.78125,
+        76.78125,
+        46.09375
+      ]
+    },
+    {
+      "file": "subpath-collection.webp",
+      "name": "collection",
+      "viewport": [
+        390,
+        844
+      ],
+      "x": 6,
+      "y": 6,
+      "w": 378,
+      "h": 832,
+      "footer": [
+        745.0625,
+        817
+      ],
+      "overflow": false,
+      "bodyScrollable": true,
+      "font": "17px",
+      "frame": "url(\"http://127.0.0.1:61962/Black-Forest/assets/ui/native/shell-v2.webp\")",
+      "frameSlice": "192 fill",
+      "buttons": [
+        46.09375
+      ]
+    }
+  ],
+  "checks": [
+    "Web export downloads a valid transfer JSON without changing progress",
+    "phone-zh-CN: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "phone-en: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "desktop-zh-CN: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "desktop-en: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "small-zh-CN: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "small-en: visible separated title entries, 8 achievements and 6 gallery images, 28px nine-card read-only hand, guide progression/input fence, one purchase/removal, insufficient gold, Escape and same-frame resume",
+    "Oriental card art/material, five-card deletion floor, desktop import confirm/cancel/apply/error UI with isolated bridge stubs (native file picker not claimed)",
+    "GitHub Pages subdirectory resolves panel art, styles and card assets"
+  ],
+  "errors": [],
+  "failed": []
+}

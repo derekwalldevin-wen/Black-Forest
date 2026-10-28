@@ -1,0 +1,223 @@
+{
+  "battles": [
+    {
+      "chapter": 0,
+      "step": 0,
+      "realm": "gothic",
+      "enemy": "wolf",
+      "enemyName": "灰狼",
+      "enemyHp": 30,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 0,
+      "step": 1,
+      "realm": "gothic",
+      "enemy": "mushroom",
+      "enemyName": "毒蝇伞",
+      "enemyHp": 22,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 0,
+      "step": 2,
+      "realm": "gothic",
+      "enemy": "alpha_wolf",
+      "enemyName": "头狼",
+      "enemyHp": 57,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 1,
+      "step": 0,
+      "realm": "gothic",
+      "enemy": "witch",
+      "enemyName": "森林女巫",
+      "enemyHp": 34,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 1,
+      "step": 1,
+      "realm": "gothic",
+      "enemy": "boar",
+      "enemyName": "铁鬃野猪",
+      "enemyHp": 36,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 1,
+      "step": 2,
+      "realm": "gothic",
+      "enemy": "bog_witch",
+      "enemyName": "沼泽女巫",
+      "enemyHp": 60,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 2,
+      "step": 0,
+      "realm": "gothic",
+      "enemy": "wolf",
+      "enemyName": "灰狼",
+      "enemyHp": 26,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 2,
+      "step": 1,
+      "realm": "gothic",
+      "enemy": "alpha_wolf",
+      "enemyName": "头狼",
+      "enemyHp": 57,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 2,
+      "step": 2,
+      "realm": "gothic",
+      "enemy": "forest_lord",
+      "enemyName": "黑暗森林之主",
+      "enemyHp": 81,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 3,
+      "step": 0,
+      "realm": "shanhai",
+      "enemy": "nine_tail",
+      "enemyName": "九尾狐",
+      "enemyHp": 37,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 3,
+      "step": 1,
+      "realm": "shanhai",
+      "enemy": "lu_shu",
+      "enemyName": "鹿蜀",
+      "enemyHp": 41,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 3,
+      "step": 2,
+      "realm": "shanhai",
+      "enemy": "qiongqi",
+      "enemyName": "穷奇",
+      "enemyHp": 67,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 4,
+      "step": 0,
+      "realm": "shanhai",
+      "enemy": "xiangliu",
+      "enemyName": "相柳",
+      "enemyHp": 48,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 4,
+      "step": 1,
+      "realm": "shanhai",
+      "enemy": "fei",
+      "enemyName": "蜚",
+      "enemyHp": 32,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 4,
+      "step": 2,
+      "realm": "shanhai",
+      "enemy": "huodou",
+      "enemyName": "祸斗",
+      "enemyHp": 71,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 5,
+      "step": 0,
+      "realm": "shanhai",
+      "enemy": "taotie",
+      "enemyName": "饕餮",
+      "enemyHp": 55,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 5,
+      "step": 1,
+      "realm": "shanhai",
+      "enemy": "baize",
+      "enemyName": "白泽",
+      "enemyHp": 51,
+      "hand": 5,
+      "ready": true
+    },
+    {
+      "chapter": 5,
+      "step": 2,
+      "realm": "shanhai",
+      "enemy": "dijiang",
+      "enemyName": "帝江",
+      "enemyHp": 124,
+      "hand": 5,
+      "ready": true
+    }
+  ],
+  "events": [
+    {
+      "id": "campfire",
+      "ready": true,
+      "hasChoices": false
+    },
+    {
+      "id": "ancient_stele",
+      "ready": true,
+      "hasChoices": false
+    },
+    {
+      "id": "black_market",
+      "ready": true,
+      "hasChoices": false
+    },
+    {
+      "id": "nine_heads",
+      "ready": true,
+      "hasChoices": false
+    }
+  ],
+  "shop": {
+    "dialogOpen": true,
+    "items": 3,
+    "hasRemove": true
+  },
+  "ending": {
+    "ready": true,
+    "victory": true
+  },
+  "reward": {
+    "ready": true
+  },
+  "assetFailures": [],
+  "notes": [],
+  "textures": 237,
+  "battlesReady": 18,
+  "battlesTotal": 18
+}

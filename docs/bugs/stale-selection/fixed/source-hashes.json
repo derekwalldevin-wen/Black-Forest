@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-10-25T05:28:26.450Z",
+  "files": [
+    {
+      "file": "src/scenes/CombatScene.js",
+      "sha256": "440d979acad3f4dd935df5ed2981e0a417d950cb471e306c47678c16d48f40ec"
+    },
+    {
+      "file": "src/core/ui.js",
+      "sha256": "8477fa5675a2e0eec73c21cd39e4b9e616b073b71d4d496a6336646f1632e99e"
+    },
+    {
+      "file": "src/core/desktop-ui.js",
+      "sha256": "c22a157b79365472b62699fc601c31f5bb285f6699f5876e97802eb318e25ad5"
+    },
+    {
+      "file": "index.html",
+      "sha256": "3b9a63b574bb6a40b09542a21992eff1ddfa0201343201882a391e8c3e4209cf"
+    }
+  ]
+}

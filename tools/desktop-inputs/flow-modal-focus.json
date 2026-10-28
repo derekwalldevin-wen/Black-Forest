@@ -1,0 +1,23 @@
+[
+  { "waitFor": "(()=>{const s=window.__game.scene.getScene('Title');return !!(s&&s.scene.isActive()&&typeof s.startRun==='function');})()", "timeout": 90000 },
+  { "click": [540, 1480] },
+  { "waitFor": "(()=>{const s=window.__game.scene.getScene('Title');return !!(s&&s._starterLayer);})()", "timeout": 20000 },
+  { "click": [130, 726] },
+  { "wait": 700 },
+  { "click": [330, 1500] },
+  { "waitFor": "(()=>!!document.querySelector('.difficulty-start'))()", "timeout": 20000 },
+  { "clickSelector": ".difficulty-start" },
+  { "waitFor": "(()=>{const st=window.__game.scene.getScene('Story');return !!(st&&st.scene.isActive());})()", "timeout": 60000 },
+  { "click": [913, 250] },
+  { "waitFor": "(()=>{const c=window.__game.scene.getScene('Combat');return !!(c&&c.scene.isActive()&&c.state&&!c.state.busy&&c.state.hand.length>0);})()", "timeout": 90000 },
+  { "wait": 800 },
+  { "key": "h" },
+  { "wait": 1600 },
+  { "shot": "01-modal-open.png" },
+  { "eval": "(()=>{const d=document.querySelector('dialog.hand-reader');const a=document.activeElement;return JSON.stringify({dialogOpen:!!d,activeTag:a&&a.tagName,activeText:a&&(a.textContent||'').trim().slice(0,24),focusInsideDialog:!!(d&&a&&d.contains(a))});})()" },
+  { "key": "Escape" },
+  { "wait": 1200 },
+  { "eval": "(()=>{const a=document.activeElement;return JSON.stringify({dialogClosed:!document.querySelector('dialog.hand-reader'),activeTag:a&&a.tagName,activeClass:a&&a.className,activeText:a&&(a.textContent||'').trim().slice(0,24)});})()" },
+  { "shot": "02-modal-closed.png" },
+  { "eval": "(()=>{const c=window.__game.scene.getScene('Combat');return JSON.stringify({stillInCombat:!!(c&&c.scene.isActive()),busy:c&&c.state?c.state.busy:null,hand:c&&c.state?c.state.hand.length:null});})()" }
+]

@@ -1,0 +1,13 @@
+[
+  { "waitFor": "(()=>{const s=window.__game.scene.getScene('Title');return !!(s&&s.scene.isActive()&&typeof s.startRun==='function');})()", "timeout": 120000 },
+  { "click": [540, 1480] },
+  { "waitFor": "(()=>{const s=window.__game.scene.getScene('Title');return !!(s&&s._starterLayer);})()", "timeout": 20000 },
+  { "click": [130, 726] },
+  { "wait": 600 },
+  { "click": [330, 1500] },
+  { "waitFor": "(()=>!!document.querySelector('.hand-reader button'))()", "timeout": 20000 },
+  { "clickSelector": ".hand-reader button" },
+  { "waitFor": "(()=>{const st=window.__game.scene.getScene('Story');return !!(st&&st.scene.isActive());})()", "timeout": 60000 },
+  { "click": [913, 250] },
+  { "waitFor": "(()=>{const c=window.__game.scene.getScene('Combat');return !!(c&&c.scene.isActive()&&c.state&&!c.state.busy&&c.state.hand.length>0);})()", "timeout": 90000 }
+]

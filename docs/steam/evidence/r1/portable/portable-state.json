@@ -1,0 +1,36 @@
+{
+  "activeScenes": [
+    "Combat"
+  ],
+  "locale": "zh-CN",
+  "saveStatus": null,
+  "run": {
+    "starterId": "guard",
+    "difficulty": "standard",
+    "chapter": 0,
+    "step": 0,
+    "hp": 70,
+    "maxHp": 70,
+    "gold": 0,
+    "kills": 0,
+    "deckSize": 8,
+    "relics": 0,
+    "started": true,
+    "market": null
+  },
+  "combat": {
+    "enemy": "wolf",
+    "enemyHp": 23,
+    "playerHp": 64,
+    "hand": 5,
+    "energy": 3,
+    "spirit": 2,
+    "busy": false
+  },
+  "storageKeys": [
+    "black-forest-progress-v1",
+    "black-forest-reading-size",
+    "darkforest.run",
+    "darkforest.run.backup"
+  ]
+}

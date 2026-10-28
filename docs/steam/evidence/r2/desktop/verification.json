@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-10-25T01:27:02.930Z",
+  "scope": "Packaged Windows app on this machine; browser emulation and human/clean-device gates remain separate",
+  "cases": [
+    {
+      "id": "real-first-flow",
+      "passed": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "canvas": {
+        "x": 666.25,
+        "y": 17,
+        "width": 589.5,
+        "height": 1048
+      },
+      "wide": true
+    },
+    {
+      "id": "tutorial-persistence",
+      "passed": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "canvas": {
+        "x": 666.25,
+        "y": 17,
+        "width": 589.5,
+        "height": 1048
+      },
+      "wide": true
+    },
+    {
+      "id": "english-nine-status",
+      "passed": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "canvas": {
+        "x": 666.25,
+        "y": 17,
+        "width": 589.5,
+        "height": 1048
+      },
+      "wide": true
+    },
+    {
+      "id": "narrow-reader",
+      "passed": true,
+      "viewport": {
+        "width": 464,
+        "height": 821,
+        "dpr": 1
+      },
+      "canvas": {
+        "x": 1,
+        "y": 0,
+        "width": 461.8125,
+        "height": 821
+      },
+      "wide": false
+    }
+  ]
+}

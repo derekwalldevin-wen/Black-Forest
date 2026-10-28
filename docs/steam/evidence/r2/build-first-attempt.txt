@@ -1,0 +1,21 @@
+staged 284 files, 47.17 MB
+> C:\Users\Administrator\AppData\Local\Microsoft\WinGet\Packages\OpenJS.NodeJS.22_Microsoft.Winget.Source_8wekyb3d8bbwe\node-v22.22.0-win-x64\node.exe Z:\00-游戏\portrait-card-game\desktop\node_modules\electron-builder\out\cli\cli.js --win --x64 --publish never
+  • electron-builder  version=26.15.3 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=44.9.0 arch=x64 buildFromSource=false workspaceRoot=Z:\00-游戏\portrait-card-game\desktop projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=44.9.0 appOutDir=Z:\00-游戏\portrait-card-game\artifacts\desktop\win-unpacked
+  ⨯ connect ETIMEDOUT 20.205.243.166:443  failedTask=build stackTrace=RequestError: connect ETIMEDOUT 20.205.243.166:443
+    at ClientRequest.<anonymous> (Z:\00-游戏\portrait-card-game\desktop\node_modules\got\dist\source\core\index.js:970:111)
+    at Object.onceWrapper (node:events:634:26)
+    at ClientRequest.emit (node:events:531:35)
+    at ClientRequest.origin.emit (Z:\00-游戏\portrait-card-game\desktop\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+    at emitErrorEvent (node:_http_client:107:11)
+    at TLSSocket.socketErrorListener (node:_http_client:574:5)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+build step failed with code 1
